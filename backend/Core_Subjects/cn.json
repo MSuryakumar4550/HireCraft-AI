@@ -1,0 +1,1024 @@
+bb{
+  "subject": "Computer Networks",
+  "batch": "combined",
+  "language": null,
+  "questions": [
+    {
+      "id": "CN-001",
+      "question": "What is the difference between bandwidth, latency, and throughput in a computer network?",
+      "subject": "Computer Networks",
+      "topic": "Networking Fundamentals",
+      "difficulty": "EASY",
+      "type": "COMPARISON",
+      "concepts": [
+        "bandwidth",
+        "latency",
+        "throughput",
+        "network performance"
+      ],
+      "criteria": [
+        "distinguishes bandwidth from latency",
+        "defines throughput in terms of actual data transfer",
+        "explains that high bandwidth does not necessarily mean low latency"
+      ],
+      "follow_up": true
+    },
+    {
+      "id": "CN-002",
+      "question": "What is packet switching, and why is it widely used in modern computer networks?",
+      "subject": "Computer Networks",
+      "topic": "Networking Fundamentals",
+      "difficulty": "EASY",
+      "type": "EXPLANATION",
+      "concepts": [
+        "packet switching",
+        "shared network resources",
+        "packets",
+        "network efficiency"
+      ],
+      "criteria": [
+        "explains how data is divided into packets",
+        "describes how network resources are shared dynamically",
+        "identifies efficient resource utilization as a key advantage"
+      ],
+      "follow_up": false
+    },
+    {
+      "id": "CN-003",
+      "question": "What are the main responsibilities of the different layers in the OSI model?",
+      "subject": "Computer Networks",
+      "topic": "OSI and TCP/IP Models",
+      "difficulty": "EASY",
+      "type": "CONCEPTUAL",
+      "concepts": [
+        "OSI model",
+        "layered architecture",
+        "protocol responsibilities",
+        "network abstraction"
+      ],
+      "criteria": [
+        "identifies the purpose of layered networking",
+        "describes major responsibilities across OSI layers",
+        "explains how layers separate networking concerns"
+      ],
+      "follow_up": true
+    },
+    {
+      "id": "CN-004",
+      "question": "What is the purpose of encapsulation and decapsulation when data moves through a network?",
+      "subject": "Computer Networks",
+      "topic": "OSI and TCP/IP Models",
+      "difficulty": "EASY",
+      "type": "EXPLANATION",
+      "concepts": [
+        "encapsulation",
+        "decapsulation",
+        "protocol headers",
+        "layered communication"
+      ],
+      "criteria": [
+        "explains that layers add protocol-specific information during transmission",
+        "describes decapsulation at the receiving side",
+        "connects headers or trailers to the responsibilities of different layers"
+      ],
+      "follow_up": true
+    },
+    {
+      "id": "CN-005",
+      "question": "What is a MAC address, and how is it different from an IP address?",
+      "subject": "Computer Networks",
+      "topic": "Data Link Layer",
+      "difficulty": "EASY",
+      "type": "COMPARISON",
+      "concepts": [
+        "MAC address",
+        "IP address",
+        "data link layer",
+        "network layer"
+      ],
+      "criteria": [
+        "distinguishes MAC addressing from IP addressing",
+        "relates MAC addresses to local network communication",
+        "relates IP addresses to logical network addressing and routing"
+      ],
+      "follow_up": false
+    },
+    {
+      "id": "CN-006",
+      "question": "What is the role of a router compared with the role of a network switch?",
+      "subject": "Computer Networks",
+      "topic": "Data Link Layer",
+      "difficulty": "EASY",
+      "type": "COMPARISON",
+      "concepts": [
+        "switch",
+        "router",
+        "MAC address",
+        "IP routing"
+      ],
+      "criteria": [
+        "explains that switches primarily forward frames within a local network",
+        "explains that routers forward packets between networks",
+        "distinguishes MAC-based forwarding from IP-based routing"
+      ],
+      "follow_up": true
+    },
+    {
+      "id": "CN-007",
+      "question": "What is the purpose of a default gateway on a host?",
+      "subject": "Computer Networks",
+      "topic": "Network Layer",
+      "difficulty": "EASY",
+      "type": "DEFINITION",
+      "concepts": [
+        "default gateway",
+        "local network",
+        "remote network",
+        "routing"
+      ],
+      "criteria": [
+        "explains that the gateway is used for destinations outside the local network",
+        "identifies the gateway as a routing point",
+        "distinguishes local delivery from forwarding to another network"
+      ],
+      "follow_up": false
+    },
+    {
+      "id": "CN-008",
+      "question": "What is the main difference between TCP and UDP?",
+      "subject": "Computer Networks",
+      "topic": "Transport Layer",
+      "difficulty": "EASY",
+      "type": "COMPARISON",
+      "concepts": [
+        "TCP",
+        "UDP",
+        "reliability",
+        "connection-oriented communication"
+      ],
+      "criteria": [
+        "distinguishes TCP's connection-oriented behavior from UDP's connectionless model",
+        "explains TCP's reliability mechanisms at a high level",
+        "identifies situations where lower overhead may favor UDP"
+      ],
+      "follow_up": true
+    },
+    {
+      "id": "CN-009",
+      "question": "Why does TCP use a three-way handshake before normal data transfer?",
+      "subject": "Computer Networks",
+      "topic": "Transport Layer",
+      "difficulty": "MEDIUM",
+      "type": "EXPLANATION",
+      "concepts": [
+        "TCP handshake",
+        "connection establishment",
+        "sequence numbers",
+        "synchronization"
+      ],
+      "criteria": [
+        "explains that both endpoints establish communication state",
+        "describes synchronization of initial sequence information",
+        "explains why a single exchange is insufficient for the full handshake"
+      ],
+      "follow_up": true
+    },
+    {
+      "id": "CN-010",
+      "question": "How does TCP provide reliable delivery when packets may be lost, duplicated, or received out of order?",
+      "subject": "Computer Networks",
+      "topic": "Transport Layer",
+      "difficulty": "MEDIUM",
+      "type": "EXPLANATION",
+      "concepts": [
+        "TCP reliability",
+        "sequence numbers",
+        "acknowledgments",
+        "retransmission"
+      ],
+      "criteria": [
+        "explains the role of sequence numbers",
+        "explains acknowledgments as feedback from the receiver",
+        "identifies retransmission as a response to detected loss",
+        "addresses handling of out-of-order data"
+      ],
+      "follow_up": true
+    },
+    {
+      "id": "CN-011",
+      "question": "What is the difference between flow control and congestion control in TCP?",
+      "subject": "Computer Networks",
+      "topic": "Transport Layer",
+      "difficulty": "MEDIUM",
+      "type": "COMPARISON",
+      "concepts": [
+        "flow control",
+        "congestion control",
+        "receiver capacity",
+        "network congestion"
+      ],
+      "criteria": [
+        "distinguishes receiver protection from network protection",
+        "explains how flow control relates to receiver capacity",
+        "explains how congestion control responds to network conditions"
+      ],
+      "follow_up": true
+    },
+    {
+      "id": "CN-012",
+      "question": "Why can a network connection have high bandwidth but still feel slow to an application?",
+      "subject": "Computer Networks",
+      "topic": "Network Performance",
+      "difficulty": "MEDIUM",
+      "type": "SCENARIO",
+      "concepts": [
+        "bandwidth",
+        "latency",
+        "packet loss",
+        "throughput"
+      ],
+      "criteria": [
+        "distinguishes available bandwidth from experienced performance",
+        "identifies latency as a possible limiting factor",
+        "considers packet loss or congestion as possible causes",
+        "connects effective throughput to actual application performance"
+      ],
+      "follow_up": true
+    },
+    {
+      "id": "CN-013",
+      "question": "What happens when a host wants to communicate with another host on the same local network but only knows its IP address?",
+      "subject": "Computer Networks",
+      "topic": "Data Link Layer",
+      "difficulty": "MEDIUM",
+      "type": "SCENARIO",
+      "concepts": [
+        "ARP",
+        "IP address",
+        "MAC address",
+        "local delivery"
+      ],
+      "criteria": [
+        "identifies the need to resolve an IP address to a local MAC address",
+        "explains the role of ARP in IPv4 local communication",
+        "connects the resolved MAC address to frame delivery"
+      ],
+      "follow_up": true
+    },
+    {
+      "id": "CN-014",
+      "question": "How does DNS resolution affect the process of accessing a website?",
+      "subject": "Computer Networks",
+      "topic": "Application Layer",
+      "difficulty": "MEDIUM",
+      "type": "EXPLANATION",
+      "concepts": [
+        "DNS",
+        "domain name",
+        "IP address resolution",
+        "application connection"
+      ],
+      "criteria": [
+        "explains that DNS maps domain names to network addresses",
+        "connects DNS resolution to establishing communication with the destination",
+        "recognizes that DNS failure can prevent access even when other network components work"
+      ],
+      "follow_up": true
+    },
+    {
+      "id": "CN-015",
+      "question": "What is the difference between HTTP and HTTPS from a security perspective?",
+      "subject": "Computer Networks",
+      "topic": "Network Security",
+      "difficulty": "MEDIUM",
+      "type": "COMPARISON",
+      "concepts": [
+        "HTTP",
+        "HTTPS",
+        "TLS",
+        "encryption in transit"
+      ],
+      "criteria": [
+        "explains that HTTPS uses TLS to protect HTTP communication",
+        "identifies confidentiality as a protection provided by encryption",
+        "recognizes integrity and server authentication as additional security properties"
+      ],
+      "follow_up": true
+    },
+    {
+      "id": "CN-016",
+      "question": "What problem does NAT solve, and what effect does it have on communication between private and public networks?",
+      "subject": "Computer Networks",
+      "topic": "Network Layer",
+      "difficulty": "MEDIUM",
+      "type": "EXPLANATION",
+      "concepts": [
+        "NAT",
+        "private addressing",
+        "public addressing",
+        "address translation"
+      ],
+      "criteria": [
+        "explains translation between private and public address spaces",
+        "connects NAT to conservation of public IPv4 addresses",
+        "explains how translation affects communication across network boundaries"
+      ],
+      "follow_up": true
+    },
+    {
+      "id": "CN-017",
+      "question": "Why is IPv6 needed when IPv4 already provides network addressing?",
+      "subject": "Computer Networks",
+      "topic": "Network Layer",
+      "difficulty": "MEDIUM",
+      "type": "EXPLANATION",
+      "concepts": [
+        "IPv4",
+        "IPv6",
+        "address space",
+        "network scalability"
+      ],
+      "criteria": [
+        "identifies IPv4 address-space limitations",
+        "explains how IPv6 provides a substantially larger address space",
+        "connects IPv6 adoption to long-term network scalability"
+      ],
+      "follow_up": false
+    },
+    {
+      "id": "CN-018",
+      "question": "What is TTL in an IP packet, and how does it help prevent routing problems?",
+      "subject": "Computer Networks",
+      "topic": "Network Layer",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPTUAL",
+      "concepts": [
+        "TTL",
+        "IP packet",
+        "routing loops",
+        "packet lifetime"
+      ],
+      "criteria": [
+        "explains that TTL limits how long a packet can continue being forwarded",
+        "describes how the value decreases as the packet traverses routers",
+        "connects expiration to preventing packets from circulating indefinitely"
+      ],
+      "follow_up": true
+    },
+    {
+      "id": "CN-019",
+      "question": "A user can reach a server by its IP address but cannot reach it using its domain name. How would you investigate the problem?",
+      "subject": "Computer Networks",
+      "topic": "Network Troubleshooting",
+      "difficulty": "HARD",
+      "type": "DEBUGGING",
+      "concepts": [
+        "DNS resolution",
+        "name resolution",
+        "IP connectivity",
+        "DNS configuration"
+      ],
+      "criteria": [
+        "isolates DNS as a likely problem because direct IP connectivity works",
+        "checks whether the domain resolves to the expected address",
+        "considers resolver configuration or DNS-server availability",
+        "distinguishes name-resolution failure from general network connectivity failure"
+      ],
+      "follow_up": true
+    },
+    {
+      "id": "CN-020",
+      "question": "A service is reachable, but users experience intermittent timeouts during periods of heavy traffic. How would you determine whether congestion or packet loss is responsible?",
+      "subject": "Computer Networks",
+      "topic": "Network Troubleshooting",
+      "difficulty": "HARD",
+      "type": "DEBUGGING",
+      "concepts": [
+        "congestion",
+        "packet loss",
+        "latency",
+        "network monitoring"
+      ],
+      "criteria": [
+        "compares latency and packet-loss behavior during normal and peak periods",
+        "considers congestion as a cause of increased delay or dropped packets",
+        "uses end-to-end observations to narrow down the affected network segment",
+        "distinguishes network loss from application-side timeouts"
+      ],
+      "follow_up": true
+    },
+    {
+      "id": "CN-021",
+      "question": "A client establishes a TCP connection successfully, but data transfer becomes very slow afterward. What network-level factors would you investigate?",
+      "subject": "Computer Networks",
+      "topic": "Network Troubleshooting",
+      "difficulty": "HARD",
+      "type": "PROBLEM_SOLVING",
+      "concepts": [
+        "TCP throughput",
+        "congestion control",
+        "packet loss",
+        "latency"
+      ],
+      "criteria": [
+        "considers packet loss and retransmissions",
+        "investigates latency and congestion",
+        "considers TCP congestion-control behavior",
+        "distinguishes successful connection establishment from healthy sustained throughput"
+      ],
+      "follow_up": true
+    },
+    {
+      "id": "CN-022",
+      "question": "A network contains several interconnected switches, and a broadcast sent by one host reaches more devices than expected. How would you reason about the broadcast domain involved?",
+      "subject": "Computer Networks",
+      "topic": "Data Link Layer",
+      "difficulty": "HARD",
+      "type": "SCENARIO",
+      "concepts": [
+        "broadcast domain",
+        "switching",
+        "broadcast traffic",
+        "network segmentation"
+      ],
+      "criteria": [
+        "defines a broadcast domain in terms of devices receiving broadcast traffic",
+        "explains why interconnected switches can extend the same broadcast domain",
+        "recognizes network segmentation as a way to control broadcast scope"
+      ],
+      "follow_up": true
+    },
+    {
+      "id": "CN-023",
+      "question": "A remote application works well on a low-latency network but performs poorly when users connect across a high-latency link. How would you analyze the cause and improve the application's network behavior?",
+      "subject": "Computer Networks",
+      "topic": "Network Performance",
+      "difficulty": "HARD",
+      "type": "PERFORMANCE",
+      "concepts": [
+        "latency",
+        "round-trip time",
+        "protocol behavior",
+        "network efficiency"
+      ],
+      "criteria": [
+        "identifies round-trip latency as a key performance factor",
+        "explains how frequent request-response exchanges amplify latency",
+        "considers reducing unnecessary network round trips",
+        "distinguishes latency limitations from insufficient bandwidth"
+      ],
+      "follow_up": true
+    },
+    {
+      "id": "CN-024",
+      "question": "How would you design a basic troubleshooting approach for a host that cannot access a remote service?",
+      "subject": "Computer Networks",
+      "topic": "Network Troubleshooting",
+      "difficulty": "HARD",
+      "type": "DESIGN",
+      "concepts": [
+        "layered troubleshooting",
+        "connectivity",
+        "DNS",
+        "routing",
+        "transport connection"
+      ],
+      "criteria": [
+        "starts with basic local connectivity checks",
+        "separates DNS resolution from IP connectivity",
+        "considers routing and transport-layer connectivity",
+        "uses a systematic process to isolate the failing layer or component"
+      ],
+      "follow_up": true
+    },
+    {
+      "id": "CN-025",
+      "question": "A network design must support many devices while maintaining reliable communication and reasonable performance. What factors would you consider when deciding how to divide the network into smaller segments?",
+      "subject": "Computer Networks",
+      "topic": "Network Design",
+      "difficulty": "HARD",
+      "type": "DESIGN",
+      "concepts": [
+        "network segmentation",
+        "broadcast domains",
+        "IP addressing",
+        "scalability",
+        "performance"
+      ],
+      "criteria": [
+        "considers limiting broadcast scope",
+        "considers address planning and routing requirements",
+        "connects segmentation to scalability and performance",
+        "recognizes that excessive segmentation can add routing complexity"
+      ],
+      "follow_up": true
+    },
+    {
+      "id": "CN-026",
+      "question": "What is the difference between a LAN and a WAN?",
+      "subject": "Computer Networks",
+      "topic": "Networking Fundamentals",
+      "difficulty": "EASY",
+      "type": "COMPARISON",
+      "concepts": [
+        "LAN",
+        "WAN",
+        "network scope",
+        "connectivity"
+      ],
+      "criteria": [
+        "distinguishes LAN from WAN by geographic or organizational scope",
+        "explains that WANs connect networks across larger distances",
+        "recognizes differences in infrastructure and management considerations"
+      ],
+      "follow_up": false
+    },
+    {
+      "id": "CN-027",
+      "question": "What is the difference between a packet and a frame?",
+      "subject": "Computer Networks",
+      "topic": "OSI and TCP/IP Models",
+      "difficulty": "EASY",
+      "type": "COMPARISON",
+      "concepts": [
+        "packet",
+        "frame",
+        "network layer",
+        "data link layer"
+      ],
+      "criteria": [
+        "distinguishes packets from frames",
+        "associates packets with network-layer delivery",
+        "associates frames with data-link-layer delivery"
+      ],
+      "follow_up": false
+    },
+    {
+      "id": "CN-028",
+      "question": "What is the purpose of a port number at the transport layer?",
+      "subject": "Computer Networks",
+      "topic": "Transport Layer",
+      "difficulty": "EASY",
+      "type": "DEFINITION",
+      "concepts": [
+        "port number",
+        "transport layer",
+        "process identification",
+        "multiplexing"
+      ],
+      "criteria": [
+        "explains that ports identify application endpoints on a host",
+        "connects ports to transport-layer multiplexing and demultiplexing",
+        "distinguishes port numbers from IP addresses"
+      ],
+      "follow_up": false
+    },
+    {
+      "id": "CN-029",
+      "question": "What is ICMP used for in IP networks?",
+      "subject": "Computer Networks",
+      "topic": "Network Layer",
+      "difficulty": "EASY",
+      "type": "CONCEPTUAL",
+      "concepts": [
+        "ICMP",
+        "IP",
+        "error reporting",
+        "diagnostic communication"
+      ],
+      "criteria": [
+        "explains that ICMP supports control and error-reporting functions",
+        "distinguishes ICMP from ordinary application data transport",
+        "identifies diagnostic or reachability-related uses"
+      ],
+      "follow_up": false
+    },
+    {
+      "id": "CN-030",
+      "question": "Why does HTTPS use certificates in addition to encryption?",
+      "subject": "Computer Networks",
+      "topic": "Network Security",
+      "difficulty": "EASY",
+      "type": "EXPLANATION",
+      "concepts": [
+        "TLS",
+        "digital certificates",
+        "server authentication",
+        "encryption"
+      ],
+      "criteria": [
+        "explains that certificates help authenticate the server identity",
+        "distinguishes authentication from encryption",
+        "connects certificates to establishing trust during TLS"
+      ],
+      "follow_up": true
+    },
+    {
+      "id": "CN-031",
+      "question": "What problem does DHCP solve for devices joining an IP network?",
+      "subject": "Computer Networks",
+      "topic": "Application Layer",
+      "difficulty": "EASY",
+      "type": "CONCEPTUAL",
+      "concepts": [
+        "DHCP",
+        "IP configuration",
+        "network parameters",
+        "automatic configuration"
+      ],
+      "criteria": [
+        "explains that DHCP can automatically provide network configuration",
+        "identifies IP address assignment as a key function",
+        "recognizes that other parameters such as gateway or DNS information can also be provided"
+      ],
+      "follow_up": false
+    },
+    {
+      "id": "CN-032",
+      "question": "What is the purpose of subnetting an IP network?",
+      "subject": "Computer Networks",
+      "topic": "Network Layer",
+      "difficulty": "EASY",
+      "type": "EXPLANATION",
+      "concepts": [
+        "subnetting",
+        "IP addressing",
+        "network segmentation",
+        "address space"
+      ],
+      "criteria": [
+        "explains that subnetting divides an address space into smaller networks",
+        "connects subnetting to organization and address utilization",
+        "recognizes that smaller subnets can limit local broadcast scope"
+      ],
+      "follow_up": true
+    },
+    {
+      "id": "CN-033",
+      "question": "How does the TCP connection termination process differ conceptually from the TCP connection establishment process?",
+      "subject": "Computer Networks",
+      "topic": "Transport Layer",
+      "difficulty": "MEDIUM",
+      "type": "COMPARISON",
+      "concepts": [
+        "TCP connection establishment",
+        "TCP connection termination",
+        "connection state",
+        "FIN and acknowledgment"
+      ],
+      "criteria": [
+        "distinguishes establishment from termination",
+        "explains that termination allows endpoints to close communication state",
+        "recognizes that the two directions of communication can be closed independently"
+      ],
+      "follow_up": true
+    },
+    {
+      "id": "CN-034",
+      "question": "Why can packet loss reduce TCP throughput even when there is still significant available bandwidth?",
+      "subject": "Computer Networks",
+      "topic": "Transport Layer",
+      "difficulty": "MEDIUM",
+      "type": "PERFORMANCE",
+      "concepts": [
+        "packet loss",
+        "TCP congestion control",
+        "retransmission",
+        "throughput"
+      ],
+      "criteria": [
+        "explains that loss can trigger TCP congestion-control behavior",
+        "identifies retransmissions as additional overhead",
+        "connects reduced sending rate to lower effective throughput"
+      ],
+      "follow_up": true
+    },
+    {
+      "id": "CN-035",
+      "question": "Why does UDP sometimes make sense for applications that can tolerate some packet loss?",
+      "subject": "Computer Networks",
+      "topic": "Transport Layer",
+      "difficulty": "MEDIUM",
+      "type": "SCENARIO",
+      "concepts": [
+        "UDP",
+        "low overhead",
+        "application-controlled reliability",
+        "latency"
+      ],
+      "criteria": [
+        "explains that UDP avoids TCP's connection and reliability overhead",
+        "connects the choice to applications where timely delivery matters",
+        "recognizes that any required reliability may need to be handled elsewhere"
+      ],
+      "follow_up": true
+    },
+    {
+      "id": "CN-036",
+      "question": "How does a switch learn where to forward Ethernet frames?",
+      "subject": "Computer Networks",
+      "topic": "Data Link Layer",
+      "difficulty": "MEDIUM",
+      "type": "EXPLANATION",
+      "concepts": [
+        "MAC address table",
+        "frame forwarding",
+        "source MAC address",
+        "destination MAC address"
+      ],
+      "criteria": [
+        "explains that the switch learns from source MAC addresses",
+        "describes how learned addresses are associated with ports",
+        "explains how the destination MAC address influences forwarding"
+      ],
+      "follow_up": true
+    },
+    {
+      "id": "CN-037",
+      "question": "Why can a switch still flood a frame even though switches normally forward frames selectively?",
+      "subject": "Computer Networks",
+      "topic": "Data Link Layer",
+      "difficulty": "MEDIUM",
+      "type": "SCENARIO",
+      "concepts": [
+        "MAC address table",
+        "unknown destination",
+        "frame flooding",
+        "broadcast"
+      ],
+      "criteria": [
+        "explains that an unknown destination MAC can cause flooding",
+        "distinguishes unknown unicast flooding from normal known-destination forwarding",
+        "recognizes broadcast frames as another case where forwarding can be reach multiple ports"
+      ],
+      "follow_up": true
+    },
+    {
+      "id": "CN-038",
+      "question": "How does routing differ from forwarding in a network device?",
+      "subject": "Computer Networks",
+      "topic": "Network Layer",
+      "difficulty": "MEDIUM",
+      "type": "COMPARISON",
+      "concepts": [
+        "routing",
+        "forwarding",
+        "routing table",
+        "packet path"
+      ],
+      "criteria": [
+        "distinguishes path-selection decisions from per-packet forwarding",
+        "explains that routing determines suitable paths or next hops",
+        "explains that forwarding uses available information to send a packet toward its destination"
+      ],
+      "follow_up": true
+    },
+    {
+      "id": "CN-039",
+      "question": "Why can two hosts on the same IP network communicate directly without sending their traffic through a router?",
+      "subject": "Computer Networks",
+      "topic": "Network Layer",
+      "difficulty": "MEDIUM",
+      "type": "EXPLANATION",
+      "concepts": [
+        "subnet",
+        "local delivery",
+        "ARP",
+        "default gateway"
+      ],
+      "criteria": [
+        "explains how subnet information determines whether a destination is local",
+        "identifies direct local delivery as the appropriate path",
+        "contrasts local delivery with traffic destined for another network"
+      ],
+      "follow_up": true
+    },
+    {
+      "id": "CN-040",
+      "question": "What is the difference between unicast, broadcast, and multicast communication?",
+      "subject": "Computer Networks",
+      "topic": "Networking Fundamentals",
+      "difficulty": "MEDIUM",
+      "type": "COMPARISON",
+      "concepts": [
+        "unicast",
+        "broadcast",
+        "multicast",
+        "destination scope"
+      ],
+      "criteria": [
+        "distinguishes one-to-one, one-to-all, and one-to-selected-group communication",
+        "explains how destination scope differs between the three",
+        "identifies an appropriate use case for each communication pattern"
+      ],
+      "follow_up": true
+    },
+    {
+      "id": "CN-041",
+      "question": "A host has a valid IP address but cannot communicate with devices outside its local network. What configuration or network conditions would you investigate first?",
+      "subject": "Computer Networks",
+      "topic": "Network Troubleshooting",
+      "difficulty": "MEDIUM",
+      "type": "DEBUGGING",
+      "concepts": [
+        "default gateway",
+        "routing",
+        "IP configuration",
+        "local connectivity"
+      ],
+      "criteria": [
+        "checks whether the default gateway is correctly configured and reachable",
+        "distinguishes local connectivity from remote routing",
+        "considers subnet configuration and routing as possible causes"
+      ],
+      "follow_up": true
+    },
+    {
+      "id": "CN-042",
+      "question": "Why can a DNS server respond successfully while the requested application is still unreachable?",
+      "subject": "Computer Networks",
+      "topic": "Network Troubleshooting",
+      "difficulty": "MEDIUM",
+      "type": "SCENARIO",
+      "concepts": [
+        "DNS resolution",
+        "IP connectivity",
+        "transport connectivity",
+        "application availability"
+      ],
+      "criteria": [
+        "distinguishes successful name resolution from successful application communication",
+        "identifies routing or transport connectivity as separate checks",
+        "recognizes that the destination service itself may be unavailable"
+      ],
+      "follow_up": true
+    },
+    {
+      "id": "CN-043",
+      "question": "A network path shows low latency for small amounts of traffic but becomes highly delayed under heavy load. What does this suggest, and how would you investigate it?",
+      "subject": "Computer Networks",
+      "topic": "Network Performance",
+      "difficulty": "HARD",
+      "type": "DEBUGGING",
+      "concepts": [
+        "network congestion",
+        "queueing delay",
+        "latency",
+        "traffic load"
+      ],
+      "criteria": [
+        "identifies congestion or queue buildup as a likely cause",
+        "explains how increasing traffic can increase queueing delay",
+        "compares latency under different traffic levels",
+        "considers locating the congested link or device"
+      ],
+      "follow_up": true
+    },
+    {
+      "id": "CN-044",
+      "question": "A TCP connection repeatedly retransmits data even though the endpoints are functioning normally. How would you determine whether packet loss or excessive delay is causing the retransmissions?",
+      "subject": "Computer Networks",
+      "topic": "Network Troubleshooting",
+      "difficulty": "HARD",
+      "type": "PROBLEM_SOLVING",
+      "concepts": [
+        "TCP retransmission",
+        "packet loss",
+        "round-trip time",
+        "timeouts"
+      ],
+      "criteria": [
+        "examines packet delivery and acknowledgment behavior",
+        "considers both actual loss and delayed acknowledgments",
+        "relates retransmission timing to observed round-trip behavior",
+        "uses network measurements to distinguish loss from delay"
+      ],
+      "follow_up": true
+    },
+    {
+      "id": "CN-045",
+      "question": "A website loads quickly for nearby users but slowly for users in distant regions. How would you analyze whether network distance or server location is contributing to the difference?",
+      "subject": "Computer Networks",
+      "topic": "Network Performance",
+      "difficulty": "HARD",
+      "type": "PERFORMANCE",
+      "concepts": [
+        "network distance",
+        "latency",
+        "round-trip time",
+        "server location"
+      ],
+      "criteria": [
+        "considers increased round-trip latency over longer network paths",
+        "compares network measurements from different locations",
+        "distinguishes network-path effects from server processing delays",
+        "recognizes that geographic proximity can influence latency"
+      ],
+      "follow_up": true
+    },
+    {
+      "id": "CN-046",
+      "question": "A network has enough bandwidth for its average traffic volume, but users still experience poor performance during short traffic bursts. How would you explain this behavior?",
+      "subject": "Computer Networks",
+      "topic": "Network Performance",
+      "difficulty": "HARD",
+      "type": "SCENARIO",
+      "concepts": [
+        "traffic bursts",
+        "bandwidth",
+        "queueing",
+        "congestion"
+      ],
+      "criteria": [
+        "distinguishes average traffic volume from instantaneous demand",
+        "explains how bursts can temporarily exceed link capacity",
+        "connects burst traffic to queue buildup, delay, or packet loss"
+      ],
+      "follow_up": true
+    },
+    {
+      "id": "CN-047",
+      "question": "You need to secure communication between a client and server over an untrusted network. What security properties would you require from the connection, and how would TLS help provide them?",
+      "subject": "Computer Networks",
+      "topic": "Network Security",
+      "difficulty": "HARD",
+      "type": "DESIGN",
+      "concepts": [
+        "TLS",
+        "confidentiality",
+        "integrity",
+        "authentication"
+      ],
+      "criteria": [
+        "identifies confidentiality as protection against unauthorized observation",
+        "identifies integrity as protection against undetected modification",
+        "identifies endpoint authentication as an important security property",
+        "explains TLS's role in providing these protections"
+      ],
+      "follow_up": true
+    },
+    {
+      "id": "CN-048",
+      "question": "A company wants to divide a large network into smaller segments to reduce unnecessary broadcast traffic while still allowing communication between segments. What network-layer considerations would you make?",
+      "subject": "Computer Networks",
+      "topic": "Network Design",
+      "difficulty": "HARD",
+      "type": "DESIGN",
+      "concepts": [
+        "subnetting",
+        "network segmentation",
+        "routing",
+        "broadcast domains"
+      ],
+      "criteria": [
+        "uses subnetting or equivalent logical segmentation to create smaller networks",
+        "explains that communication between different subnets requires routing",
+        "connects smaller broadcast domains to reduced broadcast traffic",
+        "considers address planning and routing complexity"
+      ],
+      "follow_up": true
+    },
+    {
+      "id": "CN-049",
+      "question": "A service is reachable from some networks but not from others, while its server remains healthy. How would you systematically isolate whether the problem is routing, filtering, or the network path?",
+      "subject": "Computer Networks",
+      "topic": "Network Troubleshooting",
+      "difficulty": "HARD",
+      "type": "DEBUGGING",
+      "concepts": [
+        "routing",
+        "packet filtering",
+        "network path",
+        "connectivity testing"
+      ],
+      "criteria": [
+        "compares successful and failing source networks",
+        "checks whether routing paths differ between them",
+        "considers filtering or access-control behavior",
+        "uses path and connectivity observations to isolate the failing segment"
+      ],
+      "follow_up": true
+    },
+    {
+      "id": "CN-050",
+      "question": "A network application sends many small request-response messages and performs poorly over a high-latency connection. How would you redesign the communication pattern to reduce the impact of latency?",
+      "subject": "Computer Networks",
+      "topic": "Network Performance",
+      "difficulty": "HARD",
+      "type": "DESIGN",
+      "concepts": [
+        "latency",
+        "round trips",
+        "request-response pattern",
+        "communication efficiency"
+      ],
+      "criteria": [
+        "identifies excessive round trips as a major latency cost",
+        "considers batching or combining requests where appropriate",
+        "considers reducing unnecessary sequential communication",
+        "connects the proposed design changes to improved latency-sensitive performance"
+      ],
+      "follow_up": true
+    }
+  ]
+}

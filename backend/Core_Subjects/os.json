@@ -1,0 +1,1031 @@
+{
+"subject": "Operating Systems",
+"batch": null,
+"language": null,
+"questions": [
+{
+"id": "OS-001",
+"question": "What are the main responsibilities of an operating system?",
+"subject": "Operating Systems",
+"topic": "OS Fundamentals",
+"difficulty": "EASY",
+"type": "EXPLANATION",
+"concepts": [
+"resource management",
+"process management",
+"memory management",
+"file management"
+],
+"criteria": [
+"explains the purpose of an operating system",
+"identifies major resource-management responsibilities",
+"connects OS responsibilities to application execution"
+],
+"follow_up": false
+},
+{
+"id": "OS-002",
+"question": "What is the difference between user mode and kernel mode, and why are they separated?",
+"subject": "Operating Systems",
+"topic": "OS Fundamentals",
+"difficulty": "EASY",
+"type": "COMPARISON",
+"concepts": [
+"user mode",
+"kernel mode",
+"privileged operations",
+"protection"
+],
+"criteria": [
+"distinguishes user mode from kernel mode",
+"explains why privileged operations require protection",
+"connects mode separation to system safety"
+],
+"follow_up": false
+},
+{
+"id": "OS-003",
+"question": "What is a system call, and why does an application need one to request certain operating-system services?",
+"subject": "Operating Systems",
+"topic": "OS Fundamentals",
+"difficulty": "EASY",
+"type": "EXPLANATION",
+"concepts": [
+"system call",
+"OS services",
+"user-kernel boundary",
+"privileged operations"
+],
+"criteria": [
+"defines a system call correctly",
+"explains its role as an interface to OS services",
+"describes the user-kernel boundary"
+],
+"follow_up": false
+},
+{
+"id": "OS-004",
+"question": "What is a process, and what information does the operating system need to maintain about it?",
+"subject": "Operating Systems",
+"topic": "Processes",
+"difficulty": "EASY",
+"type": "DEFINITION",
+"concepts": [
+"process",
+"process state",
+"program counter",
+"process control block"
+],
+"criteria": [
+"defines a process as an executing program instance",
+"identifies process state information",
+"explains the purpose of a process control block"
+],
+"follow_up": true
+},
+{
+"id": "OS-005",
+"question": "What is the difference between a process and a thread?",
+"subject": "Operating Systems",
+"topic": "Processes and Threads",
+"difficulty": "EASY",
+"type": "COMPARISON",
+"concepts": [
+"process",
+"thread",
+"address space",
+"resource sharing"
+],
+"criteria": [
+"defines a process correctly",
+"defines a thread correctly",
+"explains their resource-sharing relationship",
+"identifies an important difference between them"
+],
+"follow_up": true
+},
+{
+"id": "OS-006",
+"question": "What is a context switch, and why does it introduce overhead?",
+"subject": "Operating Systems",
+"topic": "Processes and Threads",
+"difficulty": "EASY",
+"type": "EXPLANATION",
+"concepts": [
+"context switch",
+"CPU state",
+"process or thread state",
+"overhead"
+],
+"criteria": [
+"explains what state is saved and restored",
+"identifies when a context switch can occur",
+"explains why switching consumes CPU time"
+],
+"follow_up": true
+},
+{
+"id": "OS-007",
+"question": "What is the main goal of CPU scheduling, and what factors can be used to judge a scheduling algorithm?",
+"subject": "Operating Systems",
+"topic": "CPU Scheduling",
+"difficulty": "EASY",
+"type": "CONCEPTUAL",
+"concepts": [
+"CPU scheduling",
+"CPU utilization",
+"throughput",
+"turnaround time",
+"response time"
+],
+"criteria": [
+"explains the purpose of CPU scheduling",
+"identifies relevant scheduling metrics",
+"recognizes that scheduling goals can conflict"
+],
+"follow_up": false
+},
+{
+"id": "OS-008",
+"question": "What is a race condition, and under what circumstances can it occur?",
+"subject": "Operating Systems",
+"topic": "Process Synchronization",
+"difficulty": "EASY",
+"type": "CONCEPTUAL",
+"concepts": [
+"race condition",
+"concurrent execution",
+"shared data",
+"timing"
+],
+"criteria": [
+"defines a race condition correctly",
+"explains the role of concurrent access",
+"identifies how execution order can affect the result"
+],
+"follow_up": true
+},
+{
+"id": "OS-009",
+"question": "Why can a system with sufficient total memory still experience poor performance because of virtual memory?",
+"subject": "Operating Systems",
+"topic": "Virtual Memory",
+"difficulty": "MEDIUM",
+"type": "SCENARIO",
+"concepts": [
+"virtual memory",
+"page faults",
+"working set",
+"thrashing"
+],
+"criteria": [
+"connects poor performance to excessive page faults",
+"explains the relationship between working sets and available memory",
+"identifies thrashing as a possible cause"
+],
+"follow_up": true
+},
+{
+"id": "OS-010",
+"question": "Why is Round Robin scheduling generally suitable for interactive systems, and what happens if its time quantum is chosen poorly?",
+"subject": "Operating Systems",
+"topic": "CPU Scheduling",
+"difficulty": "MEDIUM",
+"type": "PERFORMANCE",
+"concepts": [
+"Round Robin",
+"time quantum",
+"response time",
+"context-switch overhead"
+],
+"criteria": [
+"explains how time slicing improves responsiveness",
+"describes the effect of a very small quantum",
+"describes the effect of a very large quantum",
+"recognizes the trade-off between responsiveness and overhead"
+],
+"follow_up": true
+},
+{
+"id": "OS-011",
+"question": "How does aging help address starvation in priority-based CPU scheduling?",
+"subject": "Operating Systems",
+"topic": "CPU Scheduling",
+"difficulty": "MEDIUM",
+"type": "EXPLANATION",
+"concepts": [
+"priority scheduling",
+"starvation",
+"aging",
+"priority adjustment"
+],
+"criteria": [
+"defines starvation in scheduling",
+"explains how waiting processes gain priority over time",
+"connects aging to eventual CPU access"
+],
+"follow_up": false
+},
+{
+"id": "OS-012",
+"question": "A process spends most of its time waiting for I/O while another process is CPU-intensive. How could a scheduler use this behavior when making scheduling decisions?",
+"subject": "Operating Systems",
+"topic": "CPU Scheduling",
+"difficulty": "MEDIUM",
+"type": "SCENARIO",
+"concepts": [
+"I/O-bound process",
+"CPU-bound process",
+"scheduling behavior",
+"CPU utilization"
+],
+"criteria": [
+"distinguishes I/O-bound and CPU-bound behavior",
+"explains why their scheduling needs differ",
+"connects scheduling decisions to CPU utilization and responsiveness"
+],
+"follow_up": true
+},
+{
+"id": "OS-013",
+"question": "What is the difference between a mutex and a semaphore, and when would each be appropriate?",
+"subject": "Operating Systems",
+"topic": "Process Synchronization",
+"difficulty": "MEDIUM",
+"type": "COMPARISON",
+"concepts": [
+"mutex",
+"semaphore",
+"mutual exclusion",
+"resource synchronization"
+],
+"criteria": [
+"distinguishes mutex ownership from semaphore signaling",
+"explains how a mutex provides mutual exclusion",
+"describes an appropriate use for a counting semaphore"
+],
+"follow_up": true
+},
+{
+"id": "OS-014",
+"question": "How does the producer-consumer problem demonstrate the need for synchronization?",
+"subject": "Operating Systems",
+"topic": "Process Synchronization",
+"difficulty": "MEDIUM",
+"type": "PROBLEM_SOLVING",
+"concepts": [
+"producer-consumer",
+"shared buffer",
+"mutual exclusion",
+"empty and full conditions"
+],
+"criteria": [
+"identifies the shared buffer as a synchronization point",
+"explains the need to prevent concurrent conflicting access",
+"recognizes the need to coordinate empty and full buffer states"
+],
+"follow_up": true
+},
+{
+"id": "OS-015",
+"question": "A system has multiple processes competing for resources. How would you distinguish a deadlock from ordinary resource contention?",
+"subject": "Operating Systems",
+"topic": "Deadlocks",
+"difficulty": "MEDIUM",
+"type": "SCENARIO",
+"concepts": [
+"deadlock",
+"resource contention",
+"waiting",
+"circular dependency"
+],
+"criteria": [
+"distinguishes temporary contention from permanent waiting",
+"identifies circular waiting as an important deadlock characteristic",
+"explains why deadlocked processes cannot make progress without intervention"
+],
+"follow_up": true
+},
+{
+"id": "OS-016",
+"question": "What four conditions must hold simultaneously for a deadlock to occur?",
+"subject": "Operating Systems",
+"topic": "Deadlocks",
+"difficulty": "MEDIUM",
+"type": "CONCEPTUAL",
+"concepts": [
+"mutual exclusion",
+"hold and wait",
+"no preemption",
+"circular wait"
+],
+"criteria": [
+"identifies all four necessary conditions",
+"explains each condition accurately",
+"recognizes that breaking any one condition can prevent deadlock"
+],
+"follow_up": true
+},
+{
+"id": "OS-017",
+"question": "What is the difference between deadlock prevention and deadlock avoidance?",
+"subject": "Operating Systems",
+"topic": "Deadlocks",
+"difficulty": "MEDIUM",
+"type": "COMPARISON",
+"concepts": [
+"deadlock prevention",
+"deadlock avoidance",
+"resource allocation",
+"safe state"
+],
+"criteria": [
+"distinguishes prevention from avoidance",
+"explains how prevention restricts necessary deadlock conditions",
+"explains how avoidance evaluates resource-allocation decisions"
+],
+"follow_up": true
+},
+{
+"id": "OS-018",
+"question": "Why does paging reduce external fragmentation, and what new overhead does it introduce?",
+"subject": "Operating Systems",
+"topic": "Memory Management",
+"difficulty": "MEDIUM",
+"type": "COMPARISON",
+"concepts": [
+"paging",
+"external fragmentation",
+"page tables",
+"address translation"
+],
+"criteria": [
+"explains why fixed-size pages avoid external fragmentation",
+"identifies page-table overhead",
+"recognizes address-translation overhead"
+],
+"follow_up": true
+},
+{
+"id": "OS-019",
+"question": "What is a TLB, and how can it improve the performance of virtual address translation?",
+"subject": "Operating Systems",
+"topic": "Memory Management",
+"difficulty": "MEDIUM",
+"type": "PERFORMANCE",
+"concepts": [
+"TLB",
+"page table",
+"address translation",
+"cache"
+],
+"criteria": [
+"explains the purpose of a TLB",
+"describes how a TLB hit avoids additional page-table lookup work",
+"connects TLB behavior to address-translation performance"
+],
+"follow_up": true
+},
+{
+"id": "OS-020",
+"question": "A program suddenly causes a large increase in page faults and spends very little time doing useful work. How would you diagnose the problem?",
+"subject": "Operating Systems",
+"topic": "Virtual Memory",
+"difficulty": "HARD",
+"type": "DEBUGGING",
+"concepts": [
+"page faults",
+"thrashing",
+"working set",
+"memory pressure"
+],
+"criteria": [
+"identifies excessive page faults as a key symptom",
+"recognizes thrashing as a likely cause",
+"relates the problem to insufficient memory for active working sets",
+"suggests reducing memory pressure or active working sets"
+],
+"follow_up": true
+},
+{
+"id": "OS-021",
+"question": "Two threads update the same shared counter concurrently, and the final value is sometimes incorrect. How would you make the operation safe without changing the intended result?",
+"subject": "Operating Systems",
+"topic": "Process Synchronization",
+"difficulty": "HARD",
+"type": "DEBUGGING",
+"concepts": [
+"race condition",
+"critical section",
+"mutual exclusion",
+"atomicity"
+],
+"criteria": [
+"identifies the update as a critical section",
+"explains how interleaving causes lost updates",
+"proposes appropriate mutual-exclusion or atomic synchronization",
+"preserves correctness under concurrent execution"
+],
+"follow_up": true
+},
+{
+"id": "OS-022",
+"question": "A system has several processes holding resources while waiting for additional resources, and progress has stopped. How would you determine whether the system is deadlocked and what recovery options could be considered?",
+"subject": "Operating Systems",
+"topic": "Deadlocks",
+"difficulty": "HARD",
+"type": "PROBLEM_SOLVING",
+"concepts": [
+"deadlock detection",
+"resource allocation",
+"wait-for relationships",
+"deadlock recovery"
+],
+"criteria": [
+"examines resource ownership and waiting relationships",
+"identifies a cycle or equivalent evidence of deadlock",
+"distinguishes detection from recovery",
+"describes viable recovery approaches such as resource preemption or process termination"
+],
+"follow_up": true
+},
+{
+"id": "OS-023",
+"question": "A scheduler provides excellent response time but causes excessive context switching and lower overall throughput. How would you analyze and improve this trade-off?",
+"subject": "Operating Systems",
+"topic": "CPU Scheduling",
+"difficulty": "HARD",
+"type": "PERFORMANCE",
+"concepts": [
+"context-switch overhead",
+"response time",
+"throughput",
+"time quantum"
+],
+"criteria": [
+"identifies excessive switching as a source of overhead",
+"explains the trade-off between responsiveness and throughput",
+"considers adjusting scheduling parameters",
+"evaluates the impact of changes using relevant metrics"
+],
+"follow_up": true
+},
+{
+"id": "OS-024",
+"question": "A process repeatedly accesses a small set of pages, but occasionally needs pages outside that set. How would you use this behavior to reason about page replacement and memory performance?",
+"subject": "Operating Systems",
+"topic": "Virtual Memory",
+"difficulty": "HARD",
+"type": "SCENARIO",
+"concepts": [
+"locality of reference",
+"working set",
+"page replacement",
+"page faults"
+],
+"criteria": [
+"recognizes locality of reference",
+"relates the frequently accessed pages to the working set",
+"explains how retaining active pages can reduce page faults",
+"considers the effect of replacement decisions on performance"
+],
+"follow_up": true
+},
+{
+"id": "OS-025",
+"question": "You are designing a concurrent system where multiple readers may access shared data simultaneously, but writers require exclusive access. What synchronization strategy would you consider, and what trade-offs must be addressed?",
+"subject": "Operating Systems",
+"topic": "Process Synchronization",
+"difficulty": "HARD",
+"type": "DESIGN",
+"concepts": [
+"reader-writer problem",
+"shared resource",
+"read-write synchronization",
+"starvation"
+],
+"criteria": [
+"recognizes the reader-writer synchronization pattern",
+"allows compatible concurrent reads",
+"ensures writers receive exclusive access",
+"considers fairness and reader or writer starvation"
+],
+"follow_up": true
+},
+{
+"id": "OS-026",
+"question": "What is the difference between a process being ready and being blocked?",
+"subject": "Operating Systems",
+"topic": "Processes",
+"difficulty": "EASY",
+"type": "COMPARISON",
+"concepts": [
+"ready state",
+"blocked state",
+"CPU availability",
+"event waiting"
+],
+"criteria": [
+"distinguishes ready from blocked states",
+"explains that a ready process is waiting for CPU access",
+"explains that a blocked process is waiting for an event or resource"
+],
+"follow_up": false
+},
+{
+"id": "OS-027",
+"question": "What happens to a process when it requests an I/O operation that cannot complete immediately?",
+"subject": "Operating Systems",
+"topic": "Processes",
+"difficulty": "EASY",
+"type": "EXPLANATION",
+"concepts": [
+"I/O request",
+"blocked state",
+"process state transition",
+"CPU scheduling"
+],
+"criteria": [
+"explains why the process cannot continue immediately",
+"identifies the transition to a blocked or waiting state",
+"explains that another runnable process can use the CPU"
+],
+"follow_up": true
+},
+{
+"id": "OS-028",
+"question": "What is inter-process communication, and why is it needed when processes have separate address spaces?",
+"subject": "Operating Systems",
+"topic": "Processes",
+"difficulty": "EASY",
+"type": "CONCEPTUAL",
+"concepts": [
+"inter-process communication",
+"address spaces",
+"data exchange",
+"process isolation"
+],
+"criteria": [
+"defines inter-process communication",
+"explains process address-space isolation",
+"identifies the need for controlled data exchange"
+],
+"follow_up": false
+},
+{
+"id": "OS-029",
+"question": "What are the main benefits of using multiple threads within a process?",
+"subject": "Operating Systems",
+"topic": "Threads",
+"difficulty": "EASY",
+"type": "EXPLANATION",
+"concepts": [
+"multithreading",
+"concurrency",
+"responsiveness",
+"resource sharing"
+],
+"criteria": [
+"identifies concurrency as a major benefit",
+"explains how threads can improve responsiveness",
+"recognizes resource sharing within a process",
+"avoids claiming that multiple threads always improve performance"
+],
+"follow_up": true
+},
+{
+"id": "OS-030",
+"question": "What is the difference between internal and external fragmentation?",
+"subject": "Operating Systems",
+"topic": "Memory Management",
+"difficulty": "EASY",
+"type": "COMPARISON",
+"concepts": [
+"internal fragmentation",
+"external fragmentation",
+"memory allocation",
+"unused space"
+],
+"criteria": [
+"defines internal fragmentation correctly",
+"defines external fragmentation correctly",
+"distinguishes where unused memory occurs"
+],
+"follow_up": false
+},
+{
+"id": "OS-031",
+"question": "What is a page fault, and why does handling one usually take much longer than a normal memory access?",
+"subject": "Operating Systems",
+"topic": "Virtual Memory",
+"difficulty": "EASY",
+"type": "EXPLANATION",
+"concepts": [
+"page fault",
+"virtual memory",
+"page table",
+"secondary storage"
+],
+"criteria": [
+"explains that the required page is not currently available in physical memory",
+"describes the OS role in handling the fault",
+"explains why storage access makes the operation significantly slower"
+],
+"follow_up": true
+},
+{
+"id": "OS-032",
+"question": "What is the purpose of file metadata, and why is it different from the file's actual contents?",
+"subject": "Operating Systems",
+"topic": "File Systems",
+"difficulty": "EASY",
+"type": "CONCEPTUAL",
+"concepts": [
+"file metadata",
+"file attributes",
+"file contents",
+"file management"
+],
+"criteria": [
+"defines file metadata",
+"gives relevant metadata examples",
+"distinguishes metadata from user data stored in the file"
+],
+"follow_up": false
+},
+{
+"id": "OS-033",
+"question": "Why can SJF scheduling provide low average waiting time, and what practical problem can it introduce?",
+"subject": "Operating Systems",
+"topic": "CPU Scheduling",
+"difficulty": "MEDIUM",
+"type": "PERFORMANCE",
+"concepts": [
+"Shortest Job First",
+"waiting time",
+"burst prediction",
+"starvation"
+],
+"criteria": [
+"explains why shorter jobs can reduce average waiting time",
+"recognizes the difficulty of knowing future CPU burst lengths",
+"identifies possible starvation of long-running jobs"
+],
+"follow_up": true
+},
+{
+"id": "OS-034",
+"question": "How does preemptive scheduling differ from non-preemptive scheduling, and what trade-offs does preemption introduce?",
+"subject": "Operating Systems",
+"topic": "CPU Scheduling",
+"difficulty": "MEDIUM",
+"type": "COMPARISON",
+"concepts": [
+"preemptive scheduling",
+"non-preemptive scheduling",
+"responsiveness",
+"context-switch overhead"
+],
+"criteria": [
+"distinguishes preemption from non-preemption",
+"explains how preemption can improve responsiveness",
+"identifies additional context-switch overhead",
+"recognizes synchronization implications of preemption"
+],
+"follow_up": true
+},
+{
+"id": "OS-035",
+"question": "Why is simply making a critical section larger usually a poor synchronization strategy?",
+"subject": "Operating Systems",
+"topic": "Process Synchronization",
+"difficulty": "MEDIUM",
+"type": "PERFORMANCE",
+"concepts": [
+"critical section",
+"mutual exclusion",
+"lock contention",
+"concurrency"
+],
+"criteria": [
+"explains that larger critical sections hold synchronization resources longer",
+"connects longer lock holding to reduced concurrency",
+"identifies increased waiting or contention",
+"emphasizes protecting only the necessary shared operations"
+],
+"follow_up": true
+},
+{
+"id": "OS-036",
+"question": "A shared resource is protected by a synchronization mechanism, but one thread repeatedly gets access while another keeps waiting. What problem might this indicate?",
+"subject": "Operating Systems",
+"topic": "Process Synchronization",
+"difficulty": "MEDIUM",
+"type": "DEBUGGING",
+"concepts": [
+"starvation",
+"fairness",
+"synchronization",
+"resource access"
+],
+"criteria": [
+"identifies starvation as a possible problem",
+"distinguishes starvation from deadlock",
+"explains the role of fairness in resource allocation",
+"suggests considering a fairer synchronization strategy"
+],
+"follow_up": true
+},
+{
+"id": "OS-037",
+"question": "How does a monitor simplify synchronization compared with directly coordinating multiple semaphore operations?",
+"subject": "Operating Systems",
+"topic": "Process Synchronization",
+"difficulty": "MEDIUM",
+"type": "COMPARISON",
+"concepts": [
+"monitor",
+"mutual exclusion",
+"condition variables",
+"synchronization abstraction"
+],
+"criteria": [
+"explains that a monitor encapsulates shared data and synchronization",
+"identifies implicit mutual exclusion for monitor operations",
+"explains the role of condition variables for waiting and signaling",
+"recognizes the abstraction benefit"
+],
+"follow_up": true
+},
+{
+"id": "OS-038",
+"question": "Why can an unsafe state exist even when the system is not currently deadlocked?",
+"subject": "Operating Systems",
+"topic": "Deadlocks",
+"difficulty": "MEDIUM",
+"type": "EXPLANATION",
+"concepts": [
+"safe state",
+"unsafe state",
+"resource allocation",
+"deadlock avoidance"
+],
+"criteria": [
+"distinguishes unsafe state from current deadlock",
+"explains that an unsafe state may lead to future deadlock",
+"connects safe-state analysis to future resource needs"
+],
+"follow_up": true
+},
+{
+"id": "OS-039",
+"question": "How does the Banker's algorithm decide whether granting a resource request is safe?",
+"subject": "Operating Systems",
+"topic": "Deadlocks",
+"difficulty": "MEDIUM",
+"type": "PROBLEM_SOLVING",
+"concepts": [
+"Banker's algorithm",
+"available resources",
+"maximum demand",
+"safe sequence"
+],
+"criteria": [
+"explains that the request is evaluated against available resources",
+"considers remaining resource needs",
+"explains the concept of a safe sequence",
+"recognizes that a request may be delayed even when resources are currently available"
+],
+"follow_up": true
+},
+{
+"id": "OS-040",
+"question": "Why can LRU generally perform better than FIFO for page replacement when a program exhibits locality of reference?",
+"subject": "Operating Systems",
+"topic": "Virtual Memory",
+"difficulty": "MEDIUM",
+"type": "COMPARISON",
+"concepts": [
+"LRU",
+"FIFO",
+"locality of reference",
+"page replacement"
+],
+"criteria": [
+"explains how LRU uses recent access history",
+"connects recent access to temporal locality",
+"contrasts this with FIFO's age-based replacement",
+"avoids claiming that LRU is always optimal"
+],
+"follow_up": true
+},
+{
+"id": "OS-041",
+"question": "Why can increasing the number of available frames sometimes fail to improve page-fault behavior under FIFO replacement?",
+"subject": "Operating Systems",
+"topic": "Virtual Memory",
+"difficulty": "MEDIUM",
+"type": "PROBLEM_SOLVING",
+"concepts": [
+"FIFO page replacement",
+"page frames",
+"page faults",
+"Belady's anomaly"
+],
+"criteria": [
+"recognizes that FIFO can exhibit Belady's anomaly",
+"explains that more frames do not always guarantee fewer page faults under FIFO",
+"distinguishes FIFO behavior from algorithms with the stack property"
+],
+"follow_up": true
+},
+{
+"id": "OS-042",
+"question": "What is the difference between logical and physical addresses, and why does the distinction matter in a virtual-memory system?",
+"subject": "Operating Systems",
+"topic": "Memory Management",
+"difficulty": "MEDIUM",
+"type": "COMPARISON",
+"concepts": [
+"logical address",
+"physical address",
+"address translation",
+"virtual memory"
+],
+"criteria": [
+"defines logical and physical addresses",
+"explains that translation maps logical addresses to physical locations",
+"connects the distinction to process isolation and virtual memory"
+],
+"follow_up": true
+},
+{
+"id": "OS-043",
+"question": "A system has many processes, but CPU utilization is unexpectedly low even though the processes are ready to run. What OS-level factors would you investigate?",
+"subject": "Operating Systems",
+"topic": "Processes and Scheduling",
+"difficulty": "HARD",
+"type": "DEBUGGING",
+"concepts": [
+"CPU utilization",
+"scheduler",
+"process states",
+"context switching"
+],
+"criteria": [
+"examines whether processes are genuinely runnable",
+"considers scheduling overhead or inefficient scheduling behavior",
+"considers excessive context switching",
+"distinguishes CPU availability from actual useful CPU work"
+],
+"follow_up": true
+},
+{
+"id": "OS-044",
+"question": "A synchronization design uses two locks, and different threads acquire them in opposite orders. How could this design lead to deadlock, and how would you prevent it?",
+"subject": "Operating Systems",
+"topic": "Deadlocks",
+"difficulty": "HARD",
+"type": "DEBUGGING",
+"concepts": [
+"lock ordering",
+"circular wait",
+"deadlock",
+"resource acquisition"
+],
+"criteria": [
+"identifies circular wait caused by inconsistent lock ordering",
+"explains how each thread can hold one lock while waiting for the other",
+"proposes a consistent global lock-ordering strategy",
+"recognizes lock acquisition design as a deadlock-prevention technique"
+],
+"follow_up": true
+},
+{
+"id": "OS-045",
+"question": "A process accesses memory in a pattern that causes frequent page faults even though it has enough pages for its actively used data at some moments. How would you determine whether the page-replacement policy is contributing to the problem?",
+"subject": "Operating Systems",
+"topic": "Virtual Memory",
+"difficulty": "HARD",
+"type": "DEBUGGING",
+"concepts": [
+"page replacement",
+"page-fault rate",
+"working set",
+"locality"
+],
+"criteria": [
+"analyzes the access pattern and locality",
+"compares page-fault behavior under different replacement policies",
+"considers whether frequently reused pages are being evicted",
+"distinguishes replacement-policy effects from insufficient memory"
+],
+"follow_up": true
+},
+{
+"id": "OS-046",
+"question": "A system must support many concurrent tasks that frequently block for I/O. How would you decide whether using threads is beneficial, and what limitations would you consider?",
+"subject": "Operating Systems",
+"topic": "Threads",
+"difficulty": "HARD",
+"type": "DESIGN",
+"concepts": [
+"multithreading",
+"I/O-bound workload",
+"concurrency",
+"thread overhead"
+],
+"criteria": [
+"connects blocking I/O with opportunities for concurrency",
+"explains how threads can keep useful work progressing while others wait",
+"considers scheduling and synchronization overhead",
+"recognizes that excessive thread counts can reduce efficiency"
+],
+"follow_up": true
+},
+{
+"id": "OS-047",
+"question": "A system uses a scheduling policy that strongly favors short tasks, but long tasks experience very long delays. How would you modify the policy to improve fairness without losing most of its efficiency?",
+"subject": "Operating Systems",
+"topic": "CPU Scheduling",
+"difficulty": "HARD",
+"type": "DESIGN",
+"concepts": [
+"shortest-job preference",
+"starvation",
+"aging",
+"fairness"
+],
+"criteria": [
+"identifies starvation of long tasks",
+"proposes aging or another fairness mechanism",
+"explains the trade-off between short-job efficiency and fairness",
+"considers the effect of the modification on response and waiting times"
+],
+"follow_up": true
+},
+{
+"id": "OS-048",
+"question": "A file system must support both sequential access to large files and efficient access to arbitrary portions of a file. What file-access and allocation considerations would you evaluate?",
+"subject": "Operating Systems",
+"topic": "File Systems",
+"difficulty": "HARD",
+"type": "DESIGN",
+"concepts": [
+"sequential access",
+"random access",
+"file allocation",
+"storage layout"
+],
+"criteria": [
+"distinguishes sequential and random access requirements",
+"considers how allocation affects access performance",
+"recognizes the trade-off between contiguous placement and flexible allocation",
+"considers fragmentation and growth requirements"
+],
+"follow_up": true
+},
+{
+"id": "OS-049",
+"question": "A storage system receives many requests for different disk locations. How would you reason about choosing a disk-scheduling strategy when both throughput and request latency matter?",
+"subject": "Operating Systems",
+"topic": "I/O and Storage",
+"difficulty": "HARD",
+"type": "PERFORMANCE",
+"concepts": [
+"disk scheduling",
+"throughput",
+"latency",
+"request ordering"
+],
+"criteria": [
+"recognizes that request ordering affects seek or service overhead",
+"considers both average latency and throughput",
+"discusses fairness or starvation as a scheduling concern",
+"selects a strategy based on workload characteristics rather than one universal rule"
+],
+"follow_up": true
+},
+{
+"id": "OS-050",
+"question": "A system performs the same expensive I/O operation repeatedly for frequently accessed data. How would buffering and caching differ in this situation, and where could each improve performance?",
+"subject": "Operating Systems",
+"topic": "I/O and Storage",
+"difficulty": "HARD",
+"type": "COMPARISON",
+"concepts": [
+"buffering",
+"caching",
+"I/O performance",
+"data reuse"
+],
+"criteria": [
+"distinguishes buffering from caching",
+"explains buffering as managing data during transfer between components",
+"explains caching as retaining reusable data to avoid repeated expensive access",
+"connects each technique to an appropriate performance benefit"
+],
+"follow_up": true
+}
+]
+}
