@@ -1,0 +1,28 @@
+export const ROUTES = {
+  LANDING: '/',
+  LOGIN: '/login',
+  REGISTER: '/register',
+  FORGOT_PASSWORD: '/forgot-password',
+  VERIFY_EMAIL: '/verify-email',
+  ONBOARDING: '/onboarding',
+  DASHBOARD: '/dashboard',
+  RESUME_ANALYZER: '/resume-analyzer',
+  AI_MEMORY: '/ai-memory',
+  CODING_PRACTICE: '/coding-practice',
+  APTITUDE: '/aptitude',
+  TECHNICAL_INTERVIEW: '/technical-interview',
+  BEHAVIORAL_INTERVIEW: '/behavioral-interview',
+  AI_VOICE_INTERVIEW: '/ai-voice-interview',
+  REPORTS: '/reports',
+  PROGRESS: '/progress',
+  ACHIEVEMENTS: '/achievements',
+  COMPANY_READINESS: '/company-readiness',
+  STUDY_PLANNER: '/study-planner',
+  SETTINGS: '/settings',
+  PROFILE: '/profile',
+  NOTIFICATIONS: '/notifications',
+  HELP: '/help',
+  ABOUT: '/about',
+} as const
+
+export type RoutePath = (typeof ROUTES)[keyof typeof ROUTES]

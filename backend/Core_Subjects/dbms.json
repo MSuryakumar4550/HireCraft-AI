@@ -1,0 +1,765 @@
+{
+"subject": "DBMS",
+"version": "1.0",
+"language": null,
+"questions": [
+{
+"id": "DBMS-001",
+"question": "What is the difference between a database and a DBMS?",
+"subject": "DBMS",
+"topic": "DBMS Fundamentals",
+"difficulty": "EASY",
+"type": "COMPARISON",
+"concepts": ["database", "DBMS", "data management"],
+"criteria": [
+"defines a database correctly",
+"defines a DBMS correctly",
+"explains the relationship between them"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-002",
+"question": "What is the difference between a database schema and a database instance?",
+"subject": "DBMS",
+"topic": "Database Fundamentals",
+"difficulty": "EASY",
+"type": "COMPARISON",
+"concepts": ["schema", "instance", "database structure"],
+"criteria": [
+"defines schema correctly",
+"defines instance correctly",
+"explains how they differ"
+],
+"follow_up": false
+},
+{
+"id": "DBMS-003",
+"question": "What is data independence in a DBMS?",
+"subject": "DBMS",
+"topic": "Database Architecture",
+"difficulty": "EASY",
+"type": "DEFINITION",
+"concepts": ["data independence", "logical independence", "physical independence"],
+"criteria": [
+"defines data independence",
+"explains the purpose",
+"mentions logical or physical independence appropriately"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-004",
+"question": "What is a primary key and why is it important?",
+"subject": "DBMS",
+"topic": "Keys",
+"difficulty": "EASY",
+"type": "DEFINITION",
+"concepts": ["primary key", "uniqueness", "entity identification"],
+"criteria": [
+"defines a primary key correctly",
+"explains uniqueness",
+"explains its role in identifying records"
+],
+"follow_up": false
+},
+{
+"id": "DBMS-005",
+"question": "What is the difference between a super key and a candidate key?",
+"subject": "DBMS",
+"topic": "Keys",
+"difficulty": "EASY",
+"type": "COMPARISON",
+"concepts": ["super key", "candidate key", "minimality"],
+"criteria": [
+"defines a super key correctly",
+"defines a candidate key correctly",
+"explains the minimality distinction"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-006",
+"question": "What is a foreign key and what problem does it solve?",
+"subject": "DBMS",
+"topic": "Keys and Constraints",
+"difficulty": "EASY",
+"type": "DEFINITION",
+"concepts": ["foreign key", "referential integrity", "relationships"],
+"criteria": [
+"defines a foreign key correctly",
+"explains referential integrity",
+"gives a suitable example"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-007",
+"question": "What is the purpose of database constraints?",
+"subject": "DBMS",
+"topic": "Constraints",
+"difficulty": "EASY",
+"type": "EXPLANATION",
+"concepts": ["data integrity", "validation", "constraints"],
+"criteria": [
+"explains why constraints are needed",
+"mentions data integrity",
+"provides relevant examples"
+],
+"follow_up": false
+},
+{
+"id": "DBMS-008",
+"question": "Why are indexes used in databases?",
+"subject": "DBMS",
+"topic": "Indexing",
+"difficulty": "EASY",
+"type": "EXPLANATION",
+"concepts": ["index", "query performance", "data lookup"],
+"criteria": [
+"explains the purpose of an index",
+"connects indexes to faster lookups",
+"mentions the trade-off of additional storage or maintenance"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-009",
+"question": "What is a transaction in a DBMS?",
+"subject": "DBMS",
+"topic": "Transactions",
+"difficulty": "EASY",
+"type": "DEFINITION",
+"concepts": ["transaction", "unit of work", "database state"],
+"criteria": [
+"defines a transaction correctly",
+"explains it as a logical unit of work",
+"provides an example"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-010",
+"question": "What are the ACID properties of a transaction?",
+"subject": "DBMS",
+"topic": "Transactions",
+"difficulty": "EASY",
+"type": "DEFINITION",
+"concepts": ["atomicity", "consistency", "isolation", "durability"],
+"criteria": [
+"identifies all four ACID properties",
+"gives a basic explanation of each",
+"connects them to reliable transactions"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-011",
+"question": "What is normalization and why is it used?",
+"subject": "DBMS",
+"topic": "Normalization",
+"difficulty": "EASY",
+"type": "DEFINITION",
+"concepts": ["normalization", "redundancy", "data integrity"],
+"criteria": [
+"defines normalization correctly",
+"explains redundancy reduction",
+"connects normalization to data integrity"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-012",
+"question": "What is the purpose of an ER diagram?",
+"subject": "DBMS",
+"topic": "ER Modeling",
+"difficulty": "EASY",
+"type": "DEFINITION",
+"concepts": ["entities", "attributes", "relationships"],
+"criteria": [
+"explains what an ER diagram represents",
+"identifies entities and relationships",
+"explains its role in database design"
+],
+"follow_up": false
+},
+{
+"id": "DBMS-013",
+"question": "What is cardinality in an entity-relationship model?",
+"subject": "DBMS",
+"topic": "ER Modeling",
+"difficulty": "EASY",
+"type": "DEFINITION",
+"concepts": ["cardinality", "one-to-one", "one-to-many", "many-to-many"],
+"criteria": [
+"defines cardinality correctly",
+"explains relationship counts",
+"provides a suitable example"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-014",
+"question": "What is the difference between a dirty read and a non-repeatable read?",
+"subject": "DBMS",
+"topic": "Concurrency Control",
+"difficulty": "MEDIUM",
+"type": "COMPARISON",
+"concepts": ["dirty read", "non-repeatable read", "concurrency"],
+"criteria": [
+"defines dirty read correctly",
+"defines non-repeatable read correctly",
+"clearly distinguishes the two"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-015",
+"question": "What is a serial schedule and why is serializability important?",
+"subject": "DBMS",
+"topic": "Concurrency Control",
+"difficulty": "MEDIUM",
+"type": "EXPLANATION",
+"concepts": ["serial schedule", "serializability", "concurrent transactions"],
+"criteria": [
+"defines a serial schedule",
+"explains serializability",
+"connects it to correctness of concurrent execution"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-016",
+"question": "What is conflict serializability?",
+"subject": "DBMS",
+"topic": "Concurrency Control",
+"difficulty": "MEDIUM",
+"type": "DEFINITION",
+"concepts": ["conflicting operations", "serial schedule", "conflict serializability"],
+"criteria": [
+"defines conflict serializability",
+"identifies conflicting operations",
+"explains the relationship to a serial schedule"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-017",
+"question": "What is a deadlock in database concurrency control?",
+"subject": "DBMS",
+"topic": "Concurrency Control",
+"difficulty": "MEDIUM",
+"type": "DEFINITION",
+"concepts": ["deadlock", "circular wait", "transactions"],
+"criteria": [
+"defines deadlock correctly",
+"explains circular waiting",
+"provides a transaction example"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-018",
+"question": "What is two-phase locking and how does it help with concurrency control?",
+"subject": "DBMS",
+"topic": "Concurrency Control",
+"difficulty": "MEDIUM",
+"type": "EXPLANATION",
+"concepts": ["two-phase locking", "growing phase", "shrinking phase", "serializability"],
+"criteria": [
+"explains the two phases",
+"describes lock acquisition and release",
+"connects the protocol to serializability"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-019",
+"question": "What is the difference between clustered and non-clustered indexing?",
+"subject": "DBMS",
+"topic": "Indexing",
+"difficulty": "MEDIUM",
+"type": "COMPARISON",
+"concepts": ["clustered index", "non-clustered index", "data organization"],
+"criteria": [
+"distinguishes the two indexing approaches",
+"explains their data organization",
+"mentions an appropriate trade-off"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-020",
+"question": "When should you create an index, and when might an index hurt performance?",
+"subject": "DBMS",
+"topic": "Indexing",
+"difficulty": "MEDIUM",
+"type": "SCENARIO",
+"concepts": ["read performance", "write overhead", "selectivity", "index trade-offs"],
+"criteria": [
+"identifies situations where indexes help",
+"explains write or storage overhead",
+"considers query patterns or selectivity"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-021",
+"question": "What are update, insertion, and deletion anomalies?",
+"subject": "DBMS",
+"topic": "Normalization",
+"difficulty": "MEDIUM",
+"type": "DEFINITION",
+"concepts": ["update anomaly", "insertion anomaly", "deletion anomaly"],
+"criteria": [
+"defines the three anomalies",
+"explains how redundancy causes them",
+"provides suitable examples"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-022",
+"question": "What is the difference between 2NF and 3NF?",
+"subject": "DBMS",
+"topic": "Normalization",
+"difficulty": "MEDIUM",
+"type": "COMPARISON",
+"concepts": ["2NF", "3NF", "partial dependency", "transitive dependency"],
+"criteria": [
+"defines 2NF accurately",
+"defines 3NF accurately",
+"distinguishes partial and transitive dependency"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-023",
+"question": "What is a functional dependency?",
+"subject": "DBMS",
+"topic": "Functional Dependencies",
+"difficulty": "MEDIUM",
+"type": "DEFINITION",
+"concepts": ["functional dependency", "determinant", "attribute dependency"],
+"criteria": [
+"defines functional dependency correctly",
+"explains determinant and dependent attributes",
+"gives a valid example"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-024",
+"question": "What is the difference between lossless and lossy decomposition?",
+"subject": "DBMS",
+"topic": "Normalization",
+"difficulty": "MEDIUM",
+"type": "COMPARISON",
+"concepts": ["decomposition", "lossless join", "information preservation"],
+"criteria": [
+"defines lossless decomposition",
+"explains lossy decomposition",
+"connects the distinction to preserving information"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-025",
+"question": "A read-heavy system is experiencing slow queries. How would you decide whether to add indexes or change the database design?",
+"subject": "DBMS",
+"topic": "Performance and Indexing",
+"difficulty": "MEDIUM",
+"type": "PROBLEM_SOLVING",
+"concepts": ["query performance", "indexing", "schema design", "trade-offs"],
+"criteria": [
+"considers query patterns",
+"evaluates indexing opportunities",
+"considers schema design and write overhead",
+"uses evidence such as query execution behavior before changing the design"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-026",
+"question": "What is the difference between a strong entity and a weak entity?",
+"subject": "DBMS",
+"topic": "ER Modeling",
+"difficulty": "MEDIUM",
+"type": "COMPARISON",
+"concepts": ["strong entity", "weak entity", "identifying relationship"],
+"criteria": [
+"defines a strong entity",
+"defines a weak entity",
+"explains how a weak entity depends on another entity"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-027",
+"question": "What is participation in an entity-relationship model?",
+"subject": "DBMS",
+"topic": "ER Modeling",
+"difficulty": "MEDIUM",
+"type": "DEFINITION",
+"concepts": ["participation constraint", "total participation", "partial participation"],
+"criteria": [
+"defines participation",
+"distinguishes total and partial participation",
+"gives a suitable example"
+],
+"follow_up": false
+},
+{
+"id": "DBMS-028",
+"question": "How would you map a many-to-many relationship from an ER model into relational tables?",
+"subject": "DBMS",
+"topic": "ER to Relational Mapping",
+"difficulty": "MEDIUM",
+"type": "DESIGN",
+"concepts": ["many-to-many relationship", "junction table", "foreign keys"],
+"criteria": [
+"proposes an associative or junction table",
+"uses appropriate foreign keys",
+"explains how relationship instances are represented"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-029",
+"question": "What is BCNF, and how is it stricter than 3NF?",
+"subject": "DBMS",
+"topic": "Normalization",
+"difficulty": "MEDIUM",
+"type": "COMPARISON",
+"concepts": ["BCNF", "3NF", "functional dependency", "determinant"],
+"criteria": [
+"defines BCNF accurately",
+"explains the determinant condition",
+"distinguishes BCNF from 3NF"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-030",
+"question": "What is dependency preservation in database decomposition?",
+"subject": "DBMS",
+"topic": "Normalization",
+"difficulty": "MEDIUM",
+"type": "DEFINITION",
+"concepts": ["functional dependencies", "decomposition", "dependency preservation"],
+"criteria": [
+"defines dependency preservation",
+"explains why it matters",
+"connects it to enforcing dependencies after decomposition"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-031",
+"question": "What is the difference between an index that determines the ordering of table data and an index stored separately from the table data?",
+"subject": "DBMS",
+"topic": "Indexing",
+"difficulty": "MEDIUM",
+"type": "COMPARISON",
+"concepts": ["data ordering", "clustered organization", "secondary index"],
+"criteria": [
+"distinguishes the two organization approaches",
+"explains how data ordering differs",
+"mentions relevant performance or storage trade-offs"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-032",
+"question": "What is a non-repeatable read?",
+"subject": "DBMS",
+"topic": "Concurrency Control",
+"difficulty": "MEDIUM",
+"type": "DEFINITION",
+"concepts": ["non-repeatable read", "concurrent update", "transaction isolation"],
+"criteria": [
+"defines a non-repeatable read correctly",
+"explains how another transaction can change the value",
+"provides a suitable example"
+],
+"follow_up": false
+},
+{
+"id": "DBMS-033",
+"question": "What is a phantom read and how is it different from a non-repeatable read?",
+"subject": "DBMS",
+"topic": "Concurrency Control",
+"difficulty": "MEDIUM",
+"type": "COMPARISON",
+"concepts": ["phantom read", "non-repeatable read", "range results"],
+"criteria": [
+"defines phantom read correctly",
+"explains the role of newly appearing or disappearing rows",
+"distinguishes it from a changed existing row"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-034",
+"question": "What is the difference between conflict serializability and view serializability?",
+"subject": "DBMS",
+"topic": "Concurrency Control",
+"difficulty": "HARD",
+"type": "COMPARISON",
+"concepts": ["conflict serializability", "view serializability", "equivalent schedules"],
+"criteria": [
+"defines both concepts",
+"explains the basis of each form of equivalence",
+"identifies the relationship between them"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-035",
+"question": "How would you determine whether a schedule is conflict-serializable?",
+"subject": "DBMS",
+"topic": "Concurrency Control",
+"difficulty": "HARD",
+"type": "PROBLEM_SOLVING",
+"concepts": ["precedence graph", "conflicting operations", "acyclic graph"],
+"criteria": [
+"identifies conflicting operations",
+"constructs or explains a precedence graph",
+"uses graph acyclicity to determine serializability"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-036",
+"question": "How does two-phase locking prevent certain concurrency anomalies, and what problems can it introduce?",
+"subject": "DBMS",
+"topic": "Concurrency Control",
+"difficulty": "HARD",
+"type": "EXPLANATION",
+"concepts": ["two-phase locking", "serializability", "blocking", "deadlock"],
+"criteria": [
+"explains how locking controls conflicting operations",
+"connects it to serializability",
+"identifies blocking or deadlock as possible costs"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-037",
+"question": "How would you handle a system where concurrent transactions frequently cause lock contention?",
+"subject": "DBMS",
+"topic": "Concurrency Control",
+"difficulty": "HARD",
+"type": "PROBLEM_SOLVING",
+"concepts": ["lock contention", "transaction duration", "concurrency"],
+"criteria": [
+"identifies possible causes of contention",
+"suggests reducing unnecessary lock duration",
+"considers transaction design and workload characteristics"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-038",
+"question": "Why are B+ trees commonly suitable for database indexes?",
+"subject": "DBMS",
+"topic": "Indexing",
+"difficulty": "HARD",
+"type": "EXPLANATION",
+"concepts": ["B+ tree", "balanced tree", "ordered access", "range queries"],
+"criteria": [
+"explains balanced tree structure",
+"connects it to efficient lookup",
+"explains why ordered structure supports range queries"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-039",
+"question": "When might a hash-based index be preferable to a tree-based index?",
+"subject": "DBMS",
+"topic": "Indexing",
+"difficulty": "HARD",
+"type": "COMPARISON",
+"concepts": ["hash indexing", "equality lookup", "range queries"],
+"criteria": [
+"identifies equality lookups as a suitable use case",
+"explains the limitation for ordered or range access",
+"compares it with tree-based indexing"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-040",
+"question": "How would you decide which columns should be indexed in a large table?",
+"subject": "DBMS",
+"topic": "Indexing",
+"difficulty": "HARD",
+"type": "DESIGN",
+"concepts": ["query patterns", "selectivity", "write overhead", "index design"],
+"criteria": [
+"considers actual query patterns",
+"considers selectivity or filtering usefulness",
+"considers write and storage overhead",
+"avoids indexing every column blindly"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-041",
+"question": "What does consistency mean in ACID, and how do database constraints and application logic work together to preserve valid states?",
+"subject": "DBMS",
+"topic": "Transactions",
+"difficulty": "HARD",
+"type": "EXPLANATION",
+"concepts": ["ACID consistency", "integrity constraints", "valid database states"],
+"criteria": [
+"defines consistency in the ACID context",
+"explains the role of database constraints",
+"explains how application logic can contribute",
+"does not confuse consistency with isolation"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-042",
+"question": "What happens when a transaction fails halfway through its operations, and how does the DBMS recover?",
+"subject": "DBMS",
+"topic": "Recovery",
+"difficulty": "HARD",
+"type": "SCENARIO",
+"concepts": ["transaction failure", "rollback", "recovery"],
+"criteria": [
+"explains that incomplete work must not leave an invalid state",
+"describes rollback or undo behavior",
+"connects recovery to transaction atomicity"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-043",
+"question": "What is write-ahead logging and why is it useful for database recovery?",
+"subject": "DBMS",
+"topic": "Recovery",
+"difficulty": "HARD",
+"type": "EXPLANATION",
+"concepts": ["write-ahead logging", "log records", "recovery"],
+"criteria": [
+"explains the basic write-ahead principle",
+"connects log persistence to recovery",
+"explains how it supports undo or redo"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-044",
+"question": "What is the purpose of a checkpoint during database recovery?",
+"subject": "DBMS",
+"topic": "Recovery",
+"difficulty": "HARD",
+"type": "DEFINITION",
+"concepts": ["checkpoint", "recovery time", "log processing"],
+"criteria": [
+"defines a checkpoint",
+"explains how it reduces recovery work",
+"connects it to log processing"
+],
+"follow_up": false
+},
+{
+"id": "DBMS-045",
+"question": "A database contains repeated customer information across many rows. How would you redesign it to reduce redundancy without losing necessary relationships?",
+"subject": "DBMS",
+"topic": "Normalization",
+"difficulty": "HARD",
+"type": "DESIGN",
+"concepts": ["normalization", "redundancy", "functional dependencies", "relationships"],
+"criteria": [
+"identifies redundant data",
+"proposes decomposing the data into related relations",
+"preserves relationships using appropriate keys",
+"considers normalization principles"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-046",
+"question": "How would you detect and resolve a database deadlock?",
+"subject": "DBMS",
+"topic": "Concurrency Control",
+"difficulty": "HARD",
+"type": "PROBLEM_SOLVING",
+"concepts": ["deadlock detection", "wait-for graph", "victim transaction", "prevention"],
+"criteria": [
+"explains how a deadlock can be detected",
+"describes a suitable recovery approach",
+"mentions prevention or avoidance strategies"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-047",
+"question": "A denormalized table improves read performance but causes inconsistencies during updates. How would you balance these competing concerns?",
+"subject": "DBMS",
+"topic": "Database Design Trade-offs",
+"difficulty": "HARD",
+"type": "DESIGN",
+"concepts": ["denormalization", "read performance", "data consistency", "trade-offs"],
+"criteria": [
+"explains why denormalization can improve reads",
+"identifies consistency risks",
+"suggests controlled use of denormalization",
+"considers workload and correctness requirements"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-048",
+"question": "An index is making a frequently updated table slower. How would you investigate whether the index should be changed or removed?",
+"subject": "DBMS",
+"topic": "Index Performance",
+"difficulty": "HARD",
+"type": "PERFORMANCE",
+"concepts": ["index maintenance cost", "write performance", "query workload", "index usefulness"],
+"criteria": [
+"identifies index maintenance as a potential write cost",
+"examines actual query usage",
+"evaluates read benefit against write overhead",
+"makes the decision based on workload evidence"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-049",
+"question": "Two transactions are repeatedly becoming blocked while waiting for each other. How would you debug the problem and prevent it from recurring?",
+"subject": "DBMS",
+"topic": "Concurrency Control",
+"difficulty": "HARD",
+"type": "DEBUGGING",
+"concepts": ["deadlock", "lock ordering", "transaction design", "prevention"],
+"criteria": [
+"recognizes the possibility of deadlock",
+"identifies conflicting lock acquisition",
+"suggests consistent lock ordering or shorter transactions",
+"explains how the proposed change reduces recurrence"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-050",
+"question": "You are designing a system where some operations require strong consistency while others can tolerate slightly stale data. How would you approach the database design?",
+"subject": "DBMS",
+"topic": "Consistency and System Design",
+"difficulty": "HARD",
+"type": "DESIGN",
+"concepts": ["strong consistency", "stale reads", "workload requirements", "trade-offs"],
+"criteria": [
+"identifies different consistency requirements",
+"separates workloads or access patterns where appropriate",
+"explains the trade-off between consistency and performance",
+"bases the design on business requirements"
+],
+"follow_up": true
+}
+]
+}
