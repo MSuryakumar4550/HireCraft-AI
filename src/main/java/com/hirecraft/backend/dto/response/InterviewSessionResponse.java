@@ -1,0 +1,24 @@
+package com.hirecraft.backend.dto.response;
+
+import com.hirecraft.backend.enums.InterviewStatus;
+import com.hirecraft.backend.enums.InterviewType;
+import lombok.Builder;
+import lombok.Getter;
+
+import java.math.BigDecimal;
+import java.time.Instant;
+import java.util.UUID;
+
+@Getter
+@Builder
+public class InterviewSessionResponse {
+
+    private final UUID interviewSessionId;
+    private final InterviewType interviewType;
+    private final InterviewStatus status;
+    private final String sessionIdentifier;
+    private final Boolean transcriptAvailable;
+    private final Integer totalQuestions;
+    private final BigDecimal totalScore;
+    private final Instant createdAt;
+}
