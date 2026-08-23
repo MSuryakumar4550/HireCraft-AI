@@ -1,6 +1,7 @@
-HELP.md
-target/
-.mvn/wrapper/maven-wrapper.jar
+backend/HELP.md
+backend/environment/.env
+backend/target/
+backend/.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
 
@@ -30,4 +31,4 @@ build/
 !**/src/test/**/build/
 
 ### VS Code ###
-.vscode/
+backend/.vscode/
