@@ -23,6 +23,7 @@ export const ROUTES = {
   NOTIFICATIONS: '/notifications',
   HELP: '/help',
   ABOUT: '/about',
+  NEW_INTERVIEW: '/new-interview',
 } as const
 
 export type RoutePath = (typeof ROUTES)[keyof typeof ROUTES]

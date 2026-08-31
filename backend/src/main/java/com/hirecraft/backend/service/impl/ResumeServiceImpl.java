@@ -10,7 +10,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.UUID;
+
 
 @Service
 @RequiredArgsConstructor
@@ -20,7 +20,7 @@ public class ResumeServiceImpl implements ResumeService {
 
     @Override
     @Transactional
-    public UserProfileResponse updateResumeMetadata(UUID userId, String filename, String mimeType,
+    public UserProfileResponse updateResumeMetadata(Long userId, String filename, String mimeType,
                                                      Long fileSize, String objectKey,
                                                      String storageProvider, String storageBucket) {
         User user = findUserById(userId);
@@ -39,11 +39,11 @@ public class ResumeServiceImpl implements ResumeService {
 
     @Override
     @Transactional(readOnly = true)
-    public UserProfileResponse getResumeStatus(UUID userId) {
+    public UserProfileResponse getResumeStatus(Long userId) {
         return toProfileResponse(findUserById(userId));
     }
 
-    private User findUserById(UUID userId) {
+    private User findUserById(Long userId) {
         return userRepository.findById(userId)
                 .orElseThrow(() -> new ResourceNotFoundException("User", userId));
     }

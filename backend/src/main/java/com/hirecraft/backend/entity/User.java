@@ -10,11 +10,12 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.JdbcTypeCode;
 import org.hibernate.annotations.UpdateTimestamp;
+import org.hibernate.type.SqlTypes;
 
 import java.math.BigDecimal;
 import java.time.Instant;
-import java.util.UUID;
 
 @Entity
 @Table(name = "users")
@@ -26,9 +27,9 @@ import java.util.UUID;
 public class User {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "user_id", nullable = false, updatable = false)
-    private UUID userId;
+    private Long userId;
 
     @Column(name = "email", nullable = false, unique = true, length = 255)
     private String email;
@@ -55,6 +56,9 @@ public class User {
     @Column(name = "cgpa", precision = 4, scale = 2)
     private BigDecimal cgpa;
 
+    @Column(name = "academic_year")
+    private Integer academicYear;
+
     @Column(name = "graduation_year")
     private Integer graduationYear;
 
@@ -65,13 +69,16 @@ public class User {
     @Column(name = "target_role", length = 255)
     private String targetRole;
 
-    @Column(name = "career_interests", columnDefinition = "TEXT")
+    @JdbcTypeCode(SqlTypes.JSON)
+    @Column(name = "career_interests", columnDefinition = "jsonb")
     private String careerInterests;
 
-    @Column(name = "strengths", columnDefinition = "TEXT")
+    @JdbcTypeCode(SqlTypes.JSON)
+    @Column(name = "strengths", columnDefinition = "jsonb")
     private String strengths;
 
-    @Column(name = "weaknesses", columnDefinition = "TEXT")
+    @JdbcTypeCode(SqlTypes.JSON)
+    @Column(name = "weaknesses", columnDefinition = "jsonb")
     private String weaknesses;
 
     // Resume metadata — stored inline per DATABASE.md design decision
@@ -93,14 +100,18 @@ public class User {
     @Column(name = "resume_file_size")
     private Long resumeFileSize;
 
+    @Column(name = "resume_uploaded_at")
+    private Instant resumeUploadedAt;
+
     @Enumerated(EnumType.STRING)
     @Column(name = "resume_processing_status", length = 20)
     private ResumeProcessingStatus resumeProcessingStatus;
 
-    @Column(name = "resume_ats_score")
-    private Integer resumeAtsScore;
+    @Column(name = "resume_ats_score", precision = 5, scale = 2)
+    private BigDecimal resumeAtsScore;
 
-    @Column(name = "resume_analysis", columnDefinition = "TEXT")
+    @JdbcTypeCode(SqlTypes.JSON)
+    @Column(name = "resume_analysis", columnDefinition = "jsonb")
     private String resumeAnalysis;
 
     @CreationTimestamp
@@ -110,4 +121,7 @@ public class User {
     @UpdateTimestamp
     @Column(name = "updated_at", nullable = false)
     private Instant updatedAt;
+
+    @Column(name = "deleted_at")
+    private Instant deletedAt;
 }

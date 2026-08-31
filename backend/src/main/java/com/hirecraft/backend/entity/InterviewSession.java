@@ -9,13 +9,11 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
-import org.hibernate.annotations.UpdateTimestamp;
 
 import java.math.BigDecimal;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
 
 @Entity
 @Table(name = "interview_sessions")
@@ -27,13 +25,20 @@ import java.util.UUID;
 public class InterviewSession {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "interview_session_id", nullable = false, updatable = false)
-    private UUID interviewSessionId;
+    private Long interviewSessionId;
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "user_id", nullable = false)
     private User user;
+
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @JoinColumn(name = "virtual_interview_id", nullable = false)
+    private VirtualInterview virtualInterview;
+
+    @Column(name = "stage_order")
+    private Integer stageOrder;
 
     @Enumerated(EnumType.STRING)
     @Column(name = "interview_type", nullable = false, length = 20)
@@ -58,6 +63,12 @@ public class InterviewSession {
     @Column(name = "total_score", precision = 5, scale = 2)
     private BigDecimal totalScore;
 
+    @Column(name = "started_at")
+    private Instant startedAt;
+
+    @Column(name = "ended_at")
+    private Instant endedAt;
+
     @Builder.Default
     @OneToMany(mappedBy = "interviewSession", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
     private List<InterviewAnswer> answers = new ArrayList<>();
@@ -65,8 +76,4 @@ public class InterviewSession {
     @CreationTimestamp
     @Column(name = "created_at", nullable = false, updatable = false)
     private Instant createdAt;
-
-    @UpdateTimestamp
-    @Column(name = "updated_at", nullable = false)
-    private Instant updatedAt;
 }

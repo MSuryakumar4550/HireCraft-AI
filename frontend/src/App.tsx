@@ -34,7 +34,18 @@ const AboutPage = lazy(() => import('@/pages/misc/AboutPage').then((module) => (
 export function App() {
   return (
     <BrowserRouter>
-      <Suspense fallback={<div className="grid min-h-screen place-items-center text-sm text-muted-foreground">Loading {APP_NAME}…</div>}>
+      <Suspense fallback={
+        <div className="grid min-h-screen place-items-center bg-background">
+          <video 
+            src="/HireCraftAI_Loading_Animation.mp4" 
+            autoPlay 
+            loop 
+            muted 
+            playsInline 
+            className="w-full h-full max-w-full max-h-[80vh] object-contain px-4"
+          />
+        </div>
+      }>
       <Routes>
         {/* Landing */}
         <Route element={<LandingLayout />}>

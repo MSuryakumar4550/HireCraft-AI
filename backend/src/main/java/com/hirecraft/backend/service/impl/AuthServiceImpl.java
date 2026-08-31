@@ -49,7 +49,7 @@ public class AuthServiceImpl implements AuthService {
         UserDetails userDetails = userDetailsService.loadUserByUsername(user.getEmail());
         String token = jwtService.generateToken(userDetails);
 
-        return AuthResponse.of(token, user.getEmail(), user.getFullName());
+        return AuthResponse.of(token, user.getUserId(), user.getEmail(), user.getFullName(), "USER");
     }
 
     @Override
@@ -67,6 +67,6 @@ public class AuthServiceImpl implements AuthService {
         User user = userRepository.findByEmail(request.getEmail())
                 .orElseThrow(() -> new UnauthorizedException("User not found"));
 
-        return AuthResponse.of(token, user.getEmail(), user.getFullName());
+        return AuthResponse.of(token, user.getUserId(), user.getEmail(), user.getFullName(), "USER");
     }
 }

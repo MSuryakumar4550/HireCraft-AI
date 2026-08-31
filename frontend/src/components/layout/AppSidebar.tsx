@@ -9,6 +9,7 @@ import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip
 import { AppLogo } from './AppLogo'
 import { getGroupedNavItems } from '@/constants/navigation'
 import { useUIStore } from '@/stores/uiStore'
+import { useExamStore } from '@/stores/examStore'
 import { cn } from '@/lib/utils'
 
 interface AppSidebarProps {
@@ -19,6 +20,7 @@ interface AppSidebarProps {
 export function AppSidebar({ collapsed, onNavigate }: AppSidebarProps) {
   const location = useLocation()
   const { toggleSidebarCollapsed } = useUIStore()
+  const { isExamActive } = useExamStore()
   const groupedItems = getGroupedNavItems()
   const [expandedItems, setExpandedItems] = useState<Record<string, boolean>>({})
 
@@ -34,6 +36,7 @@ export function AppSidebar({ collapsed, onNavigate }: AppSidebarProps) {
       className={cn(
         'flex h-screen sticky top-0 flex-col border-r border-sidebar-border bg-sidebar text-sidebar-foreground overflow-hidden transition-[width] duration-200 ease-standard',
         collapsed ? 'w-[var(--sidebar-width-collapsed)]' : 'w-[var(--sidebar-width)]',
+        isExamActive && 'pointer-events-none select-none opacity-50 grayscale transition-all'
       )}
       aria-label="Main navigation"
     >
@@ -82,6 +85,10 @@ export function AppSidebar({ collapsed, onNavigate }: AppSidebarProps) {
                     <Link
                       to={item.path}
                       onClick={(e) => {
+                        if (isExamActive) {
+                          e.preventDefault()
+                          return
+                        }
                         if (hasSubItems && !isExpanded) {
                           setExpandedItems((prev) => ({ ...prev, [item.id]: true }))
                         }
@@ -158,7 +165,13 @@ export function AppSidebar({ collapsed, onNavigate }: AppSidebarProps) {
                               <li key={subItem.id}>
                                 <Link
                                   to={subItem.path}
-                                  onClick={onNavigate}
+                                  onClick={(e) => {
+                                    if (isExamActive) {
+                                      e.preventDefault()
+                                      return
+                                    }
+                                    if (onNavigate) onNavigate()
+                                  }}
                                   className={cn(
                                     'flex items-center gap-3 rounded-md px-2.5 py-1.5 text-sm font-medium transition-colors',
                                     isSubActive

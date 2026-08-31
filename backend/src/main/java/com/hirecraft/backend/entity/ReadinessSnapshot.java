@@ -10,7 +10,6 @@ import org.hibernate.annotations.CreationTimestamp;
 
 import java.math.BigDecimal;
 import java.time.Instant;
-import java.util.UUID;
 
 @Entity
 @Table(name = "readiness_snapshots")
@@ -22,9 +21,9 @@ import java.util.UUID;
 public class ReadinessSnapshot {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "readiness_snapshot_id", nullable = false, updatable = false)
-    private UUID readinessSnapshotId;
+    private Long readinessSnapshotId;
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "user_id", nullable = false)
@@ -57,8 +56,7 @@ public class ReadinessSnapshot {
     @Column(name = "calculation_version", length = 50)
     private String calculationVersion;
 
-    // Snapshots are immutable historical records — no updated_at, no overwrites
     @CreationTimestamp
-    @Column(name = "created_at", nullable = false, updatable = false)
-    private Instant createdAt;
+    @Column(name = "snapshot_at", nullable = false, updatable = false)
+    private Instant snapshotAt;
 }

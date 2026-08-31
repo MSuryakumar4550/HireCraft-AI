@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-import java.util.UUID;
+
 
 @RestController
 @RequestMapping("/api/virtual-interviews")
@@ -44,13 +44,13 @@ public class VirtualInterviewController {
 
     @GetMapping("/{virtualInterviewId}")
     public ResponseEntity<VirtualInterviewResponse> getVirtualInterview(
-            @PathVariable UUID virtualInterviewId) {
+            @PathVariable Long virtualInterviewId) {
         return ResponseEntity.ok(virtualInterviewService.getVirtualInterview(virtualInterviewId));
     }
 
     @PostMapping("/{virtualInterviewId}/advance")
     public ResponseEntity<VirtualInterviewResponse> advanceStage(
-            @PathVariable UUID virtualInterviewId) {
+            @PathVariable Long virtualInterviewId) {
         return ResponseEntity.ok(virtualInterviewService.advanceStage(virtualInterviewId));
     }
 

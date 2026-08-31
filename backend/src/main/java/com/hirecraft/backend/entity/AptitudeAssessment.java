@@ -8,13 +8,11 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
-import org.hibernate.annotations.UpdateTimestamp;
 
 import java.math.BigDecimal;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
 
 @Entity
 @Table(name = "aptitude_assessments")
@@ -26,23 +24,36 @@ import java.util.UUID;
 public class AptitudeAssessment {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "aptitude_assessment_id", nullable = false, updatable = false)
-    private UUID aptitudeAssessmentId;
+    private Long aptitudeAssessmentId;
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "user_id", nullable = false)
     private User user;
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "virtual_interview_id")
+    private VirtualInterview virtualInterview;
+
+    @Column(name = "stage_order")
+    private Integer stageOrder;
+
     @Enumerated(EnumType.STRING)
     @Column(name = "status", nullable = false, length = 20)
     private AssessmentStatus status;
 
+    @Column(name = "started_at")
+    private Instant startedAt;
+
+    @Column(name = "completed_at")
+    private Instant completedAt;
+
     @Column(name = "total_questions")
     private Integer totalQuestions;
 
-    @Column(name = "score")
-    private Integer score;
+    @Column(name = "score", precision = 5, scale = 2)
+    private BigDecimal score;
 
     @Column(name = "accuracy", precision = 5, scale = 2)
     private BigDecimal accuracy;
@@ -54,8 +65,4 @@ public class AptitudeAssessment {
     @CreationTimestamp
     @Column(name = "created_at", nullable = false, updatable = false)
     private Instant createdAt;
-
-    @UpdateTimestamp
-    @Column(name = "updated_at", nullable = false)
-    private Instant updatedAt;
 }

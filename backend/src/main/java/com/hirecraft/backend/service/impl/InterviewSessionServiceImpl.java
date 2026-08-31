@@ -19,7 +19,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.math.BigDecimal;
 import java.util.List;
-import java.util.UUID;
+
 
 @Service
 @RequiredArgsConstructor
@@ -28,10 +28,11 @@ public class InterviewSessionServiceImpl implements InterviewSessionService {
     private final InterviewSessionRepository sessionRepository;
     private final InterviewAnswerRepository answerRepository;
     private final UserRepository userRepository;
+    private final com.hirecraft.backend.service.AiMemoryService aiMemoryService;
 
     @Override
     @Transactional
-    public InterviewSessionResponse createSession(UUID userId, CreateInterviewSessionRequest request) {
+    public InterviewSessionResponse createSession(Long userId, CreateInterviewSessionRequest request) {
         User user = userRepository.findById(userId)
                 .orElseThrow(() -> new ResourceNotFoundException("User", userId));
 
@@ -40,7 +41,7 @@ public class InterviewSessionServiceImpl implements InterviewSessionService {
                 .interviewType(request.getInterviewType())
                 .status(InterviewStatus.NOT_STARTED)
                 .transcriptAvailable(false)
-                .sessionIdentifier(UUID.randomUUID().toString())
+                .sessionIdentifier(java.util.UUID.randomUUID().toString())
                 .build();
 
         sessionRepository.save(session);
@@ -49,20 +50,20 @@ public class InterviewSessionServiceImpl implements InterviewSessionService {
 
     @Override
     @Transactional(readOnly = true)
-    public InterviewSessionResponse getSession(UUID sessionId) {
+    public InterviewSessionResponse getSession(Long sessionId) {
         return toResponse(findById(sessionId));
     }
 
     @Override
     @Transactional(readOnly = true)
-    public List<InterviewSessionResponse> getUserSessions(UUID userId) {
+    public List<InterviewSessionResponse> getUserSessions(Long userId) {
         return sessionRepository.findByUserUserIdOrderByCreatedAtDesc(userId)
                 .stream().map(this::toResponse).toList();
     }
 
     @Override
     @Transactional
-    public void submitAnswer(UUID sessionId, SubmitInterviewAnswerRequest request) {
+    public void submitAnswer(Long sessionId, SubmitInterviewAnswerRequest request) {
         InterviewSession session = findById(sessionId);
         if (session.getStatus() == InterviewStatus.COMPLETED) {
             throw new BadRequestException("Cannot submit answer to a completed session");
@@ -85,11 +86,22 @@ public class InterviewSessionServiceImpl implements InterviewSessionService {
                 .build();
 
         answerRepository.save(answer);
+
+        // Dynamically update AI memory for each voice/behavioral question
+        // Assume score 50 for behavioral by default (can be updated by actual AI evaluation layer)
+        aiMemoryService.updateMemoryGraph(
+                session.getUser().getUserId(),
+                com.hirecraft.backend.enums.MemoryCategory.BEHAVIORAL,
+                com.hirecraft.backend.enums.MemoryType.BEHAVIOR,
+                "Behavioral Question " + request.getQuestionNo(),
+                50,
+                "Answer submitted: " + (request.getAnswerText() != null ? request.getAnswerText() : "Recorded audio")
+        );
     }
 
     @Override
     @Transactional
-    public InterviewSessionResponse completeSession(UUID sessionId) {
+    public InterviewSessionResponse completeSession(Long sessionId) {
         InterviewSession session = findById(sessionId);
         if (session.getStatus() == InterviewStatus.COMPLETED) {
             throw new BadRequestException("Session is already completed");
@@ -106,7 +118,7 @@ public class InterviewSessionServiceImpl implements InterviewSessionService {
         return toResponse(session);
     }
 
-    private InterviewSession findById(UUID id) {
+    private InterviewSession findById(Long id) {
         return sessionRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("InterviewSession", id));
     }

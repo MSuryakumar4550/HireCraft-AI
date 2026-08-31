@@ -8,13 +8,14 @@ import lombok.Getter;
 
 import java.math.BigDecimal;
 import java.time.Instant;
-import java.util.UUID;
+import java.math.BigDecimal;
+
 
 @Getter
 @Builder
 public class UserProfileResponse {
 
-    private final UUID userId;
+    private final Long userId;
     private final String email;
     private final String fullName;
     private final AccountStatus accountStatus;
@@ -30,6 +31,6 @@ public class UserProfileResponse {
     private final String weaknesses;
     private final String resumeFilename;
     private final ResumeProcessingStatus resumeProcessingStatus;
-    private final Integer resumeAtsScore;
+    private final BigDecimal resumeAtsScore;
     private final Instant createdAt;
 }

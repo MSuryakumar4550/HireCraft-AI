@@ -5,13 +5,13 @@ import lombok.Getter;
 
 import java.math.BigDecimal;
 import java.time.Instant;
-import java.util.UUID;
+
 
 @Getter
 @Builder
 public class ReadinessResponse {
 
-    private final UUID readinessSnapshotId;
+    private final Long readinessSnapshotId;
     private final BigDecimal resumeReadiness;
     private final BigDecimal codingReadiness;
     private final BigDecimal companyCodingReadiness;

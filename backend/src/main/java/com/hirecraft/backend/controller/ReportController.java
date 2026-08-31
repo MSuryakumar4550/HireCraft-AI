@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-import java.util.UUID;
+
 
 @RestController
 @RequestMapping("/api/reports")
@@ -33,7 +33,7 @@ public class ReportController {
     }
 
     @GetMapping("/{reportId}")
-    public ResponseEntity<ReportResponse> getReport(@PathVariable UUID reportId) {
+    public ResponseEntity<ReportResponse> getReport(@PathVariable Long reportId) {
         return ResponseEntity.ok(reportService.getReport(reportId));
     }
 

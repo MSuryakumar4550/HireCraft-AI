@@ -3,5 +3,9 @@ package com.hirecraft.backend.enums;
 public enum MemoryType {
     STRENGTH,
     WEAKNESS,
-    BEHAVIOR
+    BEHAVIOR,
+    SKILL,
+    EXPERIENCE,
+    EDUCATION,
+    PREFERENCE
 }

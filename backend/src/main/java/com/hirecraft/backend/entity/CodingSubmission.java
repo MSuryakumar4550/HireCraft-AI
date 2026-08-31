@@ -8,9 +8,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
 
-import java.math.BigDecimal;
 import java.time.Instant;
-import java.util.UUID;
 
 @Entity
 @Table(name = "coding_submissions")
@@ -22,9 +20,9 @@ import java.util.UUID;
 public class CodingSubmission {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "submission_id", nullable = false, updatable = false)
-    private UUID submissionId;
+    private Long submissionId;
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "coding_assessment_id", nullable = false)
@@ -60,8 +58,8 @@ public class CodingSubmission {
     @Column(name = "compile_output", columnDefinition = "TEXT")
     private String compileOutput;
 
-    @Column(name = "execution_time_ms", precision = 10, scale = 3)
-    private BigDecimal executionTimeMs;
+    @Column(name = "execution_time_ms")
+    private Integer executionTimeMs;
 
     @Column(name = "memory_kb")
     private Integer memoryKb;
@@ -76,6 +74,9 @@ public class CodingSubmission {
     private Integer testcasesTotal;
 
     @CreationTimestamp
-    @Column(name = "created_at", nullable = false, updatable = false)
-    private Instant createdAt;
+    @Column(name = "submitted_at", nullable = false, updatable = false)
+    private Instant submittedAt;
+
+    @Column(name = "evaluated_at")
+    private Instant evaluatedAt;
 }

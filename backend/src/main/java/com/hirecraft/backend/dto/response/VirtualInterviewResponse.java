@@ -6,13 +6,13 @@ import lombok.Getter;
 
 import java.math.BigDecimal;
 import java.time.Instant;
-import java.util.UUID;
+
 
 @Getter
 @Builder
 public class VirtualInterviewResponse {
 
-    private final UUID virtualInterviewId;
+    private final Long virtualInterviewId;
     private final VirtualInterviewStatus status;
     private final String currentStage;
     private final BigDecimal finalScore;

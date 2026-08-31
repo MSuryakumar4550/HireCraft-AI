@@ -9,7 +9,6 @@ import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.Instant;
-import java.util.UUID;
 
 @Entity
 @Table(name = "aptitude_answers")
@@ -21,9 +20,9 @@ import java.util.UUID;
 public class AptitudeAnswer {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "aptitude_answer_id", nullable = false, updatable = false)
-    private UUID aptitudeAnswerId;
+    private Long aptitudeAnswerId;
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "aptitude_assessment_id", nullable = false)
@@ -42,6 +41,6 @@ public class AptitudeAnswer {
     private Integer timeTakenSeconds;
 
     @CreationTimestamp
-    @Column(name = "created_at", nullable = false, updatable = false)
-    private Instant createdAt;
+    @Column(name = "answered_at", nullable = false, updatable = false)
+    private Instant answeredAt;
 }

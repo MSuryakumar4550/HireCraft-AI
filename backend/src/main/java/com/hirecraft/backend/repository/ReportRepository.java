@@ -5,11 +5,11 @@ import com.hirecraft.backend.enums.ReportType;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
-import java.util.UUID;
 
-public interface ReportRepository extends JpaRepository<Report, UUID> {
 
-    List<Report> findByUserUserIdOrderByCreatedAtDesc(UUID userId);
+public interface ReportRepository extends JpaRepository<Report, Long> {
 
-    List<Report> findByUserUserIdAndReportType(UUID userId, ReportType reportType);
+    List<Report> findByUserUserIdOrderByGeneratedAtDesc(Long userId);
+
+    List<Report> findByUserUserIdAndReportType(Long userId, ReportType reportType);
 }

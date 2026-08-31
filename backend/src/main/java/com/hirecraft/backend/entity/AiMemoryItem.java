@@ -13,7 +13,6 @@ import org.hibernate.annotations.UpdateTimestamp;
 
 import java.math.BigDecimal;
 import java.time.Instant;
-import java.util.UUID;
 
 @Entity
 @Table(name = "ai_memory_items")
@@ -25,12 +24,13 @@ import java.util.UUID;
 public class AiMemoryItem {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "memory_id", nullable = false, updatable = false)
-    private UUID memoryId;
+    private Long memoryId;
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "user_id", nullable = false)
+    @com.fasterxml.jackson.annotation.JsonIgnore
     private User user;
 
     @Enumerated(EnumType.STRING)
@@ -47,7 +47,7 @@ public class AiMemoryItem {
     @Column(name = "memory_value", columnDefinition = "TEXT")
     private String memoryValue;
 
-    @Column(name = "confidence_score", precision = 4, scale = 3)
+    @Column(name = "confidence_score", precision = 3, scale = 2)
     private BigDecimal confidenceScore;
 
     @Column(name = "is_active", nullable = false)

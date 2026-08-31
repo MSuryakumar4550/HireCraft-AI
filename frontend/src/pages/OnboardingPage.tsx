@@ -33,10 +33,8 @@ export function OnboardingPage() {
     <div className="flex min-h-screen flex-col bg-zinc-50 dark:bg-zinc-950">
       <header className="flex h-16 shrink-0 items-center border-b bg-background px-6">
         <div className="flex items-center gap-2">
-          <div className="flex size-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">
-            <Icon className="size-4" />
-          </div>
-          <span className="font-semibold">{APP_NAME}</span>
+          <Icon className="size-14" />
+          <span className="font-semibold text-lg">{APP_NAME}</span>
         </div>
       </header>
 

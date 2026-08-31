@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
-import java.util.UUID;
+
 
 @Service
 @RequiredArgsConstructor
@@ -20,15 +20,15 @@ public class ReportServiceImpl implements ReportService {
 
     @Override
     @Transactional(readOnly = true)
-    public ReportResponse getReport(UUID reportId) {
+    public ReportResponse getReport(Long reportId) {
         return toResponse(reportRepository.findById(reportId)
                 .orElseThrow(() -> new ResourceNotFoundException("Report", reportId)));
     }
 
     @Override
     @Transactional(readOnly = true)
-    public List<ReportResponse> getUserReports(UUID userId) {
-        return reportRepository.findByUserUserIdOrderByCreatedAtDesc(userId)
+    public List<ReportResponse> getUserReports(Long userId) {
+        return reportRepository.findByUserUserIdOrderByGeneratedAtDesc(userId)
                 .stream().map(this::toResponse).toList();
     }
 
@@ -38,7 +38,7 @@ public class ReportServiceImpl implements ReportService {
                 .reportType(r.getReportType())
                 .overallScore(r.getOverallScore())
                 .generatedContent(r.getGeneratedContent())
-                .createdAt(r.getCreatedAt())
+                .createdAt(r.getGeneratedAt())
                 .build();
     }
 }

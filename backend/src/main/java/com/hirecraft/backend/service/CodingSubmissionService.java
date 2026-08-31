@@ -4,13 +4,15 @@ import com.hirecraft.backend.dto.request.CodeSubmissionRequest;
 import com.hirecraft.backend.dto.response.SubmissionResponse;
 
 import java.util.List;
-import java.util.UUID;
+
 
 public interface CodingSubmissionService {
 
-    SubmissionResponse submitCode(UUID assessmentId, CodeSubmissionRequest request);
+    SubmissionResponse submitCode(Long assessmentId, CodeSubmissionRequest request);
 
-    List<SubmissionResponse> getSubmissionsForAssessment(UUID assessmentId);
+    List<SubmissionResponse> getSubmissionsForAssessment(Long assessmentId);
 
     SubmissionResponse getSubmissionByJudge0Token(String judge0Token);
+
+    SubmissionResponse updateSubmissionStatus(Long submissionId, String status, int testcasesPassed, int testcasesTotal);
 }

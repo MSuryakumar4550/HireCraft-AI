@@ -10,6 +10,19 @@ export interface ApiResponse<T> {
   status: number
 }
 
+const getToken = () => {
+  try {
+    const authStorage = localStorage.getItem('auth-storage')
+    if (authStorage) {
+      const parsed = JSON.parse(authStorage)
+      return parsed.state?.token
+    }
+  } catch (e) {
+    return null
+  }
+  return null
+}
+
 async function handleResponse<T>(response: Response): Promise<ApiResponse<T>> {
   if (!response.ok) {
     let message = response.statusText || 'Request failed'
@@ -17,6 +30,8 @@ async function handleResponse<T>(response: Response): Promise<ApiResponse<T>> {
       const errJson = await response.json()
       if (errJson?.message) {
         message = errJson.message
+      } else if (errJson?.error) {
+        message = errJson.error
       }
     } catch {}
     const error: ApiError = {
@@ -30,6 +45,14 @@ async function handleResponse<T>(response: Response): Promise<ApiResponse<T>> {
   return { data, status: response.status }
 }
 
+const getDefaultHeaders = () => {
+  const token = getToken()
+  return {
+    'Content-Type': 'application/json',
+    ...(token ? { Authorization: `Bearer ${token}` } : {})
+  }
+}
+
 export const apiClient = {
   baseUrl: BASE_URL,
 
@@ -39,14 +62,14 @@ export const apiClient = {
         ...options,
         method: 'GET',
         headers: {
-          'Content-Type': 'application/json',
+          ...getDefaultHeaders(),
           ...options?.headers,
         },
       })
       return await handleResponse<T>(response)
     } catch (err: any) {
       if (err?.status) throw err
-      throw { message: "Backend offline. Please start Spring Boot backend (mvn spring-boot:run on port 8080).", status: 503 }
+      throw { message: "Backend offline. Please start Spring Boot backend.", status: 503 }
     }
   },
 
@@ -56,7 +79,7 @@ export const apiClient = {
         ...options,
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
+          ...getDefaultHeaders(),
           ...options?.headers,
         },
         body: body ? JSON.stringify(body) : undefined,
@@ -64,7 +87,7 @@ export const apiClient = {
       return await handleResponse<T>(response)
     } catch (err: any) {
       if (err?.status) throw err
-      throw { message: "Backend offline. Please start Spring Boot backend (mvn spring-boot:run on port 8080).", status: 503 }
+      throw { message: "Backend offline. Please start Spring Boot backend.", status: 503 }
     }
   },
 
@@ -74,7 +97,7 @@ export const apiClient = {
         ...options,
         method: 'PUT',
         headers: {
-          'Content-Type': 'application/json',
+          ...getDefaultHeaders(),
           ...options?.headers,
         },
         body: body ? JSON.stringify(body) : undefined,
@@ -82,7 +105,7 @@ export const apiClient = {
       return await handleResponse<T>(response)
     } catch (err: any) {
       if (err?.status) throw err
-      throw { message: "Backend offline. Please start Spring Boot backend (mvn spring-boot:run on port 8080).", status: 503 }
+      throw { message: "Backend offline. Please start Spring Boot backend.", status: 503 }
     }
   },
 
@@ -92,14 +115,43 @@ export const apiClient = {
         ...options,
         method: 'DELETE',
         headers: {
-          'Content-Type': 'application/json',
+          ...getDefaultHeaders(),
           ...options?.headers,
         },
       })
       return await handleResponse<T>(response)
     } catch (err: any) {
       if (err?.status) throw err
-      throw { message: "Backend offline. Please start Spring Boot backend (mvn spring-boot:run on port 8080).", status: 503 }
+      throw { message: "Backend offline. Please start Spring Boot backend.", status: 503 }
+    }
+  },
+
+  async uploadFile<T>(endpoint: string, file: File, fieldName: string = 'file', additionalData?: Record<string, string>, options?: RequestInit): Promise<ApiResponse<T>> {
+    try {
+      const formData = new FormData()
+      formData.append(fieldName, file)
+      if (additionalData) {
+        Object.entries(additionalData).forEach(([key, value]) => {
+          formData.append(key, value)
+        })
+      }
+
+      const token = getToken()
+      const headers: HeadersInit = {
+        ...(token ? { Authorization: `Bearer ${token}` } : {}),
+        ...options?.headers,
+      }
+
+      const response = await fetch(`${BASE_URL}${endpoint}`, {
+        ...options,
+        method: 'POST',
+        headers,
+        body: formData,
+      })
+      return await handleResponse<T>(response)
+    } catch (err: any) {
+      if (err?.status) throw err
+      throw { message: "Backend offline. Please start Spring Boot backend.", status: 503 }
     }
   },
 }

@@ -19,7 +19,7 @@ import {
   TrendingUp,
   User,
   Users,
-  Zap,
+  type LucideProps
 } from 'lucide-react'
 import { ROUTES } from './routes'
 import type { NavItem } from '@/types/navigation'
@@ -71,9 +71,9 @@ export const NAV_ITEMS: NavItem[] = [
     showBreadcrumb: true,
     subItems: [
       {
-        id: 'coding-practice-topic',
-        label: 'Topic Wise',
-        path: `${ROUTES.CODING_PRACTICE}?tab=topic`,
+        id: 'coding-practice-difficulty',
+        label: 'Difficulty Wise',
+        path: `${ROUTES.CODING_PRACTICE}?tab=difficulty`,
       },
       {
         id: 'coding-practice-company',
@@ -233,5 +233,17 @@ export function getGroupedNavItems(): Record<string, NavItem[]> {
   )
 }
 
-export const BRAND_ICON = Zap
+
+import React from 'react'
+
+const CustomLogo = (props: LucideProps) => (
+  React.createElement('img', { 
+    src: '/Transparent_logo.png', 
+    alt: 'Logo', 
+    className: props.className, 
+    style: { objectFit: 'contain' } 
+  })
+)
+
+export const BRAND_ICON = CustomLogo
 export const HOME_ICON = Home

@@ -3,15 +3,15 @@ package com.hirecraft.backend.service;
 import com.hirecraft.backend.dto.response.VirtualInterviewResponse;
 
 import java.util.List;
-import java.util.UUID;
+
 
 public interface VirtualInterviewService {
 
-    VirtualInterviewResponse createVirtualInterview(UUID userId);
+    VirtualInterviewResponse createVirtualInterview(Long userId);
 
-    VirtualInterviewResponse getVirtualInterview(UUID virtualInterviewId);
+    VirtualInterviewResponse getVirtualInterview(Long virtualInterviewId);
 
-    List<VirtualInterviewResponse> getUserVirtualInterviews(UUID userId);
+    List<VirtualInterviewResponse> getUserVirtualInterviews(Long userId);
 
-    VirtualInterviewResponse advanceStage(UUID virtualInterviewId);
+    VirtualInterviewResponse advanceStage(Long virtualInterviewId);
 }

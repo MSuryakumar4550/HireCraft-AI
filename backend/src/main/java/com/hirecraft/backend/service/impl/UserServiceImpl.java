@@ -10,7 +10,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.UUID;
+
 
 @Service
 @RequiredArgsConstructor
@@ -20,14 +20,14 @@ public class UserServiceImpl implements UserService {
 
     @Override
     @Transactional(readOnly = true)
-    public UserProfileResponse getUserProfile(UUID userId) {
+    public UserProfileResponse getUserProfile(Long userId) {
         User user = findUserById(userId);
         return toResponse(user);
     }
 
     @Override
     @Transactional
-    public UserProfileResponse updateProfile(UUID userId, UpdateProfileRequest request) {
+    public UserProfileResponse updateProfile(Long userId, UpdateProfileRequest request) {
         User user = findUserById(userId);
 
         if (request.getCollegeName() != null) user.setCollegeName(request.getCollegeName());
@@ -45,7 +45,7 @@ public class UserServiceImpl implements UserService {
         return toResponse(user);
     }
 
-    private User findUserById(UUID userId) {
+    private User findUserById(Long userId) {
         return userRepository.findById(userId)
                 .orElseThrow(() -> new ResourceNotFoundException("User", userId));
     }

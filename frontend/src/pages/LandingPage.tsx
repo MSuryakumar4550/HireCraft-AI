@@ -29,8 +29,8 @@ export function LandingPage() {
     <div className="min-h-screen bg-background">
       <header className="sticky top-0 z-50 border-b bg-background/90 backdrop-blur">
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6">
-          <Link to={ROUTES.LANDING} className="flex items-center gap-2 font-semibold" aria-label="HireCraft AI home">
-            <span className="grid size-8 place-items-center rounded-lg bg-primary text-primary-foreground"><Icon className="size-4" /></span>
+          <Link to={ROUTES.LANDING} className="flex items-center gap-2 font-semibold text-lg" aria-label="HireCraft AI home">
+            <Icon className="size-14" />
             {APP_NAME}
           </Link>
           <nav aria-label="Marketing navigation" className="hidden items-center gap-6 text-sm text-muted-foreground md:flex">

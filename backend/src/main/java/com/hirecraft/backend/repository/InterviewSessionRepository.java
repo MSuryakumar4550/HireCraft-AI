@@ -7,15 +7,15 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.UUID;
 
-public interface InterviewSessionRepository extends JpaRepository<InterviewSession, UUID> {
 
-    List<InterviewSession> findByUserUserIdOrderByCreatedAtDesc(UUID userId);
+public interface InterviewSessionRepository extends JpaRepository<InterviewSession, Long> {
 
-    List<InterviewSession> findByUserUserIdAndInterviewType(UUID userId, InterviewType type);
+    List<InterviewSession> findByUserUserIdOrderByCreatedAtDesc(Long userId);
 
-    List<InterviewSession> findByUserUserIdAndStatus(UUID userId, InterviewStatus status);
+    List<InterviewSession> findByUserUserIdAndInterviewType(Long userId, InterviewType type);
+
+    List<InterviewSession> findByUserUserIdAndStatus(Long userId, InterviewStatus status);
 
     Optional<InterviewSession> findBySessionIdentifier(String sessionIdentifier);
 }

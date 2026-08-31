@@ -6,19 +6,19 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.UUID;
 
-public interface EvaluationRepository extends JpaRepository<Evaluation, UUID> {
 
-    List<Evaluation> findByUserUserIdOrderByCreatedAtDesc(UUID userId);
+public interface EvaluationRepository extends JpaRepository<Evaluation, Long> {
 
-    List<Evaluation> findByUserUserIdAndEvaluationType(UUID userId, EvaluationType evaluationType);
+    List<Evaluation> findByUserUserIdOrderByCreatedAtDesc(Long userId);
 
-    Optional<Evaluation> findByCodingAssessmentCodingAssessmentId(UUID codingAssessmentId);
+    List<Evaluation> findByUserUserIdAndEvaluationType(Long userId, EvaluationType evaluationType);
 
-    Optional<Evaluation> findByAptitudeAssessmentAptitudeAssessmentId(UUID aptitudeAssessmentId);
+    Optional<Evaluation> findByCodingAssessmentCodingAssessmentId(Long codingAssessmentId);
 
-    Optional<Evaluation> findByInterviewSessionInterviewSessionId(UUID interviewSessionId);
+    Optional<Evaluation> findByAptitudeAssessmentAptitudeAssessmentId(Long aptitudeAssessmentId);
 
-    Optional<Evaluation> findByVirtualInterviewVirtualInterviewId(UUID virtualInterviewId);
+    Optional<Evaluation> findByInterviewSessionInterviewSessionId(Long interviewSessionId);
+
+    Optional<Evaluation> findByVirtualInterviewVirtualInterviewId(Long virtualInterviewId);
 }

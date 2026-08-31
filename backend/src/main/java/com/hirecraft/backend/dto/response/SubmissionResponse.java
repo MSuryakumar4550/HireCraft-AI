@@ -5,13 +5,13 @@ import lombok.Getter;
 
 import java.math.BigDecimal;
 import java.time.Instant;
-import java.util.UUID;
+
 
 @Getter
 @Builder
 public class SubmissionResponse {
 
-    private final UUID submissionId;
+    private final Long submissionId;
     private final Integer questionNo;
     private final String language;
     private final Integer submissionNumber;
@@ -21,7 +21,7 @@ public class SubmissionResponse {
     private final String stdout;
     private final String stderr;
     private final String compileOutput;
-    private final BigDecimal executionTimeMs;
+    private final Integer executionTimeMs;
     private final Integer memoryKb;
     private final Integer exitCode;
     private final Integer testcasesPassed;

@@ -5,11 +5,11 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.UUID;
 
-public interface ReadinessSnapshotRepository extends JpaRepository<ReadinessSnapshot, UUID> {
 
-    List<ReadinessSnapshot> findByUserUserIdOrderByCreatedAtDesc(UUID userId);
+public interface ReadinessSnapshotRepository extends JpaRepository<ReadinessSnapshot, Long> {
 
-    Optional<ReadinessSnapshot> findFirstByUserUserIdOrderByCreatedAtDesc(UUID userId);
+    List<ReadinessSnapshot> findByUserUserIdOrderBySnapshotAtDesc(Long userId);
+
+    Optional<ReadinessSnapshot> findFirstByUserUserIdOrderBySnapshotAtDesc(Long userId);
 }

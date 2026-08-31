@@ -4,17 +4,21 @@ import com.hirecraft.backend.dto.response.AptitudeAssessmentResponse;
 import com.hirecraft.backend.dto.request.SubmitAptitudeAnswerRequest;
 
 import java.util.List;
-import java.util.UUID;
+
 
 public interface AptitudeAssessmentService {
 
-    AptitudeAssessmentResponse createAssessment(UUID userId);
+    AptitudeAssessmentResponse createAssessment(Long userId);
 
-    AptitudeAssessmentResponse getAssessment(UUID assessmentId);
+    AptitudeAssessmentResponse getAssessment(Long assessmentId);
 
-    List<AptitudeAssessmentResponse> getUserAssessments(UUID userId);
+    List<AptitudeAssessmentResponse> getUserAssessments(Long userId);
 
-    void submitAnswer(UUID assessmentId, SubmitAptitudeAnswerRequest request);
+    void submitAnswer(Long assessmentId, SubmitAptitudeAnswerRequest request);
 
-    AptitudeAssessmentResponse completeAssessment(UUID assessmentId);
+    AptitudeAssessmentResponse completeAssessment(Long assessmentId);
+
+    AptitudeAssessmentResponse saveScore(Long userId, com.hirecraft.backend.dto.request.SaveAptitudeScoreRequest request);
+
+    List<com.hirecraft.backend.dto.response.AptitudeQuestion> getQuestions();
 }

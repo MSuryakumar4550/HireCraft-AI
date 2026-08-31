@@ -2,6 +2,7 @@ package com.hirecraft.backend.controller;
 
 import com.hirecraft.backend.dto.request.SubmitAptitudeAnswerRequest;
 import com.hirecraft.backend.dto.response.AptitudeAssessmentResponse;
+import com.hirecraft.backend.dto.response.AptitudeQuestion;
 import com.hirecraft.backend.entity.User;
 import com.hirecraft.backend.exception.ResourceNotFoundException;
 import com.hirecraft.backend.repository.UserRepository;
@@ -20,7 +21,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-import java.util.UUID;
+
 
 @RestController
 @RequestMapping("/api/aptitude")
@@ -38,6 +39,19 @@ public class AptitudeController {
                 .body(assessmentService.createAssessment(user.getUserId()));
     }
 
+    @GetMapping("/questions")
+    public ResponseEntity<List<AptitudeQuestion>> getQuestions() {
+        List<AptitudeQuestion> safeQuestions = assessmentService.getQuestions().stream().map(q -> {
+            AptitudeQuestion safeQ = new AptitudeQuestion();
+            safeQ.setId(q.getId());
+            safeQ.setTopic(q.getTopic());
+            safeQ.setQuestionText(q.getQuestionText());
+            safeQ.setOptions(q.getOptions());
+            return safeQ;
+        }).toList();
+        return ResponseEntity.ok(safeQuestions);
+    }
+
     @GetMapping("/assessments")
     public ResponseEntity<List<AptitudeAssessmentResponse>> getMyAssessments(
             @AuthenticationPrincipal UserDetails principal) {
@@ -47,13 +61,13 @@ public class AptitudeController {
 
     @GetMapping("/assessments/{assessmentId}")
     public ResponseEntity<AptitudeAssessmentResponse> getAssessment(
-            @PathVariable UUID assessmentId) {
+            @PathVariable Long assessmentId) {
         return ResponseEntity.ok(assessmentService.getAssessment(assessmentId));
     }
 
     @PostMapping("/assessments/{assessmentId}/answers")
     public ResponseEntity<Void> submitAnswer(
-            @PathVariable UUID assessmentId,
+            @PathVariable Long assessmentId,
             @Valid @RequestBody SubmitAptitudeAnswerRequest request) {
         assessmentService.submitAnswer(assessmentId, request);
         return ResponseEntity.status(HttpStatus.CREATED).build();
@@ -61,8 +75,16 @@ public class AptitudeController {
 
     @PostMapping("/assessments/{assessmentId}/complete")
     public ResponseEntity<AptitudeAssessmentResponse> completeAssessment(
-            @PathVariable UUID assessmentId) {
+            @PathVariable Long assessmentId) {
         return ResponseEntity.ok(assessmentService.completeAssessment(assessmentId));
+    }
+
+    @PostMapping("/assessments/save-score")
+    public ResponseEntity<AptitudeAssessmentResponse> saveScore(
+            @AuthenticationPrincipal UserDetails principal,
+            @Valid @RequestBody com.hirecraft.backend.dto.request.SaveAptitudeScoreRequest request) {
+        User user = resolveUser(principal);
+        return ResponseEntity.ok(assessmentService.saveScore(user.getUserId(), request));
     }
 
     private User resolveUser(UserDetails principal) {

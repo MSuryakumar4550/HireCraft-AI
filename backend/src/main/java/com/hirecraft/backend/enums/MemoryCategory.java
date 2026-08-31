@@ -6,5 +6,7 @@ public enum MemoryCategory {
     TECHNICAL,
     SQL,
     SYSTEM_DESIGN,
-    BEHAVIORAL
+    BEHAVIORAL,
+    RESUME,
+    PROFILE
 }

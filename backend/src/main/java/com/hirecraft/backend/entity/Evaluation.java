@@ -8,11 +8,11 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
-import org.hibernate.annotations.UpdateTimestamp;
+import org.hibernate.annotations.JdbcTypeCode;
+import org.hibernate.type.SqlTypes;
 
 import java.math.BigDecimal;
 import java.time.Instant;
-import java.util.UUID;
 
 @Entity
 @Table(name = "evaluations")
@@ -24,9 +24,9 @@ import java.util.UUID;
 public class Evaluation {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "evaluation_id", nullable = false, updatable = false)
-    private UUID evaluationId;
+    private Long evaluationId;
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "user_id", nullable = false)
@@ -59,23 +59,25 @@ public class Evaluation {
     @Column(name = "percentage", precision = 5, scale = 2)
     private BigDecimal percentage;
 
-    @Column(name = "strengths", columnDefinition = "TEXT")
+    @JdbcTypeCode(SqlTypes.JSON)
+    @Column(name = "strengths", columnDefinition = "jsonb")
     private String strengths;
 
-    @Column(name = "weaknesses", columnDefinition = "TEXT")
+    @JdbcTypeCode(SqlTypes.JSON)
+    @Column(name = "weaknesses", columnDefinition = "jsonb")
     private String weaknesses;
 
     @Column(name = "feedback", columnDefinition = "TEXT")
     private String feedback;
 
-    @Column(name = "recommendations", columnDefinition = "TEXT")
+    @JdbcTypeCode(SqlTypes.JSON)
+    @Column(name = "recommendations", columnDefinition = "jsonb")
     private String recommendations;
+
+    @Column(name = "evaluated_at")
+    private Instant evaluatedAt;
 
     @CreationTimestamp
     @Column(name = "created_at", nullable = false, updatable = false)
     private Instant createdAt;
-
-    @UpdateTimestamp
-    @Column(name = "updated_at", nullable = false)
-    private Instant updatedAt;
 }

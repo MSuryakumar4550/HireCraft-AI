@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+pymupdf
+python-docx
+spacy
+pydantic
+python-multipart
+ollama
+google-generativeai
+python-dotenv
+networkx

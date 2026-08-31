@@ -23,7 +23,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-import java.util.UUID;
+
 
 @RestController
 @RequestMapping("/api/coding")
@@ -52,13 +52,13 @@ public class CodingController {
 
     @GetMapping("/assessments/{assessmentId}")
     public ResponseEntity<CodingAssessmentResponse> getAssessment(
-            @PathVariable UUID assessmentId) {
+            @PathVariable Long assessmentId) {
         return ResponseEntity.ok(assessmentService.getAssessment(assessmentId));
     }
 
     @PostMapping("/assessments/{assessmentId}/submit")
     public ResponseEntity<SubmissionResponse> submitCode(
-            @PathVariable UUID assessmentId,
+            @PathVariable Long assessmentId,
             @Valid @RequestBody CodeSubmissionRequest request) {
         return ResponseEntity.status(HttpStatus.CREATED)
                 .body(submissionService.submitCode(assessmentId, request));
@@ -66,7 +66,7 @@ public class CodingController {
 
     @GetMapping("/assessments/{assessmentId}/submissions")
     public ResponseEntity<List<SubmissionResponse>> getSubmissions(
-            @PathVariable UUID assessmentId) {
+            @PathVariable Long assessmentId) {
         return ResponseEntity.ok(submissionService.getSubmissionsForAssessment(assessmentId));
     }
 

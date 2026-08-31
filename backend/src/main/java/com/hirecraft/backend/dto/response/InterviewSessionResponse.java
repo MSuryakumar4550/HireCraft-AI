@@ -7,13 +7,13 @@ import lombok.Getter;
 
 import java.math.BigDecimal;
 import java.time.Instant;
-import java.util.UUID;
+
 
 @Getter
 @Builder
 public class InterviewSessionResponse {
 
-    private final UUID interviewSessionId;
+    private final Long interviewSessionId;
     private final InterviewType interviewType;
     private final InterviewStatus status;
     private final String sessionIdentifier;

@@ -4,15 +4,15 @@ import com.hirecraft.backend.dto.request.CreateCodingAssessmentRequest;
 import com.hirecraft.backend.dto.response.CodingAssessmentResponse;
 
 import java.util.List;
-import java.util.UUID;
+
 
 public interface CodingAssessmentService {
 
-    CodingAssessmentResponse createAssessment(UUID userId, CreateCodingAssessmentRequest request);
+    CodingAssessmentResponse createAssessment(Long userId, CreateCodingAssessmentRequest request);
 
-    CodingAssessmentResponse getAssessment(UUID assessmentId);
+    CodingAssessmentResponse getAssessment(Long assessmentId);
 
-    List<CodingAssessmentResponse> getUserAssessments(UUID userId);
+    List<CodingAssessmentResponse> getUserAssessments(Long userId);
 
-    CodingAssessmentResponse completeAssessment(UUID assessmentId);
+    CodingAssessmentResponse completeAssessment(Long assessmentId);
 }

@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-import java.util.UUID;
+
 
 @RestController
 @RequestMapping("/api/interviews")
@@ -48,20 +48,20 @@ public class InterviewController {
     }
 
     @GetMapping("/sessions/{sessionId}")
-    public ResponseEntity<InterviewSessionResponse> getSession(@PathVariable UUID sessionId) {
+    public ResponseEntity<InterviewSessionResponse> getSession(@PathVariable Long sessionId) {
         return ResponseEntity.ok(sessionService.getSession(sessionId));
     }
 
     @PostMapping("/sessions/{sessionId}/answers")
     public ResponseEntity<Void> submitAnswer(
-            @PathVariable UUID sessionId,
+            @PathVariable Long sessionId,
             @Valid @RequestBody SubmitInterviewAnswerRequest request) {
         sessionService.submitAnswer(sessionId, request);
         return ResponseEntity.status(HttpStatus.CREATED).build();
     }
 
     @PostMapping("/sessions/{sessionId}/complete")
-    public ResponseEntity<InterviewSessionResponse> completeSession(@PathVariable UUID sessionId) {
+    public ResponseEntity<InterviewSessionResponse> completeSession(@PathVariable Long sessionId) {
         return ResponseEntity.ok(sessionService.completeSession(sessionId));
     }
 

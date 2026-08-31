@@ -6,13 +6,13 @@ import lombok.Getter;
 
 import java.math.BigDecimal;
 import java.time.Instant;
-import java.util.UUID;
+
 
 @Getter
 @Builder
 public class EvaluationResponse {
 
-    private final UUID evaluationId;
+    private final Long evaluationId;
     private final EvaluationType evaluationType;
     private final BigDecimal score;
     private final BigDecimal percentage;

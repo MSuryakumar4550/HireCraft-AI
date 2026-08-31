@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
-import java.util.UUID;
+
 
 @Service
 @RequiredArgsConstructor
@@ -20,14 +20,14 @@ public class EvaluationServiceImpl implements EvaluationService {
 
     @Override
     @Transactional(readOnly = true)
-    public EvaluationResponse getEvaluation(UUID evaluationId) {
+    public EvaluationResponse getEvaluation(Long evaluationId) {
         return toResponse(evaluationRepository.findById(evaluationId)
                 .orElseThrow(() -> new ResourceNotFoundException("Evaluation", evaluationId)));
     }
 
     @Override
     @Transactional(readOnly = true)
-    public List<EvaluationResponse> getUserEvaluations(UUID userId) {
+    public List<EvaluationResponse> getUserEvaluations(Long userId) {
         return evaluationRepository.findByUserUserIdOrderByCreatedAtDesc(userId)
                 .stream().map(this::toResponse).toList();
     }

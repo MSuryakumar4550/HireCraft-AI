@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
-import java.util.UUID;
+
 
 @Service
 @RequiredArgsConstructor
@@ -25,7 +25,7 @@ public class ReadinessServiceImpl implements ReadinessService {
 
     @Override
     @Transactional
-    public ReadinessResponse calculateAndSaveReadiness(UUID userId) {
+    public ReadinessResponse calculateAndSaveReadiness(Long userId) {
         User user = userRepository.findById(userId)
                 .orElseThrow(() -> new ResourceNotFoundException("User", userId));
 
@@ -42,16 +42,16 @@ public class ReadinessServiceImpl implements ReadinessService {
 
     @Override
     @Transactional(readOnly = true)
-    public ReadinessResponse getCurrentReadiness(UUID userId) {
-        return snapshotRepository.findFirstByUserUserIdOrderByCreatedAtDesc(userId)
+    public ReadinessResponse getCurrentReadiness(Long userId) {
+        return snapshotRepository.findFirstByUserUserIdOrderBySnapshotAtDesc(userId)
                 .map(this::toResponse)
                 .orElse(null);
     }
 
     @Override
     @Transactional(readOnly = true)
-    public List<ReadinessResponse> getReadinessHistory(UUID userId) {
-        return snapshotRepository.findByUserUserIdOrderByCreatedAtDesc(userId)
+    public List<ReadinessResponse> getReadinessHistory(Long userId) {
+        return snapshotRepository.findByUserUserIdOrderBySnapshotAtDesc(userId)
                 .stream().map(this::toResponse).toList();
     }
 
@@ -67,7 +67,7 @@ public class ReadinessServiceImpl implements ReadinessService {
                 .behavioralReadiness(s.getBehavioralReadiness())
                 .overallPlacementReadiness(s.getOverallPlacementReadiness())
                 .calculationVersion(s.getCalculationVersion())
-                .createdAt(s.getCreatedAt())
+                .createdAt(s.getSnapshotAt())
                 .build();
     }
 }

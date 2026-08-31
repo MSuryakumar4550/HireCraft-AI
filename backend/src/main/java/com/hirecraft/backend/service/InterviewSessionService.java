@@ -5,17 +5,17 @@ import com.hirecraft.backend.dto.request.SubmitInterviewAnswerRequest;
 import com.hirecraft.backend.dto.response.InterviewSessionResponse;
 
 import java.util.List;
-import java.util.UUID;
+
 
 public interface InterviewSessionService {
 
-    InterviewSessionResponse createSession(UUID userId, CreateInterviewSessionRequest request);
+    InterviewSessionResponse createSession(Long userId, CreateInterviewSessionRequest request);
 
-    InterviewSessionResponse getSession(UUID sessionId);
+    InterviewSessionResponse getSession(Long sessionId);
 
-    List<InterviewSessionResponse> getUserSessions(UUID userId);
+    List<InterviewSessionResponse> getUserSessions(Long userId);
 
-    void submitAnswer(UUID sessionId, SubmitInterviewAnswerRequest request);
+    void submitAnswer(Long sessionId, SubmitInterviewAnswerRequest request);
 
-    InterviewSessionResponse completeSession(UUID sessionId);
+    InterviewSessionResponse completeSession(Long sessionId);
 }
