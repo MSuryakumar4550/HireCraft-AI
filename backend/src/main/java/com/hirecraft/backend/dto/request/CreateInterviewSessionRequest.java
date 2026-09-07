@@ -11,4 +11,8 @@ public class CreateInterviewSessionRequest {
 
     @NotNull(message = "Interview type is required")
     private InterviewType interviewType;
+
+    private String subject;
+    private String experienceLevel;
+    private String difficultyLevel;
 }

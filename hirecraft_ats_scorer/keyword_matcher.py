@@ -9,6 +9,14 @@ def calculate_keyword_score(resume_text, required_skills):
     matched_skills = []
     missing_skills = []
     
+    # Handle edge case where required_skills is somehow completely empty
+    if len(required_skills) == 0:
+        return {
+            "score": 0.0,
+            "matched": [],
+            "missing": []
+        }
+        
     for skill in required_skills:
         # Check if the skill (lowercase) is in the resume
         if skill.lower() in resume_lower:
@@ -16,10 +24,6 @@ def calculate_keyword_score(resume_text, required_skills):
         else:
             missing_skills.append(skill)
             
-    # Calculate score (e.g., 4 out of 5 skills found = 0.8)
-    if len(required_skills) == 0:
-        return 1.0 
-        
     score = len(matched_skills) / len(required_skills)
     
     return {

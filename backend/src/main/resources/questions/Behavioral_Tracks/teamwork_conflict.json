@@ -1,0 +1,2507 @@
+{
+  "subject" : "Teamwork & Conflict Resolution",
+  "batch" : "combined",
+  "version" : "1.0",
+  "language" : null,
+  "questions" : [ {
+    "id" : "TEAM-001",
+    "question" : "Tell me about a time you strongly disagreed with a coworker's approach to solving a programming problem.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Navigating Technical & Architectural Disagreements",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "disagreements", "conflict resolution", "collaboration", "empathy", "consensus", "navigating technical & architectural disagreements" ],
+    "criteria" : [ "focuses on objective technical facts and business outcomes rather than ego", "actively listens, demonstrates empathy, and validates counter-arguments", "exhibits maturity in de-escalation, compromise, and shared ownership" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-002",
+    "question" : "How do you handle receiving critical or blunt feedback on a pull request you worked hard on?",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Navigating Technical & Architectural Disagreements",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "disagreements", "conflict resolution", "collaboration", "empathy", "consensus", "navigating technical & architectural disagreements" ],
+    "criteria" : [ "focuses on objective technical facts and business outcomes rather than ego", "actively listens, demonstrates empathy, and validates counter-arguments", "exhibits maturity in de-escalation, compromise, and shared ownership" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-003",
+    "question" : "Describe a time you and a teammate had opposing viewpoints on whether to refactor a piece of code.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Navigating Technical & Architectural Disagreements",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "disagreements", "conflict resolution", "collaboration", "empathy", "consensus", "navigating technical & architectural disagreements" ],
+    "criteria" : [ "focuses on objective technical facts and business outcomes rather than ego", "actively listens, demonstrates empathy, and validates counter-arguments", "exhibits maturity in de-escalation, compromise, and shared ownership" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-004",
+    "question" : "What is your approach when a coworker insists on their solution without providing technical justification?",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Navigating Technical & Architectural Disagreements",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "disagreements", "conflict resolution", "collaboration", "empathy", "consensus", "navigating technical & architectural disagreements" ],
+    "criteria" : [ "focuses on objective technical facts and business outcomes rather than ego", "actively listens, demonstrates empathy, and validates counter-arguments", "exhibits maturity in de-escalation, compromise, and shared ownership" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-005",
+    "question" : "Tell me about a time you realized your technical opinion was wrong during an architectural discussion.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Navigating Technical & Architectural Disagreements",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "disagreements", "conflict resolution", "collaboration", "empathy", "consensus", "navigating technical & architectural disagreements" ],
+    "criteria" : [ "focuses on objective technical facts and business outcomes rather than ego", "actively listens, demonstrates empathy, and validates counter-arguments", "exhibits maturity in de-escalation, compromise, and shared ownership" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-006",
+    "question" : "How do you separate personal feelings from professional technical debates during team meetings?",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Navigating Technical & Architectural Disagreements",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "disagreements", "conflict resolution", "collaboration", "empathy", "consensus", "navigating technical & architectural disagreements" ],
+    "criteria" : [ "focuses on objective technical facts and business outcomes rather than ego", "actively listens, demonstrates empathy, and validates counter-arguments", "exhibits maturity in de-escalation, compromise, and shared ownership" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-007",
+    "question" : "Describe a time you helped mediate a disagreement between two other team members.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Navigating Technical & Architectural Disagreements",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "disagreements", "conflict resolution", "collaboration", "empathy", "consensus", "navigating technical & architectural disagreements" ],
+    "criteria" : [ "focuses on objective technical facts and business outcomes rather than ego", "actively listens, demonstrates empathy, and validates counter-arguments", "exhibits maturity in de-escalation, compromise, and shared ownership" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-008",
+    "question" : "Tell me about a time you strongly disagreed with a coworker's approach to solving a programming problem.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Navigating Technical & Architectural Disagreements",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "disagreements", "conflict resolution", "collaboration", "empathy", "consensus", "navigating technical & architectural disagreements" ],
+    "criteria" : [ "focuses on objective technical facts and business outcomes rather than ego", "actively listens, demonstrates empathy, and validates counter-arguments", "exhibits maturity in de-escalation, compromise, and shared ownership" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-009",
+    "question" : "How do you handle receiving critical or blunt feedback on a pull request you worked hard on?",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Navigating Technical & Architectural Disagreements",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "disagreements", "conflict resolution", "collaboration", "empathy", "consensus", "navigating technical & architectural disagreements" ],
+    "criteria" : [ "focuses on objective technical facts and business outcomes rather than ego", "actively listens, demonstrates empathy, and validates counter-arguments", "exhibits maturity in de-escalation, compromise, and shared ownership" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-010",
+    "question" : "Describe a time you and a teammate had opposing viewpoints on whether to refactor a piece of code.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Navigating Technical & Architectural Disagreements",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "disagreements", "conflict resolution", "collaboration", "empathy", "consensus", "navigating technical & architectural disagreements" ],
+    "criteria" : [ "focuses on objective technical facts and business outcomes rather than ego", "actively listens, demonstrates empathy, and validates counter-arguments", "exhibits maturity in de-escalation, compromise, and shared ownership" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-011",
+    "question" : "Tell me about a time an engineering disagreement became heated, and what specific steps you took to de-escalate the tension.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Navigating Technical & Architectural Disagreements",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "disagreements", "conflict resolution", "collaboration", "empathy", "consensus", "navigating technical & architectural disagreements" ],
+    "criteria" : [ "focuses on objective technical facts and business outcomes rather than ego", "actively listens, demonstrates empathy, and validates counter-arguments", "exhibits maturity in de-escalation, compromise, and shared ownership" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-012",
+    "question" : "Describe a scenario where you convinced a skeptical team member to support a controversial change through data and proof-of-concept testing.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Navigating Technical & Architectural Disagreements",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "disagreements", "conflict resolution", "collaboration", "empathy", "consensus", "navigating technical & architectural disagreements" ],
+    "criteria" : [ "focuses on objective technical facts and business outcomes rather than ego", "actively listens, demonstrates empathy, and validates counter-arguments", "exhibits maturity in de-escalation, compromise, and shared ownership" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-013",
+    "question" : "Give an example of how you navigated a disagreement over code formatting or linting rules that was threatening to derail team velocity.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Navigating Technical & Architectural Disagreements",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "disagreements", "conflict resolution", "collaboration", "empathy", "consensus", "navigating technical & architectural disagreements" ],
+    "criteria" : [ "focuses on objective technical facts and business outcomes rather than ego", "actively listens, demonstrates empathy, and validates counter-arguments", "exhibits maturity in de-escalation, compromise, and shared ownership" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-014",
+    "question" : "Tell me about a time you accepted a coworker's architectural design even though you believed yours was marginally better.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Navigating Technical & Architectural Disagreements",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "disagreements", "conflict resolution", "collaboration", "empathy", "consensus", "navigating technical & architectural disagreements" ],
+    "criteria" : [ "focuses on objective technical facts and business outcomes rather than ego", "actively listens, demonstrates empathy, and validates counter-arguments", "exhibits maturity in de-escalation, compromise, and shared ownership" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-015",
+    "question" : "Describe a situation where you and another engineer were deadlocked on a database schema design, and how you broke the stalemate.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Navigating Technical & Architectural Disagreements",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "disagreements", "conflict resolution", "collaboration", "empathy", "consensus", "navigating technical & architectural disagreements" ],
+    "criteria" : [ "focuses on objective technical facts and business outcomes rather than ego", "actively listens, demonstrates empathy, and validates counter-arguments", "exhibits maturity in de-escalation, compromise, and shared ownership" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-016",
+    "question" : "Tell me about a time a colleague publicly criticized your architecture in front of the team, and how you handled the interaction professionally.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Navigating Technical & Architectural Disagreements",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "disagreements", "conflict resolution", "collaboration", "empathy", "consensus", "navigating technical & architectural disagreements" ],
+    "criteria" : [ "focuses on objective technical facts and business outcomes rather than ego", "actively listens, demonstrates empathy, and validates counter-arguments", "exhibits maturity in de-escalation, compromise, and shared ownership" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-017",
+    "question" : "Share an experience where you had to compromise on your preferred technology stack to maintain team cohesion and shared ownership.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Navigating Technical & Architectural Disagreements",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "disagreements", "conflict resolution", "collaboration", "empathy", "consensus", "navigating technical & architectural disagreements" ],
+    "criteria" : [ "focuses on objective technical facts and business outcomes rather than ego", "actively listens, demonstrates empathy, and validates counter-arguments", "exhibits maturity in de-escalation, compromise, and shared ownership" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-018",
+    "question" : "Tell me about a time an engineering disagreement became heated, and what specific steps you took to de-escalate the tension.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Navigating Technical & Architectural Disagreements",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "disagreements", "conflict resolution", "collaboration", "empathy", "consensus", "navigating technical & architectural disagreements" ],
+    "criteria" : [ "focuses on objective technical facts and business outcomes rather than ego", "actively listens, demonstrates empathy, and validates counter-arguments", "exhibits maturity in de-escalation, compromise, and shared ownership" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-019",
+    "question" : "Describe a scenario where you convinced a skeptical team member to support a controversial change through data and proof-of-concept testing.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Navigating Technical & Architectural Disagreements",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "disagreements", "conflict resolution", "collaboration", "empathy", "consensus", "navigating technical & architectural disagreements" ],
+    "criteria" : [ "focuses on objective technical facts and business outcomes rather than ego", "actively listens, demonstrates empathy, and validates counter-arguments", "exhibits maturity in de-escalation, compromise, and shared ownership" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-020",
+    "question" : "Give an example of how you navigated a disagreement over code formatting or linting rules that was threatening to derail team velocity.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Navigating Technical & Architectural Disagreements",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "disagreements", "conflict resolution", "collaboration", "empathy", "consensus", "navigating technical & architectural disagreements" ],
+    "criteria" : [ "focuses on objective technical facts and business outcomes rather than ego", "actively listens, demonstrates empathy, and validates counter-arguments", "exhibits maturity in de-escalation, compromise, and shared ownership" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-021",
+    "question" : "Tell me about a time you accepted a coworker's architectural design even though you believed yours was marginally better.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Navigating Technical & Architectural Disagreements",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "disagreements", "conflict resolution", "collaboration", "empathy", "consensus", "navigating technical & architectural disagreements" ],
+    "criteria" : [ "focuses on objective technical facts and business outcomes rather than ego", "actively listens, demonstrates empathy, and validates counter-arguments", "exhibits maturity in de-escalation, compromise, and shared ownership" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-022",
+    "question" : "Describe a situation where you and another engineer were deadlocked on a database schema design, and how you broke the stalemate.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Navigating Technical & Architectural Disagreements",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "disagreements", "conflict resolution", "collaboration", "empathy", "consensus", "navigating technical & architectural disagreements" ],
+    "criteria" : [ "focuses on objective technical facts and business outcomes rather than ego", "actively listens, demonstrates empathy, and validates counter-arguments", "exhibits maturity in de-escalation, compromise, and shared ownership" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-023",
+    "question" : "Tell me about a time a colleague publicly criticized your architecture in front of the team, and how you handled the interaction professionally.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Navigating Technical & Architectural Disagreements",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "disagreements", "conflict resolution", "collaboration", "empathy", "consensus", "navigating technical & architectural disagreements" ],
+    "criteria" : [ "focuses on objective technical facts and business outcomes rather than ego", "actively listens, demonstrates empathy, and validates counter-arguments", "exhibits maturity in de-escalation, compromise, and shared ownership" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-024",
+    "question" : "Share an experience where you had to compromise on your preferred technology stack to maintain team cohesion and shared ownership.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Navigating Technical & Architectural Disagreements",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "disagreements", "conflict resolution", "collaboration", "empathy", "consensus", "navigating technical & architectural disagreements" ],
+    "criteria" : [ "focuses on objective technical facts and business outcomes rather than ego", "actively listens, demonstrates empathy, and validates counter-arguments", "exhibits maturity in de-escalation, compromise, and shared ownership" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-025",
+    "question" : "Tell me about a time an engineering disagreement became heated, and what specific steps you took to de-escalate the tension.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Navigating Technical & Architectural Disagreements",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "disagreements", "conflict resolution", "collaboration", "empathy", "consensus", "navigating technical & architectural disagreements" ],
+    "criteria" : [ "focuses on objective technical facts and business outcomes rather than ego", "actively listens, demonstrates empathy, and validates counter-arguments", "exhibits maturity in de-escalation, compromise, and shared ownership" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-026",
+    "question" : "Describe a scenario where you convinced a skeptical team member to support a controversial change through data and proof-of-concept testing.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Navigating Technical & Architectural Disagreements",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "disagreements", "conflict resolution", "collaboration", "empathy", "consensus", "navigating technical & architectural disagreements" ],
+    "criteria" : [ "focuses on objective technical facts and business outcomes rather than ego", "actively listens, demonstrates empathy, and validates counter-arguments", "exhibits maturity in de-escalation, compromise, and shared ownership" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-027",
+    "question" : "Tell me about a time you successfully mediated a high-stakes conflict between principal architects that had stalled a $10M corporate platform initiative.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Navigating Technical & Architectural Disagreements",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "disagreements", "conflict resolution", "collaboration", "empathy", "consensus", "navigating technical & architectural disagreements" ],
+    "criteria" : [ "focuses on objective technical facts and business outcomes rather than ego", "actively listens, demonstrates empathy, and validates counter-arguments", "exhibits maturity in de-escalation, compromise, and shared ownership" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-028",
+    "question" : "Share an experience where an unresolved interpersonal conflict threatened team retention, and how you addressed the root systemic causes.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Navigating Technical & Architectural Disagreements",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "disagreements", "conflict resolution", "collaboration", "empathy", "consensus", "navigating technical & architectural disagreements" ],
+    "criteria" : [ "focuses on objective technical facts and business outcomes rather than ego", "actively listens, demonstrates empathy, and validates counter-arguments", "exhibits maturity in de-escalation, compromise, and shared ownership" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-029",
+    "question" : "Describe a situation where you had to push through an essential architectural change despite vocal opposition from an entrenched, influential senior engineer.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Navigating Technical & Architectural Disagreements",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "disagreements", "conflict resolution", "collaboration", "empathy", "consensus", "navigating technical & architectural disagreements" ],
+    "criteria" : [ "focuses on objective technical facts and business outcomes rather than ego", "actively listens, demonstrates empathy, and validates counter-arguments", "exhibits maturity in de-escalation, compromise, and shared ownership" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-030",
+    "question" : "Tell me about an experience where you rebuilt trust with a colleague following a severe professional dispute that had impacted project delivery.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Navigating Technical & Architectural Disagreements",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "disagreements", "conflict resolution", "collaboration", "empathy", "consensus", "navigating technical & architectural disagreements" ],
+    "criteria" : [ "focuses on objective technical facts and business outcomes rather than ego", "actively listens, demonstrates empathy, and validates counter-arguments", "exhibits maturity in de-escalation, compromise, and shared ownership" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-031",
+    "question" : "Describe a scenario where a deep ideological divide (e.g. microservices vs monolith, dynamic vs static typing) split an engineering team, and how you led reconciliation.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Navigating Technical & Architectural Disagreements",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "disagreements", "conflict resolution", "collaboration", "empathy", "consensus", "navigating technical & architectural disagreements" ],
+    "criteria" : [ "focuses on objective technical facts and business outcomes rather than ego", "actively listens, demonstrates empathy, and validates counter-arguments", "exhibits maturity in de-escalation, compromise, and shared ownership" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-032",
+    "question" : "Tell me about a time you successfully mediated a high-stakes conflict between principal architects that had stalled a $10M corporate platform initiative.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Navigating Technical & Architectural Disagreements",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "disagreements", "conflict resolution", "collaboration", "empathy", "consensus", "navigating technical & architectural disagreements" ],
+    "criteria" : [ "focuses on objective technical facts and business outcomes rather than ego", "actively listens, demonstrates empathy, and validates counter-arguments", "exhibits maturity in de-escalation, compromise, and shared ownership" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-033",
+    "question" : "Tell me about a time you worked with a UI/UX designer to translate a mock-up into a working, responsive application.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Cross-Functional Collaboration with Product & Design",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "cross-functional", "product management", "design", "teamwork", "communication", "cross-functional collaboration with product & design" ],
+    "criteria" : [ "demonstrates deep respect and effective communication with non-technical peers", "balances customer experience with technical feasibility and long-term maintainability", "solves problems through collaborative negotiation and shared accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-034",
+    "question" : "How do you handle a situation where a Product Manager asks for an estimate on a feature that has vague requirements?",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Cross-Functional Collaboration with Product & Design",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "cross-functional", "product management", "design", "teamwork", "communication", "cross-functional collaboration with product & design" ],
+    "criteria" : [ "demonstrates deep respect and effective communication with non-technical peers", "balances customer experience with technical feasibility and long-term maintainability", "solves problems through collaborative negotiation and shared accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-035",
+    "question" : "Describe an experience where technical constraints prevented you from implementing a designer's exact specification, and how you collaborated.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Cross-Functional Collaboration with Product & Design",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "cross-functional", "product management", "design", "teamwork", "communication", "cross-functional collaboration with product & design" ],
+    "criteria" : [ "demonstrates deep respect and effective communication with non-technical peers", "balances customer experience with technical feasibility and long-term maintainability", "solves problems through collaborative negotiation and shared accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-036",
+    "question" : "Tell me about a time you gave feedback on product requirements that prevented a usability or performance issue down the line.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Cross-Functional Collaboration with Product & Design",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "cross-functional", "product management", "design", "teamwork", "communication", "cross-functional collaboration with product & design" ],
+    "criteria" : [ "demonstrates deep respect and effective communication with non-technical peers", "balances customer experience with technical feasibility and long-term maintainability", "solves problems through collaborative negotiation and shared accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-037",
+    "question" : "How do you maintain a collaborative, positive relationship with non-technical business partners?",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Cross-Functional Collaboration with Product & Design",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "cross-functional", "product management", "design", "teamwork", "communication", "cross-functional collaboration with product & design" ],
+    "criteria" : [ "demonstrates deep respect and effective communication with non-technical peers", "balances customer experience with technical feasibility and long-term maintainability", "solves problems through collaborative negotiation and shared accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-038",
+    "question" : "Describe a situation where a feature you built did not match what the Product Manager envisioned, and how you fixed it.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Cross-Functional Collaboration with Product & Design",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "cross-functional", "product management", "design", "teamwork", "communication", "cross-functional collaboration with product & design" ],
+    "criteria" : [ "demonstrates deep respect and effective communication with non-technical peers", "balances customer experience with technical feasibility and long-term maintainability", "solves problems through collaborative negotiation and shared accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-039",
+    "question" : "Tell me about a time you partnered with QA engineers early in the development cycle to improve release quality.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Cross-Functional Collaboration with Product & Design",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "cross-functional", "product management", "design", "teamwork", "communication", "cross-functional collaboration with product & design" ],
+    "criteria" : [ "demonstrates deep respect and effective communication with non-technical peers", "balances customer experience with technical feasibility and long-term maintainability", "solves problems through collaborative negotiation and shared accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-040",
+    "question" : "Tell me about a time you worked with a UI/UX designer to translate a mock-up into a working, responsive application.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Cross-Functional Collaboration with Product & Design",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "cross-functional", "product management", "design", "teamwork", "communication", "cross-functional collaboration with product & design" ],
+    "criteria" : [ "demonstrates deep respect and effective communication with non-technical peers", "balances customer experience with technical feasibility and long-term maintainability", "solves problems through collaborative negotiation and shared accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-041",
+    "question" : "How do you handle a situation where a Product Manager asks for an estimate on a feature that has vague requirements?",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Cross-Functional Collaboration with Product & Design",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "cross-functional", "product management", "design", "teamwork", "communication", "cross-functional collaboration with product & design" ],
+    "criteria" : [ "demonstrates deep respect and effective communication with non-technical peers", "balances customer experience with technical feasibility and long-term maintainability", "solves problems through collaborative negotiation and shared accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-042",
+    "question" : "Describe an experience where technical constraints prevented you from implementing a designer's exact specification, and how you collaborated.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Cross-Functional Collaboration with Product & Design",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "cross-functional", "product management", "design", "teamwork", "communication", "cross-functional collaboration with product & design" ],
+    "criteria" : [ "demonstrates deep respect and effective communication with non-technical peers", "balances customer experience with technical feasibility and long-term maintainability", "solves problems through collaborative negotiation and shared accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-043",
+    "question" : "Tell me about a time you helped a Product Manager understand why technical debt needed to be addressed before building new user-facing features.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Cross-Functional Collaboration with Product & Design",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cross-functional", "product management", "design", "teamwork", "communication", "cross-functional collaboration with product & design" ],
+    "criteria" : [ "demonstrates deep respect and effective communication with non-technical peers", "balances customer experience with technical feasibility and long-term maintainability", "solves problems through collaborative negotiation and shared accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-044",
+    "question" : "Describe how you navigated conflicting feature requests coming from Sales, Support, and Product teams simultaneously.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Cross-Functional Collaboration with Product & Design",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cross-functional", "product management", "design", "teamwork", "communication", "cross-functional collaboration with product & design" ],
+    "criteria" : [ "demonstrates deep respect and effective communication with non-technical peers", "balances customer experience with technical feasibility and long-term maintainability", "solves problems through collaborative negotiation and shared accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-045",
+    "question" : "Give an example of how you built cross-functional empathy by shadowing customer support or sales calls to understand end-user pain points.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Cross-Functional Collaboration with Product & Design",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cross-functional", "product management", "design", "teamwork", "communication", "cross-functional collaboration with product & design" ],
+    "criteria" : [ "demonstrates deep respect and effective communication with non-technical peers", "balances customer experience with technical feasibility and long-term maintainability", "solves problems through collaborative negotiation and shared accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-046",
+    "question" : "Tell me about a time an ambiguous edge case was discovered the night before a launch, and how you worked with Product to make a quick call.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Cross-Functional Collaboration with Product & Design",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cross-functional", "product management", "design", "teamwork", "communication", "cross-functional collaboration with product & design" ],
+    "criteria" : [ "demonstrates deep respect and effective communication with non-technical peers", "balances customer experience with technical feasibility and long-term maintainability", "solves problems through collaborative negotiation and shared accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-047",
+    "question" : "Tell me about a time a Product Manager demanded an aggressive deadline that would compromise system stability, and how you negotiated a phased rollout.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Cross-Functional Collaboration with Product & Design",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cross-functional", "product management", "design", "teamwork", "communication", "cross-functional collaboration with product & design" ],
+    "criteria" : [ "demonstrates deep respect and effective communication with non-technical peers", "balances customer experience with technical feasibility and long-term maintainability", "solves problems through collaborative negotiation and shared accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-048",
+    "question" : "Describe a situation where you proactively collaborated with product and data science teams to define measurable telemetry for a new feature.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Cross-Functional Collaboration with Product & Design",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cross-functional", "product management", "design", "teamwork", "communication", "cross-functional collaboration with product & design" ],
+    "criteria" : [ "demonstrates deep respect and effective communication with non-technical peers", "balances customer experience with technical feasibility and long-term maintainability", "solves problems through collaborative negotiation and shared accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-049",
+    "question" : "Share an experience where a designer proposed an animation or UI element that caused severe browser lag, and how you found an elegant alternative.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Cross-Functional Collaboration with Product & Design",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cross-functional", "product management", "design", "teamwork", "communication", "cross-functional collaboration with product & design" ],
+    "criteria" : [ "demonstrates deep respect and effective communication with non-technical peers", "balances customer experience with technical feasibility and long-term maintainability", "solves problems through collaborative negotiation and shared accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-050",
+    "question" : "Tell me about a time you helped a Product Manager understand why technical debt needed to be addressed before building new user-facing features.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Cross-Functional Collaboration with Product & Design",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cross-functional", "product management", "design", "teamwork", "communication", "cross-functional collaboration with product & design" ],
+    "criteria" : [ "demonstrates deep respect and effective communication with non-technical peers", "balances customer experience with technical feasibility and long-term maintainability", "solves problems through collaborative negotiation and shared accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-051",
+    "question" : "Describe how you navigated conflicting feature requests coming from Sales, Support, and Product teams simultaneously.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Cross-Functional Collaboration with Product & Design",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cross-functional", "product management", "design", "teamwork", "communication", "cross-functional collaboration with product & design" ],
+    "criteria" : [ "demonstrates deep respect and effective communication with non-technical peers", "balances customer experience with technical feasibility and long-term maintainability", "solves problems through collaborative negotiation and shared accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-052",
+    "question" : "Give an example of how you built cross-functional empathy by shadowing customer support or sales calls to understand end-user pain points.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Cross-Functional Collaboration with Product & Design",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cross-functional", "product management", "design", "teamwork", "communication", "cross-functional collaboration with product & design" ],
+    "criteria" : [ "demonstrates deep respect and effective communication with non-technical peers", "balances customer experience with technical feasibility and long-term maintainability", "solves problems through collaborative negotiation and shared accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-053",
+    "question" : "Tell me about a time an ambiguous edge case was discovered the night before a launch, and how you worked with Product to make a quick call.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Cross-Functional Collaboration with Product & Design",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cross-functional", "product management", "design", "teamwork", "communication", "cross-functional collaboration with product & design" ],
+    "criteria" : [ "demonstrates deep respect and effective communication with non-technical peers", "balances customer experience with technical feasibility and long-term maintainability", "solves problems through collaborative negotiation and shared accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-054",
+    "question" : "Tell me about a time a Product Manager demanded an aggressive deadline that would compromise system stability, and how you negotiated a phased rollout.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Cross-Functional Collaboration with Product & Design",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cross-functional", "product management", "design", "teamwork", "communication", "cross-functional collaboration with product & design" ],
+    "criteria" : [ "demonstrates deep respect and effective communication with non-technical peers", "balances customer experience with technical feasibility and long-term maintainability", "solves problems through collaborative negotiation and shared accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-055",
+    "question" : "Describe a situation where you proactively collaborated with product and data science teams to define measurable telemetry for a new feature.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Cross-Functional Collaboration with Product & Design",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cross-functional", "product management", "design", "teamwork", "communication", "cross-functional collaboration with product & design" ],
+    "criteria" : [ "demonstrates deep respect and effective communication with non-technical peers", "balances customer experience with technical feasibility and long-term maintainability", "solves problems through collaborative negotiation and shared accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-056",
+    "question" : "Share an experience where a designer proposed an animation or UI element that caused severe browser lag, and how you found an elegant alternative.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Cross-Functional Collaboration with Product & Design",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cross-functional", "product management", "design", "teamwork", "communication", "cross-functional collaboration with product & design" ],
+    "criteria" : [ "demonstrates deep respect and effective communication with non-technical peers", "balances customer experience with technical feasibility and long-term maintainability", "solves problems through collaborative negotiation and shared accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-057",
+    "question" : "Tell me about a time you helped a Product Manager understand why technical debt needed to be addressed before building new user-facing features.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Cross-Functional Collaboration with Product & Design",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cross-functional", "product management", "design", "teamwork", "communication", "cross-functional collaboration with product & design" ],
+    "criteria" : [ "demonstrates deep respect and effective communication with non-technical peers", "balances customer experience with technical feasibility and long-term maintainability", "solves problems through collaborative negotiation and shared accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-058",
+    "question" : "Describe how you navigated conflicting feature requests coming from Sales, Support, and Product teams simultaneously.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Cross-Functional Collaboration with Product & Design",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cross-functional", "product management", "design", "teamwork", "communication", "cross-functional collaboration with product & design" ],
+    "criteria" : [ "demonstrates deep respect and effective communication with non-technical peers", "balances customer experience with technical feasibility and long-term maintainability", "solves problems through collaborative negotiation and shared accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-059",
+    "question" : "Tell me about a time you spearheaded a cross-functional task force to rescue a failing strategic partnership integration under intense executive scrutiny.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Cross-Functional Collaboration with Product & Design",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "cross-functional", "product management", "design", "teamwork", "communication", "cross-functional collaboration with product & design" ],
+    "criteria" : [ "demonstrates deep respect and effective communication with non-technical peers", "balances customer experience with technical feasibility and long-term maintainability", "solves problems through collaborative negotiation and shared accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-060",
+    "question" : "Share an experience where you resolved persistent organizational silos and finger-pointing between Engineering, QA, and Product Operations.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Cross-Functional Collaboration with Product & Design",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "cross-functional", "product management", "design", "teamwork", "communication", "cross-functional collaboration with product & design" ],
+    "criteria" : [ "demonstrates deep respect and effective communication with non-technical peers", "balances customer experience with technical feasibility and long-term maintainability", "solves problems through collaborative negotiation and shared accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-061",
+    "question" : "Describe a scenario where you pushed back against executive product mandates with hard user telemetry, successfully pivoting the company towards a higher-ROI initiative.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Cross-Functional Collaboration with Product & Design",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "cross-functional", "product management", "design", "teamwork", "communication", "cross-functional collaboration with product & design" ],
+    "criteria" : [ "demonstrates deep respect and effective communication with non-technical peers", "balances customer experience with technical feasibility and long-term maintainability", "solves problems through collaborative negotiation and shared accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-062",
+    "question" : "Tell me about an experience where you unified disparate design systems and engineering repositories across newly merged product lines.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Cross-Functional Collaboration with Product & Design",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "cross-functional", "product management", "design", "teamwork", "communication", "cross-functional collaboration with product & design" ],
+    "criteria" : [ "demonstrates deep respect and effective communication with non-technical peers", "balances customer experience with technical feasibility and long-term maintainability", "solves problems through collaborative negotiation and shared accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-063",
+    "question" : "Describe a major product launch where engineering, product, marketing, and legal had to coordinate with zero margin for error, and how you ensured flawless alignment.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Cross-Functional Collaboration with Product & Design",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "cross-functional", "product management", "design", "teamwork", "communication", "cross-functional collaboration with product & design" ],
+    "criteria" : [ "demonstrates deep respect and effective communication with non-technical peers", "balances customer experience with technical feasibility and long-term maintainability", "solves problems through collaborative negotiation and shared accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-064",
+    "question" : "Tell me about a time you spearheaded a cross-functional task force to rescue a failing strategic partnership integration under intense executive scrutiny.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Cross-Functional Collaboration with Product & Design",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "cross-functional", "product management", "design", "teamwork", "communication", "cross-functional collaboration with product & design" ],
+    "criteria" : [ "demonstrates deep respect and effective communication with non-technical peers", "balances customer experience with technical feasibility and long-term maintainability", "solves problems through collaborative negotiation and shared accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-065",
+    "question" : "Tell me about the most impactful critical feedback you have ever received, and how you acted on it.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Giving & Receiving Critical Feedback",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "feedback", "growth mindset", "code review", "communication", "improvement", "giving & receiving critical feedback" ],
+    "criteria" : [ "demonstrates a growth mindset and genuine receptiveness to critical input", "delivers feedback with radical candor: caring personally while challenging directly", "tracks concrete behavior changes and self-improvement following feedback" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-066",
+    "question" : "How do you ensure your code reviews are perceived as helpful mentorship rather than harsh criticism?",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Giving & Receiving Critical Feedback",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "feedback", "growth mindset", "code review", "communication", "improvement", "giving & receiving critical feedback" ],
+    "criteria" : [ "demonstrates a growth mindset and genuine receptiveness to critical input", "delivers feedback with radical candor: caring personally while challenging directly", "tracks concrete behavior changes and self-improvement following feedback" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-067",
+    "question" : "Describe a time you received negative feedback on a project that you felt was somewhat unfair or inaccurate, and what you did.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Giving & Receiving Critical Feedback",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "feedback", "growth mindset", "code review", "communication", "improvement", "giving & receiving critical feedback" ],
+    "criteria" : [ "demonstrates a growth mindset and genuine receptiveness to critical input", "delivers feedback with radical candor: caring personally while challenging directly", "tracks concrete behavior changes and self-improvement following feedback" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-068",
+    "question" : "Tell me about a situation where you had to give uncomfortable feedback to a peer about missed commitments.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Giving & Receiving Critical Feedback",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "feedback", "growth mindset", "code review", "communication", "improvement", "giving & receiving critical feedback" ],
+    "criteria" : [ "demonstrates a growth mindset and genuine receptiveness to critical input", "delivers feedback with radical candor: caring personally while challenging directly", "tracks concrete behavior changes and self-improvement following feedback" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-069",
+    "question" : "How do you encourage your teammates to give you honest, candid feedback on your work and collaboration style?",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Giving & Receiving Critical Feedback",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "feedback", "growth mindset", "code review", "communication", "improvement", "giving & receiving critical feedback" ],
+    "criteria" : [ "demonstrates a growth mindset and genuine receptiveness to critical input", "delivers feedback with radical candor: caring personally while challenging directly", "tracks concrete behavior changes and self-improvement following feedback" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-070",
+    "question" : "Describe a time you gave positive feedback to a colleague that noticeably boosted their confidence or morale.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Giving & Receiving Critical Feedback",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "feedback", "growth mindset", "code review", "communication", "improvement", "giving & receiving critical feedback" ],
+    "criteria" : [ "demonstrates a growth mindset and genuine receptiveness to critical input", "delivers feedback with radical candor: caring personally while challenging directly", "tracks concrete behavior changes and self-improvement following feedback" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-071",
+    "question" : "Tell me about an experience where receiving feedback early in a project prevented a costly failure later on.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Giving & Receiving Critical Feedback",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "feedback", "growth mindset", "code review", "communication", "improvement", "giving & receiving critical feedback" ],
+    "criteria" : [ "demonstrates a growth mindset and genuine receptiveness to critical input", "delivers feedback with radical candor: caring personally while challenging directly", "tracks concrete behavior changes and self-improvement following feedback" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-072",
+    "question" : "Tell me about the most impactful critical feedback you have ever received, and how you acted on it.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Giving & Receiving Critical Feedback",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "feedback", "growth mindset", "code review", "communication", "improvement", "giving & receiving critical feedback" ],
+    "criteria" : [ "demonstrates a growth mindset and genuine receptiveness to critical input", "delivers feedback with radical candor: caring personally while challenging directly", "tracks concrete behavior changes and self-improvement following feedback" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-073",
+    "question" : "How do you ensure your code reviews are perceived as helpful mentorship rather than harsh criticism?",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Giving & Receiving Critical Feedback",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "feedback", "growth mindset", "code review", "communication", "improvement", "giving & receiving critical feedback" ],
+    "criteria" : [ "demonstrates a growth mindset and genuine receptiveness to critical input", "delivers feedback with radical candor: caring personally while challenging directly", "tracks concrete behavior changes and self-improvement following feedback" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-074",
+    "question" : "Describe a time you received negative feedback on a project that you felt was somewhat unfair or inaccurate, and what you did.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Giving & Receiving Critical Feedback",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "feedback", "growth mindset", "code review", "communication", "improvement", "giving & receiving critical feedback" ],
+    "criteria" : [ "demonstrates a growth mindset and genuine receptiveness to critical input", "delivers feedback with radical candor: caring personally while challenging directly", "tracks concrete behavior changes and self-improvement following feedback" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-075",
+    "question" : "Tell me about a time you had to mediate a feedback dispute between two engineers whose pull requests had devolved into nitpicking.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Giving & Receiving Critical Feedback",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "feedback", "growth mindset", "code review", "communication", "improvement", "giving & receiving critical feedback" ],
+    "criteria" : [ "demonstrates a growth mindset and genuine receptiveness to critical input", "delivers feedback with radical candor: caring personally while challenging directly", "tracks concrete behavior changes and self-improvement following feedback" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-076",
+    "question" : "Describe a scenario where you gave constructive feedback to an engineering manager about their team communication or workload distribution.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Giving & Receiving Critical Feedback",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "feedback", "growth mindset", "code review", "communication", "improvement", "giving & receiving critical feedback" ],
+    "criteria" : [ "demonstrates a growth mindset and genuine receptiveness to critical input", "delivers feedback with radical candor: caring personally while challenging directly", "tracks concrete behavior changes and self-improvement following feedback" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-077",
+    "question" : "Give an example of how you created structured feedback loops (such as sprint retrospectives) that led to measurable team process improvements.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Giving & Receiving Critical Feedback",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "feedback", "growth mindset", "code review", "communication", "improvement", "giving & receiving critical feedback" ],
+    "criteria" : [ "demonstrates a growth mindset and genuine receptiveness to critical input", "delivers feedback with radical candor: caring personally while challenging directly", "tracks concrete behavior changes and self-improvement following feedback" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-078",
+    "question" : "Tell me about a time you used radical candor to address a team member whose negative attitude was poisoning team morale.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Giving & Receiving Critical Feedback",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "feedback", "growth mindset", "code review", "communication", "improvement", "giving & receiving critical feedback" ],
+    "criteria" : [ "demonstrates a growth mindset and genuine receptiveness to critical input", "delivers feedback with radical candor: caring personally while challenging directly", "tracks concrete behavior changes and self-improvement following feedback" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-079",
+    "question" : "Tell me about a time you had to deliver critical feedback to a senior colleague or tech lead, and how you framed the conversation.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Giving & Receiving Critical Feedback",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "feedback", "growth mindset", "code review", "communication", "improvement", "giving & receiving critical feedback" ],
+    "criteria" : [ "demonstrates a growth mindset and genuine receptiveness to critical input", "delivers feedback with radical candor: caring personally while challenging directly", "tracks concrete behavior changes and self-improvement following feedback" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-080",
+    "question" : "Describe a situation where an engineer repeatedly reacted defensively to code review comments, and how you improved your interaction dynamic.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Giving & Receiving Critical Feedback",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "feedback", "growth mindset", "code review", "communication", "improvement", "giving & receiving critical feedback" ],
+    "criteria" : [ "demonstrates a growth mindset and genuine receptiveness to critical input", "delivers feedback with radical candor: caring personally while challenging directly", "tracks concrete behavior changes and self-improvement following feedback" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-081",
+    "question" : "Share an experience where 360-degree peer feedback highlighted a blind spot in your working style, and what specific steps you took to improve.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Giving & Receiving Critical Feedback",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "feedback", "growth mindset", "code review", "communication", "improvement", "giving & receiving critical feedback" ],
+    "criteria" : [ "demonstrates a growth mindset and genuine receptiveness to critical input", "delivers feedback with radical candor: caring personally while challenging directly", "tracks concrete behavior changes and self-improvement following feedback" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-082",
+    "question" : "Tell me about a time you had to mediate a feedback dispute between two engineers whose pull requests had devolved into nitpicking.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Giving & Receiving Critical Feedback",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "feedback", "growth mindset", "code review", "communication", "improvement", "giving & receiving critical feedback" ],
+    "criteria" : [ "demonstrates a growth mindset and genuine receptiveness to critical input", "delivers feedback with radical candor: caring personally while challenging directly", "tracks concrete behavior changes and self-improvement following feedback" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-083",
+    "question" : "Describe a scenario where you gave constructive feedback to an engineering manager about their team communication or workload distribution.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Giving & Receiving Critical Feedback",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "feedback", "growth mindset", "code review", "communication", "improvement", "giving & receiving critical feedback" ],
+    "criteria" : [ "demonstrates a growth mindset and genuine receptiveness to critical input", "delivers feedback with radical candor: caring personally while challenging directly", "tracks concrete behavior changes and self-improvement following feedback" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-084",
+    "question" : "Give an example of how you created structured feedback loops (such as sprint retrospectives) that led to measurable team process improvements.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Giving & Receiving Critical Feedback",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "feedback", "growth mindset", "code review", "communication", "improvement", "giving & receiving critical feedback" ],
+    "criteria" : [ "demonstrates a growth mindset and genuine receptiveness to critical input", "delivers feedback with radical candor: caring personally while challenging directly", "tracks concrete behavior changes and self-improvement following feedback" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-085",
+    "question" : "Tell me about a time you used radical candor to address a team member whose negative attitude was poisoning team morale.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Giving & Receiving Critical Feedback",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "feedback", "growth mindset", "code review", "communication", "improvement", "giving & receiving critical feedback" ],
+    "criteria" : [ "demonstrates a growth mindset and genuine receptiveness to critical input", "delivers feedback with radical candor: caring personally while challenging directly", "tracks concrete behavior changes and self-improvement following feedback" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-086",
+    "question" : "Tell me about a time you had to deliver critical feedback to a senior colleague or tech lead, and how you framed the conversation.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Giving & Receiving Critical Feedback",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "feedback", "growth mindset", "code review", "communication", "improvement", "giving & receiving critical feedback" ],
+    "criteria" : [ "demonstrates a growth mindset and genuine receptiveness to critical input", "delivers feedback with radical candor: caring personally while challenging directly", "tracks concrete behavior changes and self-improvement following feedback" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-087",
+    "question" : "Describe a situation where an engineer repeatedly reacted defensively to code review comments, and how you improved your interaction dynamic.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Giving & Receiving Critical Feedback",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "feedback", "growth mindset", "code review", "communication", "improvement", "giving & receiving critical feedback" ],
+    "criteria" : [ "demonstrates a growth mindset and genuine receptiveness to critical input", "delivers feedback with radical candor: caring personally while challenging directly", "tracks concrete behavior changes and self-improvement following feedback" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-088",
+    "question" : "Share an experience where 360-degree peer feedback highlighted a blind spot in your working style, and what specific steps you took to improve.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Giving & Receiving Critical Feedback",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "feedback", "growth mindset", "code review", "communication", "improvement", "giving & receiving critical feedback" ],
+    "criteria" : [ "demonstrates a growth mindset and genuine receptiveness to critical input", "delivers feedback with radical candor: caring personally while challenging directly", "tracks concrete behavior changes and self-improvement following feedback" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-089",
+    "question" : "Tell me about a time you had to mediate a feedback dispute between two engineers whose pull requests had devolved into nitpicking.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Giving & Receiving Critical Feedback",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "feedback", "growth mindset", "code review", "communication", "improvement", "giving & receiving critical feedback" ],
+    "criteria" : [ "demonstrates a growth mindset and genuine receptiveness to critical input", "delivers feedback with radical candor: caring personally while challenging directly", "tracks concrete behavior changes and self-improvement following feedback" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-090",
+    "question" : "Describe an experience where you had to provide formal, high-stakes performance feedback to an underperforming team member that determined their employment status.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Giving & Receiving Critical Feedback",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "feedback", "growth mindset", "code review", "communication", "improvement", "giving & receiving critical feedback" ],
+    "criteria" : [ "demonstrates a growth mindset and genuine receptiveness to critical input", "delivers feedback with radical candor: caring personally while challenging directly", "tracks concrete behavior changes and self-improvement following feedback" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-091",
+    "question" : "Tell me about a time you transformed a toxic code review culture where engineers dreaded submitting pull requests into a supportive learning environment.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Giving & Receiving Critical Feedback",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "feedback", "growth mindset", "code review", "communication", "improvement", "giving & receiving critical feedback" ],
+    "criteria" : [ "demonstrates a growth mindset and genuine receptiveness to critical input", "delivers feedback with radical candor: caring personally while challenging directly", "tracks concrete behavior changes and self-improvement following feedback" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-092",
+    "question" : "Share an instance where you received harsh public criticism from executive leadership regarding an outage, and how you responded with grace and accountability.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Giving & Receiving Critical Feedback",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "feedback", "growth mindset", "code review", "communication", "improvement", "giving & receiving critical feedback" ],
+    "criteria" : [ "demonstrates a growth mindset and genuine receptiveness to critical input", "delivers feedback with radical candor: caring personally while challenging directly", "tracks concrete behavior changes and self-improvement following feedback" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-093",
+    "question" : "Describe how you instituted a company-wide culture of continuous, lightweight feedback that replaced dreaded annual performance reviews.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Giving & Receiving Critical Feedback",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "feedback", "growth mindset", "code review", "communication", "improvement", "giving & receiving critical feedback" ],
+    "criteria" : [ "demonstrates a growth mindset and genuine receptiveness to critical input", "delivers feedback with radical candor: caring personally while challenging directly", "tracks concrete behavior changes and self-improvement following feedback" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-094",
+    "question" : "Tell me about a time you helped a brilliant but abrasive senior engineer develop emotional intelligence and constructive feedback habits.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Giving & Receiving Critical Feedback",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "feedback", "growth mindset", "code review", "communication", "improvement", "giving & receiving critical feedback" ],
+    "criteria" : [ "demonstrates a growth mindset and genuine receptiveness to critical input", "delivers feedback with radical candor: caring personally while challenging directly", "tracks concrete behavior changes and self-improvement following feedback" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-095",
+    "question" : "Describe an experience where you had to provide formal, high-stakes performance feedback to an underperforming team member that determined their employment status.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Giving & Receiving Critical Feedback",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "feedback", "growth mindset", "code review", "communication", "improvement", "giving & receiving critical feedback" ],
+    "criteria" : [ "demonstrates a growth mindset and genuine receptiveness to critical input", "delivers feedback with radical candor: caring personally while challenging directly", "tracks concrete behavior changes and self-improvement following feedback" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-096",
+    "question" : "How do you maintain strong communication and connection with team members working in different time zones?",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborating in Distributed & Diverse Teams",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "remote work", "async communication", "diversity", "inclusion", "collaboration", "collaborating in distributed & diverse teams" ],
+    "criteria" : [ "excels at clear, empathetic, asynchronous written communication", "proactively fosters equity, inclusion, and psychological safety across diverse teams", "builds resilient handoff processes that thrive across global time zones" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-097",
+    "question" : "What strategies do you use to ensure your written communication (Slack, Jira, Docs) is clear, unambiguous, and professional?",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborating in Distributed & Diverse Teams",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "remote work", "async communication", "diversity", "inclusion", "collaboration", "collaborating in distributed & diverse teams" ],
+    "criteria" : [ "excels at clear, empathetic, asynchronous written communication", "proactively fosters equity, inclusion, and psychological safety across diverse teams", "builds resilient handoff processes that thrive across global time zones" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-098",
+    "question" : "Tell me about a time you collaborated with an engineer whose primary language or cultural background was different from yours.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborating in Distributed & Diverse Teams",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "remote work", "async communication", "diversity", "inclusion", "collaboration", "collaborating in distributed & diverse teams" ],
+    "criteria" : [ "excels at clear, empathetic, asynchronous written communication", "proactively fosters equity, inclusion, and psychological safety across diverse teams", "builds resilient handoff processes that thrive across global time zones" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-099",
+    "question" : "How do you handle team discussions when working asynchronously without the ability to jump on an immediate call?",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborating in Distributed & Diverse Teams",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "remote work", "async communication", "diversity", "inclusion", "collaboration", "collaborating in distributed & diverse teams" ],
+    "criteria" : [ "excels at clear, empathetic, asynchronous written communication", "proactively fosters equity, inclusion, and psychological safety across diverse teams", "builds resilient handoff processes that thrive across global time zones" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-100",
+    "question" : "Describe a time you helped onboard a remote team member who was feeling isolated from the rest of the company.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborating in Distributed & Diverse Teams",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "remote work", "async communication", "diversity", "inclusion", "collaboration", "collaborating in distributed & diverse teams" ],
+    "criteria" : [ "excels at clear, empathetic, asynchronous written communication", "proactively fosters equity, inclusion, and psychological safety across diverse teams", "builds resilient handoff processes that thrive across global time zones" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-101",
+    "question" : "What tools and habits help you document your work thoroughly so remote teammates can pick it up when you are offline?",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborating in Distributed & Diverse Teams",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "remote work", "async communication", "diversity", "inclusion", "collaboration", "collaborating in distributed & diverse teams" ],
+    "criteria" : [ "excels at clear, empathetic, asynchronous written communication", "proactively fosters equity, inclusion, and psychological safety across diverse teams", "builds resilient handoff processes that thrive across global time zones" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-102",
+    "question" : "Tell me about a time a misunderstanding occurred due to written communication, and how you cleared it up.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborating in Distributed & Diverse Teams",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "remote work", "async communication", "diversity", "inclusion", "collaboration", "collaborating in distributed & diverse teams" ],
+    "criteria" : [ "excels at clear, empathetic, asynchronous written communication", "proactively fosters equity, inclusion, and psychological safety across diverse teams", "builds resilient handoff processes that thrive across global time zones" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-103",
+    "question" : "How do you maintain strong communication and connection with team members working in different time zones?",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborating in Distributed & Diverse Teams",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "remote work", "async communication", "diversity", "inclusion", "collaboration", "collaborating in distributed & diverse teams" ],
+    "criteria" : [ "excels at clear, empathetic, asynchronous written communication", "proactively fosters equity, inclusion, and psychological safety across diverse teams", "builds resilient handoff processes that thrive across global time zones" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-104",
+    "question" : "What strategies do you use to ensure your written communication (Slack, Jira, Docs) is clear, unambiguous, and professional?",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborating in Distributed & Diverse Teams",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "remote work", "async communication", "diversity", "inclusion", "collaboration", "collaborating in distributed & diverse teams" ],
+    "criteria" : [ "excels at clear, empathetic, asynchronous written communication", "proactively fosters equity, inclusion, and psychological safety across diverse teams", "builds resilient handoff processes that thrive across global time zones" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-105",
+    "question" : "Tell me about a time you collaborated with an engineer whose primary language or cultural background was different from yours.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborating in Distributed & Diverse Teams",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "remote work", "async communication", "diversity", "inclusion", "collaboration", "collaborating in distributed & diverse teams" ],
+    "criteria" : [ "excels at clear, empathetic, asynchronous written communication", "proactively fosters equity, inclusion, and psychological safety across diverse teams", "builds resilient handoff processes that thrive across global time zones" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-106",
+    "question" : "Tell me about a time cultural differences led to misaligned expectations regarding deadlines or directness, and how you bridged the gap.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborating in Distributed & Diverse Teams",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "remote work", "async communication", "diversity", "inclusion", "collaboration", "collaborating in distributed & diverse teams" ],
+    "criteria" : [ "excels at clear, empathetic, asynchronous written communication", "proactively fosters equity, inclusion, and psychological safety across diverse teams", "builds resilient handoff processes that thrive across global time zones" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-107",
+    "question" : "Describe how you foster inclusive team rituals (such as virtual coffee chats, asynchronous standups, or kudos channels) in a distributed setup.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborating in Distributed & Diverse Teams",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "remote work", "async communication", "diversity", "inclusion", "collaboration", "collaborating in distributed & diverse teams" ],
+    "criteria" : [ "excels at clear, empathetic, asynchronous written communication", "proactively fosters equity, inclusion, and psychological safety across diverse teams", "builds resilient handoff processes that thrive across global time zones" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-108",
+    "question" : "Give an example of how you managed handoffs of on-call operational duties across follow-the-sun global support teams.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborating in Distributed & Diverse Teams",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "remote work", "async communication", "diversity", "inclusion", "collaboration", "collaborating in distributed & diverse teams" ],
+    "criteria" : [ "excels at clear, empathetic, asynchronous written communication", "proactively fosters equity, inclusion, and psychological safety across diverse teams", "builds resilient handoff processes that thrive across global time zones" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-109",
+    "question" : "Tell me about a time you advocated for a colleague from an underrepresented background whose technical contributions were being undervalued.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborating in Distributed & Diverse Teams",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "remote work", "async communication", "diversity", "inclusion", "collaboration", "collaborating in distributed & diverse teams" ],
+    "criteria" : [ "excels at clear, empathetic, asynchronous written communication", "proactively fosters equity, inclusion, and psychological safety across diverse teams", "builds resilient handoff processes that thrive across global time zones" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-110",
+    "question" : "Describe a project where you successfully coordinated software development across three continents with only a 1-hour working overlap window.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborating in Distributed & Diverse Teams",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "remote work", "async communication", "diversity", "inclusion", "collaboration", "collaborating in distributed & diverse teams" ],
+    "criteria" : [ "excels at clear, empathetic, asynchronous written communication", "proactively fosters equity, inclusion, and psychological safety across diverse teams", "builds resilient handoff processes that thrive across global time zones" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-111",
+    "question" : "Tell me about a time you recognized that remote team members were being overlooked in hybrid meetings, and how you leveled the playing field.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborating in Distributed & Diverse Teams",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "remote work", "async communication", "diversity", "inclusion", "collaboration", "collaborating in distributed & diverse teams" ],
+    "criteria" : [ "excels at clear, empathetic, asynchronous written communication", "proactively fosters equity, inclusion, and psychological safety across diverse teams", "builds resilient handoff processes that thrive across global time zones" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-112",
+    "question" : "Share an experience where asynchronous documentation-first development allowed your team to ship faster than traditional meeting-heavy workflows.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborating in Distributed & Diverse Teams",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "remote work", "async communication", "diversity", "inclusion", "collaboration", "collaborating in distributed & diverse teams" ],
+    "criteria" : [ "excels at clear, empathetic, asynchronous written communication", "proactively fosters equity, inclusion, and psychological safety across diverse teams", "builds resilient handoff processes that thrive across global time zones" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-113",
+    "question" : "Tell me about a time cultural differences led to misaligned expectations regarding deadlines or directness, and how you bridged the gap.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborating in Distributed & Diverse Teams",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "remote work", "async communication", "diversity", "inclusion", "collaboration", "collaborating in distributed & diverse teams" ],
+    "criteria" : [ "excels at clear, empathetic, asynchronous written communication", "proactively fosters equity, inclusion, and psychological safety across diverse teams", "builds resilient handoff processes that thrive across global time zones" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-114",
+    "question" : "Describe how you foster inclusive team rituals (such as virtual coffee chats, asynchronous standups, or kudos channels) in a distributed setup.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborating in Distributed & Diverse Teams",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "remote work", "async communication", "diversity", "inclusion", "collaboration", "collaborating in distributed & diverse teams" ],
+    "criteria" : [ "excels at clear, empathetic, asynchronous written communication", "proactively fosters equity, inclusion, and psychological safety across diverse teams", "builds resilient handoff processes that thrive across global time zones" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-115",
+    "question" : "Give an example of how you managed handoffs of on-call operational duties across follow-the-sun global support teams.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborating in Distributed & Diverse Teams",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "remote work", "async communication", "diversity", "inclusion", "collaboration", "collaborating in distributed & diverse teams" ],
+    "criteria" : [ "excels at clear, empathetic, asynchronous written communication", "proactively fosters equity, inclusion, and psychological safety across diverse teams", "builds resilient handoff processes that thrive across global time zones" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-116",
+    "question" : "Tell me about a time you advocated for a colleague from an underrepresented background whose technical contributions were being undervalued.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborating in Distributed & Diverse Teams",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "remote work", "async communication", "diversity", "inclusion", "collaboration", "collaborating in distributed & diverse teams" ],
+    "criteria" : [ "excels at clear, empathetic, asynchronous written communication", "proactively fosters equity, inclusion, and psychological safety across diverse teams", "builds resilient handoff processes that thrive across global time zones" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-117",
+    "question" : "Describe a project where you successfully coordinated software development across three continents with only a 1-hour working overlap window.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborating in Distributed & Diverse Teams",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "remote work", "async communication", "diversity", "inclusion", "collaboration", "collaborating in distributed & diverse teams" ],
+    "criteria" : [ "excels at clear, empathetic, asynchronous written communication", "proactively fosters equity, inclusion, and psychological safety across diverse teams", "builds resilient handoff processes that thrive across global time zones" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-118",
+    "question" : "Tell me about a time you recognized that remote team members were being overlooked in hybrid meetings, and how you leveled the playing field.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborating in Distributed & Diverse Teams",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "remote work", "async communication", "diversity", "inclusion", "collaboration", "collaborating in distributed & diverse teams" ],
+    "criteria" : [ "excels at clear, empathetic, asynchronous written communication", "proactively fosters equity, inclusion, and psychological safety across diverse teams", "builds resilient handoff processes that thrive across global time zones" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-119",
+    "question" : "Share an experience where asynchronous documentation-first development allowed your team to ship faster than traditional meeting-heavy workflows.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborating in Distributed & Diverse Teams",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "remote work", "async communication", "diversity", "inclusion", "collaboration", "collaborating in distributed & diverse teams" ],
+    "criteria" : [ "excels at clear, empathetic, asynchronous written communication", "proactively fosters equity, inclusion, and psychological safety across diverse teams", "builds resilient handoff processes that thrive across global time zones" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-120",
+    "question" : "Tell me about a time cultural differences led to misaligned expectations regarding deadlines or directness, and how you bridged the gap.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborating in Distributed & Diverse Teams",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "remote work", "async communication", "diversity", "inclusion", "collaboration", "collaborating in distributed & diverse teams" ],
+    "criteria" : [ "excels at clear, empathetic, asynchronous written communication", "proactively fosters equity, inclusion, and psychological safety across diverse teams", "builds resilient handoff processes that thrive across global time zones" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-121",
+    "question" : "Architect an asynchronous engineering culture and operating rhythm for a 100% remote global engineering organization spanning 15 time zones.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborating in Distributed & Diverse Teams",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "remote work", "async communication", "diversity", "inclusion", "collaboration", "collaborating in distributed & diverse teams" ],
+    "criteria" : [ "excels at clear, empathetic, asynchronous written communication", "proactively fosters equity, inclusion, and psychological safety across diverse teams", "builds resilient handoff processes that thrive across global time zones" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-122",
+    "question" : "Describe a scenario where you integrated an offshore vendor engineering team into your core development process, eliminating 'us vs them' friction.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborating in Distributed & Diverse Teams",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "remote work", "async communication", "diversity", "inclusion", "collaboration", "collaborating in distributed & diverse teams" ],
+    "criteria" : [ "excels at clear, empathetic, asynchronous written communication", "proactively fosters equity, inclusion, and psychological safety across diverse teams", "builds resilient handoff processes that thrive across global time zones" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-123",
+    "question" : "Share an experience where you audited your company's hiring and interviewing rubrics to eliminate subconscious bias and increase engineering diversity.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborating in Distributed & Diverse Teams",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "remote work", "async communication", "diversity", "inclusion", "collaboration", "collaborating in distributed & diverse teams" ],
+    "criteria" : [ "excels at clear, empathetic, asynchronous written communication", "proactively fosters equity, inclusion, and psychological safety across diverse teams", "builds resilient handoff processes that thrive across global time zones" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-124",
+    "question" : "Describe how you navigated geopolitical disruptions or natural disasters affecting a distributed engineering pod while maintaining platform uptime.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborating in Distributed & Diverse Teams",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "remote work", "async communication", "diversity", "inclusion", "collaboration", "collaborating in distributed & diverse teams" ],
+    "criteria" : [ "excels at clear, empathetic, asynchronous written communication", "proactively fosters equity, inclusion, and psychological safety across diverse teams", "builds resilient handoff processes that thrive across global time zones" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-125",
+    "question" : "Tell me about an instance where you successfully built cross-cultural technical alignment across teams from an acquired international company.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborating in Distributed & Diverse Teams",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "remote work", "async communication", "diversity", "inclusion", "collaboration", "collaborating in distributed & diverse teams" ],
+    "criteria" : [ "excels at clear, empathetic, asynchronous written communication", "proactively fosters equity, inclusion, and psychological safety across diverse teams", "builds resilient handoff processes that thrive across global time zones" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-126",
+    "question" : "Architect an asynchronous engineering culture and operating rhythm for a 100% remote global engineering organization spanning 15 time zones.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborating in Distributed & Diverse Teams",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "remote work", "async communication", "diversity", "inclusion", "collaboration", "collaborating in distributed & diverse teams" ],
+    "criteria" : [ "excels at clear, empathetic, asynchronous written communication", "proactively fosters equity, inclusion, and psychological safety across diverse teams", "builds resilient handoff processes that thrive across global time zones" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-127",
+    "question" : "Tell me about a time a teammate had an emergency, and you stepped in to cover their commitments or on-call duties.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Supporting Teammates in Crisis & High Pressure",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "support", "empathy", "crunch time", "teamwork", "burnout prevention", "supporting teammates in crisis & high pressure" ],
+    "criteria" : [ "demonstrates deep empathy, compassion, and practical support during crises", "advocates for sustainable engineering practices and prevents burnout", "builds durable psychological safety and blameless accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-128",
+    "question" : "How do you recognize signs of stress or burnout in yourself and your fellow engineers during intense project cycles?",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Supporting Teammates in Crisis & High Pressure",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "support", "empathy", "crunch time", "teamwork", "burnout prevention", "supporting teammates in crisis & high pressure" ],
+    "criteria" : [ "demonstrates deep empathy, compassion, and practical support during crises", "advocates for sustainable engineering practices and prevents burnout", "builds durable psychological safety and blameless accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-129",
+    "question" : "Describe a situation where a colleague was overwhelmed with tasks, and how you helped them prioritize and unblock their work.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Supporting Teammates in Crisis & High Pressure",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "support", "empathy", "crunch time", "teamwork", "burnout prevention", "supporting teammates in crisis & high pressure" ],
+    "criteria" : [ "demonstrates deep empathy, compassion, and practical support during crises", "advocates for sustainable engineering practices and prevents burnout", "builds durable psychological safety and blameless accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-130",
+    "question" : "Tell me about a time your team was facing a tight deadline, and what you did to maintain high morale and focus.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Supporting Teammates in Crisis & High Pressure",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "support", "empathy", "crunch time", "teamwork", "burnout prevention", "supporting teammates in crisis & high pressure" ],
+    "criteria" : [ "demonstrates deep empathy, compassion, and practical support during crises", "advocates for sustainable engineering practices and prevents burnout", "builds durable psychological safety and blameless accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-131",
+    "question" : "How do you handle situations where a team member makes an honest mistake that causes significant rework?",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Supporting Teammates in Crisis & High Pressure",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "support", "empathy", "crunch time", "teamwork", "burnout prevention", "supporting teammates in crisis & high pressure" ],
+    "criteria" : [ "demonstrates deep empathy, compassion, and practical support during crises", "advocates for sustainable engineering practices and prevents burnout", "builds durable psychological safety and blameless accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-132",
+    "question" : "Describe an experience where the team rallied together over a weekend or late night to resolve an unexpected emergency.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Supporting Teammates in Crisis & High Pressure",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "support", "empathy", "crunch time", "teamwork", "burnout prevention", "supporting teammates in crisis & high pressure" ],
+    "criteria" : [ "demonstrates deep empathy, compassion, and practical support during crises", "advocates for sustainable engineering practices and prevents burnout", "builds durable psychological safety and blameless accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-133",
+    "question" : "Tell me about a time you celebrated a team milestone or victory, and why recognizing shared success is important.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Supporting Teammates in Crisis & High Pressure",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "support", "empathy", "crunch time", "teamwork", "burnout prevention", "supporting teammates in crisis & high pressure" ],
+    "criteria" : [ "demonstrates deep empathy, compassion, and practical support during crises", "advocates for sustainable engineering practices and prevents burnout", "builds durable psychological safety and blameless accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-134",
+    "question" : "Tell me about a time a teammate had an emergency, and you stepped in to cover their commitments or on-call duties.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Supporting Teammates in Crisis & High Pressure",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "support", "empathy", "crunch time", "teamwork", "burnout prevention", "supporting teammates in crisis & high pressure" ],
+    "criteria" : [ "demonstrates deep empathy, compassion, and practical support during crises", "advocates for sustainable engineering practices and prevents burnout", "builds durable psychological safety and blameless accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-135",
+    "question" : "How do you recognize signs of stress or burnout in yourself and your fellow engineers during intense project cycles?",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Supporting Teammates in Crisis & High Pressure",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "support", "empathy", "crunch time", "teamwork", "burnout prevention", "supporting teammates in crisis & high pressure" ],
+    "criteria" : [ "demonstrates deep empathy, compassion, and practical support during crises", "advocates for sustainable engineering practices and prevents burnout", "builds durable psychological safety and blameless accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-136",
+    "question" : "Describe a situation where a colleague was overwhelmed with tasks, and how you helped them prioritize and unblock their work.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Supporting Teammates in Crisis & High Pressure",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "support", "empathy", "crunch time", "teamwork", "burnout prevention", "supporting teammates in crisis & high pressure" ],
+    "criteria" : [ "demonstrates deep empathy, compassion, and practical support during crises", "advocates for sustainable engineering practices and prevents burnout", "builds durable psychological safety and blameless accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-137",
+    "question" : "Tell me about a time you defended an engineer who was being unfairly blamed by external stakeholders for a project delay.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Supporting Teammates in Crisis & High Pressure",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "support", "empathy", "crunch time", "teamwork", "burnout prevention", "supporting teammates in crisis & high pressure" ],
+    "criteria" : [ "demonstrates deep empathy, compassion, and practical support during crises", "advocates for sustainable engineering practices and prevents burnout", "builds durable psychological safety and blameless accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-138",
+    "question" : "Describe how you maintained team cohesion and trust when executive leadership unexpectedly canceled a project your team spent months building.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Supporting Teammates in Crisis & High Pressure",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "support", "empathy", "crunch time", "teamwork", "burnout prevention", "supporting teammates in crisis & high pressure" ],
+    "criteria" : [ "demonstrates deep empathy, compassion, and practical support during crises", "advocates for sustainable engineering practices and prevents burnout", "builds durable psychological safety and blameless accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-139",
+    "question" : "Give an example of how you facilitated blameless learning when a major deployment failed, ensuring the team focused on solutions rather than finger-pointing.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Supporting Teammates in Crisis & High Pressure",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "support", "empathy", "crunch time", "teamwork", "burnout prevention", "supporting teammates in crisis & high pressure" ],
+    "criteria" : [ "demonstrates deep empathy, compassion, and practical support during crises", "advocates for sustainable engineering practices and prevents burnout", "builds durable psychological safety and blameless accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-140",
+    "question" : "Tell me about a time you advocated for mental health days or downtime for your teammates following a brutal on-call incident week.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Supporting Teammates in Crisis & High Pressure",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "support", "empathy", "crunch time", "teamwork", "burnout prevention", "supporting teammates in crisis & high pressure" ],
+    "criteria" : [ "demonstrates deep empathy, compassion, and practical support during crises", "advocates for sustainable engineering practices and prevents burnout", "builds durable psychological safety and blameless accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-141",
+    "question" : "Tell me about a time a prolonged crunch period threatened team burnout, and how you worked with management to adjust expectations and protect the team.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Supporting Teammates in Crisis & High Pressure",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "support", "empathy", "crunch time", "teamwork", "burnout prevention", "supporting teammates in crisis & high pressure" ],
+    "criteria" : [ "demonstrates deep empathy, compassion, and practical support during crises", "advocates for sustainable engineering practices and prevents burnout", "builds durable psychological safety and blameless accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-142",
+    "question" : "Describe a situation where an engineer felt immense guilt after accidentally dropping a production database or causing an outage, and how you supported them.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Supporting Teammates in Crisis & High Pressure",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "support", "empathy", "crunch time", "teamwork", "burnout prevention", "supporting teammates in crisis & high pressure" ],
+    "criteria" : [ "demonstrates deep empathy, compassion, and practical support during crises", "advocates for sustainable engineering practices and prevents burnout", "builds durable psychological safety and blameless accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-143",
+    "question" : "Share an experience where you noticed an unequal distribution of technical debt and maintenance tasks across the team, and how you balanced it.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Supporting Teammates in Crisis & High Pressure",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "support", "empathy", "crunch time", "teamwork", "burnout prevention", "supporting teammates in crisis & high pressure" ],
+    "criteria" : [ "demonstrates deep empathy, compassion, and practical support during crises", "advocates for sustainable engineering practices and prevents burnout", "builds durable psychological safety and blameless accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-144",
+    "question" : "Tell me about a time you defended an engineer who was being unfairly blamed by external stakeholders for a project delay.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Supporting Teammates in Crisis & High Pressure",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "support", "empathy", "crunch time", "teamwork", "burnout prevention", "supporting teammates in crisis & high pressure" ],
+    "criteria" : [ "demonstrates deep empathy, compassion, and practical support during crises", "advocates for sustainable engineering practices and prevents burnout", "builds durable psychological safety and blameless accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-145",
+    "question" : "Describe how you maintained team cohesion and trust when executive leadership unexpectedly canceled a project your team spent months building.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Supporting Teammates in Crisis & High Pressure",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "support", "empathy", "crunch time", "teamwork", "burnout prevention", "supporting teammates in crisis & high pressure" ],
+    "criteria" : [ "demonstrates deep empathy, compassion, and practical support during crises", "advocates for sustainable engineering practices and prevents burnout", "builds durable psychological safety and blameless accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-146",
+    "question" : "Give an example of how you facilitated blameless learning when a major deployment failed, ensuring the team focused on solutions rather than finger-pointing.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Supporting Teammates in Crisis & High Pressure",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "support", "empathy", "crunch time", "teamwork", "burnout prevention", "supporting teammates in crisis & high pressure" ],
+    "criteria" : [ "demonstrates deep empathy, compassion, and practical support during crises", "advocates for sustainable engineering practices and prevents burnout", "builds durable psychological safety and blameless accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-147",
+    "question" : "Tell me about a time you advocated for mental health days or downtime for your teammates following a brutal on-call incident week.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Supporting Teammates in Crisis & High Pressure",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "support", "empathy", "crunch time", "teamwork", "burnout prevention", "supporting teammates in crisis & high pressure" ],
+    "criteria" : [ "demonstrates deep empathy, compassion, and practical support during crises", "advocates for sustainable engineering practices and prevents burnout", "builds durable psychological safety and blameless accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-148",
+    "question" : "Tell me about a time a prolonged crunch period threatened team burnout, and how you worked with management to adjust expectations and protect the team.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Supporting Teammates in Crisis & High Pressure",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "support", "empathy", "crunch time", "teamwork", "burnout prevention", "supporting teammates in crisis & high pressure" ],
+    "criteria" : [ "demonstrates deep empathy, compassion, and practical support during crises", "advocates for sustainable engineering practices and prevents burnout", "builds durable psychological safety and blameless accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-149",
+    "question" : "Describe a situation where an engineer felt immense guilt after accidentally dropping a production database or causing an outage, and how you supported them.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Supporting Teammates in Crisis & High Pressure",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "support", "empathy", "crunch time", "teamwork", "burnout prevention", "supporting teammates in crisis & high pressure" ],
+    "criteria" : [ "demonstrates deep empathy, compassion, and practical support during crises", "advocates for sustainable engineering practices and prevents burnout", "builds durable psychological safety and blameless accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-150",
+    "question" : "Share an experience where you noticed an unequal distribution of technical debt and maintenance tasks across the team, and how you balanced it.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Supporting Teammates in Crisis & High Pressure",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "support", "empathy", "crunch time", "teamwork", "burnout prevention", "supporting teammates in crisis & high pressure" ],
+    "criteria" : [ "demonstrates deep empathy, compassion, and practical support during crises", "advocates for sustainable engineering practices and prevents burnout", "builds durable psychological safety and blameless accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-151",
+    "question" : "Tell me about a time you defended an engineer who was being unfairly blamed by external stakeholders for a project delay.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Supporting Teammates in Crisis & High Pressure",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "support", "empathy", "crunch time", "teamwork", "burnout prevention", "supporting teammates in crisis & high pressure" ],
+    "criteria" : [ "demonstrates deep empathy, compassion, and practical support during crises", "advocates for sustainable engineering practices and prevents burnout", "builds durable psychological safety and blameless accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-152",
+    "question" : "Describe how you guided an engineering department through the emotional fallout and operational restructuring following a major company layoff.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Supporting Teammates in Crisis & High Pressure",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "support", "empathy", "crunch time", "teamwork", "burnout prevention", "supporting teammates in crisis & high pressure" ],
+    "criteria" : [ "demonstrates deep empathy, compassion, and practical support during crises", "advocates for sustainable engineering practices and prevents burnout", "builds durable psychological safety and blameless accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-153",
+    "question" : "Tell me about a high-stress crisis where the survival of the business was on the line, and how you kept the engineering team unified and resilient.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Supporting Teammates in Crisis & High Pressure",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "support", "empathy", "crunch time", "teamwork", "burnout prevention", "supporting teammates in crisis & high pressure" ],
+    "criteria" : [ "demonstrates deep empathy, compassion, and practical support during crises", "advocates for sustainable engineering practices and prevents burnout", "builds durable psychological safety and blameless accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-154",
+    "question" : "Share an instance where you intervened to prevent a toxic manager from burning out high-potential engineers, successfully resetting team dynamics.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Supporting Teammates in Crisis & High Pressure",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "support", "empathy", "crunch time", "teamwork", "burnout prevention", "supporting teammates in crisis & high pressure" ],
+    "criteria" : [ "demonstrates deep empathy, compassion, and practical support during crises", "advocates for sustainable engineering practices and prevents burnout", "builds durable psychological safety and blameless accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-155",
+    "question" : "Describe how you institutionalized sustainable on-call practices (secondary on-calls, follow-the-sun handoffs, post-incident compensation) across an enterprise.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Supporting Teammates in Crisis & High Pressure",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "support", "empathy", "crunch time", "teamwork", "burnout prevention", "supporting teammates in crisis & high pressure" ],
+    "criteria" : [ "demonstrates deep empathy, compassion, and practical support during crises", "advocates for sustainable engineering practices and prevents burnout", "builds durable psychological safety and blameless accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-156",
+    "question" : "Tell me about a time an engineering disaster caused executive panic, and how your steady support for your team prevented retaliatory firings.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Supporting Teammates in Crisis & High Pressure",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "support", "empathy", "crunch time", "teamwork", "burnout prevention", "supporting teammates in crisis & high pressure" ],
+    "criteria" : [ "demonstrates deep empathy, compassion, and practical support during crises", "advocates for sustainable engineering practices and prevents burnout", "builds durable psychological safety and blameless accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-157",
+    "question" : "Describe how you guided an engineering department through the emotional fallout and operational restructuring following a major company layoff.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Supporting Teammates in Crisis & High Pressure",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "support", "empathy", "crunch time", "teamwork", "burnout prevention", "supporting teammates in crisis & high pressure" ],
+    "criteria" : [ "demonstrates deep empathy, compassion, and practical support during crises", "advocates for sustainable engineering practices and prevents burnout", "builds durable psychological safety and blameless accountability" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-158",
+    "question" : "Tell me about a time you had to work with someone whose working personality was very different from yours.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Resolving Interpersonal & Workflow Friction",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "interpersonal", "friction", "workflow", "process", "resolution", "resolving interpersonal & workflow friction" ],
+    "criteria" : [ "addresses interpersonal tension directly, professionally, and without passive aggression", "streamlines bloated processes while respecting team autonomy and productivity", "navigates challenging personalities with emotional maturity and composure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-159",
+    "question" : "Describe a situation where miscommunication caused duplicate work or confusion on a project, and how you cleared it up.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Resolving Interpersonal & Workflow Friction",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "interpersonal", "friction", "workflow", "process", "resolution", "resolving interpersonal & workflow friction" ],
+    "criteria" : [ "addresses interpersonal tension directly, professionally, and without passive aggression", "streamlines bloated processes while respecting team autonomy and productivity", "navigates challenging personalities with emotional maturity and composure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-160",
+    "question" : "How do you handle a teammate who consistently misses deadlines or fails to attend scheduled syncs?",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Resolving Interpersonal & Workflow Friction",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "interpersonal", "friction", "workflow", "process", "resolution", "resolving interpersonal & workflow friction" ],
+    "criteria" : [ "addresses interpersonal tension directly, professionally, and without passive aggression", "streamlines bloated processes while respecting team autonomy and productivity", "navigates challenging personalities with emotional maturity and composure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-161",
+    "question" : "Tell me about a time you felt your ideas were being ignored in meetings, and what you did to address the situation.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Resolving Interpersonal & Workflow Friction",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "interpersonal", "friction", "workflow", "process", "resolution", "resolving interpersonal & workflow friction" ],
+    "criteria" : [ "addresses interpersonal tension directly, professionally, and without passive aggression", "streamlines bloated processes while respecting team autonomy and productivity", "navigates challenging personalities with emotional maturity and composure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-162",
+    "question" : "Describe an experience where process overhead (too many meetings, excessive Jira tracking) was frustrating the team, and how you streamlined it.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Resolving Interpersonal & Workflow Friction",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "interpersonal", "friction", "workflow", "process", "resolution", "resolving interpersonal & workflow friction" ],
+    "criteria" : [ "addresses interpersonal tension directly, professionally, and without passive aggression", "streamlines bloated processes while respecting team autonomy and productivity", "navigates challenging personalities with emotional maturity and composure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-163",
+    "question" : "How do you approach a colleague who appears resistant to adopting new engineering workflows or tools?",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Resolving Interpersonal & Workflow Friction",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "interpersonal", "friction", "workflow", "process", "resolution", "resolving interpersonal & workflow friction" ],
+    "criteria" : [ "addresses interpersonal tension directly, professionally, and without passive aggression", "streamlines bloated processes while respecting team autonomy and productivity", "navigates challenging personalities with emotional maturity and composure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-164",
+    "question" : "Tell me about a time you had to apologize to a coworker for a misunderstanding or a mistake you made.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Resolving Interpersonal & Workflow Friction",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "interpersonal", "friction", "workflow", "process", "resolution", "resolving interpersonal & workflow friction" ],
+    "criteria" : [ "addresses interpersonal tension directly, professionally, and without passive aggression", "streamlines bloated processes while respecting team autonomy and productivity", "navigates challenging personalities with emotional maturity and composure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-165",
+    "question" : "Tell me about a time you had to work with someone whose working personality was very different from yours.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Resolving Interpersonal & Workflow Friction",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "interpersonal", "friction", "workflow", "process", "resolution", "resolving interpersonal & workflow friction" ],
+    "criteria" : [ "addresses interpersonal tension directly, professionally, and without passive aggression", "streamlines bloated processes while respecting team autonomy and productivity", "navigates challenging personalities with emotional maturity and composure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-166",
+    "question" : "Describe a situation where miscommunication caused duplicate work or confusion on a project, and how you cleared it up.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Resolving Interpersonal & Workflow Friction",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "interpersonal", "friction", "workflow", "process", "resolution", "resolving interpersonal & workflow friction" ],
+    "criteria" : [ "addresses interpersonal tension directly, professionally, and without passive aggression", "streamlines bloated processes while respecting team autonomy and productivity", "navigates challenging personalities with emotional maturity and composure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-167",
+    "question" : "How do you handle a teammate who consistently misses deadlines or fails to attend scheduled syncs?",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Resolving Interpersonal & Workflow Friction",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "interpersonal", "friction", "workflow", "process", "resolution", "resolving interpersonal & workflow friction" ],
+    "criteria" : [ "addresses interpersonal tension directly, professionally, and without passive aggression", "streamlines bloated processes while respecting team autonomy and productivity", "navigates challenging personalities with emotional maturity and composure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-168",
+    "question" : "Tell me about a time a coworker took credit for your work or idea, and how you handled the situation professionally with them and your manager.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Resolving Interpersonal & Workflow Friction",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "interpersonal", "friction", "workflow", "process", "resolution", "resolving interpersonal & workflow friction" ],
+    "criteria" : [ "addresses interpersonal tension directly, professionally, and without passive aggression", "streamlines bloated processes while respecting team autonomy and productivity", "navigates challenging personalities with emotional maturity and composure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-169",
+    "question" : "Describe how you eliminated 'us vs them' friction between backend and frontend developers through shared contracts and mock APIs.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Resolving Interpersonal & Workflow Friction",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "interpersonal", "friction", "workflow", "process", "resolution", "resolving interpersonal & workflow friction" ],
+    "criteria" : [ "addresses interpersonal tension directly, professionally, and without passive aggression", "streamlines bloated processes while respecting team autonomy and productivity", "navigates challenging personalities with emotional maturity and composure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-170",
+    "question" : "Give an example of how you addressed passive-aggressive communication in team Slack channels or code reviews.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Resolving Interpersonal & Workflow Friction",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "interpersonal", "friction", "workflow", "process", "resolution", "resolving interpersonal & workflow friction" ],
+    "criteria" : [ "addresses interpersonal tension directly, professionally, and without passive aggression", "streamlines bloated processes while respecting team autonomy and productivity", "navigates challenging personalities with emotional maturity and composure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-171",
+    "question" : "Tell me about a time you successfully negotiated workload boundaries when product managers attempted to bypass sprint planning.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Resolving Interpersonal & Workflow Friction",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "interpersonal", "friction", "workflow", "process", "resolution", "resolving interpersonal & workflow friction" ],
+    "criteria" : [ "addresses interpersonal tension directly, professionally, and without passive aggression", "streamlines bloated processes while respecting team autonomy and productivity", "navigates challenging personalities with emotional maturity and composure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-172",
+    "question" : "Tell me about a time you worked with a brilliant but exceptionally difficult colleague, and how you established a productive professional relationship.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Resolving Interpersonal & Workflow Friction",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "interpersonal", "friction", "workflow", "process", "resolution", "resolving interpersonal & workflow friction" ],
+    "criteria" : [ "addresses interpersonal tension directly, professionally, and without passive aggression", "streamlines bloated processes while respecting team autonomy and productivity", "navigates challenging personalities with emotional maturity and composure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-173",
+    "question" : "Describe a situation where two senior engineers refused to speak directly to each other, and how you bridged the communication gap.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Resolving Interpersonal & Workflow Friction",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "interpersonal", "friction", "workflow", "process", "resolution", "resolving interpersonal & workflow friction" ],
+    "criteria" : [ "addresses interpersonal tension directly, professionally, and without passive aggression", "streamlines bloated processes while respecting team autonomy and productivity", "navigates challenging personalities with emotional maturity and composure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-174",
+    "question" : "Share an experience where you resolved persistent friction between developers and the QA team regarding ticket quality and verification criteria.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Resolving Interpersonal & Workflow Friction",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "interpersonal", "friction", "workflow", "process", "resolution", "resolving interpersonal & workflow friction" ],
+    "criteria" : [ "addresses interpersonal tension directly, professionally, and without passive aggression", "streamlines bloated processes while respecting team autonomy and productivity", "navigates challenging personalities with emotional maturity and composure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-175",
+    "question" : "Tell me about a time a coworker took credit for your work or idea, and how you handled the situation professionally with them and your manager.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Resolving Interpersonal & Workflow Friction",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "interpersonal", "friction", "workflow", "process", "resolution", "resolving interpersonal & workflow friction" ],
+    "criteria" : [ "addresses interpersonal tension directly, professionally, and without passive aggression", "streamlines bloated processes while respecting team autonomy and productivity", "navigates challenging personalities with emotional maturity and composure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-176",
+    "question" : "Describe how you eliminated 'us vs them' friction between backend and frontend developers through shared contracts and mock APIs.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Resolving Interpersonal & Workflow Friction",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "interpersonal", "friction", "workflow", "process", "resolution", "resolving interpersonal & workflow friction" ],
+    "criteria" : [ "addresses interpersonal tension directly, professionally, and without passive aggression", "streamlines bloated processes while respecting team autonomy and productivity", "navigates challenging personalities with emotional maturity and composure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-177",
+    "question" : "Give an example of how you addressed passive-aggressive communication in team Slack channels or code reviews.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Resolving Interpersonal & Workflow Friction",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "interpersonal", "friction", "workflow", "process", "resolution", "resolving interpersonal & workflow friction" ],
+    "criteria" : [ "addresses interpersonal tension directly, professionally, and without passive aggression", "streamlines bloated processes while respecting team autonomy and productivity", "navigates challenging personalities with emotional maturity and composure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-178",
+    "question" : "Tell me about a time you successfully negotiated workload boundaries when product managers attempted to bypass sprint planning.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Resolving Interpersonal & Workflow Friction",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "interpersonal", "friction", "workflow", "process", "resolution", "resolving interpersonal & workflow friction" ],
+    "criteria" : [ "addresses interpersonal tension directly, professionally, and without passive aggression", "streamlines bloated processes while respecting team autonomy and productivity", "navigates challenging personalities with emotional maturity and composure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-179",
+    "question" : "Tell me about a time you worked with a brilliant but exceptionally difficult colleague, and how you established a productive professional relationship.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Resolving Interpersonal & Workflow Friction",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "interpersonal", "friction", "workflow", "process", "resolution", "resolving interpersonal & workflow friction" ],
+    "criteria" : [ "addresses interpersonal tension directly, professionally, and without passive aggression", "streamlines bloated processes while respecting team autonomy and productivity", "navigates challenging personalities with emotional maturity and composure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-180",
+    "question" : "Describe a situation where two senior engineers refused to speak directly to each other, and how you bridged the communication gap.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Resolving Interpersonal & Workflow Friction",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "interpersonal", "friction", "workflow", "process", "resolution", "resolving interpersonal & workflow friction" ],
+    "criteria" : [ "addresses interpersonal tension directly, professionally, and without passive aggression", "streamlines bloated processes while respecting team autonomy and productivity", "navigates challenging personalities with emotional maturity and composure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-181",
+    "question" : "Share an experience where you resolved persistent friction between developers and the QA team regarding ticket quality and verification criteria.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Resolving Interpersonal & Workflow Friction",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "interpersonal", "friction", "workflow", "process", "resolution", "resolving interpersonal & workflow friction" ],
+    "criteria" : [ "addresses interpersonal tension directly, professionally, and without passive aggression", "streamlines bloated processes while respecting team autonomy and productivity", "navigates challenging personalities with emotional maturity and composure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-182",
+    "question" : "Tell me about a time a coworker took credit for your work or idea, and how you handled the situation professionally with them and your manager.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Resolving Interpersonal & Workflow Friction",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "interpersonal", "friction", "workflow", "process", "resolution", "resolving interpersonal & workflow friction" ],
+    "criteria" : [ "addresses interpersonal tension directly, professionally, and without passive aggression", "streamlines bloated processes while respecting team autonomy and productivity", "navigates challenging personalities with emotional maturity and composure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-183",
+    "question" : "Describe an enterprise scenario where entrenched territorialism between two engineering organizations was blocking a critical merger, and how you broke the deadlock.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Resolving Interpersonal & Workflow Friction",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "interpersonal", "friction", "workflow", "process", "resolution", "resolving interpersonal & workflow friction" ],
+    "criteria" : [ "addresses interpersonal tension directly, professionally, and without passive aggression", "streamlines bloated processes while respecting team autonomy and productivity", "navigates challenging personalities with emotional maturity and composure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-184",
+    "question" : "Tell me about a time you uncovered and systematically dismantled an informal 'boys' club' or exclusionary clique that was alienating new hires.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Resolving Interpersonal & Workflow Friction",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "interpersonal", "friction", "workflow", "process", "resolution", "resolving interpersonal & workflow friction" ],
+    "criteria" : [ "addresses interpersonal tension directly, professionally, and without passive aggression", "streamlines bloated processes while respecting team autonomy and productivity", "navigates challenging personalities with emotional maturity and composure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-185",
+    "question" : "Share an experience where you mediated an escalation between a high-performing lead architect and a VP of Engineering that threatened project cancellation.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Resolving Interpersonal & Workflow Friction",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "interpersonal", "friction", "workflow", "process", "resolution", "resolving interpersonal & workflow friction" ],
+    "criteria" : [ "addresses interpersonal tension directly, professionally, and without passive aggression", "streamlines bloated processes while respecting team autonomy and productivity", "navigates challenging personalities with emotional maturity and composure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-186",
+    "question" : "Describe how you rehabilitated a toxic, combative sprint retrospective culture into an authentic forum for continuous improvement.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Resolving Interpersonal & Workflow Friction",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "interpersonal", "friction", "workflow", "process", "resolution", "resolving interpersonal & workflow friction" ],
+    "criteria" : [ "addresses interpersonal tension directly, professionally, and without passive aggression", "streamlines bloated processes while respecting team autonomy and productivity", "navigates challenging personalities with emotional maturity and composure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-187",
+    "question" : "Tell me about a time you had to manage the fallout when an influential colleague abruptly resigned in anger right before a major product milestone.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Resolving Interpersonal & Workflow Friction",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "interpersonal", "friction", "workflow", "process", "resolution", "resolving interpersonal & workflow friction" ],
+    "criteria" : [ "addresses interpersonal tension directly, professionally, and without passive aggression", "streamlines bloated processes while respecting team autonomy and productivity", "navigates challenging personalities with emotional maturity and composure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-188",
+    "question" : "Describe an enterprise scenario where entrenched territorialism between two engineering organizations was blocking a critical merger, and how you broke the deadlock.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Resolving Interpersonal & Workflow Friction",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "interpersonal", "friction", "workflow", "process", "resolution", "resolving interpersonal & workflow friction" ],
+    "criteria" : [ "addresses interpersonal tension directly, professionally, and without passive aggression", "streamlines bloated processes while respecting team autonomy and productivity", "navigates challenging personalities with emotional maturity and composure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-189",
+    "question" : "Tell me about your experience with pair programming: what made it successful or challenging?",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborative Problem Solving & Mob Programming",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "pair programming", "mob programming", "brainstorming", "collaboration", "team problem solving", "collaborative problem solving & mob programming" ],
+    "criteria" : [ "demonstrates active collaboration, egoless pairing, and collective code ownership", "leverages cognitive diversity to uncover edge cases and optimize architecture", "fosters an open, engaging environment during whiteboarding and brainstorming" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-190",
+    "question" : "Describe a time you and a teammate brainstormed multiple solutions to a tough bug and found the answer together.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborative Problem Solving & Mob Programming",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "pair programming", "mob programming", "brainstorming", "collaboration", "team problem solving", "collaborative problem solving & mob programming" ],
+    "criteria" : [ "demonstrates active collaboration, egoless pairing, and collective code ownership", "leverages cognitive diversity to uncover edge cases and optimize architecture", "fosters an open, engaging environment during whiteboarding and brainstorming" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-191",
+    "question" : "How do you balance speaking up during brainstorming sessions with giving quieter teammates space to contribute?",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborative Problem Solving & Mob Programming",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "pair programming", "mob programming", "brainstorming", "collaboration", "team problem solving", "collaborative problem solving & mob programming" ],
+    "criteria" : [ "demonstrates active collaboration, egoless pairing, and collective code ownership", "leverages cognitive diversity to uncover edge cases and optimize architecture", "fosters an open, engaging environment during whiteboarding and brainstorming" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-192",
+    "question" : "Tell me about a time you pair-programmed with someone who had much more or much less experience than you.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborative Problem Solving & Mob Programming",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "pair programming", "mob programming", "brainstorming", "collaboration", "team problem solving", "collaborative problem solving & mob programming" ],
+    "criteria" : [ "demonstrates active collaboration, egoless pairing, and collective code ownership", "leverages cognitive diversity to uncover edge cases and optimize architecture", "fosters an open, engaging environment during whiteboarding and brainstorming" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-193",
+    "question" : "Describe a situation where a collaborative whiteboarding session completely changed your initial technical approach.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborative Problem Solving & Mob Programming",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "pair programming", "mob programming", "brainstorming", "collaboration", "team problem solving", "collaborative problem solving & mob programming" ],
+    "criteria" : [ "demonstrates active collaboration, egoless pairing, and collective code ownership", "leverages cognitive diversity to uncover edge cases and optimize architecture", "fosters an open, engaging environment during whiteboarding and brainstorming" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-194",
+    "question" : "What role does active listening play when a colleague explains an architectural design you are unfamiliar with?",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborative Problem Solving & Mob Programming",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "pair programming", "mob programming", "brainstorming", "collaboration", "team problem solving", "collaborative problem solving & mob programming" ],
+    "criteria" : [ "demonstrates active collaboration, egoless pairing, and collective code ownership", "leverages cognitive diversity to uncover edge cases and optimize architecture", "fosters an open, engaging environment during whiteboarding and brainstorming" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-195",
+    "question" : "Tell me about a time a teammate's quick feedback saved you hours of debugging a tricky issue.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborative Problem Solving & Mob Programming",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "pair programming", "mob programming", "brainstorming", "collaboration", "team problem solving", "collaborative problem solving & mob programming" ],
+    "criteria" : [ "demonstrates active collaboration, egoless pairing, and collective code ownership", "leverages cognitive diversity to uncover edge cases and optimize architecture", "fosters an open, engaging environment during whiteboarding and brainstorming" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-196",
+    "question" : "Tell me about your experience with pair programming: what made it successful or challenging?",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborative Problem Solving & Mob Programming",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "pair programming", "mob programming", "brainstorming", "collaboration", "team problem solving", "collaborative problem solving & mob programming" ],
+    "criteria" : [ "demonstrates active collaboration, egoless pairing, and collective code ownership", "leverages cognitive diversity to uncover edge cases and optimize architecture", "fosters an open, engaging environment during whiteboarding and brainstorming" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-197",
+    "question" : "Describe a time you and a teammate brainstormed multiple solutions to a tough bug and found the answer together.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborative Problem Solving & Mob Programming",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "pair programming", "mob programming", "brainstorming", "collaboration", "team problem solving", "collaborative problem solving & mob programming" ],
+    "criteria" : [ "demonstrates active collaboration, egoless pairing, and collective code ownership", "leverages cognitive diversity to uncover edge cases and optimize architecture", "fosters an open, engaging environment during whiteboarding and brainstorming" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-198",
+    "question" : "How do you balance speaking up during brainstorming sessions with giving quieter teammates space to contribute?",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborative Problem Solving & Mob Programming",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "pair programming", "mob programming", "brainstorming", "collaboration", "team problem solving", "collaborative problem solving & mob programming" ],
+    "criteria" : [ "demonstrates active collaboration, egoless pairing, and collective code ownership", "leverages cognitive diversity to uncover edge cases and optimize architecture", "fosters an open, engaging environment during whiteboarding and brainstorming" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-199",
+    "question" : "Tell me about a time you had to navigate pairing with an engineer whose coding speed or style clashed with yours, and how you found a rhythm.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborative Problem Solving & Mob Programming",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "pair programming", "mob programming", "brainstorming", "collaboration", "team problem solving", "collaborative problem solving & mob programming" ],
+    "criteria" : [ "demonstrates active collaboration, egoless pairing, and collective code ownership", "leverages cognitive diversity to uncover edge cases and optimize architecture", "fosters an open, engaging environment during whiteboarding and brainstorming" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-200",
+    "question" : "Describe how your team structured a collaborative hackathon to solve a chronic technical debt issue that had lingered for years.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborative Problem Solving & Mob Programming",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "pair programming", "mob programming", "brainstorming", "collaboration", "team problem solving", "collaborative problem solving & mob programming" ],
+    "criteria" : [ "demonstrates active collaboration, egoless pairing, and collective code ownership", "leverages cognitive diversity to uncover edge cases and optimize architecture", "fosters an open, engaging environment during whiteboarding and brainstorming" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-201",
+    "question" : "Give an example of how you facilitated a remote whiteboarding session that aligned 10 engineers on a microservices migration plan.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborative Problem Solving & Mob Programming",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "pair programming", "mob programming", "brainstorming", "collaboration", "team problem solving", "collaborative problem solving & mob programming" ],
+    "criteria" : [ "demonstrates active collaboration, egoless pairing, and collective code ownership", "leverages cognitive diversity to uncover edge cases and optimize architecture", "fosters an open, engaging environment during whiteboarding and brainstorming" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-202",
+    "question" : "Tell me about a time you leveraged the diverse technical backgrounds of your teammates to identify edge cases that a single engineer would have missed.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborative Problem Solving & Mob Programming",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "pair programming", "mob programming", "brainstorming", "collaboration", "team problem solving", "collaborative problem solving & mob programming" ],
+    "criteria" : [ "demonstrates active collaboration, egoless pairing, and collective code ownership", "leverages cognitive diversity to uncover edge cases and optimize architecture", "fosters an open, engaging environment during whiteboarding and brainstorming" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-203",
+    "question" : "Describe a complex production incident where a group of engineers conducted an emergency mob-programming session to patch a critical zero-day.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborative Problem Solving & Mob Programming",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "pair programming", "mob programming", "brainstorming", "collaboration", "team problem solving", "collaborative problem solving & mob programming" ],
+    "criteria" : [ "demonstrates active collaboration, egoless pairing, and collective code ownership", "leverages cognitive diversity to uncover edge cases and optimize architecture", "fosters an open, engaging environment during whiteboarding and brainstorming" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-204",
+    "question" : "Tell me about a time you introduced pairing or mob programming to solve a notoriously buggy, legacy module that nobody wanted to touch alone.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborative Problem Solving & Mob Programming",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "pair programming", "mob programming", "brainstorming", "collaboration", "team problem solving", "collaborative problem solving & mob programming" ],
+    "criteria" : [ "demonstrates active collaboration, egoless pairing, and collective code ownership", "leverages cognitive diversity to uncover edge cases and optimize architecture", "fosters an open, engaging environment during whiteboarding and brainstorming" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-205",
+    "question" : "Share an experience where a collaborative architecture session led to a breakthrough that drastically reduced projected system complexity.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborative Problem Solving & Mob Programming",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "pair programming", "mob programming", "brainstorming", "collaboration", "team problem solving", "collaborative problem solving & mob programming" ],
+    "criteria" : [ "demonstrates active collaboration, egoless pairing, and collective code ownership", "leverages cognitive diversity to uncover edge cases and optimize architecture", "fosters an open, engaging environment during whiteboarding and brainstorming" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-206",
+    "question" : "Tell me about a time you had to navigate pairing with an engineer whose coding speed or style clashed with yours, and how you found a rhythm.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborative Problem Solving & Mob Programming",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "pair programming", "mob programming", "brainstorming", "collaboration", "team problem solving", "collaborative problem solving & mob programming" ],
+    "criteria" : [ "demonstrates active collaboration, egoless pairing, and collective code ownership", "leverages cognitive diversity to uncover edge cases and optimize architecture", "fosters an open, engaging environment during whiteboarding and brainstorming" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-207",
+    "question" : "Describe how your team structured a collaborative hackathon to solve a chronic technical debt issue that had lingered for years.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborative Problem Solving & Mob Programming",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "pair programming", "mob programming", "brainstorming", "collaboration", "team problem solving", "collaborative problem solving & mob programming" ],
+    "criteria" : [ "demonstrates active collaboration, egoless pairing, and collective code ownership", "leverages cognitive diversity to uncover edge cases and optimize architecture", "fosters an open, engaging environment during whiteboarding and brainstorming" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-208",
+    "question" : "Give an example of how you facilitated a remote whiteboarding session that aligned 10 engineers on a microservices migration plan.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborative Problem Solving & Mob Programming",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "pair programming", "mob programming", "brainstorming", "collaboration", "team problem solving", "collaborative problem solving & mob programming" ],
+    "criteria" : [ "demonstrates active collaboration, egoless pairing, and collective code ownership", "leverages cognitive diversity to uncover edge cases and optimize architecture", "fosters an open, engaging environment during whiteboarding and brainstorming" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-209",
+    "question" : "Tell me about a time you leveraged the diverse technical backgrounds of your teammates to identify edge cases that a single engineer would have missed.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborative Problem Solving & Mob Programming",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "pair programming", "mob programming", "brainstorming", "collaboration", "team problem solving", "collaborative problem solving & mob programming" ],
+    "criteria" : [ "demonstrates active collaboration, egoless pairing, and collective code ownership", "leverages cognitive diversity to uncover edge cases and optimize architecture", "fosters an open, engaging environment during whiteboarding and brainstorming" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-210",
+    "question" : "Describe a complex production incident where a group of engineers conducted an emergency mob-programming session to patch a critical zero-day.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborative Problem Solving & Mob Programming",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "pair programming", "mob programming", "brainstorming", "collaboration", "team problem solving", "collaborative problem solving & mob programming" ],
+    "criteria" : [ "demonstrates active collaboration, egoless pairing, and collective code ownership", "leverages cognitive diversity to uncover edge cases and optimize architecture", "fosters an open, engaging environment during whiteboarding and brainstorming" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-211",
+    "question" : "Tell me about a time you introduced pairing or mob programming to solve a notoriously buggy, legacy module that nobody wanted to touch alone.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborative Problem Solving & Mob Programming",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "pair programming", "mob programming", "brainstorming", "collaboration", "team problem solving", "collaborative problem solving & mob programming" ],
+    "criteria" : [ "demonstrates active collaboration, egoless pairing, and collective code ownership", "leverages cognitive diversity to uncover edge cases and optimize architecture", "fosters an open, engaging environment during whiteboarding and brainstorming" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-212",
+    "question" : "Share an experience where a collaborative architecture session led to a breakthrough that drastically reduced projected system complexity.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborative Problem Solving & Mob Programming",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "pair programming", "mob programming", "brainstorming", "collaboration", "team problem solving", "collaborative problem solving & mob programming" ],
+    "criteria" : [ "demonstrates active collaboration, egoless pairing, and collective code ownership", "leverages cognitive diversity to uncover edge cases and optimize architecture", "fosters an open, engaging environment during whiteboarding and brainstorming" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-213",
+    "question" : "Tell me about a time you had to navigate pairing with an engineer whose coding speed or style clashed with yours, and how you found a rhythm.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborative Problem Solving & Mob Programming",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "pair programming", "mob programming", "brainstorming", "collaboration", "team problem solving", "collaborative problem solving & mob programming" ],
+    "criteria" : [ "demonstrates active collaboration, egoless pairing, and collective code ownership", "leverages cognitive diversity to uncover edge cases and optimize architecture", "fosters an open, engaging environment during whiteboarding and brainstorming" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-214",
+    "question" : "Describe how you scaled a culture of pairing and collective code ownership across an entire engineering division, eliminating knowledge silos.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborative Problem Solving & Mob Programming",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "pair programming", "mob programming", "brainstorming", "collaboration", "team problem solving", "collaborative problem solving & mob programming" ],
+    "criteria" : [ "demonstrates active collaboration, egoless pairing, and collective code ownership", "leverages cognitive diversity to uncover edge cases and optimize architecture", "fosters an open, engaging environment during whiteboarding and brainstorming" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-215",
+    "question" : "Tell me about a high-stakes war-room where 20 cross-functional engineers collaborated continuously for 48 hours to restore a mission-critical platform.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborative Problem Solving & Mob Programming",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "pair programming", "mob programming", "brainstorming", "collaboration", "team problem solving", "collaborative problem solving & mob programming" ],
+    "criteria" : [ "demonstrates active collaboration, egoless pairing, and collective code ownership", "leverages cognitive diversity to uncover edge cases and optimize architecture", "fosters an open, engaging environment during whiteboarding and brainstorming" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-216",
+    "question" : "Share a story where you turned an adversarial code review relationship into a high-productivity pairing partnership that built the company's core algorithm.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborative Problem Solving & Mob Programming",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "pair programming", "mob programming", "brainstorming", "collaboration", "team problem solving", "collaborative problem solving & mob programming" ],
+    "criteria" : [ "demonstrates active collaboration, egoless pairing, and collective code ownership", "leverages cognitive diversity to uncover edge cases and optimize architecture", "fosters an open, engaging environment during whiteboarding and brainstorming" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-217",
+    "question" : "Describe how you designed an asynchronous collaborative design review process for a 500-person engineering organization.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborative Problem Solving & Mob Programming",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "pair programming", "mob programming", "brainstorming", "collaboration", "team problem solving", "collaborative problem solving & mob programming" ],
+    "criteria" : [ "demonstrates active collaboration, egoless pairing, and collective code ownership", "leverages cognitive diversity to uncover edge cases and optimize architecture", "fosters an open, engaging environment during whiteboarding and brainstorming" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-218",
+    "question" : "Tell me about a time an innovative multi-team hackathon project you championed evolved into a multi-million-dollar revenue driver for your company.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborative Problem Solving & Mob Programming",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "pair programming", "mob programming", "brainstorming", "collaboration", "team problem solving", "collaborative problem solving & mob programming" ],
+    "criteria" : [ "demonstrates active collaboration, egoless pairing, and collective code ownership", "leverages cognitive diversity to uncover edge cases and optimize architecture", "fosters an open, engaging environment during whiteboarding and brainstorming" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-219",
+    "question" : "Describe how you scaled a culture of pairing and collective code ownership across an entire engineering division, eliminating knowledge silos.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Collaborative Problem Solving & Mob Programming",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "pair programming", "mob programming", "brainstorming", "collaboration", "team problem solving", "collaborative problem solving & mob programming" ],
+    "criteria" : [ "demonstrates active collaboration, egoless pairing, and collective code ownership", "leverages cognitive diversity to uncover edge cases and optimize architecture", "fosters an open, engaging environment during whiteboarding and brainstorming" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-220",
+    "question" : "What does 'psychological safety' mean to you in the context of an engineering team?",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Fostering Psychological Safety & Team Culture",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "psychological safety", "team culture", "inclusion", "blameless", "trust", "fostering psychological safety & team culture" ],
+    "criteria" : [ "champions vulnerability, intellectual humility, and blameless accountability", "amplifies underrepresented voices and fosters genuine inclusivity", "builds durable, high-trust team cultures resilient to external corporate pressure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-221",
+    "question" : "Describe a time you felt comfortable admitting to your team that you didn't know how to solve a problem.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Fostering Psychological Safety & Team Culture",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "psychological safety", "team culture", "inclusion", "blameless", "trust", "fostering psychological safety & team culture" ],
+    "criteria" : [ "champions vulnerability, intellectual humility, and blameless accountability", "amplifies underrepresented voices and fosters genuine inclusivity", "builds durable, high-trust team cultures resilient to external corporate pressure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-222",
+    "question" : "How do you respond when a teammate makes a mistake during a demo or deploys a bug to production?",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Fostering Psychological Safety & Team Culture",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "psychological safety", "team culture", "inclusion", "blameless", "trust", "fostering psychological safety & team culture" ],
+    "criteria" : [ "champions vulnerability, intellectual humility, and blameless accountability", "amplifies underrepresented voices and fosters genuine inclusivity", "builds durable, high-trust team cultures resilient to external corporate pressure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-223",
+    "question" : "Tell me about an engineering team culture you thrived in, and what specific characteristics made it great.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Fostering Psychological Safety & Team Culture",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "psychological safety", "team culture", "inclusion", "blameless", "trust", "fostering psychological safety & team culture" ],
+    "criteria" : [ "champions vulnerability, intellectual humility, and blameless accountability", "amplifies underrepresented voices and fosters genuine inclusivity", "builds durable, high-trust team cultures resilient to external corporate pressure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-224",
+    "question" : "Describe how you welcome new engineers to your team and make them feel valued from day one.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Fostering Psychological Safety & Team Culture",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "psychological safety", "team culture", "inclusion", "blameless", "trust", "fostering psychological safety & team culture" ],
+    "criteria" : [ "champions vulnerability, intellectual humility, and blameless accountability", "amplifies underrepresented voices and fosters genuine inclusivity", "builds durable, high-trust team cultures resilient to external corporate pressure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-225",
+    "question" : "Tell me about a time you spoke up in a meeting when you had a differing perspective from the rest of the group.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Fostering Psychological Safety & Team Culture",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "psychological safety", "team culture", "inclusion", "blameless", "trust", "fostering psychological safety & team culture" ],
+    "criteria" : [ "champions vulnerability, intellectual humility, and blameless accountability", "amplifies underrepresented voices and fosters genuine inclusivity", "builds durable, high-trust team cultures resilient to external corporate pressure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-226",
+    "question" : "Why is celebrating small wins and peer recognition important for long-term team morale?",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Fostering Psychological Safety & Team Culture",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "psychological safety", "team culture", "inclusion", "blameless", "trust", "fostering psychological safety & team culture" ],
+    "criteria" : [ "champions vulnerability, intellectual humility, and blameless accountability", "amplifies underrepresented voices and fosters genuine inclusivity", "builds durable, high-trust team cultures resilient to external corporate pressure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-227",
+    "question" : "What does 'psychological safety' mean to you in the context of an engineering team?",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Fostering Psychological Safety & Team Culture",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "psychological safety", "team culture", "inclusion", "blameless", "trust", "fostering psychological safety & team culture" ],
+    "criteria" : [ "champions vulnerability, intellectual humility, and blameless accountability", "amplifies underrepresented voices and fosters genuine inclusivity", "builds durable, high-trust team cultures resilient to external corporate pressure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-228",
+    "question" : "Describe a time you felt comfortable admitting to your team that you didn't know how to solve a problem.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Fostering Psychological Safety & Team Culture",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "psychological safety", "team culture", "inclusion", "blameless", "trust", "fostering psychological safety & team culture" ],
+    "criteria" : [ "champions vulnerability, intellectual humility, and blameless accountability", "amplifies underrepresented voices and fosters genuine inclusivity", "builds durable, high-trust team cultures resilient to external corporate pressure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-229",
+    "question" : "How do you respond when a teammate makes a mistake during a demo or deploys a bug to production?",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Fostering Psychological Safety & Team Culture",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "psychological safety", "team culture", "inclusion", "blameless", "trust", "fostering psychological safety & team culture" ],
+    "criteria" : [ "champions vulnerability, intellectual humility, and blameless accountability", "amplifies underrepresented voices and fosters genuine inclusivity", "builds durable, high-trust team cultures resilient to external corporate pressure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-230",
+    "question" : "Tell me about a time you challenged a team practice that was inadvertently excluding or discouraging certain team members.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Fostering Psychological Safety & Team Culture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "psychological safety", "team culture", "inclusion", "blameless", "trust", "fostering psychological safety & team culture" ],
+    "criteria" : [ "champions vulnerability, intellectual humility, and blameless accountability", "amplifies underrepresented voices and fosters genuine inclusivity", "builds durable, high-trust team cultures resilient to external corporate pressure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-231",
+    "question" : "Describe how you transformed a finger-pointing post-mortem culture into a genuine blameless learning opportunity.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Fostering Psychological Safety & Team Culture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "psychological safety", "team culture", "inclusion", "blameless", "trust", "fostering psychological safety & team culture" ],
+    "criteria" : [ "champions vulnerability, intellectual humility, and blameless accountability", "amplifies underrepresented voices and fosters genuine inclusivity", "builds durable, high-trust team cultures resilient to external corporate pressure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-232",
+    "question" : "Give an example of how you built trust with a newly formed team that was skeptical of management and process changes.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Fostering Psychological Safety & Team Culture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "psychological safety", "team culture", "inclusion", "blameless", "trust", "fostering psychological safety & team culture" ],
+    "criteria" : [ "champions vulnerability, intellectual humility, and blameless accountability", "amplifies underrepresented voices and fosters genuine inclusivity", "builds durable, high-trust team cultures resilient to external corporate pressure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-233",
+    "question" : "Tell me about a time you advocated for an unconventional idea brought forward by a junior engineer that proved to be brilliant.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Fostering Psychological Safety & Team Culture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "psychological safety", "team culture", "inclusion", "blameless", "trust", "fostering psychological safety & team culture" ],
+    "criteria" : [ "champions vulnerability, intellectual humility, and blameless accountability", "amplifies underrepresented voices and fosters genuine inclusivity", "builds durable, high-trust team cultures resilient to external corporate pressure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-234",
+    "question" : "Tell me about a time you openly shared a significant technical failure you caused, and how doing so empowered others to be transparent.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Fostering Psychological Safety & Team Culture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "psychological safety", "team culture", "inclusion", "blameless", "trust", "fostering psychological safety & team culture" ],
+    "criteria" : [ "champions vulnerability, intellectual humility, and blameless accountability", "amplifies underrepresented voices and fosters genuine inclusivity", "builds durable, high-trust team cultures resilient to external corporate pressure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-235",
+    "question" : "Describe a situation where a team member was hesitant to speak up, and how you actively encouraged and amplified their voice.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Fostering Psychological Safety & Team Culture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "psychological safety", "team culture", "inclusion", "blameless", "trust", "fostering psychological safety & team culture" ],
+    "criteria" : [ "champions vulnerability, intellectual humility, and blameless accountability", "amplifies underrepresented voices and fosters genuine inclusivity", "builds durable, high-trust team cultures resilient to external corporate pressure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-236",
+    "question" : "Share an experience where your team faced intense external pressure, and how you maintained internal trust and psychological safety.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Fostering Psychological Safety & Team Culture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "psychological safety", "team culture", "inclusion", "blameless", "trust", "fostering psychological safety & team culture" ],
+    "criteria" : [ "champions vulnerability, intellectual humility, and blameless accountability", "amplifies underrepresented voices and fosters genuine inclusivity", "builds durable, high-trust team cultures resilient to external corporate pressure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-237",
+    "question" : "Tell me about a time you challenged a team practice that was inadvertently excluding or discouraging certain team members.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Fostering Psychological Safety & Team Culture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "psychological safety", "team culture", "inclusion", "blameless", "trust", "fostering psychological safety & team culture" ],
+    "criteria" : [ "champions vulnerability, intellectual humility, and blameless accountability", "amplifies underrepresented voices and fosters genuine inclusivity", "builds durable, high-trust team cultures resilient to external corporate pressure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-238",
+    "question" : "Describe how you transformed a finger-pointing post-mortem culture into a genuine blameless learning opportunity.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Fostering Psychological Safety & Team Culture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "psychological safety", "team culture", "inclusion", "blameless", "trust", "fostering psychological safety & team culture" ],
+    "criteria" : [ "champions vulnerability, intellectual humility, and blameless accountability", "amplifies underrepresented voices and fosters genuine inclusivity", "builds durable, high-trust team cultures resilient to external corporate pressure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-239",
+    "question" : "Give an example of how you built trust with a newly formed team that was skeptical of management and process changes.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Fostering Psychological Safety & Team Culture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "psychological safety", "team culture", "inclusion", "blameless", "trust", "fostering psychological safety & team culture" ],
+    "criteria" : [ "champions vulnerability, intellectual humility, and blameless accountability", "amplifies underrepresented voices and fosters genuine inclusivity", "builds durable, high-trust team cultures resilient to external corporate pressure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-240",
+    "question" : "Tell me about a time you advocated for an unconventional idea brought forward by a junior engineer that proved to be brilliant.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Fostering Psychological Safety & Team Culture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "psychological safety", "team culture", "inclusion", "blameless", "trust", "fostering psychological safety & team culture" ],
+    "criteria" : [ "champions vulnerability, intellectual humility, and blameless accountability", "amplifies underrepresented voices and fosters genuine inclusivity", "builds durable, high-trust team cultures resilient to external corporate pressure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-241",
+    "question" : "Tell me about a time you openly shared a significant technical failure you caused, and how doing so empowered others to be transparent.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Fostering Psychological Safety & Team Culture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "psychological safety", "team culture", "inclusion", "blameless", "trust", "fostering psychological safety & team culture" ],
+    "criteria" : [ "champions vulnerability, intellectual humility, and blameless accountability", "amplifies underrepresented voices and fosters genuine inclusivity", "builds durable, high-trust team cultures resilient to external corporate pressure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-242",
+    "question" : "Describe a situation where a team member was hesitant to speak up, and how you actively encouraged and amplified their voice.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Fostering Psychological Safety & Team Culture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "psychological safety", "team culture", "inclusion", "blameless", "trust", "fostering psychological safety & team culture" ],
+    "criteria" : [ "champions vulnerability, intellectual humility, and blameless accountability", "amplifies underrepresented voices and fosters genuine inclusivity", "builds durable, high-trust team cultures resilient to external corporate pressure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-243",
+    "question" : "Share an experience where your team faced intense external pressure, and how you maintained internal trust and psychological safety.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Fostering Psychological Safety & Team Culture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "psychological safety", "team culture", "inclusion", "blameless", "trust", "fostering psychological safety & team culture" ],
+    "criteria" : [ "champions vulnerability, intellectual humility, and blameless accountability", "amplifies underrepresented voices and fosters genuine inclusivity", "builds durable, high-trust team cultures resilient to external corporate pressure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-244",
+    "question" : "Tell me about a time you challenged a team practice that was inadvertently excluding or discouraging certain team members.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Fostering Psychological Safety & Team Culture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "psychological safety", "team culture", "inclusion", "blameless", "trust", "fostering psychological safety & team culture" ],
+    "criteria" : [ "champions vulnerability, intellectual humility, and blameless accountability", "amplifies underrepresented voices and fosters genuine inclusivity", "builds durable, high-trust team cultures resilient to external corporate pressure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-245",
+    "question" : "Describe how you diagnosed and rehabilitated a toxic, high-attrition engineering culture characterized by fear and finger-pointing.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Fostering Psychological Safety & Team Culture",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "psychological safety", "team culture", "inclusion", "blameless", "trust", "fostering psychological safety & team culture" ],
+    "criteria" : [ "champions vulnerability, intellectual humility, and blameless accountability", "amplifies underrepresented voices and fosters genuine inclusivity", "builds durable, high-trust team cultures resilient to external corporate pressure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-246",
+    "question" : "Tell me about a time you stood up to executive leadership to protect your team's psychological safety and integrity during an investigative inquiry.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Fostering Psychological Safety & Team Culture",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "psychological safety", "team culture", "inclusion", "blameless", "trust", "fostering psychological safety & team culture" ],
+    "criteria" : [ "champions vulnerability, intellectual humility, and blameless accountability", "amplifies underrepresented voices and fosters genuine inclusivity", "builds durable, high-trust team cultures resilient to external corporate pressure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-247",
+    "question" : "Share an experience where you institutionalized transparent, blameless cultural practices that cut post-incident recurrence rates by 80%.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Fostering Psychological Safety & Team Culture",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "psychological safety", "team culture", "inclusion", "blameless", "trust", "fostering psychological safety & team culture" ],
+    "criteria" : [ "champions vulnerability, intellectual humility, and blameless accountability", "amplifies underrepresented voices and fosters genuine inclusivity", "builds durable, high-trust team cultures resilient to external corporate pressure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-248",
+    "question" : "Describe how you maintained team cohesion, high morale, and zero unwanted attrition through a protracted 18-month corporate acquisition.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Fostering Psychological Safety & Team Culture",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "psychological safety", "team culture", "inclusion", "blameless", "trust", "fostering psychological safety & team culture" ],
+    "criteria" : [ "champions vulnerability, intellectual humility, and blameless accountability", "amplifies underrepresented voices and fosters genuine inclusivity", "builds durable, high-trust team cultures resilient to external corporate pressure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-249",
+    "question" : "Tell me about a time you established an engineering culture so compelling that it became the primary recruiting magnet for top-tier technical talent.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Fostering Psychological Safety & Team Culture",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "psychological safety", "team culture", "inclusion", "blameless", "trust", "fostering psychological safety & team culture" ],
+    "criteria" : [ "champions vulnerability, intellectual humility, and blameless accountability", "amplifies underrepresented voices and fosters genuine inclusivity", "builds durable, high-trust team cultures resilient to external corporate pressure" ],
+    "follow_up" : true
+  }, {
+    "id" : "TEAM-250",
+    "question" : "Describe how you diagnosed and rehabilitated a toxic, high-attrition engineering culture characterized by fear and finger-pointing.",
+    "subject" : "Teamwork & Conflict Resolution",
+    "topic" : "Fostering Psychological Safety & Team Culture",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "psychological safety", "team culture", "inclusion", "blameless", "trust", "fostering psychological safety & team culture" ],
+    "criteria" : [ "champions vulnerability, intellectual humility, and blameless accountability", "amplifies underrepresented voices and fosters genuine inclusivity", "builds durable, high-trust team cultures resilient to external corporate pressure" ],
+    "follow_up" : true
+  } ]
+}

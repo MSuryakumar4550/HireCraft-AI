@@ -9,6 +9,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.JdbcTypeCode;
+import org.hibernate.type.SqlTypes;
 
 import java.math.BigDecimal;
 import java.time.Instant;
@@ -33,8 +35,8 @@ public class InterviewSession {
     @JoinColumn(name = "user_id", nullable = false)
     private User user;
 
-    @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "virtual_interview_id", nullable = false)
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "virtual_interview_id")
     private VirtualInterview virtualInterview;
 
     @Column(name = "stage_order")
@@ -69,8 +71,24 @@ public class InterviewSession {
     @Column(name = "ended_at")
     private Instant endedAt;
 
+    @JdbcTypeCode(SqlTypes.JSON)
+    @Column(name = "remaining_topics", columnDefinition = "jsonb")
+    private List<String> remainingTopics;
+
+    @Column(name = "subject", length = 100)
+    private String subject;
+
+    @Column(name = "current_topic", length = 100)
+    private String currentTopic;
+
+    @Column(name = "consecutive_weak_answers")
+    private Integer consecutiveWeakAnswers;
+
+    @Column(name = "current_topic_question_count")
+    private Integer currentTopicQuestionCount;
+
     @Builder.Default
-    @OneToMany(mappedBy = "interviewSession", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "interviewSession", fetch = FetchType.LAZY)
     private List<InterviewAnswer> answers = new ArrayList<>();
 
     @CreationTimestamp

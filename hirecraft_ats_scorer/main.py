@@ -118,7 +118,22 @@ async def score_resume(
     os.remove(temp_path) # Clean up the temp file
     
     # 3. Calculate Keyword Score
-    skills_list = [s.strip() for s in required_skills.split(",")]
+    if not required_skills.strip():
+        # Auto-extract from JD if user didn't provide any
+        common_skills = [
+            "Python", "Java", "C++", "C#", "JavaScript", "TypeScript", "React", "Angular", "Vue", 
+            "Node.js", "Express", "Django", "FastAPI", "Spring Boot", "AWS", "Azure", "GCP", 
+            "Docker", "Kubernetes", "SQL", "PostgreSQL", "MySQL", "MongoDB", "Redis", "Git", "CI/CD",
+            "REST APIs", "Agile", "Data Structures", "Algorithms", "Object-Oriented Programming"
+        ]
+        jd_lower = job_description.lower()
+        skills_list = [skill for skill in common_skills if skill.lower() in jd_lower]
+        if not skills_list:
+            skills_list = ["Software Development"] # Fallback
+    else:
+        # Clean up empty strings from the list
+        skills_list = [s.strip() for s in required_skills.split(",") if s.strip()]
+        
     keyword_results = calculate_keyword_score(resume_text, skills_list)
     keyword_score = keyword_results["score"]
     
@@ -128,6 +143,10 @@ async def score_resume(
     # 5. Format Score
     format_score = 0.85 
     
+    # If the core content (keywords & semantics) is poor, formatting doesn't matter.
+    if keyword_score < 0.4 and semantic_score < 0.6:
+        format_score = 0.20 # Tank the format score so it doesn't artificially boost the model
+    
     # 6. Predict Final ATS Score using the Colab Model!
     features = pd.DataFrame([{
         'keyword_score': keyword_score,
@@ -135,7 +154,14 @@ async def score_resume(
         'format_score': format_score
     }])
     
-    final_score = ats_model.predict(features)[0]
+    final_score = float(ats_model.predict(features)[0])
+    
+    # Apply strict penalty to final score if the core match is terrible
+    if keyword_score < 0.4 and semantic_score < 0.6:
+        final_score = final_score / 1.5
+        
+    # Cap between 0 and 100
+    final_score = max(0.0, min(100.0, final_score))
     
     return {
         "final_ats_score": float(final_score),

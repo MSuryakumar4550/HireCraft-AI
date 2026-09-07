@@ -1,0 +1,2507 @@
+{
+  "subject" : "Problem Solving & Adaptability",
+  "batch" : "combined",
+  "version" : "1.0",
+  "language" : null,
+  "questions" : [ {
+    "id" : "PROB-001",
+    "question" : "Tell me about the most difficult bug you have ever had to troubleshoot in production.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Production Incident Triage & Emergency Debugging",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "debugging", "incident triage", "production", "root cause", "adaptability", "production incident triage & emergency debugging" ],
+    "criteria" : [ "demonstrates a structured, hypothesis-driven debugging methodology", "remains methodical and disciplined under extreme time and customer pressure", "identifies root causes and implements robust automated regression tests" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-002",
+    "question" : "What is your systematic process when you are assigned an urgent production bug with minimal diagnostic information?",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Production Incident Triage & Emergency Debugging",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "debugging", "incident triage", "production", "root cause", "adaptability", "production incident triage & emergency debugging" ],
+    "criteria" : [ "demonstrates a structured, hypothesis-driven debugging methodology", "remains methodical and disciplined under extreme time and customer pressure", "identifies root causes and implements robust automated regression tests" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-003",
+    "question" : "Describe a time you had to debug an issue under tight time constraints during an active customer demo or release.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Production Incident Triage & Emergency Debugging",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "debugging", "incident triage", "production", "root cause", "adaptability", "production incident triage & emergency debugging" ],
+    "criteria" : [ "demonstrates a structured, hypothesis-driven debugging methodology", "remains methodical and disciplined under extreme time and customer pressure", "identifies root causes and implements robust automated regression tests" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-004",
+    "question" : "How do you distinguish whether an issue is caused by your application code, a database bottleneck, or the network?",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Production Incident Triage & Emergency Debugging",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "debugging", "incident triage", "production", "root cause", "adaptability", "production incident triage & emergency debugging" ],
+    "criteria" : [ "demonstrates a structured, hypothesis-driven debugging methodology", "remains methodical and disciplined under extreme time and customer pressure", "identifies root causes and implements robust automated regression tests" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-005",
+    "question" : "Tell me about a time an error log was misleading, and how you dug deeper to uncover the true root cause.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Production Incident Triage & Emergency Debugging",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "debugging", "incident triage", "production", "root cause", "adaptability", "production incident triage & emergency debugging" ],
+    "criteria" : [ "demonstrates a structured, hypothesis-driven debugging methodology", "remains methodical and disciplined under extreme time and customer pressure", "identifies root causes and implements robust automated regression tests" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-006",
+    "question" : "What tools (profilers, debuggers, logs, APM) do you rely on most when troubleshooting elusive production bugs?",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Production Incident Triage & Emergency Debugging",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "debugging", "incident triage", "production", "root cause", "adaptability", "production incident triage & emergency debugging" ],
+    "criteria" : [ "demonstrates a structured, hypothesis-driven debugging methodology", "remains methodical and disciplined under extreme time and customer pressure", "identifies root causes and implements robust automated regression tests" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-007",
+    "question" : "Describe a time you solved a bug by systematically reproducing it in your local environment.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Production Incident Triage & Emergency Debugging",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "debugging", "incident triage", "production", "root cause", "adaptability", "production incident triage & emergency debugging" ],
+    "criteria" : [ "demonstrates a structured, hypothesis-driven debugging methodology", "remains methodical and disciplined under extreme time and customer pressure", "identifies root causes and implements robust automated regression tests" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-008",
+    "question" : "Tell me about the most difficult bug you have ever had to troubleshoot in production.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Production Incident Triage & Emergency Debugging",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "debugging", "incident triage", "production", "root cause", "adaptability", "production incident triage & emergency debugging" ],
+    "criteria" : [ "demonstrates a structured, hypothesis-driven debugging methodology", "remains methodical and disciplined under extreme time and customer pressure", "identifies root causes and implements robust automated regression tests" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-009",
+    "question" : "What is your systematic process when you are assigned an urgent production bug with minimal diagnostic information?",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Production Incident Triage & Emergency Debugging",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "debugging", "incident triage", "production", "root cause", "adaptability", "production incident triage & emergency debugging" ],
+    "criteria" : [ "demonstrates a structured, hypothesis-driven debugging methodology", "remains methodical and disciplined under extreme time and customer pressure", "identifies root causes and implements robust automated regression tests" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-010",
+    "question" : "Describe a time you had to debug an issue under tight time constraints during an active customer demo or release.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Production Incident Triage & Emergency Debugging",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "debugging", "incident triage", "production", "root cause", "adaptability", "production incident triage & emergency debugging" ],
+    "criteria" : [ "demonstrates a structured, hypothesis-driven debugging methodology", "remains methodical and disciplined under extreme time and customer pressure", "identifies root causes and implements robust automated regression tests" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-011",
+    "question" : "Tell me about a time you had to write a hotfix directly in production or staging to stop severe data corruption during an active outage.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Production Incident Triage & Emergency Debugging",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "debugging", "incident triage", "production", "root cause", "adaptability", "production incident triage & emergency debugging" ],
+    "criteria" : [ "demonstrates a structured, hypothesis-driven debugging methodology", "remains methodical and disciplined under extreme time and customer pressure", "identifies root causes and implements robust automated regression tests" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-012",
+    "question" : "Describe a scenario where a database connection pool was silently exhausted, and how you traced the leaked connection to unclosed streams.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Production Incident Triage & Emergency Debugging",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "debugging", "incident triage", "production", "root cause", "adaptability", "production incident triage & emergency debugging" ],
+    "criteria" : [ "demonstrates a structured, hypothesis-driven debugging methodology", "remains methodical and disciplined under extreme time and customer pressure", "identifies root causes and implements robust automated regression tests" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-013",
+    "question" : "Give an example of how you used binary search (git bisect) to locate a regression across 500 merged commits.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Production Incident Triage & Emergency Debugging",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "debugging", "incident triage", "production", "root cause", "adaptability", "production incident triage & emergency debugging" ],
+    "criteria" : [ "demonstrates a structured, hypothesis-driven debugging methodology", "remains methodical and disciplined under extreme time and customer pressure", "identifies root causes and implements robust automated regression tests" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-014",
+    "question" : "Tell me about a time an external third-party API outage was crashing your microservices, and how you implemented a resilient circuit breaker on the fly.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Production Incident Triage & Emergency Debugging",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "debugging", "incident triage", "production", "root cause", "adaptability", "production incident triage & emergency debugging" ],
+    "criteria" : [ "demonstrates a structured, hypothesis-driven debugging methodology", "remains methodical and disciplined under extreme time and customer pressure", "identifies root causes and implements robust automated regression tests" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-015",
+    "question" : "Describe a production incident where a bug only occurred under high concurrent load and could not be reproduced locally.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Production Incident Triage & Emergency Debugging",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "debugging", "incident triage", "production", "root cause", "adaptability", "production incident triage & emergency debugging" ],
+    "criteria" : [ "demonstrates a structured, hypothesis-driven debugging methodology", "remains methodical and disciplined under extreme time and customer pressure", "identifies root causes and implements robust automated regression tests" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-016",
+    "question" : "Tell me about a time you had to diagnose an intermittent 'Heisenbug' that vanished whenever you attached a debugger or enabled verbose logging.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Production Incident Triage & Emergency Debugging",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "debugging", "incident triage", "production", "root cause", "adaptability", "production incident triage & emergency debugging" ],
+    "criteria" : [ "demonstrates a structured, hypothesis-driven debugging methodology", "remains methodical and disciplined under extreme time and customer pressure", "identifies root causes and implements robust automated regression tests" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-017",
+    "question" : "Share an experience where you used distributed tracing to track down a 10-second latency bottleneck spanning five microservices.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Production Incident Triage & Emergency Debugging",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "debugging", "incident triage", "production", "root cause", "adaptability", "production incident triage & emergency debugging" ],
+    "criteria" : [ "demonstrates a structured, hypothesis-driven debugging methodology", "remains methodical and disciplined under extreme time and customer pressure", "identifies root causes and implements robust automated regression tests" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-018",
+    "question" : "Tell me about a time you had to write a hotfix directly in production or staging to stop severe data corruption during an active outage.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Production Incident Triage & Emergency Debugging",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "debugging", "incident triage", "production", "root cause", "adaptability", "production incident triage & emergency debugging" ],
+    "criteria" : [ "demonstrates a structured, hypothesis-driven debugging methodology", "remains methodical and disciplined under extreme time and customer pressure", "identifies root causes and implements robust automated regression tests" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-019",
+    "question" : "Describe a scenario where a database connection pool was silently exhausted, and how you traced the leaked connection to unclosed streams.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Production Incident Triage & Emergency Debugging",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "debugging", "incident triage", "production", "root cause", "adaptability", "production incident triage & emergency debugging" ],
+    "criteria" : [ "demonstrates a structured, hypothesis-driven debugging methodology", "remains methodical and disciplined under extreme time and customer pressure", "identifies root causes and implements robust automated regression tests" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-020",
+    "question" : "Give an example of how you used binary search (git bisect) to locate a regression across 500 merged commits.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Production Incident Triage & Emergency Debugging",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "debugging", "incident triage", "production", "root cause", "adaptability", "production incident triage & emergency debugging" ],
+    "criteria" : [ "demonstrates a structured, hypothesis-driven debugging methodology", "remains methodical and disciplined under extreme time and customer pressure", "identifies root causes and implements robust automated regression tests" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-021",
+    "question" : "Tell me about a time an external third-party API outage was crashing your microservices, and how you implemented a resilient circuit breaker on the fly.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Production Incident Triage & Emergency Debugging",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "debugging", "incident triage", "production", "root cause", "adaptability", "production incident triage & emergency debugging" ],
+    "criteria" : [ "demonstrates a structured, hypothesis-driven debugging methodology", "remains methodical and disciplined under extreme time and customer pressure", "identifies root causes and implements robust automated regression tests" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-022",
+    "question" : "Describe a production incident where a bug only occurred under high concurrent load and could not be reproduced locally.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Production Incident Triage & Emergency Debugging",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "debugging", "incident triage", "production", "root cause", "adaptability", "production incident triage & emergency debugging" ],
+    "criteria" : [ "demonstrates a structured, hypothesis-driven debugging methodology", "remains methodical and disciplined under extreme time and customer pressure", "identifies root causes and implements robust automated regression tests" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-023",
+    "question" : "Tell me about a time you had to diagnose an intermittent 'Heisenbug' that vanished whenever you attached a debugger or enabled verbose logging.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Production Incident Triage & Emergency Debugging",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "debugging", "incident triage", "production", "root cause", "adaptability", "production incident triage & emergency debugging" ],
+    "criteria" : [ "demonstrates a structured, hypothesis-driven debugging methodology", "remains methodical and disciplined under extreme time and customer pressure", "identifies root causes and implements robust automated regression tests" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-024",
+    "question" : "Share an experience where you used distributed tracing to track down a 10-second latency bottleneck spanning five microservices.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Production Incident Triage & Emergency Debugging",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "debugging", "incident triage", "production", "root cause", "adaptability", "production incident triage & emergency debugging" ],
+    "criteria" : [ "demonstrates a structured, hypothesis-driven debugging methodology", "remains methodical and disciplined under extreme time and customer pressure", "identifies root causes and implements robust automated regression tests" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-025",
+    "question" : "Tell me about a time you had to write a hotfix directly in production or staging to stop severe data corruption during an active outage.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Production Incident Triage & Emergency Debugging",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "debugging", "incident triage", "production", "root cause", "adaptability", "production incident triage & emergency debugging" ],
+    "criteria" : [ "demonstrates a structured, hypothesis-driven debugging methodology", "remains methodical and disciplined under extreme time and customer pressure", "identifies root causes and implements robust automated regression tests" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-026",
+    "question" : "Describe a scenario where a database connection pool was silently exhausted, and how you traced the leaked connection to unclosed streams.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Production Incident Triage & Emergency Debugging",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "debugging", "incident triage", "production", "root cause", "adaptability", "production incident triage & emergency debugging" ],
+    "criteria" : [ "demonstrates a structured, hypothesis-driven debugging methodology", "remains methodical and disciplined under extreme time and customer pressure", "identifies root causes and implements robust automated regression tests" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-027",
+    "question" : "Tell me about a time an obscure operating system socket starvation or ephemeral port exhaustion crippled an enterprise payment gateway.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Production Incident Triage & Emergency Debugging",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "debugging", "incident triage", "production", "root cause", "adaptability", "production incident triage & emergency debugging" ],
+    "criteria" : [ "demonstrates a structured, hypothesis-driven debugging methodology", "remains methodical and disciplined under extreme time and customer pressure", "identifies root causes and implements robust automated regression tests" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-028",
+    "question" : "Share an experience where you untangled a severe distributed deadlock involving circular RPC calls across asynchronous Kafka consumer groups.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Production Incident Triage & Emergency Debugging",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "debugging", "incident triage", "production", "root cause", "adaptability", "production incident triage & emergency debugging" ],
+    "criteria" : [ "demonstrates a structured, hypothesis-driven debugging methodology", "remains methodical and disciplined under extreme time and customer pressure", "identifies root causes and implements robust automated regression tests" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-029",
+    "question" : "Describe a disaster recovery scenario where corrupted database WAL logs required point-in-time recovery and cryptographic data reconciliation under extreme executive pressure.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Production Incident Triage & Emergency Debugging",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "debugging", "incident triage", "production", "root cause", "adaptability", "production incident triage & emergency debugging" ],
+    "criteria" : [ "demonstrates a structured, hypothesis-driven debugging methodology", "remains methodical and disciplined under extreme time and customer pressure", "identifies root causes and implements robust automated regression tests" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-030",
+    "question" : "Tell me about a time you debugged a performance degradation caused by CPU cache false sharing and memory alignment in low-latency trading software.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Production Incident Triage & Emergency Debugging",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "debugging", "incident triage", "production", "root cause", "adaptability", "production incident triage & emergency debugging" ],
+    "criteria" : [ "demonstrates a structured, hypothesis-driven debugging methodology", "remains methodical and disciplined under extreme time and customer pressure", "identifies root causes and implements robust automated regression tests" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-031",
+    "question" : "Diagnose a critical production outage where memory usage grew monotonically over three weeks, eventually triggering sudden kernel OOM kills across 50 nodes.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Production Incident Triage & Emergency Debugging",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "debugging", "incident triage", "production", "root cause", "adaptability", "production incident triage & emergency debugging" ],
+    "criteria" : [ "demonstrates a structured, hypothesis-driven debugging methodology", "remains methodical and disciplined under extreme time and customer pressure", "identifies root causes and implements robust automated regression tests" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-032",
+    "question" : "Tell me about a time an obscure operating system socket starvation or ephemeral port exhaustion crippled an enterprise payment gateway.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Production Incident Triage & Emergency Debugging",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "debugging", "incident triage", "production", "root cause", "adaptability", "production incident triage & emergency debugging" ],
+    "criteria" : [ "demonstrates a structured, hypothesis-driven debugging methodology", "remains methodical and disciplined under extreme time and customer pressure", "identifies root causes and implements robust automated regression tests" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-033",
+    "question" : "Tell me about a time project requirements changed significantly halfway through your implementation, and how you adapted.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Adapting to Rapid Requirement Changes",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "adaptability", "requirement changes", "agile", "pivoting", "flexibility", "adapting to rapid requirement changes" ],
+    "criteria" : [ "demonstrates agility, emotional resilience, and constructive adaptability", "architects loosely-coupled systems designed for modular extensibility", "connects technical pivots directly to changing business and customer needs" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-034",
+    "question" : "How do you handle the frustration when code you worked hard on is thrown away due to a sudden change in business direction?",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Adapting to Rapid Requirement Changes",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "adaptability", "requirement changes", "agile", "pivoting", "flexibility", "adapting to rapid requirement changes" ],
+    "criteria" : [ "demonstrates agility, emotional resilience, and constructive adaptability", "architects loosely-coupled systems designed for modular extensibility", "connects technical pivots directly to changing business and customer needs" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-035",
+    "question" : "Describe a situation where a client or stakeholder requested a major scope addition right before a scheduled release.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Adapting to Rapid Requirement Changes",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "adaptability", "requirement changes", "agile", "pivoting", "flexibility", "adapting to rapid requirement changes" ],
+    "criteria" : [ "demonstrates agility, emotional resilience, and constructive adaptability", "architects loosely-coupled systems designed for modular extensibility", "connects technical pivots directly to changing business and customer needs" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-036",
+    "question" : "How do you design your code to be modular and extensible so future requirement changes require minimal refactoring?",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Adapting to Rapid Requirement Changes",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "adaptability", "requirement changes", "agile", "pivoting", "flexibility", "adapting to rapid requirement changes" ],
+    "criteria" : [ "demonstrates agility, emotional resilience, and constructive adaptability", "architects loosely-coupled systems designed for modular extensibility", "connects technical pivots directly to changing business and customer needs" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-037",
+    "question" : "Tell me about a time you had to shift focus from a project you loved to an urgent priority you knew little about.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Adapting to Rapid Requirement Changes",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "adaptability", "requirement changes", "agile", "pivoting", "flexibility", "adapting to rapid requirement changes" ],
+    "criteria" : [ "demonstrates agility, emotional resilience, and constructive adaptability", "architects loosely-coupled systems designed for modular extensibility", "connects technical pivots directly to changing business and customer needs" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-038",
+    "question" : "Describe a time you quickly reprioritized your backlog after an unexpected business event or competitor release.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Adapting to Rapid Requirement Changes",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "adaptability", "requirement changes", "agile", "pivoting", "flexibility", "adapting to rapid requirement changes" ],
+    "criteria" : [ "demonstrates agility, emotional resilience, and constructive adaptability", "architects loosely-coupled systems designed for modular extensibility", "connects technical pivots directly to changing business and customer needs" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-039",
+    "question" : "How do you ensure you understand the business context behind sudden requirement pivots rather than just blindly following orders?",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Adapting to Rapid Requirement Changes",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "adaptability", "requirement changes", "agile", "pivoting", "flexibility", "adapting to rapid requirement changes" ],
+    "criteria" : [ "demonstrates agility, emotional resilience, and constructive adaptability", "architects loosely-coupled systems designed for modular extensibility", "connects technical pivots directly to changing business and customer needs" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-040",
+    "question" : "Tell me about a time project requirements changed significantly halfway through your implementation, and how you adapted.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Adapting to Rapid Requirement Changes",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "adaptability", "requirement changes", "agile", "pivoting", "flexibility", "adapting to rapid requirement changes" ],
+    "criteria" : [ "demonstrates agility, emotional resilience, and constructive adaptability", "architects loosely-coupled systems designed for modular extensibility", "connects technical pivots directly to changing business and customer needs" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-041",
+    "question" : "How do you handle the frustration when code you worked hard on is thrown away due to a sudden change in business direction?",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Adapting to Rapid Requirement Changes",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "adaptability", "requirement changes", "agile", "pivoting", "flexibility", "adapting to rapid requirement changes" ],
+    "criteria" : [ "demonstrates agility, emotional resilience, and constructive adaptability", "architects loosely-coupled systems designed for modular extensibility", "connects technical pivots directly to changing business and customer needs" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-042",
+    "question" : "Describe a situation where a client or stakeholder requested a major scope addition right before a scheduled release.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Adapting to Rapid Requirement Changes",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "adaptability", "requirement changes", "agile", "pivoting", "flexibility", "adapting to rapid requirement changes" ],
+    "criteria" : [ "demonstrates agility, emotional resilience, and constructive adaptability", "architects loosely-coupled systems designed for modular extensibility", "connects technical pivots directly to changing business and customer needs" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-043",
+    "question" : "Tell me about a time product leadership pivoted the company business model, and how you adapted the engineering architecture to support the new vision.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Adapting to Rapid Requirement Changes",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "adaptability", "requirement changes", "agile", "pivoting", "flexibility", "adapting to rapid requirement changes" ],
+    "criteria" : [ "demonstrates agility, emotional resilience, and constructive adaptability", "architects loosely-coupled systems designed for modular extensibility", "connects technical pivots directly to changing business and customer needs" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-044",
+    "question" : "Describe how you maintained team morale and velocity when changing customer demands caused three consecutive sprints of discarded work.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Adapting to Rapid Requirement Changes",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "adaptability", "requirement changes", "agile", "pivoting", "flexibility", "adapting to rapid requirement changes" ],
+    "criteria" : [ "demonstrates agility, emotional resilience, and constructive adaptability", "architects loosely-coupled systems designed for modular extensibility", "connects technical pivots directly to changing business and customer needs" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-045",
+    "question" : "Give an example of how you used feature flags and modular micro-frontends to allow marketing to pivot UI experiments without redeploying backends.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Adapting to Rapid Requirement Changes",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "adaptability", "requirement changes", "agile", "pivoting", "flexibility", "adapting to rapid requirement changes" ],
+    "criteria" : [ "demonstrates agility, emotional resilience, and constructive adaptability", "architects loosely-coupled systems designed for modular extensibility", "connects technical pivots directly to changing business and customer needs" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-046",
+    "question" : "Tell me about a time you successfully negotiated scope compromises with product when an immovable market deadline met expanding requirements.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Adapting to Rapid Requirement Changes",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "adaptability", "requirement changes", "agile", "pivoting", "flexibility", "adapting to rapid requirement changes" ],
+    "criteria" : [ "demonstrates agility, emotional resilience, and constructive adaptability", "architects loosely-coupled systems designed for modular extensibility", "connects technical pivots directly to changing business and customer needs" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-047",
+    "question" : "Tell me about a time a core architectural assumption proved false two weeks before launch, and how you salvaged the delivery timeline.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Adapting to Rapid Requirement Changes",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "adaptability", "requirement changes", "agile", "pivoting", "flexibility", "adapting to rapid requirement changes" ],
+    "criteria" : [ "demonstrates agility, emotional resilience, and constructive adaptability", "architects loosely-coupled systems designed for modular extensibility", "connects technical pivots directly to changing business and customer needs" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-048",
+    "question" : "Describe a situation where shifting legal or compliance regulations (e.g. GDPR, local data residency) forced a total redesign of your data layer.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Adapting to Rapid Requirement Changes",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "adaptability", "requirement changes", "agile", "pivoting", "flexibility", "adapting to rapid requirement changes" ],
+    "criteria" : [ "demonstrates agility, emotional resilience, and constructive adaptability", "architects loosely-coupled systems designed for modular extensibility", "connects technical pivots directly to changing business and customer needs" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-049",
+    "question" : "Share an experience where you had to integrate an unexpected third-party vendor API that was poorly documented and completely different from specifications.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Adapting to Rapid Requirement Changes",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "adaptability", "requirement changes", "agile", "pivoting", "flexibility", "adapting to rapid requirement changes" ],
+    "criteria" : [ "demonstrates agility, emotional resilience, and constructive adaptability", "architects loosely-coupled systems designed for modular extensibility", "connects technical pivots directly to changing business and customer needs" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-050",
+    "question" : "Tell me about a time product leadership pivoted the company business model, and how you adapted the engineering architecture to support the new vision.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Adapting to Rapid Requirement Changes",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "adaptability", "requirement changes", "agile", "pivoting", "flexibility", "adapting to rapid requirement changes" ],
+    "criteria" : [ "demonstrates agility, emotional resilience, and constructive adaptability", "architects loosely-coupled systems designed for modular extensibility", "connects technical pivots directly to changing business and customer needs" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-051",
+    "question" : "Describe how you maintained team morale and velocity when changing customer demands caused three consecutive sprints of discarded work.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Adapting to Rapid Requirement Changes",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "adaptability", "requirement changes", "agile", "pivoting", "flexibility", "adapting to rapid requirement changes" ],
+    "criteria" : [ "demonstrates agility, emotional resilience, and constructive adaptability", "architects loosely-coupled systems designed for modular extensibility", "connects technical pivots directly to changing business and customer needs" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-052",
+    "question" : "Give an example of how you used feature flags and modular micro-frontends to allow marketing to pivot UI experiments without redeploying backends.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Adapting to Rapid Requirement Changes",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "adaptability", "requirement changes", "agile", "pivoting", "flexibility", "adapting to rapid requirement changes" ],
+    "criteria" : [ "demonstrates agility, emotional resilience, and constructive adaptability", "architects loosely-coupled systems designed for modular extensibility", "connects technical pivots directly to changing business and customer needs" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-053",
+    "question" : "Tell me about a time you successfully negotiated scope compromises with product when an immovable market deadline met expanding requirements.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Adapting to Rapid Requirement Changes",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "adaptability", "requirement changes", "agile", "pivoting", "flexibility", "adapting to rapid requirement changes" ],
+    "criteria" : [ "demonstrates agility, emotional resilience, and constructive adaptability", "architects loosely-coupled systems designed for modular extensibility", "connects technical pivots directly to changing business and customer needs" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-054",
+    "question" : "Tell me about a time a core architectural assumption proved false two weeks before launch, and how you salvaged the delivery timeline.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Adapting to Rapid Requirement Changes",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "adaptability", "requirement changes", "agile", "pivoting", "flexibility", "adapting to rapid requirement changes" ],
+    "criteria" : [ "demonstrates agility, emotional resilience, and constructive adaptability", "architects loosely-coupled systems designed for modular extensibility", "connects technical pivots directly to changing business and customer needs" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-055",
+    "question" : "Describe a situation where shifting legal or compliance regulations (e.g. GDPR, local data residency) forced a total redesign of your data layer.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Adapting to Rapid Requirement Changes",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "adaptability", "requirement changes", "agile", "pivoting", "flexibility", "adapting to rapid requirement changes" ],
+    "criteria" : [ "demonstrates agility, emotional resilience, and constructive adaptability", "architects loosely-coupled systems designed for modular extensibility", "connects technical pivots directly to changing business and customer needs" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-056",
+    "question" : "Share an experience where you had to integrate an unexpected third-party vendor API that was poorly documented and completely different from specifications.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Adapting to Rapid Requirement Changes",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "adaptability", "requirement changes", "agile", "pivoting", "flexibility", "adapting to rapid requirement changes" ],
+    "criteria" : [ "demonstrates agility, emotional resilience, and constructive adaptability", "architects loosely-coupled systems designed for modular extensibility", "connects technical pivots directly to changing business and customer needs" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-057",
+    "question" : "Tell me about a time product leadership pivoted the company business model, and how you adapted the engineering architecture to support the new vision.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Adapting to Rapid Requirement Changes",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "adaptability", "requirement changes", "agile", "pivoting", "flexibility", "adapting to rapid requirement changes" ],
+    "criteria" : [ "demonstrates agility, emotional resilience, and constructive adaptability", "architects loosely-coupled systems designed for modular extensibility", "connects technical pivots directly to changing business and customer needs" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-058",
+    "question" : "Describe how you maintained team morale and velocity when changing customer demands caused three consecutive sprints of discarded work.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Adapting to Rapid Requirement Changes",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "adaptability", "requirement changes", "agile", "pivoting", "flexibility", "adapting to rapid requirement changes" ],
+    "criteria" : [ "demonstrates agility, emotional resilience, and constructive adaptability", "architects loosely-coupled systems designed for modular extensibility", "connects technical pivots directly to changing business and customer needs" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-059",
+    "question" : "Tell me about a time your company acquired a competitor, and you had to adapt your engineering roadmap overnight to merge incompatible tech stacks.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Adapting to Rapid Requirement Changes",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "adaptability", "requirement changes", "agile", "pivoting", "flexibility", "adapting to rapid requirement changes" ],
+    "criteria" : [ "demonstrates agility, emotional resilience, and constructive adaptability", "architects loosely-coupled systems designed for modular extensibility", "connects technical pivots directly to changing business and customer needs" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-060",
+    "question" : "Share an experience where you architected a platform so modular that when the COVID-19 pandemic hit, your business was able to pivot completely online in two weeks.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Adapting to Rapid Requirement Changes",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "adaptability", "requirement changes", "agile", "pivoting", "flexibility", "adapting to rapid requirement changes" ],
+    "criteria" : [ "demonstrates agility, emotional resilience, and constructive adaptability", "architects loosely-coupled systems designed for modular extensibility", "connects technical pivots directly to changing business and customer needs" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-061",
+    "question" : "Describe how you handled an executive pivot that canceled an 18-month engineering program, salvaging reusable modular microservices to power the new company direction.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Adapting to Rapid Requirement Changes",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "adaptability", "requirement changes", "agile", "pivoting", "flexibility", "adapting to rapid requirement changes" ],
+    "criteria" : [ "demonstrates agility, emotional resilience, and constructive adaptability", "architects loosely-coupled systems designed for modular extensibility", "connects technical pivots directly to changing business and customer needs" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-062",
+    "question" : "Tell me about a time you had to rapidly re-architect a cloud-native platform to comply with sudden sovereign cloud and data air-gapping mandates for defense clients.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Adapting to Rapid Requirement Changes",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "adaptability", "requirement changes", "agile", "pivoting", "flexibility", "adapting to rapid requirement changes" ],
+    "criteria" : [ "demonstrates agility, emotional resilience, and constructive adaptability", "architects loosely-coupled systems designed for modular extensibility", "connects technical pivots directly to changing business and customer needs" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-063",
+    "question" : "Describe an enterprise scenario where your company entered a new international market, requiring a complete multi-currency, multi-lingual, and multi-region architectural overhaul in 90 days.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Adapting to Rapid Requirement Changes",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "adaptability", "requirement changes", "agile", "pivoting", "flexibility", "adapting to rapid requirement changes" ],
+    "criteria" : [ "demonstrates agility, emotional resilience, and constructive adaptability", "architects loosely-coupled systems designed for modular extensibility", "connects technical pivots directly to changing business and customer needs" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-064",
+    "question" : "Tell me about a time your company acquired a competitor, and you had to adapt your engineering roadmap overnight to merge incompatible tech stacks.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Adapting to Rapid Requirement Changes",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "adaptability", "requirement changes", "agile", "pivoting", "flexibility", "adapting to rapid requirement changes" ],
+    "criteria" : [ "demonstrates agility, emotional resilience, and constructive adaptability", "architects loosely-coupled systems designed for modular extensibility", "connects technical pivots directly to changing business and customer needs" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-065",
+    "question" : "Tell me about a time you had to complete a project using a programming language or framework you had never used before.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Ramping Up on Unfamiliar Technologies",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "learning", "unfamiliar tech", "ramp up", "curiosity", "adaptability", "ramping up on unfamiliar technologies" ],
+    "criteria" : [ "demonstrates high learning velocity and structured technical curiosity", "approaches unfamiliar domains methodically through prototypes, docs, and code", "shares learnings back to the organization through guides and mentorship" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-066",
+    "question" : "What is your strategy when you need to quickly learn a new technology or codebase from scratch?",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Ramping Up on Unfamiliar Technologies",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "learning", "unfamiliar tech", "ramp up", "curiosity", "adaptability", "ramping up on unfamiliar technologies" ],
+    "criteria" : [ "demonstrates high learning velocity and structured technical curiosity", "approaches unfamiliar domains methodically through prototypes, docs, and code", "shares learnings back to the organization through guides and mentorship" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-067",
+    "question" : "Describe an experience where you were assigned to maintain a legacy system with zero documentation, and how you got up to speed.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Ramping Up on Unfamiliar Technologies",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "learning", "unfamiliar tech", "ramp up", "curiosity", "adaptability", "ramping up on unfamiliar technologies" ],
+    "criteria" : [ "demonstrates high learning velocity and structured technical curiosity", "approaches unfamiliar domains methodically through prototypes, docs, and code", "shares learnings back to the organization through guides and mentorship" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-068",
+    "question" : "How do you determine when a new technology is mature enough for production versus when it is just industry hype?",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Ramping Up on Unfamiliar Technologies",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "learning", "unfamiliar tech", "ramp up", "curiosity", "adaptability", "ramping up on unfamiliar technologies" ],
+    "criteria" : [ "demonstrates high learning velocity and structured technical curiosity", "approaches unfamiliar domains methodically through prototypes, docs, and code", "shares learnings back to the organization through guides and mentorship" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-069",
+    "question" : "Tell me about a time you asked a colleague for help because you were completely stuck on a technology you didn't understand.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Ramping Up on Unfamiliar Technologies",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "learning", "unfamiliar tech", "ramp up", "curiosity", "adaptability", "ramping up on unfamiliar technologies" ],
+    "criteria" : [ "demonstrates high learning velocity and structured technical curiosity", "approaches unfamiliar domains methodically through prototypes, docs, and code", "shares learnings back to the organization through guides and mentorship" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-070",
+    "question" : "Describe a situation where learning a new tool or paradigm noticeably changed how you approach problem-solving.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Ramping Up on Unfamiliar Technologies",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "learning", "unfamiliar tech", "ramp up", "curiosity", "adaptability", "ramping up on unfamiliar technologies" ],
+    "criteria" : [ "demonstrates high learning velocity and structured technical curiosity", "approaches unfamiliar domains methodically through prototypes, docs, and code", "shares learnings back to the organization through guides and mentorship" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-071",
+    "question" : "How do you balance learning new tools on your own time with delivering your day-to-day work?",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Ramping Up on Unfamiliar Technologies",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "learning", "unfamiliar tech", "ramp up", "curiosity", "adaptability", "ramping up on unfamiliar technologies" ],
+    "criteria" : [ "demonstrates high learning velocity and structured technical curiosity", "approaches unfamiliar domains methodically through prototypes, docs, and code", "shares learnings back to the organization through guides and mentorship" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-072",
+    "question" : "Tell me about a time you had to complete a project using a programming language or framework you had never used before.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Ramping Up on Unfamiliar Technologies",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "learning", "unfamiliar tech", "ramp up", "curiosity", "adaptability", "ramping up on unfamiliar technologies" ],
+    "criteria" : [ "demonstrates high learning velocity and structured technical curiosity", "approaches unfamiliar domains methodically through prototypes, docs, and code", "shares learnings back to the organization through guides and mentorship" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-073",
+    "question" : "What is your strategy when you need to quickly learn a new technology or codebase from scratch?",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Ramping Up on Unfamiliar Technologies",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "learning", "unfamiliar tech", "ramp up", "curiosity", "adaptability", "ramping up on unfamiliar technologies" ],
+    "criteria" : [ "demonstrates high learning velocity and structured technical curiosity", "approaches unfamiliar domains methodically through prototypes, docs, and code", "shares learnings back to the organization through guides and mentorship" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-074",
+    "question" : "Describe an experience where you were assigned to maintain a legacy system with zero documentation, and how you got up to speed.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Ramping Up on Unfamiliar Technologies",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "learning", "unfamiliar tech", "ramp up", "curiosity", "adaptability", "ramping up on unfamiliar technologies" ],
+    "criteria" : [ "demonstrates high learning velocity and structured technical curiosity", "approaches unfamiliar domains methodically through prototypes, docs, and code", "shares learnings back to the organization through guides and mentorship" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-075",
+    "question" : "Tell me about a time you inherited an abandoned open-source library that was critical to your system, fixed a critical bug, and maintained your own fork.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Ramping Up on Unfamiliar Technologies",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "learning", "unfamiliar tech", "ramp up", "curiosity", "adaptability", "ramping up on unfamiliar technologies" ],
+    "criteria" : [ "demonstrates high learning velocity and structured technical curiosity", "approaches unfamiliar domains methodically through prototypes, docs, and code", "shares learnings back to the organization through guides and mentorship" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-076",
+    "question" : "Describe how you structured your learning to pass a rigorous professional cloud certification (e.g. AWS Solutions Architect Professional) while working full-time.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Ramping Up on Unfamiliar Technologies",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "learning", "unfamiliar tech", "ramp up", "curiosity", "adaptability", "ramping up on unfamiliar technologies" ],
+    "criteria" : [ "demonstrates high learning velocity and structured technical curiosity", "approaches unfamiliar domains methodically through prototypes, docs, and code", "shares learnings back to the organization through guides and mentorship" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-077",
+    "question" : "Give an example of how you taught an unfamiliar paradigm (like reactive programming or functional design) to an experienced object-oriented team.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Ramping Up on Unfamiliar Technologies",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "learning", "unfamiliar tech", "ramp up", "curiosity", "adaptability", "ramping up on unfamiliar technologies" ],
+    "criteria" : [ "demonstrates high learning velocity and structured technical curiosity", "approaches unfamiliar domains methodically through prototypes, docs, and code", "shares learnings back to the organization through guides and mentorship" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-078",
+    "question" : "Tell me about a time you had to ramp up on domain-specific knowledge (e.g. accounting, genomics, tax law) to build accurate software.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Ramping Up on Unfamiliar Technologies",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "learning", "unfamiliar tech", "ramp up", "curiosity", "adaptability", "ramping up on unfamiliar technologies" ],
+    "criteria" : [ "demonstrates high learning velocity and structured technical curiosity", "approaches unfamiliar domains methodically through prototypes, docs, and code", "shares learnings back to the organization through guides and mentorship" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-079",
+    "question" : "Tell me about a time your team needed to build an urgent microservice in an unfamiliar language (e.g. Go/Rust) and how you ramped up to production readiness in two weeks.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Ramping Up on Unfamiliar Technologies",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "learning", "unfamiliar tech", "ramp up", "curiosity", "adaptability", "ramping up on unfamiliar technologies" ],
+    "criteria" : [ "demonstrates high learning velocity and structured technical curiosity", "approaches unfamiliar domains methodically through prototypes, docs, and code", "shares learnings back to the organization through guides and mentorship" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-080",
+    "question" : "Describe a situation where you had to reverse-engineer an undocumented binary protocol or proprietary API to build an integration.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Ramping Up on Unfamiliar Technologies",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "learning", "unfamiliar tech", "ramp up", "curiosity", "adaptability", "ramping up on unfamiliar technologies" ],
+    "criteria" : [ "demonstrates high learning velocity and structured technical curiosity", "approaches unfamiliar domains methodically through prototypes, docs, and code", "shares learnings back to the organization through guides and mentorship" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-081",
+    "question" : "Share an experience where you evaluated a bleeding-edge framework for your team, documenting best practices and pitfalls before broader adoption.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Ramping Up on Unfamiliar Technologies",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "learning", "unfamiliar tech", "ramp up", "curiosity", "adaptability", "ramping up on unfamiliar technologies" ],
+    "criteria" : [ "demonstrates high learning velocity and structured technical curiosity", "approaches unfamiliar domains methodically through prototypes, docs, and code", "shares learnings back to the organization through guides and mentorship" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-082",
+    "question" : "Tell me about a time you inherited an abandoned open-source library that was critical to your system, fixed a critical bug, and maintained your own fork.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Ramping Up on Unfamiliar Technologies",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "learning", "unfamiliar tech", "ramp up", "curiosity", "adaptability", "ramping up on unfamiliar technologies" ],
+    "criteria" : [ "demonstrates high learning velocity and structured technical curiosity", "approaches unfamiliar domains methodically through prototypes, docs, and code", "shares learnings back to the organization through guides and mentorship" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-083",
+    "question" : "Describe how you structured your learning to pass a rigorous professional cloud certification (e.g. AWS Solutions Architect Professional) while working full-time.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Ramping Up on Unfamiliar Technologies",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "learning", "unfamiliar tech", "ramp up", "curiosity", "adaptability", "ramping up on unfamiliar technologies" ],
+    "criteria" : [ "demonstrates high learning velocity and structured technical curiosity", "approaches unfamiliar domains methodically through prototypes, docs, and code", "shares learnings back to the organization through guides and mentorship" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-084",
+    "question" : "Give an example of how you taught an unfamiliar paradigm (like reactive programming or functional design) to an experienced object-oriented team.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Ramping Up on Unfamiliar Technologies",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "learning", "unfamiliar tech", "ramp up", "curiosity", "adaptability", "ramping up on unfamiliar technologies" ],
+    "criteria" : [ "demonstrates high learning velocity and structured technical curiosity", "approaches unfamiliar domains methodically through prototypes, docs, and code", "shares learnings back to the organization through guides and mentorship" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-085",
+    "question" : "Tell me about a time you had to ramp up on domain-specific knowledge (e.g. accounting, genomics, tax law) to build accurate software.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Ramping Up on Unfamiliar Technologies",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "learning", "unfamiliar tech", "ramp up", "curiosity", "adaptability", "ramping up on unfamiliar technologies" ],
+    "criteria" : [ "demonstrates high learning velocity and structured technical curiosity", "approaches unfamiliar domains methodically through prototypes, docs, and code", "shares learnings back to the organization through guides and mentorship" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-086",
+    "question" : "Tell me about a time your team needed to build an urgent microservice in an unfamiliar language (e.g. Go/Rust) and how you ramped up to production readiness in two weeks.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Ramping Up on Unfamiliar Technologies",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "learning", "unfamiliar tech", "ramp up", "curiosity", "adaptability", "ramping up on unfamiliar technologies" ],
+    "criteria" : [ "demonstrates high learning velocity and structured technical curiosity", "approaches unfamiliar domains methodically through prototypes, docs, and code", "shares learnings back to the organization through guides and mentorship" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-087",
+    "question" : "Describe a situation where you had to reverse-engineer an undocumented binary protocol or proprietary API to build an integration.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Ramping Up on Unfamiliar Technologies",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "learning", "unfamiliar tech", "ramp up", "curiosity", "adaptability", "ramping up on unfamiliar technologies" ],
+    "criteria" : [ "demonstrates high learning velocity and structured technical curiosity", "approaches unfamiliar domains methodically through prototypes, docs, and code", "shares learnings back to the organization through guides and mentorship" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-088",
+    "question" : "Share an experience where you evaluated a bleeding-edge framework for your team, documenting best practices and pitfalls before broader adoption.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Ramping Up on Unfamiliar Technologies",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "learning", "unfamiliar tech", "ramp up", "curiosity", "adaptability", "ramping up on unfamiliar technologies" ],
+    "criteria" : [ "demonstrates high learning velocity and structured technical curiosity", "approaches unfamiliar domains methodically through prototypes, docs, and code", "shares learnings back to the organization through guides and mentorship" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-089",
+    "question" : "Tell me about a time you inherited an abandoned open-source library that was critical to your system, fixed a critical bug, and maintained your own fork.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Ramping Up on Unfamiliar Technologies",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "learning", "unfamiliar tech", "ramp up", "curiosity", "adaptability", "ramping up on unfamiliar technologies" ],
+    "criteria" : [ "demonstrates high learning velocity and structured technical curiosity", "approaches unfamiliar domains methodically through prototypes, docs, and code", "shares learnings back to the organization through guides and mentorship" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-090",
+    "question" : "Describe an enterprise transformation where you spearheaded the migration of an entire engineering department from Java monoliths to modern Golang cloud microservices.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Ramping Up on Unfamiliar Technologies",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "learning", "unfamiliar tech", "ramp up", "curiosity", "adaptability", "ramping up on unfamiliar technologies" ],
+    "criteria" : [ "demonstrates high learning velocity and structured technical curiosity", "approaches unfamiliar domains methodically through prototypes, docs, and code", "shares learnings back to the organization through guides and mentorship" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-091",
+    "question" : "Tell me about a time you mastered complex mathematical or algorithmic concepts (e.g. zero-knowledge proofs, machine learning embeddings) to architect a novel product capability.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Ramping Up on Unfamiliar Technologies",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "learning", "unfamiliar tech", "ramp up", "curiosity", "adaptability", "ramping up on unfamiliar technologies" ],
+    "criteria" : [ "demonstrates high learning velocity and structured technical curiosity", "approaches unfamiliar domains methodically through prototypes, docs, and code", "shares learnings back to the organization through guides and mentorship" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-092",
+    "question" : "Share an experience where your rapid technical self-education enabled your company to beat competitors to market with a new platform integration.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Ramping Up on Unfamiliar Technologies",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "learning", "unfamiliar tech", "ramp up", "curiosity", "adaptability", "ramping up on unfamiliar technologies" ],
+    "criteria" : [ "demonstrates high learning velocity and structured technical curiosity", "approaches unfamiliar domains methodically through prototypes, docs, and code", "shares learnings back to the organization through guides and mentorship" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-093",
+    "question" : "Describe how you established a company-wide culture of continuous learning that enabled traditional engineers to transition into high-demand AI/ML engineering roles.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Ramping Up on Unfamiliar Technologies",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "learning", "unfamiliar tech", "ramp up", "curiosity", "adaptability", "ramping up on unfamiliar technologies" ],
+    "criteria" : [ "demonstrates high learning velocity and structured technical curiosity", "approaches unfamiliar domains methodically through prototypes, docs, and code", "shares learnings back to the organization through guides and mentorship" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-094",
+    "question" : "Tell me about an instance where you quickly became the company's leading subject matter expert on a complex distributed technology (like Kafka or Kubernetes) during a crisis.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Ramping Up on Unfamiliar Technologies",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "learning", "unfamiliar tech", "ramp up", "curiosity", "adaptability", "ramping up on unfamiliar technologies" ],
+    "criteria" : [ "demonstrates high learning velocity and structured technical curiosity", "approaches unfamiliar domains methodically through prototypes, docs, and code", "shares learnings back to the organization through guides and mentorship" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-095",
+    "question" : "Describe an enterprise transformation where you spearheaded the migration of an entire engineering department from Java monoliths to modern Golang cloud microservices.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Ramping Up on Unfamiliar Technologies",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "learning", "unfamiliar tech", "ramp up", "curiosity", "adaptability", "ramping up on unfamiliar technologies" ],
+    "criteria" : [ "demonstrates high learning velocity and structured technical curiosity", "approaches unfamiliar domains methodically through prototypes, docs, and code", "shares learnings back to the organization through guides and mentorship" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-096",
+    "question" : "Tell me about a time you had to build a software feature with very limited budget, compute resources, or time.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Overcoming Resource & Technical Constraints",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "constraints", "optimization", "resource limits", "creative problem solving", "trade-offs", "overcoming resource & technical constraints" ],
+    "criteria" : [ "thrives within real-world constraints and makes pragmatic trade-offs", "analyzes Big-O algorithmic complexity, memory footprints, and network payloads", "delivers creative, high-efficiency solutions without unnecessary infrastructure bloat" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-097",
+    "question" : "Describe a situation where server memory or disk space was severely constrained, and how you optimized your code to fit.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Overcoming Resource & Technical Constraints",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "constraints", "optimization", "resource limits", "creative problem solving", "trade-offs", "overcoming resource & technical constraints" ],
+    "criteria" : [ "thrives within real-world constraints and makes pragmatic trade-offs", "analyzes Big-O algorithmic complexity, memory footprints, and network payloads", "delivers creative, high-efficiency solutions without unnecessary infrastructure bloat" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-098",
+    "question" : "How do you approach optimizing a slow database query when you are not allowed to modify the database schema or add indexes?",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Overcoming Resource & Technical Constraints",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "constraints", "optimization", "resource limits", "creative problem solving", "trade-offs", "overcoming resource & technical constraints" ],
+    "criteria" : [ "thrives within real-world constraints and makes pragmatic trade-offs", "analyzes Big-O algorithmic complexity, memory footprints, and network payloads", "delivers creative, high-efficiency solutions without unnecessary infrastructure bloat" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-099",
+    "question" : "Tell me about a time you had to solve a problem without being allowed to purchase or install new third-party software.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Overcoming Resource & Technical Constraints",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "constraints", "optimization", "resource limits", "creative problem solving", "trade-offs", "overcoming resource & technical constraints" ],
+    "criteria" : [ "thrives within real-world constraints and makes pragmatic trade-offs", "analyzes Big-O algorithmic complexity, memory footprints, and network payloads", "delivers creative, high-efficiency solutions without unnecessary infrastructure bloat" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-100",
+    "question" : "Describe an experience where an API payload had strict size limits, and how you compressed or trimmed data to comply.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Overcoming Resource & Technical Constraints",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "constraints", "optimization", "resource limits", "creative problem solving", "trade-offs", "overcoming resource & technical constraints" ],
+    "criteria" : [ "thrives within real-world constraints and makes pragmatic trade-offs", "analyzes Big-O algorithmic complexity, memory footprints, and network payloads", "delivers creative, high-efficiency solutions without unnecessary infrastructure bloat" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-101",
+    "question" : "How do you balance writing simple, readable code with writing highly optimized code when performance is constrained?",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Overcoming Resource & Technical Constraints",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "constraints", "optimization", "resource limits", "creative problem solving", "trade-offs", "overcoming resource & technical constraints" ],
+    "criteria" : [ "thrives within real-world constraints and makes pragmatic trade-offs", "analyzes Big-O algorithmic complexity, memory footprints, and network payloads", "delivers creative, high-efficiency solutions without unnecessary infrastructure bloat" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-102",
+    "question" : "Tell me about a time you solved a complex problem using very basic, built-in tools.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Overcoming Resource & Technical Constraints",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "constraints", "optimization", "resource limits", "creative problem solving", "trade-offs", "overcoming resource & technical constraints" ],
+    "criteria" : [ "thrives within real-world constraints and makes pragmatic trade-offs", "analyzes Big-O algorithmic complexity, memory footprints, and network payloads", "delivers creative, high-efficiency solutions without unnecessary infrastructure bloat" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-103",
+    "question" : "Tell me about a time you had to build a software feature with very limited budget, compute resources, or time.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Overcoming Resource & Technical Constraints",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "constraints", "optimization", "resource limits", "creative problem solving", "trade-offs", "overcoming resource & technical constraints" ],
+    "criteria" : [ "thrives within real-world constraints and makes pragmatic trade-offs", "analyzes Big-O algorithmic complexity, memory footprints, and network payloads", "delivers creative, high-efficiency solutions without unnecessary infrastructure bloat" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-104",
+    "question" : "Describe a situation where server memory or disk space was severely constrained, and how you optimized your code to fit.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Overcoming Resource & Technical Constraints",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "constraints", "optimization", "resource limits", "creative problem solving", "trade-offs", "overcoming resource & technical constraints" ],
+    "criteria" : [ "thrives within real-world constraints and makes pragmatic trade-offs", "analyzes Big-O algorithmic complexity, memory footprints, and network payloads", "delivers creative, high-efficiency solutions without unnecessary infrastructure bloat" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-105",
+    "question" : "How do you approach optimizing a slow database query when you are not allowed to modify the database schema or add indexes?",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Overcoming Resource & Technical Constraints",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "constraints", "optimization", "resource limits", "creative problem solving", "trade-offs", "overcoming resource & technical constraints" ],
+    "criteria" : [ "thrives within real-world constraints and makes pragmatic trade-offs", "analyzes Big-O algorithmic complexity, memory footprints, and network payloads", "delivers creative, high-efficiency solutions without unnecessary infrastructure bloat" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-106",
+    "question" : "Tell me about a time high AWS/cloud infrastructure costs threatened project viability, and how your architectural optimizations cut monthly bills by 50%.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Overcoming Resource & Technical Constraints",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "constraints", "optimization", "resource limits", "creative problem solving", "trade-offs", "overcoming resource & technical constraints" ],
+    "criteria" : [ "thrives within real-world constraints and makes pragmatic trade-offs", "analyzes Big-O algorithmic complexity, memory footprints, and network payloads", "delivers creative, high-efficiency solutions without unnecessary infrastructure bloat" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-107",
+    "question" : "Describe how you solved an algorithmic bottleneck where an O(N^2) operation was freezing background processing as user data scaled.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Overcoming Resource & Technical Constraints",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "constraints", "optimization", "resource limits", "creative problem solving", "trade-offs", "overcoming resource & technical constraints" ],
+    "criteria" : [ "thrives within real-world constraints and makes pragmatic trade-offs", "analyzes Big-O algorithmic complexity, memory footprints, and network payloads", "delivers creative, high-efficiency solutions without unnecessary infrastructure bloat" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-108",
+    "question" : "Give an example of how you designed a system to operate reliably in environments with intermittent, lossy, or offline network connectivity.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Overcoming Resource & Technical Constraints",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "constraints", "optimization", "resource limits", "creative problem solving", "trade-offs", "overcoming resource & technical constraints" ],
+    "criteria" : [ "thrives within real-world constraints and makes pragmatic trade-offs", "analyzes Big-O algorithmic complexity, memory footprints, and network payloads", "delivers creative, high-efficiency solutions without unnecessary infrastructure bloat" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-109",
+    "question" : "Tell me about a time you squeezed maximum throughput out of limited hardware by tuning JVM thread pools, socket buffers, and garbage collectors.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Overcoming Resource & Technical Constraints",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "constraints", "optimization", "resource limits", "creative problem solving", "trade-offs", "overcoming resource & technical constraints" ],
+    "criteria" : [ "thrives within real-world constraints and makes pragmatic trade-offs", "analyzes Big-O algorithmic complexity, memory footprints, and network payloads", "delivers creative, high-efficiency solutions without unnecessary infrastructure bloat" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-110",
+    "question" : "Tell me about a time you optimized an API endpoint that was timing out under load, reducing response time from 15 seconds to under 200 milliseconds.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Overcoming Resource & Technical Constraints",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "constraints", "optimization", "resource limits", "creative problem solving", "trade-offs", "overcoming resource & technical constraints" ],
+    "criteria" : [ "thrives within real-world constraints and makes pragmatic trade-offs", "analyzes Big-O algorithmic complexity, memory footprints, and network payloads", "delivers creative, high-efficiency solutions without unnecessary infrastructure bloat" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-111",
+    "question" : "Describe a situation where your application hit strict cloud service rate limits, and how you designed a client-side queuing and batching engine to stay within quotas.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Overcoming Resource & Technical Constraints",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "constraints", "optimization", "resource limits", "creative problem solving", "trade-offs", "overcoming resource & technical constraints" ],
+    "criteria" : [ "thrives within real-world constraints and makes pragmatic trade-offs", "analyzes Big-O algorithmic complexity, memory footprints, and network payloads", "delivers creative, high-efficiency solutions without unnecessary infrastructure bloat" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-112",
+    "question" : "Share an experience where you had to support thousands of legacy mobile devices with low memory and slow network connectivity.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Overcoming Resource & Technical Constraints",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "constraints", "optimization", "resource limits", "creative problem solving", "trade-offs", "overcoming resource & technical constraints" ],
+    "criteria" : [ "thrives within real-world constraints and makes pragmatic trade-offs", "analyzes Big-O algorithmic complexity, memory footprints, and network payloads", "delivers creative, high-efficiency solutions without unnecessary infrastructure bloat" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-113",
+    "question" : "Tell me about a time high AWS/cloud infrastructure costs threatened project viability, and how your architectural optimizations cut monthly bills by 50%.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Overcoming Resource & Technical Constraints",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "constraints", "optimization", "resource limits", "creative problem solving", "trade-offs", "overcoming resource & technical constraints" ],
+    "criteria" : [ "thrives within real-world constraints and makes pragmatic trade-offs", "analyzes Big-O algorithmic complexity, memory footprints, and network payloads", "delivers creative, high-efficiency solutions without unnecessary infrastructure bloat" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-114",
+    "question" : "Describe how you solved an algorithmic bottleneck where an O(N^2) operation was freezing background processing as user data scaled.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Overcoming Resource & Technical Constraints",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "constraints", "optimization", "resource limits", "creative problem solving", "trade-offs", "overcoming resource & technical constraints" ],
+    "criteria" : [ "thrives within real-world constraints and makes pragmatic trade-offs", "analyzes Big-O algorithmic complexity, memory footprints, and network payloads", "delivers creative, high-efficiency solutions without unnecessary infrastructure bloat" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-115",
+    "question" : "Give an example of how you designed a system to operate reliably in environments with intermittent, lossy, or offline network connectivity.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Overcoming Resource & Technical Constraints",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "constraints", "optimization", "resource limits", "creative problem solving", "trade-offs", "overcoming resource & technical constraints" ],
+    "criteria" : [ "thrives within real-world constraints and makes pragmatic trade-offs", "analyzes Big-O algorithmic complexity, memory footprints, and network payloads", "delivers creative, high-efficiency solutions without unnecessary infrastructure bloat" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-116",
+    "question" : "Tell me about a time you squeezed maximum throughput out of limited hardware by tuning JVM thread pools, socket buffers, and garbage collectors.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Overcoming Resource & Technical Constraints",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "constraints", "optimization", "resource limits", "creative problem solving", "trade-offs", "overcoming resource & technical constraints" ],
+    "criteria" : [ "thrives within real-world constraints and makes pragmatic trade-offs", "analyzes Big-O algorithmic complexity, memory footprints, and network payloads", "delivers creative, high-efficiency solutions without unnecessary infrastructure bloat" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-117",
+    "question" : "Tell me about a time you optimized an API endpoint that was timing out under load, reducing response time from 15 seconds to under 200 milliseconds.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Overcoming Resource & Technical Constraints",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "constraints", "optimization", "resource limits", "creative problem solving", "trade-offs", "overcoming resource & technical constraints" ],
+    "criteria" : [ "thrives within real-world constraints and makes pragmatic trade-offs", "analyzes Big-O algorithmic complexity, memory footprints, and network payloads", "delivers creative, high-efficiency solutions without unnecessary infrastructure bloat" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-118",
+    "question" : "Describe a situation where your application hit strict cloud service rate limits, and how you designed a client-side queuing and batching engine to stay within quotas.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Overcoming Resource & Technical Constraints",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "constraints", "optimization", "resource limits", "creative problem solving", "trade-offs", "overcoming resource & technical constraints" ],
+    "criteria" : [ "thrives within real-world constraints and makes pragmatic trade-offs", "analyzes Big-O algorithmic complexity, memory footprints, and network payloads", "delivers creative, high-efficiency solutions without unnecessary infrastructure bloat" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-119",
+    "question" : "Share an experience where you had to support thousands of legacy mobile devices with low memory and slow network connectivity.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Overcoming Resource & Technical Constraints",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "constraints", "optimization", "resource limits", "creative problem solving", "trade-offs", "overcoming resource & technical constraints" ],
+    "criteria" : [ "thrives within real-world constraints and makes pragmatic trade-offs", "analyzes Big-O algorithmic complexity, memory footprints, and network payloads", "delivers creative, high-efficiency solutions without unnecessary infrastructure bloat" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-120",
+    "question" : "Tell me about a time high AWS/cloud infrastructure costs threatened project viability, and how your architectural optimizations cut monthly bills by 50%.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Overcoming Resource & Technical Constraints",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "constraints", "optimization", "resource limits", "creative problem solving", "trade-offs", "overcoming resource & technical constraints" ],
+    "criteria" : [ "thrives within real-world constraints and makes pragmatic trade-offs", "analyzes Big-O algorithmic complexity, memory footprints, and network payloads", "delivers creative, high-efficiency solutions without unnecessary infrastructure bloat" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-121",
+    "question" : "Architect an edge computing solution for IoT devices operating with 64MB RAM and solar power that processes and syncs sensor data with the cloud.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Overcoming Resource & Technical Constraints",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "constraints", "optimization", "resource limits", "creative problem solving", "trade-offs", "overcoming resource & technical constraints" ],
+    "criteria" : [ "thrives within real-world constraints and makes pragmatic trade-offs", "analyzes Big-O algorithmic complexity, memory footprints, and network payloads", "delivers creative, high-efficiency solutions without unnecessary infrastructure bloat" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-122",
+    "question" : "Describe how you scaled a mission-critical platform to 100 million requests/day during hypergrowth while leadership had frozen all cloud infrastructure spending.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Overcoming Resource & Technical Constraints",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "constraints", "optimization", "resource limits", "creative problem solving", "trade-offs", "overcoming resource & technical constraints" ],
+    "criteria" : [ "thrives within real-world constraints and makes pragmatic trade-offs", "analyzes Big-O algorithmic complexity, memory footprints, and network payloads", "delivers creative, high-efficiency solutions without unnecessary infrastructure bloat" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-123",
+    "question" : "Tell me about an experience where you redesigned an in-memory caching and indexing architecture to fit 500GB of working data into 64GB of RAM using compact bitsets and off-heap storage.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Overcoming Resource & Technical Constraints",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "constraints", "optimization", "resource limits", "creative problem solving", "trade-offs", "overcoming resource & technical constraints" ],
+    "criteria" : [ "thrives within real-world constraints and makes pragmatic trade-offs", "analyzes Big-O algorithmic complexity, memory footprints, and network payloads", "delivers creative, high-efficiency solutions without unnecessary infrastructure bloat" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-124",
+    "question" : "Share an instance where you eliminated a catastrophic database write bottleneck by architecting write-behind buffers and asynchronous LSM-tree flushing.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Overcoming Resource & Technical Constraints",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "constraints", "optimization", "resource limits", "creative problem solving", "trade-offs", "overcoming resource & technical constraints" ],
+    "criteria" : [ "thrives within real-world constraints and makes pragmatic trade-offs", "analyzes Big-O algorithmic complexity, memory footprints, and network payloads", "delivers creative, high-efficiency solutions without unnecessary infrastructure bloat" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-125",
+    "question" : "Describe how you kept a major retail platform online during Black Friday when an entire cloud availability zone went dark and hardware failover was saturated.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Overcoming Resource & Technical Constraints",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "constraints", "optimization", "resource limits", "creative problem solving", "trade-offs", "overcoming resource & technical constraints" ],
+    "criteria" : [ "thrives within real-world constraints and makes pragmatic trade-offs", "analyzes Big-O algorithmic complexity, memory footprints, and network payloads", "delivers creative, high-efficiency solutions without unnecessary infrastructure bloat" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-126",
+    "question" : "Architect an edge computing solution for IoT devices operating with 64MB RAM and solar power that processes and syncs sensor data with the cloud.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Overcoming Resource & Technical Constraints",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "constraints", "optimization", "resource limits", "creative problem solving", "trade-offs", "overcoming resource & technical constraints" ],
+    "criteria" : [ "thrives within real-world constraints and makes pragmatic trade-offs", "analyzes Big-O algorithmic complexity, memory footprints, and network payloads", "delivers creative, high-efficiency solutions without unnecessary infrastructure bloat" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-127",
+    "question" : "Tell me about a time an external library, API, or service you relied on went down, and what happened to your application.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Mitigating Third-Party Failures & Vendor Dependencies",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "third-party", "vendor failures", "fallbacks", "circuit breaker", "resilience", "mitigating third-party failures & vendor dependencies" ],
+    "criteria" : [ "designs defensive architectures with circuit breakers, timeouts, and fallbacks", "shields core domain models from external vendor schemas using Anti-Corruption Layers", "ensures business continuity and graceful degradation during third-party outages" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-128",
+    "question" : "How do you verify whether an issue is originating from your own backend or from a third-party vendor's service?",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Mitigating Third-Party Failures & Vendor Dependencies",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "third-party", "vendor failures", "fallbacks", "circuit breaker", "resilience", "mitigating third-party failures & vendor dependencies" ],
+    "criteria" : [ "designs defensive architectures with circuit breakers, timeouts, and fallbacks", "shields core domain models from external vendor schemas using Anti-Corruption Layers", "ensures business continuity and graceful degradation during third-party outages" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-129",
+    "question" : "Describe an experience where a third-party API introduced a breaking change without prior notice, and how you resolved it.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Mitigating Third-Party Failures & Vendor Dependencies",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "third-party", "vendor failures", "fallbacks", "circuit breaker", "resilience", "mitigating third-party failures & vendor dependencies" ],
+    "criteria" : [ "designs defensive architectures with circuit breakers, timeouts, and fallbacks", "shields core domain models from external vendor schemas using Anti-Corruption Layers", "ensures business continuity and graceful degradation during third-party outages" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-130",
+    "question" : "What strategies do you use to test your application when third-party sandbox environments are down or unstable?",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Mitigating Third-Party Failures & Vendor Dependencies",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "third-party", "vendor failures", "fallbacks", "circuit breaker", "resilience", "mitigating third-party failures & vendor dependencies" ],
+    "criteria" : [ "designs defensive architectures with circuit breakers, timeouts, and fallbacks", "shields core domain models from external vendor schemas using Anti-Corruption Layers", "ensures business continuity and graceful degradation during third-party outages" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-131",
+    "question" : "Tell me about a time an open-source dependency had a security vulnerability, and how you patched or replaced it.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Mitigating Third-Party Failures & Vendor Dependencies",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "third-party", "vendor failures", "fallbacks", "circuit breaker", "resilience", "mitigating third-party failures & vendor dependencies" ],
+    "criteria" : [ "designs defensive architectures with circuit breakers, timeouts, and fallbacks", "shields core domain models from external vendor schemas using Anti-Corruption Layers", "ensures business continuity and graceful degradation during third-party outages" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-132",
+    "question" : "Why is it dangerous to tightly couple your core business logic to a third-party vendor's SDK?",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Mitigating Third-Party Failures & Vendor Dependencies",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "third-party", "vendor failures", "fallbacks", "circuit breaker", "resilience", "mitigating third-party failures & vendor dependencies" ],
+    "criteria" : [ "designs defensive architectures with circuit breakers, timeouts, and fallbacks", "shields core domain models from external vendor schemas using Anti-Corruption Layers", "ensures business continuity and graceful degradation during third-party outages" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-133",
+    "question" : "Describe how you handle third-party API latency spikes to prevent them from locking up your application threads.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Mitigating Third-Party Failures & Vendor Dependencies",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "third-party", "vendor failures", "fallbacks", "circuit breaker", "resilience", "mitigating third-party failures & vendor dependencies" ],
+    "criteria" : [ "designs defensive architectures with circuit breakers, timeouts, and fallbacks", "shields core domain models from external vendor schemas using Anti-Corruption Layers", "ensures business continuity and graceful degradation during third-party outages" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-134",
+    "question" : "Tell me about a time an external library, API, or service you relied on went down, and what happened to your application.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Mitigating Third-Party Failures & Vendor Dependencies",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "third-party", "vendor failures", "fallbacks", "circuit breaker", "resilience", "mitigating third-party failures & vendor dependencies" ],
+    "criteria" : [ "designs defensive architectures with circuit breakers, timeouts, and fallbacks", "shields core domain models from external vendor schemas using Anti-Corruption Layers", "ensures business continuity and graceful degradation during third-party outages" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-135",
+    "question" : "How do you verify whether an issue is originating from your own backend or from a third-party vendor's service?",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Mitigating Third-Party Failures & Vendor Dependencies",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "third-party", "vendor failures", "fallbacks", "circuit breaker", "resilience", "mitigating third-party failures & vendor dependencies" ],
+    "criteria" : [ "designs defensive architectures with circuit breakers, timeouts, and fallbacks", "shields core domain models from external vendor schemas using Anti-Corruption Layers", "ensures business continuity and graceful degradation during third-party outages" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-136",
+    "question" : "Describe an experience where a third-party API introduced a breaking change without prior notice, and how you resolved it.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Mitigating Third-Party Failures & Vendor Dependencies",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "third-party", "vendor failures", "fallbacks", "circuit breaker", "resilience", "mitigating third-party failures & vendor dependencies" ],
+    "criteria" : [ "designs defensive architectures with circuit breakers, timeouts, and fallbacks", "shields core domain models from external vendor schemas using Anti-Corruption Layers", "ensures business continuity and graceful degradation during third-party outages" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-137",
+    "question" : "Tell me about a time an external vendor suffered a 24-hour global outage, and how your graceful degradation strategy kept core user workflows functioning.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Mitigating Third-Party Failures & Vendor Dependencies",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "third-party", "vendor failures", "fallbacks", "circuit breaker", "resilience", "mitigating third-party failures & vendor dependencies" ],
+    "criteria" : [ "designs defensive architectures with circuit breakers, timeouts, and fallbacks", "shields core domain models from external vendor schemas using Anti-Corruption Layers", "ensures business continuity and graceful degradation during third-party outages" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-138",
+    "question" : "Describe how you implemented the Anti-Corruption Layer (ACL) pattern in Domain-Driven Design to shield your domain models from messy vendor schemas.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Mitigating Third-Party Failures & Vendor Dependencies",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "third-party", "vendor failures", "fallbacks", "circuit breaker", "resilience", "mitigating third-party failures & vendor dependencies" ],
+    "criteria" : [ "designs defensive architectures with circuit breakers, timeouts, and fallbacks", "shields core domain models from external vendor schemas using Anti-Corruption Layers", "ensures business continuity and graceful degradation during third-party outages" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-139",
+    "question" : "Give an example of how you used mock servers (like WireMock) to simulate vendor outages, slow responses, and corrupt payloads during automated testing.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Mitigating Third-Party Failures & Vendor Dependencies",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "third-party", "vendor failures", "fallbacks", "circuit breaker", "resilience", "mitigating third-party failures & vendor dependencies" ],
+    "criteria" : [ "designs defensive architectures with circuit breakers, timeouts, and fallbacks", "shields core domain models from external vendor schemas using Anti-Corruption Layers", "ensures business continuity and graceful degradation during third-party outages" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-140",
+    "question" : "Tell me about a time you detected that a vendor was over-billing your company due to silent retries, and how you fixed the duplicate API dispatch logic.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Mitigating Third-Party Failures & Vendor Dependencies",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "third-party", "vendor failures", "fallbacks", "circuit breaker", "resilience", "mitigating third-party failures & vendor dependencies" ],
+    "criteria" : [ "designs defensive architectures with circuit breakers, timeouts, and fallbacks", "shields core domain models from external vendor schemas using Anti-Corruption Layers", "ensures business continuity and graceful degradation during third-party outages" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-141",
+    "question" : "Tell me about a time you designed a multi-vendor fallback architecture (e.g. multiple payment gateways or SMS providers) with automatic failover.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Mitigating Third-Party Failures & Vendor Dependencies",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "third-party", "vendor failures", "fallbacks", "circuit breaker", "resilience", "mitigating third-party failures & vendor dependencies" ],
+    "criteria" : [ "designs defensive architectures with circuit breakers, timeouts, and fallbacks", "shields core domain models from external vendor schemas using Anti-Corruption Layers", "ensures business continuity and graceful degradation during third-party outages" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-142",
+    "question" : "Describe a situation where an external vendor's webhook notifications were arriving out of order or being dropped, and how you built a reconciliation engine.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Mitigating Third-Party Failures & Vendor Dependencies",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "third-party", "vendor failures", "fallbacks", "circuit breaker", "resilience", "mitigating third-party failures & vendor dependencies" ],
+    "criteria" : [ "designs defensive architectures with circuit breakers, timeouts, and fallbacks", "shields core domain models from external vendor schemas using Anti-Corruption Layers", "ensures business continuity and graceful degradation during third-party outages" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-143",
+    "question" : "Share an experience where an essential third-party library had an unmaintained memory leak, and how you isolated it using classloaders or separate processes.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Mitigating Third-Party Failures & Vendor Dependencies",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "third-party", "vendor failures", "fallbacks", "circuit breaker", "resilience", "mitigating third-party failures & vendor dependencies" ],
+    "criteria" : [ "designs defensive architectures with circuit breakers, timeouts, and fallbacks", "shields core domain models from external vendor schemas using Anti-Corruption Layers", "ensures business continuity and graceful degradation during third-party outages" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-144",
+    "question" : "Tell me about a time an external vendor suffered a 24-hour global outage, and how your graceful degradation strategy kept core user workflows functioning.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Mitigating Third-Party Failures & Vendor Dependencies",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "third-party", "vendor failures", "fallbacks", "circuit breaker", "resilience", "mitigating third-party failures & vendor dependencies" ],
+    "criteria" : [ "designs defensive architectures with circuit breakers, timeouts, and fallbacks", "shields core domain models from external vendor schemas using Anti-Corruption Layers", "ensures business continuity and graceful degradation during third-party outages" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-145",
+    "question" : "Describe how you implemented the Anti-Corruption Layer (ACL) pattern in Domain-Driven Design to shield your domain models from messy vendor schemas.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Mitigating Third-Party Failures & Vendor Dependencies",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "third-party", "vendor failures", "fallbacks", "circuit breaker", "resilience", "mitigating third-party failures & vendor dependencies" ],
+    "criteria" : [ "designs defensive architectures with circuit breakers, timeouts, and fallbacks", "shields core domain models from external vendor schemas using Anti-Corruption Layers", "ensures business continuity and graceful degradation during third-party outages" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-146",
+    "question" : "Give an example of how you used mock servers (like WireMock) to simulate vendor outages, slow responses, and corrupt payloads during automated testing.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Mitigating Third-Party Failures & Vendor Dependencies",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "third-party", "vendor failures", "fallbacks", "circuit breaker", "resilience", "mitigating third-party failures & vendor dependencies" ],
+    "criteria" : [ "designs defensive architectures with circuit breakers, timeouts, and fallbacks", "shields core domain models from external vendor schemas using Anti-Corruption Layers", "ensures business continuity and graceful degradation during third-party outages" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-147",
+    "question" : "Tell me about a time you detected that a vendor was over-billing your company due to silent retries, and how you fixed the duplicate API dispatch logic.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Mitigating Third-Party Failures & Vendor Dependencies",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "third-party", "vendor failures", "fallbacks", "circuit breaker", "resilience", "mitigating third-party failures & vendor dependencies" ],
+    "criteria" : [ "designs defensive architectures with circuit breakers, timeouts, and fallbacks", "shields core domain models from external vendor schemas using Anti-Corruption Layers", "ensures business continuity and graceful degradation during third-party outages" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-148",
+    "question" : "Tell me about a time you designed a multi-vendor fallback architecture (e.g. multiple payment gateways or SMS providers) with automatic failover.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Mitigating Third-Party Failures & Vendor Dependencies",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "third-party", "vendor failures", "fallbacks", "circuit breaker", "resilience", "mitigating third-party failures & vendor dependencies" ],
+    "criteria" : [ "designs defensive architectures with circuit breakers, timeouts, and fallbacks", "shields core domain models from external vendor schemas using Anti-Corruption Layers", "ensures business continuity and graceful degradation during third-party outages" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-149",
+    "question" : "Describe a situation where an external vendor's webhook notifications were arriving out of order or being dropped, and how you built a reconciliation engine.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Mitigating Third-Party Failures & Vendor Dependencies",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "third-party", "vendor failures", "fallbacks", "circuit breaker", "resilience", "mitigating third-party failures & vendor dependencies" ],
+    "criteria" : [ "designs defensive architectures with circuit breakers, timeouts, and fallbacks", "shields core domain models from external vendor schemas using Anti-Corruption Layers", "ensures business continuity and graceful degradation during third-party outages" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-150",
+    "question" : "Share an experience where an essential third-party library had an unmaintained memory leak, and how you isolated it using classloaders or separate processes.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Mitigating Third-Party Failures & Vendor Dependencies",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "third-party", "vendor failures", "fallbacks", "circuit breaker", "resilience", "mitigating third-party failures & vendor dependencies" ],
+    "criteria" : [ "designs defensive architectures with circuit breakers, timeouts, and fallbacks", "shields core domain models from external vendor schemas using Anti-Corruption Layers", "ensures business continuity and graceful degradation during third-party outages" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-151",
+    "question" : "Tell me about a time an external vendor suffered a 24-hour global outage, and how your graceful degradation strategy kept core user workflows functioning.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Mitigating Third-Party Failures & Vendor Dependencies",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "third-party", "vendor failures", "fallbacks", "circuit breaker", "resilience", "mitigating third-party failures & vendor dependencies" ],
+    "criteria" : [ "designs defensive architectures with circuit breakers, timeouts, and fallbacks", "shields core domain models from external vendor schemas using Anti-Corruption Layers", "ensures business continuity and graceful degradation during third-party outages" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-152",
+    "question" : "Architect a zero-dependency mission-critical core banking system that continues processing customer transactions even when all external payment clearing networks are disconnected.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Mitigating Third-Party Failures & Vendor Dependencies",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "third-party", "vendor failures", "fallbacks", "circuit breaker", "resilience", "mitigating third-party failures & vendor dependencies" ],
+    "criteria" : [ "designs defensive architectures with circuit breakers, timeouts, and fallbacks", "shields core domain models from external vendor schemas using Anti-Corruption Layers", "ensures business continuity and graceful degradation during third-party outages" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-153",
+    "question" : "Describe how you led the migration off a massive proprietary cloud vendor service (e.g. AWS DynamoDB to self-hosted ScyllaDB) without incurring service downtime.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Mitigating Third-Party Failures & Vendor Dependencies",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "third-party", "vendor failures", "fallbacks", "circuit breaker", "resilience", "mitigating third-party failures & vendor dependencies" ],
+    "criteria" : [ "designs defensive architectures with circuit breakers, timeouts, and fallbacks", "shields core domain models from external vendor schemas using Anti-Corruption Layers", "ensures business continuity and graceful degradation during third-party outages" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-154",
+    "question" : "Tell me about a time a major cloud provider experienced an unprecedented multi-region DNS or IAM failure, and how your pre-planned business continuity protocol executed.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Mitigating Third-Party Failures & Vendor Dependencies",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "third-party", "vendor failures", "fallbacks", "circuit breaker", "resilience", "mitigating third-party failures & vendor dependencies" ],
+    "criteria" : [ "designs defensive architectures with circuit breakers, timeouts, and fallbacks", "shields core domain models from external vendor schemas using Anti-Corruption Layers", "ensures business continuity and graceful degradation during third-party outages" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-155",
+    "question" : "Share an experience where you negotiated SLA penalties and technical remediation with an enterprise vendor following a breach that leaked customer API keys.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Mitigating Third-Party Failures & Vendor Dependencies",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "third-party", "vendor failures", "fallbacks", "circuit breaker", "resilience", "mitigating third-party failures & vendor dependencies" ],
+    "criteria" : [ "designs defensive architectures with circuit breakers, timeouts, and fallbacks", "shields core domain models from external vendor schemas using Anti-Corruption Layers", "ensures business continuity and graceful degradation during third-party outages" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-156",
+    "question" : "Describe how you architected an end-to-end synthetic monitoring and canary testing pipeline that detects downstream vendor degradations before the vendor updates their status page.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Mitigating Third-Party Failures & Vendor Dependencies",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "third-party", "vendor failures", "fallbacks", "circuit breaker", "resilience", "mitigating third-party failures & vendor dependencies" ],
+    "criteria" : [ "designs defensive architectures with circuit breakers, timeouts, and fallbacks", "shields core domain models from external vendor schemas using Anti-Corruption Layers", "ensures business continuity and graceful degradation during third-party outages" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-157",
+    "question" : "Architect a zero-dependency mission-critical core banking system that continues processing customer transactions even when all external payment clearing networks are disconnected.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Mitigating Third-Party Failures & Vendor Dependencies",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "third-party", "vendor failures", "fallbacks", "circuit breaker", "resilience", "mitigating third-party failures & vendor dependencies" ],
+    "criteria" : [ "designs defensive architectures with circuit breakers, timeouts, and fallbacks", "shields core domain models from external vendor schemas using Anti-Corruption Layers", "ensures business continuity and graceful degradation during third-party outages" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-158",
+    "question" : "Tell me about a time you had to deliver a 'good enough' solution instead of waiting for a 'perfect' one.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Balancing Pragmatism vs Technical Perfection",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "pragmatism", "tech debt", "time to market", "mvp", "trade-offs", "balancing pragmatism vs technical perfection" ],
+    "criteria" : [ "demonstrates business-first pragmatism and avoids gold-plating / over-engineering", "manages technical debt deliberately with clear repayment roadmaps", "values simplicity, maintainability, and fast customer feedback loops" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-159",
+    "question" : "How do you decide when it is acceptable to incur technical debt to hit an important business deadline?",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Balancing Pragmatism vs Technical Perfection",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "pragmatism", "tech debt", "time to market", "mvp", "trade-offs", "balancing pragmatism vs technical perfection" ],
+    "criteria" : [ "demonstrates business-first pragmatism and avoids gold-plating / over-engineering", "manages technical debt deliberately with clear repayment roadmaps", "values simplicity, maintainability, and fast customer feedback loops" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-160",
+    "question" : "Describe an experience where an engineer on your team was over-engineering a simple problem, and how you guided them.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Balancing Pragmatism vs Technical Perfection",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "pragmatism", "tech debt", "time to market", "mvp", "trade-offs", "balancing pragmatism vs technical perfection" ],
+    "criteria" : [ "demonstrates business-first pragmatism and avoids gold-plating / over-engineering", "manages technical debt deliberately with clear repayment roadmaps", "values simplicity, maintainability, and fast customer feedback loops" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-161",
+    "question" : "Tell me about a time you shipped an MVP (Minimum Viable Product) to validate a hypothesis before investing in full architecture.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Balancing Pragmatism vs Technical Perfection",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "pragmatism", "tech debt", "time to market", "mvp", "trade-offs", "balancing pragmatism vs technical perfection" ],
+    "criteria" : [ "demonstrates business-first pragmatism and avoids gold-plating / over-engineering", "manages technical debt deliberately with clear repayment roadmaps", "values simplicity, maintainability, and fast customer feedback loops" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-162",
+    "question" : "How do you keep track of technical shortcuts taken during a sprint so they don't get forgotten after launch?",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Balancing Pragmatism vs Technical Perfection",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "pragmatism", "tech debt", "time to market", "mvp", "trade-offs", "balancing pragmatism vs technical perfection" ],
+    "criteria" : [ "demonstrates business-first pragmatism and avoids gold-plating / over-engineering", "manages technical debt deliberately with clear repayment roadmaps", "values simplicity, maintainability, and fast customer feedback loops" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-163",
+    "question" : "Describe a time you chose a boring, reliable technology over a shiny, unproven new framework.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Balancing Pragmatism vs Technical Perfection",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "pragmatism", "tech debt", "time to market", "mvp", "trade-offs", "balancing pragmatism vs technical perfection" ],
+    "criteria" : [ "demonstrates business-first pragmatism and avoids gold-plating / over-engineering", "manages technical debt deliberately with clear repayment roadmaps", "values simplicity, maintainability, and fast customer feedback loops" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-164",
+    "question" : "What does the phrase 'premature optimization is the root of all evil' mean to you in day-to-day software development?",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Balancing Pragmatism vs Technical Perfection",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "pragmatism", "tech debt", "time to market", "mvp", "trade-offs", "balancing pragmatism vs technical perfection" ],
+    "criteria" : [ "demonstrates business-first pragmatism and avoids gold-plating / over-engineering", "manages technical debt deliberately with clear repayment roadmaps", "values simplicity, maintainability, and fast customer feedback loops" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-165",
+    "question" : "Tell me about a time you had to deliver a 'good enough' solution instead of waiting for a 'perfect' one.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Balancing Pragmatism vs Technical Perfection",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "pragmatism", "tech debt", "time to market", "mvp", "trade-offs", "balancing pragmatism vs technical perfection" ],
+    "criteria" : [ "demonstrates business-first pragmatism and avoids gold-plating / over-engineering", "manages technical debt deliberately with clear repayment roadmaps", "values simplicity, maintainability, and fast customer feedback loops" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-166",
+    "question" : "How do you decide when it is acceptable to incur technical debt to hit an important business deadline?",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Balancing Pragmatism vs Technical Perfection",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "pragmatism", "tech debt", "time to market", "mvp", "trade-offs", "balancing pragmatism vs technical perfection" ],
+    "criteria" : [ "demonstrates business-first pragmatism and avoids gold-plating / over-engineering", "manages technical debt deliberately with clear repayment roadmaps", "values simplicity, maintainability, and fast customer feedback loops" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-167",
+    "question" : "Describe an experience where an engineer on your team was over-engineering a simple problem, and how you guided them.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Balancing Pragmatism vs Technical Perfection",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "pragmatism", "tech debt", "time to market", "mvp", "trade-offs", "balancing pragmatism vs technical perfection" ],
+    "criteria" : [ "demonstrates business-first pragmatism and avoids gold-plating / over-engineering", "manages technical debt deliberately with clear repayment roadmaps", "values simplicity, maintainability, and fast customer feedback loops" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-168",
+    "question" : "Tell me about a time you chose a simple relational database (PostgreSQL) instead of a complex NoSQL/distributed cluster, and why it was the right choice.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Balancing Pragmatism vs Technical Perfection",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "pragmatism", "tech debt", "time to market", "mvp", "trade-offs", "balancing pragmatism vs technical perfection" ],
+    "criteria" : [ "demonstrates business-first pragmatism and avoids gold-plating / over-engineering", "manages technical debt deliberately with clear repayment roadmaps", "values simplicity, maintainability, and fast customer feedback loops" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-169",
+    "question" : "Describe how you evaluated whether a proposed microservice refactor was truly justified by business scale or simply driven by developer resume-building.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Balancing Pragmatism vs Technical Perfection",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "pragmatism", "tech debt", "time to market", "mvp", "trade-offs", "balancing pragmatism vs technical perfection" ],
+    "criteria" : [ "demonstrates business-first pragmatism and avoids gold-plating / over-engineering", "manages technical debt deliberately with clear repayment roadmaps", "values simplicity, maintainability, and fast customer feedback loops" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-170",
+    "question" : "Give an example of how you set up automated technical debt tracking in your issue tracker to ensure engineering hygiene remained visible to product managers.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Balancing Pragmatism vs Technical Perfection",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "pragmatism", "tech debt", "time to market", "mvp", "trade-offs", "balancing pragmatism vs technical perfection" ],
+    "criteria" : [ "demonstrates business-first pragmatism and avoids gold-plating / over-engineering", "manages technical debt deliberately with clear repayment roadmaps", "values simplicity, maintainability, and fast customer feedback loops" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-171",
+    "question" : "Tell me about a time you killed a complex internal framework project because off-the-shelf open-source tools had caught up and rendered it obsolete.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Balancing Pragmatism vs Technical Perfection",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "pragmatism", "tech debt", "time to market", "mvp", "trade-offs", "balancing pragmatism vs technical perfection" ],
+    "criteria" : [ "demonstrates business-first pragmatism and avoids gold-plating / over-engineering", "manages technical debt deliberately with clear repayment roadmaps", "values simplicity, maintainability, and fast customer feedback loops" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-172",
+    "question" : "Tell me about a time you deliberately shipped technical debt to capture a market opportunity, and how you subsequently scheduled and paid it off.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Balancing Pragmatism vs Technical Perfection",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "pragmatism", "tech debt", "time to market", "mvp", "trade-offs", "balancing pragmatism vs technical perfection" ],
+    "criteria" : [ "demonstrates business-first pragmatism and avoids gold-plating / over-engineering", "manages technical debt deliberately with clear repayment roadmaps", "values simplicity, maintainability, and fast customer feedback loops" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-173",
+    "question" : "Describe a situation where business stakeholders pressured you to skip automated testing, and how you pragmatically negotiated testing the critical 20% of core flows.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Balancing Pragmatism vs Technical Perfection",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "pragmatism", "tech debt", "time to market", "mvp", "trade-offs", "balancing pragmatism vs technical perfection" ],
+    "criteria" : [ "demonstrates business-first pragmatism and avoids gold-plating / over-engineering", "manages technical debt deliberately with clear repayment roadmaps", "values simplicity, maintainability, and fast customer feedback loops" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-174",
+    "question" : "Share an experience where you refactored a monolithic code module iteratively over six months while continuously shipping new features in every sprint.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Balancing Pragmatism vs Technical Perfection",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "pragmatism", "tech debt", "time to market", "mvp", "trade-offs", "balancing pragmatism vs technical perfection" ],
+    "criteria" : [ "demonstrates business-first pragmatism and avoids gold-plating / over-engineering", "manages technical debt deliberately with clear repayment roadmaps", "values simplicity, maintainability, and fast customer feedback loops" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-175",
+    "question" : "Tell me about a time you chose a simple relational database (PostgreSQL) instead of a complex NoSQL/distributed cluster, and why it was the right choice.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Balancing Pragmatism vs Technical Perfection",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "pragmatism", "tech debt", "time to market", "mvp", "trade-offs", "balancing pragmatism vs technical perfection" ],
+    "criteria" : [ "demonstrates business-first pragmatism and avoids gold-plating / over-engineering", "manages technical debt deliberately with clear repayment roadmaps", "values simplicity, maintainability, and fast customer feedback loops" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-176",
+    "question" : "Describe how you evaluated whether a proposed microservice refactor was truly justified by business scale or simply driven by developer resume-building.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Balancing Pragmatism vs Technical Perfection",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "pragmatism", "tech debt", "time to market", "mvp", "trade-offs", "balancing pragmatism vs technical perfection" ],
+    "criteria" : [ "demonstrates business-first pragmatism and avoids gold-plating / over-engineering", "manages technical debt deliberately with clear repayment roadmaps", "values simplicity, maintainability, and fast customer feedback loops" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-177",
+    "question" : "Give an example of how you set up automated technical debt tracking in your issue tracker to ensure engineering hygiene remained visible to product managers.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Balancing Pragmatism vs Technical Perfection",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "pragmatism", "tech debt", "time to market", "mvp", "trade-offs", "balancing pragmatism vs technical perfection" ],
+    "criteria" : [ "demonstrates business-first pragmatism and avoids gold-plating / over-engineering", "manages technical debt deliberately with clear repayment roadmaps", "values simplicity, maintainability, and fast customer feedback loops" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-178",
+    "question" : "Tell me about a time you killed a complex internal framework project because off-the-shelf open-source tools had caught up and rendered it obsolete.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Balancing Pragmatism vs Technical Perfection",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "pragmatism", "tech debt", "time to market", "mvp", "trade-offs", "balancing pragmatism vs technical perfection" ],
+    "criteria" : [ "demonstrates business-first pragmatism and avoids gold-plating / over-engineering", "manages technical debt deliberately with clear repayment roadmaps", "values simplicity, maintainability, and fast customer feedback loops" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-179",
+    "question" : "Tell me about a time you deliberately shipped technical debt to capture a market opportunity, and how you subsequently scheduled and paid it off.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Balancing Pragmatism vs Technical Perfection",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "pragmatism", "tech debt", "time to market", "mvp", "trade-offs", "balancing pragmatism vs technical perfection" ],
+    "criteria" : [ "demonstrates business-first pragmatism and avoids gold-plating / over-engineering", "manages technical debt deliberately with clear repayment roadmaps", "values simplicity, maintainability, and fast customer feedback loops" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-180",
+    "question" : "Describe a situation where business stakeholders pressured you to skip automated testing, and how you pragmatically negotiated testing the critical 20% of core flows.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Balancing Pragmatism vs Technical Perfection",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "pragmatism", "tech debt", "time to market", "mvp", "trade-offs", "balancing pragmatism vs technical perfection" ],
+    "criteria" : [ "demonstrates business-first pragmatism and avoids gold-plating / over-engineering", "manages technical debt deliberately with clear repayment roadmaps", "values simplicity, maintainability, and fast customer feedback loops" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-181",
+    "question" : "Share an experience where you refactored a monolithic code module iteratively over six months while continuously shipping new features in every sprint.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Balancing Pragmatism vs Technical Perfection",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "pragmatism", "tech debt", "time to market", "mvp", "trade-offs", "balancing pragmatism vs technical perfection" ],
+    "criteria" : [ "demonstrates business-first pragmatism and avoids gold-plating / over-engineering", "manages technical debt deliberately with clear repayment roadmaps", "values simplicity, maintainability, and fast customer feedback loops" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-182",
+    "question" : "Tell me about a time you chose a simple relational database (PostgreSQL) instead of a complex NoSQL/distributed cluster, and why it was the right choice.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Balancing Pragmatism vs Technical Perfection",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "pragmatism", "tech debt", "time to market", "mvp", "trade-offs", "balancing pragmatism vs technical perfection" ],
+    "criteria" : [ "demonstrates business-first pragmatism and avoids gold-plating / over-engineering", "manages technical debt deliberately with clear repayment roadmaps", "values simplicity, maintainability, and fast customer feedback loops" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-183",
+    "question" : "Describe a scenario where your pragmatic technical trade-offs allowed an early-stage startup to survive and reach profitability before running out of venture funding.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Balancing Pragmatism vs Technical Perfection",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "pragmatism", "tech debt", "time to market", "mvp", "trade-offs", "balancing pragmatism vs technical perfection" ],
+    "criteria" : [ "demonstrates business-first pragmatism and avoids gold-plating / over-engineering", "manages technical debt deliberately with clear repayment roadmaps", "values simplicity, maintainability, and fast customer feedback loops" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-184",
+    "question" : "Tell me about a time you resisted an executive mandate for an expensive, multi-million-dollar platform rewrite, demonstrating how targeted modular refactoring yielded 90% of the benefits at 10% of the cost.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Balancing Pragmatism vs Technical Perfection",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "pragmatism", "tech debt", "time to market", "mvp", "trade-offs", "balancing pragmatism vs technical perfection" ],
+    "criteria" : [ "demonstrates business-first pragmatism and avoids gold-plating / over-engineering", "manages technical debt deliberately with clear repayment roadmaps", "values simplicity, maintainability, and fast customer feedback loops" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-185",
+    "question" : "Share an instance where you managed the high-stakes balancing act between regulatory compliance deadlines, technical refactoring, and aggressive commercial feature roadmaps.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Balancing Pragmatism vs Technical Perfection",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "pragmatism", "tech debt", "time to market", "mvp", "trade-offs", "balancing pragmatism vs technical perfection" ],
+    "criteria" : [ "demonstrates business-first pragmatism and avoids gold-plating / over-engineering", "manages technical debt deliberately with clear repayment roadmaps", "values simplicity, maintainability, and fast customer feedback loops" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-186",
+    "question" : "Describe how you established an organizational framework that defines when technical debt is strategic vs when it becomes toxic and dangerous.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Balancing Pragmatism vs Technical Perfection",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "pragmatism", "tech debt", "time to market", "mvp", "trade-offs", "balancing pragmatism vs technical perfection" ],
+    "criteria" : [ "demonstrates business-first pragmatism and avoids gold-plating / over-engineering", "manages technical debt deliberately with clear repayment roadmaps", "values simplicity, maintainability, and fast customer feedback loops" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-187",
+    "question" : "Tell me about a time you made an architectural compromise that you later regretted, how the technical debt compounded, and how you ultimately resolved it.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Balancing Pragmatism vs Technical Perfection",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "pragmatism", "tech debt", "time to market", "mvp", "trade-offs", "balancing pragmatism vs technical perfection" ],
+    "criteria" : [ "demonstrates business-first pragmatism and avoids gold-plating / over-engineering", "manages technical debt deliberately with clear repayment roadmaps", "values simplicity, maintainability, and fast customer feedback loops" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-188",
+    "question" : "Describe a scenario where your pragmatic technical trade-offs allowed an early-stage startup to survive and reach profitability before running out of venture funding.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Balancing Pragmatism vs Technical Perfection",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "pragmatism", "tech debt", "time to market", "mvp", "trade-offs", "balancing pragmatism vs technical perfection" ],
+    "criteria" : [ "demonstrates business-first pragmatism and avoids gold-plating / over-engineering", "manages technical debt deliberately with clear repayment roadmaps", "values simplicity, maintainability, and fast customer feedback loops" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-189",
+    "question" : "Tell me about a time you were completely stuck on a coding problem for hours, and what you did to unblock yourself.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Unblocking Yourself & Complex Troubleshooting",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "unblocking", "problem solving", "curiosity", "persistence", "root cause", "unblocking yourself & complex troubleshooting" ],
+    "criteria" : [ "demonstrates extraordinary tenacity, deep technical curiosity, and persistence", "dives deep into source code, packet captures, and runtime internals when docs fail", "applies rigorous scientific method and hypothesis testing to eliminate ambiguity" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-190",
+    "question" : "How do you use 'rubber duck debugging' or explaining a problem to a colleague to break through a mental block?",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Unblocking Yourself & Complex Troubleshooting",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "unblocking", "problem solving", "curiosity", "persistence", "root cause", "unblocking yourself & complex troubleshooting" ],
+    "criteria" : [ "demonstrates extraordinary tenacity, deep technical curiosity, and persistence", "dives deep into source code, packet captures, and runtime internals when docs fail", "applies rigorous scientific method and hypothesis testing to eliminate ambiguity" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-191",
+    "question" : "Describe a time reading the official documentation or RFC specifications revealed the solution to a bug that StackOverflow couldn't solve.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Unblocking Yourself & Complex Troubleshooting",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "unblocking", "problem solving", "curiosity", "persistence", "root cause", "unblocking yourself & complex troubleshooting" ],
+    "criteria" : [ "demonstrates extraordinary tenacity, deep technical curiosity, and persistence", "dives deep into source code, packet captures, and runtime internals when docs fail", "applies rigorous scientific method and hypothesis testing to eliminate ambiguity" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-192",
+    "question" : "Tell me about a time you had to dive into an open-source library's source code to understand why it was failing in your application.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Unblocking Yourself & Complex Troubleshooting",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "unblocking", "problem solving", "curiosity", "persistence", "root cause", "unblocking yourself & complex troubleshooting" ],
+    "criteria" : [ "demonstrates extraordinary tenacity, deep technical curiosity, and persistence", "dives deep into source code, packet captures, and runtime internals when docs fail", "applies rigorous scientific method and hypothesis testing to eliminate ambiguity" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-193",
+    "question" : "What do you do when an error message is completely unhelpful (e.g. generic null pointer or internal server error)?",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Unblocking Yourself & Complex Troubleshooting",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "unblocking", "problem solving", "curiosity", "persistence", "root cause", "unblocking yourself & complex troubleshooting" ],
+    "criteria" : [ "demonstrates extraordinary tenacity, deep technical curiosity, and persistence", "dives deep into source code, packet captures, and runtime internals when docs fail", "applies rigorous scientific method and hypothesis testing to eliminate ambiguity" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-194",
+    "question" : "Describe a situation where taking a walk or stepping away from your computer helped you realize the solution to a tough problem.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Unblocking Yourself & Complex Troubleshooting",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "unblocking", "problem solving", "curiosity", "persistence", "root cause", "unblocking yourself & complex troubleshooting" ],
+    "criteria" : [ "demonstrates extraordinary tenacity, deep technical curiosity, and persistence", "dives deep into source code, packet captures, and runtime internals when docs fail", "applies rigorous scientific method and hypothesis testing to eliminate ambiguity" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-195",
+    "question" : "Tell me about a time you used systematic hypothesis testing to eliminate potential causes of a bug one by one.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Unblocking Yourself & Complex Troubleshooting",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "unblocking", "problem solving", "curiosity", "persistence", "root cause", "unblocking yourself & complex troubleshooting" ],
+    "criteria" : [ "demonstrates extraordinary tenacity, deep technical curiosity, and persistence", "dives deep into source code, packet captures, and runtime internals when docs fail", "applies rigorous scientific method and hypothesis testing to eliminate ambiguity" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-196",
+    "question" : "Tell me about a time you were completely stuck on a coding problem for hours, and what you did to unblock yourself.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Unblocking Yourself & Complex Troubleshooting",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "unblocking", "problem solving", "curiosity", "persistence", "root cause", "unblocking yourself & complex troubleshooting" ],
+    "criteria" : [ "demonstrates extraordinary tenacity, deep technical curiosity, and persistence", "dives deep into source code, packet captures, and runtime internals when docs fail", "applies rigorous scientific method and hypothesis testing to eliminate ambiguity" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-197",
+    "question" : "How do you use 'rubber duck debugging' or explaining a problem to a colleague to break through a mental block?",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Unblocking Yourself & Complex Troubleshooting",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "unblocking", "problem solving", "curiosity", "persistence", "root cause", "unblocking yourself & complex troubleshooting" ],
+    "criteria" : [ "demonstrates extraordinary tenacity, deep technical curiosity, and persistence", "dives deep into source code, packet captures, and runtime internals when docs fail", "applies rigorous scientific method and hypothesis testing to eliminate ambiguity" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-198",
+    "question" : "Describe a time reading the official documentation or RFC specifications revealed the solution to a bug that StackOverflow couldn't solve.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Unblocking Yourself & Complex Troubleshooting",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "unblocking", "problem solving", "curiosity", "persistence", "root cause", "unblocking yourself & complex troubleshooting" ],
+    "criteria" : [ "demonstrates extraordinary tenacity, deep technical curiosity, and persistence", "dives deep into source code, packet captures, and runtime internals when docs fail", "applies rigorous scientific method and hypothesis testing to eliminate ambiguity" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-199",
+    "question" : "Tell me about a time you had to build your own custom diagnostic instrumentation or logging agent to capture an elusive multi-threaded race condition.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Unblocking Yourself & Complex Troubleshooting",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "unblocking", "problem solving", "curiosity", "persistence", "root cause", "unblocking yourself & complex troubleshooting" ],
+    "criteria" : [ "demonstrates extraordinary tenacity, deep technical curiosity, and persistence", "dives deep into source code, packet captures, and runtime internals when docs fail", "applies rigorous scientific method and hypothesis testing to eliminate ambiguity" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-200",
+    "question" : "Describe how you systematically disassembled and analyzed compiled bytecode or stack frames to diagnose an unexpected method invocation error.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Unblocking Yourself & Complex Troubleshooting",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "unblocking", "problem solving", "curiosity", "persistence", "root cause", "unblocking yourself & complex troubleshooting" ],
+    "criteria" : [ "demonstrates extraordinary tenacity, deep technical curiosity, and persistence", "dives deep into source code, packet captures, and runtime internals when docs fail", "applies rigorous scientific method and hypothesis testing to eliminate ambiguity" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-201",
+    "question" : "Give an example of how you unblocked an entire sprint team when a shared staging database was locked by an orphaned transaction.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Unblocking Yourself & Complex Troubleshooting",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "unblocking", "problem solving", "curiosity", "persistence", "root cause", "unblocking yourself & complex troubleshooting" ],
+    "criteria" : [ "demonstrates extraordinary tenacity, deep technical curiosity, and persistence", "dives deep into source code, packet captures, and runtime internals when docs fail", "applies rigorous scientific method and hypothesis testing to eliminate ambiguity" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-202",
+    "question" : "Tell me about a time you solved a thorny problem by writing a minimal reproducible benchmark that isolated the faulty subsystem.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Unblocking Yourself & Complex Troubleshooting",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "unblocking", "problem solving", "curiosity", "persistence", "root cause", "unblocking yourself & complex troubleshooting" ],
+    "criteria" : [ "demonstrates extraordinary tenacity, deep technical curiosity, and persistence", "dives deep into source code, packet captures, and runtime internals when docs fail", "applies rigorous scientific method and hypothesis testing to eliminate ambiguity" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-203",
+    "question" : "Tell me about a time you tracked down an issue caused by an undocumented behavior or edge-case bug inside the Java runtime or third-party framework.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Unblocking Yourself & Complex Troubleshooting",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "unblocking", "problem solving", "curiosity", "persistence", "root cause", "unblocking yourself & complex troubleshooting" ],
+    "criteria" : [ "demonstrates extraordinary tenacity, deep technical curiosity, and persistence", "dives deep into source code, packet captures, and runtime internals when docs fail", "applies rigorous scientific method and hypothesis testing to eliminate ambiguity" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-204",
+    "question" : "Describe a situation where multiple compounding bugs in different microservices created an emergent failure that masked the individual root causes.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Unblocking Yourself & Complex Troubleshooting",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "unblocking", "problem solving", "curiosity", "persistence", "root cause", "unblocking yourself & complex troubleshooting" ],
+    "criteria" : [ "demonstrates extraordinary tenacity, deep technical curiosity, and persistence", "dives deep into source code, packet captures, and runtime internals when docs fail", "applies rigorous scientific method and hypothesis testing to eliminate ambiguity" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-205",
+    "question" : "Share an experience where you used network packet capture tools (Wireshark, tcpdump) to prove that a bug was in network hardware rather than application code.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Unblocking Yourself & Complex Troubleshooting",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "unblocking", "problem solving", "curiosity", "persistence", "root cause", "unblocking yourself & complex troubleshooting" ],
+    "criteria" : [ "demonstrates extraordinary tenacity, deep technical curiosity, and persistence", "dives deep into source code, packet captures, and runtime internals when docs fail", "applies rigorous scientific method and hypothesis testing to eliminate ambiguity" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-206",
+    "question" : "Tell me about a time you had to build your own custom diagnostic instrumentation or logging agent to capture an elusive multi-threaded race condition.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Unblocking Yourself & Complex Troubleshooting",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "unblocking", "problem solving", "curiosity", "persistence", "root cause", "unblocking yourself & complex troubleshooting" ],
+    "criteria" : [ "demonstrates extraordinary tenacity, deep technical curiosity, and persistence", "dives deep into source code, packet captures, and runtime internals when docs fail", "applies rigorous scientific method and hypothesis testing to eliminate ambiguity" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-207",
+    "question" : "Describe how you systematically disassembled and analyzed compiled bytecode or stack frames to diagnose an unexpected method invocation error.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Unblocking Yourself & Complex Troubleshooting",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "unblocking", "problem solving", "curiosity", "persistence", "root cause", "unblocking yourself & complex troubleshooting" ],
+    "criteria" : [ "demonstrates extraordinary tenacity, deep technical curiosity, and persistence", "dives deep into source code, packet captures, and runtime internals when docs fail", "applies rigorous scientific method and hypothesis testing to eliminate ambiguity" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-208",
+    "question" : "Give an example of how you unblocked an entire sprint team when a shared staging database was locked by an orphaned transaction.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Unblocking Yourself & Complex Troubleshooting",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "unblocking", "problem solving", "curiosity", "persistence", "root cause", "unblocking yourself & complex troubleshooting" ],
+    "criteria" : [ "demonstrates extraordinary tenacity, deep technical curiosity, and persistence", "dives deep into source code, packet captures, and runtime internals when docs fail", "applies rigorous scientific method and hypothesis testing to eliminate ambiguity" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-209",
+    "question" : "Tell me about a time you solved a thorny problem by writing a minimal reproducible benchmark that isolated the faulty subsystem.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Unblocking Yourself & Complex Troubleshooting",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "unblocking", "problem solving", "curiosity", "persistence", "root cause", "unblocking yourself & complex troubleshooting" ],
+    "criteria" : [ "demonstrates extraordinary tenacity, deep technical curiosity, and persistence", "dives deep into source code, packet captures, and runtime internals when docs fail", "applies rigorous scientific method and hypothesis testing to eliminate ambiguity" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-210",
+    "question" : "Tell me about a time you tracked down an issue caused by an undocumented behavior or edge-case bug inside the Java runtime or third-party framework.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Unblocking Yourself & Complex Troubleshooting",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "unblocking", "problem solving", "curiosity", "persistence", "root cause", "unblocking yourself & complex troubleshooting" ],
+    "criteria" : [ "demonstrates extraordinary tenacity, deep technical curiosity, and persistence", "dives deep into source code, packet captures, and runtime internals when docs fail", "applies rigorous scientific method and hypothesis testing to eliminate ambiguity" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-211",
+    "question" : "Describe a situation where multiple compounding bugs in different microservices created an emergent failure that masked the individual root causes.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Unblocking Yourself & Complex Troubleshooting",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "unblocking", "problem solving", "curiosity", "persistence", "root cause", "unblocking yourself & complex troubleshooting" ],
+    "criteria" : [ "demonstrates extraordinary tenacity, deep technical curiosity, and persistence", "dives deep into source code, packet captures, and runtime internals when docs fail", "applies rigorous scientific method and hypothesis testing to eliminate ambiguity" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-212",
+    "question" : "Share an experience where you used network packet capture tools (Wireshark, tcpdump) to prove that a bug was in network hardware rather than application code.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Unblocking Yourself & Complex Troubleshooting",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "unblocking", "problem solving", "curiosity", "persistence", "root cause", "unblocking yourself & complex troubleshooting" ],
+    "criteria" : [ "demonstrates extraordinary tenacity, deep technical curiosity, and persistence", "dives deep into source code, packet captures, and runtime internals when docs fail", "applies rigorous scientific method and hypothesis testing to eliminate ambiguity" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-213",
+    "question" : "Tell me about a time you had to build your own custom diagnostic instrumentation or logging agent to capture an elusive multi-threaded race condition.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Unblocking Yourself & Complex Troubleshooting",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "unblocking", "problem solving", "curiosity", "persistence", "root cause", "unblocking yourself & complex troubleshooting" ],
+    "criteria" : [ "demonstrates extraordinary tenacity, deep technical curiosity, and persistence", "dives deep into source code, packet captures, and runtime internals when docs fail", "applies rigorous scientific method and hypothesis testing to eliminate ambiguity" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-214",
+    "question" : "Describe an investigation where you solved an elusive silent data corruption bug that had baffled multiple senior architects for over six months.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Unblocking Yourself & Complex Troubleshooting",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "unblocking", "problem solving", "curiosity", "persistence", "root cause", "unblocking yourself & complex troubleshooting" ],
+    "criteria" : [ "demonstrates extraordinary tenacity, deep technical curiosity, and persistence", "dives deep into source code, packet captures, and runtime internals when docs fail", "applies rigorous scientific method and hypothesis testing to eliminate ambiguity" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-215",
+    "question" : "Tell me about a time you diagnosed an issue at the boundary between kernel space and user space (e.g. epoll starvation or thread context switching overhead).",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Unblocking Yourself & Complex Troubleshooting",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "unblocking", "problem solving", "curiosity", "persistence", "root cause", "unblocking yourself & complex troubleshooting" ],
+    "criteria" : [ "demonstrates extraordinary tenacity, deep technical curiosity, and persistence", "dives deep into source code, packet captures, and runtime internals when docs fail", "applies rigorous scientific method and hypothesis testing to eliminate ambiguity" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-216",
+    "question" : "Share an experience where you debugged a distributed consensus failure in a multi-datacenter cluster under high network jitter and asymmetric packet drop.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Unblocking Yourself & Complex Troubleshooting",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "unblocking", "problem solving", "curiosity", "persistence", "root cause", "unblocking yourself & complex troubleshooting" ],
+    "criteria" : [ "demonstrates extraordinary tenacity, deep technical curiosity, and persistence", "dives deep into source code, packet captures, and runtime internals when docs fail", "applies rigorous scientific method and hypothesis testing to eliminate ambiguity" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-217",
+    "question" : "Describe how you systematically uncovered a hardware-level CPU cache coherency flaw or faulty RAM module causing non-deterministic application crashes in bare-metal servers.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Unblocking Yourself & Complex Troubleshooting",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "unblocking", "problem solving", "curiosity", "persistence", "root cause", "unblocking yourself & complex troubleshooting" ],
+    "criteria" : [ "demonstrates extraordinary tenacity, deep technical curiosity, and persistence", "dives deep into source code, packet captures, and runtime internals when docs fail", "applies rigorous scientific method and hypothesis testing to eliminate ambiguity" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-218",
+    "question" : "Tell me about a time your relentless persistence in tracking down a 'minor anomaly' in telemetry logs prevented a catastrophic security breach or total system collapse.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Unblocking Yourself & Complex Troubleshooting",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "unblocking", "problem solving", "curiosity", "persistence", "root cause", "unblocking yourself & complex troubleshooting" ],
+    "criteria" : [ "demonstrates extraordinary tenacity, deep technical curiosity, and persistence", "dives deep into source code, packet captures, and runtime internals when docs fail", "applies rigorous scientific method and hypothesis testing to eliminate ambiguity" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-219",
+    "question" : "Describe an investigation where you solved an elusive silent data corruption bug that had baffled multiple senior architects for over six months.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Unblocking Yourself & Complex Troubleshooting",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "unblocking", "problem solving", "curiosity", "persistence", "root cause", "unblocking yourself & complex troubleshooting" ],
+    "criteria" : [ "demonstrates extraordinary tenacity, deep technical curiosity, and persistence", "dives deep into source code, packet captures, and runtime internals when docs fail", "applies rigorous scientific method and hypothesis testing to eliminate ambiguity" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-220",
+    "question" : "What is the concept of 'graceful degradation' in modern web applications?",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Designing for Failure & Graceful Degradation",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "graceful degradation", "failure modes", "bulkhead", "circuit breaker", "reliability", "designing for failure & graceful degradation" ],
+    "criteria" : [ "anticipates all failure modes and designs robust fail-safe defaults", "implements bulkheads, circuit breakers, and shed-load mechanisms", "distinguishes critical business flows from non-essential features under degraded conditions" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-221",
+    "question" : "Tell me about a time a non-essential service failed, and your system continued serving core customer requests without crashing.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Designing for Failure & Graceful Degradation",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "graceful degradation", "failure modes", "bulkhead", "circuit breaker", "reliability", "designing for failure & graceful degradation" ],
+    "criteria" : [ "anticipates all failure modes and designs robust fail-safe defaults", "implements bulkheads, circuit breakers, and shed-load mechanisms", "distinguishes critical business flows from non-essential features under degraded conditions" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-222",
+    "question" : "What is the difference between a hard dependency and a soft dependency in microservice architecture?",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Designing for Failure & Graceful Degradation",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "graceful degradation", "failure modes", "bulkhead", "circuit breaker", "reliability", "designing for failure & graceful degradation" ],
+    "criteria" : [ "anticipates all failure modes and designs robust fail-safe defaults", "implements bulkheads, circuit breakers, and shed-load mechanisms", "distinguishes critical business flows from non-essential features under degraded conditions" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-223",
+    "question" : "Describe an experience where caching stale data allowed your application to survive a backend database outage.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Designing for Failure & Graceful Degradation",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "graceful degradation", "failure modes", "bulkhead", "circuit breaker", "reliability", "designing for failure & graceful degradation" ],
+    "criteria" : [ "anticipates all failure modes and designs robust fail-safe defaults", "implements bulkheads, circuit breakers, and shed-load mechanisms", "distinguishes critical business flows from non-essential features under degraded conditions" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-224",
+    "question" : "Why should backend services return cached recommendations or generic defaults instead of 500 error pages when recommendation engines fail?",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Designing for Failure & Graceful Degradation",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "graceful degradation", "failure modes", "bulkhead", "circuit breaker", "reliability", "designing for failure & graceful degradation" ],
+    "criteria" : [ "anticipates all failure modes and designs robust fail-safe defaults", "implements bulkheads, circuit breakers, and shed-load mechanisms", "distinguishes critical business flows from non-essential features under degraded conditions" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-225",
+    "question" : "Tell me about a time you implemented timeout policies to prevent slow downstream services from consuming all application threads.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Designing for Failure & Graceful Degradation",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "graceful degradation", "failure modes", "bulkhead", "circuit breaker", "reliability", "designing for failure & graceful degradation" ],
+    "criteria" : [ "anticipates all failure modes and designs robust fail-safe defaults", "implements bulkheads, circuit breakers, and shed-load mechanisms", "distinguishes critical business flows from non-essential features under degraded conditions" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-226",
+    "question" : "What role do health checks play in isolating failing instances in a cluster?",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Designing for Failure & Graceful Degradation",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "graceful degradation", "failure modes", "bulkhead", "circuit breaker", "reliability", "designing for failure & graceful degradation" ],
+    "criteria" : [ "anticipates all failure modes and designs robust fail-safe defaults", "implements bulkheads, circuit breakers, and shed-load mechanisms", "distinguishes critical business flows from non-essential features under degraded conditions" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-227",
+    "question" : "What is the concept of 'graceful degradation' in modern web applications?",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Designing for Failure & Graceful Degradation",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "graceful degradation", "failure modes", "bulkhead", "circuit breaker", "reliability", "designing for failure & graceful degradation" ],
+    "criteria" : [ "anticipates all failure modes and designs robust fail-safe defaults", "implements bulkheads, circuit breakers, and shed-load mechanisms", "distinguishes critical business flows from non-essential features under degraded conditions" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-228",
+    "question" : "Tell me about a time a non-essential service failed, and your system continued serving core customer requests without crashing.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Designing for Failure & Graceful Degradation",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "graceful degradation", "failure modes", "bulkhead", "circuit breaker", "reliability", "designing for failure & graceful degradation" ],
+    "criteria" : [ "anticipates all failure modes and designs robust fail-safe defaults", "implements bulkheads, circuit breakers, and shed-load mechanisms", "distinguishes critical business flows from non-essential features under degraded conditions" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-229",
+    "question" : "What is the difference between a hard dependency and a soft dependency in microservice architecture?",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Designing for Failure & Graceful Degradation",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "graceful degradation", "failure modes", "bulkhead", "circuit breaker", "reliability", "designing for failure & graceful degradation" ],
+    "criteria" : [ "anticipates all failure modes and designs robust fail-safe defaults", "implements bulkheads, circuit breakers, and shed-load mechanisms", "distinguishes critical business flows from non-essential features under degraded conditions" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-230",
+    "question" : "Tell me about a time you conducted a Chaos Engineering experiment that revealed an unexpected cascading failure mode in your microservices graph.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Designing for Failure & Graceful Degradation",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "graceful degradation", "failure modes", "bulkhead", "circuit breaker", "reliability", "designing for failure & graceful degradation" ],
+    "criteria" : [ "anticipates all failure modes and designs robust fail-safe defaults", "implements bulkheads, circuit breakers, and shed-load mechanisms", "distinguishes critical business flows from non-essential features under degraded conditions" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-231",
+    "question" : "Describe how you designed a client-side offline storage and sync engine that enabled field workers to continue operating without internet connectivity.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Designing for Failure & Graceful Degradation",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "graceful degradation", "failure modes", "bulkhead", "circuit breaker", "reliability", "designing for failure & graceful degradation" ],
+    "criteria" : [ "anticipates all failure modes and designs robust fail-safe defaults", "implements bulkheads, circuit breakers, and shed-load mechanisms", "distinguishes critical business flows from non-essential features under degraded conditions" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-232",
+    "question" : "Give an example of how you implemented exponential backoff with full jitter in an event-driven system to prevent retry storms.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Designing for Failure & Graceful Degradation",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "graceful degradation", "failure modes", "bulkhead", "circuit breaker", "reliability", "designing for failure & graceful degradation" ],
+    "criteria" : [ "anticipates all failure modes and designs robust fail-safe defaults", "implements bulkheads, circuit breakers, and shed-load mechanisms", "distinguishes critical business flows from non-essential features under degraded conditions" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-233",
+    "question" : "Tell me about a time your system experienced a partial network partition, and how your fallback routing kept 90% of user sessions operational.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Designing for Failure & Graceful Degradation",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "graceful degradation", "failure modes", "bulkhead", "circuit breaker", "reliability", "designing for failure & graceful degradation" ],
+    "criteria" : [ "anticipates all failure modes and designs robust fail-safe defaults", "implements bulkheads, circuit breakers, and shed-load mechanisms", "distinguishes critical business flows from non-essential features under degraded conditions" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-234",
+    "question" : "Tell me about a time you implemented the Bulkhead pattern to ensure that a runaway background report generation could not starve user-facing transactional APIs.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Designing for Failure & Graceful Degradation",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "graceful degradation", "failure modes", "bulkhead", "circuit breaker", "reliability", "designing for failure & graceful degradation" ],
+    "criteria" : [ "anticipates all failure modes and designs robust fail-safe defaults", "implements bulkheads, circuit breakers, and shed-load mechanisms", "distinguishes critical business flows from non-essential features under degraded conditions" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-235",
+    "question" : "Describe a situation where you designed a queue-based asynchronous buffering fallback when a primary relational database was undergoing maintenance.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Designing for Failure & Graceful Degradation",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "graceful degradation", "failure modes", "bulkhead", "circuit breaker", "reliability", "designing for failure & graceful degradation" ],
+    "criteria" : [ "anticipates all failure modes and designs robust fail-safe defaults", "implements bulkheads, circuit breakers, and shed-load mechanisms", "distinguishes critical business flows from non-essential features under degraded conditions" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-236",
+    "question" : "Share an experience where you implemented tiered feature degradation during a massive traffic spike (e.g. disabling real-time view counts to save DB capacity).",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Designing for Failure & Graceful Degradation",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "graceful degradation", "failure modes", "bulkhead", "circuit breaker", "reliability", "designing for failure & graceful degradation" ],
+    "criteria" : [ "anticipates all failure modes and designs robust fail-safe defaults", "implements bulkheads, circuit breakers, and shed-load mechanisms", "distinguishes critical business flows from non-essential features under degraded conditions" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-237",
+    "question" : "Tell me about a time you conducted a Chaos Engineering experiment that revealed an unexpected cascading failure mode in your microservices graph.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Designing for Failure & Graceful Degradation",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "graceful degradation", "failure modes", "bulkhead", "circuit breaker", "reliability", "designing for failure & graceful degradation" ],
+    "criteria" : [ "anticipates all failure modes and designs robust fail-safe defaults", "implements bulkheads, circuit breakers, and shed-load mechanisms", "distinguishes critical business flows from non-essential features under degraded conditions" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-238",
+    "question" : "Describe how you designed a client-side offline storage and sync engine that enabled field workers to continue operating without internet connectivity.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Designing for Failure & Graceful Degradation",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "graceful degradation", "failure modes", "bulkhead", "circuit breaker", "reliability", "designing for failure & graceful degradation" ],
+    "criteria" : [ "anticipates all failure modes and designs robust fail-safe defaults", "implements bulkheads, circuit breakers, and shed-load mechanisms", "distinguishes critical business flows from non-essential features under degraded conditions" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-239",
+    "question" : "Give an example of how you implemented exponential backoff with full jitter in an event-driven system to prevent retry storms.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Designing for Failure & Graceful Degradation",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "graceful degradation", "failure modes", "bulkhead", "circuit breaker", "reliability", "designing for failure & graceful degradation" ],
+    "criteria" : [ "anticipates all failure modes and designs robust fail-safe defaults", "implements bulkheads, circuit breakers, and shed-load mechanisms", "distinguishes critical business flows from non-essential features under degraded conditions" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-240",
+    "question" : "Tell me about a time your system experienced a partial network partition, and how your fallback routing kept 90% of user sessions operational.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Designing for Failure & Graceful Degradation",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "graceful degradation", "failure modes", "bulkhead", "circuit breaker", "reliability", "designing for failure & graceful degradation" ],
+    "criteria" : [ "anticipates all failure modes and designs robust fail-safe defaults", "implements bulkheads, circuit breakers, and shed-load mechanisms", "distinguishes critical business flows from non-essential features under degraded conditions" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-241",
+    "question" : "Tell me about a time you implemented the Bulkhead pattern to ensure that a runaway background report generation could not starve user-facing transactional APIs.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Designing for Failure & Graceful Degradation",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "graceful degradation", "failure modes", "bulkhead", "circuit breaker", "reliability", "designing for failure & graceful degradation" ],
+    "criteria" : [ "anticipates all failure modes and designs robust fail-safe defaults", "implements bulkheads, circuit breakers, and shed-load mechanisms", "distinguishes critical business flows from non-essential features under degraded conditions" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-242",
+    "question" : "Describe a situation where you designed a queue-based asynchronous buffering fallback when a primary relational database was undergoing maintenance.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Designing for Failure & Graceful Degradation",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "graceful degradation", "failure modes", "bulkhead", "circuit breaker", "reliability", "designing for failure & graceful degradation" ],
+    "criteria" : [ "anticipates all failure modes and designs robust fail-safe defaults", "implements bulkheads, circuit breakers, and shed-load mechanisms", "distinguishes critical business flows from non-essential features under degraded conditions" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-243",
+    "question" : "Share an experience where you implemented tiered feature degradation during a massive traffic spike (e.g. disabling real-time view counts to save DB capacity).",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Designing for Failure & Graceful Degradation",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "graceful degradation", "failure modes", "bulkhead", "circuit breaker", "reliability", "designing for failure & graceful degradation" ],
+    "criteria" : [ "anticipates all failure modes and designs robust fail-safe defaults", "implements bulkheads, circuit breakers, and shed-load mechanisms", "distinguishes critical business flows from non-essential features under degraded conditions" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-244",
+    "question" : "Tell me about a time you conducted a Chaos Engineering experiment that revealed an unexpected cascading failure mode in your microservices graph.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Designing for Failure & Graceful Degradation",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "graceful degradation", "failure modes", "bulkhead", "circuit breaker", "reliability", "designing for failure & graceful degradation" ],
+    "criteria" : [ "anticipates all failure modes and designs robust fail-safe defaults", "implements bulkheads, circuit breakers, and shed-load mechanisms", "distinguishes critical business flows from non-essential features under degraded conditions" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-245",
+    "question" : "Architect an enterprise multi-tier graceful degradation strategy for a global streaming platform that dynamically sheds non-critical features as server load crosses 80%, 90%, and 95%.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Designing for Failure & Graceful Degradation",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "graceful degradation", "failure modes", "bulkhead", "circuit breaker", "reliability", "designing for failure & graceful degradation" ],
+    "criteria" : [ "anticipates all failure modes and designs robust fail-safe defaults", "implements bulkheads, circuit breakers, and shed-load mechanisms", "distinguishes critical business flows from non-essential features under degraded conditions" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-246",
+    "question" : "Design a resilient e-commerce checkout architecture that continues accepting and safely queuing customer orders even when payment gateways, inventory databases, and fraud engines are completely unreachable.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Designing for Failure & Graceful Degradation",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "graceful degradation", "failure modes", "bulkhead", "circuit breaker", "reliability", "designing for failure & graceful degradation" ],
+    "criteria" : [ "anticipates all failure modes and designs robust fail-safe defaults", "implements bulkheads, circuit breakers, and shed-load mechanisms", "distinguishes critical business flows from non-essential features under degraded conditions" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-247",
+    "question" : "Tell me about a time you led the technical recovery of a catastrophic cascading failure where every service in the company's dependency graph crashed in an infinite restart loop.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Designing for Failure & Graceful Degradation",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "graceful degradation", "failure modes", "bulkhead", "circuit breaker", "reliability", "designing for failure & graceful degradation" ],
+    "criteria" : [ "anticipates all failure modes and designs robust fail-safe defaults", "implements bulkheads, circuit breakers, and shed-load mechanisms", "distinguishes critical business flows from non-essential features under degraded conditions" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-248",
+    "question" : "Analyze the failure modes of distributed rate limiters and design fail-open versus fail-closed strategies for mission-critical financial APIs.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Designing for Failure & Graceful Degradation",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "graceful degradation", "failure modes", "bulkhead", "circuit breaker", "reliability", "designing for failure & graceful degradation" ],
+    "criteria" : [ "anticipates all failure modes and designs robust fail-safe defaults", "implements bulkheads, circuit breakers, and shed-load mechanisms", "distinguishes critical business flows from non-essential features under degraded conditions" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-249",
+    "question" : "Describe how you engineered an automated self-healing platform that detects anomalous p99 latency spikes, isolates culprit pods, and routes traffic around degraded availability zones.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Designing for Failure & Graceful Degradation",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "graceful degradation", "failure modes", "bulkhead", "circuit breaker", "reliability", "designing for failure & graceful degradation" ],
+    "criteria" : [ "anticipates all failure modes and designs robust fail-safe defaults", "implements bulkheads, circuit breakers, and shed-load mechanisms", "distinguishes critical business flows from non-essential features under degraded conditions" ],
+    "follow_up" : true
+  }, {
+    "id" : "PROB-250",
+    "question" : "Architect an enterprise multi-tier graceful degradation strategy for a global streaming platform that dynamically sheds non-critical features as server load crosses 80%, 90%, and 95%.",
+    "subject" : "Problem Solving & Adaptability",
+    "topic" : "Designing for Failure & Graceful Degradation",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "graceful degradation", "failure modes", "bulkhead", "circuit breaker", "reliability", "designing for failure & graceful degradation" ],
+    "criteria" : [ "anticipates all failure modes and designs robust fail-safe defaults", "implements bulkheads, circuit breakers, and shed-load mechanisms", "distinguishes critical business flows from non-essential features under degraded conditions" ],
+    "follow_up" : true
+  } ]
+}

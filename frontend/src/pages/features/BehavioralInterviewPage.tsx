@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { PageHeader } from '@/components/common/PageHeader'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
@@ -15,9 +15,14 @@ import {
   Target, 
   Flame, 
   HeartHandshake, 
-  Lightbulb,
-  Sparkles,
-  Award
+  Lightbulb, 
+  Sparkles, 
+  Award,
+  Mic,
+  Square,
+  Volume2,
+  VolumeX,
+  Radio
 } from 'lucide-react'
 import { toast } from 'sonner'
 import { voiceInterviewService } from '@/services/voiceInterviewService'
@@ -80,6 +85,121 @@ export function BehavioralInterviewPage() {
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false)
   const [summary, setSummary] = useState<InterviewSummaryResponse | null>(null)
 
+  // Voice & Audio Capabilities (TTS & STT)
+  const [isRecording, setIsRecording] = useState<boolean>(false)
+  const [recordingSeconds, setRecordingSeconds] = useState<number>(0)
+  const [isSpeaking, setIsSpeaking] = useState<boolean>(false)
+  const [voiceEnabled, setVoiceEnabled] = useState<boolean>(true)
+
+  const mediaRecorderRef = useRef<MediaRecorder | null>(null)
+  const recognitionRef = useRef<any>(null)
+  const timerRef = useRef<NodeJS.Timeout | null>(null)
+
+  // Cleanup on unmount
+  useEffect(() => {
+    return () => {
+      if (timerRef.current) clearInterval(timerRef.current)
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel()
+      }
+      if (recognitionRef.current) {
+        try { recognitionRef.current.stop() } catch {}
+      }
+    }
+  }, [])
+
+  // Text-To-Speech (AI HR Interviewer Voice)
+  const speakQuestion = (text: string) => {
+    if (!('speechSynthesis' in window) || !text) return
+    
+    window.speechSynthesis.cancel()
+    const utterance = new SpeechSynthesisUtterance(text)
+    utterance.rate = 1.0
+    utterance.pitch = 1.0
+    
+    const voices = window.speechSynthesis.getVoices()
+    const preferredVoice = voices.find(v => v.lang.startsWith('en') && (v.name.includes('Natural') || v.name.includes('Google') || v.name.includes('Samantha'))) 
+      || voices.find(v => v.lang.startsWith('en'))
+    if (preferredVoice) utterance.voice = preferredVoice
+
+    utterance.onstart = () => setIsSpeaking(true)
+    utterance.onend = () => setIsSpeaking(false)
+    utterance.onerror = () => setIsSpeaking(false)
+
+    window.speechSynthesis.speak(utterance)
+  }
+
+  const stopSpeaking = () => {
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.cancel()
+      setIsSpeaking(false)
+    }
+  }
+
+  // Speech-To-Text (Microphone Recording)
+  const startRecording = async () => {
+    stopSpeaking()
+    try {
+      const SpeechRecognition = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition
+      if (SpeechRecognition) {
+        const recognition = new SpeechRecognition()
+        recognition.continuous = true
+        recognition.interimResults = true
+        recognition.lang = 'en-US'
+
+        recognition.onresult = (event: any) => {
+          let accumulated = ''
+          for (let i = 0; i < event.results.length; ++i) {
+            accumulated += event.results[i][0].transcript + ' '
+          }
+          setTextAnswer(accumulated.trim())
+        }
+
+        recognition.onerror = (event: any) => {
+          console.warn('Speech recognition status:', event.error)
+        }
+
+        recognition.start()
+        recognitionRef.current = recognition
+      }
+
+      const stream = await navigator.mediaDevices.getUserMedia({ audio: true })
+      const mediaRecorder = new MediaRecorder(stream)
+      mediaRecorderRef.current = mediaRecorder
+      mediaRecorder.start(200)
+
+      setIsRecording(true)
+      setRecordingSeconds(0)
+
+      timerRef.current = setInterval(() => {
+        setRecordingSeconds((prev) => prev + 1)
+      }, 1000)
+
+      toast.info('Microphone active. Speak your STAR response clearly.')
+    } catch (err) {
+      toast.error('Microphone access denied or unavailable. You can type your answer in the box below.')
+    }
+  }
+
+  const stopRecording = () => {
+    if (recognitionRef.current) {
+      try { recognitionRef.current.stop() } catch {}
+      recognitionRef.current = null
+    }
+    if (mediaRecorderRef.current && isRecording) {
+      mediaRecorderRef.current.stop()
+      mediaRecorderRef.current.stream.getTracks().forEach((t) => t.stop())
+      setIsRecording(false)
+      if (timerRef.current) clearInterval(timerRef.current)
+    }
+  }
+
+  const formatTimer = (seconds: number) => {
+    const mins = Math.floor(seconds / 60)
+    const secs = seconds % 60
+    return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`
+  }
+
   const handleStartSession = async () => {
     setIsSubmitting(true)
     try {
@@ -103,7 +223,12 @@ export function BehavioralInterviewPage() {
       setCurrentQuestion(q)
       setQuestionIndex(1)
       setStep('interview')
-      toast.success('Behavioral Mock Session initialized with STAR method feedback!')
+
+      if (voiceEnabled && q?.questionText) {
+        setTimeout(() => speakQuestion(q.questionText), 400)
+      }
+
+      toast.success('Behavioral Mock Session initialized with AI Voice & STAR analysis!')
     } catch (err: any) {
       toast.error(err.message || 'Failed to initialize session. Ensure Spring Boot backend is running.')
     } finally {
@@ -114,27 +239,39 @@ export function BehavioralInterviewPage() {
   const handleSubmitAnswer = async () => {
     if (!session || !currentQuestion) return
 
+    stopSpeaking()
+    stopRecording()
+
     if (!textAnswer.trim()) {
-      toast.error('Please type your STAR method response before submitting.')
+      toast.error('Please speak or type your STAR method response before submitting.')
       return
     }
 
     setIsSubmitting(true)
     try {
-      await voiceInterviewService.submitAnswer(session.id, currentQuestion.id, textAnswer.trim())
+      const nextQ = await voiceInterviewService.submitAnswer(session.id, {
+        questionNo: questionIndex,
+        questionId: currentQuestion.id,
+        answerText: textAnswer.trim(),
+        transcript: textAnswer.trim(),
+        responseDurationSeconds: recordingSeconds || 60,
+      })
       setTextAnswer('')
+      setRecordingSeconds(0)
 
-      if (questionIndex < totalQuestions) {
-        const nextQ = await voiceInterviewService.getCurrentQuestion(session.id)
+      if (nextQ && questionIndex < totalQuestions) {
         setCurrentQuestion(nextQ)
         setQuestionIndex((prev) => prev + 1)
+        if (voiceEnabled && nextQ.questionText) {
+          setTimeout(() => speakQuestion(nextQ.questionText), 400)
+        }
         toast.info(`Next Question: ${questionIndex + 1} of ${totalQuestions}`)
       } else {
         await voiceInterviewService.completeInterview(session.id)
         const summaryData = await voiceInterviewService.getSummary(session.id)
         setSummary(summaryData)
         setStep('summary')
-        toast.success('Behavioral session complete! View your Groq STAR method analysis.')
+        toast.success('Behavioral session complete! View your STAR method analysis.')
       }
     } catch (err: any) {
       toast.error(err.message || 'Error submitting answer')
@@ -147,7 +284,7 @@ export function BehavioralInterviewPage() {
     <div className="space-y-6 pb-12">
       <PageHeader
         title="Behavioral Interview"
-        description="Master HR & Situational interview questions using the structured STAR Method (Situation, Task, Action, Result)."
+        description="Master HR & Situational interview questions with live AI Voice conversation using the structured STAR Method."
       />
 
       {/* STAR Framework Banner */}
@@ -157,7 +294,7 @@ export function BehavioralInterviewPage() {
             <Sparkles className="size-5 text-amber-500" />
             <div>
               <p className="font-semibold text-sm">Use the STAR Method for Maximum Impact</p>
-              <p className="text-xs text-muted-foreground">Structuring your responses with Situation ➔ Task ➔ Action ➔ Result yields higher evaluation scores.</p>
+              <p className="text-xs text-muted-foreground">Structuring your spoken responses with Situation ➔ Task ➔ Action ➔ Result yields higher evaluation scores.</p>
             </div>
           </div>
           <div className="flex gap-2">
@@ -179,7 +316,7 @@ export function BehavioralInterviewPage() {
                 <CardTitle>Select Behavioral Competency Track</CardTitle>
               </div>
               <CardDescription>
-                Choose a behavioral category to generate realistic situational HR scenario questions.
+                Choose a behavioral category to generate realistic situational HR scenario questions with live voice speech.
               </CardDescription>
             </CardHeader>
             <CardContent className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -208,21 +345,45 @@ export function BehavioralInterviewPage() {
             </CardContent>
           </Card>
 
-          <Card>
-            <CardHeader><CardTitle className="text-base">Experience Level Context</CardTitle></CardHeader>
-            <CardContent className="flex flex-wrap gap-3">
-              {['Entry Level / Student', 'Mid-Level (1-3 yrs)', 'Senior / Lead'].map((lvl) => (
-                <Button key={lvl} variant={experienceLevel === lvl ? 'default' : 'outline'} size="sm" onClick={() => setExperienceLevel(lvl)}>
-                  {lvl}
-                </Button>
-              ))}
-            </CardContent>
-          </Card>
+          <div className="grid gap-6 md:grid-cols-2">
+            <Card>
+              <CardHeader><CardTitle className="text-base">Experience Level Context</CardTitle></CardHeader>
+              <CardContent className="flex flex-wrap gap-3">
+                {['Entry Level / Student', 'Mid-Level (1-3 yrs)', 'Senior / Lead'].map((lvl) => (
+                  <Button key={lvl} variant={experienceLevel === lvl ? 'default' : 'outline'} size="sm" onClick={() => setExperienceLevel(lvl)}>
+                    {lvl}
+                  </Button>
+                ))}
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader><CardTitle className="text-base">Voice Capabilities</CardTitle></CardHeader>
+              <CardContent className="space-y-3">
+                <div className="flex items-center justify-between rounded-lg border p-3">
+                  <div className="flex items-center gap-2">
+                    <Volume2 className="size-4 text-primary" />
+                    <span className="text-sm font-medium">AI HR Voice Reader</span>
+                  </div>
+                  <Button 
+                    size="sm" 
+                    variant={voiceEnabled ? 'default' : 'outline'} 
+                    onClick={() => setVoiceEnabled(!voiceEnabled)}
+                  >
+                    {voiceEnabled ? 'Enabled' : 'Disabled'}
+                  </Button>
+                </div>
+                <p className="text-xs text-muted-foreground">
+                  The AI HR interviewer reads situational questions aloud and transcribes your spoken answers live.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
 
           <div className="flex justify-end">
             <Button size="lg" onClick={handleStartSession} disabled={isSubmitting} className="gap-2">
               <Sparkles className="size-5" />
-              {isSubmitting ? 'Starting Session...' : 'Start Behavioral Practice Session'}
+              {isSubmitting ? 'Starting Session...' : 'Start Behavioral Voice Session'}
             </Button>
           </div>
         </div>
@@ -239,6 +400,16 @@ export function BehavioralInterviewPage() {
                     {selectedCategory.replace('_', ' ')}
                   </Badge>
                   <Badge variant="secondary">Behavioral HR</Badge>
+                  {isSpeaking && (
+                    <Badge variant="default" className="animate-pulse bg-rose-500 text-white gap-1.5 text-xs">
+                      <Radio className="size-3 animate-spin" /> HR Speaking...
+                    </Badge>
+                  )}
+                  {isRecording && (
+                    <Badge variant="destructive" className="animate-pulse gap-1.5 text-xs">
+                      <Radio className="size-3" /> Recording ({formatTimer(recordingSeconds)})
+                    </Badge>
+                  )}
                 </div>
                 <p className="text-sm font-medium text-muted-foreground">Scenario Question {questionIndex} of {totalQuestions}</p>
               </div>
@@ -254,26 +425,73 @@ export function BehavioralInterviewPage() {
 
           <Card className="shadow-lg">
             <CardHeader className="space-y-3">
-              <div className="flex items-center gap-2 text-sm text-primary font-semibold">
-                <Brain className="size-5" /> HR Interviewer Scenario Question
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2 text-sm text-primary font-semibold">
+                  <Brain className="size-5" /> HR Interviewer Scenario Question
+                </div>
+                <div className="flex items-center gap-2">
+                  <Button
+                    size="sm"
+                    variant="outline"
+                    onClick={() => isSpeaking ? stopSpeaking() : speakQuestion(currentQuestion.questionText)}
+                    className="gap-2 text-xs"
+                  >
+                    {isSpeaking ? <VolumeX className="size-4 text-rose-500" /> : <Volume2 className="size-4 text-primary" />}
+                    {isSpeaking ? 'Mute Question' : 'Listen Aloud'}
+                  </Button>
+                </div>
               </div>
               <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-foreground leading-snug">
                 {currentQuestion.questionText}
               </h2>
             </CardHeader>
             <CardContent className="space-y-6">
+              {/* Voice Recording Control Bar */}
+              <div className="flex flex-wrap items-center justify-between gap-3 rounded-xl border bg-muted/30 p-4">
+                <div className="flex items-center gap-3">
+                  <Button
+                    size="default"
+                    variant={isRecording ? 'destructive' : 'default'}
+                    onClick={isRecording ? stopRecording : startRecording}
+                    className={`gap-2 ${isRecording ? 'animate-pulse ring-2 ring-destructive' : ''}`}
+                  >
+                    {isRecording ? <Square className="size-4" /> : <Mic className="size-4" />}
+                    {isRecording ? `Stop Recording (${formatTimer(recordingSeconds)})` : 'Speak Your STAR Answer'}
+                  </Button>
+                  {isRecording && (
+                    <span className="text-xs font-medium text-destructive animate-pulse flex items-center gap-1.5">
+                      <span className="size-2 rounded-full bg-destructive animate-ping" />
+                      Listening & transcribing STAR response...
+                    </span>
+                  )}
+                </div>
+                <span className="text-xs text-muted-foreground">
+                  Speak naturally into your microphone or type your response below
+                </span>
+              </div>
+
               <div className="space-y-2">
-                <label className="text-sm font-medium text-muted-foreground">Your STAR Response (Situation ➔ Task ➔ Action ➔ Result):</label>
+                <div className="flex items-center justify-between">
+                  <label className="text-sm font-medium text-muted-foreground">Your STAR Response (Situation ➔ Task ➔ Action ➔ Result):</label>
+                  {textAnswer && (
+                    <Button variant="ghost" size="sm" onClick={() => setTextAnswer('')} className="h-6 text-xs text-muted-foreground">
+                      Clear Text
+                    </Button>
+                  )}
+                </div>
                 <Textarea
-                  placeholder="Situation: Describe the context...\nTask: What was your objective?\nAction: What specific steps did you take?\nResult: What was the outcome and key metric?"
+                  placeholder="Situation: Describe the background and context...&#10;Task: What challenge or objective were you facing?&#10;Action: What concrete steps did you personally take?&#10;Result: What was the quantifiable outcome or key learning?"
                   value={textAnswer}
                   onChange={(e) => setTextAnswer(e.target.value)}
                   rows={6}
-                  className="resize-none text-sm"
+                  className="resize-none text-sm leading-relaxed"
                 />
               </div>
 
-              <div className="flex justify-end">
+              <div className="flex items-center justify-between pt-2">
+                <div className="text-xs text-muted-foreground">
+                  {textAnswer.trim() ? `${textAnswer.trim().split(/\s+/).length} words spoken/typed` : 'No response recorded yet'}
+                </div>
                 <Button size="lg" onClick={handleSubmitAnswer} disabled={isSubmitting} className="gap-2">
                   <Send className="size-4" />
                   {isSubmitting ? 'Evaluating with Groq LLM...' : questionIndex === totalQuestions ? 'Submit & View Report' : 'Submit & Next Scenario'}

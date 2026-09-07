@@ -1,9 +1,10 @@
 import { useState, useEffect, useRef } from 'react'
+import { useSearchParams } from 'react-router-dom'
 import { PageHeader } from '@/components/common/PageHeader'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import { MOCK_APTITUDE_QUESTIONS, type MockAptitudeQuestion } from '@/data/mockAptitudeQuestions'
-import { CheckCircle2, ChevronRight, ChevronDown, Brain, Clock, AlertCircle, Sparkles, Calculator, Puzzle, BookOpen, LayoutGrid } from 'lucide-react'
+import { CheckCircle2, ChevronRight, ChevronDown, Brain, Clock, AlertCircle, Sparkles, Calculator, Puzzle, BookOpen, LayoutGrid, Loader2 } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { Badge } from '@/components/ui/badge'
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter } from '@/components/ui/dialog'
@@ -68,8 +69,15 @@ export function AptitudePage() {
   const [isFinished, setIsFinished] = useState(false)
   const [loading, setLoading] = useState(false)
   const [antiCheatModalType, setAntiCheatModalType] = useState<'warning' | 'terminated' | null>(null)
+  const [topicModalOpen, setTopicModalOpen] = useState(false)
+  const [activeCategory, setActiveCategory] = useState<string | null>(null)
+  const [selectedTopic, setSelectedTopic] = useState<{title: string, category: string, topic?: string} | null>(null)
+  const [mixedDifficulty, setMixedDifficulty] = useState<string>('MEDIUM')
   const strikeCountRef = useRef(0)
   const { setExamActive } = useExamStore()
+  const [searchParams, setSearchParams] = useSearchParams()
+  
+  const currentTab = searchParams.get('tab') || 'mixed'
   
   // Timer state (1.5 minutes = 90 seconds per question)
   const [timeLeft, setTimeLeft] = useState(90)
@@ -125,12 +133,24 @@ export function AptitudePage() {
     return `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`
   }
 
-  const startTest = async () => {
+  const startTest = async (mode: 'mixed' | 'category' = 'mixed', category?: string, difficulty?: string, topic?: string) => {
     setLoading(true)
+    if (topicModalOpen) setTopicModalOpen(false)
     try {
-      const response = await fetch('http://localhost:8000/questions')
+      let url = `http://localhost:8000/questions?mode=${mode}`;
+      if (category) url += `&category=${encodeURIComponent(category)}`;
+      if (topic) url += `&topic=${encodeURIComponent(topic)}`;
+      if (difficulty) url += `&difficulty=${encodeURIComponent(difficulty)}`;
+      
+      const response = await fetch(url)
       if (!response.ok) throw new Error("Failed to fetch questions")
       const data = await response.json()
+      
+      if (!data || data.length === 0) {
+        alert("No questions found in the database for this specific topic and difficulty. Please seed the database with more questions.");
+        setLoading(false);
+        return;
+      }
       
       const mappedQuestions: MockAptitudeQuestion[] = data.map((q: any) => ({
         id: q.id,
@@ -149,13 +169,7 @@ export function AptitudePage() {
       setTimeLeft(90) // 90 secs per question
     } catch (err) {
       console.error("Failed to start test", err)
-      // Fallback to mock data if backend fails
-      setQuestions(MOCK_APTITUDE_QUESTIONS)
-      setAnswers({})
-      strikeCountRef.current = 0
-      setIsStarted(true)
-      setExamActive(true)
-      setTimeLeft(90)
+      alert("Failed to fetch questions from the database. Please ensure your Python backend is running.");
     } finally {
       setLoading(false)
     }
@@ -196,7 +210,9 @@ export function AptitudePage() {
   }
 
   const handleNext = async (autoSubmit: boolean = false) => {
+    if (loading) return
     if (!autoSubmit && !selectedOption) return
+    setLoading(true)
     const currentQ = questions[currentQuestionIndex]
     
     // Save local answer
@@ -224,6 +240,7 @@ export function AptitudePage() {
       setCurrentQuestionIndex(prev => prev + 1)
       setSelectedOption(null)
       setTimeLeft(90) // reset timer for next question
+      setLoading(false)
     } else {
       await handleFinish()
     }
@@ -231,36 +248,73 @@ export function AptitudePage() {
 
   if (!isStarted && !isFinished) {
     return (
-      <div className="min-h-screen bg-[#F9F6F0] font-sans pb-12 px-4 sm:px-8 pt-6 -mx-4 sm:-mx-8 -mt-6">
+      <div className="min-h-screen bg-[#F9F6F0] font-sans pb-12 px-4 sm:px-8 pt-6 -mt-6">
         <div className="max-w-6xl mx-auto space-y-8">
           
           {/* Header Section */}
-          <div>
-             <h1 className="text-3xl font-bold text-gray-900">Aptitude Assessment</h1>
-             <p className="text-gray-600 mt-2">Test your logical reasoning, quantitative, and verbal aptitude.</p>
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
+             <div>
+               <h1 className="text-3xl font-bold text-gray-900">Aptitude Assessment</h1>
+               <p className="text-gray-600 mt-2">Test your logical reasoning, quantitative, and verbal aptitude.</p>
+             </div>
+             
+             {/* Simple Tabs */}
+             <div className="flex space-x-1 bg-gray-200/50 p-1 rounded-lg self-start">
+               {['mixed', 'category'].map((tab) => (
+                 <button
+                   key={tab}
+                   onClick={() => setSearchParams({ tab })}
+                   className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${
+                     currentTab === tab 
+                       ? 'bg-white text-gray-900 shadow-sm' 
+                       : 'text-gray-500 hover:text-gray-700 hover:bg-gray-200/50'
+                   }`}
+                 >
+                   {tab === 'mixed' ? 'Mixed Practice' : 'Category Wise'}
+                 </button>
+               ))}
+             </div>
           </div>
 
-          {/* Top Row: Exam & Skill Mastery */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <div className="lg:col-span-2">
+          {currentTab === 'mixed' && (
+            <>
+              {/* Top Row: Exam & Skill Mastery */}
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div className="lg:col-span-2">
               {/* Main Exam Card */}
               <Card className="bg-white shadow-sm border-0 h-full">
                 <CardContent className="p-8 flex flex-col sm:flex-row items-start gap-6 h-full">
                    <AnimatedBrainPulse />
-                   <div className="flex-1 flex flex-col justify-center h-full">
-                     <h2 className="text-2xl font-bold text-gray-900 mb-2">Aptitude Simulation Exam</h2>
-                     <div className="flex items-center space-x-4 text-sm text-gray-500 mb-4">
-                       <span className="flex items-center"><AlertCircle className="w-4 h-4 mr-1" /> 15 Questions</span>
-                       <span className="flex items-center"><Clock className="w-4 h-4 mr-1" /> 1.5 Min / Question</span>
-                     </div>
-                     <p className="text-gray-600 mb-6">
-                       This simulation replicates a real-world aptitude test environment. Your score will be analyzed and added to your AI Memory Engine.
-                     </p>
-                     <div className="mt-auto flex flex-wrap gap-4">
-                       <Button size="lg" onClick={startTest} disabled={loading} className="bg-[#8C6A54] hover:bg-[#7A5A46] text-white">
-                         {loading ? "Initializing Exam..." : "Start Assessment"}
-                       </Button>
-                       <Button size="lg" variant="outline" className="border-[#8C6A54] text-[#8C6A54] hover:bg-[#8C6A54] hover:text-white" onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })}>
+                     <div className="flex-1 flex flex-col justify-center h-full">
+                       <h2 className="text-2xl font-bold text-gray-900 mb-2">Aptitude Exam</h2>
+                       <div className="flex items-center space-x-4 text-sm text-gray-500 mb-4">
+                         <span className="flex items-center"><AlertCircle className="w-4 h-4 mr-1" /> 25 Questions</span>
+                         <span className="flex items-center"><Clock className="w-4 h-4 mr-1" /> 1.5 Min / Question</span>
+                       </div>
+                       <p className="text-gray-600 mb-4">
+                         This exam tests your overall aptitude with a mixed set of 25 questions. Your score will be analyzed and added to your AI Memory Engine.
+                       </p>
+                       <div className="mb-6 flex flex-col sm:flex-row sm:items-center gap-3">
+                         <label className="text-sm font-medium text-gray-700">Select Difficulty:</label>
+                         <div className="flex bg-gray-100 rounded-md p-1">
+                           {['EASY', 'MEDIUM', 'HARD'].map(diff => (
+                             <button
+                               key={diff}
+                               onClick={() => setMixedDifficulty(diff)}
+                               className={`px-3 py-1.5 text-xs font-medium rounded-sm transition-all ${
+                                 mixedDifficulty === diff ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-500 hover:text-gray-900'
+                               }`}
+                             >
+                               {diff}
+                             </button>
+                           ))}
+                         </div>
+                       </div>
+                       <div className="mt-auto flex flex-wrap gap-4">
+                         <Button size="lg" onClick={() => startTest('mixed', undefined, mixedDifficulty)} disabled={loading} className="bg-[#8C6A54] hover:bg-[#7A5A46] text-white">
+                           {loading ? "Initializing Exam..." : "Start Assessment"}
+                         </Button>
+                       <Button size="lg" variant="outline" className="border-[#8C6A54] text-[#8C6A54] hover:bg-[#8C6A54] hover:text-white" onClick={() => setSearchParams({ tab: 'category' })}>
                          Explore Practice Topics
                        </Button>
                      </div>
@@ -300,48 +354,197 @@ export function AptitudePage() {
             </div>
           </div>
 
-          {/* AI Focus Card (Full Width) */}
-          <Card className="bg-[#8C6A54]/5 border border-[#8C6A54]/20 shadow-none">
-            <CardContent className="p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-              <div>
-                <h3 className="text-lg font-semibold text-[#8C6A54] flex items-center gap-2 mb-1">
-                   <Sparkles className="w-5 h-5" /> AI Recommendation
-                </h3>
-                <p className="text-gray-700">You struggled with <strong>Time & Work</strong> yesterday. Take a 5-minute guided drill to improve.</p>
-              </div>
-              <Button variant="outline" className="border-[#8C6A54] text-[#8C6A54] hover:bg-[#8C6A54] hover:text-white whitespace-nowrap bg-transparent">
-                Start Drill
-              </Button>
-            </CardContent>
-          </Card>
+            </>
+          )}
 
-          {/* Topic Gym Grid (Full Width) */}
-          <div>
-            <h3 className="text-xl font-bold text-gray-900 mb-4">Topic Gym</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-              {[
-                { title: 'Quantitative Aptitude', icon: Calculator, desc: 'Numbers, math & logic' },
-                { title: 'Logical Reasoning', icon: Puzzle, desc: 'Puzzles & patterns' },
-                { title: 'Verbal Ability', icon: BookOpen, desc: 'Grammar & vocab' },
-                { title: 'Non-Verbal', icon: LayoutGrid, desc: 'Visual reasoning' }
-              ].map(topic => (
-                 <Card key={topic.title} className="bg-white border-0 shadow-sm hover:shadow-md transition-shadow group cursor-pointer">
-                    <CardContent className="p-5">
-                      <div className="flex items-center justify-between mb-3">
-                         <div className="p-2 rounded-lg bg-gray-50 group-hover:bg-[#8C6A54]/10 transition-colors">
-                           <topic.icon className="w-6 h-6 text-gray-600 group-hover:text-[#8C6A54] transition-colors" />
-                         </div>
-                         <button className="text-sm font-medium text-[#8C6A54] hover:underline flex items-center">
-                           Practice <ChevronRight className="w-4 h-4 ml-1" />
-                         </button>
+          {currentTab === 'category' && (
+            <div className="space-y-8">
+              {!activeCategory ? (
+                <>
+                  {/* AI Focus Card (Moved to Category Tab) */}
+                  <Card className="bg-[#8C6A54]/5 border border-[#8C6A54]/20 shadow-none">
+                    <CardContent className="p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+                      <div>
+                        <h3 className="text-lg font-semibold text-[#8C6A54] flex items-center gap-2 mb-1">
+                           <Sparkles className="w-5 h-5" /> AI Recommendation
+                        </h3>
+                        <p className="text-gray-700">You struggled with <strong>Time & Work</strong> yesterday. Take a 5-minute guided drill to improve.</p>
                       </div>
-                      <h4 className="font-semibold text-gray-900">{topic.title}</h4>
-                      <p className="text-sm text-gray-500 mt-1">{topic.desc}</p>
+                      <Button variant="outline" className="border-[#8C6A54] text-[#8C6A54] hover:bg-[#8C6A54] hover:text-white whitespace-nowrap bg-transparent">
+                        Start Drill
+                      </Button>
                     </CardContent>
-                 </Card>
-              ))}
+                  </Card>
+
+                  <div>
+                    <div className="mb-6">
+                      <h3 className="text-2xl font-bold text-gray-900">Category Gym</h3>
+                      <p className="text-gray-600 mt-1">Select a category to view specific topics and master individual concepts.</p>
+                    </div>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                      {[
+                        { title: 'Quantitative Aptitude', category: 'Quantitative Aptitude', icon: Calculator, desc: 'Numbers, arithmetic, algebra, and data interpretation.', questions: 350 },
+                        { title: 'Logical Reasoning', category: 'Logical Reasoning', icon: Puzzle, desc: 'Puzzles, patterns, seating arrangements, and syllogisms.', questions: 280 },
+                        { title: 'Verbal Ability', category: 'Verbal Ability', icon: BookOpen, desc: 'Grammar, vocabulary, reading comprehension, and idioms.', questions: 220 },
+                        { title: 'Non-Verbal', category: 'Non-Verbal', icon: LayoutGrid, desc: 'Visual reasoning, mirror images, and abstract patterns.', questions: 150 }
+                      ].map(cat => (
+                         <Card 
+                            key={cat.title} 
+                            className="bg-white border-0 shadow-sm hover:shadow-md transition-all hover:-translate-y-1 group cursor-pointer"
+                            onClick={() => setActiveCategory(cat.category)}
+                         >
+                            <CardContent className="p-6">
+                              <div className="flex items-start justify-between mb-4">
+                                 <div className="p-3 rounded-xl bg-gray-50 group-hover:bg-[#8C6A54]/10 transition-colors">
+                                   <cat.icon className="w-8 h-8 text-gray-600 group-hover:text-[#8C6A54] transition-colors" />
+                                 </div>
+                                 <Badge variant="secondary" className="bg-gray-100 text-gray-600 group-hover:bg-[#8C6A54]/10 group-hover:text-[#8C6A54]">
+                                   {cat.questions} Qs
+                                 </Badge>
+                              </div>
+                              <h4 className="text-xl font-bold text-gray-900 mb-2">{cat.title}</h4>
+                              <p className="text-sm text-gray-500 leading-relaxed mb-6 min-h-[40px]">{cat.desc}</p>
+                              <div className="flex items-center text-[#8C6A54] font-medium text-sm group-hover:translate-x-1 transition-transform">
+                                 View Topics <ChevronRight className="w-4 h-4 ml-1" />
+                              </div>
+                            </CardContent>
+                         </Card>
+                      ))}
+                    </div>
+                  </div>
+                </>
+              ) : (
+                <div>
+                  <div className="mb-6">
+                    <button 
+                      onClick={() => setActiveCategory(null)}
+                      className="text-sm font-medium text-gray-500 hover:text-gray-900 flex items-center mb-4 transition-colors"
+                    >
+                      <ChevronRight className="w-4 h-4 mr-1 rotate-180" /> Back to Categories
+                    </button>
+                    <h3 className="text-2xl font-bold text-gray-900">{activeCategory} Topics</h3>
+                    <p className="text-gray-600 mt-1">Select a specific topic to begin your focused drill.</p>
+                  </div>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    {(() => {
+                      const subTopics: Record<string, any[]> = {
+                        'Quantitative Aptitude': [
+                          { title: 'Time and Work', desc: 'Efficiency, pipes and cisterns' },
+                          { title: 'Percentage', desc: 'Fractions, growth, depreciation' },
+                          { title: 'Mixtures and Alligations', desc: 'Dividing quantities, mixtures' },
+                          { title: 'Profit & Loss', desc: 'Cost price, discounts, margins' },
+                          { title: 'Data Interpretation', desc: 'Charts, graphs, and tables' },
+                          { title: 'Number System', desc: 'Properties of numbers' },
+                          { title: 'Geometry', desc: 'Shapes, angles, and areas' },
+                          { title: 'Probability', desc: 'Chances and combinations' },
+                          { title: 'Permutation & Combination', desc: 'Arrangements and selections' },
+                          { title: 'HCF and LCM', desc: 'Factors and multiples' },
+                          { title: 'Mixed Quant', desc: 'A mix of all quantitative topics', isMixed: true },
+                        ],
+                        'Logical Reasoning': [
+                          { title: 'Blood Relations', desc: 'Family trees and relationships' },
+                          { title: 'Coding-Decoding', desc: 'Pattern and letter matching' },
+                          { title: 'Seating Arrangement', desc: 'Linear and circular positioning' },
+                          { title: 'Syllogism', desc: 'Logical deductions and statements' },
+                          { title: 'Direction Sense', desc: 'Distance and orientation' },
+                          { title: 'Mixed Logical', desc: 'A mix of all logical topics', isMixed: true },
+                        ],
+                        'Verbal Ability': [
+                          { title: 'Reading Comprehension', desc: 'Passage analysis and inference' },
+                          { title: 'Grammar', desc: 'Error spotting, sentence correction' },
+                          { title: 'Vocabulary', desc: 'Synonyms, antonyms, spellings' },
+                          { title: 'Para Jumbles', desc: 'Ordering sentences logically' },
+                          { title: 'Mixed Verbal', desc: 'A mix of all verbal topics', isMixed: true },
+                        ],
+                        'Non-Verbal': [
+                          { title: 'Pattern Completion', desc: 'Identifying missing visual segments' },
+                          { title: 'Mirror Images', desc: 'Reflections and water images' },
+                          { title: 'Paper Folding', desc: 'Visualizing folds and cuts' },
+                          { title: 'Mixed Non-Verbal', desc: 'A mix of all non-verbal topics', isMixed: true },
+                        ]
+                      };
+                      return subTopics[activeCategory]?.map((sub) => (
+                        <Card 
+                           key={sub.title} 
+                           className="bg-white border-0 shadow-sm hover:shadow-md transition-all hover:-translate-y-1 cursor-pointer"
+                           onClick={() => {
+                             setSelectedTopic({ 
+                               title: sub.title, 
+                               category: activeCategory,
+                               topic: sub.isMixed ? undefined : sub.title 
+                             });
+                             setTopicModalOpen(true);
+                           }}
+                        >
+                           <CardContent className="p-5 flex flex-col h-full">
+                             <div className="flex-1">
+                               <h4 className="font-semibold text-gray-900 mb-1">{sub.title}</h4>
+                               <p className="text-sm text-gray-500 line-clamp-2">{sub.desc}</p>
+                             </div>
+                             <div className="mt-4 flex items-center text-[#8C6A54] font-medium text-sm">
+                                Start Practice <ChevronRight className="w-4 h-4 ml-1" />
+                             </div>
+                           </CardContent>
+                        </Card>
+                      ));
+                    })()}
+                  </div>
+                </div>
+              )}
             </div>
-          </div>
+          )}
+
+          <Dialog open={topicModalOpen} onOpenChange={setTopicModalOpen}>
+            <DialogContent className="sm:max-w-md">
+              <DialogHeader>
+                <DialogTitle>{selectedTopic?.title} Practice</DialogTitle>
+                <DialogDescription>
+                  Choose a difficulty level for your 10-question practice drill.
+                </DialogDescription>
+              </DialogHeader>
+              <div className="grid grid-cols-1 gap-4 py-4">
+                <Button 
+                  variant="outline" 
+                  className="h-14 justify-start border-emerald-200 hover:bg-emerald-50 hover:border-emerald-300"
+                  onClick={() => startTest('category', selectedTopic?.category, 'EASY', selectedTopic?.topic)}
+                >
+                  <div className="w-8 h-8 rounded-full bg-emerald-100 flex items-center justify-center mr-4">
+                    <span className="text-emerald-700 font-bold">E</span>
+                  </div>
+                  <div className="text-left">
+                    <div className="font-semibold text-emerald-800">Easy Level</div>
+                    <div className="text-xs text-emerald-600/80">Foundational concepts</div>
+                  </div>
+                </Button>
+                <Button 
+                  variant="outline" 
+                  className="h-14 justify-start border-amber-200 hover:bg-amber-50 hover:border-amber-300"
+                  onClick={() => startTest('category', selectedTopic?.category, 'MEDIUM', selectedTopic?.topic)}
+                >
+                  <div className="w-8 h-8 rounded-full bg-amber-100 flex items-center justify-center mr-4">
+                    <span className="text-amber-700 font-bold">M</span>
+                  </div>
+                  <div className="text-left">
+                    <div className="font-semibold text-amber-800">Medium Level</div>
+                    <div className="text-xs text-amber-600/80">Standard difficulty</div>
+                  </div>
+                </Button>
+                <Button 
+                  variant="outline" 
+                  className="h-14 justify-start border-rose-200 hover:bg-rose-50 hover:border-rose-300"
+                  onClick={() => startTest('category', selectedTopic?.category, 'HARD', selectedTopic?.topic)}
+                >
+                  <div className="w-8 h-8 rounded-full bg-rose-100 flex items-center justify-center mr-4">
+                    <span className="text-rose-700 font-bold">H</span>
+                  </div>
+                  <div className="text-left">
+                    <div className="font-semibold text-rose-800">Hard Level</div>
+                    <div className="text-xs text-rose-600/80">Advanced challenges</div>
+                  </div>
+                </Button>
+              </div>
+            </DialogContent>
+          </Dialog>
 
         </div>
       </div>
@@ -418,6 +621,7 @@ export function AptitudePage() {
               disabled={!selectedOption || loading}
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-8"
             >
+              {loading && <Loader2 className="w-4 h-4 mr-2 animate-spin" />}
               {loading ? "Saving..." : currentQuestionIndex < questions.length - 1 ? "Save & Next" : "Submit Exam"}
               {!loading && <ChevronRight className="w-4 h-4 ml-2" />}
             </Button>

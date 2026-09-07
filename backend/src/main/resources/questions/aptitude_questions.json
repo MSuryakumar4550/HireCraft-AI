@@ -1,1 +1,202 @@
-[]
+[
+  {
+    "id": 1,
+    "topic": "Quantitative",
+    "questionText": "A train running at the speed of 60 km/hr crosses a pole in 9 seconds. What is the length of the train?",
+    "options": ["120 meters", "180 meters", "324 meters", "150 meters"],
+    "correctOption": "150 meters",
+    "explanation": "Speed = 60 * (5/18) m/sec = 50/3 m/sec. Length = Speed * Time = (50/3) * 9 = 150 meters."
+  },
+  {
+    "id": 2,
+    "topic": "Logical Reasoning",
+    "questionText": "Look at this series: 2, 1, (1/2), (1/4)... What number should come next?",
+    "options": ["(1/3)", "(1/8)", "(2/8)", "(1/16)"],
+    "correctOption": "(1/8)",
+    "explanation": "This is a simple alternating division sequence. Each number is divided by 2 to arrive at the next number."
+  },
+  {
+    "id": 3,
+    "topic": "Quantitative",
+    "questionText": "A fruit seller had some apples. He sells 40% apples and still has 420 apples. Originally, he had:",
+    "options": ["588 apples", "600 apples", "672 apples", "700 apples"],
+    "correctOption": "700 apples",
+    "explanation": "Let original apples be x. (100 - 40)% of x = 420. So, (60/100)*x = 420 => x = 700."
+  },
+  {
+    "id": 4,
+    "topic": "Verbal Reasoning",
+    "questionText": "Choose the word which is the exact OPPOSITE of the given words: 'ENORMOUS'",
+    "options": ["Soft", "Average", "Tiny", "Weak"],
+    "correctOption": "Tiny",
+    "explanation": "Enormous means very large in size, quantity, or extent. Tiny is the exact opposite."
+  },
+  {
+    "id": 5,
+    "topic": "Logical Reasoning",
+    "questionText": "Pointing to a photograph of a boy Suresh said, 'He is the son of the only son of my mother.' How is Suresh related to that boy?",
+    "options": ["Brother", "Uncle", "Cousin", "Father"],
+    "correctOption": "Father",
+    "explanation": "The only son of Suresh's mother is Suresh himself. Therefore, the boy in the photograph is the son of Suresh."
+  },
+  {
+    "id": 6,
+    "topic": "Quantitative",
+    "questionText": "A sum of money at simple interest amounts to Rs. 815 in 3 years and to Rs. 854 in 4 years. The sum is:",
+    "options": ["Rs. 650", "Rs. 690", "Rs. 698", "Rs. 700"],
+    "correctOption": "Rs. 698",
+    "explanation": "Simple interest for 1 year = 854 - 815 = 39. So 3 years interest = 39 * 3 = 117. Principal = 815 - 117 = 698."
+  },
+  {
+    "id": 7,
+    "topic": "Logical Reasoning",
+    "questionText": "SCD, TEF, UGH, ____, WKL",
+    "options": ["CMN", "UJI", "VIJ", "IJT"],
+    "correctOption": "VIJ",
+    "explanation": "First letters are S, T, U, V, W. Second and third letters are CD, EF, GH, IJ, KL. So VIJ."
+  },
+  {
+    "id": 8,
+    "topic": "Verbal Reasoning",
+    "questionText": "Choose the word which best expresses the meaning of the given word: 'CORPULENT'",
+    "options": ["Lean", "Gaunt", "Emaciated", "Obese"],
+    "correctOption": "Obese",
+    "explanation": "Corpulent means fat, obese or overweight."
+  },
+  {
+    "id": 9,
+    "topic": "Quantitative",
+    "questionText": "What is the probability of getting a sum 9 from two throws of a dice?",
+    "options": ["1/6", "1/8", "1/9", "1/12"],
+    "correctOption": "1/9",
+    "explanation": "Favorable outcomes: (3,6), (4,5), (5,4), (6,3). Total outcomes = 36. Probability = 4/36 = 1/9."
+  },
+  {
+    "id": 10,
+    "topic": "Logical Reasoning",
+    "questionText": "If A is the brother of B; B is the sister of C; and C is the father of D, how D is related to A?",
+    "options": ["Brother", "Sister", "Nephew", "Cannot be determined"],
+    "correctOption": "Cannot be determined",
+    "explanation": "We know A is the uncle of D, but D's gender is not given. D could be a nephew or niece."
+  },
+  {
+    "id": 11,
+    "topic": "Verbal Reasoning",
+    "questionText": "Find the correctly spelt word.",
+    "options": ["Accomodation", "Accommodation", "Acommodation", "Acomodation"],
+    "correctOption": "Accommodation",
+    "explanation": "The correct spelling is Accommodation (with two c's and two m's)."
+  },
+  {
+    "id": 12,
+    "topic": "Quantitative",
+    "questionText": "A man can row upstream at 8 kmph and downstream at 13 kmph. The speed of the stream is:",
+    "options": ["2.5 kmph", "4.2 kmph", "5 kmph", "10.5 kmph"],
+    "correctOption": "2.5 kmph",
+    "explanation": "Speed of stream = (Downstream - Upstream) / 2 = (13 - 8) / 2 = 2.5 kmph."
+  },
+  {
+    "id": 13,
+    "topic": "Logical Reasoning",
+    "questionText": "Odometer is to mileage as compass is to:",
+    "options": ["Speed", "Hiking", "Needle", "Direction"],
+    "correctOption": "Direction",
+    "explanation": "Odometer is an instrument to measure mileage; similarly, a compass is an instrument to determine direction."
+  },
+  {
+    "id": 14,
+    "topic": "Verbal Reasoning",
+    "questionText": "To leave someone in the lurch means:",
+    "options": ["To come to compromise with someone", "Constant source of annoyance to someone", "To put someone at ease", "To desert someone in his difficulties"],
+    "correctOption": "To desert someone in his difficulties",
+    "explanation": "Leaving someone in the lurch means to abandon them when they are in trouble or need your help."
+  },
+  {
+    "id": 15,
+    "topic": "Quantitative",
+    "questionText": "The difference between simple interest and compound interest on Rs. 1200 for one year at 10% per annum reckoned half-yearly is:",
+    "options": ["Rs. 2.50", "Rs. 3", "Rs. 3.75", "Rs. 4"],
+    "correctOption": "Rs. 3",
+    "explanation": "SI = (1200 * 10 * 1) / 100 = 120. CI (half yearly) = 1200 * (1 + 5/100)^2 - 1200 = 1200 * (441/400) - 1200 = 1323 - 1200 = 123. Difference = 3."
+  },
+  {
+    "id": 16,
+    "topic": "Quantitative",
+    "questionText": "A and B can do a work in 12 days, B and C in 15 days, C and A in 20 days. If A, B and C work together, they will complete the work in:",
+    "options": ["5 days", "7.5 days", "10 days", "15.5 days"],
+    "correctOption": "10 days",
+    "explanation": "2(A + B + C)'s 1 day work = (1/12 + 1/15 + 1/20) = (5+4+3)/60 = 12/60 = 1/5. So (A+B+C)'s 1 day work = 1/10. Days needed = 10 days."
+  },
+  {
+    "id": 17,
+    "topic": "Quantitative",
+    "questionText": "Two pipes A and B can fill a cistern in 20 and 30 minutes respectively, and a third pipe C can empty it in 40 minutes. How long will it take to fill the cistern if all the three pipes are opened together?",
+    "options": ["15 1/7 mins", "17 1/7 mins", "19 1/7 mins", "21 mins"],
+    "correctOption": "17 1/7 mins",
+    "explanation": "Net part filled in 1 hr = 1/20 + 1/30 - 1/40 = (6 + 4 - 3)/120 = 7/120. Total time = 120/7 = 17 1/7 minutes."
+  },
+  {
+    "id": 18,
+    "topic": "Logical Reasoning",
+    "questionText": "In a certain code language, COMPUTER is written as RFUVQNPC. How is MEDICINE written in that code?",
+    "options": ["MFEDJJOE", "EOJDEJFM", "EOJDJEFM", "EOJDJEFM"],
+    "correctOption": "EOJDJEFM",
+    "explanation": "The first and last letters are swapped, and each of the inner letters is increased by 1 in reverse order."
+  },
+  {
+    "id": 19,
+    "topic": "Logical Reasoning",
+    "questionText": "Statement: All mangoes are golden in color. No golden-colored things are cheap. Conclusions: 1) All mangoes are cheap. 2) Golden-colored mangoes are not cheap.",
+    "options": ["Only 1 follows", "Only 2 follows", "Either 1 or 2 follows", "Neither 1 nor 2 follows"],
+    "correctOption": "Only 2 follows",
+    "explanation": "Since all mangoes are golden and no golden things are cheap, mangoes cannot be cheap. Thus statement 2 follows."
+  },
+  {
+    "id": 20,
+    "topic": "Verbal Reasoning",
+    "questionText": "Choose the correct preposition: He is thoroughly acquainted ____ the facts of the case.",
+    "options": ["to", "with", "from", "by"],
+    "correctOption": "with",
+    "explanation": "The idiom is 'acquainted with' someone or something."
+  },
+  {
+    "id": 21,
+    "topic": "Quantitative",
+    "questionText": "A vendor bought toffees at 6 for a rupee. How many for a rupee must he sell to gain 20%?",
+    "options": ["3", "4", "5", "6"],
+    "correctOption": "5",
+    "explanation": "CP of 6 toffees = Re 1 => SP of 6 toffees = 120% of 1 = 6/5. For Re 6/5 toffees sold = 6 => For Re 1 toffees sold = 6 * (5/6) = 5."
+  },
+  {
+    "id": 22,
+    "topic": "Logical Reasoning",
+    "questionText": "Find the odd one out: 3, 5, 11, 14, 17, 21",
+    "options": ["21", "17", "14", "3"],
+    "correctOption": "14",
+    "explanation": "All numbers except 14 are odd numbers. 14 is the only even number."
+  },
+  {
+    "id": 23,
+    "topic": "Verbal Reasoning",
+    "questionText": "Select the synonym of 'CANDID':",
+    "options": ["Secretive", "Frank", "Reserved", "Deceitful"],
+    "correctOption": "Frank",
+    "explanation": "Candid means truthful and straightforward; frank."
+  },
+  {
+    "id": 24,
+    "topic": "Quantitative",
+    "questionText": "What percentage of numbers from 1 to 70 have 1 or 9 in the unit's digit?",
+    "options": ["14%", "20%", "21%", "28%"],
+    "correctOption": "20%",
+    "explanation": "Numbers with 1 or 9 in units place: 1, 9, 11, 19, 21, 29, 31, 39, 41, 49, 51, 59, 61, 69 = 14 numbers. (14/70)*100 = 20%."
+  },
+  {
+    "id": 25,
+    "topic": "Logical Reasoning",
+    "questionText": "If SOUTH-EAST becomes NORTH, NORTH-EAST becomes WEST and so on, what will WEST become?",
+    "options": ["NORTH-EAST", "NORTH-WEST", "SOUTH-EAST", "SOUTH-WEST"],
+    "correctOption": "SOUTH-EAST",
+    "explanation": "Each direction is rotated by 135 degrees anti-clockwise. So West becomes South-East."
+  }
+]

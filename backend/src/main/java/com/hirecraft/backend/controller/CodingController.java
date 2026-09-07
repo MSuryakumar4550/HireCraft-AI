@@ -32,13 +32,13 @@ public class CodingController {
 
     private final CodingAssessmentService assessmentService;
     private final CodingSubmissionService submissionService;
-    private final UserRepository userRepository;
+    private final com.hirecraft.backend.util.UserResolver userResolver;
 
     @PostMapping("/assessments")
     public ResponseEntity<CodingAssessmentResponse> createAssessment(
             @AuthenticationPrincipal UserDetails principal,
             @Valid @RequestBody CreateCodingAssessmentRequest request) {
-        User user = resolveUser(principal);
+        User user = userResolver.resolveUser(principal);
         return ResponseEntity.status(HttpStatus.CREATED)
                 .body(assessmentService.createAssessment(user.getUserId(), request));
     }
@@ -46,7 +46,7 @@ public class CodingController {
     @GetMapping("/assessments")
     public ResponseEntity<List<CodingAssessmentResponse>> getMyAssessments(
             @AuthenticationPrincipal UserDetails principal) {
-        User user = resolveUser(principal);
+        User user = userResolver.resolveUser(principal);
         return ResponseEntity.ok(assessmentService.getUserAssessments(user.getUserId()));
     }
 
@@ -68,10 +68,5 @@ public class CodingController {
     public ResponseEntity<List<SubmissionResponse>> getSubmissions(
             @PathVariable Long assessmentId) {
         return ResponseEntity.ok(submissionService.getSubmissionsForAssessment(assessmentId));
-    }
-
-    private User resolveUser(UserDetails principal) {
-        return userRepository.findByEmail(principal.getUsername())
-                .orElseThrow(() -> new ResourceNotFoundException("User not found"));
     }
 }

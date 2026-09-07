@@ -12,15 +12,27 @@ import { Loader2 } from 'lucide-react'
 interface VirtualInterview {
   virtualInterviewId: number
   title: string
-  companyContext: string
-  roleContext: string
+  companyContext?: string
+  roleContext?: string
   currentStage: string
-  isCompleted: boolean
+  isCompleted?: boolean
   overallScore: number | null
+  createdAt?: string
+}
+
+interface InterviewSessionItem {
+  interviewSessionId: number
+  subject: string
+  interviewType: string
+  status: string
+  totalQuestions: number
+  totalScore: number | null
+  createdAt: string
 }
 
 export function DashboardWidgets() {
   const [interviews, setInterviews] = useState<VirtualInterview[]>([])
+  const [voiceSessions, setVoiceSessions] = useState<InterviewSessionItem[]>([])
   const [readinessScore, setReadinessScore] = useState<number>(0)
   const [codingCount, setCodingCount] = useState<number>(0)
   const [isLoading, setIsLoading] = useState(true)
@@ -28,13 +40,15 @@ export function DashboardWidgets() {
   useEffect(() => {
     const fetchDashboardData = async () => {
       try {
-        const [interviewsRes, readinessRes, codingRes] = await Promise.all([
+        const [interviewsRes, voiceSessionsRes, readinessRes, codingRes] = await Promise.all([
           apiClient.get<VirtualInterview[]>('/api/virtual-interviews').catch(() => ({ data: [] })),
+          apiClient.get<InterviewSessionItem[]>('/api/interviews/sessions').catch(() => ({ data: [] })),
           apiClient.get<any>('/api/readiness/current').catch(() => ({ data: null })),
           apiClient.get<any[]>('/api/coding/assessments').catch(() => ({ data: [] }))
         ])
         
         setInterviews(interviewsRes.data || [])
+        setVoiceSessions(voiceSessionsRes.data || [])
         setReadinessScore(readinessRes.data?.overallPlacementReadiness || 0)
         setCodingCount(codingRes.data?.length || 0)
       } catch (error) {
@@ -45,6 +59,8 @@ export function DashboardWidgets() {
     }
     fetchDashboardData()
   }, [])
+
+  const totalMockInterviews = Math.max(interviews.length, voiceSessions.length, (interviews.length + voiceSessions.filter(vs => !interviews.some(vi => vi.virtualInterviewId === vs.interviewSessionId)).length))
 
   return (
     <div className="space-y-6">
@@ -66,10 +82,10 @@ export function DashboardWidgets() {
         />
         <StatCard
           title="Mock Interviews"
-          value={interviews.length.toString()}
+          value={totalMockInterviews.toString()}
           description="Total attempts"
           icon={<Activity className="size-4" />}
-          trend={interviews.length > 0 ? "up" : "neutral"}
+          trend={totalMockInterviews > 0 ? "up" : "neutral"}
         />
         <StatCard
           title="Global Rank"
@@ -84,27 +100,51 @@ export function DashboardWidgets() {
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         
         {/* Virtual Interviews */}
-        <WidgetCard title="My Virtual Interviews" icon={<Target className="size-4" />} className="lg:col-span-2">
+        <WidgetCard title="My Mock & Technical Interviews" icon={<Target className="size-4" />} className="lg:col-span-2">
           <div className="flex h-full flex-col space-y-4">
             {isLoading ? (
               <div className="flex items-center justify-center py-8">
                 <Loader2 className="size-6 animate-spin text-muted-foreground" />
               </div>
-            ) : interviews.length === 0 ? (
+            ) : (interviews.length === 0 && voiceSessions.length === 0) ? (
               <div className="flex flex-col items-center justify-center py-8 text-center space-y-3">
                 <p className="text-sm text-muted-foreground">You haven't started any interviews yet.</p>
                 <Button size="sm" asChild>
-                  <Link className="gap-2" to={ROUTES.NEW_INTERVIEW || '#'}>Start New Interview <Play className="size-4 ml-2" /></Link>
+                  <Link className="gap-2" to={ROUTES.AI_VOICE_INTERVIEW || '#'}>Start AI Voice Interview <Play className="size-4 ml-2" /></Link>
                 </Button>
               </div>
             ) : (
               <div className="space-y-4">
-                {interviews.map(interview => (
-                  <div key={interview.virtualInterviewId} className="flex items-center justify-between border-b pb-4 last:border-0 last:pb-0">
+                {/* Render Voice Sessions */}
+                {voiceSessions.map((session) => (
+                  <div key={`voice-${session.interviewSessionId}`} className="flex items-center justify-between border-b pb-4 last:border-0 last:pb-0">
+                    <div className="space-y-1">
+                      <div className="flex items-center gap-2">
+                        <p className="font-medium text-sm">
+                          {(session.subject || 'Technical').replace(/_/g, ' ')} Technical Mock Interview
+                        </p>
+                        <span className={`text-[10px] px-2 py-0.5 rounded-full font-semibold ${
+                          session.status === 'COMPLETED' ? 'bg-emerald-500/10 text-emerald-600 border border-emerald-500/20' : 'bg-amber-500/10 text-amber-600 border border-amber-500/20'
+                        }`}>
+                          {session.status}
+                        </span>
+                      </div>
+                      <p className="text-xs text-muted-foreground">
+                        {session.totalScore !== null ? `Score: ${session.totalScore}/100` : 'Score: In progress'} • {session.totalQuestions || 4} Questions • {session.createdAt ? new Date(session.createdAt).toLocaleDateString() : 'Recent'}
+                      </p>
+                    </div>
+                    <Button size="sm" variant="outline" asChild>
+                      <Link to={ROUTES.AI_VOICE_INTERVIEW}>Retake / Practice</Link>
+                    </Button>
+                  </div>
+                ))}
+                {/* Render Virtual Interviews (if distinct) */}
+                {interviews.filter(i => !voiceSessions.some(vs => vs.interviewSessionId === i.virtualInterviewId)).map(interview => (
+                  <div key={`vi-${interview.virtualInterviewId}`} className="flex items-center justify-between border-b pb-4 last:border-0 last:pb-0">
                     <div className="space-y-1">
                       <p className="font-medium">{interview.title || 'General Software Engineering'}</p>
                       <p className="text-xs text-muted-foreground">
-                        Role: {interview.roleContext || 'N/A'} • Stage: {interview.currentStage}
+                        Role: {interview.roleContext || 'N/A'} • Stage: {interview.currentStage} {interview.overallScore !== null ? `• Score: ${interview.overallScore}%` : ''}
                       </p>
                     </div>
                     <Button size="sm" variant="outline">Continue</Button>

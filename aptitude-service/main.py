@@ -64,10 +64,24 @@ def health_check():
     return {"status": "ok", "service": "aptitude-service"}
 
 @app.get("/questions")
-async def get_questions(topic: Optional[str] = None, user_id: Optional[str] = None, db: AsyncSession = Depends(get_db)):
+async def get_questions(
+    mode: str = "mixed", 
+    category: Optional[str] = None,
+    topic: Optional[str] = None,
+    difficulty: Optional[str] = None,
+    user_id: Optional[str] = None, 
+    db: AsyncSession = Depends(get_db)
+):
     query = select(models.Question)
-    if topic:
-        query = query.where(models.Question.topic == topic)
+    
+    if difficulty:
+        query = query.where(models.Question.difficulty == difficulty)
+        
+    if mode == "category":
+        if category:
+            query = query.where(models.Question.category == category)
+        if topic:
+            query = query.where(models.Question.topic == topic)
         
     if user_id:
         history_query = select(models.UserQuestionHistory.question_id).where(
@@ -80,6 +94,15 @@ async def get_questions(topic: Optional[str] = None, user_id: Optional[str] = No
         
         if correct_question_ids:
             query = query.where(~models.Question.id.cast(String).in_(correct_question_ids))
+            
+    # Randomize
+    query = query.order_by(func.random())
+    
+    # Apply limit
+    if mode == "mixed":
+        query = query.limit(25)
+    elif mode == "category":
+        query = query.limit(10)
     
     result = await db.execute(query)
     questions = result.scalars().all()
@@ -153,3 +176,8 @@ async def get_coding_assessment(difficulty: str, user_id: Optional[str] = None, 
         response.append(q_dict)
         
     return response
+
+if __name__ == "__main__":
+    import uvicorn
+    print("Starting HireCraft AI Aptitude Service on http://localhost:8000 ...")
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)

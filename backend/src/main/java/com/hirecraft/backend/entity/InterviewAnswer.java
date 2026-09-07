@@ -44,7 +44,22 @@ public class InterviewAnswer {
     @Column(name = "response_latency_seconds", precision = 8, scale = 2)
     private BigDecimal responseLatencySeconds;
 
+    @Column(name = "evaluation_score", precision = 5, scale = 2)
+    private BigDecimal evaluationScore;
+
+    @Column(name = "evaluation_feedback", columnDefinition = "TEXT")
+    private String evaluationFeedback;
+
+    @Column(name = "question_id", length = 100)
+    private String questionId;
+
+    @Column(name = "expected_topic", length = 100)
+    private String expectedTopic;
+
+    @Column(name = "difficulty_level", length = 50)
+    private String difficultyLevel;
+
     @CreationTimestamp
-    @Column(name = "answered_at", nullable = false, updatable = false)
+    @Column(name = "answered_at", updatable = false)
     private Instant answeredAt;
 }

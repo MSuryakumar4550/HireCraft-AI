@@ -1,4 +1,4 @@
-{
+﻿{
 "subject": "Operating Systems",
 "batch": null,
 "language": null,
@@ -1024,6 +1024,4413 @@
 "explains buffering as managing data during transfer between components",
 "explains caching as retaining reusable data to avoid repeated expensive access",
 "connects each technique to an appropriate performance benefit"
+],
+"follow_up": true
+},
+{
+"id": "OS-051",
+"question": "What is the difference between an orphan process and a zombie process in Unix-like operating systems?",
+"subject": "Operating Systems",
+"topic": "Processes",
+"difficulty": "EASY",
+"type": "COMPARISON",
+"concepts": [
+"orphan process",
+"zombie process",
+"parent process termination",
+"process table entry",
+"exit status"
+],
+"criteria": [
+"defines an orphan process as one whose parent has terminated",
+"defines a zombie process as one that has completed execution but retains an entry in the process table",
+"explains that orphans are adopted by init/systemd",
+"explains that zombies exist so the parent can read their exit status"
+],
+"follow_up": true
+},
+{
+"id": "OS-052",
+"question": "What is the primary architectural difference between a monolithic kernel and a microkernel?",
+"subject": "Operating Systems",
+"topic": "OS Fundamentals",
+"difficulty": "EASY",
+"type": "COMPARISON",
+"concepts": [
+"monolithic kernel",
+"microkernel",
+"kernel space",
+"user space",
+"inter-process communication"
+],
+"criteria": [
+"explains that monolithic kernels run all core OS services in kernel space",
+"explains that microkernels keep only minimal services in kernel space and run others as user-space servers",
+"identifies IPC overhead as a key trade-off for microkernels",
+"identifies modularity and fault isolation benefits of microkernels"
+],
+"follow_up": false
+},
+{
+"id": "OS-053",
+"question": "What is the difference between user-level threads and kernel-level threads, and which entity manages them?",
+"subject": "Operating Systems",
+"topic": "Threads",
+"difficulty": "EASY",
+"type": "COMPARISON",
+"concepts": [
+"user-level threads",
+"kernel-level threads",
+"thread management library",
+"kernel scheduling",
+"blocking system calls"
+],
+"criteria": [
+"identifies who manages user-level threads (user library) versus kernel-level threads (OS kernel)",
+"explains that user threads do not require kernel mode switches for management",
+"explains what happens when a user thread executes a blocking system call in a pure user-level thread model",
+"contrasts true multi-core parallelism between the two models"
+],
+"follow_up": true
+},
+{
+"id": "OS-054",
+"question": "What is Copy-on-Write (COW), and how does it optimize process creation during a fork() call?",
+"subject": "Operating Systems",
+"topic": "Processes",
+"difficulty": "EASY",
+"type": "EXPLANATION",
+"concepts": [
+"Copy-on-Write",
+"fork",
+"page sharing",
+"read-only pages",
+"page duplication"
+],
+"criteria": [
+"defines Copy-on-Write correctly",
+"explains that parent and child initially share the same physical memory pages marked read-only",
+"describes how a write attempt triggers a page fault that duplicates only the modified page",
+"identifies the performance and memory savings when fork() is immediately followed by exec()"
+],
+"follow_up": false
+},
+{
+"id": "OS-055",
+"question": "What is the difference between polling and interrupt-driven I/O, and when is each preferred?",
+"subject": "Operating Systems",
+"topic": "I/O and Storage",
+"difficulty": "EASY",
+"type": "COMPARISON",
+"concepts": [
+"polling",
+"busy waiting",
+"hardware interrupts",
+"interrupt handler",
+"CPU efficiency"
+],
+"criteria": [
+"defines polling as periodic status checking by the CPU",
+"defines interrupt-driven I/O as the device signaling the CPU when ready",
+"explains why interrupts save CPU cycles for slow devices",
+"identifies scenarios where polling is preferred (e.g., ultra-high-speed network packet processing with NAPI)"
+],
+"follow_up": true
+},
+{
+"id": "OS-056",
+"question": "What is the difference between a hard link and a soft (symbolic) link in a Unix file system?",
+"subject": "Operating Systems",
+"topic": "File Systems",
+"difficulty": "EASY",
+"type": "COMPARISON",
+"concepts": [
+"hard link",
+"symbolic link",
+"inode",
+"link count",
+"cross-filesystem links"
+],
+"criteria": [
+"explains that a hard link points directly to the inode of a file",
+"explains that a soft link is a distinct file containing a path string to another file",
+"identifies that deleting the original file breaks a symbolic link but does not destroy data if a hard link remains",
+"notes that hard links cannot cross file system boundaries"
+],
+"follow_up": false
+},
+{
+"id": "OS-057",
+"question": "What is an Inode in Unix-based file systems, and what information does it store?",
+"subject": "Operating Systems",
+"topic": "File Systems",
+"difficulty": "EASY",
+"type": "DEFINITION",
+"concepts": [
+"inode",
+"file metadata",
+"file size",
+"permissions",
+"data block pointers"
+],
+"criteria": [
+"defines an inode as a data structure storing file metadata and data block pointers",
+"identifies key attributes stored (permissions, owner, timestamps, size)",
+"notes that the file name is stored in directory entries, not in the inode itself"
+],
+"follow_up": false
+},
+{
+"id": "OS-058",
+"question": "What is a spinlock, and why is it preferred over a sleeping mutex for very short critical sections on multi-core systems?",
+"subject": "Operating Systems",
+"topic": "Process Synchronization",
+"difficulty": "EASY",
+"type": "EXPLANATION",
+"concepts": [
+"spinlock",
+"busy waiting",
+"context-switch overhead",
+"multi-core",
+"lock hold time"
+],
+"criteria": [
+"defines a spinlock as a lock where the thread loops (spins) waiting for availability",
+"explains that spinning avoids the high CPU cost of putting the thread to sleep and context switching",
+"identifies that spinlocks are efficient only when lock hold time is shorter than a context switch",
+"notes that spinlocks should not be used on single-core systems without preemption"
+],
+"follow_up": true
+},
+{
+"id": "OS-059",
+"question": "What is Direct Memory Access (DMA), and why is it important for high-speed I/O devices?",
+"subject": "Operating Systems",
+"topic": "I/O and Storage",
+"difficulty": "EASY",
+"type": "EXPLANATION",
+"concepts": [
+"Direct Memory Access",
+"DMA controller",
+"CPU offloading",
+"bus mastering",
+"interrupt generation"
+],
+"criteria": [
+"defines DMA as transferring data directly between device and main memory without continuous CPU intervention",
+"explains how the CPU sets up the transfer and is interrupted only when the transfer finishes",
+"identifies that DMA frees the CPU to execute other tasks during large block transfers"
+],
+"follow_up": false
+},
+{
+"id": "OS-060",
+"question": "What is Demand Paging, and how does it differ from loading an entire program into memory at once?",
+"subject": "Operating Systems",
+"topic": "Virtual Memory",
+"difficulty": "EASY",
+"type": "COMPARISON",
+"concepts": [
+"demand paging",
+"lazy swapper",
+"page fault",
+"physical memory footprint",
+"startup latency"
+],
+"criteria": [
+"defines demand paging as loading pages into physical memory only when accessed",
+"contrasts it with pre-loading all code and data at process startup",
+"identifies benefits including faster startup time and lower memory utilization"
+],
+"follow_up": false
+},
+{
+"id": "OS-061",
+"question": "What is the purpose of the 'dirty bit' (modified bit) in a page table entry?",
+"subject": "Operating Systems",
+"topic": "Virtual Memory",
+"difficulty": "EASY",
+"type": "DEFINITION",
+"concepts": [
+"dirty bit",
+"modified bit",
+"page eviction",
+"disk write-back",
+"I/O optimization"
+],
+"criteria": [
+"explains that the dirty bit tracks whether a page in memory has been modified since it was loaded",
+"explains that a clean page (bit = 0) can be evicted immediately without writing back to swap/disk",
+"explains that a dirty page (bit = 1) must be written back to storage before its frame is reused"
+],
+"follow_up": false
+},
+{
+"id": "OS-062",
+"question": "What are the key differences between Shared Memory and Message Passing as Inter-Process Communication (IPC) models?",
+"subject": "Operating Systems",
+"topic": "Processes",
+"difficulty": "EASY",
+"type": "COMPARISON",
+"concepts": [
+"shared memory",
+"message passing",
+"system call overhead",
+"synchronization",
+"distributed systems"
+],
+"criteria": [
+"explains that shared memory maps a common memory region into multiple address spaces",
+"explains that message passing transfers packets via kernel system calls (send/receive)",
+"notes that shared memory is faster for local IPC but requires explicit user synchronization",
+"notes that message passing works across networks and requires no shared address space"
+],
+"follow_up": true
+},
+{
+"id": "OS-063",
+"question": "How does an operating-system container (like Docker) differ from a Virtual Machine (VM)?",
+"subject": "Operating Systems",
+"topic": "OS Fundamentals",
+"difficulty": "EASY",
+"type": "COMPARISON",
+"concepts": [
+"containers",
+"virtual machines",
+"hypervisor",
+"shared kernel",
+"cgroups and namespaces"
+],
+"criteria": [
+"explains that VMs emulate complete virtual hardware and run independent guest OS kernels",
+"explains that containers share the host OS kernel and isolate user spaces using namespaces and cgroups",
+"identifies that containers are much lighter with faster boot times and lower memory overhead",
+"identifies that VMs provide stronger security boundaries due to hypervisor isolation"
+],
+"follow_up": false
+},
+{
+"id": "OS-064",
+"question": "What is the difference between RAID 0 (striping) and RAID 1 (mirroring) in storage systems?",
+"subject": "Operating Systems",
+"topic": "File Systems",
+"difficulty": "EASY",
+"type": "COMPARISON",
+"concepts": [
+"RAID 0",
+"RAID 1",
+"striping",
+"mirroring",
+"fault tolerance",
+"performance"
+],
+"criteria": [
+"explains that RAID 0 stripes data across multiple disks to increase read/write throughput with zero redundancy",
+"explains that RAID 1 duplicates identical data across disks for complete fault tolerance",
+"notes that failure of a single drive in RAID 0 destroys the entire array",
+"identifies storage capacity utilization (100% in RAID 0 vs 50% in RAID 1)"
+],
+"follow_up": false
+},
+{
+"id": "OS-065",
+"question": "What is Multi-Level Feedback Queue (MLFQ) scheduling, and how does it automatically adapt to different process types?",
+"subject": "Operating Systems",
+"topic": "CPU Scheduling",
+"difficulty": "EASY",
+"type": "EXPLANATION",
+"concepts": [
+"Multi-Level Feedback Queue",
+"priority queues",
+"I/O-bound processes",
+"CPU-bound processes",
+"time quantum decay"
+],
+"criteria": [
+"explains that MLFQ maintains multiple priority queues with differing time quantums",
+"describes how processes that use their entire time quantum are demoted to lower-priority queues",
+"describes how processes that relinquish CPU for I/O remain in or are promoted to higher-priority queues",
+"identifies that MLFQ favors interactive jobs without requiring prior knowledge of burst times"
+],
+"follow_up": true
+},
+{
+"id": "OS-066",
+"question": "How do the fork() and exec() system calls collaborate to start a new, distinct program in Unix?",
+"subject": "Operating Systems",
+"topic": "Processes",
+"difficulty": "MEDIUM",
+"type": "EXPLANATION",
+"concepts": [
+"fork",
+"exec",
+"process creation",
+"address space replacement",
+"file descriptor inheritance"
+],
+"criteria": [
+"explains that fork() clones the calling process to create a child with an identical address space",
+"explains that exec() replaces the child's address space, code, and stack with a new executable",
+"explains why this separation allows the parent or child to configure I/O redirections and pipes prior to exec()"
+],
+"follow_up": true
+},
+{
+"id": "OS-067",
+"question": "How does a parent process use the wait() or waitpid() system calls to prevent zombie processes, and what occurs if the parent fails to do so?",
+"subject": "Operating Systems",
+"topic": "Processes",
+"difficulty": "MEDIUM",
+"type": "PROBLEM_SOLVING",
+"concepts": [
+"wait",
+"waitpid",
+"zombie accumulation",
+"process table exhaustion",
+"SIGCHLD"
+],
+"criteria": [
+"explains that wait() collects the child's termination status and allows the OS to release the PCB",
+"describes how ignoring wait() causes zombies to accumulate, potentially exhausting available Process IDs (PIDs)",
+"explains how handling the SIGCHLD signal allows asynchronous reaping without blocking the parent"
+],
+"follow_up": true
+},
+{
+"id": "OS-068",
+"question": "How does Peterson's Algorithm achieve mutual exclusion for two processes, and why does it fail on modern out-of-order processors without memory barriers?",
+"subject": "Operating Systems",
+"topic": "Process Synchronization",
+"difficulty": "MEDIUM",
+"type": "PROBLEM_SOLVING",
+"concepts": [
+"Peterson's Algorithm",
+"flag array",
+"turn variable",
+"mutual exclusion",
+"memory ordering",
+"compiler reordering"
+],
+"criteria": [
+"explains the role of the flag array (intent to enter) and turn variable (polite yield)",
+"proves that mutual exclusion and progress are satisfied in sequential consistency",
+"identifies that modern CPU out-of-order execution and memory store buffers can reorder writes",
+"explains that memory fences or hardware atomic instructions are required for correctness today"
+],
+"follow_up": true
+},
+{
+"id": "OS-069",
+"question": "What are hardware atomic instructions such as Test-And-Set (TAS) and Compare-And-Swap (CAS), and how are they used to build lock primitives?",
+"subject": "Operating Systems",
+"topic": "Process Synchronization",
+"difficulty": "MEDIUM",
+"type": "CONCEPTUAL",
+"concepts": [
+"atomic instructions",
+"Test-And-Set",
+"Compare-And-Swap",
+"hardware lock",
+"lock-free synchronization"
+],
+"criteria": [
+"defines atomicity as an operation completing in a single uninterruptible hardware step",
+"explains how TAS reads and updates a memory location atomically to acquire a lock",
+"explains how CAS compares a memory location against an expected value and swaps only if matched",
+"contrasts their use in standard locks versus optimistic lock-free data structures"
+],
+"follow_up": true
+},
+{
+"id": "OS-070",
+"question": "In the Dining Philosophers problem, how does deadlock occur when all philosophers reach for their chopsticks simultaneously, and how can resource hierarchy break the cycle?",
+"subject": "Operating Systems",
+"topic": "Deadlocks",
+"difficulty": "MEDIUM",
+"type": "PROBLEM_SOLVING",
+"concepts": [
+"Dining Philosophers",
+"circular wait",
+"resource hierarchy",
+"asymmetric solution",
+"starvation"
+],
+"criteria": [
+"explains that if every philosopher picks up their left chopstick first, circular wait occurs",
+"describes the resource-ordering solution: numbering chopsticks and forcing philosophers to pick lower-numbered first",
+"proves that this strictly breaks the Circular Wait Coffman condition",
+"considers whether the solution prevents starvation or if an arbiter is needed"
+],
+"follow_up": true
+},
+{
+"id": "OS-071",
+"question": "Why do modern 64-bit systems use multi-level (hierarchical) page tables instead of a single linear page table?",
+"subject": "Operating Systems",
+"topic": "Memory Management",
+"difficulty": "MEDIUM",
+"type": "PERFORMANCE",
+"concepts": [
+"multi-level paging",
+"sparse address space",
+"page table size",
+"page directory",
+"memory translation penalty"
+],
+"criteria": [
+"calculates or explains the impossibly large size of a single flat page table for 64-bit address spaces",
+"explains that multi-level paging allocates page table pages only for actively mapped virtual regions",
+"identifies the trade-off: reduced physical memory consumption at the cost of additional memory lookups per access",
+"mentions TLB caching as the essential mechanism that mitigates this lookup penalty"
+],
+"follow_up": true
+},
+{
+"id": "OS-072",
+"question": "How does the Second-Chance (Clock) page replacement algorithm approximate Least Recently Used (LRU) with lower hardware overhead?",
+"subject": "Operating Systems",
+"topic": "Virtual Memory",
+"difficulty": "MEDIUM",
+"type": "EXPLANATION",
+"concepts": [
+"Clock algorithm",
+"Second-Chance",
+"reference bit",
+"circular buffer",
+"LRU approximation"
+],
+"criteria": [
+"describes the circular list of frames and the moving clock hand pointer",
+"explains how the hardware reference bit (use bit) is checked and cleared to 0 when inspecting a frame",
+"explains that a page with reference bit 0 is selected for eviction, giving referenced pages a 'second chance'",
+"contrasts its minimal hardware overhead against the high cost of maintaining exact LRU timestamps or stacks"
+],
+"follow_up": true
+},
+{
+"id": "OS-073",
+"question": "How does the Working Set Model define a process's memory requirements, and how does the OS use it to prevent thrashing?",
+"subject": "Operating Systems",
+"topic": "Virtual Memory",
+"difficulty": "MEDIUM",
+"type": "PROBLEM_SOLVING",
+"concepts": [
+"working set",
+"working set window",
+"thrashing prevention",
+"degree of multiprogramming",
+"process suspension"
+],
+"criteria": [
+"defines the working set as the set of unique pages referenced by a process within a given time window (delta)",
+"explains that if the sum of all working sets exceeds total physical memory, thrashing is imminent",
+"explains the OS mitigation: suspend/swap out an entire process to free frames for remaining working sets",
+"relates the model to the principle of temporal and spatial locality"
+],
+"follow_up": true
+},
+{
+"id": "OS-074",
+"question": "How do the SCAN (Elevator) and C-SCAN (Circular SCAN) disk scheduling algorithms differ in treating request queues?",
+"subject": "Operating Systems",
+"topic": "File Systems",
+"difficulty": "MEDIUM",
+"type": "COMPARISON",
+"concepts": [
+"SCAN algorithm",
+"C-SCAN algorithm",
+"elevator algorithm",
+"head movement",
+"starvation and fairness"
+],
+"criteria": [
+"explains SCAN: moves disk arm in one direction serving requests until the end, then reverses direction",
+"explains C-SCAN: moves arm in one direction serving requests, then returns directly to the start without servicing on return",
+"explains why C-SCAN provides a more uniform waiting time distribution across inner and outer cylinders",
+"contrasts both against FCFS and SSTF regarding seek time minimization"
+],
+"follow_up": false
+},
+{
+"id": "OS-075",
+"question": "What are memory-mapped files (using mmap), and how do they differ from conventional read() and write() system calls?",
+"subject": "Operating Systems",
+"topic": "File Systems",
+"difficulty": "MEDIUM",
+"type": "COMPARISON",
+"concepts": [
+"mmap",
+"virtual memory mapping",
+"page cache",
+"system call overhead",
+"buffer copying"
+],
+"criteria": [
+"explains that mmap associates a file directly with a region of the process virtual address space",
+"explains that file reads/writes become direct pointer dereferences handled via page faults into page cache",
+"contrasts this with read()/write(), which require copying data between kernel page cache and user buffers",
+"identifies scenarios where mmap excels (large files, shared memory across processes)"
+],
+"follow_up": true
+},
+{
+"id": "OS-076",
+"question": "In a traditional Unix Inode structure, how do direct, single indirect, double indirect, and triple indirect block pointers allow files of widely varying sizes?",
+"subject": "Operating Systems",
+"topic": "File Systems",
+"difficulty": "MEDIUM",
+"type": "EXPLANATION",
+"concepts": [
+"inode structure",
+"direct pointers",
+"indirect pointers",
+"double indirect pointers",
+"maximum file size"
+],
+"criteria": [
+"explains that direct pointers point straight to data blocks for fast access to small files",
+"explains single indirect pointers referencing a block containing pointers to data blocks",
+"explains double and triple indirect pointers creating a multi-tier tree for very large files",
+"recognizes that this design optimizes access speed for small files while still accommodating massive files"
+],
+"follow_up": true
+},
+{
+"id": "OS-077",
+"question": "How does a journaling file system (such as Linux ext4) prevent file system corruption after an unexpected power outage?",
+"subject": "Operating Systems",
+"topic": "File Systems",
+"difficulty": "MEDIUM",
+"type": "PROBLEM_SOLVING",
+"concepts": [
+"journaling file system",
+"write-ahead log",
+"commit record",
+"crash recovery",
+"metadata journaling"
+],
+"criteria": [
+"explains the write-ahead logging principle: log file changes to the journal before updating the main file system",
+"describes the commit record indicating the transaction was fully and safely logged",
+"explains how recovery works: replay or discard uncommitted transactions upon reboot in seconds",
+"contrasts fast journal replay with the slow, brute-force consistency scan of fsck"
+],
+"follow_up": true
+},
+{
+"id": "OS-078",
+"question": "What is an Inverted Page Table, and what trade-offs does it introduce compared with per-process hierarchical page tables?",
+"subject": "Operating Systems",
+"topic": "Memory Management",
+"difficulty": "MEDIUM",
+"type": "COMPARISON",
+"concepts": [
+"inverted page table",
+"physical frame indexing",
+"hash table lookup",
+"memory savings",
+"shared memory complexity"
+],
+"criteria": [
+"explains that an inverted page table has one entry per physical frame rather than per virtual page",
+"identifies that table size is proportional to physical RAM, not virtual address space size",
+"explains that finding a page requires searching the table, typically accelerated with a hash anchor table",
+"notes that shared memory is difficult to implement because each frame only records one owner PID"
+],
+"follow_up": true
+},
+{
+"id": "OS-079",
+"question": "How does the Linux Completely Fair Scheduler (CFS) use 'vruntime' (virtual runtime) and a Red-Black Tree to schedule processes?",
+"subject": "Operating Systems",
+"topic": "CPU Scheduling",
+"difficulty": "MEDIUM",
+"type": "EXPLANATION",
+"concepts": [
+"Completely Fair Scheduler",
+"vruntime",
+"red-black tree",
+"nice values",
+"O(log N) scheduling"
+],
+"criteria": [
+"defines vruntime as the amount of time a process has spent executing on the CPU, scaled by its priority (nice value)",
+"explains that CFS always picks the task with the smallest vruntime (leftmost node in the Red-Black Tree)",
+"explains that high-priority tasks accumulate vruntime more slowly, receiving larger CPU shares",
+"notes that adding and removing runnable tasks maintains O(log N) complexity via self-balancing trees"
+],
+"follow_up": true
+},
+{
+"id": "OS-080",
+"question": "How do POSIX signals work, and what is the difference between catchable signals (like SIGINT or SIGTERM) and uncatchable signals (like SIGKILL or SIGSTOP)?",
+"subject": "Operating Systems",
+"topic": "Processes",
+"difficulty": "MEDIUM",
+"type": "COMPARISON",
+"concepts": [
+"signals",
+"SIGINT",
+"SIGTERM",
+"SIGKILL",
+"signal handler",
+"kernel delivery"
+],
+"criteria": [
+"defines signals as software interrupts sent to a process to notify it of an asynchronous event",
+"explains that processes can register custom signal handlers for SIGINT/SIGTERM to perform graceful cleanup",
+"explains that the kernel immediately terminates or stops the process for SIGKILL/SIGSTOP without user handler execution",
+"identifies how signal masks block or defer signal delivery"
+],
+"follow_up": false
+},
+{
+"id": "OS-081",
+"question": "What is the architectural difference between a Type-1 (Bare-Metal) Hypervisor and a Type-2 (Hosted) Hypervisor?",
+"subject": "Operating Systems",
+"topic": "OS Fundamentals",
+"difficulty": "MEDIUM",
+"type": "COMPARISON",
+"concepts": [
+"Type-1 hypervisor",
+"Type-2 hypervisor",
+"bare metal",
+"host operating system",
+"performance overhead"
+],
+"criteria": [
+"explains that Type-1 hypervisors run directly on hardware with no underlying host OS (e.g., VMware ESXi, Xen)",
+"explains that Type-2 hypervisors run as an application on top of an existing host OS (e.g., VirtualBox, VMware Workstation)",
+"identifies that Type-1 offers superior performance and security due to direct hardware control",
+"identifies that Type-2 offers easier desktop setup and hardware device driver reuse via the host OS"
+],
+"follow_up": false
+},
+{
+"id": "OS-082",
+"question": "How does RAID 5 use block striping with distributed parity to achieve fault tolerance, and what is the 'write penalty' associated with it?",
+"subject": "Operating Systems",
+"topic": "File Systems",
+"difficulty": "MEDIUM",
+"type": "PERFORMANCE",
+"concepts": [
+"RAID 5",
+"distributed parity",
+"XOR parity calculation",
+"single disk failure",
+"write penalty"
+],
+"criteria": [
+"explains that parity blocks are computed via XOR and distributed across all disks to eliminate bottleneck drives",
+"explains how any single failed drive can be reconstructed using remaining data and parity blocks",
+"defines the RAID 5 write penalty: updating a block requires 2 reads (old data, old parity) and 2 writes (new data, new parity)",
+"recognizes that RAID 5 cannot survive simultaneous failure of two drives"
+],
+"follow_up": true
+},
+{
+"id": "OS-083",
+"question": "What is CPU cache affinity in Symmetric Multiprocessing (SMP), and why must an OS scheduler balance cache affinity against load balancing?",
+"subject": "Operating Systems",
+"topic": "CPU Scheduling",
+"difficulty": "MEDIUM",
+"type": "PERFORMANCE",
+"concepts": [
+"cache affinity",
+"Symmetric Multiprocessing",
+"L1/L2 cache warming",
+"load balancing",
+"work stealing"
+],
+"criteria": [
+"explains that a thread populates the CPU's private L1/L2 cache lines with its working set during execution",
+"explains that migrating a thread to another CPU invalidates warm cache and incurs high memory reload penalties",
+"identifies the scheduler dilemma: migrating tasks balances idle CPUs vs keeping tasks pinned preserves cache affinity",
+"distinguishes soft affinity (preference) from hard affinity (enforced CPU pinning)"
+],
+"follow_up": true
+},
+{
+"id": "OS-084",
+"question": "What is memory segmentation, and why did modern OS architectures largely replace pure segmentation with paged virtual memory?",
+"subject": "Operating Systems",
+"topic": "Memory Management",
+"difficulty": "MEDIUM",
+"type": "COMPARISON",
+"concepts": [
+"segmentation",
+"variable-sized segments",
+"external fragmentation",
+"segment table",
+"paging"
+],
+"criteria": [
+"defines segmentation as dividing memory into logical units reflecting program structure (code, data, stack)",
+"explains that variable segment sizes inevitably cause external fragmentation and require complex compaction",
+"explains how fixed-size pages in virtual memory eliminate external fragmentation and simplify frame allocation",
+"identifies that modern x86-64 hardware predominantly enforces a flat memory model with paging"
+],
+"follow_up": false
+},
+{
+"id": "OS-085",
+"question": "What is the difference between an anonymous Pipe and a Named Pipe (FIFO) in Unix-like systems?",
+"subject": "Operating Systems",
+"topic": "Processes",
+"difficulty": "MEDIUM",
+"type": "COMPARISON",
+"concepts": [
+"anonymous pipe",
+"named pipe",
+"FIFO",
+"related vs unrelated processes",
+"file system node"
+],
+"criteria": [
+"explains that anonymous pipes exist only in memory and require a common ancestor (parent-child relationship)",
+"explains that Named Pipes (FIFOs) have a presence in the file system namespace allowing unrelated processes to communicate",
+"explains that both provide unidirectional, byte-stream IPC following FIFO semantics",
+"notes that data in a FIFO still resides in kernel buffers, not on the physical disk"
+],
+"follow_up": false
+},
+{
+"id": "OS-086",
+"question": "What is Priority Inversion in real-time operating systems, and how does the Priority Inheritance Protocol (PIP) resolve it?",
+"subject": "Operating Systems",
+"topic": "CPU Scheduling",
+"difficulty": "HARD",
+"type": "PROBLEM_SOLVING",
+"concepts": [
+"Priority Inversion",
+"Priority Inheritance Protocol",
+"Mars Pathfinder bug",
+"shared resource lock",
+"medium-priority preemption"
+],
+"criteria": [
+"describes the 3-thread scenario: high-priority thread H waits on a lock held by low-priority thread L",
+"explains how intermediate medium-priority thread M preempts L, indirectly blocking H indefinitely",
+"explains Priority Inheritance: L temporarily inherits the priority of H while holding the lock",
+"proves that inheriting priority prevents M from preempting L, allowing L to release the lock and unblock H"
+],
+"follow_up": true
+},
+{
+"id": "OS-087",
+"question": "How does Read-Copy-Update (RCU) synchronization in the Linux kernel achieve zero-overhead lock-free reads for concurrent readers?",
+"subject": "Operating Systems",
+"topic": "Process Synchronization",
+"difficulty": "HARD",
+"type": "DESIGN",
+"concepts": [
+"Read-Copy-Update",
+"grace period",
+"lock-free reads",
+"pointer publication",
+"quiescent states"
+],
+"criteria": [
+"explains that readers access data structures without acquiring locks or executing atomic bus cycles",
+"explains that a writer copies the object, mutates the copy, and updates the pointer atomically via memory barrier",
+"defines the Grace Period: the writer defers freeing the old object until all existing readers complete",
+"identifies RCU as optimal for read-mostly data structures (such as kernel routing tables and VFS caches)"
+],
+"follow_up": true
+},
+{
+"id": "OS-088",
+"question": "What is Zero-Copy I/O (e.g., using the sendfile system call), and how does it reduce CPU cycles and memory bus saturation when serving static network content?",
+"subject": "Operating Systems",
+"topic": "I/O and Storage",
+"difficulty": "HARD",
+"type": "PERFORMANCE",
+"concepts": [
+"zero-copy",
+"sendfile",
+"kernel context switch",
+"DMA gather",
+"page cache to socket buffer"
+],
+"criteria": [
+"traces traditional read/write: Disk -> Page Cache -> User Buffer -> Socket Buffer -> NIC (4 copies, 4 context switches)",
+"traces sendfile: DMA transfers data directly from Page Cache to NIC using scatter-gather descriptor rings",
+"highlights the elimination of intermediate copying into user space memory",
+"quantifies the dramatic reduction in CPU usage, context switches, and memory bus bandwidth"
+],
+"follow_up": true
+},
+{
+"id": "OS-089",
+"question": "How does the Linux Slab Allocator prevent internal fragmentation and cache allocation overhead for frequently created kernel objects?",
+"subject": "Operating Systems",
+"topic": "Memory Management",
+"difficulty": "HARD",
+"type": "DESIGN",
+"concepts": [
+"Slab Allocator",
+"Buddy System",
+"object caching",
+"internal fragmentation",
+"constructor/destructor reuse"
+],
+"criteria": [
+"explains that the Buddy System allocates whole pages (4KB+), creating severe internal fragmentation for small kernel structs",
+"explains that the Slab Allocator pre-allocates pools of contiguous memory carved into exact-sized objects (e.g., inodes, PCBs)",
+"describes the slabs states (full, partial, empty) to satisfy allocations in O(1) time without searching",
+"explains how object caching avoids repeatedly initializing and destroying kernel data structures"
+],
+"follow_up": true
+},
+{
+"id": "OS-090",
+"question": "In real-time systems, how does Rate Monotonic Scheduling (RMS) differ from Earliest Deadline First (EDF), and what are their respective theoretical CPU utilization bounds?",
+"subject": "Operating Systems",
+"topic": "CPU Scheduling",
+"difficulty": "HARD",
+"type": "COMPARISON",
+"concepts": [
+"Rate Monotonic Scheduling",
+"Earliest Deadline First",
+"static vs dynamic priority",
+"utilization bound",
+"Liu and Layland theorem"
+],
+"criteria": [
+"defines RMS as static-priority scheduling where shorter task periods receive higher priority",
+"defines EDF as dynamic-priority scheduling where tasks with closest absolute deadlines receive highest priority",
+"states the utilization bound: RMS guarantees schedulability up to N(2^(1/N) - 1) (~69% as N grows)",
+"states that EDF guarantees optimal schedulability up to 100% theoretical CPU utilization"
+],
+"follow_up": true
+},
+{
+"id": "OS-091",
+"question": "What is the Crash Consistency Problem in file systems, and what are the trade-offs between Ordered Journaling, Data Journaling, and Write-Back Journaling?",
+"subject": "Operating Systems",
+"topic": "File Systems",
+"difficulty": "HARD",
+"type": "DESIGN",
+"concepts": [
+"crash consistency",
+"data journaling",
+"ordered journaling",
+"write-back journaling",
+"metadata integrity"
+],
+"criteria": [
+"explains the danger of partial updates across disk data blocks, indirect pointers, and free-space bitmaps during a crash",
+"defines Data Journaling: logs both user data and metadata (highest reliability, but double write penalty)",
+"defines Ordered Journaling: writes data to disk before metadata commits to journal (guarantees no garbage data in files)",
+"defines Write-Back Journaling: logs only metadata without data ordering guarantees (fastest, but file may contain old data)"
+],
+"follow_up": true
+},
+{
+"id": "OS-092",
+"question": "What is a TLB Shootdown in a multi-core Symmetric Multiprocessing system, and why can it cause severe latency spikes?",
+"subject": "Operating Systems",
+"topic": "Memory Management",
+"difficulty": "HARD",
+"type": "PERFORMANCE",
+"concepts": [
+"TLB shootdown",
+"multi-core cache coherence",
+"Inter-Processor Interrupts",
+"page table modification",
+"pipeline stall"
+],
+"criteria": [
+"explains that each core maintains its own private hardware TLB cache",
+"describes the scenario: when one core modifies or unmaps a shared page table entry, all other cores' TLBs become stale",
+"explains the mechanism: the initiating core sends Inter-Processor Interrupts (IPIs) forcing other cores to flush their TLB",
+"identifies that waiting for all cores to acknowledge IPIs halts execution pipelines and degrades multi-core scaling"
+],
+"follow_up": true
+},
+{
+"id": "OS-093",
+"question": "What are Transparent Huge Pages (THP) in modern operating systems, and why can they improve database performance while occasionally causing tail-latency spikes?",
+"subject": "Operating Systems",
+"topic": "Virtual Memory",
+"difficulty": "HARD",
+"type": "PERFORMANCE",
+"concepts": [
+"Transparent Huge Pages",
+"2MB/1GB pages",
+"TLB coverage",
+"memory fragmentation",
+"memory compaction stalls"
+],
+"criteria": [
+"explains that Huge Pages (2MB vs 4KB) dramatically increase memory coverage per TLB entry, reducing TLB misses",
+"explains how memory-intensive applications (like Redis, PostgreSQL, JVM) achieve significant throughput gains",
+"identifies the downside: background defragmentation and khugepaged compaction cause CPU spikes and lock allocation stalls",
+"explains why production database administrators often disable THP in favor of explicit pre-allocated huge pages"
+],
+"follow_up": true
+},
+{
+"id": "OS-094",
+"question": "How do Linux Control Groups (cgroups v2) and Namespaces combine at the kernel level to create secure, resource-bounded container runtimes?",
+"subject": "Operating Systems",
+"topic": "OS Fundamentals",
+"difficulty": "HARD",
+"type": "EXPLANATION",
+"concepts": [
+"cgroups v2",
+"Linux namespaces",
+"resource throttling",
+"OOM killer",
+"container isolation"
+],
+"criteria": [
+"distinguishes their roles: Namespaces isolate what a process can SEE (PID, mount, network, user, IPC namespaces)",
+"explains that cgroups regulate what a process can USE (CPU quotas via CFS bandwidth, memory limits, blkio)",
+"explains how cgroups enforce hard memory boundaries and trigger the kernel Out-Of-Memory (OOM) killer when exceeded",
+"explains how cgroups v2 provides a unified hierarchy avoiding resource accounting conflicts"
+],
+"follow_up": true
+},
+{
+"id": "OS-095",
+"question": "How does the Chandy-Misra-Haas edge-chasing algorithm detect deadlocks in distributed operating systems without a centralized lock manager?",
+"subject": "Operating Systems",
+"topic": "Deadlocks",
+"difficulty": "HARD",
+"type": "PROBLEM_SOLVING",
+"concepts": [
+"distributed deadlock detection",
+"Chandy-Misra-Haas",
+"edge chasing",
+"probe messages",
+"wait-for graph"
+],
+"criteria": [
+"explains that a process blocked on an external resource initiates a probe message (initiator, sender, receiver)",
+"describes how the probe is forwarded along edges of the distributed wait-for graph",
+"explains that if the probe message returns to its original initiating process, a circular dependency cycle exists",
+"identifies advantages: no centralized bottleneck and minimal message overhead compared to periodic graph gathering"
+],
+"follow_up": true
+},
+{
+"id": "OS-096",
+"question": "How do software-managed TLBs (e.g., MIPS, SPARC) differ from hardware-managed TLBs (e.g., x86, ARM), and what are the architectural trade-offs?",
+"subject": "Operating Systems",
+"topic": "Memory Management",
+"difficulty": "HARD",
+"type": "COMPARISON",
+"concepts": [
+"software-managed TLB",
+"hardware page table walker",
+"trap handler",
+"page table format flexibility",
+"miss penalty"
+],
+"criteria": [
+"explains that hardware-managed TLBs have built-in MMU page table walkers that parse a fixed multi-level format in silicon",
+"explains that software-managed TLBs trap to an OS kernel fault handler on miss, allowing the OS to load the entry",
+"identifies that software TLBs allow arbitrary page table structures (inverted, radix, trees) at the cost of higher miss latency",
+"identifies that hardware TLBs provide ultra-fast miss resolution but strictly constrain page table design"
+],
+"follow_up": true
+},
+{
+"id": "OS-097",
+"question": "What are Memory Barriers (Fences), and why are Acquire-Release semantics required to prevent subtle concurrency bugs on weakly-ordered CPU architectures like ARM?",
+"subject": "Operating Systems",
+"topic": "Process Synchronization",
+"difficulty": "HARD",
+"type": "CONCEPTUAL",
+"concepts": [
+"memory barriers",
+"acquire-release semantics",
+"weak memory ordering",
+"store buffer reordering",
+"sequential consistency"
+],
+"criteria": [
+      "explains that modern superscalar CPUs reorder independent read/write operations to maximize pipeline efficiency",
+      "defines an Acquire barrier: guarantees no subsequent memory reads/writes can be reordered BEFORE this operation",
+      "defines a Release barrier: guarantees all prior memory reads/writes are committed BEFORE this operation is visible",
+      "explains that mutex unlock acts as a release and lock as an acquire to ensure safe publication of shared data"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "OS-098",
+    "question": "How is a lock-free concurrent stack (Treiber Stack) implemented using atomic Compare-And-Swap (CAS), and what is the ABA problem that can corrupt it?",
+    "subject": "Operating Systems",
+    "topic": "Process Synchronization",
+    "difficulty": "HARD",
+    "type": "DESIGN",
+"concepts": [
+"lock-free data structure",
+"Treiber stack",
+"Compare-And-Swap",
+"ABA problem",
+"hazard pointers or tagged pointers"
+],
+"criteria": [
+"describes the CAS push/pop loop: read current head, set next pointer, attempt CAS(head, old_head, new_head)",
+"explains the ABA problem: node A is read, popped, modified, and pushed back before a slow thread detects the change",
+"explains why identical memory addresses can trick CAS into succeeding while corrupting linked list pointers",
+"proposes standard solutions: Tagged Pointers (version counter + pointer) or Hazard Pointers"
+],
+"follow_up": true
+},
+{
+"id": "OS-099",
+"question": "How does extent-based file allocation (used in ext4 and XFS) outperform traditional block-pointer mapping for high-throughput sequential disk access?",
+"subject": "Operating Systems",
+"topic": "File Systems",
+"difficulty": "HARD",
+"type": "PERFORMANCE",
+"concepts": [
+"extents",
+"extent tree",
+"contiguous allocation",
+"metadata footprint",
+"large file performance"
+],
+"criteria": [
+"defines an extent as a single descriptor storing (starting logical block, starting physical block, count of contiguous blocks)",
+"explains that a multi-gigabyte contiguous file requires only one extent record rather than thousands of individual block pointers",
+"explains how extent trees drastically reduce inode metadata size and tree depth",
+"connects extent-based contiguous layout to sustained sequential I/O read/write speeds"
+],
+"follow_up": true
+},
+{
+"id": "OS-100",
+"question": "In extreme high-performance microkernels (such as seL4), what kernel architectural techniques are used to reduce Inter-Process Communication (IPC) latency down to dozens of CPU cycles?",
+"subject": "Operating Systems",
+"topic": "OS Fundamentals",
+"difficulty": "HARD",
+"type": "DESIGN",
+"concepts": [
+"seL4",
+"fastpath IPC"
+],
+"criteria": [
+"identifies that traditional microkernel IPC was slow due to TLB flushes, scheduling overhead, and multiple buffer copies",
+"explains Fastpath IPC: passing small messages directly in CPU general-purpose registers without touching memory",
+"describes thread state donation / direct thread switching: transferring remainder of CPU quantum directly to receiver",
+"notes capability-based security verification optimized in a single non-branching assembly path"
+],
+"follow_up": true
+},
+{
+"id": "OS-101",
+"question": "What is the difference between a Soft Page Fault and a Hard Page Fault in virtual memory systems?",
+"subject": "Operating Systems",
+"topic": "Virtual Memory",
+"difficulty": "EASY",
+"type": "COMPARISON",
+"concepts": [
+"soft page fault",
+"hard page fault",
+"major page fault",
+"minor page fault",
+"disk I/O latency"
+],
+"criteria": [
+"defines a hard (major) page fault as requiring physical disk/swap I/O to fetch the page",
+"defines a soft (minor) page fault as resolving the page in physical RAM (e.g., shared library, re-allocated frame)",
+"explains the massive performance discrepancy (nanoseconds vs milliseconds) between soft and hard faults",
+"connects soft page faults to copy-on-write resolution and shared memory mapping"
+],
+"follow_up": false
+},
+{
+"id": "OS-102",
+"question": "What is the difference between a Deadlock and a Livelock in concurrent systems?",
+"subject": "Operating Systems",
+"topic": "Deadlocks",
+"difficulty": "EASY",
+"type": "COMPARISON",
+"concepts": [
+"deadlock",
+"livelock",
+"blocked state",
+"active state",
+"CPU consumption",
+"progress failure"
+],
+"criteria": [
+"explains that in a deadlock, processes are permanently blocked waiting for an event that only another blocked process can cause",
+"explains that in a livelock, processes continually change their state in response to each other without making useful progress",
+"identifies that deadlocked threads consume 0% CPU whereas livelocked threads consume 100% CPU",
+"gives a real-world analogy (e.g., two polite people stepping back and forth in a hallway)"
+],
+"follow_up": true
+},
+{
+"id": "OS-103",
+"question": "What is the purpose of Address Space Layout Randomization (ASLR) and the No-Execute (NX) bit in memory security?",
+"subject": "Operating Systems",
+"topic": "Memory Management",
+"difficulty": "EASY",
+"type": "EXPLANATION",
+"concepts": [
+"ASLR",
+"NX bit",
+"buffer overflow",
+"code injection",
+"stack protection"
+],
+"criteria": [
+"explains that ASLR randomizes the base addresses of the stack, heap, and libraries on each execution",
+"explains that the NX bit marks memory pages (like stack/heap) as non-executable to prevent malicious code injection",
+"describes how ASLR thwarts return-to-libc attacks by making function addresses unpredictable",
+"identifies the collaboration between hardware MMU support and operating system loader"
+],
+"follow_up": false
+},
+{
+"id": "OS-104",
+"question": "What is the difference between sync(), fsync(), and fdatasync() in Unix-like file systems?",
+"subject": "Operating Systems",
+"topic": "File Systems",
+"difficulty": "EASY",
+"type": "COMPARISON",
+"concepts": [
+"sync",
+"fsync",
+"fdatasync",
+"page cache flush",
+"file metadata",
+"disk writeback"
+],
+"criteria": [
+"explains that sync() schedules all dirty filesystem buffers across the entire system for flushing without waiting",
+"explains that fsync() blocks until all data and metadata for a specific open file descriptor are committed to disk",
+"explains that fdatasync() flushes file data but only writes metadata necessary for future retrieval (avoiding mtime updates)",
+"identifies the performance optimization of fdatasync() for transactional databases"
+],
+"follow_up": false
+},
+{
+"id": "OS-105",
+"question": "What is Non-Uniform Memory Access (NUMA), and why is local memory access faster than remote memory access on multi-socket servers?",
+"subject": "Operating Systems",
+"topic": "Memory Management",
+"difficulty": "EASY",
+"type": "CONCEPTUAL",
+"concepts": [
+"NUMA",
+"NUMA node",
+"local memory",
+"remote memory",
+"interconnect latency"
+],
+"criteria": [
+"defines NUMA as a multi-processor architecture where memory is partitioned across processor sockets",
+"explains that accessing memory wired directly to the local socket is significantly faster than traversing inter-socket buses",
+"identifies that the OS scheduler tries to keep threads running on the same NUMA node where their memory was allocated",
+"identifies NUMA memory allocation policies (local node preference vs interleaved)"
+],
+"follow_up": true
+},
+{
+"id": "OS-106",
+"question": "What is the difference between Advisory file locking and Mandatory file locking?",
+"subject": "Operating Systems",
+"topic": "File Systems",
+"difficulty": "EASY",
+"type": "COMPARISON",
+"concepts": [
+"advisory locking",
+"mandatory locking",
+"flock",
+"fcntl",
+"cooperating processes"
+],
+"criteria": [
+"explains that advisory locks are voluntary: processes must explicitly query and respect locks (uncooperating processes can ignore them)",
+"explains that mandatory locks are enforced directly by the kernel on every read/write system call",
+"notes that Unix/Linux overwhelmingly relies on advisory locking for speed and simplicity",
+"identifies deadlocks and denial-of-service risks associated with mandatory locking"
+],
+"follow_up": false
+},
+{
+"id": "OS-107",
+"question": "In operating system interrupt processing, what is the difference between the Top-Half and Bottom-Half of an interrupt handler?",
+"subject": "Operating Systems",
+"topic": "OS Fundamentals",
+"difficulty": "EASY",
+"type": "EXPLANATION",
+"concepts": [
+"top-half",
+"bottom-half",
+"interrupt service routine",
+"deferred work",
+"interrupt disabling"
+],
+"criteria": [
+"explains that the top-half runs immediately with interrupts disabled to acknowledge the hardware and save raw data",
+"explains that the bottom-half defers heavy processing (e.g., packet parsing) to execute later with interrupts re-enabled",
+"explains why keeping the top-half minimal prevents missing subsequent hardware interrupts",
+"identifies bottom-half mechanisms in Linux (such as softirqs, tasklets, or workqueues)"
+],
+"follow_up": true
+},
+{
+"id": "OS-108",
+"question": "What is a Daemon process in Unix, and what are the essential steps required to properly daemonize a background process?",
+"subject": "Operating Systems",
+"topic": "Processes",
+"difficulty": "EASY",
+"type": "EXPLANATION",
+"concepts": [
+"daemon process",
+"fork and exit",
+"setsid",
+"controlling terminal",
+"file descriptor redirection"
+],
+"criteria": [
+"defines a daemon as a long-running background process with no controlling terminal",
+"identifies fork() and terminating the parent so the process runs in the background",
+"identifies setsid() to detach from the controlling terminal and start a new session",
+"identifies changing working directory to root ('/') and redirecting stdin/stdout/stderr to /dev/null"
+],
+"follow_up": false
+},
+{
+"id": "OS-109",
+"question": "What is the difference between Port-Mapped I/O (PMIO) and Memory-Mapped I/O (MMIO)?",
+"subject": "Operating Systems",
+"topic": "I/O and Storage",
+"difficulty": "EASY",
+"type": "COMPARISON",
+"concepts": [
+"Port-Mapped I/O",
+"Memory-Mapped I/O",
+"in/out instructions",
+"address space sharing",
+"device registers"
+],
+"criteria": [
+"explains that PMIO uses a distinct, isolated address space and special CPU instructions (e.g., IN/OUT in x86)",
+"explains that MMIO maps device registers directly into the physical memory address space using normal load/store instructions",
+"identifies that MMIO simplifies device driver programming by reusing standard pointer dereferencing",
+"notes that MMIO requires marking mapped regions as uncached to prevent CPU cache stale reads"
+],
+"follow_up": false
+},
+{
+"id": "OS-110",
+"question": "What is False Sharing in multi-threaded concurrent programming, and how does it degrade multi-core performance?",
+"subject": "Operating Systems",
+"topic": "Process Synchronization",
+"difficulty": "EASY",
+"type": "EXPLANATION",
+"concepts": [
+"false sharing",
+"cache line",
+"cache invalidation",
+"cache coherency protocol",
+"padding"
+],
+"criteria": [
+"defines a cache line (typically 64 bytes) as the minimum unit of data transferred between CPU cache and RAM",
+"explains that false sharing occurs when threads on different cores update independent variables that reside on the same cache line",
+"describes how cache coherency protocols (MESI) repeatedly invalidate cache lines across cores, causing bus contention",
+"identifies the fix: padding data structures to ensure variables align to separate cache lines"
+],
+"follow_up": true
+},
+{
+"id": "OS-111",
+"question": "What does the Linux 'swappiness' kernel parameter control, and how does it balance page cache vs anonymous memory?",
+"subject": "Operating Systems",
+"topic": "Virtual Memory",
+"difficulty": "EASY",
+"type": "CONCEPTUAL",
+"concepts": [
+"swappiness",
+"page cache",
+"anonymous memory",
+"swap space",
+"kernel memory reclamation"
+],
+"criteria": [
+"explains that swappiness (0 to 100) dictates the kernel's aggressive tendency to swap anonymous memory vs evicting page cache",
+"explains that low swappiness (e.g., 10 or 1) prefers dropping inactive file page cache to keep program heap in RAM",
+"explains that high swappiness (e.g., 60 or 100) aggressively pages out idle process memory to preserve file caching",
+"notes that swappiness = 0 prevents swapping out anonymous pages until memory exhaustion is imminent"
+],
+"follow_up": false
+},
+{
+"id": "OS-112",
+"question": "What is the difference between a Process Group, a Session, and a Controlling Terminal in Unix process management?",
+"subject": "Operating Systems",
+"topic": "Processes",
+"difficulty": "EASY",
+"type": "COMPARISON",
+"concepts": [
+"process group",
+"session",
+"controlling terminal",
+"job control",
+"session leader"
+],
+"criteria": [
+"defines a process group as a collection of related processes (e.g., connected by pipelines) sharing a PGID for signal broadcast",
+"defines a session as a collection of process groups tied to a single controlling terminal (e.g., login session)",
+"explains the role of the session leader and foreground process group receiving keyboard interrupt signals (SIGINT)",
+"explains how background process groups are stopped with SIGTTIN/SIGTTOU if attempting terminal I/O"
+],
+"follow_up": false
+},
+{
+"id": "OS-113",
+"question": "What is an Uninterruptible Sleep (TASK_UNINTERRUPTIBLE / 'D' state) in Linux, and why can processes in this state not be killed by SIGKILL?",
+"subject": "Operating Systems",
+"topic": "Processes",
+"difficulty": "EASY",
+"type": "EXPLANATION",
+"concepts": [
+"TASK_UNINTERRUPTIBLE",
+"D state",
+"hardware I/O wait",
+"SIGKILL immunity",
+"hung processes"
+],
+"criteria": [
+"defines 'D' state as a sleep state where the process is waiting directly on synchronous hardware device I/O or disk locks",
+"explains that the kernel ignores all signals (including kill -9) to prevent data corruption while hardware registers are active",
+"explains that high load averages with low CPU utilization often indicate threads stuck in 'D' state on failed storage/NFS",
+"identifies that rebooting or unblocking the hardware device is typically the only way to clear a stuck 'D' state"
+],
+"follow_up": false
+},
+{
+"id": "OS-114",
+"question": "What is the difference between SoftIRQs, Tasklets, and Workqueues in Linux kernel deferred execution?",
+"subject": "Operating Systems",
+"topic": "OS Fundamentals",
+"difficulty": "EASY",
+"type": "COMPARISON",
+"concepts": [
+"softirq",
+"tasklet",
+"workqueue",
+"interrupt context",
+"process context",
+"sleeping"
+],
+"criteria": [
+"explains that SoftIRQs execute in interrupt context on any CPU concurrently and cannot sleep (highest performance, static allocation)",
+"explains that Tasklets are built on softirqs but guarantee serialization (the same tasklet never runs on two CPUs at once)",
+"explains that Workqueues execute in process context via kernel threads and ARE permitted to sleep and allocate memory",
+"identifies typical use cases (network subsystem uses softirqs; complex disk I/O uses workqueues)"
+],
+"follow_up": false
+},
+{
+"id": "OS-115",
+"question": "What are Extended Attributes (xattrs) and Access Control Lists (ACLs) in modern Unix file systems?",
+"subject": "Operating Systems",
+"topic": "File Systems",
+"difficulty": "EASY",
+"type": "EXPLANATION",
+"concepts": [
+"extended attributes",
+"xattr",
+"Access Control Lists",
+"POSIX permissions",
+"SELinux labels"
+],
+"criteria": [
+"explains that standard POSIX permissions are limited to Owner/Group/Other (rwx)",
+"defines ACLs as granular access rules allowing specific permissions for multiple arbitrary users and groups",
+"defines Extended Attributes (xattr) as key-value pairs stored with file inodes (used by security modules like SELinux)",
+"identifies namespaces for xattrs (user, trusted, security, system)"
+],
+"follow_up": false
+},
+{
+"id": "OS-116",
+"question": "How does the Linux epoll mechanism achieve O(1) performance compared to the O(N) scanning of select() and poll()?",
+"subject": "Operating Systems",
+"topic": "I/O and Storage",
+"difficulty": "MEDIUM",
+"type": "PERFORMANCE",
+"concepts": [
+"epoll",
+"select",
+"poll",
+"event-driven I/O",
+"red-black tree",
+"ready list"
+],
+"criteria": [
+"explains that select/poll require copying entire file descriptor sets to the kernel on every call and scanning linearly (O(N))",
+"explains that epoll registers descriptors once in a kernel Red-Black tree via epoll_ctl",
+"describes how hardware interrupts and socket wakeups append events directly into an epoll ready-list in O(1) time",
+"contrasts Edge-Triggered (EPOLLET) vs Level-Triggered notification models"
+],
+"follow_up": true
+},
+{
+"id": "OS-117",
+"question": "How does the Linux Futex (Fast Userspace Mutex) achieve near-zero system call overhead under low lock contention?",
+"subject": "Operating Systems",
+"topic": "Process Synchronization",
+"difficulty": "MEDIUM",
+"type": "EXPLANATION",
+"concepts": [
+"futex",
+"atomic integer",
+"uncontended lock",
+"kernel wait queue",
+"system call avoidance"
+],
+"criteria": [
+"explains that an uncontended lock acquisition is completed entirely in user space using a single atomic CAS instruction",
+"describes that the kernel is invoked via sys_futex ONLY when contention occurs and a thread must actually be put to sleep",
+"explains how futex_wake() signals the kernel to wake sleeping threads on lock release",
+"identifies how futexes form the underlying building block for POSIX pthread_mutex"
+],
+"follow_up": true
+},
+{
+"id": "OS-118",
+"question": "How does Lamport's Bakery Algorithm guarantee mutual exclusion and fairness for N concurrent processes without hardware atomic support?",
+"subject": "Operating Systems",
+"topic": "Process Synchronization",
+"difficulty": "MEDIUM",
+"type": "PROBLEM_SOLVING",
+"concepts": [
+"Bakery Algorithm",
+"ticket numbering",
+"lexicographical ordering",
+"first-come first-served",
+"process ID tiebreaker"
+],
+"criteria": [
+"explains the ticket system: entering processes receive a ticket number greater than all existing tickets",
+"describes the entry condition: waiting until all processes with smaller ticket numbers (or smaller PID on ties) finish",
+"proves that mutual exclusion is guaranteed even if two processes draw identical ticket numbers simultaneously",
+"highlights that the algorithm enforces strict First-Come, First-Served fairness without starvation"
+],
+"follow_up": true
+},
+{
+"id": "OS-119",
+"question": "How does the Priority Ceiling Protocol (PCP) eliminate both deadlocks and unbounded priority inversions in real-time systems?",
+"subject": "Operating Systems",
+"topic": "CPU Scheduling",
+"difficulty": "MEDIUM",
+"type": "PROBLEM_SOLVING",
+"concepts": [
+"Priority Ceiling Protocol",
+"priority inversion",
+"deadlock prevention",
+"ceiling priority",
+"mutual exclusion"
+],
+"criteria": [
+"defines the ceiling priority of a resource as the highest priority of any task that may access it",
+"explains the rule: a task can lock a resource only if its priority is strictly higher than the ceilings of all currently locked resources",
+"proves that circular waiting is mathematically impossible under PCP, eliminating deadlocks",
+"proves that a high-priority task is blocked at most once by a lower-priority critical section"
+],
+"follow_up": true
+},
+{
+"id": "OS-120",
+"question": "How do Linux Sequence Locks (Seqlocks) allow extremely fast concurrent read access for data structures with rare writer updates?",
+"subject": "Operating Systems",
+"topic": "Process Synchronization",
+"difficulty": "MEDIUM",
+"type": "EXPLANATION",
+"concepts": [
+"seqlock",
+"sequence counter",
+"writer exclusion",
+"reader retry loop",
+"kernel timekeeping"
+],
+"criteria": [
+"explains that seqlocks use a sequence counter that is incremented before and after each write operation",
+"explains that writers obtain exclusive locks and make the counter ODD during writes",
+"describes reader behavior: read counter, read data, re-read counter; if counter is odd or changed, retry read loop",
+"identifies that readers never block writers and writers never block readers (used extensively in jiffies and gettimeofday)"
+],
+"follow_up": false
+},
+{
+"id": "OS-121",
+"question": "What is the Virtual File System (VFS) layer in operating systems, and what are its four primary data structure abstractions?",
+"subject": "Operating Systems",
+"topic": "File Systems",
+"difficulty": "MEDIUM",
+"type": "CONCEPTUAL",
+"concepts": [
+"Virtual File System",
+"superblock",
+"inode",
+"dentry",
+"file object",
+"polymorphic interface"
+],
+"criteria": [
+"defines VFS as an abstraction layer providing a uniform POSIX API across heterogeneous file systems (ext4, XFS, NFS)",
+"defines superblock (filesystem instance metadata) and inode (specific file metadata)",
+"defines dentry (directory entry linking filename to inode, cached in dcache) and file object (open file instance with offset)",
+"explains that each abstraction contains function pointer tables (operations vectors) implementing OOP polymorphism in C"
+],
+"follow_up": true
+},
+{
+"id": "OS-122",
+"question": "What makes a function 'Async-Signal-Safe' in POSIX systems, and why is calling functions like malloc() or printf() inside a signal handler dangerous?",
+"subject": "Operating Systems",
+"topic": "Processes",
+"difficulty": "MEDIUM",
+"type": "DEBUGGING",
+"concepts": [
+"async-signal-safe",
+"reentrancy",
+"signal handler",
+"deadlock in malloc",
+"global state"
+],
+"criteria": [
+"defines an async-signal-safe function as one that can be safely interrupted and re-invoked concurrently without corruption",
+"explains that malloc() uses internal global locks; if interrupted by a signal whose handler calls malloc(), deadlock occurs",
+"explains that non-reentrant functions using static buffers (like strtok or printf) become corrupted if interrupted",
+"identifies that safe signal handlers should only perform atomic operations or set a volatile sig_atomic_t flag"
+],
+"follow_up": false
+},
+{
+"id": "OS-123",
+"question": "How do Copy-on-Write (CoW) file systems like ZFS and Btrfs create instantaneous, zero-space snapshots?",
+"subject": "Operating Systems",
+"topic": "File Systems",
+"difficulty": "MEDIUM",
+"type": "EXPLANATION",
+"concepts": [
+"Btrfs",
+"ZFS",
+"Copy-on-Write filesystem",
+"snapshots",
+"tree of blocks",
+"immutability"
+],
+"criteria": [
+"explains that CoW file systems never overwrite existing blocks in-place; new writes are allocated to fresh free blocks",
+"explains that a snapshot is created simply by duplicating the root pointer of the filesystem tree (taking sub-second time)",
+"describes how modified blocks branch off while unshared, unmodified blocks remain referenced by both the active tree and snapshot",
+"identifies that snapshots consume storage space only as active data diverges from the snapshot"
+],
+"follow_up": true
+},
+{
+"id": "OS-124",
+"question": "How do Linux Network Namespaces and virtual ethernet pairs (veth) create isolated network stacks for container systems?",
+"subject": "Operating Systems",
+"topic": "OS Fundamentals",
+"difficulty": "MEDIUM",
+"type": "EXPLANATION",
+"concepts": [
+"network namespace",
+"veth pair",
+"virtual bridge",
+"container networking",
+"IP routing isolation"
+],
+"criteria": [
+"explains that a network namespace provides an independent network stack (routing tables, firewall rules, loopback, interfaces)",
+"defines a veth pair as a virtual, bi-directional pipe connecting two namespaces (like a virtual Ethernet cable)",
+"describes the architecture: one veth endpoint lives in the container namespace; the peer endpoint connects to a bridge in the host",
+"explains how NAT/iptables in the host namespace forward external traffic into the container"
+],
+"follow_up": false
+},
+{
+"id": "OS-125",
+"question": "What is the Lock Convoy phenomenon in multithreaded operating systems, and how does it cause sudden throughput collapse?",
+"subject": "Operating Systems",
+"topic": "Process Synchronization",
+"difficulty": "MEDIUM",
+"type": "PROBLEM_SOLVING",
+"concepts": [
+"lock convoy",
+"context-switch storm",
+"FIFO lock queue",
+"preemption during lock hold",
+"throughput collapse"
+],
+"criteria": [
+"defines a lock convoy as multiple threads queued for a shared lock, where each thread is preempted shortly after acquiring it",
+"explains how repeated context switching and thread suspension consume CPU time without advancing useful work",
+"explains that strict FIFO queues exacerbate convoys when a slow or preempted thread holds up fast threads",
+"identifies solutions: lock-free algorithms, randomized backoff, or ticket locks with handoff optimizations"
+],
+"follow_up": true
+},
+{
+"id": "OS-126",
+"question": "How do modern Linux multiqueue I/O schedulers (such as mq-deadline and BFQ) optimize solid-state drives (SSDs) compared to legacy rotational disk schedulers?",
+"subject": "Operating Systems",
+"topic": "I/O and Storage",
+"difficulty": "MEDIUM",
+"type": "PERFORMANCE",
+"concepts": [
+"blk-mq",
+"mq-deadline",
+"BFQ",
+"NVMe concurrency",
+"hardware submission queues"
+],
+"criteria": [
+"explains that legacy schedulers (CFQ, NOOP) used a single global lock suited for single-spindle HDDs with mechanical heads",
+"explains that NVMe/SSDs have zero seek time and support up to 64,000 parallel hardware queues",
+"explains that blk-mq provides per-CPU software queues that map directly to hardware queues without cross-CPU lock contention",
+"contrasts mq-deadline (latency guarantees) with BFQ (budget-fair bandwidth guarantees)"
+],
+"follow_up": false
+},
+{
+"id": "OS-127",
+"question": "What is Page Coloring (Cache Coloring) in operating system memory management, and how does it reduce L2/L3 cache misses?",
+"subject": "Operating Systems",
+"topic": "Memory Management",
+"difficulty": "MEDIUM",
+"type": "PERFORMANCE",
+"concepts": [
+"page coloring",
+"cache coloring",
+"direct-mapped/set-associative cache",
+"cache conflict misses",
+"physical page allocation"
+],
+"criteria": [
+"explains that CPU hardware caches index lines using physical address bits",
+"explains that without coloring, random physical frame allocation can map consecutive virtual pages into the same cache sets (causing conflict misses)",
+"defines page coloring as assigning colors based on physical address cache sets and matching them with virtual page colors",
+"demonstrates that colored allocation evenly distributes memory accesses across cache sets, minimizing cache thrashing"
+],
+"follow_up": true
+},
+{
+"id": "OS-128",
+"question": "How did system call invocation evolve from software interrupts (e.g., 'INT 0x80' on x86) to dedicated CPU instructions ('SYSCALL' / 'SYSENTER')?",
+"subject": "Operating Systems",
+"topic": "OS Fundamentals",
+"difficulty": "MEDIUM",
+"type": "COMPARISON",
+"concepts": [
+"INT 0x80",
+"SYSCALL",
+"SYSENTER",
+"Interrupt Descriptor Table",
+"Model Specific Registers",
+"instruction latency"
+],
+"criteria": [
+"explains that INT 0x80 looked up the Interrupt Descriptor Table (IDT), performed privilege checks, and pushed stack frames (~200+ cycles)",
+"explains that SYSCALL/SYSENTER uses pre-configured Model Specific Registers (MSRs) to load the kernel instruction pointer and stack directly",
+"highlights that eliminating IDT lookups and segment register reloads reduced transition latency to under 50 cycles",
+"notes that modern 64-bit kernels use SYSCALL exclusively for user-kernel transitions"
+],
+"follow_up": false
+},
+{
+"id": "OS-129",
+"question": "What is the O_DIRECT flag in Unix file I/O, and why do high-performance relational databases (such as Oracle or PostgreSQL) use it to bypass the OS Page Cache?",
+"subject": "Operating Systems",
+"topic": "I/O and Storage",
+"difficulty": "MEDIUM",
+"type": "DESIGN",
+"concepts": [
+"O_DIRECT",
+"page cache bypass",
+"double buffering",
+"DMA alignment",
+"database buffer pool"
+],
+"criteria": [
+"explains that O_DIRECT transfers data directly between user-space buffers and the storage device via DMA without caching in the kernel page cache",
+"explains that database engines maintain their own sophisticated buffer pool managers (e.g., adaptive replacement, write queues)",
+"identifies that using normal buffered I/O causes 'double buffering' (wasting RAM by caching data in both DB memory and OS page cache)",
+"notes the requirement: user buffers, file offsets, and lengths must strictly align to disk sector/block boundaries"
+],
+"follow_up": true
+},
+{
+"id": "OS-130",
+"question": "How does the Linux Out-Of-Memory (OOM) Killer calculate a process's 'badness score' when determining which process to terminate under critical memory exhaustion?",
+"subject": "Operating Systems",
+"topic": "Virtual Memory",
+"difficulty": "MEDIUM",
+"type": "PROBLEM_SOLVING",
+"concepts": [
+"OOM killer",
+"badness score",
+"oom_score_adj",
+"RAM and swap usage",
+"root process protection"
+],
+"criteria": [
+"explains that the OOM killer activates when physical RAM and swap are completely exhausted and allocation cannot proceed",
+"explains that the base badness score is proportional to the percentage of total memory and swap consumed by the process",
+"identifies heuristics: short-lived, high-memory consumers receive higher scores; root tasks and init (PID 1) receive score reductions",
+"explains how system administrators tune oom_score_adj (-1000 to +1000) to immunize critical services (like sshd or databases)"
+],
+"follow_up": false
+},
+{
+"id": "OS-131",
+"question": "What is the Thundering Herd problem in network socket servers using epoll, and how does the EPOLLEXCLUSIVE flag resolve it?",
+"subject": "Operating Systems",
+"topic": "I/O and Storage",
+"difficulty": "MEDIUM",
+"type": "PROBLEM_SOLVING",
+"concepts": [
+"thundering herd",
+"epoll",
+"EPOLLEXCLUSIVE",
+"multi-process server",
+"context-switch storm",
+"accept()"
+],
+"criteria": [
+"describes the scenario: multiple worker processes wait on the same listening socket in their epoll sets",
+"explains that when a single client connects, historically all worker processes woke up simultaneously, but only one succeeded accept()",
+"explains the CPU waste and lock contention caused by waking N-1 processes for a single event",
+"explains that EPOLLEXCLUSIVE ensures the kernel wakes up exactly ONE waiting epoll instance when an event arrives"
+],
+"follow_up": true
+},
+{
+"id": "OS-132",
+"question": "In the Linux Completely Fair Scheduler (CFS), how do the parameters 'sched_latency_ns' and 'min_granularity_ns' control responsiveness versus context switch overhead?",
+"subject": "Operating Systems",
+"topic": "CPU Scheduling",
+"difficulty": "MEDIUM",
+"type": "PERFORMANCE",
+"concepts": [
+"sched_latency_ns",
+"min_granularity_ns",
+"CFS epoch",
+"context switch overhead",
+"target scheduling latency"
+],
+"criteria": [
+"defines sched_latency_ns as the target timeframe in which all active runnable processes should run at least once",
+"explains that each task's slice is calculated as sched_latency_ns * (task_weight / total_weight)",
+"explains that min_granularity_ns sets a hard minimum on any time slice to prevent thrashing context switches under heavy task counts",
+"describes how CFS extends latency dynamically when number of tasks * min_granularity exceeds sched_latency_ns"
+],
+"follow_up": false
+},
+{
+"id": "OS-133",
+"question": "How does the Linux Directory Cache (dcache) and dentry structure optimize file path resolution from root to leaf?",
+"subject": "Operating Systems",
+"topic": "File Systems",
+"difficulty": "MEDIUM",
+"type": "EXPLANATION",
+"concepts": [
+"dcache",
+"dentry",
+"path resolution",
+"RCU-walk",
+"negative dentries"
+],
+"criteria": [
+"explains that resolving a path (e.g., /usr/bin/python) without caching requires disk lookups for every intermediate directory inode",
+"describes how dentry objects link path components in a cached in-memory tree, allowing path lookups without touching disk",
+"explains the concept of 'negative dentries' caching non-existent filenames to instantly reject missing file lookups",
+"explains RCU-walk: traversing dentry paths lock-free without updating reference counts for blazing lookup speed"
+],
+"follow_up": true
+},
+{
+"id": "OS-134",
+"question": "What is the difference between POSIX Shared Memory (shm_open / mmap) and System V Shared Memory (shmget / shmat)?",
+"subject": "Operating Systems",
+"topic": "Processes",
+"difficulty": "MEDIUM",
+"type": "COMPARISON",
+"concepts": [
+"POSIX shared memory",
+"System V shared memory",
+"shm_open",
+"shmget",
+"file descriptor integration",
+"ipcs"
+],
+"criteria": [
+"explains that POSIX shared memory uses filesystem-style names (/dev/shm) and integrates with standard file descriptors via ftruncate/mmap",
+"explains that System V shared memory relies on numeric keys (ftok), separate IPC namespaces, and tools like ipcs/ipcrm",
+"highlights that POSIX shared memory automatically cleans up on reference count drop and supports standard file permissions",
+"identifies that POSIX API is generally preferred in modern systems due to cleaner semantics and standard descriptor integration"
+],
+"follow_up": false
+},
+{
+"id": "OS-135",
+"question": "How does the OS Page Cache Readahead heuristic detect sequential file access patterns and prefetch disk blocks?",
+"subject": "Operating Systems",
+"topic": "File Systems",
+"difficulty": "MEDIUM",
+"type": "PERFORMANCE",
+"concepts": [
+"readahead",
+"sequential access",
+"readahead window",
+"async prefetching",
+"random I/O detection"
+],
+"criteria": [
+"explains that when the OS detects consecutive sequential page requests, it proactively fetches subsequent pages into page cache",
+"describes the readahead window doubling in size as sequential access continues up to a maximum limit",
+"explains asynchronous prefetching: issuing background I/O while the application processes current data, hiding disk latency",
+"explains that if access becomes random, readahead window immediately collapses to zero to avoid wasted I/O bandwidth"
+],
+"follow_up": false
+},
+{
+"id": "OS-136",
+"question": "How does io_uring in the Linux kernel revolutionize asynchronous I/O compared to POSIX AIO and epoll?",
+"subject": "Operating Systems",
+"topic": "I/O and Storage",
+"difficulty": "HARD",
+"type": "DESIGN",
+"concepts": [
+"io_uring",
+"submission queue",
+"completion queue",
+"lockless ring buffer",
+"zero-syscall submission"
+],
+"criteria": [
+"explains the two ring buffers shared between kernel and user space: Submission Queue (SQ) and Completion Queue (CQ)",
+"highlights zero-copy, lockless memory-mapped ring design that eliminates system call overhead on submission",
+"explains kernel polling mode (IORING_SETUP_SQPOLL): a kernel thread continuously reaps requests without user-space syscalls",
+"explains support for arbitrary I/O (files, network sockets, timers) unlike Linux AIO which was restricted to O_DIRECT disk files"
+],
+"follow_up": true
+},
+{
+"id": "OS-137",
+"question": "What is Kernel Page Table Isolation (KPTI), and how does it mitigate the hardware Meltdown speculative execution vulnerability at the cost of system call performance?",
+"subject": "Operating Systems",
+"topic": "Memory Management",
+"difficulty": "HARD",
+"type": "SECURITY",
+"concepts": [
+"KPTI",
+"Meltdown vulnerability",
+"speculative execution",
+"kernel address space",
+"TLB flush penalty"
+],
+"criteria": [
+"explains Meltdown: speculative out-of-order CPU execution bypassed privilege checks, leaking kernel memory via cache side-channels",
+"explains the traditional model: kernel memory mapped into every user address space (marked supervisor-only) for fast syscalls",
+"describes KPTI: maintains two distinct page tables (one for user space with almost no kernel mapped, and one full kernel table)",
+"identifies the performance penalty: switching page tables (CR3 register) on every syscall/interrupt triggers expensive TLB invalidations"
+],
+"follow_up": true
+},
+{
+"id": "OS-138",
+"question": "In multiprocessor real-time scheduling, what is Dhall's Effect, and why can Priority-Driven algorithms fail on multi-core systems even at low CPU utilization?",
+"subject": "Operating Systems",
+"topic": "CPU Scheduling",
+"difficulty": "HARD",
+"type": "PERFORMANCE",
+"concepts": [
+"Dhall's effect",
+"multiprocessor real-time scheduling",
+"Earliest Deadline First",
+"Rate Monotonic",
+"utilization bound collapse"
+],
+"criteria": [
+"describes the scenario: m processors with m tasks having high frequency and tiny computation, plus 1 task with slightly later deadline and long computation",
+"explains how standard global EDF or RMS gives priority to the m small tasks, leaving the large task to miss its deadline",
+"highlights that this deadline miss occurs even when total system CPU utilization is barely above 1.0 (far below m processors)",
+"identifies modern solutions: partitioned scheduling or hybrid zero-laxity scheduling (EDZL)"
+],
+"follow_up": true
+},
+{
+"id": "OS-139",
+"question": "How does Memory Ballooning in hypervisors reclaim physical RAM from idle guest virtual machines without guest kernel cooperation?",
+"subject": "Operating Systems",
+"topic": "Virtual Memory",
+"difficulty": "HARD",
+"type": "DESIGN",
+"concepts": [
+"memory ballooning",
+"hypervisor",
+"balloon driver",
+"guest OS page reclamation",
+"memory overcommitment"
+],
+"criteria": [
+"defines memory overcommitment as allocating more virtual RAM to VMs than physical host RAM actually installed",
+"describes the balloon driver installed inside the guest OS",
+"explains balloon inflation: hypervisor asks driver to allocate pinned kernel memory inside guest, then hypervisor reclaims the underlying physical frames",
+"explains balloon deflation: hypervisor returns physical frames when guest memory pressure rises"
+],
+"follow_up": true
+},
+{
+"id": "OS-140",
+"question": "How does a Resource Allocation Graph (RAG) detect deadlocks, and how does the presence of multiple resource instances affect cycle detection algorithms?",
+"subject": "Operating Systems",
+"topic": "Deadlocks",
+"difficulty": "HARD",
+"type": "PROBLEM_SOLVING",
+"concepts": [
+"Resource Allocation Graph",
+"claim edge",
+"request edge",
+"assignment edge",
+"cycle detection vs deadlock",
+"knot"
+],
+"criteria": [
+"distinguishes request edges (process -> resource) from assignment edges (resource -> process)",
+"proves that for single-instance resources, a cycle in the RAG is a necessary AND sufficient condition for deadlock",
+"proves that for multi-instance resources, a cycle is necessary but NOT sufficient (a knot or reduction algorithm like Banker's is required)",
+"demonstrates an example graph with a cycle where no deadlock occurs due to external resource releases"
+],
+"follow_up": true
+},
+{
+"id": "OS-141",
+"question": "How do Linux User Namespaces allow non-root users to execute rootless containers, and what security mechanisms prevent privilege escalation to the host?",
+"subject": "Operating Systems",
+"topic": "OS Fundamentals",
+"difficulty": "HARD",
+"type": "SECURITY",
+"concepts": [
+"user namespaces",
+"rootless containers",
+"UID/GID mapping",
+"capabilities",
+"privilege escalation prevention"
+],
+"criteria": [
+"explains that user namespaces map an unprivileged user (e.g., UID 1000) on the host to UID 0 (root) inside the container",
+"explains that the process gains full capabilities (CAP_NET_ADMIN, CAP_SYS_ADMIN) ONLY within its own namespace",
+"explains that operations affecting the host system (loading kernel modules, raw disk writes) are strictly blocked by the kernel",
+"identifies configuration files (/etc/subuid and /etc/subgid) defining permissible subordinate UID ranges"
+],
+"follow_up": true
+},
+{
+"id": "OS-142",
+"question": "What are Split Locks in multi-core x86 processors, and why does the Linux kernel detect and penalize them?",
+"subject": "Operating Systems",
+"topic": "Process Synchronization",
+"difficulty": "HARD",
+"type": "PERFORMANCE",
+"concepts": [
+"split lock",
+"unaligned atomic access",
+"bus lock",
+"cache line boundary",
+"bus lock penalty"
+],
+"criteria": [
+"defines a split lock as an atomic instruction (e.g., LOCK CMPXCHG) operating on an operand that spans across two 64-byte cache lines",
+"explains that the CPU cannot use normal cache-coherency line locking and must assert a global hardware BUS LOCK",
+"explains that the bus lock freezes memory accesses across ALL CPU cores on the system for hundreds of cycles",
+"describes the Linux split-lock detection mechanism (/proc/sys/kernel/split_lock_mitigate) that traps or slows offending processes"
+],
+"follow_up": true
+},
+{
+"id": "OS-143",
+"question": "How do Linux Page Cache writeback flusher threads (dirty_ratio and dirty_background_ratio) prevent memory starvation while avoiding I/O write starvation?",
+"subject": "Operating Systems",
+"topic": "Virtual Memory",
+"difficulty": "HARD",
+"type": "PERFORMANCE",
+"concepts": [
+"dirty_background_ratio",
+"dirty_ratio",
+"flusher threads",
+"writeback throttling",
+"I/O latency spikes"
+],
+"criteria": [
+"defines dirty_background_ratio (e.g., 10%): threshold where background kernel threads asynchronously write dirty pages to storage",
+"defines dirty_ratio (e.g., 20%): hard ceiling where writing processes are blocked from further writes and forced to execute synchronous writeback",
+"explains the danger of setting thresholds too high: sudden massive writeback bursts saturate disk queues causing application latency stalls",
+"explains modern byte-based alternatives (dirty_bytes, dirty_background_bytes) for systems with hundreds of gigabytes of RAM"
+],
+"follow_up": true
+},
+{
+"id": "OS-144",
+"question": "How does the Linux cgroups v2 CPU Bandwidth Controller enforce hard CPU quotas using quota and period parameters without starvation?",
+"subject": "Operating Systems",
+"topic": "CPU Scheduling",
+"difficulty": "HARD",
+"type": "PERFORMANCE",
+"concepts": [
+"cgroups v2",
+"cpu.max",
+"CPU quota",
+"CPU period",
+"CFS bandwidth throttling"
+],
+"criteria": [
+"explains cpu.max format: '$QUOTA $PERIOD' (e.g., '200000 100000' allows 2 full CPU cores of execution every 100ms period)",
+"explains that threads in the cgroup consume execution time from a shared pool during the period",
+"describes throttling: once quota is exhausted, CFS removes all threads in the cgroup from runqueues until the period timer expires",
+"explains the burst feature in modern kernels that allows borrowing unused quota from previous periods to absorb transient spikes"
+],
+"follow_up": true
+},
+{
+"id": "OS-145",
+"question": "How do file systems prevent data loss from Superblock corruption, and how does the e2fsck/fsck recovery tool locate backup superblocks?",
+"subject": "Operating Systems",
+"topic": "File Systems",
+"difficulty": "HARD",
+"type": "PROBLEM_SOLVING",
+"concepts": [
+"superblock",
+"block groups",
+"backup superblocks",
+"sparse superblock feature",
+"fsck recovery"
+],
+"criteria": [
+"explains that the primary superblock resides at a fixed offset (1024 bytes) containing critical filesystem geometry, block sizes, and inode counts",
+"explains that file systems (like ext4) write identical backup superblocks into multiple block groups across the disk",
+"explains the 'sparse superblock' optimization: backing up only in block groups 0, 1, and powers of 3, 5, and 7",
+"describes using fsck with '-b <block_number>' to restore file system state from an alternate backup superblock"
+],
+"follow_up": true
+},
+{
+"id": "OS-146",
+"question": "How does an Operating System Hardware Watchdog Timer work, and how does it differentiate a temporary high-load spike from a true hard kernel lockup?",
+"subject": "Operating Systems",
+"topic": "OS Fundamentals",
+"difficulty": "HARD",
+"type": "PROBLEM_SOLVING",
+"concepts": [
+"hardware watchdog",
+"soft lockup",
+"hard lockup",
+"Non-Maskable Interrupt",
+"watchdog pet / ping"
+],
+"criteria": [
+"explains the hardware watchdog mechanism: a countdown timer that reboots the hardware if not periodically 'pet' (reset) by software",
+"distinguishes soft lockup (kernel thread blocked in a loop without yielding for >20s, but interrupts still work)",
+"distinguishes hard lockup (CPU frozen with interrupts completely disabled, detected by Non-Maskable Interrupts - NMI)",
+"explains how the kernel NMI watchdog uses architectural performance counter overflows to capture stack traces before reboot"
+],
+"follow_up": true
+},
+{
+"id": "OS-147",
+"question": "What is the difference between a Kernel Panic, a Kernel Oops, and a User-Space Segmentation Fault?",
+"subject": "Operating Systems",
+"topic": "OS Fundamentals",
+"difficulty": "HARD",
+"type": "COMPARISON",
+"concepts": [
+"kernel panic",
+"kernel oops",
+"segmentation fault",
+"unhandled kernel exception",
+"kdump and crash dump"
+],
+"criteria": [
+"defines segmentation fault: user-space invalid memory access; kernel terminates only the faulting process with SIGSEGV",
+"defines kernel oops: kernel code hits an invalid state (e.g., null pointer); kills the current kernel thread but allows the OS to attempt running",
+"defines kernel panic: fatal, unrecoverable system error in critical code (or panic_on_oops); halts the CPU immediately to prevent disk corruption",
+"explains how kdump/kexec boots a secondary lightweight crash kernel to write physical RAM into a vmcore dump"
+],
+"follow_up": true
+},
+{
+"id": "OS-148",
+"question": "How does Asynchronous Signal Delivery work at the assembly stack frame level, and how does the sigreturn() system call restore interrupted user context?",
+"subject": "Operating Systems",
+"topic": "Processes",
+"difficulty": "HARD",
+"type": "EXPLANATION",
+"concepts": [
+"signal delivery stack frame",
+"sigreturn",
+"trampoline",
+"ucontext_t",
+"register preservation"
+],
+"criteria": [
+"explains that when transitioning back to user space, the kernel intercepts control if a signal is pending",
+"describes how the kernel pushes the interrupted thread's registers and execution state (ucontext) onto the user stack",
+"explains how the kernel sets the user instruction pointer to the signal handler and return address to a signal trampoline",
+"explains that the trampoline invokes sys_sigreturn to switch back to kernel mode and seamlessly restore the original saved context"
+],
+"follow_up": true
+},
+{
+"id": "OS-149",
+"question": "How do lock-free Michael-Scott queues achieve concurrent FIFO enqueue and dequeue operations without blocking or mutual exclusion locks?",
+"subject": "Operating Systems",
+"topic": "Process Synchronization",
+"difficulty": "HARD",
+"type": "DESIGN",
+"concepts": [
+"Michael-Scott queue",
+"lock-free FIFO",
+"Compare-And-Swap",
+"sentinel dummy node",
+"helping mechanism"
+],
+"criteria": [
+"describes the linked-list structure initialized with a sentinel dummy node pointed to by both Head and Tail",
+"explains the two-step enqueue: CAS tail->next from null to new node, then CAS tail from old node to new node",
+"explains the 'helping mechanism': if a thread observes tail lagging behind tail->next, it attempts to advance tail before proceeding",
+"proves that concurrent enqueues and dequeues operate on opposite ends of the queue without mutual interference"
+],
+"follow_up": true
+},
+{
+"id": "OS-150",
+"question": "What is the difference between Synchronous Rendezvous IPC and Asynchronous Mailbox IPC in microkernel architectures, and how does each affect process scheduling?",
+"subject": "Operating Systems",
+"topic": "OS Fundamentals",
+"difficulty": "HARD",
+"type": "COMPARISON",
+"concepts": [
+"synchronous rendezvous",
+"asynchronous mailbox",
+"microkernel IPC",
+"buffer allocation",
+"direct context switch"
+],
+"criteria": [
+"explains synchronous rendezvous (e.g., L4, Mach): sender and receiver must meet simultaneously; whoever arrives first blocks",
+"highlights the zero-buffer benefit of rendezvous: data transfers directly between CPU registers without kernel queue allocations",
+"explains asynchronous mailbox: sender drops message in kernel buffer and continues; requires memory allocation and flow control",
+"connects synchronous rendezvous to direct thread scheduling: the sender's CPU timeslice is directly donated to the receiver"
+],
+"follow_up": true
+},
+{
+"id": "OS-151",
+"question": "What are the standard segments of a process virtual address space (Text, Data, BSS, Heap, Stack), and what does each store?",
+"subject": "Operating Systems",
+"topic": "Memory Management",
+"difficulty": "EASY",
+"type": "DEFINITION",
+"concepts": [
+"text segment",
+"data segment",
+"BSS segment",
+"heap",
+"stack",
+"uninitialized globals"
+],
+"criteria": [
+"defines Text (read-only machine code) and Data (initialized global/static variables)",
+"defines BSS (uninitialized global/static variables, zero-filled by the OS at load time)",
+"defines Heap (dynamically allocated memory growing upward) and Stack (local variables, return addresses growing downward)",
+"explains why BSS takes zero storage space in the executable binary on disk"
+],
+"follow_up": false
+},
+{
+"id": "OS-152",
+"question": "What is the SSD TRIM command, and why is it necessary for flash storage performance and wear leveling?",
+"subject": "Operating Systems",
+"topic": "File Systems",
+"difficulty": "EASY",
+"type": "EXPLANATION",
+"concepts": [
+"TRIM command",
+"NAND flash",
+"block erase vs page write",
+"garbage collection",
+"wear leveling"
+],
+"criteria": [
+"explains that NAND flash memory can write at the page level but can only erase at the larger block level",
+"explains that deleting a file in an OS removes metadata without actively informing the storage hardware",
+"describes how the TRIM command notifies the SSD controller that specific sector ranges are no longer in use",
+"connects TRIM to reducing write amplification and accelerating background SSD garbage collection"
+],
+"follow_up": false
+},
+{
+"id": "OS-153",
+"question": "What does a process 'nice value' (-20 to 19) represent in Unix/Linux scheduling, and who is permitted to set negative values?",
+"subject": "Operating Systems",
+"topic": "CPU Scheduling",
+"difficulty": "EASY",
+"type": "EXPLANATION",
+"concepts": [
+"nice value",
+"priority",
+"CPU time allocation",
+"root privileges",
+"user permissions"
+],
+"criteria": [
+"defines nice value as a user-space priority hint ranging from -20 (highest priority) to 19 (lowest priority)",
+"explains that high nice values 'be nice' to other processes by yielding more CPU time",
+"notes that regular users can only increase their nice value (reduce priority)",
+"explains that only the root superuser (or process with CAP_SYS_NICE) can assign negative nice values"
+],
+"follow_up": false
+},
+{
+"id": "OS-154",
+"question": "How do Unix Domain Sockets (AF_UNIX) differ from Internet Sockets (AF_INET) when communicating on the same local machine?",
+"subject": "Operating Systems",
+"topic": "Processes",
+"difficulty": "EASY",
+"type": "COMPARISON",
+"concepts": [
+"Unix Domain Sockets",
+"Internet Sockets",
+"network stack bypass",
+"checksumming",
+"filesystem permissions"
+],
+"criteria": [
+"explains that Unix Domain Sockets bypass the entire TCP/IP network protocol stack (no IP encapsulation, routing, or checksums)",
+"explains that data transfers directly through kernel memory buffers, yielding significantly lower latency and higher throughput",
+"notes that Unix Domain Sockets use filesystem pathnames and leverage standard POSIX file permissions for access control",
+"notes that Internet Sockets can communicate across machines, whereas Unix Domain Sockets are restricted to local IPC"
+],
+"follow_up": false
+},
+{
+"id": "OS-155",
+"question": "What is a Sparse File in an operating system file system, and how does it save physical disk space?",
+"subject": "Operating Systems",
+"topic": "File Systems",
+"difficulty": "EASY",
+"type": "DEFINITION",
+"concepts": [
+"sparse file",
+"unallocated blocks",
+"hole in file",
+"zero blocks",
+"storage optimization"
+],
+"criteria": [
+"defines a sparse file as a file containing large sequences of zero bytes where empty blocks are not allocated on disk",
+"explains that the file system records holes in the inode block map rather than dedicating physical storage sectors",
+"explains that when reading a hole, the OS automatically returns zeros to the application without reading storage",
+"identifies common use cases (virtual machine disk images, database tablespaces)"
+],
+"follow_up": false
+},
+{
+"id": "OS-156",
+"question": "What is the Linux /proc filesystem, and why does it consume zero physical disk space?",
+"subject": "Operating Systems",
+"topic": "OS Fundamentals",
+"difficulty": "EASY",
+"type": "CONCEPTUAL",
+"concepts": [
+"procfs",
+"pseudo-filesystem",
+"kernel data structures",
+"runtime introspection",
+"zero disk footprint"
+],
+"criteria": [
+"defines /proc as a virtual pseudo-filesystem acting as an interface to internal kernel data structures and process states",
+"explains that files in /proc do not exist on disk; they are dynamically generated in RAM on-the-fly when read",
+"identifies that numbered directories (/proc/[PID]) expose per-process metrics (memory maps, file descriptors, status)",
+"identifies system-wide diagnostic files (e.g., /proc/cpuinfo, /proc/meminfo)"
+],
+"follow_up": false
+},
+{
+"id": "OS-157",
+"question": "What is a Core Dump, when is it generated, and how does the ulimit tool control its creation?",
+"subject": "Operating Systems",
+"topic": "Processes",
+"difficulty": "EASY",
+"type": "EXPLANATION",
+"concepts": [
+"core dump",
+"fatal signals",
+"ulimit -c",
+"post-mortem debugging",
+"memory snapshot"
+],
+"criteria": [
+"defines a core dump as a snapshot of a process's memory space and CPU registers written to disk upon fatal abnormal termination",
+"identifies triggering signals (e.g., SIGSEGV, SIGABRT, SIGFPE)",
+"explains that 'ulimit -c' sets the maximum allowable size for a core dump file (0 disables core dumps)",
+"connects core dump files to post-mortem debugging using tools like GDB"
+],
+"follow_up": false
+},
+{
+"id": "OS-158",
+"question": "What is the 'Ostrich Algorithm' in deadlock handling, and why do mainstream general-purpose operating systems use it?",
+"subject": "Operating Systems",
+"topic": "Deadlocks",
+"difficulty": "EASY",
+"type": "CONCEPTUAL",
+"concepts": [
+"Ostrich algorithm",
+"deadlock handling",
+"performance trade-off",
+"rare occurrence",
+"reboot recovery"
+],
+"criteria": [
+"defines the Ostrich algorithm: stick your head in the sand and ignore the problem completely",
+"explains that complex algorithms (like Banker's algorithm or continuous cycle detection) introduce prohibitive runtime overhead",
+"explains the engineering trade-off: deadlocks in general-purpose computing are rare enough that periodic restarts or killing processes is cheaper than continuous prevention",
+"contrasts general-purpose OSs with mission-critical real-time systems where deadlocks must be formally prevented"
+],
+"follow_up": false
+},
+{
+"id": "OS-159",
+"question": "What is eBPF (Extended Berkeley Packet Filter), and how does it allow developers to run custom code inside the Linux kernel safely?",
+"subject": "Operating Systems",
+"topic": "OS Fundamentals",
+"difficulty": "EASY",
+"type": "EXPLANATION",
+"concepts": [
+"eBPF",
+"in-kernel virtual machine",
+"safety verifier",
+"JIT compilation",
+"kernel observability"
+],
+"criteria": [
+"defines eBPF as a sandboxed virtual machine running inside the Linux kernel executing user-supplied bytecode",
+"explains that the in-kernel verifier guarantees safety: checks for unbounded loops, out-of-bounds memory access, and crashes",
+"explains that code is JIT-compiled to native machine code running at near-native hardware speed",
+"identifies key use cases: high-performance networking (XDP), security monitoring, and live system tracing"
+],
+"follow_up": true
+},
+{
+"id": "OS-160",
+"question": "What is a Loadable Kernel Module (LKM), and what are the security risks associated with dynamically loading modules into a running kernel?",
+"subject": "Operating Systems",
+"topic": "OS Fundamentals",
+"difficulty": "EASY",
+"type": "EXPLANATION",
+"concepts": [
+"Loadable Kernel Module",
+"insmod",
+"modprobe",
+"Ring 0 privileges",
+"kernel rootkit"
+],
+"criteria": [
+"defines an LKM as compiled code that can be inserted into or removed from the running kernel on-demand without rebooting",
+"explains that once loaded, module code runs with full supervisor privileges (Ring 0) with unrestricted hardware and memory access",
+"identifies security risks: a buggy module can crash the entire OS (Kernel Panic); a malicious module (Rootkit) can hide processes and subvert security checks",
+"identifies defensive mitigations such as module cryptographic signing (Secure Boot)"
+],
+"follow_up": false
+},
+{
+"id": "OS-161",
+"question": "What is a Loop Device (/dev/loop) in Linux, and how does it allow disk image files to be mounted as file systems?",
+"subject": "Operating Systems",
+"topic": "File Systems",
+"difficulty": "EASY",
+"type": "DEFINITION",
+"concepts": [
+"loop device",
+"pseudo-device",
+"block device abstraction",
+"disk image mounting",
+"losetup"
+],
+"criteria": [
+"defines a loop device as a virtual pseudo-device that exposes a regular file as a block device",
+"explains that file systems can only mount block devices, not plain data files",
+"describes the translation: reads and writes directed to the loop block device are redirected by the kernel into the underlying image file",
+"identifies practical applications: mounting ISO images, container layers, and virtual disk partitions"
+],
+"follow_up": false
+},
+{
+"id": "OS-162",
+"question": "What is a Guard Page in memory management, and how does it detect stack overflow crashes?",
+"subject": "Operating Systems",
+"topic": "Memory Management",
+"difficulty": "EASY",
+"type": "EXPLANATION",
+"concepts": [
+"guard page",
+"stack overflow",
+"page permissions",
+"SIGSEGV",
+"memory corruption protection"
+],
+"criteria": [
+"defines a guard page as an unmapped or inaccessible page placed immediately after the boundary of a thread stack",
+"explains that the MMU permissions for the guard page are set to PROT_NONE (no read, write, or execute)",
+"describes how an expanding stack touching the guard page triggers an immediate page fault exception",
+"explains that the OS traps this access and delivers a SIGSEGV signal, preventing the stack from silently corrupting the heap"
+],
+"follow_up": false
+},
+{
+"id": "OS-163",
+"question": "What is the difference between Reader-Preference and Writer-Preference policies in Read-Write Locks?",
+"subject": "Operating Systems",
+"topic": "Process Synchronization",
+"difficulty": "EASY",
+"type": "COMPARISON",
+"concepts": [
+"read-write lock",
+"reader preference",
+"writer preference",
+"starvation",
+"concurrency trade-off"
+],
+"criteria": [
+"explains Reader-Preference: new readers can acquire the lock immediately even if a writer is waiting (risking writer starvation)",
+"explains Writer-Preference: once a writer requests the lock, incoming readers are queued until the writer completes (risking reader starvation)",
+"identifies that in read-heavy workloads, reader preference can starve writers indefinitely",
+"identifies Fair (FIFO) policies as balancing both by queuing readers and writers in arrival order"
+],
+"follow_up": true
+},
+{
+"id": "OS-164",
+"question": "What happens when a process unlinks (deletes) a file that another process currently has open in Unix?",
+"subject": "Operating Systems",
+"topic": "File Systems",
+"difficulty": "EASY",
+"type": "EXPLANATION",
+"concepts": [
+"unlink",
+"open file descriptor",
+"directory entry removal",
+"inode reference count",
+"deferred block deallocation"
+],
+"criteria": [
+"explains that unlink() immediately removes the filename entry from the directory namespace (new processes cannot open it)",
+"explains that existing open file descriptors remain completely valid; processes can continue reading and writing data blocks",
+"describes how the kernel tracks both hard-link counts and active file descriptor open counts in the inode",
+"explains that physical data blocks and inode structures are freed ONLY when the last process closes the file"
+],
+"follow_up": false
+},
+{
+"id": "OS-165",
+"question": "What is the difference between SCHED_FIFO and SCHED_RR real-time scheduling policies in Linux?",
+"subject": "Operating Systems",
+"topic": "CPU Scheduling",
+"difficulty": "EASY",
+"type": "COMPARISON",
+"concepts": [
+"SCHED_FIFO",
+"SCHED_RR",
+"real-time scheduling",
+"time quantum",
+"preemption"
+],
+"criteria": [
+"explains that both are POSIX real-time static priority policies that strictly preempt standard CFS tasks",
+"explains SCHED_FIFO: running tasks execute indefinitely until they block for I/O, yield voluntarily, or are preempted by higher priority",
+"explains SCHED_RR: identical to SCHED_FIFO, but tasks at the SAME priority level are time-sliced using a round-robin quantum",
+"identifies that an infinite loop in a SCHED_FIFO task will starve all equal and lower priority tasks completely"
+],
+"follow_up": false
+},
+{
+"id": "OS-166",
+"question": "How does the Linux clone() system call generalize process and thread creation, and how do flags like CLONE_VM and CLONE_FILES define sharing semantics?",
+"subject": "Operating Systems",
+"topic": "Processes",
+"difficulty": "MEDIUM",
+"type": "EXPLANATION",
+"concepts": [
+"clone",
+"CLONE_VM",
+"CLONE_FILES",
+"CLONE_FS",
+"pthread implementation"
+],
+"criteria": [
+"explains that both fork() and pthread_create() internally invoke the clone() system call with different flag combinations",
+"defines CLONE_VM: child shares the same virtual memory address space as the parent (standard for threads)",
+"defines CLONE_FILES: child shares the open file descriptor table with the parent",
+"explains that fork() is simply clone() called with none of the sharing flags asserted"
+],
+"follow_up": true
+},
+{
+"id": "OS-167",
+"question": "How does the Linux kernel dual-list (Active List and Inactive List) LRU approximation algorithm evict pages under memory pressure?",
+"subject": "Operating Systems",
+"topic": "Virtual Memory",
+"difficulty": "MEDIUM",
+"type": "PROBLEM_SOLVING",
+"concepts": [
+"active list",
+"inactive list",
+"page replacement",
+"reference bit",
+"kswapd"
+],
+"criteria": [
+"explains that memory pages reside either on the Active List (frequently referenced) or Inactive List (candidates for eviction)",
+"describes how freshly allocated pages enter the Inactive List; accessing them a second time promotes them to the Active List",
+"describes the background scanner (kswapd) checking hardware reference bits, demoting cold pages from Active to Inactive",
+"explains that pages at the tail of the Inactive List are unmapped and reclaimed, preventing one-time scan loops from evicting working sets"
+],
+"follow_up": true
+},
+{
+"id": "OS-168",
+"question": "How do POSIX Message Queues differ from traditional Unix Pipes in terms of message boundaries and priority ordering?",
+"subject": "Operating Systems",
+"topic": "Processes",
+"difficulty": "MEDIUM",
+"type": "COMPARISON",
+"concepts": [
+"POSIX message queue",
+"pipes",
+"message boundaries",
+"priority delivery",
+"async notification"
+],
+"criteria": [
+"explains that pipes are raw byte streams with no concept of message boundaries (readers must implement framing protocols)",
+"explains that message queues transmit discrete, atomic messages preserving payload boundaries",
+"highlights that message queues support priority ordering: higher-priority messages are placed at the front of the queue",
+"identifies asynchronous notification capabilities (mq_notify generating signals or spawning threads on arrival)"
+],
+"follow_up": false
+},
+{
+"id": "OS-169",
+"question": "How can two unrelated Unix processes pass an open file descriptor between each other using Unix Domain Sockets and the SCM_RIGHTS control message?",
+"subject": "Operating Systems",
+"topic": "Processes",
+"difficulty": "MEDIUM",
+"type": "PROBLEM_SOLVING",
+"concepts": [
+"SCM_RIGHTS",
+"file descriptor passing",
+"Unix Domain Sockets",
+"struct msghdr",
+"kernel file table"
+],
+"criteria": [
+"explains that file descriptors are integer indices local to a single process table and cannot be transferred by simply writing the integer",
+"describes sendmsg() with ancillary control data (cmsg) containing the SCM_RIGHTS protocol message",
+"explains that the kernel intercepts the message, duplicates the underlying 'struct file' entry, and allocates a new integer descriptor in the receiving process",
+"identifies architectural applications (e.g., privileged helper process opening port 80 and passing the socket to an unprivileged worker)"
+],
+"follow_up": true
+},
+{
+"id": "OS-170",
+"question": "Why did the Linux SLUB memory allocator replace the legacy SLAB allocator as the default kernel allocator?",
+"subject": "Operating Systems",
+"topic": "Memory Management",
+"difficulty": "MEDIUM",
+"type": "COMPARISON",
+"concepts": [
+"SLUB allocator",
+"SLAB allocator",
+"per-CPU queues",
+"metadata overhead",
+"multi-core scaling"
+],
+"criteria": [
+"explains that the legacy SLAB allocator maintained complex per-CPU object queues and slab descriptors requiring heavy memory overhead",
+"explains that on systems with thousands of CPUs, SLAB metadata consumed gigabytes of RAM just tracking empty queues",
+"describes how SLUB eliminates separate queue structures and embeds free-list pointers directly inside idle memory objects",
+"highlights that SLUB uses lockless per-CPU page fastpaths for superior multi-core scalability and simpler debugging"
+],
+"follow_up": false
+},
+{
+"id": "OS-171",
+"question": "In Linux Memory Control Groups (cgroups v2), what is the crucial operational difference between 'memory.max' and 'memory.high'?",
+"subject": "Operating Systems",
+"topic": "Virtual Memory",
+"difficulty": "MEDIUM",
+"type": "EXPLANATION",
+"concepts": [
+"cgroups v2",
+"memory.max",
+"memory.high",
+"OOM killer",
+"memory throttling"
+],
+"criteria": [
+"defines memory.max as a hard ceiling: exceeding it immediately triggers memory reclamation, and if unresolvable, the OOM killer terminates processes",
+"defines memory.high as a soft throttling threshold: exceeding it never triggers the OOM killer",
+"explains that when memory.high is breached, processes in the cgroup are throttled and forced into proactive reclaim proportional to the overshoot",
+"identifies memory.high as an optimal buffer to absorb traffic spikes gracefully without abrupt container termination"
+],
+"follow_up": false
+},
+{
+"id": "OS-172",
+"question": "How do Ticket Spinlocks guarantee First-In, First-Out (FIFO) fairness, and why do they still cause cache-line bouncing on multi-core architectures?",
+"subject": "Operating Systems",
+"topic": "Process Synchronization",
+"difficulty": "MEDIUM",
+"type": "PROBLEM_SOLVING",
+"concepts": [
+"ticket spinlock",
+"FIFO fairness",
+"now_serving counter",
+"fetch-and-add",
+"cache-line bouncing"
+],
+"criteria": [
+"explains the bakery-style ticket mechanism: threads atomically fetch-and-add a ticket number and spin until 'now_serving' matches their ticket",
+"proves that ticket locks eliminate starvation by enforcing strictly fair FIFO acquisition order",
+"identifies the cache bottleneck: all spinning cores continuously poll the single shared 'now_serving' memory variable",
+"explains that when the lock holder increments 'now_serving', the cache coherency protocol invalidates that line across all cores simultaneously"
+],
+"follow_up": true
+},
+{
+"id": "OS-173",
+"question": "What is the Flash Translation Layer (FTL) in solid-state storage, and how does Write Amplification factor into SSD endurance?",
+"subject": "Operating Systems",
+"topic": "File Systems",
+"difficulty": "MEDIUM",
+"type": "PERFORMANCE",
+"concepts": [
+"Flash Translation Layer",
+"logical block mapping",
+"wear leveling",
+"write amplification factor",
+"garbage collection"
+],
+"criteria": [
+"defines the FTL as firmware translating logical block addresses (LBAs) into physical NAND flash page locations",
+"explains that because flash blocks must be erased before being rewritten, updating data requires copying valid pages and erasing old blocks",
+"defines Write Amplification Factor (WAF) as the ratio of bytes physically written to NAND flash versus bytes issued by the OS",
+"connects high write amplification to premature NAND cell degradation and reduced SSD lifespan"
+],
+"follow_up": false
+},
+{
+"id": "OS-174",
+"question": "How does the Linux Logical Volume Manager (LVM) and Device Mapper construct dynamic, resizable block devices on top of physical storage?",
+"subject": "Operating Systems",
+"topic": "File Systems",
+"difficulty": "MEDIUM",
+"type": "EXPLANATION",
+"concepts": [
+"Logical Volume Manager",
+"Device Mapper",
+"Physical Volumes",
+"Volume Groups",
+"Logical Volumes",
+"Physical Extents"
+],
+"criteria": [
+"traces the 3-tier hierarchy: Physical Volumes (PVs) pooled into Volume Groups (VGs), carved into Logical Volumes (LVs)",
+"explains that memory is allocated in uniform chunks called Physical Extents (PEs)",
+"describes how the Device Mapper kernel driver transparently maps logical extents to arbitrary physical extents across multiple disks",
+"explains how this abstraction allows resizing volumes online and creating storage mirrors or snapshots on running servers"
+],
+"follow_up": false
+},
+{
+"id": "OS-175",
+"question": "How does Linux Seccomp (Secure Computing Mode) BPF allow container engines to restrict the system call attack surface of untrusted applications?",
+"subject": "Operating Systems",
+"topic": "OS Fundamentals",
+"difficulty": "MEDIUM",
+"type": "SECURITY",
+"concepts": [
+"seccomp",
+"seccomp-bpf",
+"system call filtering",
+"least privilege",
+"attack surface reduction"
+],
+"criteria": [
+"defines seccomp as a kernel sandbox mechanism that intercepts every system call issued by a process",
+"explains that seccomp-bpf passes system call numbers and arguments through a BPF filter program before execution",
+"identifies filter actions: allow, kill process (SECCOMP_RET_KILL), return error (SECCOMP_RET_ERRNO), or notify user-space tracer",
+"identifies that container runtimes (like Docker) block ~40 hazardous system calls (like reboot, kexec_load, mount) by default"
+],
+"follow_up": false
+},
+{
+"id": "OS-176",
+"question": "What is Direct Memory Compaction in the Linux kernel, and why can it cause sudden allocation latency spikes for multi-order page requests?",
+"subject": "Operating Systems",
+"topic": "Memory Management",
+"difficulty": "MEDIUM",
+"type": "PERFORMANCE",
+"concepts": [
+"memory compaction",
+"buddy allocator",
+"external fragmentation",
+"high-order allocations",
+"allocation stall"
+],
+"criteria": [
+"explains that high-order allocations (contiguous multi-page blocks for network rings or huge pages) fail if RAM is fragmented",
+"describes how compaction scans physical memory from both ends: migrating allocated pages to one end to consolidate contiguous free frames",
+"explains that when background compaction fails, the allocating thread is forced to synchronously perform 'direct compaction'",
+"connects moving physical pages and updating page table pointers to execution stalls and latency spikes"
+],
+"follow_up": true
+},
+{
+"id": "OS-177",
+"question": "What are Extended Page Tables (EPT / Nested Paging) in hardware-assisted virtualization, and why does an address translation require two-dimensional page walks?",
+"subject": "Operating Systems",
+"topic": "Virtual Memory",
+"difficulty": "MEDIUM",
+"type": "EXPLANATION",
+"concepts": [
+"Extended Page Tables",
+"nested paging",
+"guest virtual address",
+"guest physical address",
+"host physical address"
+],
+"criteria": [
+"traces the two levels: Guest Virtual Address (GVA) -> Guest Physical Address (GPA) -> Host Physical Address (HPA)",
+"explains that translating GVA to GPA uses the guest's page table, while translating GPA to HPA uses hardware EPT",
+"explains that in a 4-level paging system, each guest page table lookup itself requires traversing 4 host EPT levels (up to 24 memory accesses for one translation)",
+"highlights that hardware TLBs caching the complete GVA -> HPA mapping are critical to making virtualization fast"
+],
+"follow_up": true
+},
+{
+"id": "OS-178",
+"question": "Why does an empty directory in a Unix file system always have a hard link count of at least 2, and how does each subdirectory affect this count?",
+"subject": "Operating Systems",
+"topic": "File Systems",
+"difficulty": "MEDIUM",
+"type": "EXPLANATION",
+"concepts": [
+"directory link count",
+"dot entry",
+"dot-dot entry",
+"inode linking",
+"filesystem hierarchy"
+],
+"criteria": [
+"explains the 2 base links: the directory's own entry in its parent directory, plus the '.' entry inside the directory pointing to itself",
+"explains that creating a subdirectory adds another link because the subdirectory contains a '..' entry pointing to the parent",
+"proves that a directory with N subdirectories always has a link count of N + 2",
+"explains why the OS disallows hard-linking directories directly by users to prevent circular graphs"
+],
+"follow_up": false
+},
+{
+"id": "OS-179",
+"question": "How does the Total Store Order (TSO) hardware memory model (used by x86 processors) differ from Weak Memory Ordering (used by ARM)?",
+"subject": "Operating Systems",
+"topic": "Process Synchronization",
+"difficulty": "MEDIUM",
+"type": "COMPARISON",
+"concepts": [
+"Total Store Order",
+"Weak Ordering",
+"store buffer",
+"store-load reordering",
+"memory fence instructions"
+],
+"criteria": [
+"explains that TSO preserves almost all program orders (Loads are not reordered with Loads, Stores not reordered with Stores)",
+"identifies the single reordering allowed in TSO: Stores can be buffered, allowing a later Load to execute before an earlier Store commits",
+"explains that Weak Ordering (ARM) allows arbitrary reordering of independent loads and stores unless explicitly separated by barriers",
+"connects this difference to why concurrency bugs without explicit memory fences frequently appear on ARM but remain hidden on x86"
+],
+"follow_up": true
+},
+{
+"id": "OS-180",
+"question": "How does a lock-free Single-Producer Single-Consumer (SPSC) ring buffer achieve concurrent read and write operations without mutexes or atomic CAS instructions?",
+"subject": "Operating Systems",
+"topic": "Process Synchronization",
+"difficulty": "MEDIUM",
+"type": "DESIGN",
+"concepts": [
+"SPSC ring buffer",
+"lock-free concurrency",
+"head and tail pointers",
+"memory barriers",
+"single owner mutation"
+],
+"criteria": [
+"explains the ring buffer layout: fixed-size array with Head (written only by Producer) and Tail (written only by Consumer)",
+"highlights that because only ONE thread mutates Head and only ONE mutates Tail, no atomic CAS or locks are required",
+"explains that the producer inspects Tail to ensure the buffer is not full; consumer inspects Head to ensure not empty",
+"emphasizes that acquire-release memory barriers are mandatory to ensure buffer data is visible before updated index pointers are published"
+],
+"follow_up": true
+},
+{
+"id": "OS-181",
+"question": "How did modern operating systems merge the legacy separate 'Buffer Cache' and 'Page Cache' into a unified caching architecture?",
+"subject": "Operating Systems",
+"topic": "File Systems",
+"difficulty": "MEDIUM",
+"type": "CONCEPTUAL",
+"concepts": [
+"unified page cache",
+"buffer cache",
+"block layer",
+"double caching elimination",
+"page cache alignment"
+],
+"criteria": [
+"explains that historically, the Page Cache cached memory pages for mmap/exec, while the Buffer Cache cached raw disk blocks for read/write",
+"identifies the problem: accessing the same file via both mechanisms resulted in double caching and data inconsistency",
+"describes the unified architecture: all cached data resides in the Page Cache; buffers are simply metadata headers pointing to pages",
+"identifies the memory savings and guaranteed cache consistency achieved by unification"
+],
+"follow_up": false
+},
+{
+"id": "OS-182",
+"question": "In the Linux Completely Fair Scheduler (CFS), how is a task's nice value converted into a scheduling weight via the 'prio_to_weight' array?",
+"subject": "Operating Systems",
+"topic": "CPU Scheduling",
+"difficulty": "MEDIUM",
+"type": "EXPLANATION",
+"concepts": [
+"prio_to_weight",
+"CFS weight",
+"geometric scaling",
+"vruntime progression",
+"CPU share ratio"
+],
+"criteria": [
+"explains that nice values (-20 to 19) map to an array of 40 weights using an approximate geometric progression (~1.25 multiplier per nice level)",
+"explains that an increase of 1 nice level grants approximately 10% less CPU time relative to peers",
+"describes how vruntime advances inversely to weight: delta_vruntime = delta_exec_time * (NICE_0_LOAD / task_weight)",
+"concludes that tasks with greater weight accumulate vruntime slower, remaining on the left of the Red-Black tree longer"
+],
+"follow_up": false
+},
+{
+"id": "OS-183",
+"question": "What is the performance advantage of the fallocate() system call over writing zero bytes with write() when creating large pre-allocated files?",
+"subject": "Operating Systems",
+"topic": "File Systems",
+"difficulty": "MEDIUM",
+"type": "PERFORMANCE",
+"concepts": [
+"fallocate",
+"unwritten extents",
+"pre-allocation",
+"disk fragmentation",
+"I/O saturation avoidance"
+],
+"criteria": [
+"explains that write() with zeros forces physical disk writes across all blocks, consuming time and saturating I/O bandwidth",
+"explains that fallocate() manipulates metadata only: allocates contiguous physical extents marked as 'unwritten' in milliseconds",
+"highlights that subsequent reads from unwritten extents return zeros without touching media",
+"identifies benefits: prevents out-of-space errors, guarantees contiguous blocks, and avoids file fragmentation"
+],
+"follow_up": false
+},
+{
+"id": "OS-184",
+"question": "In Intel VT-x hardware virtualization, what is the role of the Virtual Machine Control Structure (VMCS), and what occurs during a 'VM-Exit'?",
+"subject": "Operating Systems",
+"topic": "OS Fundamentals",
+"difficulty": "MEDIUM",
+"type": "EXPLANATION",
+"concepts": [
+"Intel VT-x",
+"VMCS",
+"VM-Exit",
+"VM-Entry",
+"VMX root vs non-root"
+],
+"criteria": [
+"explains that the hypervisor runs in VMX Root mode while the guest runs in VMX Non-Root mode",
+"defines VMCS as a 4KB hardware page storing guest state, host state, execution controls, and exit reasons",
+"defines a VM-Exit: when guest attempts a privileged operation (e.g., executing CPUID, modifying CR3, hardware I/O), hardware traps to hypervisor",
+"identifies that minimizing VM-Exits is the paramount performance goal for modern hypervisors"
+],
+"follow_up": true
+},
+{
+"id": "OS-185",
+"question": "Why did 32-bit Linux kernels require a 'ZONE_HIGHMEM' memory partition, and why was it eliminated in 64-bit kernels?",
+"subject": "Operating Systems",
+"topic": "Memory Management",
+"difficulty": "MEDIUM",
+"type": "EXPLANATION",
+"concepts": [
+"ZONE_HIGHMEM",
+"ZONE_NORMAL",
+"32-bit address space",
+"1GB kernel space",
+"kmap"
+],
+"criteria": [
+"explains that 32-bit systems had a 4GB total virtual address space, typically split into 3GB User Space / 1GB Kernel Space",
+"explains that the kernel could directly map at most ~896MB of physical RAM in ZONE_NORMAL",
+"describes ZONE_HIGHMEM: physical memory above 896MB that required temporary virtual mapping (kmap) to be accessed by the kernel",
+"explains that 64-bit systems provide multi-terabyte virtual address spaces, allowing all physical RAM to be permanently direct-mapped"
+],
+"follow_up": false
+},
+{
+"id": "OS-186",
+"question": "How do MCS (Mellor-Crummey and Scott) Queue-Based Spinlocks eliminate cache-line bouncing on large multi-core NUMA systems?",
+"subject": "Operating Systems",
+"topic": "Process Synchronization",
+"difficulty": "HARD",
+"type": "DESIGN",
+"concepts": [
+"MCS lock",
+"queue-based spinlock",
+"local spinning",
+"cache-line bouncing",
+"scalable synchronization"
+],
+"criteria": [
+"identifies the flaw of ticket locks: all threads spin on a single shared memory location",
+"describes the MCS architecture: a linked list of per-thread lock nodes allocated on each thread's local stack or CPU memory",
+"explains local spinning: each queued thread spins strictly on its OWN private node's flag variable in its local cache",
+"explains lock release: the lock holder directly modifies ONLY the next thread's node flag in O(1) time with exactly ONE cache invalidation"
+],
+"follow_up": true
+},
+{
+"id": "OS-187",
+"question": "How does the Linux SCHED_DEADLINE policy implement the Constant Bandwidth Server (CBS) to isolate real-time tasks from causing system lockups?",
+"subject": "Operating Systems",
+"topic": "CPU Scheduling",
+"difficulty": "HARD",
+"type": "PERFORMANCE",
+"concepts": [
+"SCHED_DEADLINE",
+"Constant Bandwidth Server",
+"Earliest Deadline First",
+"runtime, deadline, period",
+"hard real-time isolation"
+],
+"criteria": [
+"explains task parameters: Runtime (Q), Deadline (D), and Period (P), where Q <= D <= P",
+"explains scheduling: tasks are scheduled using global Earliest Deadline First (EDF) based on dynamic absolute deadlines",
+"describes the CBS enforcement mechanism: when a task exceeds its allocated Runtime within the current period, its deadline is postponed to the next period",
+"proves that CBS prevents rogue real-time tasks from consuming 100% CPU and starving other real-time processes"
+],
+"follow_up": true
+},
+{
+"id": "OS-188",
+"question": "In nested virtualization (running a VM inside a VM), why does memory translation under Extended Page Tables cause a cubic (O(N^3)) address translation overhead?",
+"subject": "Operating Systems",
+"topic": "Virtual Memory",
+"difficulty": "HARD",
+"type": "PERFORMANCE",
+"concepts": [
+"nested virtualization",
+"shadow page tables",
+"two-dimensional page walk",
+"EPT translation penalty",
+"hypervisor overhead"
+],
+"criteria": [
+"traces the 3 levels of abstraction: Guest-of-Guest (L2), Guest Hypervisor (L1), Host Hypervisor (L0)",
+"explains that translating L2 GVA -> L2 GPA requires traversing L1 guest page tables",
+"explains that every single pointer in the L1 page table is an L1 GPA that must be translated to L0 HPA via host EPT",
+"demonstrates that a single memory access can explode into up to 24+ memory lookups unless collapsed by shadow page tables or large hardware TLBs"
+],
+"follow_up": true
+},
+{
+"id": "OS-189",
+"question": "How does the in-kernel eBPF Verifier mathematically prove that a program cannot crash the kernel or execute an infinite loop before permitting it to attach?",
+"subject": "Operating Systems",
+"topic": "OS Fundamentals",
+"difficulty": "HARD",
+"type": "SECURITY",
+"concepts": [
+"eBPF verifier",
+"Directed Acyclic Graph",
+"abstract interpretation",
+"pointer arithmetic validation",
+"halting problem constraint"
+],
+"criteria": [
+"explains that the verifier performs abstract interpretation, simulating every possible instruction path and register state",
+"explains termination verification: checks for cycles in the control flow graph to prove the program terminates within an instruction limit",
+"explains memory safety: validates that pointer dereferences stay within bounds of known BPF context or map objects",
+"explains state space pruning: caches analyzed register states to verify large programs without exponential path explosion"
+],
+"follow_up": true
+},
+{
+"id": "OS-190",
+"question": "How does Single Root I/O Virtualization (SR-IOV) bypass the hypervisor network stack to achieve bare-metal network performance in virtual machines?",
+"subject": "Operating Systems",
+"topic": "I/O and Storage",
+"difficulty": "HARD",
+"type": "PERFORMANCE",
+"concepts": [
+"SR-IOV",
+"Physical Function",
+"Virtual Function",
+"PCI passthrough",
+"IOMMU DMA remapping"
+],
+"criteria": [
+"defines Physical Functions (PFs, full-featured PCIe management) and Virtual Functions (VFs, lightweight virtual PCIe devices)",
+"explains that each VF appears as an independent physical PCIe card directly mapped into a guest VM via PCI passthrough",
+"explains that VM network packets bypass the host kernel and hypervisor virtual switch entirely, performing DMA straight to guest memory",
+"explains that hardware IOMMU ensures strict memory boundary isolation, preventing rogue VM DMA writes into host memory"
+],
+"follow_up": true
+},
+{
+"id": "OS-191",
+"question": "How does the 'Retpoline' (return trampoline) software construct mitigate Spectre Variant 2 (Branch Target Injection) without relying on microcode CPU performance penalties?",
+"subject": "Operating Systems",
+"topic": "OS Fundamentals",
+"difficulty": "HARD",
+"type": "SECURITY",
+"concepts": [
+"Retpoline",
+"Spectre Variant 2",
+"Branch Target Injection",
+"indirect branch predictor",
+"speculative execution freeze"
+],
+"criteria": [
+"explains Spectre v2: attacker trains the CPU indirect branch predictor to speculatively execute gadget code in the kernel address space",
+"defines Retpoline: replaces indirect jumps/calls (e.g., 'jmp *%rax') with a return trampoline using 'call' and 'ret'",
+"describes the mechanism: pushes the target address onto the stack, issues a call that enters an infinite pause loop, and executes ret",
+"explains that the CPU speculative branch predictor halts on the mismatched return stack buffer, neutralizing speculative attacks"
+],
+"follow_up": true
+},
+{
+"id": "OS-192",
+"question": "What is Linux Proactive Memory Compaction, and how does it prevent allocation latency compared to reactive compaction?",
+"subject": "Operating Systems",
+"topic": "Virtual Memory",
+"difficulty": "HARD",
+"type": "PERFORMANCE",
+"concepts": [
+"proactive compaction",
+"reactive compaction",
+"fragmentation index",
+"background daemon",
+"huge page allocation"
+],
+"criteria": [
+"identifies that reactive compaction runs only when an allocation FAILS, causing direct user-thread latency penalties",
+"defines proactive compaction: a background kernel thread (compaction daemon) continuously monitors an external fragmentation index",
+"explains that the daemon proactively moves pages to consolidate free memory blocks BEFORE allocations are requested",
+"highlights that tuning /proc/sys/vm/compaction_proactiveness reduces 99th-percentile allocation latency for huge-page workloads"
+],
+"follow_up": false
+},
+{
+"id": "OS-193",
+"question": "How do kernel rootkits perform System Call Table Hooking, and how do modern kernels use write protection (CR0.WP) and Control Flow Integrity (CFI) to prevent it?",
+"subject": "Operating Systems",
+"topic": "OS Fundamentals",
+"difficulty": "HARD",
+"type": "SECURITY",
+"concepts": [
+"sys_call_table",
+"syscall hooking",
+"CR0.WP bit",
+"read-only kernel data",
+"Control Flow Integrity"
+],
+"criteria": [
+"explains syscall hooking: overwriting function pointers in the kernel sys_call_table to intercept calls like sys_read or sys_getdents",
+"explains that modern kernels mark the system call table as read-only, causing CPU fault exceptions if write-protection is violated",
+"describes how rootkits historically cleared the CR0.WP (Write Protect) register bit to bypass protection",
+"identifies modern defenses: hardware SMEP/SMAP, hypervisor-enforced memory immutability, and Clang Control Flow Integrity (CFI)"
+],
+"follow_up": true
+},
+{
+"id": "OS-194",
+"question": "What is the Split-Brain scenario in clustered distributed file systems, and how does STONITH (Shoot The Other Node In The Head) fencing guarantee data consistency?",
+"subject": "Operating Systems",
+"topic": "File Systems",
+"difficulty": "HARD",
+"type": "PROBLEM_SOLVING",
+"concepts": [
+"split-brain",
+"STONITH",
+"node fencing",
+"shared storage corruption",
+"quorum"
+],
+"criteria": [
+"defines split-brain: a network partition causes both cluster nodes to believe the peer is dead, leading both to simultaneously mount and write shared storage",
+"explains that concurrent asynchronous writes from uncoordinated nodes completely corrupts file system structures",
+"defines STONITH: an automated hardware fence mechanism that powers off or disconnects the misbehaving node via IPMI/PDU",
+"proves that physically killing the isolated node guarantees it can never write to shared storage again before the surviving node takes over"
+],
+"follow_up": true
+},
+{
+"id": "OS-195",
+"question": "What are Phase-Fair Read-Write Locks, and how do they alternate lock ownership in distinct phases to eliminate both reader and writer starvation?",
+"subject": "Operating Systems",
+"topic": "Process Synchronization",
+"difficulty": "HARD",
+"type": "DESIGN",
+"concepts": [
+"Phase-Fair RWLock",
+"reader starvation",
+"writer starvation",
+"alternating phases",
+"bounded waiting time"
+],
+"criteria": [
+"identifies the flaw of classic RW locks: prioritizing either readers or writers inevitably starves the opposite side",
+"defines Phase-Fair locking: divides acquisition into alternating Reader Phases and Writer Phases",
+"explains that readers active when a writer arrives can finish, but new readers are held in a waiting room",
+"proves that waiting writers wait for at most ONE reader phase, and waiting readers wait for at most ONE writer phase, bounding latency"
+],
+"follow_up": true
+},
+{
+"id": "OS-196",
+"question": "How does the Page Fault Frequency (PFF) dynamic frame allocation algorithm adjust a process's allocated physical frames to prevent thrashing?",
+"subject": "Operating Systems",
+"topic": "Virtual Memory",
+"difficulty": "HARD",
+"type": "PROBLEM_SOLVING",
+"concepts": [
+"Page Fault Frequency",
+"upper threshold",
+"lower threshold",
+"dynamic frame allocation",
+"working set adaptation"
+],
+"criteria": [
+"defines the PFF model establishing an Upper Fault Threshold (U) and Lower Fault Threshold (L)",
+"explains that if a process's page-fault frequency exceeds U, it lacks sufficient frames and the OS allocates additional frames",
+"explains that if frequency falls below L, the process has excess frames and the OS evicts unreferenced frames",
+"contrasts PFF against the static Working Set model: PFF measures actual faults directly rather than tracking every memory access"
+],
+"follow_up": false
+},
+{
+"id": "OS-197",
+"question": "What are the architectural differences between Asymmetric Multiprocessing (AMP) and Symmetric Multiprocessing (SMP) in operating system design?",
+"subject": "Operating Systems",
+"topic": "OS Fundamentals",
+"difficulty": "HARD",
+"type": "COMPARISON",
+"concepts": [
+"Asymmetric Multiprocessing",
+"Symmetric Multiprocessing",
+"master-slave architecture",
+"peer processor architecture",
+"kernel lock contention"
+],
+"criteria": [
+"defines AMP: master-slave model where one master processor runs the OS kernel and delegates I/O or user tasks to slave processors",
+"defines SMP: peer architecture where all processors share identical memory/I/O access and any CPU can execute kernel code",
+"identifies the AMP bottleneck: the master CPU limits overall system scalability",
+"identifies the SMP complexity: requires sophisticated fine-grained kernel locking, spinlocks, and cache coherency protocols"
+],
+"follow_up": false
+},
+{
+"id": "OS-198",
+"question": "In the Linux VFS path walk, what is the difference between RCU-walk mode and Ref-walk mode, and when does the kernel fall back to Ref-walk?",
+"subject": "Operating Systems",
+"topic": "File Systems",
+"difficulty": "HARD",
+"type": "PERFORMANCE",
+"concepts": [
+"RCU-walk",
+"Ref-walk",
+"dcache traversal",
+"atomic reference counting",
+"blocking operation fallback"
+],
+"criteria": [
+"explains that RCU-walk traverses dentry trees lock-free without taking locks or incrementing atomic reference counts (ultra-high speed)",
+"explains that Ref-walk takes explicit spinlocks and increments reference counts (dget) on every intermediate directory",
+"identifies conditions forcing fallback to Ref-walk: encountering un-cached dentries, permissions requiring disk lookup, or blocking operations",
+"highlights that 99%+ of cached path lookups complete entirely in RCU-walk mode without atomic bus locking"
+],
+"follow_up": true
+},
+{
+"id": "OS-199",
+"question": "How does cross-socket Cache-Line Bouncing over high-speed interconnects (like Intel UPI or AMD Infinity Fabric) throttle multi-threaded databases on NUMA servers?",
+"subject": "Operating Systems",
+"topic": "Process Synchronization",
+"difficulty": "HARD",
+"type": "PERFORMANCE",
+"concepts": [
+"cache-line bouncing",
+"NUMA interconnect",
+"MESI invalidation",
+"memory bus saturation",
+"spin-wait latency"
+],
+"criteria": [
+"describes threads running on different physical CPU sockets frequently writing to a shared lock or global variable",
+"explains that hardware MESI protocols force transferring exclusive ownership of the cache line across the inter-socket interconnect",
+"explains that interconnect bandwidth is orders of magnitude slower than on-die L3 cache, causing CPU pipelines to stall",
+"identifies software remedies: NUMA-aware partitioning, per-socket read-mostly caches, and thread pinning with numactl"
+],
+"follow_up": true
+},
+{
+"id": "OS-200",
+"question": "What kernel architectural principles distinguish a Hard Real-Time Operating System (RTOS, like FreeRTOS or VxWorks) from a general-purpose OS running the PREEMPT_RT patch?",
+"subject": "Operating Systems",
+"topic": "OS Fundamentals",
+"difficulty": "HARD",
+"type": "COMPARISON",
+"concepts": [
+"Hard RTOS",
+"PREEMPT_RT",
+"deterministic latency",
+"bounded interrupt response",
+"worst-case execution time"
+],
+"criteria": [
+"defines Hard RTOS guarantee: deterministic response time where missing a deadline constitutes total system failure",
+"explains that hard RTOS kernels eliminate dynamic memory allocation in critical paths, virtual memory paging, and long spinlocks",
+"describes PREEMPT_RT: converts Linux kernel spinlocks into sleeping mutexes and forces interrupt handlers into preemptible kernel threads",
+"contrasts trade-offs: hard RTOS achieves microsecond predictability for simple firmware; PREEMPT_RT provides soft-to-firm real-time while retaining the full Linux ecosystem"
+],
+"follow_up": true
+},
+{
+"id": "OS-201",
+"question": "What is the difference between Resident Set Size (RSS) and Virtual Memory Size (VSZ) when analyzing a process's memory footprint?",
+"subject": "Operating Systems",
+"topic": "Virtual Memory",
+"difficulty": "EASY",
+"type": "COMPARISON",
+"concepts": [
+"Resident Set Size",
+"Virtual Memory Size",
+"physical memory consumption",
+"shared libraries",
+"memory overcommit"
+],
+"criteria": [
+"defines VSZ as the total virtual address space allocated to the process (code, stack, heap, shared libraries, mapped files)",
+"defines RSS as the subset of pages that currently reside in physical RAM",
+"explains that VSZ includes unallocated memory mappings, shared memory, and swapped-out pages",
+"identifies that RSS is the accurate metric for determining actual physical memory pressure"
+],
+"follow_up": false
+},
+{
+"id": "OS-202",
+"question": "What do the three Linux Memory Overcommit modes (0, 1, and 2 in /proc/sys/vm/overcommit_memory) configure?",
+"subject": "Operating Systems",
+"topic": "Memory Management",
+"difficulty": "EASY",
+"type": "EXPLANATION",
+"concepts": [
+"memory overcommit",
+"heuristic overcommit",
+"always overcommit",
+"strict overcommit",
+"CommitLimit"
+],
+"criteria": [
+"defines Mode 0 (Heuristic): kernel allows reasonable overcommit while rejecting obvious over-allocations",
+"defines Mode 1 (Always): kernel always grants virtual memory allocations regardless of physical capacity",
+"defines Mode 2 (Strict): kernel refuses overcommit beyond Swap + (RAM * overcommit_ratio)",
+"identifies that Mode 2 prevents the OOM killer from activating by causing malloc() to fail cleanly when limits are reached"
+],
+"follow_up": false
+},
+{
+"id": "OS-203",
+"question": "What are CPU frequency scaling governors (such as performance, powersave, and schedutil) in modern operating systems?",
+"subject": "Operating Systems",
+"topic": "OS Fundamentals",
+"difficulty": "EASY",
+"type": "EXPLANATION",
+"concepts": [
+"CPU scaling governors",
+"performance",
+"powersave",
+"schedutil",
+"Dynamic Voltage and Frequency Scaling"
+],
+"criteria": [
+"defines DVFS as dynamically changing CPU clock speed and voltage to balance power consumption and throughput",
+"explains 'performance': statically locks the CPU at maximum frequency for minimal latency",
+"explains 'powersave': statically locks the CPU at minimum frequency for power conservation",
+"explains 'schedutil': directly uses CPU scheduler utilization signals to adjust frequency in real time"
+],
+"follow_up": false
+},
+{
+"id": "OS-204",
+"question": "What is Simultaneous Multithreading (SMT / Hyper-Threading), and how does the operating system view logical versus physical cores?",
+"subject": "Operating Systems",
+"topic": "Processes and Scheduling",
+"difficulty": "EASY",
+"type": "CONCEPTUAL",
+"concepts": [
+"Simultaneous Multithreading",
+"Hyper-Threading",
+"logical core",
+"physical core",
+"shared execution units"
+],
+"criteria": [
+"explains that SMT duplicates architectural CPU register state while sharing physical execution units (ALUs, FPUs, L1/L2 caches)",
+"explains that the OS scheduler treats each thread context as an independent logical CPU",
+"identifies that two threads running on the same physical core share execution bandwidth and can compete for hardware resources",
+"notes that scheduling two threads on separate physical cores provides true hardware parallelism"
+],
+"follow_up": false
+},
+{
+"id": "OS-205",
+"question": "What is a Stack Canary (Stack Cookie), and how does it detect buffer overflow attacks before malicious code executes?",
+"subject": "Operating Systems",
+"topic": "Memory Management",
+"difficulty": "EASY",
+"type": "SECURITY",
+"concepts": [
+"stack canary",
+"buffer overflow",
+"return address protection",
+"stack smashing",
+"SIGSEGV / abort"
+],
+"criteria": [
+"defines a stack canary as a randomized guard value placed on the stack between local variables and the saved return address",
+"explains that a sequential buffer overflow must overwrite the canary before reaching the return address",
+"describes the function epilogue check: before executing 'ret', the CPU validates the canary against its original value",
+"explains that any mismatch immediately aborts the program (__stack_chk_fail) preventing control-flow hijacking"
+],
+"follow_up": false
+},
+{
+"id": "OS-206",
+"question": "Why is the rename() system call atomic in POSIX file systems, and how is it used to implement safe, crash-proof file updates?",
+"subject": "Operating Systems",
+"topic": "File Systems",
+"difficulty": "EASY",
+"type": "PROBLEM_SOLVING",
+"concepts": [
+"atomic rename",
+"crash-proof updates",
+"temporary file",
+"inode replacement",
+"race condition elimination"
+],
+"criteria": [
+"explains that rename(temp_file, target_file) is an atomic metadata operation guaranteed by POSIX on the same filesystem",
+"describes the safe update pattern: write new contents to a temporary file, fsync it, then atomically rename it over the target",
+"highlights that readers always see either the complete old file or complete new fileâ€”never a partial or corrupted state",
+"notes that if a crash occurs mid-write, the original target file remains completely untouched"
+],
+"follow_up": false
+},
+{
+"id": "OS-207",
+"question": "What is the core difference between Discretionary Access Control (DAC) and Mandatory Access Control (MAC) in operating system security?",
+"subject": "Operating Systems",
+"topic": "OS Fundamentals",
+"difficulty": "EASY",
+"type": "COMPARISON",
+"concepts": [
+"Discretionary Access Control",
+"Mandatory Access Control",
+"resource ownership",
+"central security policy",
+"root privilege containment"
+],
+"criteria": [
+"defines DAC: resource owners have full discretion to grant or revoke permissions (standard Unix rwx permissions)",
+"defines MAC: a centralized, system-enforced security policy dictates access; resource owners cannot override rules",
+"explains that in DAC, if an attacker compromises a root process, they gain unrestricted access to all files",
+"explains that in MAC (e.g., SELinux), even root processes are confined to strictly defined domains and labels"
+],
+"follow_up": false
+},
+{
+"id": "OS-208",
+"question": "What is the difference between Paravirtualization and Full Virtualization?",
+"subject": "Operating Systems",
+"topic": "OS Fundamentals",
+"difficulty": "EASY",
+"type": "COMPARISON",
+"concepts": [
+"paravirtualization",
+"full virtualization",
+"hypercalls",
+"guest OS modification",
+"binary translation"
+],
+"criteria": [
+"explains Full Virtualization: guest OS runs completely unmodified, unaware it is virtualized; hardware is fully emulated",
+"explains Paravirtualization: guest OS kernel is modified to make explicit 'hypercalls' directly to the hypervisor",
+"identifies the benefit of paravirtualization: eliminates expensive binary translation and emulation overhead",
+"identifies the drawback: proprietary operating systems (like Windows) historically could not run on paravirtualized platforms"
+],
+"follow_up": false
+},
+{
+"id": "OS-209",
+"question": "What does the 'isolcpus' Linux kernel boot parameter do, and why do high-frequency trading and real-time systems use it?",
+"subject": "Operating Systems",
+"topic": "CPU Scheduling",
+"difficulty": "EASY",
+"type": "PERFORMANCE",
+"concepts": [
+"isolcpus",
+"core isolation",
+"CFS scheduler bypass",
+"jitter elimination",
+"taskset pinning"
+],
+"criteria": [
+"defines isolcpus as a boot flag that isolates specified CPU cores from the general Linux SMP scheduler",
+"explains that normal user processes and background kernel work are prevented from running on isolated cores",
+"describes how dedicated high-performance threads are explicitly pinned to isolated cores using taskset or pthread_setaffinity",
+"highlights that eliminating context switches and unwanted scheduling yields near-zero latency jitter"
+],
+"follow_up": false
+},
+{
+"id": "OS-210",
+"question": "What is the purpose of writing to /proc/sys/vm/drop_caches (values 1, 2, and 3), and does it force dirty data to disk?",
+"subject": "Operating Systems",
+"topic": "Virtual Memory",
+"difficulty": "EASY",
+"type": "EXPLANATION",
+"concepts": [
+"drop_caches",
+"page cache reclaim",
+"dentries and inodes",
+"dirty memory",
+"benchmarking"
+],
+"criteria": [
+"explains value 1: frees clean pagecache; value 2: frees reclaimable slab objects (dentries and inodes); value 3: frees both",
+"emphasizes that drop_caches frees ONLY clean, unmapped pages and does NOT write dirty pages to disk",
+"explains that running 'sync' prior to drop_caches is mandatory to maximize freed memory",
+"identifies that drop_caches is designed for memory benchmarking and should not be used routinely in production"
+],
+"follow_up": false
+},
+{
+"id": "OS-211",
+"question": "What are Linux POSIX Capabilities, and how do they decompose traditional all-or-nothing root privileges?",
+"subject": "Operating Systems",
+"topic": "OS Fundamentals",
+"difficulty": "EASY",
+"type": "EXPLANATION",
+"concepts": [
+"POSIX capabilities",
+"least privilege",
+"CAP_NET_BIND_SERVICE",
+"CAP_SYS_ADMIN",
+"root privilege decomposition"
+],
+"criteria": [
+"explains that traditional Unix had a binary security model: regular user (UID != 0) or all-powerful superuser (UID == 0)",
+"defines capabilities as splitting root privileges into ~40 discrete permissions",
+"gives examples: CAP_NET_BIND_SERVICE allows binding to ports < 1024 without full root access; CAP_SYS_TIME allows adjusting clock",
+"explains how capabilities enforce the principle of least privilege for network daemons (like web servers)"
+],
+"follow_up": false
+},
+{
+"id": "OS-212",
+"question": "What are atomic bitwise operations (such as set_bit and test_and_clear_bit) in operating system kernels, and why are they faster than using mutexes?",
+"subject": "Operating Systems",
+"topic": "Process Synchronization",
+"difficulty": "EASY",
+"type": "EXPLANATION",
+"concepts": [
+"atomic bitwise operations",
+"set_bit",
+"test_and_clear_bit",
+"hardware lock prefix",
+"spinlock avoidance"
+],
+"criteria": [
+"defines atomic bitwise operations as single CPU instructions operating directly on bitfields in memory",
+"explains that on x86, these compile to instructions using the hardware LOCK prefix (e.g., LOCK BTS, LOCK BTR)",
+"highlights that bit operations eliminate the overhead of allocating, locking, and unlocking mutexes or spinlocks",
+"identifies common kernel use cases: resource allocation bitmaps, process state flags, and interrupt status registers"
+],
+"follow_up": false
+},
+{
+"id": "OS-213",
+"question": "What is Kernel Address Space Layout Randomization (KASLR), and how does it protect the operating system against privilege escalation exploits?",
+"subject": "Operating Systems",
+"topic": "OS Fundamentals",
+"difficulty": "EASY",
+"type": "SECURITY",
+"concepts": [
+"KASLR",
+"ASLR",
+"kernel base address",
+"ROP chain",
+"exploit mitigation"
+],
+"criteria": [
+"explains that standard ASLR randomizes user-space memory, while KASLR randomizes the base address where the kernel code itself is loaded",
+"explains that historically, the Linux kernel loaded at a fixed physical and virtual address known to all programs",
+"describes how KASLR prevents Return-Oriented Programming (ROP) exploits by making kernel gadget addresses unpredictable",
+"notes that attackers must first find an information leak vulnerability to reveal the randomized offset before exploiting"
+],
+"follow_up": false
+},
+{
+"id": "OS-214",
+"question": "How do storage devices use S.M.A.R.T. monitoring and internal Bad Block Reallocation to hide media degradation from the operating system?",
+"subject": "Operating Systems",
+"topic": "File Systems",
+"difficulty": "EASY",
+"type": "EXPLANATION",
+"concepts": [
+"S.M.A.R.T.",
+"bad block reallocation",
+"spare sectors",
+"hardware transparent remapping",
+"drive failure prediction"
+],
+"criteria": [
+"defines S.M.A.R.T. as self-monitoring analysis and reporting technology embedded in storage drive firmware",
+"explains that hard drives and SSDs reserve hidden pools of spare sectors",
+"describes how firmware detects weak or unreadable sectors and transparently remaps the logical block address to a spare sector",
+"explains that when spare sectors are exhausted, subsequent bad blocks cause unrecoverable I/O errors delivered to the OS"
+],
+"follow_up": false
+},
+{
+"id": "OS-215",
+"question": "What is the difference between changing root directory via chroot and container isolation via Linux namespaces?",
+"subject": "Operating Systems",
+"topic": "OS Fundamentals",
+"difficulty": "EASY",
+"type": "COMPARISON",
+"concepts": [
+"chroot",
+"Linux namespaces",
+"chroot escape",
+"process visibility",
+"security boundary"
+],
+"criteria": [
+"defines chroot as simply changing the apparent root directory ('/') for the current process and its children",
+"explains that chroot does NOT isolate processes, network stacks, IPC, or users (a process inside chroot can still view and kill host processes)",
+"explains that root users can easily break out of a chroot jail (e.g., using mknod or nested chroot calls)",
+"contrasts this with Linux namespaces which provide true multi-dimensional kernel isolation"
+],
+"follow_up": false
+},
+{
+"id": "OS-216",
+"question": "What is the architectural difference between SELinux (Type Enforcement) and AppArmor (Path-Based Enforcement)?",
+"subject": "Operating Systems",
+"topic": "OS Fundamentals",
+"difficulty": "MEDIUM",
+"type": "COMPARISON",
+"concepts": [
+"SELinux",
+"AppArmor",
+"Type Enforcement",
+"path-based enforcement",
+"inode labeling"
+],
+"criteria": [
+"explains that SELinux binds security labels directly to filesystem inodes via extended attributes (xattr)",
+"explains that AppArmor binds security profiles to file path strings (e.g., /usr/sbin/nginx)",
+"identifies that SELinux labels persist across file renaming and moving, whereas AppArmor rules follow directory paths",
+"contrasts usability: AppArmor is simpler to configure; SELinux provides rigorous Type Enforcement and Multi-Category Security (MCS)"
+],
+"follow_up": false
+},
+{
+"id": "OS-217",
+"question": "How does Network File System version 3 (NFSv3, stateless) differ from NFS version 4 (NFSv4, stateful with file leases)?",
+"subject": "Operating Systems",
+"topic": "File Systems",
+"difficulty": "MEDIUM",
+"type": "COMPARISON",
+"concepts": [
+"NFSv3",
+"NFSv4",
+"stateless RPC",
+"stateful file leases",
+"TCP port 2049"
+],
+"criteria": [
+"explains that NFSv3 is stateless: every read/write RPC carried full credentials and file handles; server rebooted with zero session state",
+"identifies NFSv3 drawbacks: locking (NLM) and quota services required separate auxiliary RPC ports, creating firewall nightmares",
+"explains that NFSv4 is stateful: integrates all locking, mounting, and ACLs into a single TCP port (2049)",
+"describes NFSv4 file leases allowing clients to cache file writes locally with server-managed cache invalidation callbacks"
+],
+"follow_up": false
+},
+{
+"id": "OS-218",
+"question": "Why do Linux kernel threads have a small, fixed-size kernel stack (8KB or 16KB), and what occurs if kernel execution overflows it?",
+"subject": "Operating Systems",
+"topic": "Memory Management",
+"difficulty": "MEDIUM",
+"type": "EXPLANATION",
+"concepts": [
+"kernel stack",
+"fixed-size stack",
+"stack overflow",
+"deep recursion",
+"Kernel Panic"
+],
+"criteria": [
+"explains that user-space stacks can grow dynamically to several megabytes, but kernel stacks are fixed (typically 16KB on x86-64)",
+"explains that millions of threads on enterprise servers would consume prohibitive kernel RAM if kernel stacks were large",
+"explains that deep recursion, huge local arrays, or deep call chains in kernel space cause kernel stack overflows",
+"describes modern mitigations: VMAP_STACK maps kernel stacks with guard pages, converting corrupting overflows into clean Kernel Panics"
+],
+"follow_up": false
+},
+{
+"id": "OS-219",
+"question": "How does the operating system block layer perform I/O Request Merging (Front-Merging and Back-Merging) to optimize storage throughput?",
+"subject": "Operating Systems",
+"topic": "I/O and Storage",
+"difficulty": "MEDIUM",
+"type": "EXPLANATION",
+"concepts": [
+"I/O request merging",
+"front merging",
+"back merging",
+"block layer elevator",
+"bio structure"
+],
+"criteria": [
+"explains that adjacent I/O requests directed to contiguous physical sectors can be merged into a single larger I/O command",
+"defines Back-Merging: appending a new block request to the tail of an existing queued request (most common case in sequential writes)",
+"defines Front-Merging: prepending a new block request to the head of an existing queued request",
+"highlights that merging reduces total disk commands, minimizes protocol overhead, and increases DMA transfer sizes"
+],
+"follow_up": false
+},
+{
+"id": "OS-220",
+"question": "How does the VirtIO paravirtualization framework use Split Virtqueues (Descriptor Table, Available Ring, and Used Ring) to transfer data between Guest and Host?",
+"subject": "Operating Systems",
+"topic": "OS Fundamentals",
+"difficulty": "MEDIUM",
+"type": "DESIGN",
+"concepts": [
+"VirtIO",
+"Split Virtqueues",
+"Descriptor Table",
+"Available Ring",
+"Used Ring"
+],
+"criteria": [
+"defines Descriptor Table: stores buffer addresses and lengths in guest physical memory",
+"defines Available Ring: guest driver writes descriptor indices into this ring to notify the host of buffers ready for processing",
+"defines Used Ring: host hypervisor writes processed descriptor indices into this ring to return buffers to the guest",
+"explains that memory-mapped ring buffers allow lockless, high-throughput asynchronous communication between guest and hypervisor"
+],
+"follow_up": true
+},
+{
+"id": "OS-221",
+"question": "How does Energy-Aware Scheduling (EAS) optimize process placement on heterogeneous ARM big.LITTLE / DynamIQ multi-core processors?",
+"subject": "Operating Systems",
+"topic": "CPU Scheduling",
+"difficulty": "MEDIUM",
+"type": "DESIGN",
+"concepts": [
+"Energy-Aware Scheduling",
+"big.LITTLE",
+"energy model",
+"capacity margin",
+"power vs performance"
+],
+"criteria": [
+"defines big.LITTLE architectures pairing power-efficient 'LITTLE' cores with high-performance 'big' cores",
+"explains that standard CFS assumes symmetric cores and misplaces background tasks on power-hungry big cores",
+"describes the EAS Energy Model calculating energy cost of placing a task on different cores",
+"explains scheduling logic: background or low-utilization tasks are confined to LITTLE cores; heavy compute bursts dynamically migrate to big cores"
+],
+"follow_up": false
+},
+{
+"id": "OS-222",
+"question": "What is the operational difference between Edge-Triggered (EPOLLET) and Level-Triggered (default) modes in Linux epoll?",
+"subject": "Operating Systems",
+"topic": "I/O and Storage",
+"difficulty": "MEDIUM",
+"type": "COMPARISON",
+"concepts": [
+"epoll",
+"EPOLLET",
+"Edge-Triggered",
+"Level-Triggered",
+"EAGAIN",
+"non-blocking socket"
+],
+"criteria": [
+"explains Level-Triggered: epoll_wait repeatedly reports a descriptor as long as data remains in the buffer (foolproof, but redundant wakeups)",
+"explains Edge-Triggered: epoll_wait notifies ONLY when state changes (new data arrives); does not notify again if data is left unread",
+"emphasizes the Edge-Triggered requirement: application must loop read() until it receives EAGAIN/EWOULDBLOCK",
+"identifies that failing to drain the buffer in Edge-Triggered mode permanently stalls communication on that socket"
+],
+"follow_up": true
+},
+{
+"id": "OS-223",
+"question": "What is a DMA Bounce Buffer in operating system I/O, and under what hardware limitations is the kernel forced to allocate one?",
+"subject": "Operating Systems",
+"topic": "I/O and Storage",
+"difficulty": "MEDIUM",
+"type": "PERFORMANCE",
+"concepts": [
+"DMA bounce buffer",
+"addressing limitations",
+"ZONE_DMA",
+"IOMMU absence",
+"memory copy penalty"
+],
+"criteria": [
+"explains that older legacy 32-bit PCI devices can only address the lower 4GB (or 16MB in ISA) of physical memory",
+"describes the problem: if user data resides in physical RAM above 4GB on a 64-bit server, the device cannot DMA to it directly",
+"defines a bounce buffer: kernel allocates an intermediate buffer in low memory (ZONE_DMA), DMAs to it, and copies data to final memory via CPU",
+"highlights that bounce buffers introduce severe memory copy overhead, resolved in modern systems by hardware IOMMU page remapping"
+],
+"follow_up": false
+},
+{
+"id": "OS-224",
+"question": "How do UEFI Secure Boot, the Shim loader, and Linux Kernel Lockdown mode combine to guarantee kernel code integrity?",
+"subject": "Operating Systems",
+"topic": "OS Fundamentals",
+"difficulty": "MEDIUM",
+"type": "SECURITY",
+"concepts": [
+"Secure Boot",
+"Shim loader",
+"Kernel Lockdown",
+"cryptographic signature",
+"Ring 0 tampering"
+],
+"criteria": [
+"explains that UEFI firmware validates the digital signature of the bootloader (Shim, signed by Microsoft CA)",
+"describes Shim verifying the Linux kernel binary signature before executing it",
+"defines Kernel Lockdown mode: prevents even the root user from modifying running kernel code",
+"identifies restricted operations under lockdown: disables /dev/mem, kexec, raw I/O port writes, and unsigned kernel modules"
+],
+"follow_up": false
+},
+{
+"id": "OS-225",
+"question": "What is the difference between Linux ftrace (function tracing) and kprobes (kernel dynamic probing)?",
+"subject": "Operating Systems",
+"topic": "OS Fundamentals",
+"difficulty": "MEDIUM",
+"type": "COMPARISON",
+"concepts": [
+"ftrace",
+"kprobes",
+"breakpoint instruction",
+"compiler profiling",
+"dynamic instrumentation"
+],
+"criteria": [
+"explains ftrace: leverages compiler profiling hooks (gcc -pg / mcount) embedded at the entry of every kernel function (ultra-low overhead)",
+"explains kprobes: dynamically instruments ANY arbitrary kernel instruction address at runtime without pre-compilation",
+"describes kprobes mechanism: replaces target instruction byte with a CPU breakpoint trap (INT 3 on x86), executes handler, and single-steps original instruction",
+"contrasts use cases: ftrace traces function execution graphs system-wide; kprobes inspects specific variables and branch conditions"
+],
+"follow_up": false
+},
+{
+"id": "OS-226",
+"question": "How does the O_NOFOLLOW file open flag protect multi-user operating systems against Time-of-Check to Time-of-Use (TOCTOU) symlink attacks?",
+"subject": "Operating Systems",
+"topic": "File Systems",
+"difficulty": "MEDIUM",
+"type": "SECURITY",
+"concepts": [
+"O_NOFOLLOW",
+"TOCTOU attack",
+"symlink race condition",
+"temporary file vulnerability",
+"atomic open"
+],
+"criteria": [
+"describes the attack: an unprivileged user replaces a temporary file with a symlink to /etc/shadow between the time a root daemon checks and opens it",
+"explains that standard open() transparently follows symbolic links, causing privileged daemons to overwrite sensitive system files",
+"explains that O_NOFOLLOW causes open() to immediately fail with ELOOP if the trailing path component is a symbolic link",
+"identifies combining O_CREAT | O_EXCL | O_NOFOLLOW as mandatory best practice for secure temporary file creation"
+],
+"follow_up": false
+},
+{
+"id": "OS-227",
+"question": "How do Hazard Pointers solve the Safe Memory Reclamation problem in lock-free concurrent data structures?",
+"subject": "Operating Systems",
+"topic": "Process Synchronization",
+"difficulty": "MEDIUM",
+"type": "DESIGN",
+"concepts": [
+"hazard pointers",
+"lock-free memory reclamation",
+"use-after-free",
+"retired node list",
+"per-thread pointer"
+],
+"criteria": [
+"identifies the core hazard: a thread popping a node from a lock-free stack cannot immediately call free() because concurrent reader threads may still hold pointers",
+"defines a hazard pointer as a single-writer, multi-reader global pointer where a thread publishes nodes it is actively reading",
+"explains that a deleting thread moves nodes to a private 'retired list' rather than freeing them immediately",
+"describes reclamation: deleting thread scans retired nodes against all active hazard pointers, freeing only unreferenced nodes"
+],
+"follow_up": true
+},
+{
+"id": "OS-228",
+"question": "Why did modern Linux kernels replace classic Ticket Spinlocks with Queued Spinlocks (qspinlock)?",
+"subject": "Operating Systems",
+"topic": "Process Synchronization",
+"difficulty": "MEDIUM",
+"type": "COMPARISON",
+"concepts": [
+"qspinlock",
+"ticket spinlock",
+"MCS lock queue",
+"lock size constraint",
+"cache invalidation"
+],
+"criteria": [
+"identifies that classic Ticket locks caused severe cache-line bouncing on servers with hundreds of cores",
+"identifies that MCS locks solve cache bouncing but require an 8-byte pointer per lock (too large to embed in small kernel structs)",
+"explains that qspinlock compresses an MCS queue into a tiny 4-byte integer using per-CPU pre-allocated queue arrays",
+"highlights that uncontended qspinlock acquisition uses a single fast CAS, falling back to local MCS queuing only under contention"
+],
+"follow_up": false
+},
+{
+"id": "OS-229",
+"question": "How does the pivot_root() system call provide superior container security boundaries compared to chroot()?",
+"subject": "Operating Systems",
+"topic": "OS Fundamentals",
+"difficulty": "MEDIUM",
+"type": "COMPARISON",
+"concepts": [
+"pivot_root",
+"chroot",
+"mount namespace",
+"host filesystem unmount",
+"container escape prevention"
+],
+"criteria": [
+"explains that chroot changes only the root path pointer while leaving host mount points accessible in the mount table",
+"explains that pivot_root swaps the current root mount with a new directory within a private mount namespace",
+"describes the critical step: after pivot_root, the old host root is unmounted (umount2 with MNT_DETACH)",
+"proves that because the host root is completely unmounted, container breakout via directory traversal or file descriptor tricks is impossible"
+],
+"follow_up": false
+},
+{
+"id": "OS-230",
+"question": "What is the 'SSD Write Cliff' phenomenon during sustained random write workloads, and how does operating system over-provisioning mitigate it?",
+"subject": "Operating Systems",
+"topic": "File Systems",
+"difficulty": "MEDIUM",
+"type": "PERFORMANCE",
+"concepts": [
+"write cliff",
+"over-provisioning",
+"sustained random write",
+"garbage collection starvation",
+"I/O latency collapse"
+],
+"criteria": [
+"explains that brand new or idle SSDs write rapidly to pre-erased free blocks at maximum interface bandwidth",
+"describes the write cliff: once all free blocks are exhausted, every new write forces real-time garbage collection (reading, moving, and erasing blocks)",
+"identifies the result: write throughput suddenly plummets by 70-90% accompanied by extreme tail latency spikes",
+"defines over-provisioning: reserving 10-28% of flash capacity invisible to the OS to provide a permanent buffer for background garbage collection"
+],
+"follow_up": false
+},
+{
+"id": "OS-231",
+"question": "How does the Filter Lock generalize Peterson's two-process algorithm to provide mutual exclusion for N concurrent threads?",
+"subject": "Operating Systems",
+"topic": "Process Synchronization",
+"difficulty": "MEDIUM",
+"type": "PROBLEM_SOLVING",
+"concepts": [
+"Filter lock",
+"Peterson algorithm generalization",
+"N-process mutual exclusion",
+"levels and victim flags",
+"starvation freedom"
+],
+"criteria": [
+"explains that the filter lock creates N-1 distinct waiting levels (like sequential filtration barriers)",
+"describes the invariant: to enter level L, a thread must pass through level L-1; at least one thread attempting level L is held back",
+"explains the victim variable at each level: the last thread to enter the level is designated the victim and must wait",
+"proves that exactly one thread reaches level N-1 (the critical section), guaranteeing mutual exclusion and progress"
+],
+"follow_up": false
+},
+{
+"id": "OS-232",
+"question": "How do SMB/CIFS Opportunistic Locks (Oplocks) and File Leases allow network clients to cache file data locally while maintaining cluster consistency?",
+"subject": "Operating Systems",
+"topic": "File Systems",
+"difficulty": "MEDIUM",
+"type": "EXPLANATION",
+"concepts": [
+"SMB oplocks",
+"file leases",
+"client caching",
+"oplock break notification",
+"network round-trip elimination"
+],
+"criteria": [
+"explains that exclusive oplocks allow a client to cache reads and defer writes locally without contacting the server on every operation",
+"describes an oplock break: when a second client opens the same file, the server issues a break notification to the first client",
+"explains that the first client flushes dirty data and downgrades to a shared read-only lock before the second client proceeds",
+"identifies how file leases streamline WAN network performance by avoiding redundant protocol round trips"
+],
+"follow_up": false
+},
+{
+"id": "OS-233",
+"question": "How does Linux Kernel Live Patching (kpatch / livepatch) apply critical security patches to a running kernel without rebooting?",
+"subject": "Operating Systems",
+"topic": "OS Fundamentals",
+"difficulty": "MEDIUM",
+"type": "EXPLANATION",
+"concepts": [
+"kernel live patching",
+"kpatch",
+"ftrace redirection",
+"consistency model",
+"zero-downtime security"
+],
+"criteria": [
+"explains that live patching fixes critical vulnerabilities in enterprise servers without restarting services or rebooting",
+"describes how ftrace hooks the entry point of the vulnerable function, redirecting execution to the new patched function via a custom trampoline",
+"explains the consistency model: ensures no thread is currently sleeping inside or executing the vulnerable function during the transition",
+"highlights that the entire patch application completes transparently in milliseconds"
+],
+"follow_up": false
+},
+{
+"id": "OS-234",
+"question": "What are the three Transparent Huge Page (THP) defragmentation modes ('always', 'madvise', and 'never') in /sys/kernel/mm/transparent_hugepage/defrag?",
+"subject": "Operating Systems",
+"topic": "Virtual Memory",
+"difficulty": "MEDIUM",
+"type": "PERFORMANCE",
+"concepts": [
+"THP defrag modes",
+"always",
+"madvise",
+"never",
+"direct compaction stall"
+],
+"criteria": [
+"defines 'always': allocating thread will stall synchronously and perform direct compaction if a 2MB page is not immediately available",
+"defines 'madvise': direct compaction runs ONLY for memory regions explicitly requested by application via madvise(MADV_HUGEPAGE)",
+"defines 'never': kernel never stalls allocations; falls back immediately to 4KB pages if huge pages are not free",
+"identifies that latency-sensitive database engines strongly prefer 'madvise' or 'never' to prevent sudden multi-millisecond stalls"
+],
+"follow_up": false
+},
+{
+"id": "OS-235",
+"question": "How does the 'cyclictest' benchmark measure worst-case scheduling latency and jitter in Real-Time Linux operating systems?",
+"subject": "Operating Systems",
+"topic": "CPU Scheduling",
+"difficulty": "MEDIUM",
+"type": "PERFORMANCE",
+"concepts": [
+"cyclictest",
+"real-time latency",
+"clock_nanosleep",
+"latency jitter",
+"worst-case execution time"
+],
+"criteria": [
+"explains that cyclictest sleeps for a precise duration using high-resolution timers (clock_nanosleep) and measures actual wake time",
+"defines latency as the time difference between intended wakeup time and the moment user code actually resumes execution",
+"explains that real-time systems are judged by maximum worst-case latency (tail latency), not average latency",
+"identifies that hardware SMI interrupts, power management state transitions, and kernel spinlocks are primary causes of latency jitter spikes"
+],
+"follow_up": true
+},
+{
+"id": "OS-236",
+"question": "How does Epoch-Based Reclamation (EBR) achieve safe memory reclamation in lock-free data structures with lower per-read overhead than Hazard Pointers?",
+"subject": "Operating Systems",
+"topic": "Process Synchronization",
+"difficulty": "HARD",
+"type": "DESIGN",
+"concepts": [
+"Epoch-Based Reclamation",
+"global epoch",
+"thread local epoch",
+"limbo list",
+"grace period"
+],
+"criteria": [
+"defines the global epoch counter (e.g., advancing cyclically through epochs 0, 1, 2)",
+"describes reader entry: reading threads announce their active presence by copying the global epoch to a thread-local variable",
+"explains deferred freeing: retired nodes are placed on a per-epoch 'limbo list' and cannot be freed until all threads advance beyond that epoch",
+"highlights the efficiency advantage: readers execute only a single thread-local variable assignment rather than updating hazard pointers on every node dereference"
+],
+"follow_up": true
+},
+{
+"id": "OS-237",
+"question": "How do Packed Virtqueues in VirtIO 1.1 achieve superior CPU cache performance over traditional Split Virtqueues in high-throughput virtualized networks?",
+"subject": "Operating Systems",
+"topic": "OS Fundamentals",
+"difficulty": "HARD",
+"type": "PERFORMANCE",
+"concepts": [
+"Packed Virtqueues",
+"VirtIO 1.1",
+"ring buffer compression",
+"cache efficiency",
+"wrap counter flags"
+],
+"criteria": [
+"identifies that Split Virtqueues scattered descriptor tables, available rings, and used rings across three disjoint memory regions (poor cache locality)",
+"defines Packed Virtqueues: combines all three structures into a single contiguous array of 16-byte descriptors",
+"explains wrap counter polarity flags: driver and device alternate polarity bits on ring wrap, eliminating separate index counters",
+"demonstrates that reading and writing contiguous memory lines drastically reduces L1/L2 cache misses under 100GbE packet forwarding"
+],
+"follow_up": true
+},
+{
+"id": "OS-238",
+"question": "How does the Ceph CRUSH (Controlled Replication Under Scalable Hashing) algorithm calculate data placement in distributed storage without centralized metadata lookups?",
+"subject": "Operating Systems",
+"topic": "File Systems",
+"difficulty": "HARD",
+"type": "DESIGN",
+"concepts": [
+"Ceph CRUSH",
+"algorithmic data placement",
+"failure domains",
+"distributed storage",
+"metadata bottleneck elimination"
+],
+"criteria": [
+"identifies that traditional distributed storage (like HDFS) uses a centralized lookup table (NameNode) that becomes a scalability bottleneck",
+"defines CRUSH: a deterministic mathematical pseudo-random function calculating exact storage disk targets from (object_id, cluster_map, rule)",
+"explains failure domain awareness: placement rules guarantee replicas are distributed across separate racks, power supplies, or datacenters",
+"demonstrates that clients calculate data location directly in microseconds without querying any central coordinator"
+],
+"follow_up": true
+},
+{
+"id": "OS-239",
+"question": "How does the Landlock Linux Security Module (LSM) allow completely unprivileged user processes to construct restrictive filesystem sandboxes?",
+"subject": "Operating Systems",
+"topic": "OS Fundamentals",
+"difficulty": "HARD",
+"type": "SECURITY",
+"concepts": [
+"Landlock LSM",
+"unprivileged sandboxing",
+"ruleset inheritance",
+"filesystem restriction",
+"attack surface reduction"
+],
+"criteria": [
+"explains that traditional security systems (SELinux, seccomp, AppArmor) require root privileges or daemon intervention to configure policies",
+"defines Landlock: an unprivileged user process can create a ruleset and drop all rights except explicit allowed paths via landlock_restrict_self()",
+"explains policy inheritance: once locked, all child processes permanently inherit the restricted sandbox with no ability to expand privileges",
+"identifies practical applications: sandboxing web browsers, PDF parsers, and untrusted microservices directly in user-space code"
+],
+"follow_up": false
+},
+{
+"id": "OS-240",
+"question": "How does the Linux kernel calculate the 'CommitLimit' under strict overcommit mode (vm.overcommit_memory = 2), and what triggers an allocation failure?",
+"subject": "Operating Systems",
+"topic": "Virtual Memory",
+"difficulty": "HARD",
+"type": "PERFORMANCE",
+"concepts": [
+"CommitLimit",
+"Committed_AS",
+"overcommit_memory=2",
+"overcommit_ratio",
+"allocation safety"
+],
+"criteria": [
+"states the exact formula: CommitLimit = Swap_Total + (Physical_RAM * (overcommit_ratio / 100))",
+"defines Committed_AS as the total virtual memory currently promised to all running processes across the system",
+"explains that when an allocation would cause Committed_AS to exceed CommitLimit, the kernel immediately fails the memory request with ENOMEM",
+"contrasts this with default overcommit: guarantees that the operating system never over-promises memory, completely preventing OOM crashes"
+],
+"follow_up": true
+},
+{
+"id": "OS-241",
+"question": "How does Linux SMT Core Scheduling prevent cross-hyperthread speculative execution side-channel attacks (such as MDS and PortSmash)?",
+"subject": "Operating Systems",
+"topic": "CPU Scheduling",
+"difficulty": "HARD",
+"type": "SECURITY",
+"concepts": [
+"SMT Core Scheduling",
+"Hyper-Threading side channels",
+"cookie tagging",
+"shared physical core",
+"coscheduling"
+],
+"criteria": [
+"explains the security vulnerability: two hostile processes sharing sibling hyperthreads on the same core can leak data through shared L1/L2 caches and execution ports",
+"defines Core Scheduling: tags processes with cryptographic cookie identifiers",
+"explains the scheduling rule: the OS scheduler ensures that sibling hardware threads on a physical core run ONLY tasks sharing identical cookies",
+"describes how an isolated task forces sibling hyperthreads to run idle if no matching task exists, eliminating side-channel leakage without disabling Hyper-Threading globally"
+],
+"follow_up": true
+},
+{
+"id": "OS-242",
+"question": "How does the Linux Audit Framework (auditd) use kernel filtering rules and Netlink sockets to achieve tamper-evident event logging with minimal syscall overhead?",
+"subject": "Operating Systems",
+"topic": "OS Fundamentals",
+"difficulty": "HARD",
+"type": "SECURITY",
+"concepts": [
+"auditd",
+"audit filter lists",
+"Netlink socket",
+"tamper-evident logging",
+"system call auditing"
+],
+"criteria": [
+"explains that kernel audit hooks exist in every system call entry and exit path",
+"describes the 5 audit filter lists (TASK, EXIT, USER, WATCH, EXCLUDE) evaluated inside kernel space to reject non-matching events in nanoseconds",
+"explains asynchronous delivery: matching events are placed on a kernel queue and streamed to the user-space auditd daemon over Netlink sockets",
+"identifies fail-safe handling: configurable kernel parameters (e.g., audit_backlog_limit) determining whether to drop records or panic the system when queues fill"
+],
+"follow_up": false
+},
+{
+"id": "OS-243",
+"question": "How do Asymmetric NUMA topologies and Intel Cache Allocation Technology (CAT) prevent 'noisy neighbor' cache thrashing on multi-tenant cloud servers?",
+"subject": "Operating Systems",
+"topic": "Memory Management",
+"difficulty": "HARD",
+"type": "PERFORMANCE",
+"concepts": [
+"Cache Allocation Technology",
+"noisy neighbor problem",
+"L3 cache partitioning",
+"Class of Service",
+"capacity bitmask"
+],
+"criteria": [
+"defines the noisy neighbor problem: a high-memory-bandwidth container floods the shared L3 cache, evicting cache lines of critical workloads",
+"defines Intel CAT: hardware mechanism that partitions shared L3 cache ways among software-defined Classes of Service (CLOS)",
+"explains how OS assigning capacity bitmasks restricts specific cgroups to dedicated fractions of L3 cache",
+"demonstrates that partitioned caches provide guaranteed latency isolation and deterministic execution times for real-time services"
+],
+"follow_up": true
+},
+{
+"id": "OS-244",
+"question": "How do Lock-Free Skip Lists implement concurrent search, insertion, and deletion using atomic Compare-And-Swap (CAS) and logical deletion flags?",
+"subject": "Operating Systems",
+"topic": "Process Synchronization",
+"difficulty": "HARD",
+"type": "DESIGN",
+"concepts": [
+"lock-free skip list",
+"Compare-And-Swap",
+"logical deletion mark",
+"physical node removal",
+"Harris linked list"
+],
+"criteria": [
+"describes the probabilistic multi-level linked list structure providing O(log N) operations",
+"explains the two-phase deletion protocol (Harris algorithm): atomically mark the node's next pointer (logical deletion), then swing previous pointer (physical deletion)",
+"explains how logical marking prevents concurrent threads from inserting new nodes immediately after a doomed node",
+"highlights that traversing threads assist in physically unlinking marked nodes encountered during normal search passes"
+],
+"follow_up": true
+},
+{
+"id": "OS-245",
+"question": "How does File System Hole Punching (FALLOC_FL_PUNCH_HOLE) allow virtualization hypervisors to dynamically reclaim physical disk blocks when a guest deletes files?",
+"subject": "Operating Systems",
+"topic": "File Systems",
+"difficulty": "HARD",
+"type": "DESIGN",
+"concepts": [
+"hole punching",
+"FALLOC_FL_PUNCH_HOLE",
+"thin provisioning",
+"extent unmapping",
+"storage reclamation"
+],
+"criteria": [
+"explains that deleting files inside a guest VM traditionally left disk images bloated because virtual blocks were never deallocated on the host",
+"defines hole punching: deallocates physical blocks within an arbitrary byte range of an existing file while retaining original file size",
+"explains that the host file system updates inode extent trees to mark the range as an unallocated sparse hole",
+"demonstrates how combining guest TRIM/DISCARD commands with host hole-punching achieves automatic thin-provisioned storage reclamation"
+],
+"follow_up": true
+},
+{
+"id": "OS-246",
+"question": "What kernel architectural challenges arise during Memory Hotplugging (adding or removing physical RAM from a running operating system without rebooting)?",
+"subject": "Operating Systems",
+"topic": "Memory Management",
+"difficulty": "HARD",
+"type": "DESIGN",
+"concepts": [
+"memory hotplug",
+"memory hot-remove",
+"ZONE_MOVABLE",
+"unmovable kernel allocations",
+"page migration"
+],
+"criteria": [
+"distinguishes hot-add (simple: bring physical memory range online, initialize page structures, add to buddy allocator) from hot-remove",
+"identifies the primary obstacle for hot-remove: pinned kernel data structures (kernel stacks, SLUB caches) cannot be migrated to other addresses",
+"defines ZONE_MOVABLE: a designated memory zone where ONLY movable user pages and pagecache are allocated",
+"explains that hot-remove succeeds by migrating all active pages in ZONE_MOVABLE to other physical frames, isolating the hardware card for removal"
+],
+"follow_up": true
+},
+{
+"id": "OS-247",
+"question": "What is the difference between Priority Ceiling Protocol (PCP) and Immediate Ceiling Priority Protocol (ICPP / Priority Ceiling Emulation)?",
+"subject": "Operating Systems",
+"topic": "CPU Scheduling",
+"difficulty": "HARD",
+"type": "COMPARISON",
+"concepts": [
+"PCP",
+"ICPP",
+"Priority Ceiling Emulation",
+"context switch reduction",
+"dynamic vs static ceiling"
+],
+"criteria": [
+"explains that standard PCP computes ceilings dynamically and blocks tasks if their priority does not exceed the system ceiling",
+"defines ICPP: whenever a task locks a mutex, its priority is INSTANTLY and unconditionally elevated to the mutex's ceiling priority",
+"proves that under ICPP, no other task that shares the mutex can ever preempt the running task",
+"highlights the engineering advantage of ICPP: completely eliminates semaphore blocking queues and reduces context switches on uniprocessors"
+],
+"follow_up": true
+},
+{
+"id": "OS-248",
+"question": "How do Process-Context Identifiers (PCID) in x86-64 MMUs optimize context switches by eliminating TLB flushes on CR3 register reloads?",
+"subject": "Operating Systems",
+"topic": "Memory Management",
+"difficulty": "HARD",
+"type": "PERFORMANCE",
+"concepts": [
+"PCID",
+"CR3 register",
+"TLB tagging",
+"context switch penalty",
+"address space isolation"
+],
+"criteria": [
+"explains that historically, reloading CR3 with a new process page table forced hardware to flush the entire non-global TLB",
+"defines PCID as hardware TLB tagging: assigns a 12-bit identifier tag to each cached virtual-to-physical translation",
+"explains that on context switch, the OS specifies the target PCID in CR3 without invalidating existing TLB lines",
+"highlights that threads returning to recently executed processes immediately hit existing warm TLB entries, massively accelerating context switches under KPTI"
+],
+"follow_up": true
+},
+{
+"id": "OS-249",
+"question": "How does the Linux userfaultfd system call allow user-space applications (like QEMU) to handle page faults for Live Virtual Machine Migration and post-copy memory transfers?",
+"subject": "Operating Systems",
+"topic": "Virtual Memory",
+"difficulty": "HARD",
+"type": "DESIGN",
+"concepts": [
+"userfaultfd",
+"post-copy live migration",
+"user-space page fault",
+"on-demand network fetch",
+"zero downtime"
+],
+"criteria": [
+"defines userfaultfd as a mechanism that delegates page fault handling from kernel space to an arbitrary user-space thread",
+"explains the live migration challenge: pre-copy migration struggles to complete if a busy VM writes dirty pages faster than network transfer speed",
+"describes post-copy migration: start the VM on the destination immediately; when guest accesses an un-transferred page, userfaultfd freezes the thread",
+"explains that the migration daemon fetches the exact page over the network and injects it via UFFDIO_COPY, unblocking the thread seamlessly"
+],
+"follow_up": true
+},
+{
+"id": "OS-250",
+"question": "In the formally verified seL4 microkernel, how does capability derivation and capability revocation guarantee mathematical proof of access control security?",
+"subject": "Operating Systems",
+"topic": "OS Fundamentals",
+"difficulty": "HARD",
+"type": "SECURITY",
+"concepts": [
+"seL4",
+"formal verification",
+"capability-based security",
+"capability derivation tree",
+"capability revocation"
+],
+"criteria": [
+"defines a capability in seL4 as an unforgeable token granting explicit authority to perform operations on a specific kernel object",
+"explains the Capability Derivation Tree (CDT): tracks parent-child relationships as capabilities are delegated across processes",
+"describes capability revocation: revoking a parent capability recursively and instantaneously destroys all derived child capabilities across the entire system",
+"highlights that mathematical proofs in Isabelle/HOL formally guarantee absence of buffer overflows, null pointer dereferences, and privilege escalation"
 ],
 "follow_up": true
 }

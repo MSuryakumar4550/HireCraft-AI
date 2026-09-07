@@ -40,7 +40,7 @@ public class SecurityConfig {
                         // Temporarily allowing all traffic for local frontend development
                         .requestMatchers("/api/auth/**").permitAll()
                         .requestMatchers("/api/aptitude/**").permitAll()
-                        .anyRequest().authenticated()
+                        .anyRequest().permitAll()
                 )
                 .sessionManagement(session ->
                         session.sessionCreationPolicy(SessionCreationPolicy.STATELESS)

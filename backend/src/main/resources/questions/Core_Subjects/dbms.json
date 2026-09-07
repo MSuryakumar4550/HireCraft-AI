@@ -760,6 +760,3209 @@
 "bases the design on business requirements"
 ],
 "follow_up": true
-}
+},
+{
+"id": "DBMS-051",
+"question": "How does the selection operator differ from the projection operator in relational algebra?",
+"subject": "DBMS",
+"topic": "Relational Algebra",
+"difficulty": "EASY",
+"type": "COMPARISON",
+"concepts": ["selection operator", "projection operator", "horizontal filtering", "vertical filtering", "relational algebra"],
+"criteria": [
+"defines selection as filtering rows (tuples) based on a condition",
+"defines projection as filtering columns (attributes) from a relation",
+"identifies selection as horizontal and projection as vertical partitioning",
+"explains that projection eliminates duplicate tuples in pure relational algebra"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-052",
+"question": "What is the difference between a Cartesian product and a natural join in relational algebra?",
+"subject": "DBMS",
+"topic": "Relational Algebra",
+"difficulty": "EASY",
+"type": "COMPARISON",
+"concepts": ["Cartesian product", "cross product", "natural join", "common attributes", "relational algebra"],
+"criteria": [
+"defines Cartesian product as pairing every tuple of relation R with every tuple of relation S",
+"defines natural join as combining tuples based on matching values across common attribute names",
+"explains that natural join eliminates duplicate columns while Cartesian product retains all columns",
+"contrasts cardinality: |R| * |S| for Cartesian product versus conditional match size for natural join"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-053",
+"question": "What is the distinction between Data Definition Language (DDL) and Data Manipulation Language (DML) in SQL?",
+"subject": "DBMS",
+"topic": "SQL Fundamentals",
+"difficulty": "EASY",
+"type": "COMPARISON",
+"concepts": ["DDL", "DML", "schema definition", "data manipulation", "transaction commit"],
+"criteria": [
+"defines DDL as commands managing database schema and structure (CREATE, ALTER, DROP, TRUNCATE)",
+"defines DML as commands managing data instances within tables (INSERT, UPDATE, DELETE, SELECT)",
+"explains that DDL operations typically auto-commit or alter metadata catalogs",
+"contrasts that DML operations are transaction-managed and rollable back in standard sessions"
+],
+"follow_up": false
+},
+{
+"id": "DBMS-054",
+"question": "How do TRUNCATE, DELETE, and DROP statements differ in SQL in terms of structure, performance, and rollback capability?",
+"subject": "DBMS",
+"topic": "SQL Fundamentals",
+"difficulty": "EASY",
+"type": "COMPARISON",
+"concepts": ["TRUNCATE", "DELETE", "DROP", "transaction log", "table structure", "high water mark"],
+"criteria": [
+"explains DELETE removes individual rows row-by-row, logs each row removal, and supports WHERE clauses",
+"explains TRUNCATE deallocates data pages, resets the table to empty while keeping schema, and generates minimal logging",
+"explains DROP removes both table data and its schema definition completely from the data dictionary",
+"contrasts rollback behavior and performance impact across the three commands"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-055",
+"question": "How does SQL treat NULL values in comparison operations and arithmetic expressions, and what is three-valued logic?",
+"subject": "DBMS",
+"topic": "SQL Fundamentals",
+"difficulty": "EASY",
+"type": "EXPLANATION",
+"concepts": ["NULL", "three-valued logic", "UNKNOWN", "IS NULL", "arithmetic with NULL"],
+"criteria": [
+"explains NULL represents unknown or missing data rather than zero or an empty string",
+"explains three-valued logic (TRUE, FALSE, UNKNOWN) in boolean conditions",
+"identifies that any standard equality or comparison operator with NULL evaluates to UNKNOWN",
+"explains that IS NULL or IS NOT NULL must be used instead of = NULL"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-056",
+"question": "What is the fundamental difference in result sets produced by an INNER JOIN versus a LEFT OUTER JOIN?",
+"subject": "DBMS",
+"topic": "SQL Joins",
+"difficulty": "EASY",
+"type": "COMPARISON",
+"concepts": ["INNER JOIN", "LEFT OUTER JOIN", "predicate match", "unmatched tuples", "NULL padding"],
+"criteria": [
+"explains INNER JOIN returns only rows where the join condition is satisfied in both tables",
+"explains LEFT OUTER JOIN returns all rows from the left table regardless of a match in the right table",
+"identifies that non-matching right-table attributes are filled with NULLs in a LEFT OUTER JOIN",
+"provides a clear scenario demonstrating where LEFT JOIN preserves orphan records"
+],
+"follow_up": false
+},
+{
+"id": "DBMS-057",
+"question": "What is a CROSS JOIN in SQL, and in what practical scenarios is it used?",
+"subject": "DBMS",
+"topic": "SQL Joins",
+"difficulty": "EASY",
+"type": "EXPLANATION",
+"concepts": ["CROSS JOIN", "Cartesian product", "combinatorics", "matrix generation"],
+"criteria": [
+"defines CROSS JOIN as producing the Cartesian product of two tables without join conditions",
+"identifies resulting row count as rows(A) * rows(B)",
+"provides practical use cases such as generating calendars, combinations of product variants (sizes and colors), or test datasets",
+"warns of memory and performance risks if executed unintentionally on large tables"
+],
+"follow_up": false
+},
+{
+"id": "DBMS-058",
+"question": "What is the difference between the WHERE clause and the HAVING clause in an SQL query?",
+"subject": "DBMS",
+"topic": "SQL Aggregation",
+"difficulty": "EASY",
+"type": "COMPARISON",
+"concepts": ["WHERE clause", "HAVING clause", "GROUP BY", "aggregate functions", "execution order"],
+"criteria": [
+"explains WHERE filters individual rows before any grouping or aggregation takes place",
+"explains HAVING filters grouped rows or aggregate results after GROUP BY evaluation",
+"points out that aggregate functions (COUNT, SUM, AVG) cannot appear in a WHERE clause without subqueries",
+"describes the query execution order: FROM -> WHERE -> GROUP BY -> HAVING -> SELECT"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-059",
+"question": "How does a UNIQUE constraint differ from a PRIMARY KEY constraint in relational databases?",
+"subject": "DBMS",
+"topic": "Keys and Constraints",
+"difficulty": "EASY",
+"type": "COMPARISON",
+"concepts": ["UNIQUE constraint", "PRIMARY KEY", "NULL tolerance", "table constraint limit"],
+"criteria": [
+"explains a table can have only one PRIMARY KEY but multiple UNIQUE constraints",
+"explains PRIMARY KEY strictly forbids NULL values across all component columns",
+"explains UNIQUE constraints allow NULL values (one or more depending on DBMS implementation)",
+"identifies that PRIMARY KEY typically creates the default clustered index in engines like InnoDB"
+],
+"follow_up": false
+},
+{
+"id": "DBMS-060",
+"question": "What is a database view, and how does querying a view differ from querying an underlying physical table?",
+"subject": "DBMS",
+"topic": "Database Architecture",
+"difficulty": "EASY",
+"type": "EXPLANATION",
+"concepts": ["database view", "virtual table", "underlying base table", "query rewriting", "security abstraction"],
+"criteria": [
+"defines a view as a stored query that presents a virtual table without storing data directly on disk",
+"explains that querying a view dynamically merges the view definition into the base table query at runtime",
+"identifies key benefits: security/access abstraction, simplifying complex queries, and data independence",
+"mentions limitations regarding updatability on complex multi-table views"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-061",
+"question": "What is a SAVEPOINT in database transactions, and how does it differ from a complete transaction ROLLBACK?",
+"subject": "DBMS",
+"topic": "Transactions",
+"difficulty": "EASY",
+"type": "EXPLANATION",
+"concepts": ["SAVEPOINT", "partial rollback", "nested transaction demarcation", "transaction state"],
+"criteria": [
+"defines SAVEPOINT as an intermediate checkpoint within an active transaction",
+"explains ROLLBACK TO SAVEPOINT undoes changes made after the savepoint without terminating the transaction",
+"contrasts with full ROLLBACK which aborts the entire transaction and discards all pending changes",
+"explains how savepoints enable resilient multi-step error handling in complex workflows"
+],
+"follow_up": false
+},
+{
+"id": "DBMS-062",
+"question": "What are GRANT and REVOKE statements in SQL, and how do they enforce access control?",
+"subject": "DBMS",
+"topic": "Database Security",
+"difficulty": "EASY",
+"type": "EXPLANATION",
+"concepts": ["GRANT", "REVOKE", "Data Control Language (DCL)", "privileges", "role-based access control"],
+"criteria": [
+"identifies GRANT and REVOKE as Data Control Language (DCL) commands",
+"explains GRANT assigns specific privileges (SELECT, INSERT, UPDATE, EXECUTE) to users or roles",
+"explains REVOKE withdraws previously granted permissions",
+"mentions WITH GRANT OPTION and cascading revocations"
+],
+"follow_up": false
+},
+{
+"id": "DBMS-063",
+"question": "What is the operational difference between a Shared (S) lock and an Exclusive (X) lock?",
+"subject": "DBMS",
+"topic": "Concurrency Control",
+"difficulty": "EASY",
+"type": "COMPARISON",
+"concepts": ["Shared lock", "Exclusive lock", "read lock", "write lock", "lock compatibility matrix"],
+"criteria": [
+"defines Shared lock (S-lock) as a read lock allowing multiple transactions to read concurrently",
+"defines Exclusive lock (X-lock) as a write lock preventing any other transaction from reading or writing",
+"references the lock compatibility matrix: S-S is compatible, S-X and X-X conflict",
+"explains how lock upgrades and downgrades work"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-064",
+"question": "What is a dirty read anomaly, and at which ANSI SQL isolation level is it permitted?",
+"subject": "DBMS",
+"topic": "Concurrency Control",
+"difficulty": "EASY",
+"type": "DEFINITION",
+"concepts": ["dirty read", "uncommitted data", "Read Uncommitted", "isolation level"],
+"criteria": [
+"defines dirty read as a transaction reading data modified by another uncommitted transaction",
+"explains the danger: if the modifying transaction rolls back, the reading transaction operated on nonexistent data",
+"identifies Read Uncommitted as the only ANSI SQL isolation level allowing dirty reads",
+"notes that Read Committed, Repeatable Read, and Serializable prevent dirty reads"
+],
+"follow_up": false
+},
+{
+"id": "DBMS-065",
+"question": "What requirements must a relation satisfy to be in First Normal Form (1NF)?",
+"subject": "DBMS",
+"topic": "Normalization",
+"difficulty": "EASY",
+"type": "DEFINITION",
+"concepts": ["First Normal Form (1NF)", "atomic values", "repeating groups", "primary key"],
+"criteria": [
+"states that all column values must be atomic (indivisible single values)",
+"explains elimination of repeating groups or multi-valued arrays in table attributes",
+"requires each record to have a unique identifier (primary key)",
+"notes that the order of rows and columns must not convey semantic meaning"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-066",
+"question": "What does the division operator in relational algebra represent, and what classic real-world query requires it?",
+"subject": "DBMS",
+"topic": "Relational Algebra",
+"difficulty": "MEDIUM",
+"type": "EXPLANATION",
+"concepts": ["division operator", "universal quantification", "relational algebra", "all matching tuples"],
+"criteria": [
+"defines division (R ÷ S) as finding tuples in R associated with every tuple in S",
+"explains that it models queries with universal quantification ('for all' or 'every')",
+"gives a canonical example: 'Find all students who have enrolled in every course offered by the CS department'",
+"explains how division is expressed in standard SQL using NOT EXISTS with correlated subqueries"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-067",
+"question": "How does a FULL OUTER JOIN operate, and how are non-matching tuples from both relations handled?",
+"subject": "DBMS",
+"topic": "SQL Joins",
+"difficulty": "MEDIUM",
+"type": "EXPLANATION",
+"concepts": ["FULL OUTER JOIN", "LEFT JOIN", "RIGHT JOIN", "NULL extension", "set union"],
+"criteria": [
+"explains that FULL OUTER JOIN combines the results of both LEFT and RIGHT outer joins",
+"states that matching rows are joined normally on the join predicate",
+"explains that unmatched rows from the left table are populated with NULLs for right table columns",
+"explains that unmatched rows from the right table are populated with NULLs for left table columns"
+],
+"follow_up": false
+},
+{
+"id": "DBMS-068",
+"question": "What is a SELF JOIN, and what hierarchical or comparative data patterns require its use?",
+"subject": "DBMS",
+"topic": "SQL Joins",
+"difficulty": "MEDIUM",
+"type": "EXPLANATION",
+"concepts": ["SELF JOIN", "table aliasing", "hierarchical data", "employee-manager relationship", "graph edge traversal"],
+"criteria": [
+"defines a SELF JOIN as joining a table to itself using distinct table aliases",
+"explains its primary use case in unary/recursive relationships such as employee-manager hierarchies",
+"demonstrates comparing rows within the same table (e.g., finding pairs of products with the same price)",
+"points out how outer joins are used with self joins to preserve root nodes (e.g., CEO who has no manager)"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-069",
+"question": "What is the execution mechanism difference between a correlated subquery and an uncorrelated subquery in SQL?",
+"subject": "DBMS",
+"topic": "SQL Subqueries",
+"difficulty": "MEDIUM",
+"type": "COMPARISON",
+"concepts": ["correlated subquery", "uncorrelated subquery", "nested iteration", "query execution cost"],
+"criteria": [
+"explains an uncorrelated subquery executes once independently and passes its scalar or set result to the outer query",
+"explains a correlated subquery references columns from the outer query and must logically evaluate for each candidate outer row",
+"analyzes the time complexity difference: O(1) subquery execution vs O(N) evaluation for correlated subqueries",
+"mentions how query optimizers rewrite correlated subqueries into joins when possible"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-070",
+"question": "How do the EXISTS and IN operators differ in query semantics and performance when handling NULL values and large datasets?",
+"subject": "DBMS",
+"topic": "SQL Subqueries",
+"difficulty": "MEDIUM",
+"type": "COMPARISON",
+"concepts": ["EXISTS", "IN", "NULL handling", "three-valued logic", "short-circuit evaluation", "subquery performance"],
+"criteria": [
+"explains IN compares values against a materialized list or subquery result and fails counter-intuitively with NULLs in NOT IN",
+"explains EXISTS checks for the presence of at least one matching row using boolean short-circuit evaluation",
+"highlights that NOT IN returns zero rows if the subquery contains even a single NULL value due to three-valued logic",
+"analyzes optimizer performance differences on indexed vs unindexed foreign keys"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-071",
+"question": "How do ROW_NUMBER(), RANK(), and DENSE_RANK() handle duplicate sorting values in SQL window functions?",
+"subject": "DBMS",
+"topic": "SQL Window Functions",
+"difficulty": "MEDIUM",
+"type": "COMPARISON",
+"concepts": ["ROW_NUMBER", "RANK", "DENSE_RANK", "window functions", "ties handling", "gap creation"],
+"criteria": [
+"explains ROW_NUMBER assigns strictly sequential integers (1, 2, 3...) regardless of identical values",
+"explains RANK assigns identical ranks to duplicate values and skips subsequent ranks leaving gaps (e.g., 1, 2, 2, 4)",
+"explains DENSE_RANK assigns identical ranks to duplicates without skipping subsequent ranks (e.g., 1, 2, 2, 3)",
+"provides practical examples such as finding top N salaries or handling leaderboard ties"
+],
+"follow_up": false
+},
+{
+"id": "DBMS-072",
+"question": "What do the LEAD() and LAG() window functions do, and how do they enable time-series comparison across adjacent rows?",
+"subject": "DBMS",
+"topic": "SQL Window Functions",
+"difficulty": "MEDIUM",
+"type": "EXPLANATION",
+"concepts": ["LEAD", "LAG", "window functions", "time-series analysis", "offset navigation", "PARTITION BY"],
+"criteria": [
+"defines LAG() as accessing data from a previous row at a specified physical offset within the partition",
+"defines LEAD() as accessing data from a subsequent row at a specified physical offset",
+"explains parameters: expression, offset (default 1), and default fallback value for boundary NULLs",
+"illustrates practical applications such as period-over-period growth calculation and session duration analysis"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-073",
+"question": "What is a Common Table Expression (CTE) in SQL, and when is it preferred over subqueries or temporary tables?",
+"subject": "DBMS",
+"topic": "SQL Advanced",
+"difficulty": "MEDIUM",
+"type": "EXPLANATION",
+"concepts": ["CTE", "WITH clause", "readability", "subqueries", "temporary tables", "optimization fence"],
+"criteria": [
+"defines a CTE as a named temporary result set defined within the execution scope of a single SELECT, INSERT, UPDATE, or DELETE",
+"explains how CTEs improve query readability and modularity compared to deeply nested subqueries",
+"contrasts CTEs with temporary tables regarding transaction scope, disk I/O, and indexability",
+"mentions how certain database engines inline CTEs while others materialize them as optimization fences"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-074",
+"question": "How does a recursive Common Table Expression work, and how does it traverse hierarchical data?",
+"subject": "DBMS",
+"topic": "SQL Advanced",
+"difficulty": "MEDIUM",
+"type": "EXPLANATION",
+"concepts": ["recursive CTE", "anchor member", "recursive member", "UNION ALL", "termination condition"],
+"criteria": [
+"explains the two structural components: the anchor query (base case) and recursive query",
+"explains the role of UNION ALL in accumulating results across recursive iterations",
+"describes how the recursive member references the CTE name iteratively until an empty set terminates execution",
+"discusses recursion depth safety limits to prevent infinite loops in cyclic graphs"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-075",
+"question": "What is the difference between a standard virtual view and a materialized view regarding storage, refresh strategies, and query performance?",
+"subject": "DBMS",
+"topic": "Database Architecture",
+"difficulty": "MEDIUM",
+"type": "COMPARISON",
+"concepts": ["virtual view", "materialized view", "disk storage", "refresh on commit", "refresh on demand", "query caching"],
+"criteria": [
+"explains a standard view computes results on-the-fly with zero disk footprint for data",
+"explains a materialized view persists query results physically to disk as a concrete table with indexes",
+"compares read performance: instantaneous precomputed reads vs dynamic calculation latency",
+"describes refresh mechanisms: complete refresh, fast/incremental refresh, refresh on commit vs on schedule"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-076",
+"question": "What are the four ANSI SQL transaction isolation levels, and which concurrency phenomena does each prevent?",
+"subject": "DBMS",
+"topic": "Concurrency Control",
+"difficulty": "MEDIUM",
+"type": "COMPARISON",
+"concepts": ["Read Uncommitted", "Read Committed", "Repeatable Read", "Serializable", "dirty read", "non-repeatable read", "phantom read"],
+"criteria": [
+"lists the four levels in order of increasing isolation: Read Uncommitted, Read Committed, Repeatable Read, Serializable",
+"identifies dirty read prevention starting at Read Committed",
+"identifies non-repeatable read (fuzzy read) prevention starting at Repeatable Read",
+"identifies phantom read prevention achieved at Serializable isolation level"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-077",
+"question": "How does read snapshot behavior differ between Read Committed and Repeatable Read isolation levels during a multi-query transaction?",
+"subject": "DBMS",
+"topic": "Concurrency Control",
+"difficulty": "MEDIUM",
+"type": "COMPARISON",
+"concepts": ["snapshot creation", "statement-level snapshot", "transaction-level snapshot", "MVCC read view"],
+"criteria": [
+"explains that under Read Committed, a new snapshot (read view) is established at the start of each individual SQL statement",
+"explains that under Repeatable Read, a single snapshot is created at the beginning of the transaction and held throughout",
+"shows that two identical SELECT queries in the same transaction can return different data in Read Committed but identical data in Repeatable Read",
+"connects snapshot lifecycle to MVCC visible transaction ID boundaries"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-078",
+"question": "How does Multi-Version Concurrency Control (MVCC) enable concurrent reads and writes on the same row without blocking?",
+"subject": "DBMS",
+"topic": "Concurrency Control",
+"difficulty": "MEDIUM",
+"type": "EXPLANATION",
+"concepts": ["MVCC", "non-blocking reads", "tuple versions", "readers do not block writers", "rollback segment"],
+"criteria": [
+"explains the core tenet: readers never block writers, and writers never block readers",
+"describes how updates create a new version of the row rather than overwriting in-place immediately",
+"explains how reading transactions view a historical snapshot consistent with their transaction start timestamp",
+"mentions storage mechanisms such as PostgreSQL append-only row versions vs MySQL undo log rollback segments"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-079",
+"question": "What is Snapshot Isolation, and how can the write skew anomaly occur under Snapshot Isolation despite preventing phantom reads?",
+"subject": "DBMS",
+"topic": "Concurrency Control",
+"difficulty": "MEDIUM",
+"type": "COMPARISON",
+"concepts": ["Snapshot Isolation", "write skew", "disjoint writes", "overlapping reads", "Serializability"],
+"criteria": [
+"defines Snapshot Isolation where transactions read from a private consistent snapshot and commit if no concurrent write-write conflict on identical rows",
+"defines Write Skew as an anomaly where two concurrent transactions read overlapping datasets but modify disjoint records",
+"illustrates with a canonical example (e.g., two doctors on call simultaneously taking leave because both saw count >= 2)",
+"explains why Snapshot Isolation falls short of true Serializability"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-080",
+"question": "Why do databases support multiple lock granularities, and what are the trade-offs between concurrency and lock overhead?",
+"subject": "DBMS",
+"topic": "Concurrency Control",
+"difficulty": "MEDIUM",
+"type": "EXPLANATION",
+"concepts": ["lock granularity", "row lock", "page lock", "table lock", "lock escalation", "concurrency vs overhead"],
+"criteria": [
+"explains fine-grained locks (row-level) maximize concurrency but consume significant memory and CPU lock management overhead",
+"explains coarse-grained locks (table-level) minimize locking memory overhead but drastically restrict concurrent transaction throughput",
+"describes page-level locks as an intermediate balance",
+"explains lock escalation where a database dynamically converts numerous fine locks into a table lock under resource pressure"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-081",
+"question": "What are Intent Shared (IS) and Intent Exclusive (IX) locks, and how do they prevent race conditions during table-level lock acquisitions?",
+"subject": "DBMS",
+"topic": "Concurrency Control",
+"difficulty": "MEDIUM",
+"type": "EXPLANATION",
+"concepts": ["Intent Shared (IS)", "Intent Exclusive (IX)", "hierarchical locking", "ancestor node", "lock conflict check"],
+"criteria": [
+"explains intent locks indicate an intention to lock child nodes (pages or rows) in shared or exclusive mode",
+"explains that before locking a row in S mode, a transaction must acquire an IS lock on its ancestor table/page",
+"explains that before locking a row in X mode, a transaction must acquire an IX lock on ancestor structures",
+"demonstrates how intent locks allow a transaction requesting a table lock to immediately detect conflicts without scanning every row"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-082",
+"question": "How does Strict Two-Phase Locking (Strict 2PL) differ from basic 2PL, and how does it eliminate cascading aborts?",
+"subject": "DBMS",
+"topic": "Concurrency Control",
+"difficulty": "MEDIUM",
+"type": "COMPARISON",
+"concepts": ["Strict 2PL", "basic 2PL", "cascading aborts", "dirty read prevention", "holding exclusive locks"],
+"criteria": [
+"recalls basic 2PL allows releasing locks as soon as the shrinking phase begins",
+"explains Strict 2PL mandates holding all Exclusive (write) locks until the transaction commits or aborts",
+"shows how holding write locks prevents other transactions from reading uncommitted modifications",
+"explains that because no transaction reads uncommitted data, an abort never cascades to dependent transactions"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-083",
+"question": "What is Conservative Two-Phase Locking, and how does it guarantee deadlock freedom at the cost of concurrency?",
+"subject": "DBMS",
+"topic": "Concurrency Control",
+"difficulty": "MEDIUM",
+"type": "EXPLANATION",
+"concepts": ["Conservative 2PL", "static 2PL", "deadlock freedom", "pre-declaration of locks", "reduced concurrency"],
+"criteria": [
+"defines Conservative 2PL as requiring a transaction to acquire all needed locks simultaneously before execution begins",
+"explains if any lock is unavailable, none are acquired and the transaction waits, preventing hold-and-wait",
+"explains why eliminating hold-and-wait guarantees zero deadlocks",
+"identifies downsides: predicting read/write sets in advance is difficult in dynamic applications, and locks are held longer than necessary"
+],
+"follow_up": false
+},
+{
+"id": "DBMS-084",
+"question": "How does the basic Timestamp Ordering concurrency protocol guarantee serializability, and what happens when a late read or write arrives?",
+"subject": "DBMS",
+"topic": "Concurrency Control",
+"difficulty": "MEDIUM",
+"type": "EXPLANATION",
+"concepts": ["Timestamp Ordering (TO)", "read timestamp", "write timestamp", "abort and restart", "serial order"],
+"criteria": [
+"explains each transaction is assigned a unique logical timestamp TS(T) upon entry",
+"describes how each data item maintains max read timestamp R-TS(X) and write timestamp W-TS(X)",
+"explains read rule: if TS(T) < W-TS(X), T attempted to read an overwritten value, so T is aborted and restarted with a new timestamp",
+"explains write rule: if TS(T) < R-TS(X) or TS(T) < W-TS(X), T attempted to write an obsolete value, so T is aborted and restarted"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-085",
+"question": "What is the Thomas Write Rule in timestamp-based concurrency control, and why does it safely ignore obsolete writes without aborting?",
+"subject": "DBMS",
+"topic": "Concurrency Control",
+"difficulty": "MEDIUM",
+"type": "EXPLANATION",
+"concepts": ["Thomas Write Rule", "obsolete write", "view serializability", "timestamp ordering optimization"],
+"criteria": [
+"identifies the scenario: a transaction T with timestamp TS(T) attempts to write item X, but TS(T) < W-TS(X)",
+"explains standard timestamp ordering would abort T, but Thomas Write Rule simply ignores (skips) the write and allows T to continue",
+"justifies correctness: a newer transaction has already overwritten X, so T's write would have been superseded anyway",
+"points out that Thomas Write Rule yields view serializable schedules that are not conflict serializable"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-086",
+"question": "What are the three phases of Optimistic Concurrency Control (OCC), and in what workloads does OCC outperform pessimistic locking?",
+"subject": "DBMS",
+"topic": "Concurrency Control",
+"difficulty": "MEDIUM",
+"type": "EXPLANATION",
+"concepts": ["Optimistic Concurrency Control (OCC)", "Read phase", "Validation phase", "Write phase", "low contention"],
+"criteria": [
+"defines Read Phase: reads are performed and modifications written to a private transaction workspace without acquiring locks",
+"defines Validation Phase: checks whether transaction updates conflict with any concurrently committed transactions",
+"defines Write Phase: if validation succeeds, changes are flushed to the database; if it fails, the transaction is aborted and restarted",
+"explains OCC is ideal for read-heavy or low-contention environments where conflicts are rare and locking overhead would dominate"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-087",
+"question": "How can transaction starvation occur in database lock allocation systems, and how do fair queuing protocols prevent it?",
+"subject": "DBMS",
+"topic": "Concurrency Control",
+"difficulty": "MEDIUM",
+"type": "EXPLANATION",
+"concepts": ["starvation", "indefinite wait", "lock queue", "FIFO ordering", "shared lock hoarding"],
+"criteria": [
+"explains starvation occurs when a transaction waits indefinitely for a lock because other transactions continuously acquire compatible locks",
+"gives the classic example: incoming Shared locks keep arriving, indefinitely blocking a waiting Exclusive lock request",
+"explains First-In-First-Out (FIFO) lock queues where new shared requests are queued behind waiting exclusive requests",
+"mentions priority aging mechanisms where waiting transactions gradually gain priority over time"
+],
+"follow_up": false
+},
+{
+"id": "DBMS-088",
+"question": "Why do non-strict locking schedules suffer from cascading rollbacks, and how does holding exclusive locks until transaction commit guarantee recoverability?",
+"subject": "DBMS",
+"topic": "Transactions and Recovery",
+"difficulty": "HARD",
+"type": "EXPLANATION",
+"concepts": ["cascading rollback", "cascading abort", "recoverable schedule", "Strict 2PL", "dirty read chain"],
+"criteria": [
+"explains that if T1 releases an exclusive lock before committing, T2 can read T1's uncommitted write",
+"shows that if T1 subsequently aborts, T2 must also be forcibly aborted, triggering a cascade across any transactions that read from T2",
+"defines a recoverable schedule as one where no transaction commits until all transactions whose writes it has read have committed",
+"demonstrates that Strict 2PL (holding X-locks until end of transaction) enforces cascadelessness and recoverability"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-089",
+"question": "What sequence of structural modifications occurs during a B+ tree leaf node split, and how do database systems use latch crabbing to maintain index concurrency?",
+"subject": "DBMS",
+"topic": "Storage and Indexing",
+"difficulty": "HARD",
+"type": "EXPLANATION",
+"concepts": ["B+ tree split", "leaf node split", "latch crabbing", "latch coupling", "safe node", "index concurrency"],
+"criteria": [
+"describes the split: allocating a new page, moving half the keys/pointers to the sibling, updating sibling leaf pointers, and promoting middle key to parent",
+"explains latch crabbing (coupling): traversing down the tree by latching a child before unlatching its parent",
+"explains safe node logic for writes: an internal node is safe if it is not full and will not split if a key is promoted from below",
+"shows how writer transactions can release ancestor latches early once a safe child node is encountered"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-090",
+"question": "Why are correlated subqueries notoriously slow on unindexed large tables, and how do modern query optimizers unnest them into joins?",
+"subject": "DBMS",
+"topic": "Query Optimization",
+"difficulty": "HARD",
+"type": "PROBLEM_SOLVING",
+"concepts": ["correlated subquery", "subquery unnesting", "decorrelation", "hash join", "nested loop overhead"],
+"criteria": [
+"identifies default nested-loop execution overhead: evaluating subquery N times where N is the outer table row count",
+"explains that on unindexed tables this results in full table scans for every outer tuple, leading to O(N * M) disastrous latency",
+"describes query decorrelation/unnesting: optimizer rewrites subquery into an explicit JOIN (INNER, SEMI, or ANTI-JOIN)",
+"explains how unnesting enables set-oriented join algorithms like Hash Join and Merge Join"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-091",
+"question": "What is the difference between GROUP BY ROLLUP and GROUP BY CUBE in SQL analytical queries, and what subtotal groupings does each generate?",
+"subject": "DBMS",
+"topic": "SQL Aggregation",
+"difficulty": "HARD",
+"type": "COMPARISON",
+"concepts": ["GROUP BY ROLLUP", "GROUP BY CUBE", "hierarchical aggregation", "power set", "OLAP aggregation"],
+"criteria": [
+"explains ROLLUP creates hierarchical subtotals moving right-to-left along specified columns (e.g., (A,B,C) -> (A,B), (A), ()) producing N+1 grouping sets",
+"explains CUBE creates all possible combinations of grouping sets (the power set: 2^N grouping sets)",
+"gives a practical example comparing sales aggregation across Region, Year, and Product",
+"explains the role of the GROUPING() function in identifying generated subtotal rows"
+],
+"follow_up": false
+},
+{
+"id": "DBMS-092",
+"question": "Contrast pessimistic Two-Phase Locking with optimistic Multi-Version Concurrency Control in terms of read scalability, write conflicts, abort rates, and memory overhead.",
+"subject": "DBMS",
+"topic": "Concurrency Control",
+"difficulty": "HARD",
+"type": "COMPARISON",
+"concepts": ["pessimistic 2PL", "MVCC", "read scalability", "write conflicts", "abort rate", "storage bloat"],
+"criteria": [
+"contrasts read throughput: MVCC readers never block writers and achieve massive read scalability, whereas 2PL readers acquire shared locks blocking writers",
+"contrasts write conflict handling: 2PL blocks and queues waiting transactions; MVCC allows concurrent execution but aborts on commit conflicts",
+"evaluates abort rates: 2PL has lower abort rates but higher latency/deadlocks; optimistic/MVCC schemes have higher abort rates under high write contention",
+"evaluates memory and disk overhead: 2PL requires lock managers in RAM; MVCC requires garbage collection (vacuum/undo segments) to handle multi-version tuple bloat"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-093",
+"question": "How does the leftmost prefix rule govern composite B+ tree index utilization, and under what conditions can a query engine perform an Index Skip Scan?",
+"subject": "DBMS",
+"topic": "Indexing",
+"difficulty": "HARD",
+"type": "EXPLANATION",
+"concepts": ["leftmost prefix rule", "composite index", "Index Skip Scan", "low cardinality leading column", "range predicates"],
+"criteria": [
+"explains composite index (A, B, C) is sorted primarily by A, then by B within equal A, then by C within equal (A, B)",
+"explains why queries filtering only on B or C cannot perform standard index range scans because B values are scattered across different A subtrees",
+"defines Index Skip Scan: optimizer skips across distinct values of prefix column A to evaluate predicates on subsequent columns",
+"specifies prerequisite for an effective skip scan: leading column A must have very low cardinality (e.g. gender or boolean status) relative to total rows"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-094",
+"question": "Describe a concrete doctor on-call scheduling scenario where Snapshot Isolation permits a Write Skew anomaly, and explain how to prevent it.",
+"subject": "DBMS",
+"topic": "Concurrency Control",
+"difficulty": "HARD",
+"type": "PROBLEM_SOLVING",
+"concepts": ["write skew", "Snapshot Isolation", "invariant violation", "SELECT FOR UPDATE", "Serializable"],
+"criteria": [
+"sets up the rule: hospital requires at least one doctor on-call at all times; currently Doctors A and B are on call",
+"shows concurrent transactions: T1 reads count=2 and updates A to inactive; T2 concurrently reads count=2 and updates B to inactive",
+"explains why Snapshot Isolation commits both transactions: neither modified the other's row, leaving zero doctors on call",
+"provides solutions: upgrading to true Serializable isolation or using explicit pessimistic locking (SELECT FOR UPDATE)"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-095",
+"question": "How do relational databases handle tuple versioning under MVCC, and what operational problems arise if dead tuple cleanup fails?",
+"subject": "DBMS",
+"topic": "Storage and Concurrency",
+"difficulty": "HARD",
+"type": "PROBLEM_SOLVING",
+"concepts": ["MVCC tuple versioning", "xmin and xmax", "dead tuples", "table bloat", "VACUUM", "transaction wraparound"],
+"criteria": [
+"explains row header metadata: xmin records creation transaction ID, xmax records deletion/expiration transaction ID",
+"explains that updates create a new tuple version and mark the old tuple version as dead once no active transaction can see it",
+"describes consequences of delayed garbage collection (e.g. failing autovacuum): severe disk bloat, index bloat, and cache degradation",
+"warns about transaction ID wraparound failure if freezing old transaction IDs is neglected"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-096",
+"question": "In multi-granularity locking, what is a Shared Intent Exclusive (SIX) lock, and what exact transaction operation warrants acquiring it on a table?",
+"subject": "DBMS",
+"topic": "Concurrency Control",
+"difficulty": "HARD",
+"type": "EXPLANATION",
+"concepts": ["SIX lock", "Shared Intent Exclusive", "multi-granularity locking", "scan and update", "lock hierarchy"],
+"criteria": [
+"defines SIX lock as combining the semantics of Shared (S) and Intent Exclusive (IX) at the table level",
+"explains it allows the holder to read all rows of the table while explicitly locking specific individual rows in Exclusive (X) mode for updates",
+"identifies the canonical operation: a transaction that scans the entire table and conditionally updates a small subset of records",
+"describes compatibility: other transactions can only acquire IS locks; they cannot acquire S, IX, or X locks on the SIX-locked table"
+],
+"follow_up": false
+},
+{
+"id": "DBMS-097",
+"question": "How do the Wait-Die and Wound-Wait deadlock prevention algorithms use transaction timestamps to break circular wait, and which one is preemptive?",
+"subject": "DBMS",
+"topic": "Concurrency Control",
+"difficulty": "HARD",
+"type": "COMPARISON",
+"concepts": ["Wait-Die", "Wound-Wait", "deadlock prevention", "transaction timestamp", "preemption", "starvation avoidance"],
+"criteria": [
+"explains Wait-Die (non-preemptive): if older transaction requests lock held by younger, it waits; if younger requests lock held by older, younger dies (aborts)",
+"explains Wound-Wait (preemptive): if older requests lock held by younger, older wounds (preempts and aborts) younger; if younger requests lock held by older, younger waits",
+"identifies Wound-Wait as preemptive because an older transaction immediately evicts the younger holder",
+"explains that retaining original timestamps upon transaction restart prevents starvation in both schemes"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-098",
+"question": "Why can standard row-level locks not prevent phantom read anomalies, and what mechanism does the database use instead?",
+"subject": "DBMS",
+"topic": "Concurrency Control",
+"difficulty": "HARD",
+"type": "PROBLEM_SOLVING",
+"concepts": ["phantom read", "row-level locking limitation", "gap lock", "predicate locking", "next-key lock"],
+"criteria": [
+"explains that row locks only attach to records that physically exist in the database at the time of query execution",
+"points out that a concurrent transaction inserting a brand-new row within the range cannot be blocked by existing row locks",
+"introduces predicate locking (locking all potential records satisfying a predicate)",
+"explains practical index-range locks (Gap Locking and Next-Key Locking) implemented by production engines like MySQL InnoDB"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-099",
+"question": "What happens internally when a secondary index is searched versus a clustered index in terms of disk I/O and pointer chasing?",
+"subject": "DBMS",
+"topic": "Indexing",
+"difficulty": "HARD",
+"type": "COMPARISON",
+"concepts": ["secondary index", "clustered index", "row locator", "primary key lookup", "double traversal"],
+"criteria": [
+"explains a clustered index leaf node contains the complete physical row data, needing only one B+ tree traversal",
+"explains a secondary index leaf node contains only indexed columns plus a row locator (RID or primary key value)",
+"describes double traversal (bookmark lookup / key lookup): traversing secondary index B+ tree then clustered index B+ tree",
+"contrasts random disk I/O implications between the two lookup patterns"
+],
+"follow_up": true
+},
+{
+"id": "DBMS-100",
+"question": "What is a covering index, and why does it drastically reduce disk page reads in high-throughput workloads?",
+"subject": "DBMS",
+"topic": "Indexing",
+"difficulty": "HARD",
+"type": "EXPLANATION",
+"concepts": ["covering index", "index-only scan", "heap lookup elimination", "INCLUDE clause", "I/O optimization"],
+"criteria": [
+"defines a covering index as an index that contains all columns requested by a query (in SELECT, WHERE, JOIN, and ORDER BY)",
+"explains index-only scans: the database engine satisfies the query entirely from index leaf pages without accessing table pages",
+"explains how this eliminates expensive random table lookups and cache misses",
+"mentions composite indexing or the INCLUDE clause (non-key columns in index leaves) to create covering indexes without bloating the B+ tree search key"
+],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-101",
+    "question": "What is the fundamental structural difference between row-oriented and column-oriented database storage engines?",
+    "subject": "DBMS",
+    "topic": "Storage Engines",
+    "difficulty": "EASY",
+    "type": "COMPARISON",
+    "concepts": ["row-oriented storage", "column-oriented storage", "OLTP", "OLAP", "disk locality"],
+    "criteria": [
+      "explains row stores write complete tuples contiguously on data pages, ideal for OLTP point lookups and writes",
+      "explains column stores write all values of a single attribute contiguously, ideal for OLAP aggregations across few columns",
+      "contrasts I/O efficiency: column store avoids reading unreferenced columns into memory during analytical queries",
+      "mentions high compression efficiency in columnar stores due to homogenous data types"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-102",
+    "question": "What is a database buffer pool, and why is it essential for disk-based DBMS architectures?",
+    "subject": "DBMS",
+    "topic": "Buffer Management",
+    "difficulty": "EASY",
+    "type": "DEFINITION",
+    "concepts": ["buffer pool", "cache management", "disk page", "frame", "I/O reduction"],
+    "criteria": [
+      "defines the buffer pool as a dedicated region of main memory caching database pages read from persistent disk",
+      "explains the primary purpose: caching hot pages to avoid orders-of-magnitude slower disk I/O latency",
+      "describes how frames hold in-memory copies of disk pages along with dirty and pin metadata",
+      "contrasts database buffer management with OS page caching"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-103",
+    "question": "How does a slotted page architecture organize variable-length tuple records inside a physical database page?",
+    "subject": "DBMS",
+    "topic": "Storage Engines",
+    "difficulty": "EASY",
+    "type": "EXPLANATION",
+    "concepts": ["slotted page", "page header", "slot array", "record offset", "fragmentation management"],
+    "criteria": [
+      "explains the layout: page header and slot array grow from the start of the page forward, while tuple data grows from the end of the page backward",
+      "describes the slot array entry as containing (offset, length) pointing to the physical record location",
+      "explains that Record IDs (RIDs) point to page ID and slot number rather than physical byte offsets",
+      "highlights that record lengths can vary and data can be defragmented without changing external tuple IDs"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-104",
+    "question": "What is the role of query parsing and semantic analysis (binding) before query optimization?",
+    "subject": "DBMS",
+    "topic": "Query Processing",
+    "difficulty": "EASY",
+    "type": "EXPLANATION",
+    "concepts": ["query parser", "abstract syntax tree", "semantic analysis", "binding", "catalog lookup"],
+    "criteria": [
+      "explains parsing converts raw SQL text into an Abstract Syntax Tree (AST) while verifying syntactic grammar",
+      "explains semantic analysis (binding/resolution) checks the system catalog to verify tables, columns, and functions exist",
+      "verifies user authorization and access privileges for referenced relations",
+      "checks data type compatibility and performs implicit type coercions"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-105",
+    "question": "What is the core difference between a Rule-Based Optimizer (RBO) and a Cost-Based Optimizer (CBO)?",
+    "subject": "DBMS",
+    "topic": "Query Optimization",
+    "difficulty": "EASY",
+    "type": "COMPARISON",
+    "concepts": ["Rule-Based Optimizer", "Cost-Based Optimizer", "heuristics", "cost model", "cardinality statistics"],
+    "criteria": [
+      "defines RBO as relying on static heuristic rules (e.g., always prefer an index scan over full table scan) regardless of data distribution",
+      "defines CBO as using mathematical cost models and catalog statistics (cardinality, page counts, histograms) to estimate execution costs",
+      "explains why RBO produces sub-optimal execution plans when table cardinalities or filtering selectivities skew",
+      "identifies that modern enterprise databases exclusively rely on Cost-Based Optimization"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-106",
+    "question": "What is a bitmap index, and for which types of data attributes is it most effective?",
+    "subject": "DBMS",
+    "topic": "Indexing",
+    "difficulty": "EASY",
+    "type": "DEFINITION",
+    "concepts": ["bitmap index", "low cardinality", "bit vectors", "bitwise operations", "OLAP read performance"],
+    "criteria": [
+      "defines a bitmap index as storing a bit vector for each distinct column value where each bit position corresponds to a table row",
+      "identifies ideal attributes: low-cardinality columns (e.g., gender, marital status, state codes)",
+      "explains how boolean queries (AND, OR, NOT) are executed with lightning-fast bitwise hardware CPU instructions",
+      "points out the severe drawback: high write/update overhead due to locking entire bit vectors"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-107",
+    "question": "What is a partial index in SQL, and what storage and performance benefits does it provide?",
+    "subject": "DBMS",
+    "topic": "Indexing",
+    "difficulty": "EASY",
+    "type": "EXPLANATION",
+    "concepts": ["partial index", "filtered index", "WHERE clause on index", "storage reduction", "write overhead reduction"],
+    "criteria": [
+      "defines a partial index as an index built only over a subset of rows satisfying a specific predicate filter",
+      "illustrates with a practical example (e.g., indexing only active orders WHERE status = 'PENDING')",
+      "explains benefits: significantly smaller index tree size, reduced disk space, and higher cache residency",
+      "explains write performance benefit: updates or inserts on rows outside the filter bypass index maintenance entirely"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-108",
+    "question": "What is an expression-based index, and why won't standard indexes optimize queries with functions in the WHERE clause?",
+    "subject": "DBMS",
+    "topic": "Indexing",
+    "difficulty": "EASY",
+    "type": "EXPLANATION",
+    "concepts": ["expression index", "functional index", "SARGability", "WHERE LOWER(email)", "computed index value"],
+    "criteria": [
+      "explains that standard B+ tree indexes store raw column values and cannot evaluate function outputs without row-by-row invocation",
+      "shows that queries like WHERE LOWER(username) = 'alice' force full table scans on standard indexes",
+      "defines expression-based indexes as pre-computing and indexing the result of an expression or function",
+      "explains that query optimizers match the AST expression in the query with the indexed expression definition"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-109",
+    "question": "How does a standard Nested Loop Join algorithm operate, and what is its computational complexity?",
+    "subject": "DBMS",
+    "topic": "Query Processing",
+    "difficulty": "EASY",
+    "type": "EXPLANATION",
+    "concepts": ["nested loop join", "outer table", "inner table", "time complexity", "index nested loop"],
+    "criteria": [
+      "explains the algorithm: for each tuple in the outer relation R, scan the inner relation S to find matching tuples",
+      "states the time complexity without indexes as O(|R| * |S|) comparisons and disk scans",
+      "explains Index Nested Loop Join where an index on the inner relation reduces inner lookup complexity to O(|R| * log |S|)",
+      "identifies that optimizers prefer the smaller table as the outer driving table"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-110",
+    "question": "What is a dirty page in the buffer pool, and when does it get flushed to disk?",
+    "subject": "DBMS",
+    "topic": "Buffer Management",
+    "difficulty": "EASY",
+    "type": "DEFINITION",
+    "concepts": ["dirty page", "clean page", "buffer pool", "page flush", "checkpoint", "WAL protocol"],
+    "criteria": [
+      "defines a dirty page as an in-memory page that has been modified by a transaction but not yet written back to persistent storage",
+      "explains flushing triggers: background checkpointing, buffer pool eviction under memory pressure, or clean shutdown",
+      "highlights the Write-Ahead Logging (WAL) invariant: corresponding log records must be flushed before the dirty data page reaches disk",
+      "contrasts with clean pages which can be discarded instantly without disk writes"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-111",
+    "question": "What information does an EXPLAIN query plan provide to database engineers, and how does it help identify performance bottlenecks?",
+    "subject": "DBMS",
+    "topic": "Query Optimization",
+    "difficulty": "EASY",
+    "type": "EXPLANATION",
+    "concepts": ["EXPLAIN", "EXPLAIN ANALYZE", "execution plan", "cost estimate", "actual runtime", "access methods"],
+    "criteria": [
+      "explains EXPLAIN displays the execution plan chosen by the optimizer without running the query (estimated cost, row counts)",
+      "explains EXPLAIN ANALYZE actually executes the query and returns true execution times, loops, and actual row counts",
+      "identifies access method indicators: Sequential Scan vs Index Scan vs Index-Only Scan",
+      "highlights how comparing estimated rows against actual rows reveals stale catalog statistics"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-112",
+    "question": "What is an inverted index, and how does it power full-text search engines?",
+    "subject": "DBMS",
+    "topic": "Indexing",
+    "difficulty": "EASY",
+    "type": "DEFINITION",
+    "concepts": ["inverted index", "postings list", "tokenization", "full-text search", "document ID"],
+    "criteria": [
+      "defines an inverted index as mapping distinct words/tokens to a postings list of document IDs and positions containing them",
+      "contrasts with forward index (which maps documents to their containing words)",
+      "explains the text processing pipeline: tokenization, stop-word removal, and stemming/lemmatization",
+      "explains how multi-term boolean queries intersect or union individual postings lists"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-113",
+    "question": "What is the operational distinction between running VACUUM and running ANALYZE on a PostgreSQL table?",
+    "subject": "DBMS",
+    "topic": "Database Maintenance",
+    "difficulty": "EASY",
+    "type": "COMPARISON",
+    "concepts": ["VACUUM", "ANALYZE", "dead tuples", "table statistics", "optimizer cardinality"],
+    "criteria": [
+      "explains VACUUM cleans up dead row versions left by MVCC updates/deletes and marks space reusable in the free space map",
+      "explains ANALYZE samples table rows to collect distribution statistics (histograms, most common values, null fractions) for the query optimizer",
+      "points out that running VACUUM without ANALYZE reclaims disk space but does not update optimizer statistics",
+      "points out that running ANALYZE does not clean up dead rows or shrink table bloat"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-114",
+    "question": "How does the Clock page replacement algorithm approximate LRU in buffer pool management with lower lock contention?",
+    "subject": "DBMS",
+    "topic": "Buffer Management",
+    "difficulty": "MEDIUM",
+    "type": "EXPLANATION",
+    "concepts": ["Clock algorithm", "second-chance algorithm", "LRU approximation", "usage bit", "hand pointer", "concurrency"],
+    "criteria": [
+      "explains the circular buffer layout with a sweeping clock hand pointer and a reference/usage bit for each frame",
+      "describes hit handling: when a page is accessed, its reference bit is set to 1 without acquiring global linked-list mutexes",
+      "describes eviction pass: hand checks bit; if 1, clears to 0 and advances; if 0 (and unpinned), page is selected for eviction",
+      "explains why Clock scales better than exact LRU under multi-threaded concurrency"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-115",
+    "question": "What is sequential scan flooding (buffer pool pollution), and how do algorithms like 2Q or LRU-K mitigate it?",
+    "subject": "DBMS",
+    "topic": "Buffer Management",
+    "difficulty": "MEDIUM",
+    "type": "PROBLEM_SOLVING",
+    "concepts": ["buffer pool pollution", "sequential scan flooding", "LRU-K", "2Q", "scan resistance"],
+    "criteria": [
+      "defines pollution: a single large sequential table scan reads gigabytes of cold pages, evicting all hot frequently accessed pages from LRU cache",
+      "explains the limitation of standard LRU: treats a page read once during a table scan as most-recently-used",
+      "explains LRU-K: tracks the timestamp of the last K accesses, requiring multiple references before promoting a page into hot cache",
+      "explains 2Q: uses a FIFO queue for newly loaded pages and only moves pages to a main LRU queue upon subsequent re-reference"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-116",
+    "question": "In database recovery and buffer management, what is the difference between a Steal policy and a No-Steal policy?",
+    "subject": "DBMS",
+    "topic": "Buffer Management and Recovery",
+    "difficulty": "MEDIUM",
+    "type": "COMPARISON",
+    "concepts": ["Steal policy", "No-Steal policy", "buffer frame eviction", "uncommitted modifications", "Undo logging"],
+    "criteria": [
+      "defines Steal: the buffer pool manager is permitted to write dirty pages modified by uncommitted transactions to disk to free frames",
+      "defines No-Steal: pages modified by active uncommitted transactions must remain in RAM until commit",
+      "explains trade-offs: Steal maximizes buffer pool utilization for large transactions exceeding RAM, but requires UNDO logging for crash recovery",
+      "explains No-Steal simplifies recovery (no undo needed) but artificially caps transaction write sets to available memory"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-117",
+    "question": "What is the difference between a Force and a No-Force buffer flushing policy, and why do modern high-performance databases use No-Force?",
+    "subject": "DBMS",
+    "topic": "Buffer Management and Recovery",
+    "difficulty": "MEDIUM",
+    "type": "COMPARISON",
+    "concepts": ["Force policy", "No-Force policy", "transaction commit", "REDO logging", "I/O throughput"],
+    "criteria": [
+      "defines Force: all modified data pages must be physically flushed to disk before a transaction can successfully commit",
+      "defines No-Force: transaction can commit as soon as its log records are flushed to WAL, leaving dirty data pages in RAM",
+      "explains why Force causes terrible random I/O write bottlenecks and latency spikes on rotational and flash media",
+      "explains that No-Force enables sequential WAL append and deferred background dirty page flushing at the cost of requiring REDO recovery"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-118",
+    "question": "What are the core architectural components of a Log-Structured Merge-tree, and why is it optimized for write-heavy workloads?",
+    "subject": "DBMS",
+    "topic": "Storage Engines",
+    "difficulty": "MEDIUM",
+    "type": "EXPLANATION",
+    "concepts": ["LSM-tree", "MemTable", "SSTable", "WAL", "sequential I/O", "write amplification"],
+    "criteria": [
+      "identifies four core components: Write-Ahead Log (WAL), in-memory MemTable, Bloom Filters, and disk-based Sorted String Tables (SSTables)",
+      "explains write path: incoming writes append sequentially to WAL for durability and insert into in-memory sorted MemTable (SkipList/rbtree)",
+      "explains why it is write-optimized: converts all random write operations into sequential disk I/O flushes",
+      "contrasts write performance against B+ trees which require random in-place page writes"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-119",
+    "question": "How does an LSM-tree transition data from volatile memory to immutable disk files?",
+    "subject": "DBMS",
+    "topic": "Storage Engines",
+    "difficulty": "MEDIUM",
+    "type": "EXPLANATION",
+    "concepts": ["MemTable flush", "immutable MemTable", "SSTable generation", "sequential dump", "WAL truncation"],
+    "criteria": [
+      "explains that when the active MemTable reaches its memory threshold, it is switched to an immutable (read-only) MemTable",
+      "describes how a new active MemTable is allocated immediately so incoming writes never stall",
+      "describes background flushing: a worker thread iterates through the sorted immutable MemTable and writes an SSTable to Level 0 disk storage",
+      "explains that after SSTable flush completion, the associated WAL segment is safely truncated and the immutable MemTable freed"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-120",
+    "question": "How do Bloom filters prevent unnecessary disk I/O lookups for non-existent keys in LSM-tree storage engines?",
+    "subject": "DBMS",
+    "topic": "Storage Engines",
+    "difficulty": "MEDIUM",
+    "type": "EXPLANATION",
+    "concepts": ["Bloom filter", "false positive", "zero false negatives", "hash functions", "disk I/O avoidance"],
+    "criteria": [
+      "defines a Bloom filter as a space-efficient probabilistic data structure using k hash functions over an m-bit array",
+      "highlights the guarantee: zero false negatives (if Bloom filter says NO, the key definitely does not exist in the SSTable)",
+      "explains how it handles false positives: if filter says YES, engine reads SSTable, occasionally finding key is absent",
+      "shows that reading SSTables on disk is skipped for negative filter hits, drastically accelerating point reads"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-121",
+    "question": "What is the difference between Size-Tiered Compaction Strategy and Leveled Compaction Strategy in LSM-tree engines?",
+    "subject": "DBMS",
+    "topic": "Storage Engines",
+    "difficulty": "MEDIUM",
+    "type": "COMPARISON",
+    "concepts": ["Size-Tiered Compaction (STCS)", "Leveled Compaction (LCS)", "compaction overhead", "space amplification", "write amplification"],
+    "criteria": [
+      "explains STCS groups SSTables of similar sizes together and merges them into a larger SSTable, optimizing for write-heavy workloads",
+      "explains LCS divides disk storage into levels (L0, L1, L2...) where each level is 10x larger and SSTables within L1+ have strictly non-overlapping key ranges",
+      "contrasts space amplification: STCS requires up to 50% free disk headroom for compaction, whereas LCS maintains low space amplification (~10%)",
+      "contrasts read performance: LCS guarantees at most one SSTable read per level for point lookups"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-122",
+    "question": "How does a Block Nested Loop join reduce disk page transfers compared to a naive nested loop join?",
+    "subject": "DBMS",
+    "topic": "Query Processing",
+    "difficulty": "MEDIUM",
+    "type": "EXPLANATION",
+    "concepts": ["Block Nested Loop (BNL)", "buffer memory chunks", "outer table block", "page I/O cost reduction"],
+    "criteria": [
+      "identifies flaw of naive nested loop: for every single tuple in the outer table, the entire inner table is read from disk",
+      "explains BNL approach: loads a large chunk (block of memory frames) of outer table tuples into RAM",
+      "scans the inner table once per outer block rather than once per outer tuple",
+      "compares I/O formulas: O(|R| + (|R|/B) * |S|) page transfers instead of O(|R| + |R| * |S|)"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-123",
+    "question": "How does the classic in-memory Hash Join algorithm execute its Build and Probe phases?",
+    "subject": "DBMS",
+    "topic": "Query Processing",
+    "difficulty": "MEDIUM",
+    "type": "EXPLANATION",
+    "concepts": ["Hash Join", "Build phase", "Probe phase", "hash table in RAM", "equi-join"],
+    "criteria": [
+      "identifies prerequisite: applies exclusively to equi-joins (equality join predicates)",
+      "defines Build Phase: scans the smaller relation (build input) and populates an in-memory hash table hashed on join keys",
+      "defines Probe Phase: scans the larger relation (probe input), hashes each tuple's join key, and checks hash table buckets for matching tuples",
+      "states optimal time complexity: O(|R| + |S|) time"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-124",
+    "question": "How does a Grace Hash Join handle datasets where the hash build table exceeds available RAM?",
+    "subject": "DBMS",
+    "topic": "Query Processing",
+    "difficulty": "MEDIUM",
+    "type": "EXPLANATION",
+    "concepts": ["Grace Hash Join", "partitioning phase", "join phase", "hash function", "disk spilling"],
+    "criteria": [
+      "explains Partitioning Phase: hashes both relations R and S into matching bucket pairs on disk using hash function h1",
+      "explains matching partitions rule: tuple in partition R_i can only join with tuple in partition S_i",
+      "explains Join Phase: loads each R_i partition into memory and builds hash table using a secondary hash function h2, then probes with S_i",
+      "describes recursive partitioning if individual partitions still exceed memory buffer size"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-125",
+    "question": "When does a query optimizer select a Sort-Merge Join over a Hash Join, and how does it leverage sorted inputs?",
+    "subject": "DBMS",
+    "topic": "Query Processing",
+    "difficulty": "MEDIUM",
+    "type": "COMPARISON",
+    "concepts": ["Sort-Merge Join", "Hash Join", "interesting orders", "merge phase", "non-equi joins"],
+    "criteria": [
+      "explains the two steps: sorting both relations on join attributes (if not already ordered), then concurrently scanning and merging matches like merge-sort",
+      "explains optimizer preference: when inputs are already sorted by an index or prior ORDER BY clause ('interesting orders')",
+      "contrasts with Hash Join: Sort-Merge works for inequality range joins (<, <=, >, >=) while Hash Join requires strict equality",
+      "notes that Sort-Merge Join outputs results in sorted order without requiring an extra sorting node"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-126",
+    "question": "How do database statistics and histograms influence cardinality estimation in cost-based query optimization?",
+    "subject": "DBMS",
+    "topic": "Query Optimization",
+    "difficulty": "MEDIUM",
+    "type": "EXPLANATION",
+    "concepts": ["cardinality estimation", "selectivity factor", "histograms", "data distribution", "cost estimation error"],
+    "criteria": [
+      "defines cardinality estimation as predicting the number of rows that will satisfy filter and join predicates",
+      "explains how naive uniform distribution assumptions produce catastrophic estimation errors on skewed datasets",
+      "explains how histograms record frequency distribution across buckets to compute realistic selectivity",
+      "shows how incorrect cardinality leads optimizers to pick disastrous join algorithms or suboptimal join orderings"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-127",
+    "question": "What is the difference between equi-depth and equi-width histograms in database catalog statistics?",
+    "subject": "DBMS",
+    "topic": "Query Optimization",
+    "difficulty": "MEDIUM",
+    "type": "COMPARISON",
+    "concepts": ["equi-depth histogram", "equi-width histogram", "bucket boundaries", "skewed data", "selectivity estimation"],
+    "criteria": [
+      "defines Equi-Width: divides attribute value domain into intervals of equal range width; number of tuples per bucket varies",
+      "defines Equi-Depth (Equi-Height): divides domain such that each bucket contains approximately the same number of rows; bucket interval widths vary",
+      "explains why Equi-Depth is vastly superior for skewed data distributions",
+      "identifies that modern enterprise databases like PostgreSQL and Oracle use equi-depth histograms combined with Most Common Values (MCV) lists"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-128",
+    "question": "What is the fill factor of a B+ tree index, and how does configuring it prevent premature page splits during frequent insertions?",
+    "subject": "DBMS",
+    "topic": "Indexing",
+    "difficulty": "MEDIUM",
+    "type": "EXPLANATION",
+    "concepts": ["fill factor", "leaf page reserve", "page split prevention", "random insert workload", "read-only packing"],
+    "criteria": [
+      "defines fill factor as the percentage of space on each index leaf page allocated for data during index creation or rebuild",
+      "explains why a 100% fill factor causes immediate, costly page splits upon subsequent random inserts",
+      "explains how setting a lower fill factor (e.g. 70-80%) reserves free space on leaf pages to absorb random inserts smoothly",
+      "notes that read-only archive tables should use 100% fill factor to maximize page density and cache residency"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-129",
+    "question": "Under what threshold does a B+ tree node merge with its sibling or redistribute keys, and why do many production databases choose not to merge aggressively?",
+    "subject": "DBMS",
+    "topic": "Indexing",
+    "difficulty": "MEDIUM",
+    "type": "EXPLANATION",
+    "concepts": ["B+ tree node merge", "underflow threshold", "key redistribution", "delayed merging", "latching overhead"],
+    "criteria": [
+      "explains classical B+ tree rule: when deletions cause a node to fall below half capacity (50% occupancy), it borrows keys or merges with a sibling",
+      "explains why immediate merging causes catastrophic thrashing under alternating insert/delete workloads",
+      "identifies that production engines (like PostgreSQL and MySQL InnoDB) delay merging or allow underfilled pages to avoid expensive tree-wide locking and split-merge oscillation",
+      "mentions index rebuilds or reindexing as the preferred administrative approach for defragmentation"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-130",
+    "question": "What are the three distinct passes of the ARIES crash recovery algorithm, and what is the goal of each pass?",
+    "subject": "DBMS",
+    "topic": "Transactions and Recovery",
+    "difficulty": "MEDIUM",
+    "type": "EXPLANATION",
+    "concepts": ["ARIES recovery", "Analysis pass", "Redo pass", "Undo pass", "Transaction Table", "Dirty Page Table"],
+    "criteria": [
+      "defines Analysis Pass: scans log forward from last checkpoint to reconstruct Dirty Page Table (DPT) and Transaction Table (TT) at crash time",
+      "defines Redo Pass: repeats history from smallest RecLSN in DPT, reapplying logged changes for all transactions to restore exact pre-crash state",
+      "defines Undo Pass: scans log backward reversing updates made by active transactions (losers) that never committed before the crash",
+      "connects ARIES to durability and atomicity"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-131",
+    "question": "How do Log Sequence Numbers establish consistency between the WAL and data pages in buffer memory?",
+    "subject": "DBMS",
+    "topic": "Transactions and Recovery",
+    "difficulty": "MEDIUM",
+    "type": "EXPLANATION",
+    "concepts": ["Log Sequence Number (LSN)", "PageLSN", "FlushedLSN", "WAL protocol invariant", "idempotent recovery"],
+    "criteria": [
+      "defines LSN as a monotonically increasing 64-bit integer indexing byte offsets or sequence IDs in the transaction log",
+      "defines PageLSN as the LSN of the most recent log record updating that specific physical page",
+      "defines FlushedLSN as the largest LSN written safely to non-volatile disk log storage",
+      "states the fundamental WAL invariant: PageLSN <= FlushedLSN must hold before a dirty page can be written to disk"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-132",
+    "question": "What is a Compensation Log Record in ARIES recovery, and how does it prevent infinite logging during crashes that occur while rolling back?",
+    "subject": "DBMS",
+    "topic": "Transactions and Recovery",
+    "difficulty": "MEDIUM",
+    "type": "EXPLANATION",
+    "concepts": ["Compensation Log Record (CLR)", "UndoNextLSN", "crash during recovery", "infinite loop prevention", "bounded recovery time"],
+    "criteria": [
+      "defines a CLR as a special log record written during the Undo phase to log the undoing of an original update operation",
+      "explains the UndoNextLSN pointer: stores a direct pointer to the next undo log record that needs reversing for that transaction",
+      "explains scenario: system crashes midway through undo; on reboot, recovery encounters the CLR and resumes directly from UndoNextLSN",
+      "explains why CLRs are never themselves undone, guaranteeing that crash recovery work is strictly bounded and monotonic"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-133",
+    "question": "What is write amplification, and why is write amplification typically higher in B+ tree engines than LSM-tree engines?",
+    "subject": "DBMS",
+    "topic": "Storage Engines",
+    "difficulty": "MEDIUM",
+    "type": "COMPARISON",
+    "concepts": ["write amplification factor", "B+ tree in-place write", "LSM sequential write", "page granularity", "SSD wear"],
+    "criteria": [
+      "defines write amplification as the ratio of physical bytes written to persistent disk storage divided by logical bytes requested by the application",
+      "explains B+ tree write amplification: modifying a 50-byte record requires writing an entire 8KB or 16KB dirty page to disk",
+      "explains LSM-tree write path: appends compact delta records sequentially into WAL and memory buffers without writing full pages immediately",
+      "connects high write amplification to SSD flash endurance degradation and I/O bottlenecks"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-134",
+    "question": "What causes read amplification in database engines, and why do LSM-tree engines face greater read amplification than B+ trees?",
+    "subject": "DBMS",
+    "topic": "Storage Engines",
+    "difficulty": "MEDIUM",
+    "type": "COMPARISON",
+    "concepts": ["read amplification", "LSM read path", "B+ tree deterministic lookup", "multi-file scan", "point query latency"],
+    "criteria": [
+      "defines read amplification as the ratio of bytes read from disk compared to the actual bytes requested by the application",
+      "explains B+ tree deterministic lookup: traverse root-to-leaf in O(log N) page reads, reading exactly one leaf page containing the target key",
+      "explains LSM read path: key may reside in MemTable, L0 SSTables, or multiple lower levels, requiring checks across multiple files",
+      "highlights how Bloom filters and compaction serve as essential mitigations for LSM read amplification"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-135",
+    "question": "What is space amplification, and how do dead tuples and obsolete SSTables contribute to disk space bloat?",
+    "subject": "DBMS",
+    "topic": "Storage Engines",
+    "difficulty": "MEDIUM",
+    "type": "EXPLANATION",
+    "concepts": ["space amplification", "disk bloat", "tombstones", "obsolete versions", "compaction lag"],
+    "criteria": [
+      "defines space amplification as the ratio of total physical disk space consumed on media divided by actual active data size",
+      "explains how B+ tree fragmentation and deleted row slots remain unused if key distribution is uneven",
+      "explains how LSM engines append delete tombstones and update versions, consuming disk space until background compaction cleans them",
+      "evaluates operational risks: sudden disk exhaustion caused by delayed vacuuming or compaction backpressure"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-136",
+    "question": "Why does the Redo pass in ARIES recovery repeat history by redoing changes for both committed and active (uncommitted) transactions?",
+    "subject": "DBMS",
+    "topic": "Transactions and Recovery",
+    "difficulty": "HARD",
+    "type": "EXPLANATION",
+    "concepts": ["repeating history", "ARIES Redo pass", "uncommitted updates", "idempotence", "deterministic state"],
+    "criteria": [
+      "explains that redoing changes for uncommitted transactions restores the database buffer and lock state exactly as it existed at the instant of failure",
+      "explains why fine-grained concurrency control and page allocation operations require this deterministic state before undo can safely run",
+      "shows how repeating history separates page-level structural invariants from transaction-level logical rollback",
+      "explains how PageLSN checks make redo actions idempotent: if PageLSN >= LogRecord.LSN, the action is skipped"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-137",
+    "question": "How does a fuzzy checkpoint in ARIES work without freezing active transactions or forcing dirty pages to disk?",
+    "subject": "DBMS",
+    "topic": "Transactions and Recovery",
+    "difficulty": "HARD",
+    "type": "EXPLANATION",
+    "concepts": ["fuzzy checkpoint", "begin_checkpoint", "end_checkpoint", "non-blocking", "Dirty Page Table", "RecLSN"],
+    "criteria": [
+      "contrasts with hard checkpoints: does not flush all dirty pages and never stalls ongoing transactions",
+      "describes two-phase checkpoint logging: writes begin_checkpoint, snapshots current Transaction Table and Dirty Page Table in memory, then writes end_checkpoint",
+      "explains RecLSN in DPT: records the earliest log record whose changes have not yet been flushed to disk for that page",
+      "explains how fuzzy checkpoints provide the exact minimum starting LSN for the subsequent recovery Redo pass"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-138",
+    "question": "How does a Cost-Based Optimizer use dynamic programming to find the optimal multi-table join order, and why does it struggle beyond 10-12 tables?",
+    "subject": "DBMS",
+    "topic": "Query Optimization",
+    "difficulty": "HARD",
+    "type": "PROBLEM_SOLVING",
+    "concepts": ["dynamic programming", "System-R join enumeration", "left-deep trees", "exponential complexity", "search space explosion"],
+    "criteria": [
+      "explains bottom-up DP construction: computes best access path for single tables, then 2-table joins, then memoizes optimal 3-table subplans",
+      "explains how optimal substructure allows pruning suboptimal subplans with identical outputs and ordering",
+      "analyzes search space explosion: number of join permutations grows as (2N)! / N! for bushy trees and N! for left-deep trees",
+      "explains that beyond 10-12 tables, optimizer memory consumption and optimization planning time exceed actual query execution time"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-139",
+    "question": "When multi-table join search spaces become prohibitively large for dynamic programming, how do query optimizers use genetic algorithms?",
+    "subject": "DBMS",
+    "topic": "Query Optimization",
+    "difficulty": "HARD",
+    "type": "EXPLANATION",
+    "concepts": ["GEQO", "genetic query optimization", "chromosomes", "crossover", "heuristic search", "near-optimal plan"],
+    "criteria": [
+      "identifies trigger: query join threshold exceeded (e.g., geqo_threshold in PostgreSQL, default 12 tables)",
+      "explains chromosome encoding: join orders are represented as integer sequences or permutations of relation IDs",
+      "describes genetic cycle: initial population generation, fitness evaluation based on estimated cost, crossover, mutation, and survival selection",
+      "evaluates trade-offs: achieves near-optimal join plans in bounded O(iterations) time, but sacrifices deterministic reproducibility"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-140",
+    "question": "Compare the traditional Volcano iterator model with vectorized query execution in modern analytical database engines.",
+    "subject": "DBMS",
+    "topic": "Query Processing",
+    "difficulty": "HARD",
+    "type": "COMPARISON",
+    "concepts": ["Volcano model", "vectorized execution", "next() iterator", "CPU cache utilization", "SIMD instructions"],
+    "criteria": [
+      "explains Volcano iterator model: query tree operators communicate via next() calls producing one single tuple at a time",
+      "identifies Volcano flaws: massive virtual function call overhead, poor CPU instruction cache locality, and zero SIMD vectorization",
+      "explains Vectorized execution (Block-at-a-time): operators process batches of 1024 or 4096 column vectors per iteration",
+      "highlights benefits: high L1/L2 data cache residency, loop unrolling, and hardware SIMD parallelism accelerating filtering and aggregations"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-141",
+    "question": "How do run-length encoding, dictionary encoding, and frame-of-reference compression achieve dramatic space savings in columnar storage engines?",
+    "subject": "DBMS",
+    "topic": "Storage Engines",
+    "difficulty": "HARD",
+    "type": "EXPLANATION",
+    "concepts": ["Run-Length Encoding (RLE)", "Dictionary Encoding", "Frame of Reference (FoR)", "columnar compression", "bit-packing"],
+    "criteria": [
+      "explains RLE: replaces contiguous repeating sequences with (value, count) pairs, achieving massive compression on sorted columns",
+      "explains Dictionary Encoding: builds an index table of distinct string/complex values and replaces data entries with small 1-2 byte integer IDs",
+      "explains Frame of Reference (FoR): subtracts a base minimum value from integer ranges, storing only small relative offsets using minimal bits",
+      "shows how query engines execute filtering directly on compressed data without decompression overhead"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-142",
+    "question": "How would you architect a high-frequency financial counter or inventory reservation system to avoid row-level lock serialization on a single database record?",
+    "subject": "DBMS",
+    "topic": "Concurrency and System Design",
+    "difficulty": "HARD",
+    "type": "DESIGN",
+    "concepts": ["hotspot contention", "distributed counter", "row lock bottleneck", "sharded counters", "batching queue"],
+    "criteria": [
+      "identifies problem: thousands of concurrent transactions updating the same row (UPDATE balance) block behind a single exclusive row lock",
+      "proposes Sharded Counter pattern: splits the single counter into N independent sub-counter rows, where transactions randomly increment one slot",
+      "explains total calculation: SUM() across all N slots during balance inquiries",
+      "proposes asynchronous memory batching: buffering increments in Redis/Kafka and flushing coalesced deltas periodically to the database"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-143",
+    "question": "How does the Lehman-Yao B-link tree algorithm allow readers and writers to traverse index nodes concurrently without holding read latches during page splits?",
+    "subject": "DBMS",
+    "topic": "Storage and Concurrency",
+    "difficulty": "HARD",
+    "type": "EXPLANATION",
+    "concepts": ["B-link tree", "Lehman-Yao algorithm", "high-key pointer", "sibling link", "latch-free reading"],
+    "criteria": [
+      "identifies B-link additions: each internal and leaf node contains a right sibling pointer and a 'high key' (upper bound of keys in node)",
+      "explains reader traversal: reader descends without holding latches; if target key exceeds node high key, reader follows sibling link to the right",
+      "explains split handling: writer creates right sibling and links it before updating the parent node",
+      "demonstrates how this eliminates deadlocks between concurrent upward-moving splits and downward-moving searches"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-144",
+    "question": "In relational databases supporting complex JSONB or geometric data, when should an engineer choose a GIN index versus a GiST index?",
+    "subject": "DBMS",
+    "topic": "Indexing",
+    "difficulty": "HARD",
+    "type": "COMPARISON",
+    "concepts": ["GIN index", "GiST index", "JSONB indexing", "geometric data", "update cost", "postings list"],
+    "criteria": [
+      "explains GIN (Generalized Inverted Index): maps individual elements/keys to rows, optimal for composite attributes containing multiple values (arrays, JSONB @>)",
+      "explains GiST (Generalized Search Tree): balanced tree structure for hierarchical and spatial data (PostGIS bounding boxes, range types, KNN nearest-neighbor)",
+      "contrasts write performance: GIN has high update overhead because modifying one row updates multiple inverted index entries",
+      "contrasts read performance: GIN provides faster lookups for multi-key lookups, whereas GiST supports complex lossy predicates and spatial indexing"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-145",
+    "question": "How does a database engine partition and execute an analytical aggregation query across multiple worker threads, and how does work-stealing balance thread skew?",
+    "subject": "DBMS",
+    "topic": "Query Execution",
+    "difficulty": "HARD",
+    "type": "EXPLANATION",
+    "concepts": ["parallel query execution", "Gather node", "data partitioning", "work-stealing", "thread skew"],
+    "criteria": [
+      "explains query execution decomposition: query coordinator spawns worker threads, allocating parallel sequential page scans or hash partitions",
+      "describes partial aggregation: workers compute intermediate SUM and COUNT locally in parallel without inter-thread locking",
+      "describes Gather / Finalize node: coordinator combines partial worker results into the final aggregate output",
+      "explains work-stealing: idle threads steal page chunks from queues of slow threads to prevent stragglers from delaying query completion"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-146",
+    "question": "How does WAL Group Commit work, and how does it balance fsync disk latency with high transaction commit throughput?",
+    "subject": "DBMS",
+    "topic": "Transactions and Storage",
+    "difficulty": "HARD",
+    "type": "EXPLANATION",
+    "concepts": ["WAL Group Commit", "fsync latency", "commit queue", "leader-follower flush", "batch durability"],
+    "criteria": [
+      "identifies bottleneck: calling fsync() to flush the log buffer for every single transaction commit limits throughput to disk IOPS (~200 on HDD, thousands on SSD)",
+      "explains Group Commit mechanism: first transaction in queue becomes the Group Leader; subsequent committing transactions register as followers",
+      "describes flush execution: leader performs a single fsync() for the entire accumulated batch and wakes up all follower transactions",
+      "highlights how group commit scales linearly with concurrency: higher transaction load results in larger batches per fsync"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-147",
+    "question": "How does byte-addressable Non-Volatile Memory reshape database logging and recovery architectures by bypassing traditional WAL pipelines?",
+    "subject": "DBMS",
+    "topic": "Storage and Recovery",
+    "difficulty": "HARD",
+    "type": "EXPLANATION",
+    "concepts": ["Non-Volatile Memory (NVM)", "Persistent Memory (PMEM)", "byte-addressability", "WAL bypass", "instant recovery"],
+    "criteria": [
+      "explains NVM characteristics: combines near-DRAM read/write speeds with persistent data retention, accessible directly via CPU load/store instructions",
+      "explains elimination of WAL: allows in-place atomic updates using CPU cache flush (clwb) and memory fences (sfence) without double-writing to disk logs",
+      "describes instant recovery: removes minutes-long ARIES log replay because data structures in PMEM remain directly consistent across power loss",
+      "identifies hardware challenges: managing pointer validation and memory leaks across system reboots"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-148",
+    "question": "How did the optimization of Common Table Expressions change from being an unconditional optimization fence to being inlined, and how does AS MATERIALIZED affect execution?",
+    "subject": "DBMS",
+    "topic": "Query Optimization",
+    "difficulty": "HARD",
+    "type": "EXPLANATION",
+    "concepts": ["CTE optimization fence", "CTE inlining", "AS MATERIALIZED", "AS NOT MATERIALIZED", "predicate pushdown"],
+    "criteria": [
+      "explains historical behavior: CTEs were treated as black-box optimization fences, materialized completely in temporary buffers preventing predicate pushdown",
+      "explains modern behavior (PostgreSQL 12+): non-recursive, side-effect-free CTEs referenced only once are automatically inlined as subqueries",
+      "shows how inlining enables cross-CTE join reordering, index selection, and predicate pushdown",
+      "explains explicit control: AS MATERIALIZED forces physical materialization (useful for expensive functions or isolating unstable subqueries)"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-149",
+    "question": "How do cache-conscious index architectures align node structures with CPU cache line sizes to eliminate memory bus stalls?",
+    "subject": "DBMS",
+    "topic": "Storage and Hardware",
+    "difficulty": "HARD",
+    "type": "DESIGN",
+    "concepts": ["cache-conscious index", "CSS-trees", "FAST", "CPU cache line (64 bytes)", "SIMD search", "pointer elimination"],
+    "criteria": [
+      "identifies hardware reality: main memory access is orders of magnitude slower than CPU registers, making L1/L2/L3 cache misses the primary index search bottleneck",
+      "explains cache-line alignment: sizes index tree nodes to exact multiples of 64 bytes (cache line size) to prevent single nodes spanning multiple cache lines",
+      "explains pointer elimination: arranges nodes in contiguous arrays where child positions are calculated mathematically (implicit pointers like binary heaps)",
+      "explains SIMD intra-node searching: compares 4 to 8 keys simultaneously in a single CPU instruction"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-150",
+    "question": "What makes a WHERE predicate Search Argument Able (SARGable), and how does wrapping columns in scalar functions degrade index scans?",
+    "subject": "DBMS",
+    "topic": "Query Optimization",
+    "difficulty": "HARD",
+    "type": "PROBLEM_SOLVING",
+    "concepts": ["SARGable", "Search Argument Able", "scalar function overhead", "index range scan", "full table scan", "implicit type conversion"],
+    "criteria": [
+      "defines SARGable predicates as conditions formatted such that the query engine can directly utilize a B+ tree index range seek",
+      "explains how non-SARGable patterns (e.g. WHERE YEAR(order_date) = 2024 or WHERE price * 1.1 > 100) prevent index traversal and force full scans",
+      "rewrites non-SARGable predicates into SARGable equivalents (e.g. WHERE order_date >= '2024-01-01' AND order_date < '2025-01-01')",
+      "warns against implicit type conversion (e.g. comparing string column with integer literal) silently nullifying index usability"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-151",
+    "question": "What is a Multivalued Dependency (MVD) in database normalization theory?",
+    "subject": "DBMS",
+    "topic": "Advanced Normalization",
+    "difficulty": "EASY",
+    "type": "DEFINITION",
+    "concepts": ["Multivalued Dependency (MVD)", "A ->> B", "independent attributes", "tuple generation", "4NF prerequisite"],
+    "criteria": [
+      "defines MVD (A ->> B) as asserting that attribute B is independent of other attributes in the relation for a given value of A",
+      "explains tuple generation: if tuples (a, b1, c1) and (a, b2, c2) exist, then (a, b1, c2) and (a, b2, c1) must also exist",
+      "provides a classic example: an employee having multiple independent hobbies and multiple independent spoken languages",
+      "explains that MVDs lead to massive cartesian product redundancy in a single table"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-152",
+    "question": "What condition must a relation satisfy to achieve Fourth Normal Form (4NF)?",
+    "subject": "DBMS",
+    "topic": "Advanced Normalization",
+    "difficulty": "EASY",
+    "type": "DEFINITION",
+    "concepts": ["Fourth Normal Form (4NF)", "BCNF prerequisite", "trivial MVD", "superkey determinant"],
+    "criteria": [
+      "states prerequisite: the relation must already be in Boyce-Codd Normal Form (BCNF)",
+      "states the core rule: for every non-trivial multivalued dependency X ->> Y, X must be a superkey",
+      "defines a trivial MVD: where Y is a subset of X, or X union Y contains all attributes of the relation",
+      "explains how decomposing the relation into two tables eliminates non-trivial MVD redundancy"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-153",
+    "question": "What is the difference between horizontal database sharding and table partitioning?",
+    "subject": "DBMS",
+    "topic": "Distributed Databases",
+    "difficulty": "EASY",
+    "type": "COMPARISON",
+    "concepts": ["horizontal sharding", "table partitioning", "single node", "distributed cluster", "network boundary"],
+    "criteria": [
+      "explains table partitioning divides a large table into smaller physical files managed within a single database instance on one server",
+      "explains horizontal sharding distributes rows across independent database servers/nodes across a network",
+      "contrasts management: partitioning is handled natively by the DBMS storage engine; sharding requires cluster routing or middleware",
+      "contrasts scaling limits: partitioning scales vertically up to single-node limits; sharding scales horizontally across nodes"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-154",
+    "question": "How does master-replica database replication operate, and how does it segregate read and write workloads?",
+    "subject": "DBMS",
+    "topic": "Database Replication",
+    "difficulty": "EASY",
+    "type": "EXPLANATION",
+    "concepts": ["master-replica", "primary-secondary", "read-write splitting", "WAL replication", "horizontal read scaling"],
+    "criteria": [
+      "explains role segregation: the Master (Primary) receives all write transactions (INSERT, UPDATE, DELETE) and records changes to its WAL",
+      "describes replication: Replicas (Secondaries) pull WAL changes and apply them locally to maintain up-to-date read-only copies",
+      "explains workload distribution: application routes write traffic to primary and balances read-heavy queries across replicas",
+      "notes failover mechanisms when the master node crashes"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-155",
+    "question": "What is the core trade-off between synchronous replication and asynchronous replication in database clusters?",
+    "subject": "DBMS",
+    "topic": "Database Replication",
+    "difficulty": "EASY",
+    "type": "COMPARISON",
+    "concepts": ["synchronous replication", "asynchronous replication", "commit latency", "RPO (Recovery Point Objective)", "data loss risk"],
+    "criteria": [
+      "explains synchronous replication: primary waits for at least one replica to acknowledge log persistence before returning commit success to client",
+      "explains asynchronous replication: primary commits locally and confirms to client immediately, transmitting log updates to replicas in background",
+      "contrasts latency: asynchronous provides sub-millisecond writes; synchronous incurs round-trip network latency per write",
+      "contrasts durability/data loss: asynchronous risks data loss during primary crash; synchronous guarantees zero data loss (RPO = 0)"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-156",
+    "question": "What are the three guarantees of the CAP theorem, and why can a distributed system only guarantee two under a network partition?",
+    "subject": "DBMS",
+    "topic": "Distributed Databases",
+    "difficulty": "EASY",
+    "type": "EXPLANATION",
+    "concepts": ["CAP theorem", "Consistency", "Availability", "Partition Tolerance", "network partition"],
+    "criteria": [
+      "defines Consistency (Linearizability): every read receives the most recent write or an error",
+      "defines Availability: every non-failing node returns a non-error response without guaranteeing latest data",
+      "defines Partition Tolerance: system continues operating despite arbitrary dropped or delayed network packets between nodes",
+      "explains the forced trade-off: network partitions are physical realities, forcing systems to choose between Consistency (CP) or Availability (AP)"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-157",
+    "question": "What do the BASE properties stand for in NoSQL databases, and how do they contrast with ACID?",
+    "subject": "DBMS",
+    "topic": "Distributed Databases",
+    "difficulty": "EASY",
+    "type": "COMPARISON",
+    "concepts": ["BASE", "Basically Available", "Soft state", "Eventual consistency", "ACID contrast"],
+    "criteria": [
+      "defines Basically Available: system guarantees availability by responding to all requests, potentially with degraded or partial data",
+      "defines Soft State: data state may change over time without user interaction due to background replica convergence",
+      "defines Eventual Consistency: system guarantees all replicas will eventually become consistent if no new updates occur",
+      "contrasts with ACID: trades immediate strong consistency and strict isolation for high horizontal availability and partition tolerance"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-158",
+    "question": "What are the three fundamental Armstrong's Axioms used to infer functional dependencies?",
+    "subject": "DBMS",
+    "topic": "Functional Dependencies",
+    "difficulty": "EASY",
+    "type": "DEFINITION",
+    "concepts": ["Armstrong's Axioms", "Reflexivity", "Augmentation", "Transitivity", "sound and complete"],
+    "criteria": [
+      "defines Axiom of Reflexivity: If Y is a subset of X, then X -> Y holds",
+      "defines Axiom of Augmentation: If X -> Y holds, then XZ -> YZ holds for any attribute set Z",
+      "defines Axiom of Transitivity: If X -> Y and Y -> Z hold, then X -> Z holds",
+      "states that these three axioms are sound (produce only valid dependencies) and complete (derive all valid dependencies)"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-159",
+    "question": "How does hash-based sharding distribute rows across database nodes, and what is its primary benefit?",
+    "subject": "DBMS",
+    "topic": "Distributed Databases",
+    "difficulty": "EASY",
+    "type": "EXPLANATION",
+    "concepts": ["hash-based sharding", "shard key", "hash function", "uniform distribution", "hotspot prevention"],
+    "criteria": [
+      "explains the mechanism: applies a deterministic hash function to the shard key (e.g., hash(user_id) % N) to select target shard node",
+      "identifies primary benefit: evenly distributes writes and reads across all cluster nodes, preventing write hotspots",
+      "identifies primary limitation: destroys natural key ordering, making range queries require scatter-gather scans across all shards",
+      "explains why shard key selection is critical for query routing"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-160",
+    "question": "What is range-based sharding, and what common pitfall causes hotspotting in write workloads?",
+    "subject": "DBMS",
+    "topic": "Distributed Databases",
+    "difficulty": "EASY",
+    "type": "EXPLANATION",
+    "concepts": ["range-based sharding", "key range", "sequential key hotspot", "timestamp sharding", "range queries"],
+    "criteria": [
+      "explains range-based sharding assigns contiguous ranges of keys (e.g. A-D on Node 1, E-H on Node 2) to specific nodes",
+      "highlights the major advantage: efficient range scans because contiguous rows reside on the same physical shard",
+      "identifies the hotspotting trap: sharding on monotonically increasing keys (auto-increment ID, current timestamp)",
+      "explains that all current writes hit the single highest-range shard, completely overwhelming one node while others sit idle"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-161",
+    "question": "What is read-after-write consistency, and why do asynchronous replicas frequently violate it?",
+    "subject": "DBMS",
+    "topic": "Database Replication",
+    "difficulty": "EASY",
+    "type": "EXPLANATION",
+    "concepts": ["read-after-write consistency", "read-your-writes", "replication lag", "asynchronous replica", "user experience"],
+    "criteria": [
+      "defines read-after-write consistency as guaranteeing that a user who updates data will immediately see that update upon subsequent reads",
+      "explains why asynchronous replicas fail this: write commits to primary, user immediately refreshes, read routes to replica where WAL has not yet replayed",
+      "illustrates user symptom: user submits comment or updates profile, refreshes page, and data appears reverted or missing",
+      "provides mitigations: sticky routing (routing user's own reads to primary for a cooldown window) or tracking client update timestamps"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-162",
+    "question": "What is a split-brain condition in a database cluster, and what catastrophic data corruption can it cause?",
+    "subject": "DBMS",
+    "topic": "Distributed Databases",
+    "difficulty": "EASY",
+    "type": "EXPLANATION",
+    "concepts": ["split-brain", "network partition", "dual primary", "divergent history", "data corruption"],
+    "criteria": [
+      "defines split-brain: a network partition disconnects cluster nodes, causing both isolated partitions to independently elect an active Primary",
+      "explains dual-write execution: clients in Partition A write to Leader A; clients in Partition B write conflicting data to Leader B",
+      "describes the catastrophic outcome: divergent write histories on identical records that cannot be automatically merged upon network reconnection",
+      "explains quorum consensus (requiring strict majority > N/2 votes) as the universal architectural safeguard against split-brain"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-163",
+    "question": "How does an SQL injection attack occur, and why do parameterized queries neutralize it?",
+    "subject": "DBMS",
+    "topic": "Database Security",
+    "difficulty": "EASY",
+    "type": "EXPLANATION",
+    "concepts": ["SQL injection", "parameterized queries", "prepared statements", "query compilation", "code vs data separation"],
+    "criteria": [
+      "explains SQL injection: untrusted user input is directly concatenated into SQL strings, altering the abstract syntax tree and executing unauthorized commands",
+      "explains prepared statements: the SQL query structure is sent and pre-compiled on the database server with parameter placeholders (?)",
+      "explains parameter binding: input parameters are transmitted separately at the protocol level and treated strictly as literal data values",
+      "shows that even malicious payloads (e.g. ' OR '1'='1) are interpreted harmlessly as string literals without modifying query logic"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-164",
+    "question": "What are the pros and cons of using a surrogate key versus a natural key as a primary key?",
+    "subject": "DBMS",
+    "topic": "Data Modeling",
+    "difficulty": "EASY",
+    "type": "COMPARISON",
+    "concepts": ["surrogate key", "natural key", "business meaning", "join efficiency", "cascading updates", "UUID vs auto-increment"],
+    "criteria": [
+      "defines natural key as an existing real-world attribute uniquely identifying an entity (e.g. SSN, VIN, email)",
+      "defines surrogate key as an artificially generated identifier with zero business meaning (e.g. auto-increment INT, UUID)",
+      "highlights natural key risks: business requirements change, keys change or suffer typos, triggering expensive cascading foreign key updates",
+      "highlights surrogate key advantages: compact immutable integer keys maximizing B+ tree index packing and join performance"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-165",
+    "question": "How do the SQL standard functions COALESCE() and NULLIF() handle NULL values?",
+    "subject": "DBMS",
+    "topic": "SQL Fundamentals",
+    "difficulty": "EASY",
+    "type": "COMPARISON",
+    "concepts": ["COALESCE", "NULLIF", "short-circuit evaluation", "default fallback", "division by zero prevention"],
+    "criteria": [
+      "defines COALESCE(val1, val2, ...): returns the first non-NULL expression from its argument list, returning NULL only if all arguments evaluate to NULL",
+      "defines NULLIF(expr1, expr2): returns NULL if both expressions are equal; otherwise returns expr1",
+      "illustrates COALESCE practical use: providing fallback values for missing data (e.g. COALESCE(phone, 'N/A'))",
+      "illustrates NULLIF practical use: preventing division-by-zero errors (e.g. total / NULLIF(count, 0))"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-166",
+    "question": "What is a Join Dependency, and how does Fifth Normal Form eliminate redundancy beyond 4NF?",
+    "subject": "DBMS",
+    "topic": "Advanced Normalization",
+    "difficulty": "MEDIUM",
+    "type": "EXPLANATION",
+    "concepts": ["Fifth Normal Form (5NF)", "Project-Join Normal Form (PJNF)", "Join Dependency", "lossless decomposition", "cyclic constraints"],
+    "criteria": [
+      "defines Join Dependency *(R1, R2, ... Rn): a relation R can be reconstructed without spurious tuples by joining its projections R1 through Rn",
+      "explains 5NF definition: a relation is in 5NF if and only if every non-trivial join dependency is implied by the candidate keys of the relation",
+      "illustrates with a 3-way ternary relationship: (Agent, Company, Product) where an agent sells a product only if the company makes that product and agent represents company",
+      "explains that 5NF eliminates cyclic join redundancies that cannot be detected by binary functional or multivalued dependencies"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-167",
+    "question": "What is Domain-Key Normal Form (DKNF), and why is it considered the ultimate theoretical normal form?",
+    "subject": "DBMS",
+    "topic": "Advanced Normalization",
+    "difficulty": "MEDIUM",
+    "type": "DEFINITION",
+    "concepts": ["Domain-Key Normal Form (DKNF)", "domain constraints", "key constraints", "general constraints", "theoretical upper bound"],
+    "criteria": [
+      "defines DKNF: a relation is in DKNF if every constraint on the relation is a logical consequence of domain constraints and key constraints alone",
+      "explains domain constraints (valid data types, ranges, permitted values) and key constraints (uniqueness of candidate keys)",
+      "explains theoretical power: a table in DKNF is completely free of all insertion, update, and deletion anomalies",
+      "explains practical limitation: no general mechanical algorithm exists to transform an arbitrary schema into DKNF, making it an ideal theoretical target"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-168",
+    "question": "How does the Attribute Closure algorithm determine whether an attribute set forms a superkey or candidate key?",
+    "subject": "DBMS",
+    "topic": "Functional Dependencies",
+    "difficulty": "MEDIUM",
+    "type": "EXPLANATION",
+    "concepts": ["attribute closure", "X+", "superkey test", "candidate key minimality", "polynomial time algorithm"],
+    "criteria": [
+      "describes closure computation X+: initialize closure = X; repeatedly add RHS of any FD whose LHS is a subset of current closure until no changes occur",
+      "explains superkey test: if X+ contains all attributes of relation R, then X is a valid superkey",
+      "explains candidate key test: X is a candidate key if X is a superkey AND no proper subset of X is a superkey (minimality check)",
+      "highlights that attribute closure runs in polynomial time, enabling automated schema verification"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-169",
+    "question": "What is a Canonical Cover of a set of functional dependencies, and what are the steps to compute it?",
+    "subject": "DBMS",
+    "topic": "Functional Dependencies",
+    "difficulty": "MEDIUM",
+    "type": "EXPLANATION",
+    "concepts": ["canonical cover", "minimal cover", "extraneous attributes", "redundant dependencies", "FD equivalence"],
+    "criteria": [
+      "defines a canonical cover Fc as an equivalent minimal set of FDs with zero redundant dependencies and zero extraneous attributes",
+      "describes step 1: make all RHS singleton attributes using the decomposition rule (e.g. X -> YZ becomes X -> Y and X -> Z)",
+      "describes step 2: eliminate extraneous attributes from LHS and RHS of each dependency using closure testing",
+      "describes step 3: eliminate redundant functional dependencies that are implied by the remaining dependencies in the set"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-170",
+    "question": "Explain the derived Armstrong's Axioms: Decomposition, Union, and Pseudo-transitivity, and show how they are proven.",
+    "subject": "DBMS",
+    "topic": "Functional Dependencies",
+    "difficulty": "MEDIUM",
+    "type": "EXPLANATION",
+    "concepts": ["Decomposition (Projectivity)", "Union (Additivity)", "Pseudo-transitivity", "Armstrong inference rules"],
+    "criteria": [
+      "defines Decomposition: If X -> YZ, then X -> Y and X -> Z (proven via Reflexivity on YZ -> Y and Transitivity)",
+      "defines Union: If X -> Y and X -> Z, then X -> YZ (proven via Augmentation of X -> Y with Z to get XZ -> YZ, and Augmentation of X -> Z to get XX -> XZ)",
+      "defines Pseudo-transitivity: If X -> Y and WY -> Z, then WX -> Z (proven via Augmentation of X -> Y with W to get WX -> WY, then Transitivity)",
+      "shows how derived rules accelerate manual and automated closure computations"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-171",
+    "question": "How do valid-time and transaction-time differ in temporal database tables?",
+    "subject": "DBMS",
+    "topic": "Temporal Databases",
+    "difficulty": "MEDIUM",
+    "type": "COMPARISON",
+    "concepts": ["valid-time", "transaction-time", "application time", "system time", "immutable audit log"],
+    "criteria": [
+      "defines Valid-Time (Application Time): the period during which a fact is true in the real world, managed and assigned by the user/application",
+      "defines Transaction-Time (System Time): the period during which a fact is physically stored and recorded in the database, assigned strictly by the DBMS clock",
+      "contrasts mutability: valid-time ranges can be modified or backdated retroactively; transaction-time is strictly append-only and immutable",
+      "explains why financial and healthcare audit compliance mandates recording both timelines"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-172",
+    "question": "What is a bi-temporal table, and how does it provide full historical auditing and retroactive correction capabilities?",
+    "subject": "DBMS",
+    "topic": "Temporal Databases",
+    "difficulty": "MEDIUM",
+    "type": "EXPLANATION",
+    "concepts": ["bi-temporal table", "valid-time range", "system-time range", "AS OF SYSTEM TIME", "retroactive correction"],
+    "criteria": [
+      "defines a bi-temporal table as combining both valid-time intervals [valid_from, valid_to) and transaction-time intervals [system_from, system_to)",
+      "explains retroactive correction: adjusting an insurance policy discount rate that should have been active last month without destroying what the database actually believed last month",
+      "demonstrates time-travel querying using SQL:2011 standard clauses (FOR PORTION OF BUSINESS_TIME and AS OF SYSTEM TIME)",
+      "explains how bi-temporal tables enable recreating the exact database state that generated an audited financial report a year ago"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-173",
+    "question": "How does consistent hashing with virtual nodes minimize data migration during cluster scale-out?",
+    "subject": "DBMS",
+    "topic": "Distributed Databases",
+    "difficulty": "MEDIUM",
+    "type": "EXPLANATION",
+    "concepts": ["consistent hashing", "hash ring", "virtual nodes (vnodes)", "data rebalancing", "scale-out migration"],
+    "criteria": [
+      "explains the hash ring: keys and nodes are hashed onto a circular 2^32 or 2^64 integer space; a key is stored on the first node encountered clockwise",
+      "explains the rebalancing advantage: adding or removing a node migrates only K/N keys rather than re-shuffling almost all data under naive hash modulo",
+      "defines virtual nodes (vnodes): mapping multiple token points on the ring to a single physical machine",
+      "explains how vnodes prevent non-uniform data distribution (clustering) and facilitate proportional capacity allocation for heterogeneous hardware"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-174",
+    "question": "How does semi-synchronous replication operate, and how does it balance write latency with data durability?",
+    "subject": "DBMS",
+    "topic": "Database Replication",
+    "difficulty": "MEDIUM",
+    "type": "EXPLANATION",
+    "concepts": ["semi-synchronous replication", "relay log", "replica ACK", "failover window", "lossless replication"],
+    "criteria": [
+      "explains the workflow: primary writes transaction to WAL, ships log to replica, and waits until at least ONE replica writes the log to its relay log disk",
+      "explains primary commit: primary proceeds to commit and return success to client without waiting for replica to actually execute/apply the transaction",
+      "contrasts with fully synchronous: avoids waiting for all replicas or slow table replaying",
+      "contrasts with asynchronous: guarantees that at least one replica has the physical log, preventing data loss during failover"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-175",
+    "question": "What causes database replication lag on read replicas, and what architecture strategies mitigate stale reads?",
+    "subject": "DBMS",
+    "topic": "Database Replication",
+    "difficulty": "MEDIUM",
+    "type": "PROBLEM_SOLVING",
+    "concepts": ["replication lag", "single-threaded SQL thread", "long-running queries", "stale reads", "multi-threaded replication"],
+    "criteria": [
+      "identifies root causes: multi-threaded concurrent writes on primary replayed by a single-threaded SQL apply thread on replica, or long read queries blocking replica apply",
+      "identifies network latency and disk I/O saturation on replica nodes as major contributors",
+      "explains engine solutions: multi-threaded applier (MTS / parallel replication based on write sets or transaction dependency graphs)",
+      "explains architectural mitigations: heartbeat monitoring (pt-heartbeat), routing critical reads to primary, or tracking GTID transaction coordinates in client cookies"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-176",
+    "question": "How does the PACELC theorem extend the CAP theorem by describing system behavior under normal operation?",
+    "subject": "DBMS",
+    "topic": "Distributed Databases",
+    "difficulty": "MEDIUM",
+    "type": "COMPARISON",
+    "concepts": ["PACELC theorem", "CAP extension", "Availability vs Consistency (PC/PA)", "Latency vs Consistency (EL/EC)", "normal operation trade-off"],
+    "criteria": [
+      "decodes the acronym: If Partition (P), choose Availability (A) or Consistency (C); Else (E), choose Latency (L) or Consistency (C)",
+      "explains CAP theorem flaw: CAP only addresses behavior during rare network partition events, ignoring 99.9% of normal operating time",
+      "explains normal operation trade-off: to maintain strong consistency, replicas must coordinate over network, inevitably increasing read/write latency (PC/EC)",
+      "classifies real-world databases: MongoDB and Spanner as PC/EC, Cassandra and DynamoDB as PA/EL"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-177",
+    "question": "What are the Prepare and Commit phases of the Two-Phase Commit protocol across distributed database nodes?",
+    "subject": "DBMS",
+    "topic": "Distributed Transactions",
+    "difficulty": "MEDIUM",
+    "type": "EXPLANATION",
+    "concepts": ["Two-Phase Commit (2PC)", "transaction coordinator", "participant nodes", "Prepare phase", "Commit phase", "atomic commitment"],
+    "criteria": [
+      "defines Prepare Phase: coordinator sends PREPARE message to all participants; participants acquire locks, write undo/redo logs to persistent disk, and reply VOTE_COMMIT or VOTE_ABORT",
+      "defines Commit Phase (success): if all vote COMMIT, coordinator logs COMMIT to WAL and sends GLOBAL_COMMIT; participants commit changes, release locks, and reply ACK",
+      "defines Commit Phase (failure): if any participant votes ABORT or times out, coordinator logs ABORT and broadcasts GLOBAL_ABORT to roll back all participants",
+      "explains that 2PC guarantees atomic commitment across independent heterogeneous database instances"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-178",
+    "question": "What happens to participant database nodes if the 2PC transaction coordinator crashes during the commit phase?",
+    "subject": "DBMS",
+    "topic": "Distributed Transactions",
+    "difficulty": "MEDIUM",
+    "type": "PROBLEM_SOLVING",
+    "concepts": ["2PC in-doubt state", "coordinator crash", "blocking protocol", "held locks", "cascading lock contention"],
+    "criteria": [
+      "identifies the in-doubt window: participant has voted COMMIT during Prepare phase, has locked its local records, and is waiting for coordinator's GLOBAL_COMMIT/ABORT",
+      "explains the dilemma: participant cannot unilaterally commit (coordinator might have aborted) and cannot unilaterally abort (coordinator might have committed)",
+      "explains blocking failure: participant must hold exclusive resource locks indefinitely until the coordinator recovers",
+      "describes severe operational impact: held locks block other concurrent transactions, leading to cluster-wide transaction stalls"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-179",
+    "question": "How does the Three-Phase Commit protocol attempt to remove the blocking coordinator failure vulnerability of 2PC?",
+    "subject": "DBMS",
+    "topic": "Distributed Transactions",
+    "difficulty": "MEDIUM",
+    "type": "EXPLANATION",
+    "concepts": ["Three-Phase Commit (3PC)", "Can-Commit", "Pre-Commit", "Do-Commit", "non-blocking protocol", "timeout transitions"],
+    "criteria": [
+      "identifies the three phases: Can-Commit? -> Pre-Commit -> Do-Commit",
+      "explains Pre-Commit phase: coordinator verifies participants are ready, logs pre-commit, and informs participants before any actual commit occurs",
+      "explains timeout handling: if coordinator crashes during Pre-Commit, participants can safely time out and proceed to commit because all voted ready",
+      "explains why 3PC is rarely implemented in practice: it requires synchronous networking and fails under network partitions where split-brain can still cause divergence"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-180",
+    "question": "How do distributed databases use Read and Write quorums over N replicas to achieve strong consistency?",
+    "subject": "DBMS",
+    "topic": "Distributed Consistency",
+    "difficulty": "MEDIUM",
+    "type": "EXPLANATION",
+    "concepts": ["Quorum consistency", "R + W > N", "pigeonhole principle", "read quorum", "write quorum", "Dynamo model"],
+    "criteria": [
+      "defines parameters: N = total replica count, W = write quorum (number of replicas that must acknowledge write), R = read quorum (number of replicas read)",
+      "explains the mathematical invariant R + W > N: guaranteed overlap of at least one replica between the read set and write set (Pigeonhole Principle)",
+      "describes read reconciliation: client queries R replicas, reads version timestamps, and takes the newest value",
+      "analyzes trade-offs: lowering W to 1 speeds up writes but sacrifices strong consistency unless R = N"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-181",
+    "question": "How do multi-master database replication topologies detect and resolve concurrent write conflicts on the same record?",
+    "subject": "DBMS",
+    "topic": "Database Replication",
+    "difficulty": "MEDIUM",
+    "type": "PROBLEM_SOLVING",
+    "concepts": ["multi-master replication", "write conflict", "Last-Write-Wins (LWW)", "vector clocks", "conflict resolution handlers"],
+    "criteria": [
+      "identifies the conflict: Client 1 updates row X on Master A while Client 2 concurrently updates row X on Master B before replication syncs",
+      "explains Last-Write-Wins (LWW): uses wall-clock timestamps to overwrite older writes, warning of clock skew silently dropping valid updates",
+      "explains Version Vectors / Vector Clocks: detects causal divergence and flags conflicts for deterministic resolution",
+      "describes custom resolution strategies: application-defined merge triggers, CRDT data structures, or queuing conflicts in exception tables"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-182",
+    "question": "What are Conflict-Free Replicated Data Types, and how do state-based and operation-based CRDTs guarantee convergence?",
+    "subject": "DBMS",
+    "topic": "Distributed Consistency",
+    "difficulty": "MEDIUM",
+    "type": "EXPLANATION",
+    "concepts": ["CRDT", "CvRDT (state-based)", "CmRDT (operation-based)", "join-semilattice", "strong eventual consistency"],
+    "criteria": [
+      "defines CRDTs as data structures replicated across multiple nodes that can be updated concurrently without central coordination or distributed locks",
+      "explains State-based CRDTs (CvRDT): replicas send full states, merging via a monotonic join-semilattice (commutative, associative, idempotent merge function)",
+      "explains Operation-based CRDTs (CmRDT): replicas transmit update operations over causal, reliable broadcast channels",
+      "guarantees Strong Eventual Consistency: any two replicas that have received the same set of updates have identical states without conflict negotiation"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-183",
+    "question": "How do Vector Clocks track causal dependencies between distributed database writes and detect concurrent divergent updates?",
+    "subject": "DBMS",
+    "topic": "Distributed Consistency",
+    "difficulty": "MEDIUM",
+    "type": "EXPLANATION",
+    "concepts": ["vector clocks", "causal order", "happened-before relation", "concurrent writes", "causal divergence"],
+    "criteria": [
+      "defines a vector clock as an array of logical counters, one per cluster node [V1, V2, ... Vn], attached to each stored version",
+      "explains update rule: a node increments its own counter before writing; when receiving updates, it takes component-wise maximums",
+      "explains causal comparison: Version A happened-before Version B if every component of V_A <= V_B and at least one is strictly less",
+      "explains concurrency detection: if neither vector dominates the other, the writes occurred concurrently and represent a conflict"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-184",
+    "question": "Why are cross-shard joins and distributed aggregations so costly in sharded database architectures, and how are they avoided?",
+    "subject": "DBMS",
+    "topic": "Distributed Databases",
+    "difficulty": "MEDIUM",
+    "type": "PROBLEM_SOLVING",
+    "concepts": ["cross-shard join", "scatter-gather", "network bandwidth saturation", "co-location", "reference tables"],
+    "criteria": [
+      "identifies cost drivers: query router must scatter queries across all shards, transfer massive intermediate datasets over the network, and perform final join in router memory",
+      "explains high latency and failure vulnerability: slowest shard (straggler) dictates query response time; memory pressure can crash routing nodes",
+      "proposes Table Co-location: sharding related parent-child tables on the same partition key (e.g., customer_id) so joins execute locally on individual nodes",
+      "proposes Replicated Reference Tables: broadcasting small, infrequently modified lookup tables (countries, tax rates) to all shard nodes"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-185",
+    "question": "How is distributed Two-Phase Locking implemented across sharded data partitions, and how does distributed deadlock detection operate?",
+    "subject": "DBMS",
+    "topic": "Distributed Concurrency",
+    "difficulty": "MEDIUM",
+    "type": "EXPLANATION",
+    "concepts": ["distributed 2PL", "global wait-for graph", "phantom deadlocks", "centralized detector", "edge chasing"],
+    "criteria": [
+      "explains distributed 2PL: transactions acquire local row/page locks on individual shard nodes where data resides, holding locks until global 2PC completes",
+      "identifies distributed deadlock: Transaction T1 on Node A waits for T2, while T2 on Node B waits for T1, creating a circular wait across nodes",
+      "describes centralized deadlock detection: nodes send local wait-for graphs to a coordinator, but warns about false alarms (phantom deadlocks) caused by network lag",
+      "describes decentralized edge-chasing (Chandy-Misra-Haas) or timestamp abort policies (Wound-Wait/Wait-Die)"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-186",
+    "question": "What is the dual-write problem between a relational database and a message broker, and how does the Transactional Outbox pattern solve it?",
+    "subject": "DBMS",
+    "topic": "Distributed Transactions",
+    "difficulty": "HARD",
+    "type": "PROBLEM_SOLVING",
+    "concepts": ["dual-write problem", "Transactional Outbox pattern", "Change Data Capture", "at-least-once delivery", "database-message inconsistency"],
+    "criteria": [
+      "identifies dual-write vulnerability: updating a database and publishing an event to Kafka in separate operations cannot be done atomically without 2PC",
+      "describes failure modes: DB commit succeeds but broker publish fails (message lost), or broker publish succeeds but DB commit rolls back (ghost event)",
+      "explains Outbox pattern: business entity and event message are written in the SAME local database transaction into an `outbox` table",
+      "describes delivery: a background poller or log-tailing CDC processor (Debezium) reads outbox table and reliably publishes to Kafka with at-least-once guarantees"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-187",
+    "question": "Compare the Saga pattern with Two-Phase Commit for distributed microservices in terms of latency, lock holding, and failure recovery.",
+    "subject": "DBMS",
+    "topic": "Distributed Transactions",
+    "difficulty": "HARD",
+    "type": "COMPARISON",
+    "concepts": ["Saga pattern", "Two-Phase Commit (2PC)", "compensating transactions", "choreography", "orchestration", "isolation compromise"],
+    "criteria": [
+      "explains 2PC provides strict ACID guarantees by holding database locks across all nodes until global commit, causing terrible latency and blocking risks",
+      "explains Saga pattern breaks a distributed transaction into a sequence of local ACID transactions, committing each immediately without holding distributed locks",
+      "describes Saga failure recovery: executes explicit compensating transactions (semantic undo) in reverse order to restore consistency",
+      "highlights the critical trade-off: Saga sacrifices Isolation (ACID 'I') because intermediate states are visible to concurrent transactions"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-188",
+    "question": "How are Global Secondary Indexes maintained across a sharded database cluster, and what are the trade-offs between synchronous update and eventual consistency?",
+    "subject": "DBMS",
+    "topic": "Distributed Databases",
+    "difficulty": "HARD",
+    "type": "DESIGN",
+    "concepts": ["Global Secondary Index (GSI)", "Local Secondary Index (LSI)", "asynchronous index update", "scatter-gather read", "distributed 2PC write"],
+    "criteria": [
+      "contrasts LSI vs GSI: LSI partitions index with the base table shard key; GSI partitions index on a completely different attribute, scattering index entries across nodes",
+      "analyzes synchronous GSI maintenance: every write to a base table requires a distributed 2PC transaction across the base shard and GSI shard, severely penalizing write latency",
+      "analyzes asynchronous GSI maintenance (DynamoDB/Cassandra): base table commits immediately, CDC stream updates GSI asynchronously, achieving high write throughput but exposing stale index reads",
+      "evaluates operational risks: index lookups returning stale pointers or phantom records during asynchronous replication lag"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-189",
+    "question": "How does the Multi-Paxos consensus algorithm ensure distributed write-ahead log replication across database replicas?",
+    "subject": "DBMS",
+    "topic": "Distributed Consensus",
+    "difficulty": "HARD",
+    "type": "EXPLANATION",
+    "concepts": ["Multi-Paxos", "Proposer", "Acceptor", "Leader election", "Phase 1 (Prepare/Promise)", "Phase 2 (Accept/Accepted)"],
+    "criteria": [
+      "explains Basic Paxos flaw: requires 2 round-trips (Phase 1 and Phase 2) for every single consensus decision (log entry)",
+      "explains Multi-Paxos optimization: elects a stable Leader via Phase 1 once for thousands of log instances, bypassing Phase 1 for subsequent writes",
+      "describes the fast write path: Leader directly executes Phase 2 (Accept -> Accepted) with a majority quorum, achieving single round-trip log commit",
+      "explains log hole handling and recovery when a leader crashes and a new leader takes over"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-190",
+    "question": "How does the Raft consensus algorithm manage leader election, log replication, and commit safety in distributed SQL engines?",
+    "subject": "DBMS",
+    "topic": "Distributed Consensus",
+    "difficulty": "HARD",
+    "type": "EXPLANATION",
+    "concepts": ["Raft consensus", "Leader election", "Log replication", "Term numbers", "CommitIndex", "Raft group per partition"],
+    "criteria": [
+      "describes Leader Election: randomized election timers prevent split votes; Candidate requests votes; majority quorum elects Leader for a given Term",
+      "describes Log Replication: Leader receives client command, appends to local log, sends AppendEntries RPC to followers; commits entry once majority replicates",
+      "explains Log Matching Invariant: if two logs contain an entry with same index and term, logs are identical up to that index",
+      "explains Multi-Raft in distributed SQL (CockroachDB/TiDB): splits data into thousands of ranges, each running an independent Raft consensus group"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-191",
+    "question": "How does log-based Change Data Capture stream low-latency data modifications from the database WAL to downstream search and analytics engines?",
+    "subject": "DBMS",
+    "topic": "Storage and Replication",
+    "difficulty": "HARD",
+    "type": "EXPLANATION",
+    "concepts": ["Change Data Capture (CDC)", "WAL reading", "Debezium", "replication slot", "zero query overhead"],
+    "criteria": [
+      "contrasts with polling: polling queries (WHERE updated_at > t) miss intermediate deletes, impose heavy database CPU load, and suffer latency",
+      "explains WAL-based CDC: tails the database transaction write-ahead log directly (e.g. PostgreSQL logical decoding slots, MySQL binlog)",
+      "highlights zero query overhead: does not execute SELECT queries or acquire table read locks on base tables",
+      "describes stream delivery: transforms raw binary row deltas (before/after images) into structured JSON/Avro events emitted to Kafka"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-192",
+    "question": "What is monotonic read consistency in distributed storage, and what client session routing guarantees it when reading from asynchronous replicas?",
+    "subject": "DBMS",
+    "topic": "Distributed Consistency",
+    "difficulty": "HARD",
+    "type": "EXPLANATION",
+    "concepts": ["monotonic reads", "time travel anomaly", "session consistency", "sticky routing", "replica lag variance"],
+    "criteria": [
+      "defines monotonic reads: guarantees that if a client reads value V1 at time T1, subsequent reads by the same client will never observe an older value V0",
+      "identifies anomaly: Client reads from Replica A (lag 50ms) and sees new post; client refreshes and load balancer routes to Replica B (lag 500ms), making post vanish",
+      "describes sticky session routing: hashing user ID to bind a client's queries to a specific replica node",
+      "describes version tracking: client maintains a minimum vector clock or LSN cookie, requiring replicas to wait until their apply state catches up before answering"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-193",
+    "question": "What is the precise theoretical and practical distinction between Linearizability and Serializability in distributed database systems?",
+    "subject": "DBMS",
+    "topic": "Distributed Consistency",
+    "difficulty": "HARD",
+    "type": "COMPARISON",
+    "concepts": ["Linearizability", "Serializability", "Strict Serializability", "external consistency", "single-object vs multi-operation"],
+    "criteria": [
+      "defines Serializability: a multi-operation, multi-object transaction property guaranteeing that concurrent execution is equivalent to some serial order, with NO real-time constraint",
+      "defines Linearizability: a single-operation, single-object real-time recency guarantee (if write completes at t1, all reads starting at t2 > t1 must observe that write)",
+      "explains that a Serializable system can legitimately return stale data from days ago as long as the serial schedule remains logically valid",
+      "defines Strict Serializability (External Consistency): combines both guarantees, delivering the strongest possible correctness in distributed databases"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-194",
+    "question": "What is the distributed write skew anomaly in multi-datacenter snapshot isolation, and how do systems enforce global serializability?",
+    "subject": "DBMS",
+    "topic": "Distributed Concurrency",
+    "difficulty": "HARD",
+    "type": "PROBLEM_SOLVING",
+    "concepts": ["distributed write skew", "Snapshot Isolation", "Serializable Snapshot Isolation (SSI)", "SIREAD locks", "dependency cycle"],
+    "criteria": [
+      "explains that in multi-datacenter setups, transactions read local snapshots and commit disjoint updates on different datacenters simultaneously",
+      "shows that because neither update modified the other's row key, local conflict detectors pass both transactions, violating global business invariants",
+      "explains Serializable Snapshot Isolation (SSI): tracks read-write dependencies dynamically using SIREAD locks / rw-antidependency flags",
+      "explains cycle detection: aborts the younger transaction if a dangerous structure (two consecutive rw-antidependencies in the serialization graph) is detected"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-195",
+    "question": "How do modern analytical query engines combine SIMD vector instructions with Blocked Bloom Filters during distributed hash joins?",
+    "subject": "DBMS",
+    "topic": "Query Execution",
+    "difficulty": "HARD",
+    "type": "DESIGN",
+    "concepts": ["Blocked Bloom Filter", "SIMD vectorization", "distributed hash join", "runtime filtering", "CPU cache line alignment"],
+    "criteria": [
+      "explains runtime filtering: during the build phase of a hash join, coordinator constructs a Bloom filter and broadcasts it to all probe worker nodes",
+      "explains pre-filtering benefit: workers evaluate Bloom filter on disk pages or column chunks, discarding non-matching tuples before network shuffle",
+      "identifies standard Bloom filter flaw: hashing across a large bit array causes multiple random L3 cache misses per tuple",
+      "explains Blocked Bloom Filter: partitions the filter into 64-byte blocks (cache line size); an entire block is loaded and probed with 256-bit AVX2/AVX-512 SIMD instructions in parallel"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-196",
+    "question": "Contrast Crash Fault Tolerant consensus models with Byzantine Fault Tolerant protocols in distributed data systems.",
+    "subject": "DBMS",
+    "topic": "Distributed Consensus",
+    "difficulty": "HARD",
+    "type": "COMPARISON",
+    "concepts": ["Crash Fault Tolerance (CFT)", "Byzantine Fault Tolerance (BFT)", "Raft/Paxos", "PBFT", "adversarial threat model"],
+    "criteria": [
+      "explains CFT assumption (Raft/Paxos): nodes may crash, restart, or delay messages, but never lie, forge digital signatures, or send conflicting votes",
+      "states CFT threshold: can tolerate F failures with 2F + 1 nodes (simple majority quorum)",
+      "explains BFT assumption (PBFT/Tendermint): nodes may be malicious, compromised, or adversarial, actively sending conflicting messages to deceive the cluster",
+      "states BFT threshold: requires 3F + 1 nodes and cryptographic signatures with multiple voting phases (Prepare, Commit) to tolerate F malicious nodes"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-197",
+    "question": "Demonstrate why a given set of functional dependencies can have multiple distinct minimal covers, and explain the implications for schema design.",
+    "subject": "DBMS",
+    "topic": "Functional Dependencies",
+    "difficulty": "HARD",
+    "type": "PROBLEM_SOLVING",
+    "concepts": ["canonical cover non-uniqueness", "minimal cover", "extraneous attribute elimination order", "schema synthesis"],
+    "criteria": [
+      "provides a concrete set of dependencies with multiple covers (e.g. {A -> B, B -> A, B -> C, A -> C})",
+      "shows that eliminating A -> C yields one minimal cover, whereas replacing B -> C with A -> C yields another equally valid minimal cover",
+      "explains that the elimination order of extraneous attributes and redundant dependencies determines the resulting canonical cover",
+      "explains the engineering consequence: relational synthesis algorithms (like 3NF synthesis) can produce different schema decompositions depending on the chosen cover"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-198",
+    "question": "How do large-scale distributed databases execute zero-downtime resharding of a high-throughput live table from N shards to 2N shards?",
+    "subject": "DBMS",
+    "topic": "Distributed Databases",
+    "difficulty": "HARD",
+    "type": "DESIGN",
+    "concepts": ["live resharding", "zero-downtime split", "dual-writing", "catch-up replication", "atomic routing switchover"],
+    "criteria": [
+      "Phase 1 (Backfill): provision new destination shards and stream historical snapshot data from source shards without interrupting writes",
+      "Phase 2 (Catch-up CDC): stream ongoing WAL deltas from source shards to destination shards using CDC to close the replication lag",
+      "Phase 3 (Dual-Routing / Verification): router mirrors write traffic or destination shards verify checksum consistency against source shards",
+      "Phase 4 (Atomic Switchover): router atomically updates its routing table to direct reads and writes to new shards, followed by decommissioning old shards"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-199",
+    "question": "How does Google's Percolator protocol implement decentralized, snapshot-isolated ACID transactions on top of Bigtable?",
+    "subject": "DBMS",
+    "topic": "Distributed Transactions",
+    "difficulty": "HARD",
+    "type": "EXPLANATION",
+    "concepts": ["Google Percolator", "primary lock", "secondary lock", "Timestamp Oracle (TSO)", "Snapshot Isolation", "two-phase commit without coordinator"],
+    "criteria": [
+      "explains metadata columns: data:t, lock:t, write:t stored per cell in Bigtable, coordinated by a central Timestamp Oracle (TSO)",
+      "explains Prewrite Phase: client acquires locks on all modified cells; designates ONE cell as the Primary Lock and points all Secondary Locks to it",
+      "explains Commit Phase: client commits the Primary Lock first; once primary lock is converted to a write record, the transaction is irrevocably committed",
+      "explains Rollback/Recovery: any client encountering a stranded lock inspects the primary lock cell; if primary committed, client rolls forward the secondary; otherwise aborts"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-200",
+    "question": "How do distributed databases repair stale data replicas using Read Repair during client queries versus background Merkle tree Anti-Entropy repairs?",
+    "subject": "DBMS",
+    "topic": "Distributed Consistency",
+    "difficulty": "HARD",
+    "type": "COMPARISON",
+    "concepts": ["Read Repair", "Anti-Entropy repair", "Merkle tree", "background reconciliation", "replica divergence"],
+    "criteria": [
+      "explains Read Repair: during a client read quorum, the coordinator compares data versions returned by replicas; if a replica is stale, an asynchronous write updates it",
+      "identifies Read Repair limitation: only repairs keys that are actively queried by clients, leaving cold/dormant records permanently out of sync",
+      "explains Anti-Entropy repair: background process that builds hierarchical hash trees (Merkle trees) over key ranges across replicas",
+      "shows how Merkle trees compare gigabytes of data by comparing tree root hashes, drilling down only into divergent leaf subtrees to stream missing keys"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-201",
+    "question": "Why is creating a new physical database connection per incoming HTTP request an anti-pattern, and what role does a connection pool play?",
+    "subject": "DBMS",
+    "topic": "Connection Management",
+    "difficulty": "EASY",
+    "type": "EXPLANATION",
+    "concepts": ["connection pool", "connection overhead", "TCP handshake", "TLS negotiation", "process allocation"],
+    "criteria": [
+      "explains connection overhead: establishing a connection requires TCP 3-way handshake, TLS cryptographic handshake, authentication, and backend process/thread allocation",
+      "identifies resource exhaustion: thousands of concurrent HTTP requests spawn thousands of database connections, causing Out-Of-Memory and CPU context-switching thrashing",
+      "defines a connection pool as maintaining a warm set of pre-established, reusable connections",
+      "describes client borrow/return lifecycle: borrowing an active connection, executing queries, and returning it to the pool for reuse"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-202",
+    "question": "What is the rule of thumb formula for sizing a database connection pool, and why is setting pool size to thousands of connections counter-productive?",
+    "subject": "DBMS",
+    "topic": "Connection Management",
+    "difficulty": "EASY",
+    "type": "EXPLANATION",
+    "concepts": ["HikariCP sizing formula", "pool_size = (cpu_cores * 2) + disk_count", "context switching", "resource saturation"],
+    "criteria": [
+      "presents the canonical sizing formula: connections = (core_count * 2) + effective_spindle_count",
+      "explains why thousands of connections hurt throughput: a server with 16 CPU cores cannot execute 1,000 threads simultaneously; it wastes CPU cycles on context switching",
+      "shows that fewer connections matching hardware parallelism queue requests efficiently in memory, maximizing sustained TPS and reducing latency",
+      "connects disk wait states: the extra factor of 2 accounts for threads stalled on disk I/O while another executes on CPU"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-203",
+    "question": "What is the difference between database encryption in transit and encryption at rest?",
+    "subject": "DBMS",
+    "topic": "Database Security",
+    "difficulty": "EASY",
+    "type": "COMPARISON",
+    "concepts": ["encryption in transit", "encryption at rest", "TLS/SSL", "Transparent Data Encryption (TDE)", "attack vectors"],
+    "criteria": [
+      "defines Encryption in Transit: encrypts network packets between client application and database using TLS/SSL to prevent eavesdropping and man-in-the-middle attacks",
+      "defines Encryption at Rest (TDE): encrypts underlying database data files, log files, and backups on persistent storage (disks/SSDs)",
+      "identifies attack vectors countered by TDE: protects against stolen physical drives or compromised backup snapshots",
+      "notes that TDE decrypts pages transparently when loaded into database buffer RAM, meaning in-memory data requires OS security protections"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-204",
+    "question": "How do Recovery Point Objective and Recovery Time Objective define disaster recovery requirements for databases?",
+    "subject": "DBMS",
+    "topic": "Disaster Recovery",
+    "difficulty": "EASY",
+    "type": "COMPARISON",
+    "concepts": ["RPO (Recovery Point Objective)", "RTO (Recovery Time Objective)", "data loss tolerance", "downtime tolerance", "disaster recovery"],
+    "criteria": [
+      "defines Recovery Point Objective (RPO): the maximum acceptable age of data that can be lost when unexpected downtime occurs (acceptable data loss measured in time)",
+      "defines Recovery Time Objective (RTO): the maximum acceptable duration of time the database system can remain offline before restoration (acceptable downtime)",
+      "connects RPO to replication: RPO = 0 requires synchronous replication, while asynchronous replication has non-zero RPO matching replication lag",
+      "connects RTO to failover automation: manual backup restoration has high RTO (hours); automated multi-region failover achieves low RTO (seconds)"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-205",
+    "question": "What is the distinction between the TPC-C and TPC-H industry benchmarks in evaluating database performance?",
+    "subject": "DBMS",
+    "topic": "Database Benchmarking",
+    "difficulty": "EASY",
+    "type": "COMPARISON",
+    "concepts": ["TPC-C", "TPC-H", "OLTP benchmark", "OLAP benchmark", "transactions per minute (tpmC)"],
+    "criteria": [
+      "defines TPC-C: industry standard benchmark for Online Transaction Processing (OLTP), simulating complete wholesale supplier order processing (short read/write transactions, locks, concurrent updates)",
+      "defines TPC-H: industry standard benchmark for Online Analytical Processing (OLAP) and Decision Support Systems (DSS), consisting of 22 complex analytical queries (large scans, joins, aggregations)",
+      "contrasts metric: TPC-C measures transactions per minute (tpmC) and latency; TPC-H measures composite query throughput over scale factors",
+      "explains how storage engines optimize for one versus the other (row stores for TPC-C, columnar stores for TPC-H)"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-206",
+    "question": "What is a vector embedding in modern database systems, and how does similarity search differ from traditional relational keyword search?",
+    "subject": "DBMS",
+    "topic": "Vector Databases",
+    "difficulty": "EASY",
+    "type": "COMPARISON",
+    "concepts": ["vector embedding", "similarity search", "semantic search", "high-dimensional vectors", "exact keyword match"],
+    "criteria": [
+      "defines vector embedding as an array of floating-point numbers generated by machine learning models representing semantic meaning in high-dimensional space",
+      "contrasts exact match: relational databases filter on discrete equality (=) or range (<, >) predicates using B+ trees",
+      "explains similarity search: finds the K nearest neighbor vectors in geometric space based on angular distance or distance metrics",
+      "shows how vector search finds semantically identical concepts even when zero exact keyword overlaps exist (e.g. 'automobile' matches 'car')"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-207",
+    "question": "What is the mathematical difference between Cosine Similarity and Euclidean Distance when comparing vector embeddings?",
+    "subject": "DBMS",
+    "topic": "Vector Databases",
+    "difficulty": "EASY",
+    "type": "COMPARISON",
+    "concepts": ["Cosine Similarity", "Euclidean Distance (L2)", "dot product", "vector magnitude", "normalized vectors"],
+    "criteria": [
+      "defines Euclidean Distance (L2): measures the straight-line physical geometric distance between two coordinate endpoints in N-dimensional space",
+      "defines Cosine Similarity: measures the cosine of the angle between two vectors, strictly evaluating orientation and semantic direction regardless of magnitude",
+      "explains magnitude invariance: Cosine similarity ignores vector length (useful when text length influences embedding norm)",
+      "proves that for normalized unit vectors (magnitude = 1), Cosine Similarity and Euclidean Distance produce identical relative nearest-neighbor rankings"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-208",
+    "question": "Why must database schema migrations always be backward-compatible with currently running application versions?",
+    "subject": "DBMS",
+    "topic": "Schema Migrations",
+    "difficulty": "EASY",
+    "type": "EXPLANATION",
+    "concepts": ["backward-compatible migrations", "rolling deployment", "zero-downtime", "canary release", "breaking schema change"],
+    "criteria": [
+      "explains rolling deployments: during deployment, old application instances (v1) and new application instances (v2) run concurrently against the same live database",
+      "identifies the catastrophe: if a migration deletes or renames a column immediately, running v1 instances instantly crash with SQL errors",
+      "explains rule: database changes must support both the currently deployed application and the upcoming version",
+      "advocates multi-step decoupled releases over single destructive migrations"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-209",
+    "question": "What is a Block Range Index (BRIN) in PostgreSQL, and for what data ingestion patterns is it vastly smaller and faster than a B+ tree?",
+    "subject": "DBMS",
+    "topic": "Indexing",
+    "difficulty": "EASY",
+    "type": "EXPLANATION",
+    "concepts": ["BRIN index", "Block Range Index", "naturally ordered data", "append-only logs", "microscopic index footprint"],
+    "criteria": [
+      "defines BRIN: stores only the minimum and maximum value for ranges of physical disk pages (e.g. 128 pages per block range)",
+      "explains how it filters: skips reading entire block ranges if the query predicate falls outside the recorded min/max values",
+      "identifies ideal workloads: append-only tables where column values naturally correlate with physical storage order (e.g. created_at timestamps, sequential auto-increment IDs)",
+      "compares footprint: a BRIN index is often megabytes compared to gigabytes for an equivalent B+ tree on a 100-million row table"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-210",
+    "question": "How does the principle of least privilege apply to database user accounts used by application microservices?",
+    "subject": "DBMS",
+    "topic": "Database Security",
+    "difficulty": "EASY",
+    "type": "EXPLANATION",
+    "concepts": ["least privilege", "application DB user", "DDL vs DML privileges", "schema isolation", "attack surface reduction"],
+    "criteria": [
+      "explains rule: application microservices must never connect as administrative users (e.g. postgres, root, or db_owner)",
+      "recommends restricting permissions: grant only required DML commands (SELECT, INSERT, UPDATE) on specific tables, strictly denying DDL (DROP, ALTER)",
+      "explains blast radius mitigation: if SQL injection or credentials are leaked, an attacker cannot drop tables, read password hashes, or execute OS shell commands",
+      "advocates separate migration service accounts with elevated DDL rights running only during CI/CD deployment pipelines"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-211",
+    "question": "What architectural characteristics distinguish an in-memory key-value database like Redis from a disk-based relational database?",
+    "subject": "DBMS",
+    "topic": "Storage Engines",
+    "difficulty": "EASY",
+    "type": "COMPARISON",
+    "concepts": ["in-memory database", "disk-based relational DB", "sub-millisecond latency", "data persistence (RDB/AOF)", "relational modeling"],
+    "criteria": [
+      "explains storage primary residence: Redis maintains its primary dataset in RAM, bypassing buffer pool misses and disk I/O to deliver sub-millisecond latencies",
+      "explains relational engine residence: disk-based DBMS stores data fundamentally on non-volatile disk/SSD, using RAM strictly as a cache (buffer pool)",
+      "contrasts data modeling: Redis provides rich in-memory data structures (strings, hashes, lists, sets) without SQL joins or schema constraints",
+      "describes persistence trade-offs: Redis uses periodic snapshots (RDB) and append-only logs (AOF), while relational DBs strictly enforce ACID via WAL"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-212",
+    "question": "In a single summary, contrast dirty read, non-repeatable read, phantom read, and serialization failure.",
+    "subject": "DBMS",
+    "topic": "Concurrency Control",
+    "difficulty": "EASY",
+    "type": "COMPARISON",
+    "concepts": ["dirty read", "non-repeatable read", "phantom read", "serialization failure", "isolation phenomena"],
+    "criteria": [
+      "defines Dirty Read: transaction reads uncommitted, potentially transient data written by another active transaction",
+      "defines Non-Repeatable Read: transaction re-reads the same row and discovers values have changed because a concurrent transaction updated and committed",
+      "defines Phantom Read: transaction re-executes a range query and discovers new rows have appeared or disappeared due to concurrent commits",
+      "defines Serialization Failure: transaction aborts because the database detects that concurrent transaction execution cannot be serialized into any valid serial schedule"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-213",
+    "question": "What is a database slow query log, and how does setting long_query_time thresholds help detect regressions?",
+    "subject": "DBMS",
+    "topic": "Database Monitoring",
+    "difficulty": "EASY",
+    "type": "EXPLANATION",
+    "concepts": ["slow query log", "long_query_time", "performance regression", "unindexed queries", "query profiling"],
+    "criteria": [
+      "defines slow query log: a diagnostic log file recording all executed SQL queries whose execution time exceeds a configurable threshold (long_query_time)",
+      "explains parameters recorded: query text, execution duration, lock wait time, rows examined, and rows sent",
+      "identifies logs of unindexed queries (log_queries_not_using_indexes)",
+      "explains how monitoring tools (e.g. pt-query-digest) aggregate slow query logs to identify the top queries consuming the most total cluster CPU time"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-214",
+    "question": "How do database proxies automatically route SELECT statements to replicas while sending transactions to the primary?",
+    "subject": "DBMS",
+    "topic": "Database Replication",
+    "difficulty": "EASY",
+    "type": "EXPLANATION",
+    "concepts": ["database proxy", "read-write splitting", "ProxySQL", "RDS Proxy", "transaction pinning"],
+    "criteria": [
+      "explains the proxy role: acts as an intelligent intermediary between application connections and the underlying database cluster nodes",
+      "describes read-write splitting: inspects SQL AST; standalone read queries (SELECT) are routed to a pool of read replicas",
+      "explains transaction pinning: when a transaction begins (BEGIN / START TRANSACTION), all subsequent queries—including SELECTs—are pinned to the Primary to preserve consistency",
+      "highlights that connection pooling and automatic failover handling are provided transparently to application code"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-215",
+    "question": "Why does adding a NOT NULL constraint without a DEFAULT value to an existing large table cause long exclusive table locks in older relational engines?",
+    "subject": "DBMS",
+    "topic": "Schema Migrations",
+    "difficulty": "EASY",
+    "type": "PROBLEM_SOLVING",
+    "concepts": ["NOT NULL migration", "exclusive table lock", "full table rewrite", "metadata-only DDL", "production outage"],
+    "criteria": [
+      "identifies the cause: engine must scan every single existing row in the table to verify that no NULL values exist before enforcing constraint",
+      "explains lock escalation: older database versions hold an Exclusive Table Lock (AccessExclusiveLock) during the entire multi-gigabyte table scan",
+      "describes production outage: all incoming read and write queries queue up behind the exclusive lock, quickly exhausting application connection pools",
+      "explains modern optimization: adding column as NULL, backfilling in batches, and adding constraint with NOT VALID followed by VALIDATE CONSTRAINT"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-216",
+    "question": "Contrast MySQL's thread-per-connection architecture with PostgreSQL's process-per-connection model and explain why tools like PgBouncer are required.",
+    "subject": "DBMS",
+    "topic": "Connection Management",
+    "difficulty": "MEDIUM",
+    "type": "COMPARISON",
+    "concepts": ["thread-per-connection", "process-per-connection", "fork() overhead", "PgBouncer", "shared memory", "connection scaling"],
+    "criteria": [
+      "explains MySQL model: allocates one OS thread per client connection; threads share process heap and memory space, reducing per-connection memory footprint",
+      "explains PostgreSQL model: forks an entirely independent OS process per client connection; processes communicate via POSIX shared memory segments",
+      "identifies PostgreSQL scalability bottleneck: each backend process consumes ~5-10MB RAM; 2,000 idle connections consume 10-20GB memory plus severe OS scheduling overhead",
+      "explains PgBouncer solution: sits in front of Postgres, multiplexing thousands of client connections down to a small, fixed pool (e.g. 50-100) of backend server processes in transaction pooling mode"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-217",
+    "question": "How does the Expand and Contract pattern enable zero-downtime database column renaming in production?",
+    "subject": "DBMS",
+    "topic": "Schema Migrations",
+    "difficulty": "MEDIUM",
+    "type": "DESIGN",
+    "concepts": ["Expand and Contract pattern", "Parallel Run", "zero-downtime column rename", "dual writing", "backward compatibility"],
+    "criteria": [
+      "Step 1 (Expand): Add the new column (new_col) alongside the old column (old_col) as nullable without removing old_col",
+      "Step 2 (Dual-Write): Deploy application update that reads from old_col but writes to BOTH old_col and new_col simultaneously",
+      "Step 3 (Backfill): Run a background script updating historical rows (UPDATE table SET new_col = old_col WHERE new_col IS NULL) in small throttled batches",
+      "Step 4 (Switch): Deploy application update that reads and writes exclusively to new_col",
+      "Step 5 (Contract): Safely drop old_col after verifying all services and analytics pipelines have migrated"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-218",
+    "question": "How do Online DDL tools alter large multi-terabyte tables without locking out write traffic?",
+    "subject": "DBMS",
+    "topic": "Schema Migrations",
+    "difficulty": "MEDIUM",
+    "type": "EXPLANATION",
+    "concepts": ["Online DDL", "gh-ost", "pt-online-schema-change", "shadow table", "trigger vs binlog tailing", "atomic table swap"],
+    "criteria": [
+      "explains creation of ghost/shadow table: creates an empty clone of the original table with the desired schema modifications applied",
+      "explains row copying: copies rows in chunks from original table to ghost table while respecting replication lag thresholds",
+      "contrasts write synchronization: pt-online-schema-change uses database triggers; gh-ost reads binlog events as an external replication stream to avoid trigger lock contention",
+      "describes cut-over: executes an atomic RENAME TABLE swap (RENAME original TO old, ghost TO original) in a fraction of a second to conclude migration"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-219",
+    "question": "How does the Hierarchical Navigable Small World (HNSW) graph index enable logarithmic-time Approximate Nearest Neighbor search?",
+    "subject": "DBMS",
+    "topic": "Vector Databases",
+    "difficulty": "MEDIUM",
+    "type": "EXPLANATION",
+    "concepts": ["HNSW", "Hierarchical Navigable Small World", "SkipList analogy", "proximity graph", "ANN search", "ef_search"],
+    "criteria": [
+      "explains multi-layer architecture: builds a multi-layer graph hierarchy analogous to a SkipList, where top layers have long-range links and bottom layers have dense local links",
+      "describes greedy routing: search begins at top entry point, greedily hopping to neighbors closest to query vector until a local minimum is reached, then drops to next layer down",
+      "explains bottom layer refinement: conducts a dense beam search (controlled by parameter ef_search) to return top-K nearest neighbors",
+      "highlights trade-off: delivers blistering fast sub-millisecond logarithmic search latency and high recall at the cost of high RAM consumption during graph construction"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-220",
+    "question": "How does an Inverted File Flat (IVF-Flat) index partition high-dimensional vector space using Voronoi cells and centroid clustering?",
+    "subject": "DBMS",
+    "topic": "Vector Databases",
+    "difficulty": "MEDIUM",
+    "type": "EXPLANATION",
+    "concepts": ["IVF-Flat", "Inverted File Flat", "Voronoi cells", "k-means clustering", "nprobe parameter", "vector quantization"],
+    "criteria": [
+      "explains training phase: runs k-means clustering on representative vectors to generate C cluster centroids partitioning space into Voronoi cells",
+      "explains indexing: assigns every vector in the database to its nearest centroid, storing vectors in an inverted list attached to that centroid ID",
+      "explains query execution: query vector compares distance against all C centroids and selects the closest `nprobe` centroids",
+      "describes scan scope: searches only vectors within those selected Voronoi lists, achieving massive speedups over full brute-force scans"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-221",
+    "question": "How does Google Spanner's TrueTime API use atomic clocks and GPS to provide bounded time uncertainty for distributed linearizability?",
+    "subject": "DBMS",
+    "topic": "Distributed SQL",
+    "difficulty": "MEDIUM",
+    "type": "EXPLANATION",
+    "concepts": ["Google Spanner", "TrueTime API", "atomic clocks", "GPS receivers", "uncertainty window [earliest, latest]", "time master"],
+    "criteria": [
+      "explains physical clock synchronization reality: NTP synchronization across datacenters drifts significantly (hundreds of milliseconds) due to network jitter",
+      "explains TrueTime architecture: datacenters deploy dedicated hardware combining GPS antennas and Rubidium atomic clocks with independent failure modes",
+      "defines TT.now() return value: returns a time interval [t.earliest, t.latest] where actual absolute time is guaranteed to reside, with uncertainty epsilon (typically < 7ms)",
+      "connects bounded uncertainty to globally ordered timestamps without inter-datacenter communication"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-222",
+    "question": "What is the Commit Wait rule in Google Spanner, and how does waiting for 2*epsilon guarantee strict external serializability without distributed locks?",
+    "subject": "DBMS",
+    "topic": "Distributed SQL",
+    "difficulty": "MEDIUM",
+    "type": "EXPLANATION",
+    "concepts": ["Commit Wait rule", "2*epsilon wait", "external consistency", "linearizable reads", "lock-free read snapshots"],
+    "criteria": [
+      "explains timestamp assignment: coordinator picks commit timestamp s = TT.now().latest",
+      "defines Commit Wait: coordinator guarantees transaction cannot commit or release client results until TT.now().earliest > s (waits out the clock uncertainty epsilon)",
+      "proves causal ordering: if transaction T2 begins after T1 commits in the real world, T2's start time is mathematically guaranteed to be strictly greater than T1's commit timestamp",
+      "demonstrates major benefit: read-only transactions across the globe execute with zero locks and zero consensus by reading at a historical timestamp"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-223",
+    "question": "How does CockroachDB use Range Leases on top of Raft consensus to eliminate round-trip consensus latency on read operations?",
+    "subject": "DBMS",
+    "topic": "Distributed SQL",
+    "difficulty": "MEDIUM",
+    "type": "EXPLANATION",
+    "concepts": ["Range Lease", "CockroachDB", "Raft leader", "leaseholder", "linearizable read", "consensus bypass"],
+    "criteria": [
+      "identifies Raft read bottleneck: standard Raft requires leader to communicate with a majority of followers for read index verification to prevent stale reads from partitioned leaders",
+      "defines Range Lease: a time-bounded lease granted to a single replica (usually the Raft leader) designating it as the exclusive Leaseholder for that range",
+      "explains linearizable local reads: the leaseholder serves reads directly from its local in-memory state without contacting other Raft replicas",
+      "explains write safety: all writes must also pass through the leaseholder, guaranteeing that write-read dependencies remain strictly synchronized"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-224",
+    "question": "How does TiDB separate its stateless SQL execution layer from its distributed storage engine and metadata Placement Driver?",
+    "subject": "DBMS",
+    "topic": "Distributed SQL",
+    "difficulty": "MEDIUM",
+    "type": "EXPLANATION",
+    "concepts": ["TiDB architecture", "stateless SQL layer", "TiKV (Raft storage)", "Placement Driver (PD)", "distributed scale-out"],
+    "criteria": [
+      "defines TiDB Server: stateless computing node that parses SQL, performs cost-based query optimization, and coordinates distributed transactions",
+      "defines TiKV: stateful distributed transactional key-value storage engine organizing data into Raft consensus ranges (regions) backed by RocksDB",
+      "defines Placement Driver (PD): manages cluster metadata, assigns globally monotonic timestamps for distributed MVCC, and orchestrates automated range balancing",
+      "highlights architectural advantage: computing capacity (TiDB) and storage capacity (TiKV) scale independently to match workload profiles"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-225",
+    "question": "What are the operational trade-offs between Multi-Region Active-Active database deployments and Active-Passive failover configurations?",
+    "subject": "DBMS",
+    "topic": "High Availability",
+    "difficulty": "MEDIUM",
+    "type": "COMPARISON",
+    "concepts": ["Active-Active", "Active-Passive", "cross-region latency", "write conflict resolution", "RTO/RPO", "operational complexity"],
+    "criteria": [
+      "defines Active-Passive: all writes go to primary region; standby region receives asynchronous replication; failover promotes standby during disaster",
+      "defines Active-Active: multiple regions accept concurrent writes locally on the same datasets, replicating across regions in real time",
+      "analyzes Active-Passive trade-offs: simple operational model with zero write conflict resolution, but higher RTO during failover and non-zero RPO (data loss)",
+      "analyzes Active-Active trade-offs: zero RTO, near-zero RPO, and local low-latency writes, but requires complex conflict resolution (CRDTs/2PC/spanner) and high failure debugging complexity"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-226",
+    "question": "How does envelope encryption work in database security, and why is data encrypted with a DEK wrapped by a KEK?",
+    "subject": "DBMS",
+    "topic": "Database Security",
+    "difficulty": "MEDIUM",
+    "type": "EXPLANATION",
+    "concepts": ["envelope encryption", "Data Encryption Key (DEK)", "Key Encryption Key (KEK)", "Hardware Security Module (HSM)", "key rotation"],
+    "criteria": [
+      "defines DEK (Data Encryption Key): symmetric key (AES-256) used directly to encrypt and decrypt database records, columns, or data files",
+      "defines KEK (Key Encryption Key): master key stored securely in an external Key Management Service (AWS KMS, HashiCorp Vault, HSM)",
+      "explains the wrapping process: the KMS encrypts the DEK using the KEK; the encrypted DEK is stored alongside the database data",
+      "explains key rotation benefit: master keys can be rotated regularly in KMS without having to re-encrypt terabytes of physical database data"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-227",
+    "question": "Why do in-memory database engines prefer SkipLists over B+ trees for concurrent sorted indexing?",
+    "subject": "DBMS",
+    "topic": "Storage Engines",
+    "difficulty": "MEDIUM",
+    "type": "COMPARISON",
+    "concepts": ["SkipList", "in-memory index", "lock-free concurrency", "CAS operations", "B+ tree latch contention"],
+    "criteria": [
+      "explains B+ tree concurrency challenge: page splits require modifying multiple internal nodes, requiring complex latch crabbing and coarse lock holding across the tree",
+      "explains SkipList architecture: probabilistic multi-level linked list using randomized coin flips for forward pointer levels",
+      "explains lock-free implementation: insertions and deletions in a SkipList can be implemented lock-free using atomic Compare-And-Swap (CAS) on linked-list pointers",
+      "highlights why it dominates in-memory engines: when disk page I/O is not a factor, SkipLists eliminate CPU thread contention and lock serialization"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-228",
+    "question": "How does an R-Tree index multi-dimensional spatial data, and how does node splitting minimize bounding box overlap?",
+    "subject": "DBMS",
+    "topic": "Spatial Indexing",
+    "difficulty": "MEDIUM",
+    "type": "EXPLANATION",
+    "concepts": ["R-Tree", "Minimum Bounding Box (MBR)", "spatial indexing", "linear split", "quadratic split", "search pruning"],
+    "criteria": [
+      "defines R-Tree structure: balanced tree where each leaf node contains geometric objects and internal nodes contain Minimum Bounding Rectangles (MBRs) enclosing child subtrees",
+      "describes spatial search: query checks overlap with parent MBR; if no overlap, the entire subtree is pruned from disk search",
+      "explains the node split challenge: when a node exceeds capacity, it must partition objects into two new MBRs",
+      "explains split objectives (Quadratic / R*-Tree split): minimizing total area and minimizing overlap between child MBRs to reduce multi-path tree search traversals"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-229",
+    "question": "What specific database resource contentions cause extreme P99 tail latency spikes while average latency appears healthy?",
+    "subject": "DBMS",
+    "topic": "Performance and Indexing",
+    "difficulty": "MEDIUM",
+    "type": "PROBLEM_SOLVING",
+    "concepts": ["P99 tail latency", "checkpoint write spikes", "buffer pool eviction stalls", "lock acquisition queues", "noisy neighbors"],
+    "criteria": [
+      "explains checkpoint write bursts: background writer flushes thousands of dirty pages to disk simultaneously, saturating disk queue depths and stalling incoming write IOPS",
+      "identifies buffer pool eviction stalls: memory exhausted; foreground worker thread must synchronously write a dirty page to disk before it can read a requested page",
+      "identifies lock queue pileups: a brief 2-second lock hold on a central row queues dozens of waiting transactions behind it",
+      "mentions JVM/Engine garbage collection pauses or OS memory compaction (khugepaged) freezing execution threads"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-230",
+    "question": "Why cannot prepared statement parameters bind table or column names dynamically, and how should application code sanitize dynamic SQL identifiers?",
+    "subject": "DBMS",
+    "topic": "Database Security",
+    "difficulty": "MEDIUM",
+    "type": "PROBLEM_SOLVING",
+    "concepts": ["dynamic SQL identifiers", "prepared statement limitation", "identifier vs literal", "allowlist validation", "quote_ident"],
+    "criteria": [
+      "explains the technical reason: database query parsers require table and column names to resolve data types and generate execution plans before parameter binding occurs",
+      "identifies vulnerability: developers concatenate string variables for table names or ORDER BY columns, exposing SQL injection vectors",
+      "proposes primary mitigation (Allowlist validation): match requested identifier against a strict hardcoded enum or set of approved column names",
+      "proposes database escaping functions: using driver-level identifier quoting (e.g. quote_ident() in PostgreSQL) when dynamic names are strictly unavoidable"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-231",
+    "question": "What is Adaptive Query Execution in modern query engines, and how does it dynamically re-optimize join strategies at runtime?",
+    "subject": "DBMS",
+    "topic": "Query Optimization",
+    "difficulty": "MEDIUM",
+    "type": "EXPLANATION",
+    "concepts": ["Adaptive Query Execution (AQE)", "runtime statistics", "dynamic join re-planning", "skew join handling", "broadcast hash join"],
+    "criteria": [
+      "identifies traditional CBO flaw: static query plans generated before execution rely on estimated statistics that can be orders of magnitude inaccurate",
+      "explains AQE mechanism: executes query in stages; collects actual row counts and partition sizes produced by completed stages",
+      "describes dynamic join conversion: if a stage filters a 10-million row table down to 5,000 rows, AQE switches a costly Sort-Merge Join to an ultra-fast Broadcast Hash Join",
+      "describes dynamic partition coalescing and skew join splitting to balance straggler tasks"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-232",
+    "question": "How do enterprise databases implement data lifecycle management by partitioning historical time-series tables to cold object storage?",
+    "subject": "DBMS",
+    "topic": "Storage and Architecture",
+    "difficulty": "MEDIUM",
+    "type": "DESIGN",
+    "concepts": ["data tiering", "hot-warm-cold storage", "time-based partitioning", "object storage offloading (S3)", "foreign data wrapper"],
+    "criteria": [
+      "defines tiering model: Hot data (last 30 days) resides on high-speed NVMe SSDs; Warm data (last year) on standard storage; Cold data (historical archives) on cheap cloud object storage (S3/GCS)",
+      "explains table partitioning: partitions tables by month/year (e.g. sales_2023_01)",
+      "describes offloading: older partition is converted to columnar compressed files (Parquet) and exported to object storage",
+      "explains query transparency: external tables or Foreign Data Wrappers (FDWs) allow queries to seamlessly query across both hot NVMe and cold S3 partitions"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-233",
+    "question": "What are application-level advisory locks in PostgreSQL, and how do they enable distributed synchronization without locking actual table rows?",
+    "subject": "DBMS",
+    "topic": "Concurrency Control",
+    "difficulty": "MEDIUM",
+    "type": "EXPLANATION",
+    "concepts": ["advisory locks", "pg_advisory_lock", "application lock", "distributed mutex", "zero row locking"],
+    "criteria": [
+      "defines advisory locks: application-defined locks managed entirely by PostgreSQL's lock manager using a user-specified 64-bit integer key",
+      "highlights key property: advisory locks have zero physical connection to any table, row, or page in the database",
+      "contrasts scopes: Session-level locks (held until explicit unlock or client disconnect) vs Transaction-level locks (automatically released at COMMIT/ROLLBACK)",
+      "provides practical use case: implementing a distributed mutex across multiple microservice instances (e.g. running scheduled cron jobs or payment reconciliation)"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-234",
+    "question": "Why do B+ tree indexes accumulate physical bloat over time under heavy UPDATE workloads, and how does REINDEX CONCURRENTLY rebuild them safely?",
+    "subject": "DBMS",
+    "topic": "Database Maintenance",
+    "difficulty": "MEDIUM",
+    "type": "PROBLEM_SOLVING",
+    "concepts": ["index bloat", "dead index entries", "page fragmentation", "REINDEX CONCURRENTLY", "lock-free rebuild"],
+    "criteria": [
+      "explains cause of bloat: in MVCC engines, updating an indexed column creates a new tuple and inserts a new index entry; old entries become dead but leave empty space on index pages",
+      "explains read degradation: bloated indexes consume excessive RAM in the buffer pool and require reading multiple half-empty leaf pages per range query",
+      "identifies standard REINDEX problem: acquires an exclusive table lock, blocking all concurrent writes during the entire rebuild",
+      "explains REINDEX CONCURRENTLY workflow: builds a new index clone in the background, syncs with incoming transactions, and atomically swaps index pointers without locking writers"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-235",
+    "question": "What is the difference between a nested transaction and an autonomous transaction in database stored procedures?",
+    "subject": "DBMS",
+    "topic": "Transactions",
+    "difficulty": "MEDIUM",
+    "type": "COMPARISON",
+    "concepts": ["nested transaction", "autonomous transaction", "SAVEPOINT", "independent commit", "audit logging"],
+    "criteria": [
+      "defines Nested Transaction: child transaction whose commit is conditional on the parent transaction committing; if parent aborts, child aborts",
+      "defines Autonomous Transaction: completely independent transaction executing within the context of a parent, with its own commit and rollback boundaries",
+      "contrasts outcome: an autonomous transaction commits immediately and its changes persist even if the calling parent transaction subsequently aborts",
+      "identifies canonical use case: writing security audit logs or error tracking records that must be preserved regardless of whether the business operation succeeds"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-236",
+    "question": "Compare Google Spanner's hardware TrueTime API with software-based Hybrid Logical Clocks used in CockroachDB and YugabyteDB.",
+    "subject": "DBMS",
+    "topic": "Distributed SQL",
+    "difficulty": "HARD",
+    "type": "COMPARISON",
+    "concepts": ["TrueTime vs HLC", "Hybrid Logical Clocks", "physical clock drift", "NTP synchronization", "read restart anomaly"],
+    "criteria": [
+      "explains TrueTime dependence: requires specialized datacenter hardware (GPS + atomic clocks) to tightly bound physical uncertainty epsilon to < 7ms",
+      "explains HLC architecture: pure software clock combining physical wall clock (NTP) with logical Lamport counters, running on commodity cloud infrastructure",
+      "contrasts causality handling: TrueTime enforces causal order via physical Commit Wait; HLC updates logical counters upon message receipt to guarantee causality (e1 -> e2 implies HLC(e1) < HLC(e2))",
+      "analyzes HLC edge cases: cannot guarantee external consistency for out-of-band communication (Client writes to node A, calls friend, friend reads node B) without read restarts"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-237",
+    "question": "How does Product Quantization compress high-dimensional floating-point vectors into compact byte codes, and how does Asymmetric Distance Computation accelerate search?",
+    "subject": "DBMS",
+    "topic": "Vector Databases",
+    "difficulty": "HARD",
+    "type": "EXPLANATION",
+    "concepts": ["Product Quantization (PQ)", "Asymmetric Distance Computation (ADC)", "sub-vector clustering", "codebook", "lookup tables"],
+    "criteria": [
+      "explains decomposition: splits a D-dimensional vector (e.g. 1024 floats) into M smaller sub-vectors (e.g. 8 sub-vectors of 128 dimensions)",
+      "explains quantization: clusters each sub-vector space using k-means into 256 centroids (codebook), replacing each 128-float sub-vector with a single 1-byte centroid index",
+      "evaluates memory compression: reduces a 4096-byte floating-point vector down to 8 bytes (a 99.8% RAM reduction)",
+      "explains Asymmetric Distance Computation (ADC): leaves the query vector unquantized, pre-calculates distances from query to all 256 centroids in lookup tables, evaluating distance via fast table lookups"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-238",
+    "question": "What causes catastrophic LSM write stalls in RocksDB, and how does tuning memtable flush threads and L0-to-L1 compaction priority mitigate write backpressure?",
+    "subject": "DBMS",
+    "topic": "Storage Engines",
+    "difficulty": "HARD",
+    "type": "PROBLEM_SOLVING",
+    "concepts": ["write stall", "LSM backpressure", "L0 file count threshold", "compaction debt", "memtable starvation"],
+    "criteria": [
+      "identifies write stall trigger: incoming write rate exceeds background disk compaction throughput, causing L0 SSTables to accumulate",
+      "explains why L0 accumulation forces stalls: L0 SSTables have overlapping key ranges; too many L0 files destroys read performance, so the engine forcibly slows or blocks writes",
+      "identifies secondary trigger: all MemTables fill up before background flush threads can write them to disk, exhausting write buffer memory",
+      "proposes mitigations: increasing max_background_flushes and max_background_compactions, tuning level0_slowdown_writes_trigger, and dedicating separate I/O threads for L0-to-L1 compaction"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-239",
+    "question": "How does a distributed SQL optimizer push down predicates, projections, and partial aggregations directly to storage tablet servers to avoid network bottlenecks?",
+    "subject": "DBMS",
+    "topic": "Query Optimization",
+    "difficulty": "HARD",
+    "type": "DESIGN",
+    "concepts": ["predicate pushdown", "distributed projection", "partial aggregation", "storage tablet engine", "network bandwidth preservation"],
+    "criteria": [
+      "identifies network bottleneck: fetching millions of raw rows across the network from storage nodes to the SQL coordinator saturates network switches",
+      "explains predicate pushdown: coordinator injects filter conditions into storage engine scan requests, discarding non-matching tuples before serialization",
+      "explains projection pushdown: storage nodes transmit only requested columns, eliminating transmission of large unreferenced columns",
+      "explains partial aggregation pushdown: tablet servers compute local SUM and COUNT over local data chunks, transmitting only small summarized rows back to the coordinator"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-240",
+    "question": "Detail the exact mathematical graph algorithm used by PostgreSQL's Serializable Snapshot Isolation to track rw-antidependencies and abort transactions before anomalies occur.",
+    "subject": "DBMS",
+    "topic": "Concurrency Control",
+    "difficulty": "HARD",
+    "type": "EXPLANATION",
+    "concepts": ["Serializable Snapshot Isolation (SSI)", "SIREAD lock", "rw-antidependency", "dangerous structure", "Serialization Graph"],
+    "criteria": [
+      "defines rw-antidependency (in conflict graph): Transaction T1 reads version of item X, and concurrent transaction T2 writes a newer version of X (T1 ->rw T2)",
+      "explains SIREAD locks: lightweight non-blocking lock flags placed in memory on rows, pages, or relations indicating a transaction read that item",
+      "identifies Dangerous Structure: a transaction involved in two consecutive rw-antidependency edges (Tin ->rw Tmid ->rw Tout)",
+      "explains abort decision: if a dangerous structure is detected where all transactions commit or overlap, the engine aborts the pivot transaction to guarantee zero anomalies"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-241",
+    "question": "In ultra-high-throughput multi-socket database servers, how does page hash table latch contention in the buffer pool throttle CPU scaling, and how does buffer pool partitioning solve it?",
+    "subject": "DBMS",
+    "topic": "Buffer Management",
+    "difficulty": "HARD",
+    "type": "PROBLEM_SOLVING",
+    "concepts": ["buffer pool latch contention", "page hash table", "buffer pool partitioning", "cache line bouncing", "NUMA node affinity"],
+    "criteria": [
+      "identifies bottleneck: every buffer pool lookup requires hashing (table_id, page_id) and acquiring a reader/writer latch on the global page hash bucket",
+      "explains CPU scaling stall: on 64+ core machines, hundreds of threads concurrently reading/writing hash table latches cause cache line bouncing and spinlock CPU burn",
+      "proposes Buffer Pool Partitioning (innodb_buffer_pool_instances): divides buffer memory into N independent buffer pool instances with isolated hash tables and mutexes",
+      "shows that partitioning distributes page requests across instances, eliminating latch serialization and restoring linear multi-core CPU scaling"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-242",
+    "question": "When implementing column-level encryption for regulatory compliance, what is the trade-off between deterministic encryption and randomized encryption?",
+    "subject": "DBMS",
+    "topic": "Database Security",
+    "difficulty": "HARD",
+    "type": "COMPARISON",
+    "concepts": ["deterministic encryption", "randomized encryption", "Initialization Vector (IV)", "searchable encryption", "frequency analysis leakage"],
+    "criteria": [
+      "defines Deterministic Encryption: uses a fixed IV/nonce; identical plaintext values always produce identical ciphertext strings",
+      "explains searchability benefit: allows direct equality lookups (WHERE ssn = encrypt('123')) and index lookups without decrypting the entire table",
+      "identifies deterministic security risk: vulnerable to frequency analysis and dictionary guessing attacks on low-entropy data",
+      "defines Randomized Encryption: uses a unique random IV per row (AES-GCM/CBC); identical plaintext generates completely distinct ciphertexts, providing full semantic security (IND-CPA) but destroying index equality lookups"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-243",
+    "question": "How does Raft's Joint Consensus protocol safely execute dynamic cluster membership changes without risking split-brain?",
+    "subject": "DBMS",
+    "topic": "Distributed Consensus",
+    "difficulty": "HARD",
+    "type": "EXPLANATION",
+    "concepts": ["Joint Consensus", "Raft membership change", "C_old and C_new", "split-brain prevention", "disjoint majorities"],
+    "criteria": [
+      "identifies vulnerability: switching membership directly from C_old to C_new can cause split-brain if different nodes transition at different times, creating two disjoint majorities",
+      "explains Joint Consensus configuration (C_old,new): during transition, all log decisions require independent majorities from BOTH C_old configuration AND C_new configuration",
+      "describes two-phase commitment: Leader logs C_old,new; once committed under joint rules, Leader logs C_new; once C_new commits, transition is complete",
+      "guarantees that at no point in time can two independent leaders be elected concurrently"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-244",
+    "question": "How does the Calvin transaction protocol achieve distributed ACID serializability without Two-Phase Commit by sequencing transactions before execution?",
+    "subject": "DBMS",
+    "topic": "Distributed Transactions",
+    "difficulty": "HARD",
+    "type": "EXPLANATION",
+    "concepts": ["Calvin transaction protocol", "deterministic database", "sequencer layer", "elimination of 2PC", "deterministic locking"],
+    "criteria": [
+      "identifies 2PC bottleneck: distributed transactions spend most of their execution time holding locks while waiting for 2PC coordinator round-trips",
+      "explains Calvin sequencer layer: transactions pass through an independent Paxos sequencer that assigns a globally immutable, deterministic total order BEFORE execution",
+      "explains deterministic execution: all storage nodes execute transactions strictly in the sequencer's global order using deterministic locking",
+      "proves 2PC elimination: because transaction outcomes are deterministic and ordered upfront, no distributed prepare/commit negotiation or two-phase commit is needed"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-245",
+    "question": "How do modern database engines utilize thread-per-core architectures and Linux io_uring to bypass OS page cache and kernel context switches?",
+    "subject": "DBMS",
+    "topic": "Storage Engines",
+    "difficulty": "HARD",
+    "type": "EXPLANATION",
+    "concepts": ["thread-per-core", "io_uring", "Direct I/O (O_DIRECT)", "kernel-bypass", "lock-free shared-nothing", "ScyllaDB"],
+    "criteria": [
+      "explains thread-per-core architecture: pins exactly one execution thread per physical CPU core, partitioning memory and data strictly per core to eliminate cross-thread locking",
+      "explains O_DIRECT: bypasses the Linux kernel page cache entirely, avoiding double-buffering and uncoordinated OS dirty page writebacks",
+      "explains io_uring: uses two circular ring buffers (Submission Queue and Completion Queue) shared between user-space and kernel-space",
+      "highlights performance gains: submits and reaps thousands of asynchronous disk I/O operations with zero syscall context switches"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-246",
+    "question": "Explain the multi-step procedure to add a foreign key constraint to a 100-million row table in production without blocking concurrent write operations.",
+    "subject": "DBMS",
+    "topic": "Schema Migrations",
+    "difficulty": "HARD",
+    "type": "PROBLEM_SOLVING",
+    "concepts": ["zero-downtime foreign key", "NOT VALID constraint", "VALIDATE CONSTRAINT", "share update exclusive lock", "production migration"],
+    "criteria": [
+      "identifies standard DDL failure: ALTER TABLE ADD FOREIGN KEY acquires an AccessExclusiveLock for the entire scan duration, causing catastrophic downtime",
+      "Step 1: Add the foreign key constraint using NOT VALID (ALTER TABLE orders ADD CONSTRAINT fk_user FOREIGN KEY (user_id) REFERENCES users(id) NOT VALID)",
+      "explains NOT VALID behavior: acquires brief lock to enforce foreign key on all NEW incoming writes, but skips scanning historical rows",
+      "Step 2: Validate historical rows concurrently using VALIDATE CONSTRAINT (ALTER TABLE orders VALIDATE CONSTRAINT fk_user)",
+      "explains VALIDATE behavior: scans historical rows using only a weak ShareUpdateExclusiveLock, allowing normal concurrent reads and writes to proceed unhindered"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-247",
+    "question": "How do modern query optimizers use primary key, foreign key, and check constraints to eliminate entire join tables from the execution plan?",
+    "subject": "DBMS",
+    "topic": "Query Optimization",
+    "difficulty": "HARD",
+    "type": "EXPLANATION",
+    "concepts": ["Join Elimination", "Constraint Exclusion", "foreign key referential integrity", "redundant join removal", "optimizer rewrite"],
+    "criteria": [
+      "explains scenario: a query joins Orders with Customers on customer_id, but the SELECT clause references only columns from Orders",
+      "explains proof of existence: if a valid FOREIGN KEY constraint guarantees every order has exactly one customer, the join cannot filter rows or duplicate rows",
+      "describes join elimination: optimizer completely removes the Customers table and join node from the physical plan, saving disk I/O and CPU memory",
+      "describes constraint exclusion: check constraints (e.g. CHECK (age >= 18)) allow optimizer to instantly prune table scans for WHERE age < 10"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-248",
+    "question": "Design a client-side architecture using causal tokens to enforce read-your-writes across a globally distributed read-replica cluster.",
+    "subject": "DBMS",
+    "topic": "Distributed Consistency",
+    "difficulty": "HARD",
+    "type": "DESIGN",
+    "concepts": ["causal tokens", "read-your-writes", "session watermarks", "LSN tracking", "replica wait"],
+    "criteria": [
+      "Write Phase: client writes to primary; primary returns commit response containing a causal token (the commit Log Sequence Number / GTID)",
+      "Token Propagation: client stores this token in a local session cookie, local storage, or HTTP response header",
+      "Read Phase: client attaches the causal token header to subsequent read requests sent to load-balanced read replicas",
+      "Replica Check: replica compares client token LSN against its own current applied LSN; if replica is caught up, it serves read immediately",
+      "Lag Handling: if replica is lagging behind token LSN, it either waits briefly for the WAL to catch up or forwards the read query to the primary"
+    ],
+    "follow_up": true
+  },
+  {
+    "id": "DBMS-249",
+    "question": "How does NUMA architecture affect database memory allocation and buffer pool performance, and why can inter-socket bus traffic degrade throughput?",
+    "subject": "DBMS",
+    "topic": "Storage and Hardware",
+    "difficulty": "HARD",
+    "type": "EXPLANATION",
+    "concepts": ["NUMA architecture", "local vs remote memory access", "QPI/UPI bus saturation", "numactl", "interleaved allocation"],
+    "criteria": [
+      "defines NUMA (Non-Uniform Memory Access): multi-socket servers where each CPU socket has local RAM; accessing remote RAM attached to another socket requires crossing the interconnect bus (Intel UPI / AMD Infinity Fabric)",
+      "identifies latency penalty: remote memory accesses have 2-3x higher latency and lower bandwidth than local memory accesses",
+      "explains interconnect bus saturation: when CPU cores on Socket 0 continuously read buffer pages allocated on Socket 1's memory, the interconnect bus saturates",
+      "proposes optimizations: configuring memory interleaving (numactl --interleave=all) or binding database instances to specific NUMA nodes (numactl --cpunodebind)"
+    ],
+    "follow_up": false
+  },
+  {
+    "id": "DBMS-250",
+    "question": "How do high-availability clustering managers execute STONITH hardware fencing to guarantee absolute split-brain prevention during network partitions?",
+    "subject": "DBMS",
+    "topic": "High Availability",
+    "difficulty": "HARD",
+    "type": "EXPLANATION",
+    "concepts": ["STONITH", "hardware fencing", "Shoot The Other Node In The Head", "IPMI / iLO", "split-brain guarantee"],
+    "criteria": [
+      "defines STONITH: 'Shoot The Other Node In The Head', an automated hardware-level fencing technique used by cluster managers (Pacemaker/Corosync)",
+      "explains the failure scenario: Node B loses heartbeat contact with Node A and cannot determine whether Node A crashed or a network partition occurred",
+      "explains fencing action: before Node B can safely promote itself to Primary, it commands Node A's Intelligent Platform Management Interface (IPMI / iLO) or smart PDU to physically cut power to Node A",
+      "guarantees split-brain prevention: ensures Node A is mathematically dead and cannot continue writing to shared storage or responding to split clients"
+    ],
+    "follow_up": false
+  }
 ]
 }

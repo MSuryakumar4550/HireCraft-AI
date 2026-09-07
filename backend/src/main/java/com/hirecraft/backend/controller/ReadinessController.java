@@ -2,9 +2,8 @@ package com.hirecraft.backend.controller;
 
 import com.hirecraft.backend.dto.response.ReadinessResponse;
 import com.hirecraft.backend.entity.User;
-import com.hirecraft.backend.exception.ResourceNotFoundException;
-import com.hirecraft.backend.repository.UserRepository;
 import com.hirecraft.backend.service.ReadinessService;
+import com.hirecraft.backend.util.UserResolver;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
@@ -21,15 +20,15 @@ import java.util.List;
 public class ReadinessController {
 
     private final ReadinessService readinessService;
-    private final UserRepository userRepository;
+    private final UserResolver userResolver;
 
     @GetMapping("/current")
     public ResponseEntity<ReadinessResponse> getCurrentReadiness(
             @AuthenticationPrincipal UserDetails principal) {
-        User user = resolveUser(principal);
+        User user = userResolver.resolveUser(principal);
         ReadinessResponse response = readinessService.getCurrentReadiness(user.getUserId());
         if (response == null) {
-            return ResponseEntity.noContent().build();
+            response = readinessService.calculateAndSaveReadiness(user.getUserId());
         }
         return ResponseEntity.ok(response);
     }
@@ -37,12 +36,7 @@ public class ReadinessController {
     @GetMapping("/history")
     public ResponseEntity<List<ReadinessResponse>> getReadinessHistory(
             @AuthenticationPrincipal UserDetails principal) {
-        User user = resolveUser(principal);
+        User user = userResolver.resolveUser(principal);
         return ResponseEntity.ok(readinessService.getReadinessHistory(user.getUserId()));
-    }
-
-    private User resolveUser(UserDetails principal) {
-        return userRepository.findByEmail(principal.getUsername())
-                .orElseThrow(() -> new ResourceNotFoundException("User not found"));
     }
 }

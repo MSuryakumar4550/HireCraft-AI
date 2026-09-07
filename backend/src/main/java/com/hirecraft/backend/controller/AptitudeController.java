@@ -4,9 +4,8 @@ import com.hirecraft.backend.dto.request.SubmitAptitudeAnswerRequest;
 import com.hirecraft.backend.dto.response.AptitudeAssessmentResponse;
 import com.hirecraft.backend.dto.response.AptitudeQuestion;
 import com.hirecraft.backend.entity.User;
-import com.hirecraft.backend.exception.ResourceNotFoundException;
-import com.hirecraft.backend.repository.UserRepository;
 import com.hirecraft.backend.service.AptitudeAssessmentService;
+import com.hirecraft.backend.util.UserResolver;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -22,19 +21,18 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-
 @RestController
 @RequestMapping("/api/aptitude")
 @RequiredArgsConstructor
 public class AptitudeController {
 
     private final AptitudeAssessmentService assessmentService;
-    private final UserRepository userRepository;
+    private final UserResolver userResolver;
 
     @PostMapping("/assessments")
     public ResponseEntity<AptitudeAssessmentResponse> createAssessment(
             @AuthenticationPrincipal UserDetails principal) {
-        User user = resolveUser(principal);
+        User user = userResolver.resolveUser(principal);
         return ResponseEntity.status(HttpStatus.CREATED)
                 .body(assessmentService.createAssessment(user.getUserId()));
     }
@@ -55,7 +53,7 @@ public class AptitudeController {
     @GetMapping("/assessments")
     public ResponseEntity<List<AptitudeAssessmentResponse>> getMyAssessments(
             @AuthenticationPrincipal UserDetails principal) {
-        User user = resolveUser(principal);
+        User user = userResolver.resolveUser(principal);
         return ResponseEntity.ok(assessmentService.getUserAssessments(user.getUserId()));
     }
 
@@ -83,12 +81,7 @@ public class AptitudeController {
     public ResponseEntity<AptitudeAssessmentResponse> saveScore(
             @AuthenticationPrincipal UserDetails principal,
             @Valid @RequestBody com.hirecraft.backend.dto.request.SaveAptitudeScoreRequest request) {
-        User user = resolveUser(principal);
+        User user = userResolver.resolveUser(principal);
         return ResponseEntity.ok(assessmentService.saveScore(user.getUserId(), request));
-    }
-
-    private User resolveUser(UserDetails principal) {
-        return userRepository.findByEmail(principal.getUsername())
-                .orElseThrow(() -> new ResourceNotFoundException("User not found"));
     }
 }

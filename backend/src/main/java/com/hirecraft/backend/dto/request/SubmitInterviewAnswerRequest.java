@@ -13,6 +13,9 @@ public class SubmitInterviewAnswerRequest {
     @Min(value = 1)
     private Integer questionNo;
 
+    @NotNull(message = "Question ID is required")
+    private String questionId;
+
     private String answerText;
     private String transcript;
     private Double responseDurationSeconds;

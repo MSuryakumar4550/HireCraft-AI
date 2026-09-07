@@ -30,12 +30,61 @@ public class AiMemoryServiceImpl implements AiMemoryService {
     private final UserRepository userRepository;
     private final ObjectMapper objectMapper = new ObjectMapper();
 
+    @org.springframework.beans.factory.annotation.Autowired(required = false)
+    private com.hirecraft.backend.repository.InterviewSessionRepository interviewSessionRepository;
+
+    @org.springframework.beans.factory.annotation.Autowired(required = false)
+    private com.hirecraft.backend.repository.InterviewAnswerRepository interviewAnswerRepository;
+
     @Override
     public List<AiMemoryItem> getMemoryForUser(Long userId) {
-        return aiMemoryItemRepository.findByUserUserIdAndIsActiveTrue(userId);
+        List<AiMemoryItem> items = aiMemoryItemRepository.findByUserUserIdAndIsActiveTrue(userId);
+        if ((items == null || items.isEmpty()) && interviewSessionRepository != null && interviewAnswerRepository != null) {
+            try {
+                List<com.hirecraft.backend.entity.InterviewSession> sessions = 
+                        interviewSessionRepository.findByUserUserIdOrderByCreatedAtDesc(userId);
+                for (com.hirecraft.backend.entity.InterviewSession session : sessions) {
+                    if (session.getStatus() == com.hirecraft.backend.enums.InterviewStatus.COMPLETED) {
+                        int finalScore = session.getTotalScore() != null ? session.getTotalScore().intValue() : 0;
+                        updateMemoryGraph(
+                                userId,
+                                MemoryCategory.TECHNICAL,
+                                finalScore >= 70 ? MemoryType.STRENGTH : MemoryType.WEAKNESS,
+                                (session.getSubject() != null ? session.getSubject() : "Technical") + " Mock Interview",
+                                finalScore,
+                                "Completed technical interview with overall score " + finalScore + "/100."
+                        );
+
+                        List<com.hirecraft.backend.entity.InterviewAnswer> answers =
+                                interviewAnswerRepository.findByInterviewSessionInterviewSessionIdOrderByQuestionNo(session.getInterviewSessionId());
+                        for (com.hirecraft.backend.entity.InterviewAnswer ans : answers) {
+                            if (ans.getEvaluationScore() != null) {
+                                int ansScore = ans.getEvaluationScore().multiply(java.math.BigDecimal.TEN).intValue();
+                                String topic = ans.getExpectedTopic() != null ? ans.getExpectedTopic() : "Core Technical Concepts";
+                                updateMemoryGraph(
+                                        userId,
+                                        MemoryCategory.TECHNICAL,
+                                        ansScore >= 70 ? MemoryType.STRENGTH : MemoryType.WEAKNESS,
+                                        topic,
+                                        ansScore,
+                                        (ans.getEvaluationFeedback() != null && !ans.getEvaluationFeedback().isBlank())
+                                                ? ans.getEvaluationFeedback()
+                                                : "Candidate evaluation for " + topic
+                                );
+                            }
+                        }
+                    }
+                }
+                items = aiMemoryItemRepository.findByUserUserIdAndIsActiveTrue(userId);
+            } catch (Exception e) {
+                log.warn("Could not backfill memory items: {}", e.getMessage());
+            }
+        }
+        return items != null ? items : new ArrayList<>();
     }
 
     @Override
+    @org.springframework.transaction.annotation.Transactional(propagation = org.springframework.transaction.annotation.Propagation.REQUIRES_NEW)
     public void updateMemoryGraph(Long userId, MemoryCategory category, MemoryType type, String key, int score, String feedback) {
         try {
             List<AiMemoryItem> existingItems = aiMemoryItemRepository.findByUserUserIdAndCategoryAndIsActiveTrue(userId, category);
@@ -57,7 +106,7 @@ public class AiMemoryServiceImpl implements AiMemoryService {
                 }
             } else {
                 User user = userRepository.findById(userId)
-                    .orElseThrow(() -> new RuntimeException("User not found"));
+                    .orElseThrow(() -> new RuntimeException("User not found: " + userId));
                     
                 memoryItem = new AiMemoryItem();
                 memoryItem.setUser(user);
@@ -84,7 +133,11 @@ public class AiMemoryServiceImpl implements AiMemoryService {
             
             // Update type if it shifted (e.g. they improved)
             if (history.size() >= 3) {
-                double avgScore = history.stream().mapToInt(h -> (Integer) h.get("score")).average().orElse(0.0);
+                double avgScore = history.stream().mapToInt(h -> {
+                    Object s = h.get("score");
+                    return (s instanceof Number) ? ((Number) s).intValue() : 0;
+                }).average().orElse(0.0);
+
                 if (avgScore >= 75) {
                     memoryItem.setMemoryType(MemoryType.STRENGTH);
                 } else if (avgScore <= 40) {

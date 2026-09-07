@@ -20,5 +20,10 @@ public class InterviewSessionResponse {
     private final Boolean transcriptAvailable;
     private final Integer totalQuestions;
     private final BigDecimal totalScore;
+    private final String currentTopic;
+    private final String subject;
+    private final java.util.List<String> remainingTopics;
+    private final Integer consecutiveWeakAnswers;
+    private final Integer currentTopicQuestionCount;
     private final Instant createdAt;
 }

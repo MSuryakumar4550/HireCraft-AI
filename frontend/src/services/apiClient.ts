@@ -24,14 +24,21 @@ const getToken = () => {
 }
 
 async function handleResponse<T>(response: Response): Promise<ApiResponse<T>> {
+  if (response.status === 204) {
+    return { data: null as any, status: 204 }
+  }
+
   if (!response.ok) {
     let message = response.statusText || 'Request failed'
     try {
-      const errJson = await response.json()
-      if (errJson?.message) {
-        message = errJson.message
-      } else if (errJson?.error) {
-        message = errJson.error
+      const text = await response.text()
+      if (text) {
+        const errJson = JSON.parse(text)
+        if (errJson?.message) {
+          message = errJson.message
+        } else if (errJson?.error) {
+          message = errJson.error
+        }
       }
     } catch {}
     const error: ApiError = {
@@ -41,7 +48,8 @@ async function handleResponse<T>(response: Response): Promise<ApiResponse<T>> {
     throw error
   }
 
-  const data = (await response.json()) as T
+  const text = await response.text()
+  const data = text ? (JSON.parse(text) as T) : (null as any)
   return { data, status: response.status }
 }
 
@@ -69,7 +77,10 @@ export const apiClient = {
       return await handleResponse<T>(response)
     } catch (err: any) {
       if (err?.status) throw err
-      throw { message: "Backend offline. Please start Spring Boot backend.", status: 503 }
+      if (err instanceof TypeError && (err.message?.includes('fetch') || err.message?.includes('NetworkError'))) {
+        throw { message: "Backend offline. Please start Spring Boot backend.", status: 503 }
+      }
+      throw { message: err?.message || "Request failed", status: 500 }
     }
   },
 
@@ -87,7 +98,10 @@ export const apiClient = {
       return await handleResponse<T>(response)
     } catch (err: any) {
       if (err?.status) throw err
-      throw { message: "Backend offline. Please start Spring Boot backend.", status: 503 }
+      if (err instanceof TypeError && (err.message?.includes('fetch') || err.message?.includes('NetworkError'))) {
+        throw { message: "Backend offline. Please start Spring Boot backend.", status: 503 }
+      }
+      throw { message: err?.message || "Request failed", status: 500 }
     }
   },
 
@@ -105,7 +119,10 @@ export const apiClient = {
       return await handleResponse<T>(response)
     } catch (err: any) {
       if (err?.status) throw err
-      throw { message: "Backend offline. Please start Spring Boot backend.", status: 503 }
+      if (err instanceof TypeError && (err.message?.includes('fetch') || err.message?.includes('NetworkError'))) {
+        throw { message: "Backend offline. Please start Spring Boot backend.", status: 503 }
+      }
+      throw { message: err?.message || "Request failed", status: 500 }
     }
   },
 
@@ -122,7 +139,10 @@ export const apiClient = {
       return await handleResponse<T>(response)
     } catch (err: any) {
       if (err?.status) throw err
-      throw { message: "Backend offline. Please start Spring Boot backend.", status: 503 }
+      if (err instanceof TypeError && (err.message?.includes('fetch') || err.message?.includes('NetworkError'))) {
+        throw { message: "Backend offline. Please start Spring Boot backend.", status: 503 }
+      }
+      throw { message: err?.message || "Request failed", status: 500 }
     }
   },
 

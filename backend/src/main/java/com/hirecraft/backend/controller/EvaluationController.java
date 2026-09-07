@@ -2,9 +2,8 @@ package com.hirecraft.backend.controller;
 
 import com.hirecraft.backend.dto.response.EvaluationResponse;
 import com.hirecraft.backend.entity.User;
-import com.hirecraft.backend.exception.ResourceNotFoundException;
-import com.hirecraft.backend.repository.UserRepository;
 import com.hirecraft.backend.service.EvaluationService;
+import com.hirecraft.backend.util.UserResolver;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
@@ -16,29 +15,23 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-
 @RestController
 @RequestMapping("/api/evaluations")
 @RequiredArgsConstructor
 public class EvaluationController {
 
     private final EvaluationService evaluationService;
-    private final UserRepository userRepository;
+    private final UserResolver userResolver;
 
     @GetMapping
     public ResponseEntity<List<EvaluationResponse>> getMyEvaluations(
             @AuthenticationPrincipal UserDetails principal) {
-        User user = resolveUser(principal);
+        User user = userResolver.resolveUser(principal);
         return ResponseEntity.ok(evaluationService.getUserEvaluations(user.getUserId()));
     }
 
     @GetMapping("/{evaluationId}")
     public ResponseEntity<EvaluationResponse> getEvaluation(@PathVariable Long evaluationId) {
         return ResponseEntity.ok(evaluationService.getEvaluation(evaluationId));
-    }
-
-    private User resolveUser(UserDetails principal) {
-        return userRepository.findByEmail(principal.getUsername())
-                .orElseThrow(() -> new ResourceNotFoundException("User not found"));
     }
 }

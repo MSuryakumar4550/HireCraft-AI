@@ -26,10 +26,18 @@ public class FixSchemaRunner implements CommandLineRunner {
         }
         
         try {
-            entityManager.createNativeQuery("ALTER TABLE aptitude_assessments ALTER COLUMN score TYPE NUMERIC(5,2)").executeUpdate();
-            log.info("Successfully altered score column to NUMERIC");
+            log.info("Running schema fix for interview_answers...");
+            entityManager.createNativeQuery("ALTER TABLE interview_answers ADD COLUMN IF NOT EXISTS evaluation_score NUMERIC(5,2)").executeUpdate();
+            entityManager.createNativeQuery("ALTER TABLE interview_answers ADD COLUMN IF NOT EXISTS question_id VARCHAR(100)").executeUpdate();
+            entityManager.createNativeQuery("ALTER TABLE interview_answers ADD COLUMN IF NOT EXISTS expected_topic VARCHAR(100)").executeUpdate();
+            entityManager.createNativeQuery("ALTER TABLE interview_answers ADD COLUMN IF NOT EXISTS difficulty_level VARCHAR(50)").executeUpdate();
+            entityManager.createNativeQuery("ALTER TABLE interview_answers ADD COLUMN IF NOT EXISTS answered_at TIMESTAMPTZ DEFAULT NOW()").executeUpdate();
+            entityManager.createNativeQuery("ALTER TABLE interview_answers ADD COLUMN IF NOT EXISTS created_at TIMESTAMPTZ DEFAULT NOW()").executeUpdate();
+            entityManager.createNativeQuery("ALTER TABLE interview_answers ALTER COLUMN created_at DROP NOT NULL").executeUpdate();
+            entityManager.createNativeQuery("ALTER TABLE interview_answers ALTER COLUMN answered_at DROP NOT NULL").executeUpdate();
+            log.info("Successfully patched interview_answers columns");
         } catch (Exception e) {
-            log.warn("Could not alter score column: {}", e.getMessage());
+            log.warn("Could not patch interview_answers columns: {}", e.getMessage());
         }
     }
 }

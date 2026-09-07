@@ -1,0 +1,2507 @@
+{
+  "subject" : "Backend Engineering",
+  "batch" : "combined",
+  "version" : "1.0",
+  "language" : null,
+  "questions" : [ {
+    "id" : "BACK-001",
+    "question" : "What is the difference between the Heap memory and the Stack memory in the Java Virtual Machine?",
+    "subject" : "Backend Engineering",
+    "topic" : "JVM Internals & Memory Model",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "jvm", "garbage collection", "heap", "metaspace", "jit", "jvm internals & memory model" ],
+    "criteria" : [ "explains JVM memory regions (Heap, Stack, Metaspace, Off-heap)", "analyzes Garbage Collection algorithms and tuning trade-offs", "diagnoses memory leaks, GC pauses, and JVM performance bottlenecks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-002",
+    "question" : "What is the role of the Metaspace in Java 8+, and how does it differ from the legacy PermGen space?",
+    "subject" : "Backend Engineering",
+    "topic" : "JVM Internals & Memory Model",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "jvm", "garbage collection", "heap", "metaspace", "jit", "jvm internals & memory model" ],
+    "criteria" : [ "explains JVM memory regions (Heap, Stack, Metaspace, Off-heap)", "analyzes Garbage Collection algorithms and tuning trade-offs", "diagnoses memory leaks, GC pauses, and JVM performance bottlenecks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-003",
+    "question" : "Explain the basic mechanism of Java Garbage Collection and the generational hypothesis (Young vs Old Generation).",
+    "subject" : "Backend Engineering",
+    "topic" : "JVM Internals & Memory Model",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "jvm", "garbage collection", "heap", "metaspace", "jit", "jvm internals & memory model" ],
+    "criteria" : [ "explains JVM memory regions (Heap, Stack, Metaspace, Off-heap)", "analyzes Garbage Collection algorithms and tuning trade-offs", "diagnoses memory leaks, GC pauses, and JVM performance bottlenecks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-004",
+    "question" : "What is the JIT (Just-In-Time) compiler in the JVM, and how does it optimize bytecode into native machine instructions?",
+    "subject" : "Backend Engineering",
+    "topic" : "JVM Internals & Memory Model",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "jvm", "garbage collection", "heap", "metaspace", "jit", "jvm internals & memory model" ],
+    "criteria" : [ "explains JVM memory regions (Heap, Stack, Metaspace, Off-heap)", "analyzes Garbage Collection algorithms and tuning trade-offs", "diagnoses memory leaks, GC pauses, and JVM performance bottlenecks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-005",
+    "question" : "What is a memory leak in Java if the JVM automatically manages memory through Garbage Collection?",
+    "subject" : "Backend Engineering",
+    "topic" : "JVM Internals & Memory Model",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "jvm", "garbage collection", "heap", "metaspace", "jit", "jvm internals & memory model" ],
+    "criteria" : [ "explains JVM memory regions (Heap, Stack, Metaspace, Off-heap)", "analyzes Garbage Collection algorithms and tuning trade-offs", "diagnoses memory leaks, GC pauses, and JVM performance bottlenecks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-006",
+    "question" : "Explain the difference between strong, soft, weak, and phantom references in Java.",
+    "subject" : "Backend Engineering",
+    "topic" : "JVM Internals & Memory Model",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "jvm", "garbage collection", "heap", "metaspace", "jit", "jvm internals & memory model" ],
+    "criteria" : [ "explains JVM memory regions (Heap, Stack, Metaspace, Off-heap)", "analyzes Garbage Collection algorithms and tuning trade-offs", "diagnoses memory leaks, GC pauses, and JVM performance bottlenecks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-007",
+    "question" : "What is the Stop-The-World (STW) pause in garbage collection, and why is minimizing it crucial for low-latency systems?",
+    "subject" : "Backend Engineering",
+    "topic" : "JVM Internals & Memory Model",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "jvm", "garbage collection", "heap", "metaspace", "jit", "jvm internals & memory model" ],
+    "criteria" : [ "explains JVM memory regions (Heap, Stack, Metaspace, Off-heap)", "analyzes Garbage Collection algorithms and tuning trade-offs", "diagnoses memory leaks, GC pauses, and JVM performance bottlenecks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-008",
+    "question" : "What is the difference between the Heap memory and the Stack memory in the Java Virtual Machine?",
+    "subject" : "Backend Engineering",
+    "topic" : "JVM Internals & Memory Model",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "jvm", "garbage collection", "heap", "metaspace", "jit", "jvm internals & memory model" ],
+    "criteria" : [ "explains JVM memory regions (Heap, Stack, Metaspace, Off-heap)", "analyzes Garbage Collection algorithms and tuning trade-offs", "diagnoses memory leaks, GC pauses, and JVM performance bottlenecks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-009",
+    "question" : "What is the role of the Metaspace in Java 8+, and how does it differ from the legacy PermGen space?",
+    "subject" : "Backend Engineering",
+    "topic" : "JVM Internals & Memory Model",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "jvm", "garbage collection", "heap", "metaspace", "jit", "jvm internals & memory model" ],
+    "criteria" : [ "explains JVM memory regions (Heap, Stack, Metaspace, Off-heap)", "analyzes Garbage Collection algorithms and tuning trade-offs", "diagnoses memory leaks, GC pauses, and JVM performance bottlenecks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-010",
+    "question" : "Explain the basic mechanism of Java Garbage Collection and the generational hypothesis (Young vs Old Generation).",
+    "subject" : "Backend Engineering",
+    "topic" : "JVM Internals & Memory Model",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "jvm", "garbage collection", "heap", "metaspace", "jit", "jvm internals & memory model" ],
+    "criteria" : [ "explains JVM memory regions (Heap, Stack, Metaspace, Off-heap)", "analyzes Garbage Collection algorithms and tuning trade-offs", "diagnoses memory leaks, GC pauses, and JVM performance bottlenecks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-011",
+    "question" : "How do you troubleshoot a java.lang.OutOfMemoryError: Metaspace versus java.lang.OutOfMemoryError: Java heap space?",
+    "subject" : "Backend Engineering",
+    "topic" : "JVM Internals & Memory Model",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "jvm", "garbage collection", "heap", "metaspace", "jit", "jvm internals & memory model" ],
+    "criteria" : [ "explains JVM memory regions (Heap, Stack, Metaspace, Off-heap)", "analyzes Garbage Collection algorithms and tuning trade-offs", "diagnoses memory leaks, GC pauses, and JVM performance bottlenecks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-012",
+    "question" : "What are the operational implications of using off-heap memory (DirectByteBuffer / sun.misc.Unsafe) in high-throughput network applications?",
+    "subject" : "Backend Engineering",
+    "topic" : "JVM Internals & Memory Model",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "jvm", "garbage collection", "heap", "metaspace", "jit", "jvm internals & memory model" ],
+    "criteria" : [ "explains JVM memory regions (Heap, Stack, Metaspace, Off-heap)", "analyzes Garbage Collection algorithms and tuning trade-offs", "diagnoses memory leaks, GC pauses, and JVM performance bottlenecks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-013",
+    "question" : "Explain the purpose and mechanics of the JVM safepoints and how long-running loops without safepoints delay GC pauses.",
+    "subject" : "Backend Engineering",
+    "topic" : "JVM Internals & Memory Model",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "jvm", "garbage collection", "heap", "metaspace", "jit", "jvm internals & memory model" ],
+    "criteria" : [ "explains JVM memory regions (Heap, Stack, Metaspace, Off-heap)", "analyzes Garbage Collection algorithms and tuning trade-offs", "diagnoses memory leaks, GC pauses, and JVM performance bottlenecks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-014",
+    "question" : "How do JVM tuning flags like -XX:+UseStringDeduplication, -XX:SurvivorRatio, and -XX:MaxGCPauseMillis influence application behavior?",
+    "subject" : "Backend Engineering",
+    "topic" : "JVM Internals & Memory Model",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "jvm", "garbage collection", "heap", "metaspace", "jit", "jvm internals & memory model" ],
+    "criteria" : [ "explains JVM memory regions (Heap, Stack, Metaspace, Off-heap)", "analyzes Garbage Collection algorithms and tuning trade-offs", "diagnoses memory leaks, GC pauses, and JVM performance bottlenecks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-015",
+    "question" : "Compare the G1 Garbage Collector with the ZGC and Shenandoah collectors in terms of pause times, throughput, and heap sizing.",
+    "subject" : "Backend Engineering",
+    "topic" : "JVM Internals & Memory Model",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "jvm", "garbage collection", "heap", "metaspace", "jit", "jvm internals & memory model" ],
+    "criteria" : [ "explains JVM memory regions (Heap, Stack, Metaspace, Off-heap)", "analyzes Garbage Collection algorithms and tuning trade-offs", "diagnoses memory leaks, GC pauses, and JVM performance bottlenecks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-016",
+    "question" : "How does Escape Analysis in the JVM enable scalar replacement and stack allocation of objects to avoid heap allocation?",
+    "subject" : "Backend Engineering",
+    "topic" : "JVM Internals & Memory Model",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "jvm", "garbage collection", "heap", "metaspace", "jit", "jvm internals & memory model" ],
+    "criteria" : [ "explains JVM memory regions (Heap, Stack, Metaspace, Off-heap)", "analyzes Garbage Collection algorithms and tuning trade-offs", "diagnoses memory leaks, GC pauses, and JVM performance bottlenecks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-017",
+    "question" : "Explain how memory fragmentation occurs in the JVM heap and how different collectors compact live objects.",
+    "subject" : "Backend Engineering",
+    "topic" : "JVM Internals & Memory Model",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "jvm", "garbage collection", "heap", "metaspace", "jit", "jvm internals & memory model" ],
+    "criteria" : [ "explains JVM memory regions (Heap, Stack, Metaspace, Off-heap)", "analyzes Garbage Collection algorithms and tuning trade-offs", "diagnoses memory leaks, GC pauses, and JVM performance bottlenecks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-018",
+    "question" : "How do you troubleshoot a java.lang.OutOfMemoryError: Metaspace versus java.lang.OutOfMemoryError: Java heap space?",
+    "subject" : "Backend Engineering",
+    "topic" : "JVM Internals & Memory Model",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "jvm", "garbage collection", "heap", "metaspace", "jit", "jvm internals & memory model" ],
+    "criteria" : [ "explains JVM memory regions (Heap, Stack, Metaspace, Off-heap)", "analyzes Garbage Collection algorithms and tuning trade-offs", "diagnoses memory leaks, GC pauses, and JVM performance bottlenecks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-019",
+    "question" : "What are the operational implications of using off-heap memory (DirectByteBuffer / sun.misc.Unsafe) in high-throughput network applications?",
+    "subject" : "Backend Engineering",
+    "topic" : "JVM Internals & Memory Model",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "jvm", "garbage collection", "heap", "metaspace", "jit", "jvm internals & memory model" ],
+    "criteria" : [ "explains JVM memory regions (Heap, Stack, Metaspace, Off-heap)", "analyzes Garbage Collection algorithms and tuning trade-offs", "diagnoses memory leaks, GC pauses, and JVM performance bottlenecks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-020",
+    "question" : "Explain the purpose and mechanics of the JVM safepoints and how long-running loops without safepoints delay GC pauses.",
+    "subject" : "Backend Engineering",
+    "topic" : "JVM Internals & Memory Model",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "jvm", "garbage collection", "heap", "metaspace", "jit", "jvm internals & memory model" ],
+    "criteria" : [ "explains JVM memory regions (Heap, Stack, Metaspace, Off-heap)", "analyzes Garbage Collection algorithms and tuning trade-offs", "diagnoses memory leaks, GC pauses, and JVM performance bottlenecks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-021",
+    "question" : "How do JVM tuning flags like -XX:+UseStringDeduplication, -XX:SurvivorRatio, and -XX:MaxGCPauseMillis influence application behavior?",
+    "subject" : "Backend Engineering",
+    "topic" : "JVM Internals & Memory Model",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "jvm", "garbage collection", "heap", "metaspace", "jit", "jvm internals & memory model" ],
+    "criteria" : [ "explains JVM memory regions (Heap, Stack, Metaspace, Off-heap)", "analyzes Garbage Collection algorithms and tuning trade-offs", "diagnoses memory leaks, GC pauses, and JVM performance bottlenecks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-022",
+    "question" : "Compare the G1 Garbage Collector with the ZGC and Shenandoah collectors in terms of pause times, throughput, and heap sizing.",
+    "subject" : "Backend Engineering",
+    "topic" : "JVM Internals & Memory Model",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "jvm", "garbage collection", "heap", "metaspace", "jit", "jvm internals & memory model" ],
+    "criteria" : [ "explains JVM memory regions (Heap, Stack, Metaspace, Off-heap)", "analyzes Garbage Collection algorithms and tuning trade-offs", "diagnoses memory leaks, GC pauses, and JVM performance bottlenecks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-023",
+    "question" : "How does Escape Analysis in the JVM enable scalar replacement and stack allocation of objects to avoid heap allocation?",
+    "subject" : "Backend Engineering",
+    "topic" : "JVM Internals & Memory Model",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "jvm", "garbage collection", "heap", "metaspace", "jit", "jvm internals & memory model" ],
+    "criteria" : [ "explains JVM memory regions (Heap, Stack, Metaspace, Off-heap)", "analyzes Garbage Collection algorithms and tuning trade-offs", "diagnoses memory leaks, GC pauses, and JVM performance bottlenecks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-024",
+    "question" : "Explain how memory fragmentation occurs in the JVM heap and how different collectors compact live objects.",
+    "subject" : "Backend Engineering",
+    "topic" : "JVM Internals & Memory Model",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "jvm", "garbage collection", "heap", "metaspace", "jit", "jvm internals & memory model" ],
+    "criteria" : [ "explains JVM memory regions (Heap, Stack, Metaspace, Off-heap)", "analyzes Garbage Collection algorithms and tuning trade-offs", "diagnoses memory leaks, GC pauses, and JVM performance bottlenecks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-025",
+    "question" : "How do you troubleshoot a java.lang.OutOfMemoryError: Metaspace versus java.lang.OutOfMemoryError: Java heap space?",
+    "subject" : "Backend Engineering",
+    "topic" : "JVM Internals & Memory Model",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "jvm", "garbage collection", "heap", "metaspace", "jit", "jvm internals & memory model" ],
+    "criteria" : [ "explains JVM memory regions (Heap, Stack, Metaspace, Off-heap)", "analyzes Garbage Collection algorithms and tuning trade-offs", "diagnoses memory leaks, GC pauses, and JVM performance bottlenecks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-026",
+    "question" : "What are the operational implications of using off-heap memory (DirectByteBuffer / sun.misc.Unsafe) in high-throughput network applications?",
+    "subject" : "Backend Engineering",
+    "topic" : "JVM Internals & Memory Model",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "jvm", "garbage collection", "heap", "metaspace", "jit", "jvm internals & memory model" ],
+    "criteria" : [ "explains JVM memory regions (Heap, Stack, Metaspace, Off-heap)", "analyzes Garbage Collection algorithms and tuning trade-offs", "diagnoses memory leaks, GC pauses, and JVM performance bottlenecks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-027",
+    "question" : "Analyze a complex memory leak in a Spring Boot microservice where classloaders fail to be collected due to thread-local leaks and dynamic proxies.",
+    "subject" : "Backend Engineering",
+    "topic" : "JVM Internals & Memory Model",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "jvm", "garbage collection", "heap", "metaspace", "jit", "jvm internals & memory model" ],
+    "criteria" : [ "explains JVM memory regions (Heap, Stack, Metaspace, Off-heap)", "analyzes Garbage Collection algorithms and tuning trade-offs", "diagnoses memory leaks, GC pauses, and JVM performance bottlenecks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-028",
+    "question" : "Evaluate the architectural trade-offs of compiling Spring Boot applications to GraalVM Native Images versus running on the standard OpenJDK HotSpot JVM.",
+    "subject" : "Backend Engineering",
+    "topic" : "JVM Internals & Memory Model",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "jvm", "garbage collection", "heap", "metaspace", "jit", "jvm internals & memory model" ],
+    "criteria" : [ "explains JVM memory regions (Heap, Stack, Metaspace, Off-heap)", "analyzes Garbage Collection algorithms and tuning trade-offs", "diagnoses memory leaks, GC pauses, and JVM performance bottlenecks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-029",
+    "question" : "How does the JVM handle memory barriers (LoadLoad, LoadStore, StoreStore, StoreLoad) on x86 vs ARM architectures to enforce the Java Memory Model?",
+    "subject" : "Backend Engineering",
+    "topic" : "JVM Internals & Memory Model",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "jvm", "garbage collection", "heap", "metaspace", "jit", "jvm internals & memory model" ],
+    "criteria" : [ "explains JVM memory regions (Heap, Stack, Metaspace, Off-heap)", "analyzes Garbage Collection algorithms and tuning trade-offs", "diagnoses memory leaks, GC pauses, and JVM performance bottlenecks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-030",
+    "question" : "Design an automated JVM telemetry and crash analysis pipeline that captures heap dumps, thread dumps, and JFR recordings during critical stalls.",
+    "subject" : "Backend Engineering",
+    "topic" : "JVM Internals & Memory Model",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "jvm", "garbage collection", "heap", "metaspace", "jit", "jvm internals & memory model" ],
+    "criteria" : [ "explains JVM memory regions (Heap, Stack, Metaspace, Off-heap)", "analyzes Garbage Collection algorithms and tuning trade-offs", "diagnoses memory leaks, GC pauses, and JVM performance bottlenecks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-031",
+    "question" : "Diagnose and resolve a production JVM scenario where application p99 latency spikes to 12 seconds every 10 minutes despite average CPU usage below 30%.",
+    "subject" : "Backend Engineering",
+    "topic" : "JVM Internals & Memory Model",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "jvm", "garbage collection", "heap", "metaspace", "jit", "jvm internals & memory model" ],
+    "criteria" : [ "explains JVM memory regions (Heap, Stack, Metaspace, Off-heap)", "analyzes Garbage Collection algorithms and tuning trade-offs", "diagnoses memory leaks, GC pauses, and JVM performance bottlenecks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-032",
+    "question" : "Analyze a complex memory leak in a Spring Boot microservice where classloaders fail to be collected due to thread-local leaks and dynamic proxies.",
+    "subject" : "Backend Engineering",
+    "topic" : "JVM Internals & Memory Model",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "jvm", "garbage collection", "heap", "metaspace", "jit", "jvm internals & memory model" ],
+    "criteria" : [ "explains JVM memory regions (Heap, Stack, Metaspace, Off-heap)", "analyzes Garbage Collection algorithms and tuning trade-offs", "diagnoses memory leaks, GC pauses, and JVM performance bottlenecks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-033",
+    "question" : "What is the difference between a process and a thread in Java application runtime?",
+    "subject" : "Backend Engineering",
+    "topic" : "Java Concurrency & Multithreading",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "concurrency", "multithreading", "locks", "virtual threads", "completablefuture", "java concurrency & multithreading" ],
+    "criteria" : [ "contrasts platform threads vs virtual threads and thread pooling strategies", "evaluates lock-free synchronization, CAS, and concurrent data structures", "identifies concurrency bugs like deadlocks, race conditions, and thread pinning" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-034",
+    "question" : "What does the `volatile` keyword guarantee in Java, and why does it not guarantee atomicity for operations like `count++`?",
+    "subject" : "Backend Engineering",
+    "topic" : "Java Concurrency & Multithreading",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "concurrency", "multithreading", "locks", "virtual threads", "completablefuture", "java concurrency & multithreading" ],
+    "criteria" : [ "contrasts platform threads vs virtual threads and thread pooling strategies", "evaluates lock-free synchronization, CAS, and concurrent data structures", "identifies concurrency bugs like deadlocks, race conditions, and thread pinning" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-035",
+    "question" : "What is the difference between `synchronized` blocks and `ReentrantLock` in `java.util.concurrent.locks`?",
+    "subject" : "Backend Engineering",
+    "topic" : "Java Concurrency & Multithreading",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "concurrency", "multithreading", "locks", "virtual threads", "completablefuture", "java concurrency & multithreading" ],
+    "criteria" : [ "contrasts platform threads vs virtual threads and thread pooling strategies", "evaluates lock-free synchronization, CAS, and concurrent data structures", "identifies concurrency bugs like deadlocks, race conditions, and thread pinning" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-036",
+    "question" : "What are Deadlock, Livelock, and Starvation in concurrent programming?",
+    "subject" : "Backend Engineering",
+    "topic" : "Java Concurrency & Multithreading",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "concurrency", "multithreading", "locks", "virtual threads", "completablefuture", "java concurrency & multithreading" ],
+    "criteria" : [ "contrasts platform threads vs virtual threads and thread pooling strategies", "evaluates lock-free synchronization, CAS, and concurrent data structures", "identifies concurrency bugs like deadlocks, race conditions, and thread pinning" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-037",
+    "question" : "How does `ThreadLocal` work in Java, and what critical memory leak hazard exists when used with thread pools?",
+    "subject" : "Backend Engineering",
+    "topic" : "Java Concurrency & Multithreading",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "concurrency", "multithreading", "locks", "virtual threads", "completablefuture", "java concurrency & multithreading" ],
+    "criteria" : [ "contrasts platform threads vs virtual threads and thread pooling strategies", "evaluates lock-free synchronization, CAS, and concurrent data structures", "identifies concurrency bugs like deadlocks, race conditions, and thread pinning" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-038",
+    "question" : "What is the difference between `Runnable` and `Callable` interfaces in Java concurrency?",
+    "subject" : "Backend Engineering",
+    "topic" : "Java Concurrency & Multithreading",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "concurrency", "multithreading", "locks", "virtual threads", "completablefuture", "java concurrency & multithreading" ],
+    "criteria" : [ "contrasts platform threads vs virtual threads and thread pooling strategies", "evaluates lock-free synchronization, CAS, and concurrent data structures", "identifies concurrency bugs like deadlocks, race conditions, and thread pinning" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-039",
+    "question" : "What is the purpose of the `CountDownLatch` and `CyclicBarrier` synchronization utilities in Java?",
+    "subject" : "Backend Engineering",
+    "topic" : "Java Concurrency & Multithreading",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "concurrency", "multithreading", "locks", "virtual threads", "completablefuture", "java concurrency & multithreading" ],
+    "criteria" : [ "contrasts platform threads vs virtual threads and thread pooling strategies", "evaluates lock-free synchronization, CAS, and concurrent data structures", "identifies concurrency bugs like deadlocks, race conditions, and thread pinning" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-040",
+    "question" : "What is the difference between a process and a thread in Java application runtime?",
+    "subject" : "Backend Engineering",
+    "topic" : "Java Concurrency & Multithreading",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "concurrency", "multithreading", "locks", "virtual threads", "completablefuture", "java concurrency & multithreading" ],
+    "criteria" : [ "contrasts platform threads vs virtual threads and thread pooling strategies", "evaluates lock-free synchronization, CAS, and concurrent data structures", "identifies concurrency bugs like deadlocks, race conditions, and thread pinning" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-041",
+    "question" : "What does the `volatile` keyword guarantee in Java, and why does it not guarantee atomicity for operations like `count++`?",
+    "subject" : "Backend Engineering",
+    "topic" : "Java Concurrency & Multithreading",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "concurrency", "multithreading", "locks", "virtual threads", "completablefuture", "java concurrency & multithreading" ],
+    "criteria" : [ "contrasts platform threads vs virtual threads and thread pooling strategies", "evaluates lock-free synchronization, CAS, and concurrent data structures", "identifies concurrency bugs like deadlocks, race conditions, and thread pinning" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-042",
+    "question" : "What is the difference between `synchronized` blocks and `ReentrantLock` in `java.util.concurrent.locks`?",
+    "subject" : "Backend Engineering",
+    "topic" : "Java Concurrency & Multithreading",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "concurrency", "multithreading", "locks", "virtual threads", "completablefuture", "java concurrency & multithreading" ],
+    "criteria" : [ "contrasts platform threads vs virtual threads and thread pooling strategies", "evaluates lock-free synchronization, CAS, and concurrent data structures", "identifies concurrency bugs like deadlocks, race conditions, and thread pinning" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-043",
+    "question" : "Explain the ABA problem in lock-free concurrency and how `AtomicStampedReference` solves it.",
+    "subject" : "Backend Engineering",
+    "topic" : "Java Concurrency & Multithreading",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "concurrency", "multithreading", "locks", "virtual threads", "completablefuture", "java concurrency & multithreading" ],
+    "criteria" : [ "contrasts platform threads vs virtual threads and thread pooling strategies", "evaluates lock-free synchronization, CAS, and concurrent data structures", "identifies concurrency bugs like deadlocks, race conditions, and thread pinning" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-044",
+    "question" : "How does the Fork/Join framework work in Java, and how does work-stealing balance CPU-intensive computational workloads?",
+    "subject" : "Backend Engineering",
+    "topic" : "Java Concurrency & Multithreading",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "concurrency", "multithreading", "locks", "virtual threads", "completablefuture", "java concurrency & multithreading" ],
+    "criteria" : [ "contrasts platform threads vs virtual threads and thread pooling strategies", "evaluates lock-free synchronization, CAS, and concurrent data structures", "identifies concurrency bugs like deadlocks, race conditions, and thread pinning" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-045",
+    "question" : "What are the best practices for sizing a `ThreadPoolExecutor` (core pool size, max pool size, queue capacity) for I/O-bound vs CPU-bound tasks?",
+    "subject" : "Backend Engineering",
+    "topic" : "Java Concurrency & Multithreading",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "concurrency", "multithreading", "locks", "virtual threads", "completablefuture", "java concurrency & multithreading" ],
+    "criteria" : [ "contrasts platform threads vs virtual threads and thread pooling strategies", "evaluates lock-free synchronization, CAS, and concurrent data structures", "identifies concurrency bugs like deadlocks, race conditions, and thread pinning" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-046",
+    "question" : "Explain how `ReentrantReadWriteLock` and `StampedLock` optimize read-heavy concurrent operations compared to standard mutual exclusion.",
+    "subject" : "Backend Engineering",
+    "topic" : "Java Concurrency & Multithreading",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "concurrency", "multithreading", "locks", "virtual threads", "completablefuture", "java concurrency & multithreading" ],
+    "criteria" : [ "contrasts platform threads vs virtual threads and thread pooling strategies", "evaluates lock-free synchronization, CAS, and concurrent data structures", "identifies concurrency bugs like deadlocks, race conditions, and thread pinning" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-047",
+    "question" : "How do Virtual Threads (Project Loom in Java 21) revolutionize high-throughput I/O compared to traditional OS-backed platform threads?",
+    "subject" : "Backend Engineering",
+    "topic" : "Java Concurrency & Multithreading",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "concurrency", "multithreading", "locks", "virtual threads", "completablefuture", "java concurrency & multithreading" ],
+    "criteria" : [ "contrasts platform threads vs virtual threads and thread pooling strategies", "evaluates lock-free synchronization, CAS, and concurrent data structures", "identifies concurrency bugs like deadlocks, race conditions, and thread pinning" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-048",
+    "question" : "Explain how `ConcurrentHashMap` achieves high concurrency without locking the entire table using CAS and bucket-level synchronization.",
+    "subject" : "Backend Engineering",
+    "topic" : "Java Concurrency & Multithreading",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "concurrency", "multithreading", "locks", "virtual threads", "completablefuture", "java concurrency & multithreading" ],
+    "criteria" : [ "contrasts platform threads vs virtual threads and thread pooling strategies", "evaluates lock-free synchronization, CAS, and concurrent data structures", "identifies concurrency bugs like deadlocks, race conditions, and thread pinning" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-049",
+    "question" : "How do you design an asynchronous, non-blocking pipeline using Java's `CompletableFuture` with custom thread pool executors?",
+    "subject" : "Backend Engineering",
+    "topic" : "Java Concurrency & Multithreading",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "concurrency", "multithreading", "locks", "virtual threads", "completablefuture", "java concurrency & multithreading" ],
+    "criteria" : [ "contrasts platform threads vs virtual threads and thread pooling strategies", "evaluates lock-free synchronization, CAS, and concurrent data structures", "identifies concurrency bugs like deadlocks, race conditions, and thread pinning" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-050",
+    "question" : "Explain the ABA problem in lock-free concurrency and how `AtomicStampedReference` solves it.",
+    "subject" : "Backend Engineering",
+    "topic" : "Java Concurrency & Multithreading",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "concurrency", "multithreading", "locks", "virtual threads", "completablefuture", "java concurrency & multithreading" ],
+    "criteria" : [ "contrasts platform threads vs virtual threads and thread pooling strategies", "evaluates lock-free synchronization, CAS, and concurrent data structures", "identifies concurrency bugs like deadlocks, race conditions, and thread pinning" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-051",
+    "question" : "How does the Fork/Join framework work in Java, and how does work-stealing balance CPU-intensive computational workloads?",
+    "subject" : "Backend Engineering",
+    "topic" : "Java Concurrency & Multithreading",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "concurrency", "multithreading", "locks", "virtual threads", "completablefuture", "java concurrency & multithreading" ],
+    "criteria" : [ "contrasts platform threads vs virtual threads and thread pooling strategies", "evaluates lock-free synchronization, CAS, and concurrent data structures", "identifies concurrency bugs like deadlocks, race conditions, and thread pinning" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-052",
+    "question" : "What are the best practices for sizing a `ThreadPoolExecutor` (core pool size, max pool size, queue capacity) for I/O-bound vs CPU-bound tasks?",
+    "subject" : "Backend Engineering",
+    "topic" : "Java Concurrency & Multithreading",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "concurrency", "multithreading", "locks", "virtual threads", "completablefuture", "java concurrency & multithreading" ],
+    "criteria" : [ "contrasts platform threads vs virtual threads and thread pooling strategies", "evaluates lock-free synchronization, CAS, and concurrent data structures", "identifies concurrency bugs like deadlocks, race conditions, and thread pinning" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-053",
+    "question" : "Explain how `ReentrantReadWriteLock` and `StampedLock` optimize read-heavy concurrent operations compared to standard mutual exclusion.",
+    "subject" : "Backend Engineering",
+    "topic" : "Java Concurrency & Multithreading",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "concurrency", "multithreading", "locks", "virtual threads", "completablefuture", "java concurrency & multithreading" ],
+    "criteria" : [ "contrasts platform threads vs virtual threads and thread pooling strategies", "evaluates lock-free synchronization, CAS, and concurrent data structures", "identifies concurrency bugs like deadlocks, race conditions, and thread pinning" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-054",
+    "question" : "How do Virtual Threads (Project Loom in Java 21) revolutionize high-throughput I/O compared to traditional OS-backed platform threads?",
+    "subject" : "Backend Engineering",
+    "topic" : "Java Concurrency & Multithreading",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "concurrency", "multithreading", "locks", "virtual threads", "completablefuture", "java concurrency & multithreading" ],
+    "criteria" : [ "contrasts platform threads vs virtual threads and thread pooling strategies", "evaluates lock-free synchronization, CAS, and concurrent data structures", "identifies concurrency bugs like deadlocks, race conditions, and thread pinning" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-055",
+    "question" : "Explain how `ConcurrentHashMap` achieves high concurrency without locking the entire table using CAS and bucket-level synchronization.",
+    "subject" : "Backend Engineering",
+    "topic" : "Java Concurrency & Multithreading",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "concurrency", "multithreading", "locks", "virtual threads", "completablefuture", "java concurrency & multithreading" ],
+    "criteria" : [ "contrasts platform threads vs virtual threads and thread pooling strategies", "evaluates lock-free synchronization, CAS, and concurrent data structures", "identifies concurrency bugs like deadlocks, race conditions, and thread pinning" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-056",
+    "question" : "How do you design an asynchronous, non-blocking pipeline using Java's `CompletableFuture` with custom thread pool executors?",
+    "subject" : "Backend Engineering",
+    "topic" : "Java Concurrency & Multithreading",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "concurrency", "multithreading", "locks", "virtual threads", "completablefuture", "java concurrency & multithreading" ],
+    "criteria" : [ "contrasts platform threads vs virtual threads and thread pooling strategies", "evaluates lock-free synchronization, CAS, and concurrent data structures", "identifies concurrency bugs like deadlocks, race conditions, and thread pinning" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-057",
+    "question" : "Explain the ABA problem in lock-free concurrency and how `AtomicStampedReference` solves it.",
+    "subject" : "Backend Engineering",
+    "topic" : "Java Concurrency & Multithreading",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "concurrency", "multithreading", "locks", "virtual threads", "completablefuture", "java concurrency & multithreading" ],
+    "criteria" : [ "contrasts platform threads vs virtual threads and thread pooling strategies", "evaluates lock-free synchronization, CAS, and concurrent data structures", "identifies concurrency bugs like deadlocks, race conditions, and thread pinning" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-058",
+    "question" : "How does the Fork/Join framework work in Java, and how does work-stealing balance CPU-intensive computational workloads?",
+    "subject" : "Backend Engineering",
+    "topic" : "Java Concurrency & Multithreading",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "concurrency", "multithreading", "locks", "virtual threads", "completablefuture", "java concurrency & multithreading" ],
+    "criteria" : [ "contrasts platform threads vs virtual threads and thread pooling strategies", "evaluates lock-free synchronization, CAS, and concurrent data structures", "identifies concurrency bugs like deadlocks, race conditions, and thread pinning" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-059",
+    "question" : "Analyze a race condition in a high-concurrency payment gateway where two threads attempt to deduct money from the same account balance simultaneously.",
+    "subject" : "Backend Engineering",
+    "topic" : "Java Concurrency & Multithreading",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "concurrency", "multithreading", "locks", "virtual threads", "completablefuture", "java concurrency & multithreading" ],
+    "criteria" : [ "contrasts platform threads vs virtual threads and thread pooling strategies", "evaluates lock-free synchronization, CAS, and concurrent data structures", "identifies concurrency bugs like deadlocks, race conditions, and thread pinning" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-060",
+    "question" : "How do Virtual Threads interact with synchronized blocks (thread pinning) and native calls, and how do you migrate legacy libraries to prevent carrier thread exhaustion?",
+    "subject" : "Backend Engineering",
+    "topic" : "Java Concurrency & Multithreading",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "concurrency", "multithreading", "locks", "virtual threads", "completablefuture", "java concurrency & multithreading" ],
+    "criteria" : [ "contrasts platform threads vs virtual threads and thread pooling strategies", "evaluates lock-free synchronization, CAS, and concurrent data structures", "identifies concurrency bugs like deadlocks, race conditions, and thread pinning" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-061",
+    "question" : "Architect an asynchronous order fulfillment pipeline using Structured Concurrency in Java 21 that guarantees deterministic cancellation on task failure.",
+    "subject" : "Backend Engineering",
+    "topic" : "Java Concurrency & Multithreading",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "concurrency", "multithreading", "locks", "virtual threads", "completablefuture", "java concurrency & multithreading" ],
+    "criteria" : [ "contrasts platform threads vs virtual threads and thread pooling strategies", "evaluates lock-free synchronization, CAS, and concurrent data structures", "identifies concurrency bugs like deadlocks, race conditions, and thread pinning" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-062",
+    "question" : "Diagnose a distributed thread pool starvation issue in a Spring Boot application where incoming requests block waiting for available database connections.",
+    "subject" : "Backend Engineering",
+    "topic" : "Java Concurrency & Multithreading",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "concurrency", "multithreading", "locks", "virtual threads", "completablefuture", "java concurrency & multithreading" ],
+    "criteria" : [ "contrasts platform threads vs virtual threads and thread pooling strategies", "evaluates lock-free synchronization, CAS, and concurrent data structures", "identifies concurrency bugs like deadlocks, race conditions, and thread pinning" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-063",
+    "question" : "Design a lock-free high-throughput ring buffer (like the LMAX Disruptor) in Java capable of processing 20 million events per second.",
+    "subject" : "Backend Engineering",
+    "topic" : "Java Concurrency & Multithreading",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "concurrency", "multithreading", "locks", "virtual threads", "completablefuture", "java concurrency & multithreading" ],
+    "criteria" : [ "contrasts platform threads vs virtual threads and thread pooling strategies", "evaluates lock-free synchronization, CAS, and concurrent data structures", "identifies concurrency bugs like deadlocks, race conditions, and thread pinning" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-064",
+    "question" : "Analyze a race condition in a high-concurrency payment gateway where two threads attempt to deduct money from the same account balance simultaneously.",
+    "subject" : "Backend Engineering",
+    "topic" : "Java Concurrency & Multithreading",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "concurrency", "multithreading", "locks", "virtual threads", "completablefuture", "java concurrency & multithreading" ],
+    "criteria" : [ "contrasts platform threads vs virtual threads and thread pooling strategies", "evaluates lock-free synchronization, CAS, and concurrent data structures", "identifies concurrency bugs like deadlocks, race conditions, and thread pinning" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-065",
+    "question" : "What is Inversion of Control (IoC) and Dependency Injection (DI) in the Spring Framework?",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Boot Core & Bean Lifecycle",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "spring boot", "dependency injection", "ioc", "bean lifecycle", "autoconfiguration", "spring boot core & bean lifecycle" ],
+    "criteria" : [ "articulates Spring IoC container architecture and bean lifecycle hooks", "explains auto-configuration mechanisms and custom starter design", "troubleshoots complex dependency injection issues and proxy behaviors" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-066",
+    "question" : "What are the different Bean scopes available in Spring (Singleton, Prototype, Request, Session)?",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Boot Core & Bean Lifecycle",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "spring boot", "dependency injection", "ioc", "bean lifecycle", "autoconfiguration", "spring boot core & bean lifecycle" ],
+    "criteria" : [ "articulates Spring IoC container architecture and bean lifecycle hooks", "explains auto-configuration mechanisms and custom starter design", "troubleshoots complex dependency injection issues and proxy behaviors" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-067",
+    "question" : "Explain the lifecycle of a Spring Bean from instantiation to destruction.",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Boot Core & Bean Lifecycle",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "spring boot", "dependency injection", "ioc", "bean lifecycle", "autoconfiguration", "spring boot core & bean lifecycle" ],
+    "criteria" : [ "articulates Spring IoC container architecture and bean lifecycle hooks", "explains auto-configuration mechanisms and custom starter design", "troubleshoots complex dependency injection issues and proxy behaviors" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-068",
+    "question" : "What is the purpose of `@SpringBootApplication` and what three annotations does it combine?",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Boot Core & Bean Lifecycle",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "spring boot", "dependency injection", "ioc", "bean lifecycle", "autoconfiguration", "spring boot core & bean lifecycle" ],
+    "criteria" : [ "articulates Spring IoC container architecture and bean lifecycle hooks", "explains auto-configuration mechanisms and custom starter design", "troubleshoots complex dependency injection issues and proxy behaviors" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-069",
+    "question" : "How does Spring Boot's `@EnableAutoConfiguration` automatically configure beans based on classpath dependencies?",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Boot Core & Bean Lifecycle",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "spring boot", "dependency injection", "ioc", "bean lifecycle", "autoconfiguration", "spring boot core & bean lifecycle" ],
+    "criteria" : [ "articulates Spring IoC container architecture and bean lifecycle hooks", "explains auto-configuration mechanisms and custom starter design", "troubleshoots complex dependency injection issues and proxy behaviors" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-070",
+    "question" : "What is the difference between `@Component`, `@Service`, `@Repository`, and `@Controller` annotations?",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Boot Core & Bean Lifecycle",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "spring boot", "dependency injection", "ioc", "bean lifecycle", "autoconfiguration", "spring boot core & bean lifecycle" ],
+    "criteria" : [ "articulates Spring IoC container architecture and bean lifecycle hooks", "explains auto-configuration mechanisms and custom starter design", "troubleshoots complex dependency injection issues and proxy behaviors" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-071",
+    "question" : "What are Spring Profiles (`@Profile`), and how do they manage environment-specific configuration?",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Boot Core & Bean Lifecycle",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "spring boot", "dependency injection", "ioc", "bean lifecycle", "autoconfiguration", "spring boot core & bean lifecycle" ],
+    "criteria" : [ "articulates Spring IoC container architecture and bean lifecycle hooks", "explains auto-configuration mechanisms and custom starter design", "troubleshoots complex dependency injection issues and proxy behaviors" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-072",
+    "question" : "What is Inversion of Control (IoC) and Dependency Injection (DI) in the Spring Framework?",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Boot Core & Bean Lifecycle",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "spring boot", "dependency injection", "ioc", "bean lifecycle", "autoconfiguration", "spring boot core & bean lifecycle" ],
+    "criteria" : [ "articulates Spring IoC container architecture and bean lifecycle hooks", "explains auto-configuration mechanisms and custom starter design", "troubleshoots complex dependency injection issues and proxy behaviors" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-073",
+    "question" : "What are the different Bean scopes available in Spring (Singleton, Prototype, Request, Session)?",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Boot Core & Bean Lifecycle",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "spring boot", "dependency injection", "ioc", "bean lifecycle", "autoconfiguration", "spring boot core & bean lifecycle" ],
+    "criteria" : [ "articulates Spring IoC container architecture and bean lifecycle hooks", "explains auto-configuration mechanisms and custom starter design", "troubleshoots complex dependency injection issues and proxy behaviors" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-074",
+    "question" : "Explain the lifecycle of a Spring Bean from instantiation to destruction.",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Boot Core & Bean Lifecycle",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "spring boot", "dependency injection", "ioc", "bean lifecycle", "autoconfiguration", "spring boot core & bean lifecycle" ],
+    "criteria" : [ "articulates Spring IoC container architecture and bean lifecycle hooks", "explains auto-configuration mechanisms and custom starter design", "troubleshoots complex dependency injection issues and proxy behaviors" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-075",
+    "question" : "Explain the difference between `@Configuration` with `@Bean` methods (CGLIB proxying) and `@Component` with `@Bean` methods (lite mode).",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Boot Core & Bean Lifecycle",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "spring boot", "dependency injection", "ioc", "bean lifecycle", "autoconfiguration", "spring boot core & bean lifecycle" ],
+    "criteria" : [ "articulates Spring IoC container architecture and bean lifecycle hooks", "explains auto-configuration mechanisms and custom starter design", "troubleshoots complex dependency injection issues and proxy behaviors" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-076",
+    "question" : "How does Spring's ApplicationEventPublisher enable loose coupling between domain services in a modular monolith?",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Boot Core & Bean Lifecycle",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "spring boot", "dependency injection", "ioc", "bean lifecycle", "autoconfiguration", "spring boot core & bean lifecycle" ],
+    "criteria" : [ "articulates Spring IoC container architecture and bean lifecycle hooks", "explains auto-configuration mechanisms and custom starter design", "troubleshoots complex dependency injection issues and proxy behaviors" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-077",
+    "question" : "What are the operational implications of using prototype-scoped beans injected into singleton-scoped beans, and how do you resolve it?",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Boot Core & Bean Lifecycle",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "spring boot", "dependency injection", "ioc", "bean lifecycle", "autoconfiguration", "spring boot core & bean lifecycle" ],
+    "criteria" : [ "articulates Spring IoC container architecture and bean lifecycle hooks", "explains auto-configuration mechanisms and custom starter design", "troubleshoots complex dependency injection issues and proxy behaviors" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-078",
+    "question" : "How does Spring Boot Actuator expose health, metrics, and environment info, and how should it be secured in production?",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Boot Core & Bean Lifecycle",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "spring boot", "dependency injection", "ioc", "bean lifecycle", "autoconfiguration", "spring boot core & bean lifecycle" ],
+    "criteria" : [ "articulates Spring IoC container architecture and bean lifecycle hooks", "explains auto-configuration mechanisms and custom starter design", "troubleshoots complex dependency injection issues and proxy behaviors" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-079",
+    "question" : "How do `@PostConstruct` and `@PreDestroy` annotations interact with the BeanPostProcessor and InitializingBean interfaces?",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Boot Core & Bean Lifecycle",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "spring boot", "dependency injection", "ioc", "bean lifecycle", "autoconfiguration", "spring boot core & bean lifecycle" ],
+    "criteria" : [ "articulates Spring IoC container architecture and bean lifecycle hooks", "explains auto-configuration mechanisms and custom starter design", "troubleshoots complex dependency injection issues and proxy behaviors" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-080",
+    "question" : "How does Spring handle circular dependencies between singleton beans, and why does setter injection succeed where constructor injection fails?",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Boot Core & Bean Lifecycle",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "spring boot", "dependency injection", "ioc", "bean lifecycle", "autoconfiguration", "spring boot core & bean lifecycle" ],
+    "criteria" : [ "articulates Spring IoC container architecture and bean lifecycle hooks", "explains auto-configuration mechanisms and custom starter design", "troubleshoots complex dependency injection issues and proxy behaviors" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-081",
+    "question" : "How do you create a custom Spring Boot starter with your own `@ConfigurationProperties` and `@ConditionalOnMissingBean` logic?",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Boot Core & Bean Lifecycle",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "spring boot", "dependency injection", "ioc", "bean lifecycle", "autoconfiguration", "spring boot core & bean lifecycle" ],
+    "criteria" : [ "articulates Spring IoC container architecture and bean lifecycle hooks", "explains auto-configuration mechanisms and custom starter design", "troubleshoots complex dependency injection issues and proxy behaviors" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-082",
+    "question" : "Explain the difference between `@Configuration` with `@Bean` methods (CGLIB proxying) and `@Component` with `@Bean` methods (lite mode).",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Boot Core & Bean Lifecycle",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "spring boot", "dependency injection", "ioc", "bean lifecycle", "autoconfiguration", "spring boot core & bean lifecycle" ],
+    "criteria" : [ "articulates Spring IoC container architecture and bean lifecycle hooks", "explains auto-configuration mechanisms and custom starter design", "troubleshoots complex dependency injection issues and proxy behaviors" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-083",
+    "question" : "How does Spring's ApplicationEventPublisher enable loose coupling between domain services in a modular monolith?",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Boot Core & Bean Lifecycle",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "spring boot", "dependency injection", "ioc", "bean lifecycle", "autoconfiguration", "spring boot core & bean lifecycle" ],
+    "criteria" : [ "articulates Spring IoC container architecture and bean lifecycle hooks", "explains auto-configuration mechanisms and custom starter design", "troubleshoots complex dependency injection issues and proxy behaviors" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-084",
+    "question" : "What are the operational implications of using prototype-scoped beans injected into singleton-scoped beans, and how do you resolve it?",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Boot Core & Bean Lifecycle",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "spring boot", "dependency injection", "ioc", "bean lifecycle", "autoconfiguration", "spring boot core & bean lifecycle" ],
+    "criteria" : [ "articulates Spring IoC container architecture and bean lifecycle hooks", "explains auto-configuration mechanisms and custom starter design", "troubleshoots complex dependency injection issues and proxy behaviors" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-085",
+    "question" : "How does Spring Boot Actuator expose health, metrics, and environment info, and how should it be secured in production?",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Boot Core & Bean Lifecycle",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "spring boot", "dependency injection", "ioc", "bean lifecycle", "autoconfiguration", "spring boot core & bean lifecycle" ],
+    "criteria" : [ "articulates Spring IoC container architecture and bean lifecycle hooks", "explains auto-configuration mechanisms and custom starter design", "troubleshoots complex dependency injection issues and proxy behaviors" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-086",
+    "question" : "How do `@PostConstruct` and `@PreDestroy` annotations interact with the BeanPostProcessor and InitializingBean interfaces?",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Boot Core & Bean Lifecycle",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "spring boot", "dependency injection", "ioc", "bean lifecycle", "autoconfiguration", "spring boot core & bean lifecycle" ],
+    "criteria" : [ "articulates Spring IoC container architecture and bean lifecycle hooks", "explains auto-configuration mechanisms and custom starter design", "troubleshoots complex dependency injection issues and proxy behaviors" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-087",
+    "question" : "How does Spring handle circular dependencies between singleton beans, and why does setter injection succeed where constructor injection fails?",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Boot Core & Bean Lifecycle",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "spring boot", "dependency injection", "ioc", "bean lifecycle", "autoconfiguration", "spring boot core & bean lifecycle" ],
+    "criteria" : [ "articulates Spring IoC container architecture and bean lifecycle hooks", "explains auto-configuration mechanisms and custom starter design", "troubleshoots complex dependency injection issues and proxy behaviors" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-088",
+    "question" : "How do you create a custom Spring Boot starter with your own `@ConfigurationProperties` and `@ConditionalOnMissingBean` logic?",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Boot Core & Bean Lifecycle",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "spring boot", "dependency injection", "ioc", "bean lifecycle", "autoconfiguration", "spring boot core & bean lifecycle" ],
+    "criteria" : [ "articulates Spring IoC container architecture and bean lifecycle hooks", "explains auto-configuration mechanisms and custom starter design", "troubleshoots complex dependency injection issues and proxy behaviors" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-089",
+    "question" : "Explain the difference between `@Configuration` with `@Bean` methods (CGLIB proxying) and `@Component` with `@Bean` methods (lite mode).",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Boot Core & Bean Lifecycle",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "spring boot", "dependency injection", "ioc", "bean lifecycle", "autoconfiguration", "spring boot core & bean lifecycle" ],
+    "criteria" : [ "articulates Spring IoC container architecture and bean lifecycle hooks", "explains auto-configuration mechanisms and custom starter design", "troubleshoots complex dependency injection issues and proxy behaviors" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-090",
+    "question" : "Diagnose and resolve a startup failure where two competing auto-configurations cause a `BeanDefinitionOverrideException` in a multi-module microservice.",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Boot Core & Bean Lifecycle",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "spring boot", "dependency injection", "ioc", "bean lifecycle", "autoconfiguration", "spring boot core & bean lifecycle" ],
+    "criteria" : [ "articulates Spring IoC container architecture and bean lifecycle hooks", "explains auto-configuration mechanisms and custom starter design", "troubleshoots complex dependency injection issues and proxy behaviors" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-091",
+    "question" : "Analyze the performance implications of Spring's dynamic reflection and CGLIB proxies during application startup and runtime method invocation.",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Boot Core & Bean Lifecycle",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "spring boot", "dependency injection", "ioc", "bean lifecycle", "autoconfiguration", "spring boot core & bean lifecycle" ],
+    "criteria" : [ "articulates Spring IoC container architecture and bean lifecycle hooks", "explains auto-configuration mechanisms and custom starter design", "troubleshoots complex dependency injection issues and proxy behaviors" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-092",
+    "question" : "Architect an extensible plugin system in Spring Boot that dynamically discovers, loads, and initializes external JAR modules at runtime.",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Boot Core & Bean Lifecycle",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "spring boot", "dependency injection", "ioc", "bean lifecycle", "autoconfiguration", "spring boot core & bean lifecycle" ],
+    "criteria" : [ "articulates Spring IoC container architecture and bean lifecycle hooks", "explains auto-configuration mechanisms and custom starter design", "troubleshoots complex dependency injection issues and proxy behaviors" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-093",
+    "question" : "Evaluate the internal mechanics of Spring Boot's failure analysis and graceful shutdown handling when receiving SIGTERM signals in Kubernetes.",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Boot Core & Bean Lifecycle",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "spring boot", "dependency injection", "ioc", "bean lifecycle", "autoconfiguration", "spring boot core & bean lifecycle" ],
+    "criteria" : [ "articulates Spring IoC container architecture and bean lifecycle hooks", "explains auto-configuration mechanisms and custom starter design", "troubleshoots complex dependency injection issues and proxy behaviors" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-094",
+    "question" : "Design an enterprise Spring Boot starter that injects global security filters, metrics collectors, and distributed tracing headers across 50 internal services.",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Boot Core & Bean Lifecycle",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "spring boot", "dependency injection", "ioc", "bean lifecycle", "autoconfiguration", "spring boot core & bean lifecycle" ],
+    "criteria" : [ "articulates Spring IoC container architecture and bean lifecycle hooks", "explains auto-configuration mechanisms and custom starter design", "troubleshoots complex dependency injection issues and proxy behaviors" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-095",
+    "question" : "Diagnose and resolve a startup failure where two competing auto-configurations cause a `BeanDefinitionOverrideException` in a multi-module microservice.",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Boot Core & Bean Lifecycle",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "spring boot", "dependency injection", "ioc", "bean lifecycle", "autoconfiguration", "spring boot core & bean lifecycle" ],
+    "criteria" : [ "articulates Spring IoC container architecture and bean lifecycle hooks", "explains auto-configuration mechanisms and custom starter design", "troubleshoots complex dependency injection issues and proxy behaviors" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-096",
+    "question" : "What is the difference between JPA (Java Persistence API) and Hibernate?",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Data JPA & Hibernate",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "jpa", "hibernate", "n+1 problem", "caching", "orm", "spring data jpa & hibernate" ],
+    "criteria" : [ "identifies and resolves N+1 query problems using fetch joins and entity graphs", "evaluates optimistic vs pessimistic locking for concurrent entity updates", "optimizes persistence contexts, batch operations, and memory consumption" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-097",
+    "question" : "What is the N+1 select problem in ORMs, and how does it severely degrade database performance?",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Data JPA & Hibernate",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "jpa", "hibernate", "n+1 problem", "caching", "orm", "spring data jpa & hibernate" ],
+    "criteria" : [ "identifies and resolves N+1 query problems using fetch joins and entity graphs", "evaluates optimistic vs pessimistic locking for concurrent entity updates", "optimizes persistence contexts, batch operations, and memory consumption" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-098",
+    "question" : "Explain the difference between `FetchType.LAZY` and `FetchType.EAGER` in entity relationship mappings.",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Data JPA & Hibernate",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "jpa", "hibernate", "n+1 problem", "caching", "orm", "spring data jpa & hibernate" ],
+    "criteria" : [ "identifies and resolves N+1 query problems using fetch joins and entity graphs", "evaluates optimistic vs pessimistic locking for concurrent entity updates", "optimizes persistence contexts, batch operations, and memory consumption" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-099",
+    "question" : "What are the states of an entity in Hibernate (Transient, Persistent, Detached, Removed)?",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Data JPA & Hibernate",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "jpa", "hibernate", "n+1 problem", "caching", "orm", "spring data jpa & hibernate" ],
+    "criteria" : [ "identifies and resolves N+1 query problems using fetch joins and entity graphs", "evaluates optimistic vs pessimistic locking for concurrent entity updates", "optimizes persistence contexts, batch operations, and memory consumption" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-100",
+    "question" : "What is the difference between `save()`, `persist()`, `merge()`, and `saveAndFlush()` in Spring Data JPA?",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Data JPA & Hibernate",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "jpa", "hibernate", "n+1 problem", "caching", "orm", "spring data jpa & hibernate" ],
+    "criteria" : [ "identifies and resolves N+1 query problems using fetch joins and entity graphs", "evaluates optimistic vs pessimistic locking for concurrent entity updates", "optimizes persistence contexts, batch operations, and memory consumption" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-101",
+    "question" : "What is Hibernate's First-Level Cache (Session Cache), and how does it operate during a transaction?",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Data JPA & Hibernate",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "jpa", "hibernate", "n+1 problem", "caching", "orm", "spring data jpa & hibernate" ],
+    "criteria" : [ "identifies and resolves N+1 query problems using fetch joins and entity graphs", "evaluates optimistic vs pessimistic locking for concurrent entity updates", "optimizes persistence contexts, batch operations, and memory consumption" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-102",
+    "question" : "What is dirty checking in Hibernate, and how does it determine which entities require SQL UPDATE statements?",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Data JPA & Hibernate",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "jpa", "hibernate", "n+1 problem", "caching", "orm", "spring data jpa & hibernate" ],
+    "criteria" : [ "identifies and resolves N+1 query problems using fetch joins and entity graphs", "evaluates optimistic vs pessimistic locking for concurrent entity updates", "optimizes persistence contexts, batch operations, and memory consumption" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-103",
+    "question" : "What is the difference between JPA (Java Persistence API) and Hibernate?",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Data JPA & Hibernate",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "jpa", "hibernate", "n+1 problem", "caching", "orm", "spring data jpa & hibernate" ],
+    "criteria" : [ "identifies and resolves N+1 query problems using fetch joins and entity graphs", "evaluates optimistic vs pessimistic locking for concurrent entity updates", "optimizes persistence contexts, batch operations, and memory consumption" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-104",
+    "question" : "What is the N+1 select problem in ORMs, and how does it severely degrade database performance?",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Data JPA & Hibernate",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "jpa", "hibernate", "n+1 problem", "caching", "orm", "spring data jpa & hibernate" ],
+    "criteria" : [ "identifies and resolves N+1 query problems using fetch joins and entity graphs", "evaluates optimistic vs pessimistic locking for concurrent entity updates", "optimizes persistence contexts, batch operations, and memory consumption" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-105",
+    "question" : "Explain the difference between `FetchType.LAZY` and `FetchType.EAGER` in entity relationship mappings.",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Data JPA & Hibernate",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "jpa", "hibernate", "n+1 problem", "caching", "orm", "spring data jpa & hibernate" ],
+    "criteria" : [ "identifies and resolves N+1 query problems using fetch joins and entity graphs", "evaluates optimistic vs pessimistic locking for concurrent entity updates", "optimizes persistence contexts, batch operations, and memory consumption" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-106",
+    "question" : "What are the dangers of `OpenSessionInView` (OSIV) enabled by default in Spring Boot, and why should it be disabled in production?",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Data JPA & Hibernate",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "jpa", "hibernate", "n+1 problem", "caching", "orm", "spring data jpa & hibernate" ],
+    "criteria" : [ "identifies and resolves N+1 query problems using fetch joins and entity graphs", "evaluates optimistic vs pessimistic locking for concurrent entity updates", "optimizes persistence contexts, batch operations, and memory consumption" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-107",
+    "question" : "How do you implement soft deletes in Spring Data JPA using `@SQLDelete` and `@Where` annotations without corrupting unique constraints?",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Data JPA & Hibernate",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "jpa", "hibernate", "n+1 problem", "caching", "orm", "spring data jpa & hibernate" ],
+    "criteria" : [ "identifies and resolves N+1 query problems using fetch joins and entity graphs", "evaluates optimistic vs pessimistic locking for concurrent entity updates", "optimizes persistence contexts, batch operations, and memory consumption" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-108",
+    "question" : "Explain the difference between bidirectional `@OneToMany` / `@ManyToOne` relationships and why `mappedBy` is necessary on the non-owning side.",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Data JPA & Hibernate",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "jpa", "hibernate", "n+1 problem", "caching", "orm", "spring data jpa & hibernate" ],
+    "criteria" : [ "identifies and resolves N+1 query problems using fetch joins and entity graphs", "evaluates optimistic vs pessimistic locking for concurrent entity updates", "optimizes persistence contexts, batch operations, and memory consumption" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-109",
+    "question" : "How do projection interfaces and DTO constructors (`SELECT new com.dto...`) optimize query memory consumption compared to returning full entities?",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Data JPA & Hibernate",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "jpa", "hibernate", "n+1 problem", "caching", "orm", "spring data jpa & hibernate" ],
+    "criteria" : [ "identifies and resolves N+1 query problems using fetch joins and entity graphs", "evaluates optimistic vs pessimistic locking for concurrent entity updates", "optimizes persistence contexts, batch operations, and memory consumption" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-110",
+    "question" : "How do you eliminate the N+1 problem using `JOIN FETCH`, `@EntityGraph`, and batch fetching (`hibernate.default_batch_fetch_size`)?",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Data JPA & Hibernate",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "jpa", "hibernate", "n+1 problem", "caching", "orm", "spring data jpa & hibernate" ],
+    "criteria" : [ "identifies and resolves N+1 query problems using fetch joins and entity graphs", "evaluates optimistic vs pessimistic locking for concurrent entity updates", "optimizes persistence contexts, batch operations, and memory consumption" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-111",
+    "question" : "Compare Optimistic Locking (`@Version`) with Pessimistic Locking (`LockModeType.PESSIMISTIC_WRITE`) in handling concurrent updates.",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Data JPA & Hibernate",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "jpa", "hibernate", "n+1 problem", "caching", "orm", "spring data jpa & hibernate" ],
+    "criteria" : [ "identifies and resolves N+1 query problems using fetch joins and entity graphs", "evaluates optimistic vs pessimistic locking for concurrent entity updates", "optimizes persistence contexts, batch operations, and memory consumption" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-112",
+    "question" : "How does Hibernate's Second-Level Cache (using Ehcache or Redis) differ from the First-Level Cache in scope and invalidation?",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Data JPA & Hibernate",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "jpa", "hibernate", "n+1 problem", "caching", "orm", "spring data jpa & hibernate" ],
+    "criteria" : [ "identifies and resolves N+1 query problems using fetch joins and entity graphs", "evaluates optimistic vs pessimistic locking for concurrent entity updates", "optimizes persistence contexts, batch operations, and memory consumption" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-113",
+    "question" : "What are the dangers of `OpenSessionInView` (OSIV) enabled by default in Spring Boot, and why should it be disabled in production?",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Data JPA & Hibernate",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "jpa", "hibernate", "n+1 problem", "caching", "orm", "spring data jpa & hibernate" ],
+    "criteria" : [ "identifies and resolves N+1 query problems using fetch joins and entity graphs", "evaluates optimistic vs pessimistic locking for concurrent entity updates", "optimizes persistence contexts, batch operations, and memory consumption" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-114",
+    "question" : "How do you implement soft deletes in Spring Data JPA using `@SQLDelete` and `@Where` annotations without corrupting unique constraints?",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Data JPA & Hibernate",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "jpa", "hibernate", "n+1 problem", "caching", "orm", "spring data jpa & hibernate" ],
+    "criteria" : [ "identifies and resolves N+1 query problems using fetch joins and entity graphs", "evaluates optimistic vs pessimistic locking for concurrent entity updates", "optimizes persistence contexts, batch operations, and memory consumption" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-115",
+    "question" : "Explain the difference between bidirectional `@OneToMany` / `@ManyToOne` relationships and why `mappedBy` is necessary on the non-owning side.",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Data JPA & Hibernate",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "jpa", "hibernate", "n+1 problem", "caching", "orm", "spring data jpa & hibernate" ],
+    "criteria" : [ "identifies and resolves N+1 query problems using fetch joins and entity graphs", "evaluates optimistic vs pessimistic locking for concurrent entity updates", "optimizes persistence contexts, batch operations, and memory consumption" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-116",
+    "question" : "How do projection interfaces and DTO constructors (`SELECT new com.dto...`) optimize query memory consumption compared to returning full entities?",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Data JPA & Hibernate",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "jpa", "hibernate", "n+1 problem", "caching", "orm", "spring data jpa & hibernate" ],
+    "criteria" : [ "identifies and resolves N+1 query problems using fetch joins and entity graphs", "evaluates optimistic vs pessimistic locking for concurrent entity updates", "optimizes persistence contexts, batch operations, and memory consumption" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-117",
+    "question" : "How do you eliminate the N+1 problem using `JOIN FETCH`, `@EntityGraph`, and batch fetching (`hibernate.default_batch_fetch_size`)?",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Data JPA & Hibernate",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "jpa", "hibernate", "n+1 problem", "caching", "orm", "spring data jpa & hibernate" ],
+    "criteria" : [ "identifies and resolves N+1 query problems using fetch joins and entity graphs", "evaluates optimistic vs pessimistic locking for concurrent entity updates", "optimizes persistence contexts, batch operations, and memory consumption" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-118",
+    "question" : "Compare Optimistic Locking (`@Version`) with Pessimistic Locking (`LockModeType.PESSIMISTIC_WRITE`) in handling concurrent updates.",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Data JPA & Hibernate",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "jpa", "hibernate", "n+1 problem", "caching", "orm", "spring data jpa & hibernate" ],
+    "criteria" : [ "identifies and resolves N+1 query problems using fetch joins and entity graphs", "evaluates optimistic vs pessimistic locking for concurrent entity updates", "optimizes persistence contexts, batch operations, and memory consumption" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-119",
+    "question" : "How does Hibernate's Second-Level Cache (using Ehcache or Redis) differ from the First-Level Cache in scope and invalidation?",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Data JPA & Hibernate",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "jpa", "hibernate", "n+1 problem", "caching", "orm", "spring data jpa & hibernate" ],
+    "criteria" : [ "identifies and resolves N+1 query problems using fetch joins and entity graphs", "evaluates optimistic vs pessimistic locking for concurrent entity updates", "optimizes persistence contexts, batch operations, and memory consumption" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-120",
+    "question" : "What are the dangers of `OpenSessionInView` (OSIV) enabled by default in Spring Boot, and why should it be disabled in production?",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Data JPA & Hibernate",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "jpa", "hibernate", "n+1 problem", "caching", "orm", "spring data jpa & hibernate" ],
+    "criteria" : [ "identifies and resolves N+1 query problems using fetch joins and entity graphs", "evaluates optimistic vs pessimistic locking for concurrent entity updates", "optimizes persistence contexts, batch operations, and memory consumption" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-121",
+    "question" : "Diagnose a critical production outage where Hibernate generated 40,000 individual SQL queries for a single API endpoint call under heavy load.",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Data JPA & Hibernate",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "jpa", "hibernate", "n+1 problem", "caching", "orm", "spring data jpa & hibernate" ],
+    "criteria" : [ "identifies and resolves N+1 query problems using fetch joins and entity graphs", "evaluates optimistic vs pessimistic locking for concurrent entity updates", "optimizes persistence contexts, batch operations, and memory consumption" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-122",
+    "question" : "Architect a high-performance batch processing service in Spring Data JPA that inserts 1 million records efficiently without running out of heap memory.",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Data JPA & Hibernate",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "jpa", "hibernate", "n+1 problem", "caching", "orm", "spring data jpa & hibernate" ],
+    "criteria" : [ "identifies and resolves N+1 query problems using fetch joins and entity graphs", "evaluates optimistic vs pessimistic locking for concurrent entity updates", "optimizes persistence contexts, batch operations, and memory consumption" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-123",
+    "question" : "Analyze the interaction between Hibernate dirty checking, cascading operations, and database triggers that mutate row state behind Hibernate's back.",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Data JPA & Hibernate",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "jpa", "hibernate", "n+1 problem", "caching", "orm", "spring data jpa & hibernate" ],
+    "criteria" : [ "identifies and resolves N+1 query problems using fetch joins and entity graphs", "evaluates optimistic vs pessimistic locking for concurrent entity updates", "optimizes persistence contexts, batch operations, and memory consumption" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-124",
+    "question" : "Design a multi-tenant data isolation architecture in Spring Data JPA using schema-per-tenant and database-per-tenant strategies.",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Data JPA & Hibernate",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "jpa", "hibernate", "n+1 problem", "caching", "orm", "spring data jpa & hibernate" ],
+    "criteria" : [ "identifies and resolves N+1 query problems using fetch joins and entity graphs", "evaluates optimistic vs pessimistic locking for concurrent entity updates", "optimizes persistence contexts, batch operations, and memory consumption" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-125",
+    "question" : "Evaluate the performance impact of Hibernate L2 cache invalidation storms in an active-active clustered database deployment.",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Data JPA & Hibernate",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "jpa", "hibernate", "n+1 problem", "caching", "orm", "spring data jpa & hibernate" ],
+    "criteria" : [ "identifies and resolves N+1 query problems using fetch joins and entity graphs", "evaluates optimistic vs pessimistic locking for concurrent entity updates", "optimizes persistence contexts, batch operations, and memory consumption" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-126",
+    "question" : "Diagnose a critical production outage where Hibernate generated 40,000 individual SQL queries for a single API endpoint call under heavy load.",
+    "subject" : "Backend Engineering",
+    "topic" : "Spring Data JPA & Hibernate",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "jpa", "hibernate", "n+1 problem", "caching", "orm", "spring data jpa & hibernate" ],
+    "criteria" : [ "identifies and resolves N+1 query problems using fetch joins and entity graphs", "evaluates optimistic vs pessimistic locking for concurrent entity updates", "optimizes persistence contexts, batch operations, and memory consumption" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-127",
+    "question" : "What do the ACID properties (Atomicity, Consistency, Isolation, Durability) mean in database transaction management?",
+    "subject" : "Backend Engineering",
+    "topic" : "Transactions & Spring Transactional",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "transactions", "spring transactional", "isolation", "propagation", "acid", "transactions & spring transactional" ],
+    "criteria" : [ "explains Spring AOP proxy mechanisms for transaction interception", "evaluates transaction propagation and isolation level anomalies", "diagnoses silent rollback failures and connection pool exhaustion risks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-128",
+    "question" : "How does Spring's `@Transactional` annotation work under the hood using AOP proxies?",
+    "subject" : "Backend Engineering",
+    "topic" : "Transactions & Spring Transactional",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "transactions", "spring transactional", "isolation", "propagation", "acid", "transactions & spring transactional" ],
+    "criteria" : [ "explains Spring AOP proxy mechanisms for transaction interception", "evaluates transaction propagation and isolation level anomalies", "diagnoses silent rollback failures and connection pool exhaustion risks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-129",
+    "question" : "What are the standard transaction propagation types in Spring (REQUIRED, REQUIRES_NEW, SUPPORTS, NOT_SUPPORTED)?",
+    "subject" : "Backend Engineering",
+    "topic" : "Transactions & Spring Transactional",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "transactions", "spring transactional", "isolation", "propagation", "acid", "transactions & spring transactional" ],
+    "criteria" : [ "explains Spring AOP proxy mechanisms for transaction interception", "evaluates transaction propagation and isolation level anomalies", "diagnoses silent rollback failures and connection pool exhaustion risks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-130",
+    "question" : "What are the four standard database transaction isolation levels (Read Uncommitted, Read Committed, Repeatable Read, Serializable)?",
+    "subject" : "Backend Engineering",
+    "topic" : "Transactions & Spring Transactional",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "transactions", "spring transactional", "isolation", "propagation", "acid", "transactions & spring transactional" ],
+    "criteria" : [ "explains Spring AOP proxy mechanisms for transaction interception", "evaluates transaction propagation and isolation level anomalies", "diagnoses silent rollback failures and connection pool exhaustion risks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-131",
+    "question" : "What are dirty reads, non-repeatable reads, and phantom reads in database transactions?",
+    "subject" : "Backend Engineering",
+    "topic" : "Transactions & Spring Transactional",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "transactions", "spring transactional", "isolation", "propagation", "acid", "transactions & spring transactional" ],
+    "criteria" : [ "explains Spring AOP proxy mechanisms for transaction interception", "evaluates transaction propagation and isolation level anomalies", "diagnoses silent rollback failures and connection pool exhaustion risks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-132",
+    "question" : "Why does `@Transactional` fail to execute when a transactional method is called from within the same class (self-invocation)?",
+    "subject" : "Backend Engineering",
+    "topic" : "Transactions & Spring Transactional",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "transactions", "spring transactional", "isolation", "propagation", "acid", "transactions & spring transactional" ],
+    "criteria" : [ "explains Spring AOP proxy mechanisms for transaction interception", "evaluates transaction propagation and isolation level anomalies", "diagnoses silent rollback failures and connection pool exhaustion risks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-133",
+    "question" : "What exceptions trigger a transaction rollback by default in Spring, and how do you configure `rollbackFor`?",
+    "subject" : "Backend Engineering",
+    "topic" : "Transactions & Spring Transactional",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "transactions", "spring transactional", "isolation", "propagation", "acid", "transactions & spring transactional" ],
+    "criteria" : [ "explains Spring AOP proxy mechanisms for transaction interception", "evaluates transaction propagation and isolation level anomalies", "diagnoses silent rollback failures and connection pool exhaustion risks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-134",
+    "question" : "What do the ACID properties (Atomicity, Consistency, Isolation, Durability) mean in database transaction management?",
+    "subject" : "Backend Engineering",
+    "topic" : "Transactions & Spring Transactional",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "transactions", "spring transactional", "isolation", "propagation", "acid", "transactions & spring transactional" ],
+    "criteria" : [ "explains Spring AOP proxy mechanisms for transaction interception", "evaluates transaction propagation and isolation level anomalies", "diagnoses silent rollback failures and connection pool exhaustion risks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-135",
+    "question" : "How does Spring's `@Transactional` annotation work under the hood using AOP proxies?",
+    "subject" : "Backend Engineering",
+    "topic" : "Transactions & Spring Transactional",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "transactions", "spring transactional", "isolation", "propagation", "acid", "transactions & spring transactional" ],
+    "criteria" : [ "explains Spring AOP proxy mechanisms for transaction interception", "evaluates transaction propagation and isolation level anomalies", "diagnoses silent rollback failures and connection pool exhaustion risks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-136",
+    "question" : "What are the standard transaction propagation types in Spring (REQUIRED, REQUIRES_NEW, SUPPORTS, NOT_SUPPORTED)?",
+    "subject" : "Backend Engineering",
+    "topic" : "Transactions & Spring Transactional",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "transactions", "spring transactional", "isolation", "propagation", "acid", "transactions & spring transactional" ],
+    "criteria" : [ "explains Spring AOP proxy mechanisms for transaction interception", "evaluates transaction propagation and isolation level anomalies", "diagnoses silent rollback failures and connection pool exhaustion risks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-137",
+    "question" : "What happens when a long-running `@Transactional` method makes an external HTTP request or heavy calculation while holding a DB connection?",
+    "subject" : "Backend Engineering",
+    "topic" : "Transactions & Spring Transactional",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "transactions", "spring transactional", "isolation", "propagation", "acid", "transactions & spring transactional" ],
+    "criteria" : [ "explains Spring AOP proxy mechanisms for transaction interception", "evaluates transaction propagation and isolation level anomalies", "diagnoses silent rollback failures and connection pool exhaustion risks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-138",
+    "question" : "Explain how distributed transactions using the Two-Phase Commit (2PC) protocol and JTA (Java Transaction API) coordinate multiple resources.",
+    "subject" : "Backend Engineering",
+    "topic" : "Transactions & Spring Transactional",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "transactions", "spring transactional", "isolation", "propagation", "acid", "transactions & spring transactional" ],
+    "criteria" : [ "explains Spring AOP proxy mechanisms for transaction interception", "evaluates transaction propagation and isolation level anomalies", "diagnoses silent rollback failures and connection pool exhaustion risks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-139",
+    "question" : "How does `readOnly = true` in `@Transactional` optimize Hibernate session performance and JDBC connection routing?",
+    "subject" : "Backend Engineering",
+    "topic" : "Transactions & Spring Transactional",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "transactions", "spring transactional", "isolation", "propagation", "acid", "transactions & spring transactional" ],
+    "criteria" : [ "explains Spring AOP proxy mechanisms for transaction interception", "evaluates transaction propagation and isolation level anomalies", "diagnoses silent rollback failures and connection pool exhaustion risks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-140",
+    "question" : "How do transaction synchronization callbacks (`TransactionSynchronizationManager.registerSynchronization`) ensure events publish only after commit?",
+    "subject" : "Backend Engineering",
+    "topic" : "Transactions & Spring Transactional",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "transactions", "spring transactional", "isolation", "propagation", "acid", "transactions & spring transactional" ],
+    "criteria" : [ "explains Spring AOP proxy mechanisms for transaction interception", "evaluates transaction propagation and isolation level anomalies", "diagnoses silent rollback failures and connection pool exhaustion risks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-141",
+    "question" : "Explain the difference between `Propagation.REQUIRED` and `Propagation.REQUIRES_NEW` when an inner method throws a runtime exception.",
+    "subject" : "Backend Engineering",
+    "topic" : "Transactions & Spring Transactional",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "transactions", "spring transactional", "isolation", "propagation", "acid", "transactions & spring transactional" ],
+    "criteria" : [ "explains Spring AOP proxy mechanisms for transaction interception", "evaluates transaction propagation and isolation level anomalies", "diagnoses silent rollback failures and connection pool exhaustion risks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-142",
+    "question" : "How do database engines implement `Repeatable Read` isolation using MVCC (Multi-Version Concurrency Control) versus locking?",
+    "subject" : "Backend Engineering",
+    "topic" : "Transactions & Spring Transactional",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "transactions", "spring transactional", "isolation", "propagation", "acid", "transactions & spring transactional" ],
+    "criteria" : [ "explains Spring AOP proxy mechanisms for transaction interception", "evaluates transaction propagation and isolation level anomalies", "diagnoses silent rollback failures and connection pool exhaustion risks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-143",
+    "question" : "How do you resolve the self-invocation limitation of Spring AOP proxies when calling transactional methods internally?",
+    "subject" : "Backend Engineering",
+    "topic" : "Transactions & Spring Transactional",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "transactions", "spring transactional", "isolation", "propagation", "acid", "transactions & spring transactional" ],
+    "criteria" : [ "explains Spring AOP proxy mechanisms for transaction interception", "evaluates transaction propagation and isolation level anomalies", "diagnoses silent rollback failures and connection pool exhaustion risks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-144",
+    "question" : "What happens when a long-running `@Transactional` method makes an external HTTP request or heavy calculation while holding a DB connection?",
+    "subject" : "Backend Engineering",
+    "topic" : "Transactions & Spring Transactional",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "transactions", "spring transactional", "isolation", "propagation", "acid", "transactions & spring transactional" ],
+    "criteria" : [ "explains Spring AOP proxy mechanisms for transaction interception", "evaluates transaction propagation and isolation level anomalies", "diagnoses silent rollback failures and connection pool exhaustion risks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-145",
+    "question" : "Explain how distributed transactions using the Two-Phase Commit (2PC) protocol and JTA (Java Transaction API) coordinate multiple resources.",
+    "subject" : "Backend Engineering",
+    "topic" : "Transactions & Spring Transactional",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "transactions", "spring transactional", "isolation", "propagation", "acid", "transactions & spring transactional" ],
+    "criteria" : [ "explains Spring AOP proxy mechanisms for transaction interception", "evaluates transaction propagation and isolation level anomalies", "diagnoses silent rollback failures and connection pool exhaustion risks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-146",
+    "question" : "How does `readOnly = true` in `@Transactional` optimize Hibernate session performance and JDBC connection routing?",
+    "subject" : "Backend Engineering",
+    "topic" : "Transactions & Spring Transactional",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "transactions", "spring transactional", "isolation", "propagation", "acid", "transactions & spring transactional" ],
+    "criteria" : [ "explains Spring AOP proxy mechanisms for transaction interception", "evaluates transaction propagation and isolation level anomalies", "diagnoses silent rollback failures and connection pool exhaustion risks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-147",
+    "question" : "How do transaction synchronization callbacks (`TransactionSynchronizationManager.registerSynchronization`) ensure events publish only after commit?",
+    "subject" : "Backend Engineering",
+    "topic" : "Transactions & Spring Transactional",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "transactions", "spring transactional", "isolation", "propagation", "acid", "transactions & spring transactional" ],
+    "criteria" : [ "explains Spring AOP proxy mechanisms for transaction interception", "evaluates transaction propagation and isolation level anomalies", "diagnoses silent rollback failures and connection pool exhaustion risks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-148",
+    "question" : "Explain the difference between `Propagation.REQUIRED` and `Propagation.REQUIRES_NEW` when an inner method throws a runtime exception.",
+    "subject" : "Backend Engineering",
+    "topic" : "Transactions & Spring Transactional",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "transactions", "spring transactional", "isolation", "propagation", "acid", "transactions & spring transactional" ],
+    "criteria" : [ "explains Spring AOP proxy mechanisms for transaction interception", "evaluates transaction propagation and isolation level anomalies", "diagnoses silent rollback failures and connection pool exhaustion risks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-149",
+    "question" : "How do database engines implement `Repeatable Read` isolation using MVCC (Multi-Version Concurrency Control) versus locking?",
+    "subject" : "Backend Engineering",
+    "topic" : "Transactions & Spring Transactional",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "transactions", "spring transactional", "isolation", "propagation", "acid", "transactions & spring transactional" ],
+    "criteria" : [ "explains Spring AOP proxy mechanisms for transaction interception", "evaluates transaction propagation and isolation level anomalies", "diagnoses silent rollback failures and connection pool exhaustion risks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-150",
+    "question" : "How do you resolve the self-invocation limitation of Spring AOP proxies when calling transactional methods internally?",
+    "subject" : "Backend Engineering",
+    "topic" : "Transactions & Spring Transactional",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "transactions", "spring transactional", "isolation", "propagation", "acid", "transactions & spring transactional" ],
+    "criteria" : [ "explains Spring AOP proxy mechanisms for transaction interception", "evaluates transaction propagation and isolation level anomalies", "diagnoses silent rollback failures and connection pool exhaustion risks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-151",
+    "question" : "What happens when a long-running `@Transactional` method makes an external HTTP request or heavy calculation while holding a DB connection?",
+    "subject" : "Backend Engineering",
+    "topic" : "Transactions & Spring Transactional",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "transactions", "spring transactional", "isolation", "propagation", "acid", "transactions & spring transactional" ],
+    "criteria" : [ "explains Spring AOP proxy mechanisms for transaction interception", "evaluates transaction propagation and isolation level anomalies", "diagnoses silent rollback failures and connection pool exhaustion risks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-152",
+    "question" : "Diagnose a silent transaction rollback bug where an outer service catches an exception from a `Propagation.REQUIRED` inner service causing `UnexpectedRollbackException`.",
+    "subject" : "Backend Engineering",
+    "topic" : "Transactions & Spring Transactional",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "transactions", "spring transactional", "isolation", "propagation", "acid", "transactions & spring transactional" ],
+    "criteria" : [ "explains Spring AOP proxy mechanisms for transaction interception", "evaluates transaction propagation and isolation level anomalies", "diagnoses silent rollback failures and connection pool exhaustion risks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-153",
+    "question" : "Architect a resilient transactional banking workflow that coordinates local database writes with an external card processing API without distributed lockups.",
+    "subject" : "Backend Engineering",
+    "topic" : "Transactions & Spring Transactional",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "transactions", "spring transactional", "isolation", "propagation", "acid", "transactions & spring transactional" ],
+    "criteria" : [ "explains Spring AOP proxy mechanisms for transaction interception", "evaluates transaction propagation and isolation level anomalies", "diagnoses silent rollback failures and connection pool exhaustion risks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-154",
+    "question" : "Analyze deadlocks occurring in PostgreSQL under `Serializable` isolation level and design automatic retry mechanisms using Spring Retry.",
+    "subject" : "Backend Engineering",
+    "topic" : "Transactions & Spring Transactional",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "transactions", "spring transactional", "isolation", "propagation", "acid", "transactions & spring transactional" ],
+    "criteria" : [ "explains Spring AOP proxy mechanisms for transaction interception", "evaluates transaction propagation and isolation level anomalies", "diagnoses silent rollback failures and connection pool exhaustion risks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-155",
+    "question" : "Design an event-driven transactional outbox pattern using Spring Data JPA and Debezium change data capture (CDC) with zero event loss guarantees.",
+    "subject" : "Backend Engineering",
+    "topic" : "Transactions & Spring Transactional",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "transactions", "spring transactional", "isolation", "propagation", "acid", "transactions & spring transactional" ],
+    "criteria" : [ "explains Spring AOP proxy mechanisms for transaction interception", "evaluates transaction propagation and isolation level anomalies", "diagnoses silent rollback failures and connection pool exhaustion risks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-156",
+    "question" : "How do you architect connection pool sizing (HikariCP) to prevent thread pool deadlocks when nested transactions (`REQUIRES_NEW`) acquire multiple connections?",
+    "subject" : "Backend Engineering",
+    "topic" : "Transactions & Spring Transactional",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "transactions", "spring transactional", "isolation", "propagation", "acid", "transactions & spring transactional" ],
+    "criteria" : [ "explains Spring AOP proxy mechanisms for transaction interception", "evaluates transaction propagation and isolation level anomalies", "diagnoses silent rollback failures and connection pool exhaustion risks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-157",
+    "question" : "Diagnose a silent transaction rollback bug where an outer service catches an exception from a `Propagation.REQUIRED` inner service causing `UnexpectedRollbackException`.",
+    "subject" : "Backend Engineering",
+    "topic" : "Transactions & Spring Transactional",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "transactions", "spring transactional", "isolation", "propagation", "acid", "transactions & spring transactional" ],
+    "criteria" : [ "explains Spring AOP proxy mechanisms for transaction interception", "evaluates transaction propagation and isolation level anomalies", "diagnoses silent rollback failures and connection pool exhaustion risks" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-158",
+    "question" : "What is the difference between synchronous blocking I/O (Spring MVC) and non-blocking reactive I/O (Spring WebFlux)?",
+    "subject" : "Backend Engineering",
+    "topic" : "REST API Performance & Jackson",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "rest", "jackson", "performance", "json", "connection pooling", "rest api performance & jackson" ],
+    "criteria" : [ "optimizes JSON serialization and streaming memory efficiency", "configures connection pooling (HikariCP) and HTTP client reuse", "implements efficient pagination, validation, and serialization security" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-159",
+    "question" : "What role does HikariCP play as the default connection pool in Spring Boot, and what are its key configuration parameters?",
+    "subject" : "Backend Engineering",
+    "topic" : "REST API Performance & Jackson",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "rest", "jackson", "performance", "json", "connection pooling", "rest api performance & jackson" ],
+    "criteria" : [ "optimizes JSON serialization and streaming memory efficiency", "configures connection pooling (HikariCP) and HTTP client reuse", "implements efficient pagination, validation, and serialization security" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-160",
+    "question" : "How does Jackson serialize and deserialize Java objects to and from JSON in Spring Boot REST controllers?",
+    "subject" : "Backend Engineering",
+    "topic" : "REST API Performance & Jackson",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "rest", "jackson", "performance", "json", "connection pooling", "rest api performance & jackson" ],
+    "criteria" : [ "optimizes JSON serialization and streaming memory efficiency", "configures connection pooling (HikariCP) and HTTP client reuse", "implements efficient pagination, validation, and serialization security" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-161",
+    "question" : "What are `@JsonIgnore`, `@JsonProperty`, and `@JsonInclude(Include.NON_NULL)` used for in Jackson data binding?",
+    "subject" : "Backend Engineering",
+    "topic" : "REST API Performance & Jackson",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "rest", "jackson", "performance", "json", "connection pooling", "rest api performance & jackson" ],
+    "criteria" : [ "optimizes JSON serialization and streaming memory efficiency", "configures connection pooling (HikariCP) and HTTP client reuse", "implements efficient pagination, validation, and serialization security" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-162",
+    "question" : "What is HTTP connection pooling, and why is reusing TCP connections essential when calling downstream microservices?",
+    "subject" : "Backend Engineering",
+    "topic" : "REST API Performance & Jackson",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "rest", "jackson", "performance", "json", "connection pooling", "rest api performance & jackson" ],
+    "criteria" : [ "optimizes JSON serialization and streaming memory efficiency", "configures connection pooling (HikariCP) and HTTP client reuse", "implements efficient pagination, validation, and serialization security" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-163",
+    "question" : "What is the difference between `RestTemplate`, `WebClient`, and `RestClient` in modern Spring applications?",
+    "subject" : "Backend Engineering",
+    "topic" : "REST API Performance & Jackson",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "rest", "jackson", "performance", "json", "connection pooling", "rest api performance & jackson" ],
+    "criteria" : [ "optimizes JSON serialization and streaming memory efficiency", "configures connection pooling (HikariCP) and HTTP client reuse", "implements efficient pagination, validation, and serialization security" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-164",
+    "question" : "How do HTTP/1.1 keep-alive and HTTP/2 multiplexing improve API throughput and reduce network latency?",
+    "subject" : "Backend Engineering",
+    "topic" : "REST API Performance & Jackson",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "rest", "jackson", "performance", "json", "connection pooling", "rest api performance & jackson" ],
+    "criteria" : [ "optimizes JSON serialization and streaming memory efficiency", "configures connection pooling (HikariCP) and HTTP client reuse", "implements efficient pagination, validation, and serialization security" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-165",
+    "question" : "What is the difference between synchronous blocking I/O (Spring MVC) and non-blocking reactive I/O (Spring WebFlux)?",
+    "subject" : "Backend Engineering",
+    "topic" : "REST API Performance & Jackson",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "rest", "jackson", "performance", "json", "connection pooling", "rest api performance & jackson" ],
+    "criteria" : [ "optimizes JSON serialization and streaming memory efficiency", "configures connection pooling (HikariCP) and HTTP client reuse", "implements efficient pagination, validation, and serialization security" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-166",
+    "question" : "What role does HikariCP play as the default connection pool in Spring Boot, and what are its key configuration parameters?",
+    "subject" : "Backend Engineering",
+    "topic" : "REST API Performance & Jackson",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "rest", "jackson", "performance", "json", "connection pooling", "rest api performance & jackson" ],
+    "criteria" : [ "optimizes JSON serialization and streaming memory efficiency", "configures connection pooling (HikariCP) and HTTP client reuse", "implements efficient pagination, validation, and serialization security" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-167",
+    "question" : "How does Jackson serialize and deserialize Java objects to and from JSON in Spring Boot REST controllers?",
+    "subject" : "Backend Engineering",
+    "topic" : "REST API Performance & Jackson",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "rest", "jackson", "performance", "json", "connection pooling", "rest api performance & jackson" ],
+    "criteria" : [ "optimizes JSON serialization and streaming memory efficiency", "configures connection pooling (HikariCP) and HTTP client reuse", "implements efficient pagination, validation, and serialization security" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-168",
+    "question" : "Explain how to implement cursor-based pagination (keyset pagination) in Spring Data REST APIs to replace slow offset-based pagination.",
+    "subject" : "Backend Engineering",
+    "topic" : "REST API Performance & Jackson",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "rest", "jackson", "performance", "json", "connection pooling", "rest api performance & jackson" ],
+    "criteria" : [ "optimizes JSON serialization and streaming memory efficiency", "configures connection pooling (HikariCP) and HTTP client reuse", "implements efficient pagination, validation, and serialization security" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-169",
+    "question" : "How do gzip/brotli HTTP compression and payload minification impact network latency versus CPU utilization on web servers?",
+    "subject" : "Backend Engineering",
+    "topic" : "REST API Performance & Jackson",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "rest", "jackson", "performance", "json", "connection pooling", "rest api performance & jackson" ],
+    "criteria" : [ "optimizes JSON serialization and streaming memory efficiency", "configures connection pooling (HikariCP) and HTTP client reuse", "implements efficient pagination, validation, and serialization security" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-170",
+    "question" : "How do you implement request/response payload validation using Hibernate Validator (`@Valid`, `@NotNull`, `@Size`) with custom constraint validators?",
+    "subject" : "Backend Engineering",
+    "topic" : "REST API Performance & Jackson",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "rest", "jackson", "performance", "json", "connection pooling", "rest api performance & jackson" ],
+    "criteria" : [ "optimizes JSON serialization and streaming memory efficiency", "configures connection pooling (HikariCP) and HTTP client reuse", "implements efficient pagination, validation, and serialization security" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-171",
+    "question" : "Explain the security risks of Jackson polymorphic deserialization (`enableDefaultTyping()`) and how to prevent remote code execution.",
+    "subject" : "Backend Engineering",
+    "topic" : "REST API Performance & Jackson",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "rest", "jackson", "performance", "json", "connection pooling", "rest api performance & jackson" ],
+    "criteria" : [ "optimizes JSON serialization and streaming memory efficiency", "configures connection pooling (HikariCP) and HTTP client reuse", "implements efficient pagination, validation, and serialization security" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-172",
+    "question" : "How do you optimize Jackson serialization throughput for high-volume payloads using `Afterburner` or `Blackbird` modules and custom serializers?",
+    "subject" : "Backend Engineering",
+    "topic" : "REST API Performance & Jackson",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "rest", "jackson", "performance", "json", "connection pooling", "rest api performance & jackson" ],
+    "criteria" : [ "optimizes JSON serialization and streaming memory efficiency", "configures connection pooling (HikariCP) and HTTP client reuse", "implements efficient pagination, validation, and serialization security" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-173",
+    "question" : "How do you tune HikariCP parameters (`maximumPoolSize`, `minimumIdle`, `connectionTimeout`, `maxLifetime`) for high-concurrency workloads?",
+    "subject" : "Backend Engineering",
+    "topic" : "REST API Performance & Jackson",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "rest", "jackson", "performance", "json", "connection pooling", "rest api performance & jackson" ],
+    "criteria" : [ "optimizes JSON serialization and streaming memory efficiency", "configures connection pooling (HikariCP) and HTTP client reuse", "implements efficient pagination, validation, and serialization security" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-174",
+    "question" : "How do you stream massive JSON responses (e.g. 500MB exports) in Spring Boot without causing an `OutOfMemoryError`?",
+    "subject" : "Backend Engineering",
+    "topic" : "REST API Performance & Jackson",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "rest", "jackson", "performance", "json", "connection pooling", "rest api performance & jackson" ],
+    "criteria" : [ "optimizes JSON serialization and streaming memory efficiency", "configures connection pooling (HikariCP) and HTTP client reuse", "implements efficient pagination, validation, and serialization security" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-175",
+    "question" : "Explain how to implement cursor-based pagination (keyset pagination) in Spring Data REST APIs to replace slow offset-based pagination.",
+    "subject" : "Backend Engineering",
+    "topic" : "REST API Performance & Jackson",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "rest", "jackson", "performance", "json", "connection pooling", "rest api performance & jackson" ],
+    "criteria" : [ "optimizes JSON serialization and streaming memory efficiency", "configures connection pooling (HikariCP) and HTTP client reuse", "implements efficient pagination, validation, and serialization security" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-176",
+    "question" : "How do gzip/brotli HTTP compression and payload minification impact network latency versus CPU utilization on web servers?",
+    "subject" : "Backend Engineering",
+    "topic" : "REST API Performance & Jackson",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "rest", "jackson", "performance", "json", "connection pooling", "rest api performance & jackson" ],
+    "criteria" : [ "optimizes JSON serialization and streaming memory efficiency", "configures connection pooling (HikariCP) and HTTP client reuse", "implements efficient pagination, validation, and serialization security" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-177",
+    "question" : "How do you implement request/response payload validation using Hibernate Validator (`@Valid`, `@NotNull`, `@Size`) with custom constraint validators?",
+    "subject" : "Backend Engineering",
+    "topic" : "REST API Performance & Jackson",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "rest", "jackson", "performance", "json", "connection pooling", "rest api performance & jackson" ],
+    "criteria" : [ "optimizes JSON serialization and streaming memory efficiency", "configures connection pooling (HikariCP) and HTTP client reuse", "implements efficient pagination, validation, and serialization security" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-178",
+    "question" : "Explain the security risks of Jackson polymorphic deserialization (`enableDefaultTyping()`) and how to prevent remote code execution.",
+    "subject" : "Backend Engineering",
+    "topic" : "REST API Performance & Jackson",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "rest", "jackson", "performance", "json", "connection pooling", "rest api performance & jackson" ],
+    "criteria" : [ "optimizes JSON serialization and streaming memory efficiency", "configures connection pooling (HikariCP) and HTTP client reuse", "implements efficient pagination, validation, and serialization security" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-179",
+    "question" : "How do you optimize Jackson serialization throughput for high-volume payloads using `Afterburner` or `Blackbird` modules and custom serializers?",
+    "subject" : "Backend Engineering",
+    "topic" : "REST API Performance & Jackson",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "rest", "jackson", "performance", "json", "connection pooling", "rest api performance & jackson" ],
+    "criteria" : [ "optimizes JSON serialization and streaming memory efficiency", "configures connection pooling (HikariCP) and HTTP client reuse", "implements efficient pagination, validation, and serialization security" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-180",
+    "question" : "How do you tune HikariCP parameters (`maximumPoolSize`, `minimumIdle`, `connectionTimeout`, `maxLifetime`) for high-concurrency workloads?",
+    "subject" : "Backend Engineering",
+    "topic" : "REST API Performance & Jackson",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "rest", "jackson", "performance", "json", "connection pooling", "rest api performance & jackson" ],
+    "criteria" : [ "optimizes JSON serialization and streaming memory efficiency", "configures connection pooling (HikariCP) and HTTP client reuse", "implements efficient pagination, validation, and serialization security" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-181",
+    "question" : "How do you stream massive JSON responses (e.g. 500MB exports) in Spring Boot without causing an `OutOfMemoryError`?",
+    "subject" : "Backend Engineering",
+    "topic" : "REST API Performance & Jackson",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "rest", "jackson", "performance", "json", "connection pooling", "rest api performance & jackson" ],
+    "criteria" : [ "optimizes JSON serialization and streaming memory efficiency", "configures connection pooling (HikariCP) and HTTP client reuse", "implements efficient pagination, validation, and serialization security" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-182",
+    "question" : "Explain how to implement cursor-based pagination (keyset pagination) in Spring Data REST APIs to replace slow offset-based pagination.",
+    "subject" : "Backend Engineering",
+    "topic" : "REST API Performance & Jackson",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "rest", "jackson", "performance", "json", "connection pooling", "rest api performance & jackson" ],
+    "criteria" : [ "optimizes JSON serialization and streaming memory efficiency", "configures connection pooling (HikariCP) and HTTP client reuse", "implements efficient pagination, validation, and serialization security" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-183",
+    "question" : "Architect an asynchronous file ingest pipeline that processes multipart CSV/JSON uploads of 1GB with zero memory buffering and real-time validation.",
+    "subject" : "Backend Engineering",
+    "topic" : "REST API Performance & Jackson",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "rest", "jackson", "performance", "json", "connection pooling", "rest api performance & jackson" ],
+    "criteria" : [ "optimizes JSON serialization and streaming memory efficiency", "configures connection pooling (HikariCP) and HTTP client reuse", "implements efficient pagination, validation, and serialization security" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-184",
+    "question" : "Diagnose an API latency degradation issue where an external HTTP client in Spring Boot exhausts operating system ephemeral ports (TIME_WAIT saturation).",
+    "subject" : "Backend Engineering",
+    "topic" : "REST API Performance & Jackson",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "rest", "jackson", "performance", "json", "connection pooling", "rest api performance & jackson" ],
+    "criteria" : [ "optimizes JSON serialization and streaming memory efficiency", "configures connection pooling (HikariCP) and HTTP client reuse", "implements efficient pagination, validation, and serialization security" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-185",
+    "question" : "Evaluate the architectural trade-offs of migrating a latency-critical service from JSON over REST to Protocol Buffers over gRPC.",
+    "subject" : "Backend Engineering",
+    "topic" : "REST API Performance & Jackson",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "rest", "jackson", "performance", "json", "connection pooling", "rest api performance & jackson" ],
+    "criteria" : [ "optimizes JSON serialization and streaming memory efficiency", "configures connection pooling (HikariCP) and HTTP client reuse", "implements efficient pagination, validation, and serialization security" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-186",
+    "question" : "Design a resilient HTTP client integration using `WebClient` with circuit breaking, rate limiting, and adaptive backoff for downstream partner APIs.",
+    "subject" : "Backend Engineering",
+    "topic" : "REST API Performance & Jackson",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "rest", "jackson", "performance", "json", "connection pooling", "rest api performance & jackson" ],
+    "criteria" : [ "optimizes JSON serialization and streaming memory efficiency", "configures connection pooling (HikariCP) and HTTP client reuse", "implements efficient pagination, validation, and serialization security" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-187",
+    "question" : "How do you architect API rate limiting and traffic shaping at the application level to defend against noisy neighbor tenants in SaaS backends?",
+    "subject" : "Backend Engineering",
+    "topic" : "REST API Performance & Jackson",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "rest", "jackson", "performance", "json", "connection pooling", "rest api performance & jackson" ],
+    "criteria" : [ "optimizes JSON serialization and streaming memory efficiency", "configures connection pooling (HikariCP) and HTTP client reuse", "implements efficient pagination, validation, and serialization security" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-188",
+    "question" : "Architect an asynchronous file ingest pipeline that processes multipart CSV/JSON uploads of 1GB with zero memory buffering and real-time validation.",
+    "subject" : "Backend Engineering",
+    "topic" : "REST API Performance & Jackson",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "rest", "jackson", "performance", "json", "connection pooling", "rest api performance & jackson" ],
+    "criteria" : [ "optimizes JSON serialization and streaming memory efficiency", "configures connection pooling (HikariCP) and HTTP client reuse", "implements efficient pagination, validation, and serialization security" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-189",
+    "question" : "What is the difference between structured logging (JSON) and traditional unstructured text logging in enterprise applications?",
+    "subject" : "Backend Engineering",
+    "topic" : "Resilience, Logging & Monitoring",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "resilience4j", "logging", "monitoring", "metrics", "micrometer", "resilience, logging & monitoring" ],
+    "criteria" : [ "configures circuit breakers, retries, and rate limiters with Resilience4j", "implements structured logging with MDC context propagation", "utilizes Micrometer, Prometheus, and distributed tracing for production monitoring" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-190",
+    "question" : "What is MDC (Mapped Diagnostic Context) in SLF4J/Logback, and how does it correlate logs for a single user request across threads?",
+    "subject" : "Backend Engineering",
+    "topic" : "Resilience, Logging & Monitoring",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "resilience4j", "logging", "monitoring", "metrics", "micrometer", "resilience, logging & monitoring" ],
+    "criteria" : [ "configures circuit breakers, retries, and rate limiters with Resilience4j", "implements structured logging with MDC context propagation", "utilizes Micrometer, Prometheus, and distributed tracing for production monitoring" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-191",
+    "question" : "What is the purpose of the Resilience4j library in Spring Boot applications?",
+    "subject" : "Backend Engineering",
+    "topic" : "Resilience, Logging & Monitoring",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "resilience4j", "logging", "monitoring", "metrics", "micrometer", "resilience, logging & monitoring" ],
+    "criteria" : [ "configures circuit breakers, retries, and rate limiters with Resilience4j", "implements structured logging with MDC context propagation", "utilizes Micrometer, Prometheus, and distributed tracing for production monitoring" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-192",
+    "question" : "Explain the difference between a Retry pattern with exponential backoff and a Circuit Breaker pattern.",
+    "subject" : "Backend Engineering",
+    "topic" : "Resilience, Logging & Monitoring",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "resilience4j", "logging", "monitoring", "metrics", "micrometer", "resilience, logging & monitoring" ],
+    "criteria" : [ "configures circuit breakers, retries, and rate limiters with Resilience4j", "implements structured logging with MDC context propagation", "utilizes Micrometer, Prometheus, and distributed tracing for production monitoring" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-193",
+    "question" : "What is Micrometer in Spring Boot, and how does it bridge application metrics to monitoring systems like Prometheus?",
+    "subject" : "Backend Engineering",
+    "topic" : "Resilience, Logging & Monitoring",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "resilience4j", "logging", "monitoring", "metrics", "micrometer", "resilience, logging & monitoring" ],
+    "criteria" : [ "configures circuit breakers, retries, and rate limiters with Resilience4j", "implements structured logging with MDC context propagation", "utilizes Micrometer, Prometheus, and distributed tracing for production monitoring" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-194",
+    "question" : "What are the key differences between application metrics, logs, and distributed traces (the 3 pillars of observability)?",
+    "subject" : "Backend Engineering",
+    "topic" : "Resilience, Logging & Monitoring",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "resilience4j", "logging", "monitoring", "metrics", "micrometer", "resilience, logging & monitoring" ],
+    "criteria" : [ "configures circuit breakers, retries, and rate limiters with Resilience4j", "implements structured logging with MDC context propagation", "utilizes Micrometer, Prometheus, and distributed tracing for production monitoring" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-195",
+    "question" : "What is the health check endpoint in Spring Boot Actuator, and what is the difference between liveness and readiness probes in Kubernetes?",
+    "subject" : "Backend Engineering",
+    "topic" : "Resilience, Logging & Monitoring",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "resilience4j", "logging", "monitoring", "metrics", "micrometer", "resilience, logging & monitoring" ],
+    "criteria" : [ "configures circuit breakers, retries, and rate limiters with Resilience4j", "implements structured logging with MDC context propagation", "utilizes Micrometer, Prometheus, and distributed tracing for production monitoring" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-196",
+    "question" : "What is the difference between structured logging (JSON) and traditional unstructured text logging in enterprise applications?",
+    "subject" : "Backend Engineering",
+    "topic" : "Resilience, Logging & Monitoring",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "resilience4j", "logging", "monitoring", "metrics", "micrometer", "resilience, logging & monitoring" ],
+    "criteria" : [ "configures circuit breakers, retries, and rate limiters with Resilience4j", "implements structured logging with MDC context propagation", "utilizes Micrometer, Prometheus, and distributed tracing for production monitoring" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-197",
+    "question" : "What is MDC (Mapped Diagnostic Context) in SLF4J/Logback, and how does it correlate logs for a single user request across threads?",
+    "subject" : "Backend Engineering",
+    "topic" : "Resilience, Logging & Monitoring",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "resilience4j", "logging", "monitoring", "metrics", "micrometer", "resilience, logging & monitoring" ],
+    "criteria" : [ "configures circuit breakers, retries, and rate limiters with Resilience4j", "implements structured logging with MDC context propagation", "utilizes Micrometer, Prometheus, and distributed tracing for production monitoring" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-198",
+    "question" : "What is the purpose of the Resilience4j library in Spring Boot applications?",
+    "subject" : "Backend Engineering",
+    "topic" : "Resilience, Logging & Monitoring",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "resilience4j", "logging", "monitoring", "metrics", "micrometer", "resilience, logging & monitoring" ],
+    "criteria" : [ "configures circuit breakers, retries, and rate limiters with Resilience4j", "implements structured logging with MDC context propagation", "utilizes Micrometer, Prometheus, and distributed tracing for production monitoring" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-199",
+    "question" : "How do you configure asynchronous logging in Logback with `AsyncAppender` or LMAX Disruptor to prevent logging from blocking application threads?",
+    "subject" : "Backend Engineering",
+    "topic" : "Resilience, Logging & Monitoring",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "resilience4j", "logging", "monitoring", "metrics", "micrometer", "resilience, logging & monitoring" ],
+    "criteria" : [ "configures circuit breakers, retries, and rate limiters with Resilience4j", "implements structured logging with MDC context propagation", "utilizes Micrometer, Prometheus, and distributed tracing for production monitoring" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-200",
+    "question" : "Explain how RateLimiter and Bulkhead modules in Resilience4j protect database connections and external API quotas from overload.",
+    "subject" : "Backend Engineering",
+    "topic" : "Resilience, Logging & Monitoring",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "resilience4j", "logging", "monitoring", "metrics", "micrometer", "resilience, logging & monitoring" ],
+    "criteria" : [ "configures circuit breakers, retries, and rate limiters with Resilience4j", "implements structured logging with MDC context propagation", "utilizes Micrometer, Prometheus, and distributed tracing for production monitoring" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-201",
+    "question" : "How do you implement centralized exception handling with `@ControllerAdvice` and `@ExceptionHandler` returning RFC 7807 Problem Details?",
+    "subject" : "Backend Engineering",
+    "topic" : "Resilience, Logging & Monitoring",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "resilience4j", "logging", "monitoring", "metrics", "micrometer", "resilience, logging & monitoring" ],
+    "criteria" : [ "configures circuit breakers, retries, and rate limiters with Resilience4j", "implements structured logging with MDC context propagation", "utilizes Micrometer, Prometheus, and distributed tracing for production monitoring" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-202",
+    "question" : "What strategies prevent sensitive PII (passwords, credit cards, SSNs) from accidentally leaking into application log files?",
+    "subject" : "Backend Engineering",
+    "topic" : "Resilience, Logging & Monitoring",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "resilience4j", "logging", "monitoring", "metrics", "micrometer", "resilience, logging & monitoring" ],
+    "criteria" : [ "configures circuit breakers, retries, and rate limiters with Resilience4j", "implements structured logging with MDC context propagation", "utilizes Micrometer, Prometheus, and distributed tracing for production monitoring" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-203",
+    "question" : "How do you configure Resilience4j Circuit Breaker with sliding window metrics (count-based vs time-based) to isolate failing downstream services?",
+    "subject" : "Backend Engineering",
+    "topic" : "Resilience, Logging & Monitoring",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "resilience4j", "logging", "monitoring", "metrics", "micrometer", "resilience, logging & monitoring" ],
+    "criteria" : [ "configures circuit breakers, retries, and rate limiters with Resilience4j", "implements structured logging with MDC context propagation", "utilizes Micrometer, Prometheus, and distributed tracing for production monitoring" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-204",
+    "question" : "Explain how distributed tracing contexts (W3C TraceContext traceparent and tracestate) propagate across HTTP calls and Kafka messages.",
+    "subject" : "Backend Engineering",
+    "topic" : "Resilience, Logging & Monitoring",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "resilience4j", "logging", "monitoring", "metrics", "micrometer", "resilience, logging & monitoring" ],
+    "criteria" : [ "configures circuit breakers, retries, and rate limiters with Resilience4j", "implements structured logging with MDC context propagation", "utilizes Micrometer, Prometheus, and distributed tracing for production monitoring" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-205",
+    "question" : "How do you capture custom business and performance metrics in Spring Boot using Micrometer `Counter`, `Timer`, and `Gauge`?",
+    "subject" : "Backend Engineering",
+    "topic" : "Resilience, Logging & Monitoring",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "resilience4j", "logging", "monitoring", "metrics", "micrometer", "resilience, logging & monitoring" ],
+    "criteria" : [ "configures circuit breakers, retries, and rate limiters with Resilience4j", "implements structured logging with MDC context propagation", "utilizes Micrometer, Prometheus, and distributed tracing for production monitoring" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-206",
+    "question" : "How do you configure asynchronous logging in Logback with `AsyncAppender` or LMAX Disruptor to prevent logging from blocking application threads?",
+    "subject" : "Backend Engineering",
+    "topic" : "Resilience, Logging & Monitoring",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "resilience4j", "logging", "monitoring", "metrics", "micrometer", "resilience, logging & monitoring" ],
+    "criteria" : [ "configures circuit breakers, retries, and rate limiters with Resilience4j", "implements structured logging with MDC context propagation", "utilizes Micrometer, Prometheus, and distributed tracing for production monitoring" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-207",
+    "question" : "Explain how RateLimiter and Bulkhead modules in Resilience4j protect database connections and external API quotas from overload.",
+    "subject" : "Backend Engineering",
+    "topic" : "Resilience, Logging & Monitoring",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "resilience4j", "logging", "monitoring", "metrics", "micrometer", "resilience, logging & monitoring" ],
+    "criteria" : [ "configures circuit breakers, retries, and rate limiters with Resilience4j", "implements structured logging with MDC context propagation", "utilizes Micrometer, Prometheus, and distributed tracing for production monitoring" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-208",
+    "question" : "How do you implement centralized exception handling with `@ControllerAdvice` and `@ExceptionHandler` returning RFC 7807 Problem Details?",
+    "subject" : "Backend Engineering",
+    "topic" : "Resilience, Logging & Monitoring",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "resilience4j", "logging", "monitoring", "metrics", "micrometer", "resilience, logging & monitoring" ],
+    "criteria" : [ "configures circuit breakers, retries, and rate limiters with Resilience4j", "implements structured logging with MDC context propagation", "utilizes Micrometer, Prometheus, and distributed tracing for production monitoring" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-209",
+    "question" : "What strategies prevent sensitive PII (passwords, credit cards, SSNs) from accidentally leaking into application log files?",
+    "subject" : "Backend Engineering",
+    "topic" : "Resilience, Logging & Monitoring",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "resilience4j", "logging", "monitoring", "metrics", "micrometer", "resilience, logging & monitoring" ],
+    "criteria" : [ "configures circuit breakers, retries, and rate limiters with Resilience4j", "implements structured logging with MDC context propagation", "utilizes Micrometer, Prometheus, and distributed tracing for production monitoring" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-210",
+    "question" : "How do you configure Resilience4j Circuit Breaker with sliding window metrics (count-based vs time-based) to isolate failing downstream services?",
+    "subject" : "Backend Engineering",
+    "topic" : "Resilience, Logging & Monitoring",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "resilience4j", "logging", "monitoring", "metrics", "micrometer", "resilience, logging & monitoring" ],
+    "criteria" : [ "configures circuit breakers, retries, and rate limiters with Resilience4j", "implements structured logging with MDC context propagation", "utilizes Micrometer, Prometheus, and distributed tracing for production monitoring" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-211",
+    "question" : "Explain how distributed tracing contexts (W3C TraceContext traceparent and tracestate) propagate across HTTP calls and Kafka messages.",
+    "subject" : "Backend Engineering",
+    "topic" : "Resilience, Logging & Monitoring",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "resilience4j", "logging", "monitoring", "metrics", "micrometer", "resilience, logging & monitoring" ],
+    "criteria" : [ "configures circuit breakers, retries, and rate limiters with Resilience4j", "implements structured logging with MDC context propagation", "utilizes Micrometer, Prometheus, and distributed tracing for production monitoring" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-212",
+    "question" : "How do you capture custom business and performance metrics in Spring Boot using Micrometer `Counter`, `Timer`, and `Gauge`?",
+    "subject" : "Backend Engineering",
+    "topic" : "Resilience, Logging & Monitoring",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "resilience4j", "logging", "monitoring", "metrics", "micrometer", "resilience, logging & monitoring" ],
+    "criteria" : [ "configures circuit breakers, retries, and rate limiters with Resilience4j", "implements structured logging with MDC context propagation", "utilizes Micrometer, Prometheus, and distributed tracing for production monitoring" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-213",
+    "question" : "How do you configure asynchronous logging in Logback with `AsyncAppender` or LMAX Disruptor to prevent logging from blocking application threads?",
+    "subject" : "Backend Engineering",
+    "topic" : "Resilience, Logging & Monitoring",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "resilience4j", "logging", "monitoring", "metrics", "micrometer", "resilience, logging & monitoring" ],
+    "criteria" : [ "configures circuit breakers, retries, and rate limiters with Resilience4j", "implements structured logging with MDC context propagation", "utilizes Micrometer, Prometheus, and distributed tracing for production monitoring" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-214",
+    "question" : "Design an end-to-end observability pipeline for a high-concurrency trading platform aggregating logs, metrics, and traces with sub-second alert latency.",
+    "subject" : "Backend Engineering",
+    "topic" : "Resilience, Logging & Monitoring",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "resilience4j", "logging", "monitoring", "metrics", "micrometer", "resilience, logging & monitoring" ],
+    "criteria" : [ "configures circuit breakers, retries, and rate limiters with Resilience4j", "implements structured logging with MDC context propagation", "utilizes Micrometer, Prometheus, and distributed tracing for production monitoring" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-215",
+    "question" : "Diagnose a production incident where misconfigured asynchronous logging caused dropped log events and thread stalls during a critical system crash.",
+    "subject" : "Backend Engineering",
+    "topic" : "Resilience, Logging & Monitoring",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "resilience4j", "logging", "monitoring", "metrics", "micrometer", "resilience, logging & monitoring" ],
+    "criteria" : [ "configures circuit breakers, retries, and rate limiters with Resilience4j", "implements structured logging with MDC context propagation", "utilizes Micrometer, Prometheus, and distributed tracing for production monitoring" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-216",
+    "question" : "Architect an adaptive rate limiting and resilience engine that dynamically adjusts circuit breaker thresholds based on real-time downstream response times.",
+    "subject" : "Backend Engineering",
+    "topic" : "Resilience, Logging & Monitoring",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "resilience4j", "logging", "monitoring", "metrics", "micrometer", "resilience, logging & monitoring" ],
+    "criteria" : [ "configures circuit breakers, retries, and rate limiters with Resilience4j", "implements structured logging with MDC context propagation", "utilizes Micrometer, Prometheus, and distributed tracing for production monitoring" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-217",
+    "question" : "Evaluate the overhead of distributed tracing at 100,000 requests per second and design dynamic tail-based sampling to retain error traces while dropping clean ones.",
+    "subject" : "Backend Engineering",
+    "topic" : "Resilience, Logging & Monitoring",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "resilience4j", "logging", "monitoring", "metrics", "micrometer", "resilience, logging & monitoring" ],
+    "criteria" : [ "configures circuit breakers, retries, and rate limiters with Resilience4j", "implements structured logging with MDC context propagation", "utilizes Micrometer, Prometheus, and distributed tracing for production monitoring" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-218",
+    "question" : "How do you architect an automated canary analysis system that monitors Micrometer error rates and automatically rolls back bad deployments in Kubernetes?",
+    "subject" : "Backend Engineering",
+    "topic" : "Resilience, Logging & Monitoring",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "resilience4j", "logging", "monitoring", "metrics", "micrometer", "resilience, logging & monitoring" ],
+    "criteria" : [ "configures circuit breakers, retries, and rate limiters with Resilience4j", "implements structured logging with MDC context propagation", "utilizes Micrometer, Prometheus, and distributed tracing for production monitoring" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-219",
+    "question" : "Design an end-to-end observability pipeline for a high-concurrency trading platform aggregating logs, metrics, and traces with sub-second alert latency.",
+    "subject" : "Backend Engineering",
+    "topic" : "Resilience, Logging & Monitoring",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "resilience4j", "logging", "monitoring", "metrics", "micrometer", "resilience, logging & monitoring" ],
+    "criteria" : [ "configures circuit breakers, retries, and rate limiters with Resilience4j", "implements structured logging with MDC context propagation", "utilizes Micrometer, Prometheus, and distributed tracing for production monitoring" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-220",
+    "question" : "What is a thread dump in Java, and what tools can be used to generate one (jstack, jcmd, VisualVM)?",
+    "subject" : "Backend Engineering",
+    "topic" : "Production Diagnostics & Performance Tuning",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "diagnostics", "thread dump", "heap dump", "profiling", "async-profiler", "production diagnostics & performance tuning" ],
+    "criteria" : [ "analyzes thread dumps for deadlocks, thread starvation, and lock contention", "inspects heap dumps and dominator trees to identify memory leaks", "profiles production bottlenecks using async-profiler and JFR telemetry" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-221",
+    "question" : "What is a heap dump in Java, and what tool can be used to analyze object allocation and retainment (Eclipse Memory Analyzer - MAT)?",
+    "subject" : "Backend Engineering",
+    "topic" : "Production Diagnostics & Performance Tuning",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "diagnostics", "thread dump", "heap dump", "profiling", "async-profiler", "production diagnostics & performance tuning" ],
+    "criteria" : [ "analyzes thread dumps for deadlocks, thread starvation, and lock contention", "inspects heap dumps and dominator trees to identify memory leaks", "profiles production bottlenecks using async-profiler and JFR telemetry" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-222",
+    "question" : "What is the difference between CPU utilization caused by runaway application code versus CPU spent in Garbage Collection?",
+    "subject" : "Backend Engineering",
+    "topic" : "Production Diagnostics & Performance Tuning",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "diagnostics", "thread dump", "heap dump", "profiling", "async-profiler", "production diagnostics & performance tuning" ],
+    "criteria" : [ "analyzes thread dumps for deadlocks, thread starvation, and lock contention", "inspects heap dumps and dominator trees to identify memory leaks", "profiles production bottlenecks using async-profiler and JFR telemetry" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-223",
+    "question" : "What is a thread in the `BLOCKED` state versus `WAITING` or `TIMED_WAITING` state in Java?",
+    "subject" : "Backend Engineering",
+    "topic" : "Production Diagnostics & Performance Tuning",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "diagnostics", "thread dump", "heap dump", "profiling", "async-profiler", "production diagnostics & performance tuning" ],
+    "criteria" : [ "analyzes thread dumps for deadlocks, thread starvation, and lock contention", "inspects heap dumps and dominator trees to identify memory leaks", "profiles production bottlenecks using async-profiler and JFR telemetry" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-224",
+    "question" : "What is high thread contention, and what code patterns typically cause lock contention under load?",
+    "subject" : "Backend Engineering",
+    "topic" : "Production Diagnostics & Performance Tuning",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "diagnostics", "thread dump", "heap dump", "profiling", "async-profiler", "production diagnostics & performance tuning" ],
+    "criteria" : [ "analyzes thread dumps for deadlocks, thread starvation, and lock contention", "inspects heap dumps and dominator trees to identify memory leaks", "profiles production bottlenecks using async-profiler and JFR telemetry" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-225",
+    "question" : "How does JFR (Java Flight Recorder) collect low-overhead diagnostic telemetry from running production JVM instances?",
+    "subject" : "Backend Engineering",
+    "topic" : "Production Diagnostics & Performance Tuning",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "diagnostics", "thread dump", "heap dump", "profiling", "async-profiler", "production diagnostics & performance tuning" ],
+    "criteria" : [ "analyzes thread dumps for deadlocks, thread starvation, and lock contention", "inspects heap dumps and dominator trees to identify memory leaks", "profiles production bottlenecks using async-profiler and JFR telemetry" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-226",
+    "question" : "What does a sudden spike in database connection pool waiting threads typically indicate about backend health?",
+    "subject" : "Backend Engineering",
+    "topic" : "Production Diagnostics & Performance Tuning",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "diagnostics", "thread dump", "heap dump", "profiling", "async-profiler", "production diagnostics & performance tuning" ],
+    "criteria" : [ "analyzes thread dumps for deadlocks, thread starvation, and lock contention", "inspects heap dumps and dominator trees to identify memory leaks", "profiles production bottlenecks using async-profiler and JFR telemetry" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-227",
+    "question" : "What is a thread dump in Java, and what tools can be used to generate one (jstack, jcmd, VisualVM)?",
+    "subject" : "Backend Engineering",
+    "topic" : "Production Diagnostics & Performance Tuning",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "diagnostics", "thread dump", "heap dump", "profiling", "async-profiler", "production diagnostics & performance tuning" ],
+    "criteria" : [ "analyzes thread dumps for deadlocks, thread starvation, and lock contention", "inspects heap dumps and dominator trees to identify memory leaks", "profiles production bottlenecks using async-profiler and JFR telemetry" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-228",
+    "question" : "What is a heap dump in Java, and what tool can be used to analyze object allocation and retainment (Eclipse Memory Analyzer - MAT)?",
+    "subject" : "Backend Engineering",
+    "topic" : "Production Diagnostics & Performance Tuning",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "diagnostics", "thread dump", "heap dump", "profiling", "async-profiler", "production diagnostics & performance tuning" ],
+    "criteria" : [ "analyzes thread dumps for deadlocks, thread starvation, and lock contention", "inspects heap dumps and dominator trees to identify memory leaks", "profiles production bottlenecks using async-profiler and JFR telemetry" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-229",
+    "question" : "What is the difference between CPU utilization caused by runaway application code versus CPU spent in Garbage Collection?",
+    "subject" : "Backend Engineering",
+    "topic" : "Production Diagnostics & Performance Tuning",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "diagnostics", "thread dump", "heap dump", "profiling", "async-profiler", "production diagnostics & performance tuning" ],
+    "criteria" : [ "analyzes thread dumps for deadlocks, thread starvation, and lock contention", "inspects heap dumps and dominator trees to identify memory leaks", "profiles production bottlenecks using async-profiler and JFR telemetry" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-230",
+    "question" : "Diagnose a situation where an application experiences high latency and CPU spikes due to excessive string concatenations or boxing/unboxing in tight loops.",
+    "subject" : "Backend Engineering",
+    "topic" : "Production Diagnostics & Performance Tuning",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "diagnostics", "thread dump", "heap dump", "profiling", "async-profiler", "production diagnostics & performance tuning" ],
+    "criteria" : [ "analyzes thread dumps for deadlocks, thread starvation, and lock contention", "inspects heap dumps and dominator trees to identify memory leaks", "profiles production bottlenecks using async-profiler and JFR telemetry" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-231",
+    "question" : "How do you identify lock contention bottlenecks in Java using flame graphs generated from profiling sessions?",
+    "subject" : "Backend Engineering",
+    "topic" : "Production Diagnostics & Performance Tuning",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "diagnostics", "thread dump", "heap dump", "profiling", "async-profiler", "production diagnostics & performance tuning" ],
+    "criteria" : [ "analyzes thread dumps for deadlocks, thread starvation, and lock contention", "inspects heap dumps and dominator trees to identify memory leaks", "profiles production bottlenecks using async-profiler and JFR telemetry" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-232",
+    "question" : "What are the common causes of `java.lang.StackOverflowError` in recursive algorithms or circular entity serialization, and how do you resolve them?",
+    "subject" : "Backend Engineering",
+    "topic" : "Production Diagnostics & Performance Tuning",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "diagnostics", "thread dump", "heap dump", "profiling", "async-profiler", "production diagnostics & performance tuning" ],
+    "criteria" : [ "analyzes thread dumps for deadlocks, thread starvation, and lock contention", "inspects heap dumps and dominator trees to identify memory leaks", "profiles production bottlenecks using async-profiler and JFR telemetry" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-233",
+    "question" : "How do you diagnose operating system resource exhaustion issues like 'Too many open files' (file descriptor limits) in Linux containers?",
+    "subject" : "Backend Engineering",
+    "topic" : "Production Diagnostics & Performance Tuning",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "diagnostics", "thread dump", "heap dump", "profiling", "async-profiler", "production diagnostics & performance tuning" ],
+    "criteria" : [ "analyzes thread dumps for deadlocks, thread starvation, and lock contention", "inspects heap dumps and dominator trees to identify memory leaks", "profiles production bottlenecks using async-profiler and JFR telemetry" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-234",
+    "question" : "How do you analyze a thread dump to identify a multi-thread deadlock situation where two threads hold locks the other needs?",
+    "subject" : "Backend Engineering",
+    "topic" : "Production Diagnostics & Performance Tuning",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "diagnostics", "thread dump", "heap dump", "profiling", "async-profiler", "production diagnostics & performance tuning" ],
+    "criteria" : [ "analyzes thread dumps for deadlocks, thread starvation, and lock contention", "inspects heap dumps and dominator trees to identify memory leaks", "profiles production bottlenecks using async-profiler and JFR telemetry" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-235",
+    "question" : "Explain how to use Eclipse MAT (Memory Analyzer Tool) to inspect dominator trees, shallow heap, and retained heap to identify leak suspects.",
+    "subject" : "Backend Engineering",
+    "topic" : "Production Diagnostics & Performance Tuning",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "diagnostics", "thread dump", "heap dump", "profiling", "async-profiler", "production diagnostics & performance tuning" ],
+    "criteria" : [ "analyzes thread dumps for deadlocks, thread starvation, and lock contention", "inspects heap dumps and dominator trees to identify memory leaks", "profiles production bottlenecks using async-profiler and JFR telemetry" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-236",
+    "question" : "How do you profile production Java CPU and memory allocation bottlenecks using `async-profiler` without causing safepoint bias?",
+    "subject" : "Backend Engineering",
+    "topic" : "Production Diagnostics & Performance Tuning",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "diagnostics", "thread dump", "heap dump", "profiling", "async-profiler", "production diagnostics & performance tuning" ],
+    "criteria" : [ "analyzes thread dumps for deadlocks, thread starvation, and lock contention", "inspects heap dumps and dominator trees to identify memory leaks", "profiles production bottlenecks using async-profiler and JFR telemetry" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-237",
+    "question" : "Diagnose a situation where an application experiences high latency and CPU spikes due to excessive string concatenations or boxing/unboxing in tight loops.",
+    "subject" : "Backend Engineering",
+    "topic" : "Production Diagnostics & Performance Tuning",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "diagnostics", "thread dump", "heap dump", "profiling", "async-profiler", "production diagnostics & performance tuning" ],
+    "criteria" : [ "analyzes thread dumps for deadlocks, thread starvation, and lock contention", "inspects heap dumps and dominator trees to identify memory leaks", "profiles production bottlenecks using async-profiler and JFR telemetry" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-238",
+    "question" : "How do you identify lock contention bottlenecks in Java using flame graphs generated from profiling sessions?",
+    "subject" : "Backend Engineering",
+    "topic" : "Production Diagnostics & Performance Tuning",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "diagnostics", "thread dump", "heap dump", "profiling", "async-profiler", "production diagnostics & performance tuning" ],
+    "criteria" : [ "analyzes thread dumps for deadlocks, thread starvation, and lock contention", "inspects heap dumps and dominator trees to identify memory leaks", "profiles production bottlenecks using async-profiler and JFR telemetry" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-239",
+    "question" : "What are the common causes of `java.lang.StackOverflowError` in recursive algorithms or circular entity serialization, and how do you resolve them?",
+    "subject" : "Backend Engineering",
+    "topic" : "Production Diagnostics & Performance Tuning",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "diagnostics", "thread dump", "heap dump", "profiling", "async-profiler", "production diagnostics & performance tuning" ],
+    "criteria" : [ "analyzes thread dumps for deadlocks, thread starvation, and lock contention", "inspects heap dumps and dominator trees to identify memory leaks", "profiles production bottlenecks using async-profiler and JFR telemetry" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-240",
+    "question" : "How do you diagnose operating system resource exhaustion issues like 'Too many open files' (file descriptor limits) in Linux containers?",
+    "subject" : "Backend Engineering",
+    "topic" : "Production Diagnostics & Performance Tuning",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "diagnostics", "thread dump", "heap dump", "profiling", "async-profiler", "production diagnostics & performance tuning" ],
+    "criteria" : [ "analyzes thread dumps for deadlocks, thread starvation, and lock contention", "inspects heap dumps and dominator trees to identify memory leaks", "profiles production bottlenecks using async-profiler and JFR telemetry" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-241",
+    "question" : "How do you analyze a thread dump to identify a multi-thread deadlock situation where two threads hold locks the other needs?",
+    "subject" : "Backend Engineering",
+    "topic" : "Production Diagnostics & Performance Tuning",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "diagnostics", "thread dump", "heap dump", "profiling", "async-profiler", "production diagnostics & performance tuning" ],
+    "criteria" : [ "analyzes thread dumps for deadlocks, thread starvation, and lock contention", "inspects heap dumps and dominator trees to identify memory leaks", "profiles production bottlenecks using async-profiler and JFR telemetry" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-242",
+    "question" : "Explain how to use Eclipse MAT (Memory Analyzer Tool) to inspect dominator trees, shallow heap, and retained heap to identify leak suspects.",
+    "subject" : "Backend Engineering",
+    "topic" : "Production Diagnostics & Performance Tuning",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "diagnostics", "thread dump", "heap dump", "profiling", "async-profiler", "production diagnostics & performance tuning" ],
+    "criteria" : [ "analyzes thread dumps for deadlocks, thread starvation, and lock contention", "inspects heap dumps and dominator trees to identify memory leaks", "profiles production bottlenecks using async-profiler and JFR telemetry" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-243",
+    "question" : "How do you profile production Java CPU and memory allocation bottlenecks using `async-profiler` without causing safepoint bias?",
+    "subject" : "Backend Engineering",
+    "topic" : "Production Diagnostics & Performance Tuning",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "diagnostics", "thread dump", "heap dump", "profiling", "async-profiler", "production diagnostics & performance tuning" ],
+    "criteria" : [ "analyzes thread dumps for deadlocks, thread starvation, and lock contention", "inspects heap dumps and dominator trees to identify memory leaks", "profiles production bottlenecks using async-profiler and JFR telemetry" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-244",
+    "question" : "Diagnose a situation where an application experiences high latency and CPU spikes due to excessive string concatenations or boxing/unboxing in tight loops.",
+    "subject" : "Backend Engineering",
+    "topic" : "Production Diagnostics & Performance Tuning",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "diagnostics", "thread dump", "heap dump", "profiling", "async-profiler", "production diagnostics & performance tuning" ],
+    "criteria" : [ "analyzes thread dumps for deadlocks, thread starvation, and lock contention", "inspects heap dumps and dominator trees to identify memory leaks", "profiles production bottlenecks using async-profiler and JFR telemetry" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-245",
+    "question" : "Analyze a complex real-world production incident where a microservice's memory grows steadily by 200MB per hour until crashing with OutOfMemoryError.",
+    "subject" : "Backend Engineering",
+    "topic" : "Production Diagnostics & Performance Tuning",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "diagnostics", "thread dump", "heap dump", "profiling", "async-profiler", "production diagnostics & performance tuning" ],
+    "criteria" : [ "analyzes thread dumps for deadlocks, thread starvation, and lock contention", "inspects heap dumps and dominator trees to identify memory leaks", "profiles production bottlenecks using async-profiler and JFR telemetry" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-246",
+    "question" : "Diagnose a live production stall where all Tomcat request threads are stuck in `WAITING` state with zero CPU activity and unresponsive health probes.",
+    "subject" : "Backend Engineering",
+    "topic" : "Production Diagnostics & Performance Tuning",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "diagnostics", "thread dump", "heap dump", "profiling", "async-profiler", "production diagnostics & performance tuning" ],
+    "criteria" : [ "analyzes thread dumps for deadlocks, thread starvation, and lock contention", "inspects heap dumps and dominator trees to identify memory leaks", "profiles production bottlenecks using async-profiler and JFR telemetry" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-247",
+    "question" : "Evaluate the performance gains of optimizing an enterprise financial calculation pipeline using primitive collections (FastUtil/Trove) and off-heap memory.",
+    "subject" : "Backend Engineering",
+    "topic" : "Production Diagnostics & Performance Tuning",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "diagnostics", "thread dump", "heap dump", "profiling", "async-profiler", "production diagnostics & performance tuning" ],
+    "criteria" : [ "analyzes thread dumps for deadlocks, thread starvation, and lock contention", "inspects heap dumps and dominator trees to identify memory leaks", "profiles production bottlenecks using async-profiler and JFR telemetry" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-248",
+    "question" : "Design an automated self-healing diagnostic daemon that detects JVM thread lockups, captures thread dumps, and initiates graceful restarts in cloud pods.",
+    "subject" : "Backend Engineering",
+    "topic" : "Production Diagnostics & Performance Tuning",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "diagnostics", "thread dump", "heap dump", "profiling", "async-profiler", "production diagnostics & performance tuning" ],
+    "criteria" : [ "analyzes thread dumps for deadlocks, thread starvation, and lock contention", "inspects heap dumps and dominator trees to identify memory leaks", "profiles production bottlenecks using async-profiler and JFR telemetry" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-249",
+    "question" : "How do you benchmark and validate backend latency improvements using JMH (Java Microbenchmark Harness) while avoiding JIT dead-code elimination traps?",
+    "subject" : "Backend Engineering",
+    "topic" : "Production Diagnostics & Performance Tuning",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "diagnostics", "thread dump", "heap dump", "profiling", "async-profiler", "production diagnostics & performance tuning" ],
+    "criteria" : [ "analyzes thread dumps for deadlocks, thread starvation, and lock contention", "inspects heap dumps and dominator trees to identify memory leaks", "profiles production bottlenecks using async-profiler and JFR telemetry" ],
+    "follow_up" : true
+  }, {
+    "id" : "BACK-250",
+    "question" : "Analyze a complex real-world production incident where a microservice's memory grows steadily by 200MB per hour until crashing with OutOfMemoryError.",
+    "subject" : "Backend Engineering",
+    "topic" : "Production Diagnostics & Performance Tuning",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "diagnostics", "thread dump", "heap dump", "profiling", "async-profiler", "production diagnostics & performance tuning" ],
+    "criteria" : [ "analyzes thread dumps for deadlocks, thread starvation, and lock contention", "inspects heap dumps and dominator trees to identify memory leaks", "profiles production bottlenecks using async-profiler and JFR telemetry" ],
+    "follow_up" : true
+  } ]
+}

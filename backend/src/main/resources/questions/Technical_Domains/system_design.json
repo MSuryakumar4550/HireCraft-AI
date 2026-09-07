@@ -1,0 +1,2507 @@
+{
+  "subject" : "System Design",
+  "batch" : "combined",
+  "version" : "1.0",
+  "language" : null,
+  "questions" : [ {
+    "id" : "SYS-001",
+    "question" : "What is the difference between horizontal and vertical scaling, and when should you choose each in system design?",
+    "subject" : "System Design",
+    "topic" : "Scalability & Load Balancing",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "load balancing", "horizontal scaling", "consistent hashing", "reverse proxy", "health checks", "scalability & load balancing" ],
+    "criteria" : [ "distinguishes horizontal vs vertical scaling trade-offs", "explains load distribution algorithms and hashing techniques", "discusses high-scale failover and resilience mechanisms" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-002",
+    "question" : "How does a Layer 4 load balancer differ from a Layer 7 load balancer in routing traffic?",
+    "subject" : "System Design",
+    "topic" : "Scalability & Load Balancing",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "load balancing", "horizontal scaling", "consistent hashing", "reverse proxy", "health checks", "scalability & load balancing" ],
+    "criteria" : [ "distinguishes horizontal vs vertical scaling trade-offs", "explains load distribution algorithms and hashing techniques", "discusses high-scale failover and resilience mechanisms" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-003",
+    "question" : "What is consistent hashing, and how does it prevent massive cache misses when nodes are added or removed?",
+    "subject" : "System Design",
+    "topic" : "Scalability & Load Balancing",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "load balancing", "horizontal scaling", "consistent hashing", "reverse proxy", "health checks", "scalability & load balancing" ],
+    "criteria" : [ "distinguishes horizontal vs vertical scaling trade-offs", "explains load distribution algorithms and hashing techniques", "discusses high-scale failover and resilience mechanisms" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-004",
+    "question" : "How do reverse proxies like NGINX and Envoy improve system availability and security?",
+    "subject" : "System Design",
+    "topic" : "Scalability & Load Balancing",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "load balancing", "horizontal scaling", "consistent hashing", "reverse proxy", "health checks", "scalability & load balancing" ],
+    "criteria" : [ "distinguishes horizontal vs vertical scaling trade-offs", "explains load distribution algorithms and hashing techniques", "discusses high-scale failover and resilience mechanisms" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-005",
+    "question" : "What are active-active and active-passive load balancing architectures, and what are their trade-offs?",
+    "subject" : "System Design",
+    "topic" : "Scalability & Load Balancing",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "load balancing", "horizontal scaling", "consistent hashing", "reverse proxy", "health checks", "scalability & load balancing" ],
+    "criteria" : [ "distinguishes horizontal vs vertical scaling trade-offs", "explains load distribution algorithms and hashing techniques", "discusses high-scale failover and resilience mechanisms" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-006",
+    "question" : "How do health check mechanisms prevent load balancers from routing traffic to degraded application servers?",
+    "subject" : "System Design",
+    "topic" : "Scalability & Load Balancing",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "load balancing", "horizontal scaling", "consistent hashing", "reverse proxy", "health checks", "scalability & load balancing" ],
+    "criteria" : [ "distinguishes horizontal vs vertical scaling trade-offs", "explains load distribution algorithms and hashing techniques", "discusses high-scale failover and resilience mechanisms" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-007",
+    "question" : "What is Anycast routing, and how is it utilized in distributed load balancing across geographically distant regions?",
+    "subject" : "System Design",
+    "topic" : "Scalability & Load Balancing",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "load balancing", "horizontal scaling", "consistent hashing", "reverse proxy", "health checks", "scalability & load balancing" ],
+    "criteria" : [ "distinguishes horizontal vs vertical scaling trade-offs", "explains load distribution algorithms and hashing techniques", "discusses high-scale failover and resilience mechanisms" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-008",
+    "question" : "What is the difference between horizontal and vertical scaling, and when should you choose each in system design?",
+    "subject" : "System Design",
+    "topic" : "Scalability & Load Balancing",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "load balancing", "horizontal scaling", "consistent hashing", "reverse proxy", "health checks", "scalability & load balancing" ],
+    "criteria" : [ "distinguishes horizontal vs vertical scaling trade-offs", "explains load distribution algorithms and hashing techniques", "discusses high-scale failover and resilience mechanisms" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-009",
+    "question" : "How does a Layer 4 load balancer differ from a Layer 7 load balancer in routing traffic?",
+    "subject" : "System Design",
+    "topic" : "Scalability & Load Balancing",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "load balancing", "horizontal scaling", "consistent hashing", "reverse proxy", "health checks", "scalability & load balancing" ],
+    "criteria" : [ "distinguishes horizontal vs vertical scaling trade-offs", "explains load distribution algorithms and hashing techniques", "discusses high-scale failover and resilience mechanisms" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-010",
+    "question" : "What is consistent hashing, and how does it prevent massive cache misses when nodes are added or removed?",
+    "subject" : "System Design",
+    "topic" : "Scalability & Load Balancing",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "load balancing", "horizontal scaling", "consistent hashing", "reverse proxy", "health checks", "scalability & load balancing" ],
+    "criteria" : [ "distinguishes horizontal vs vertical scaling trade-offs", "explains load distribution algorithms and hashing techniques", "discusses high-scale failover and resilience mechanisms" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-011",
+    "question" : "How does round-robin load balancing compare with least-connections and weighted response time algorithms under varying request payloads?",
+    "subject" : "System Design",
+    "topic" : "Scalability & Load Balancing",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "load balancing", "horizontal scaling", "consistent hashing", "reverse proxy", "health checks", "scalability & load balancing" ],
+    "criteria" : [ "distinguishes horizontal vs vertical scaling trade-offs", "explains load distribution algorithms and hashing techniques", "discusses high-scale failover and resilience mechanisms" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-012",
+    "question" : "In a microservices deployment, what are the trade-offs between client-side load balancing and server-side load balancing?",
+    "subject" : "System Design",
+    "topic" : "Scalability & Load Balancing",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "load balancing", "horizontal scaling", "consistent hashing", "reverse proxy", "health checks", "scalability & load balancing" ],
+    "criteria" : [ "distinguishes horizontal vs vertical scaling trade-offs", "explains load distribution algorithms and hashing techniques", "discusses high-scale failover and resilience mechanisms" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-013",
+    "question" : "How do you design a graceful degradation strategy when 40% of your backend application cluster suddenly crashes?",
+    "subject" : "System Design",
+    "topic" : "Scalability & Load Balancing",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "load balancing", "horizontal scaling", "consistent hashing", "reverse proxy", "health checks", "scalability & load balancing" ],
+    "criteria" : [ "distinguishes horizontal vs vertical scaling trade-offs", "explains load distribution algorithms and hashing techniques", "discusses high-scale failover and resilience mechanisms" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-014",
+    "question" : "Describe how connection pooling and HTTP keep-alive interact with reverse proxies under high-concurrency workloads.",
+    "subject" : "System Design",
+    "topic" : "Scalability & Load Balancing",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "load balancing", "horizontal scaling", "consistent hashing", "reverse proxy", "health checks", "scalability & load balancing" ],
+    "criteria" : [ "distinguishes horizontal vs vertical scaling trade-offs", "explains load distribution algorithms and hashing techniques", "discusses high-scale failover and resilience mechanisms" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-015",
+    "question" : "How would you design a load balancing layer that gracefully handles a sudden 10x traffic spike during a flash sale?",
+    "subject" : "System Design",
+    "topic" : "Scalability & Load Balancing",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "load balancing", "horizontal scaling", "consistent hashing", "reverse proxy", "health checks", "scalability & load balancing" ],
+    "criteria" : [ "distinguishes horizontal vs vertical scaling trade-offs", "explains load distribution algorithms and hashing techniques", "discusses high-scale failover and resilience mechanisms" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-016",
+    "question" : "Explain how consistent hashing with virtual nodes mitigates hotspotting and uneven load distribution across cache servers.",
+    "subject" : "System Design",
+    "topic" : "Scalability & Load Balancing",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "load balancing", "horizontal scaling", "consistent hashing", "reverse proxy", "health checks", "scalability & load balancing" ],
+    "criteria" : [ "distinguishes horizontal vs vertical scaling trade-offs", "explains load distribution algorithms and hashing techniques", "discusses high-scale failover and resilience mechanisms" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-017",
+    "question" : "How do you handle sticky sessions (session affinity) in a distributed environment without compromising horizontal scalability?",
+    "subject" : "System Design",
+    "topic" : "Scalability & Load Balancing",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "load balancing", "horizontal scaling", "consistent hashing", "reverse proxy", "health checks", "scalability & load balancing" ],
+    "criteria" : [ "distinguishes horizontal vs vertical scaling trade-offs", "explains load distribution algorithms and hashing techniques", "discusses high-scale failover and resilience mechanisms" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-018",
+    "question" : "How does round-robin load balancing compare with least-connections and weighted response time algorithms under varying request payloads?",
+    "subject" : "System Design",
+    "topic" : "Scalability & Load Balancing",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "load balancing", "horizontal scaling", "consistent hashing", "reverse proxy", "health checks", "scalability & load balancing" ],
+    "criteria" : [ "distinguishes horizontal vs vertical scaling trade-offs", "explains load distribution algorithms and hashing techniques", "discusses high-scale failover and resilience mechanisms" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-019",
+    "question" : "In a microservices deployment, what are the trade-offs between client-side load balancing and server-side load balancing?",
+    "subject" : "System Design",
+    "topic" : "Scalability & Load Balancing",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "load balancing", "horizontal scaling", "consistent hashing", "reverse proxy", "health checks", "scalability & load balancing" ],
+    "criteria" : [ "distinguishes horizontal vs vertical scaling trade-offs", "explains load distribution algorithms and hashing techniques", "discusses high-scale failover and resilience mechanisms" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-020",
+    "question" : "How do you design a graceful degradation strategy when 40% of your backend application cluster suddenly crashes?",
+    "subject" : "System Design",
+    "topic" : "Scalability & Load Balancing",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "load balancing", "horizontal scaling", "consistent hashing", "reverse proxy", "health checks", "scalability & load balancing" ],
+    "criteria" : [ "distinguishes horizontal vs vertical scaling trade-offs", "explains load distribution algorithms and hashing techniques", "discusses high-scale failover and resilience mechanisms" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-021",
+    "question" : "Describe how connection pooling and HTTP keep-alive interact with reverse proxies under high-concurrency workloads.",
+    "subject" : "System Design",
+    "topic" : "Scalability & Load Balancing",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "load balancing", "horizontal scaling", "consistent hashing", "reverse proxy", "health checks", "scalability & load balancing" ],
+    "criteria" : [ "distinguishes horizontal vs vertical scaling trade-offs", "explains load distribution algorithms and hashing techniques", "discusses high-scale failover and resilience mechanisms" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-022",
+    "question" : "How would you design a load balancing layer that gracefully handles a sudden 10x traffic spike during a flash sale?",
+    "subject" : "System Design",
+    "topic" : "Scalability & Load Balancing",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "load balancing", "horizontal scaling", "consistent hashing", "reverse proxy", "health checks", "scalability & load balancing" ],
+    "criteria" : [ "distinguishes horizontal vs vertical scaling trade-offs", "explains load distribution algorithms and hashing techniques", "discusses high-scale failover and resilience mechanisms" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-023",
+    "question" : "Explain how consistent hashing with virtual nodes mitigates hotspotting and uneven load distribution across cache servers.",
+    "subject" : "System Design",
+    "topic" : "Scalability & Load Balancing",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "load balancing", "horizontal scaling", "consistent hashing", "reverse proxy", "health checks", "scalability & load balancing" ],
+    "criteria" : [ "distinguishes horizontal vs vertical scaling trade-offs", "explains load distribution algorithms and hashing techniques", "discusses high-scale failover and resilience mechanisms" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-024",
+    "question" : "How do you handle sticky sessions (session affinity) in a distributed environment without compromising horizontal scalability?",
+    "subject" : "System Design",
+    "topic" : "Scalability & Load Balancing",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "load balancing", "horizontal scaling", "consistent hashing", "reverse proxy", "health checks", "scalability & load balancing" ],
+    "criteria" : [ "distinguishes horizontal vs vertical scaling trade-offs", "explains load distribution algorithms and hashing techniques", "discusses high-scale failover and resilience mechanisms" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-025",
+    "question" : "How does round-robin load balancing compare with least-connections and weighted response time algorithms under varying request payloads?",
+    "subject" : "System Design",
+    "topic" : "Scalability & Load Balancing",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "load balancing", "horizontal scaling", "consistent hashing", "reverse proxy", "health checks", "scalability & load balancing" ],
+    "criteria" : [ "distinguishes horizontal vs vertical scaling trade-offs", "explains load distribution algorithms and hashing techniques", "discusses high-scale failover and resilience mechanisms" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-026",
+    "question" : "In a microservices deployment, what are the trade-offs between client-side load balancing and server-side load balancing?",
+    "subject" : "System Design",
+    "topic" : "Scalability & Load Balancing",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "load balancing", "horizontal scaling", "consistent hashing", "reverse proxy", "health checks", "scalability & load balancing" ],
+    "criteria" : [ "distinguishes horizontal vs vertical scaling trade-offs", "explains load distribution algorithms and hashing techniques", "discusses high-scale failover and resilience mechanisms" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-027",
+    "question" : "Explain the cascading failure phenomenon in distributed systems and how to architect adaptive shedding and circuit breaking to prevent total outage.",
+    "subject" : "System Design",
+    "topic" : "Scalability & Load Balancing",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "load balancing", "horizontal scaling", "consistent hashing", "reverse proxy", "health checks", "scalability & load balancing" ],
+    "criteria" : [ "distinguishes horizontal vs vertical scaling trade-offs", "explains load distribution algorithms and hashing techniques", "discusses high-scale failover and resilience mechanisms" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-028",
+    "question" : "Design a real-time rate limiter operating at 500,000 requests per second across a globally distributed fleet using consistent hashing.",
+    "subject" : "System Design",
+    "topic" : "Scalability & Load Balancing",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "load balancing", "horizontal scaling", "consistent hashing", "reverse proxy", "health checks", "scalability & load balancing" ],
+    "criteria" : [ "distinguishes horizontal vs vertical scaling trade-offs", "explains load distribution algorithms and hashing techniques", "discusses high-scale failover and resilience mechanisms" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-029",
+    "question" : "How do you prevent DNS caching from impeding rapid failover during multi-region disaster recovery scenarios?",
+    "subject" : "System Design",
+    "topic" : "Scalability & Load Balancing",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "load balancing", "horizontal scaling", "consistent hashing", "reverse proxy", "health checks", "scalability & load balancing" ],
+    "criteria" : [ "distinguishes horizontal vs vertical scaling trade-offs", "explains load distribution algorithms and hashing techniques", "discusses high-scale failover and resilience mechanisms" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-030",
+    "question" : "Analyze the operational trade-offs between Envoy Service Mesh sidecars and central API Gateways for cross-cluster traffic routing.",
+    "subject" : "System Design",
+    "topic" : "Scalability & Load Balancing",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "load balancing", "horizontal scaling", "consistent hashing", "reverse proxy", "health checks", "scalability & load balancing" ],
+    "criteria" : [ "distinguishes horizontal vs vertical scaling trade-offs", "explains load distribution algorithms and hashing techniques", "discusses high-scale failover and resilience mechanisms" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-031",
+    "question" : "How do you architect a global traffic management system across multi-region cloud deployments with sub-50ms failover?",
+    "subject" : "System Design",
+    "topic" : "Scalability & Load Balancing",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "load balancing", "horizontal scaling", "consistent hashing", "reverse proxy", "health checks", "scalability & load balancing" ],
+    "criteria" : [ "distinguishes horizontal vs vertical scaling trade-offs", "explains load distribution algorithms and hashing techniques", "discusses high-scale failover and resilience mechanisms" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-032",
+    "question" : "Explain the cascading failure phenomenon in distributed systems and how to architect adaptive shedding and circuit breaking to prevent total outage.",
+    "subject" : "System Design",
+    "topic" : "Scalability & Load Balancing",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "load balancing", "horizontal scaling", "consistent hashing", "reverse proxy", "health checks", "scalability & load balancing" ],
+    "criteria" : [ "distinguishes horizontal vs vertical scaling trade-offs", "explains load distribution algorithms and hashing techniques", "discusses high-scale failover and resilience mechanisms" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-033",
+    "question" : "What is the core difference between a monolithic architecture and a microservices architecture?",
+    "subject" : "System Design",
+    "topic" : "Microservices & Service Discovery",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "microservices", "service discovery", "api gateway", "circuit breaker", "saga pattern", "microservices & service discovery" ],
+    "criteria" : [ "explains microservice decoupling and service boundary principles", "analyzes distributed transaction management and saga patterns", "identifies failure isolation and observability strategies" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-034",
+    "question" : "What is service discovery, and why is it necessary in dynamic cloud environments?",
+    "subject" : "System Design",
+    "topic" : "Microservices & Service Discovery",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "microservices", "service discovery", "api gateway", "circuit breaker", "saga pattern", "microservices & service discovery" ],
+    "criteria" : [ "explains microservice decoupling and service boundary principles", "analyzes distributed transaction management and saga patterns", "identifies failure isolation and observability strategies" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-035",
+    "question" : "What role does an API Gateway play in microservice architectures, and what functions does it aggregate?",
+    "subject" : "System Design",
+    "topic" : "Microservices & Service Discovery",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "microservices", "service discovery", "api gateway", "circuit breaker", "saga pattern", "microservices & service discovery" ],
+    "criteria" : [ "explains microservice decoupling and service boundary principles", "analyzes distributed transaction management and saga patterns", "identifies failure isolation and observability strategies" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-036",
+    "question" : "What is the Circuit Breaker pattern, and what states does it transition through?",
+    "subject" : "System Design",
+    "topic" : "Microservices & Service Discovery",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "microservices", "service discovery", "api gateway", "circuit breaker", "saga pattern", "microservices & service discovery" ],
+    "criteria" : [ "explains microservice decoupling and service boundary principles", "analyzes distributed transaction management and saga patterns", "identifies failure isolation and observability strategies" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-037",
+    "question" : "What is the Bulkhead pattern in microservices, and how does it isolate resource failure?",
+    "subject" : "System Design",
+    "topic" : "Microservices & Service Discovery",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "microservices", "service discovery", "api gateway", "circuit breaker", "saga pattern", "microservices & service discovery" ],
+    "criteria" : [ "explains microservice decoupling and service boundary principles", "analyzes distributed transaction management and saga patterns", "identifies failure isolation and observability strategies" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-038",
+    "question" : "Explain the difference between synchronous communication (REST/gRPC) and asynchronous messaging in microservices.",
+    "subject" : "System Design",
+    "topic" : "Microservices & Service Discovery",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "microservices", "service discovery", "api gateway", "circuit breaker", "saga pattern", "microservices & service discovery" ],
+    "criteria" : [ "explains microservice decoupling and service boundary principles", "analyzes distributed transaction management and saga patterns", "identifies failure isolation and observability strategies" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-039",
+    "question" : "What is the Sidecar design pattern, and how is it used in modern cloud-native service meshes?",
+    "subject" : "System Design",
+    "topic" : "Microservices & Service Discovery",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "microservices", "service discovery", "api gateway", "circuit breaker", "saga pattern", "microservices & service discovery" ],
+    "criteria" : [ "explains microservice decoupling and service boundary principles", "analyzes distributed transaction management and saga patterns", "identifies failure isolation and observability strategies" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-040",
+    "question" : "What is the core difference between a monolithic architecture and a microservices architecture?",
+    "subject" : "System Design",
+    "topic" : "Microservices & Service Discovery",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "microservices", "service discovery", "api gateway", "circuit breaker", "saga pattern", "microservices & service discovery" ],
+    "criteria" : [ "explains microservice decoupling and service boundary principles", "analyzes distributed transaction management and saga patterns", "identifies failure isolation and observability strategies" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-041",
+    "question" : "What is service discovery, and why is it necessary in dynamic cloud environments?",
+    "subject" : "System Design",
+    "topic" : "Microservices & Service Discovery",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "microservices", "service discovery", "api gateway", "circuit breaker", "saga pattern", "microservices & service discovery" ],
+    "criteria" : [ "explains microservice decoupling and service boundary principles", "analyzes distributed transaction management and saga patterns", "identifies failure isolation and observability strategies" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-042",
+    "question" : "What role does an API Gateway play in microservice architectures, and what functions does it aggregate?",
+    "subject" : "System Design",
+    "topic" : "Microservices & Service Discovery",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "microservices", "service discovery", "api gateway", "circuit breaker", "saga pattern", "microservices & service discovery" ],
+    "criteria" : [ "explains microservice decoupling and service boundary principles", "analyzes distributed transaction management and saga patterns", "identifies failure isolation and observability strategies" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-043",
+    "question" : "How do you handle database decomposition when breaking a legacy relational monolith into isolated microservice databases?",
+    "subject" : "System Design",
+    "topic" : "Microservices & Service Discovery",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "microservices", "service discovery", "api gateway", "circuit breaker", "saga pattern", "microservices & service discovery" ],
+    "criteria" : [ "explains microservice decoupling and service boundary principles", "analyzes distributed transaction management and saga patterns", "identifies failure isolation and observability strategies" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-044",
+    "question" : "Explain how distributed tracing with tools like OpenTelemetry and Jaeger tracks request flows across asynchronous service boundaries.",
+    "subject" : "System Design",
+    "topic" : "Microservices & Service Discovery",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "microservices", "service discovery", "api gateway", "circuit breaker", "saga pattern", "microservices & service discovery" ],
+    "criteria" : [ "explains microservice decoupling and service boundary principles", "analyzes distributed transaction management and saga patterns", "identifies failure isolation and observability strategies" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-045",
+    "question" : "How do you implement the Backend for Frontend (BFF) pattern to optimize network payloads for mobile vs web clients?",
+    "subject" : "System Design",
+    "topic" : "Microservices & Service Discovery",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "microservices", "service discovery", "api gateway", "circuit breaker", "saga pattern", "microservices & service discovery" ],
+    "criteria" : [ "explains microservice decoupling and service boundary principles", "analyzes distributed transaction management and saga patterns", "identifies failure isolation and observability strategies" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-046",
+    "question" : "What strategies ensure data consistency between microservices when updating an order status and inventory count concurrently?",
+    "subject" : "System Design",
+    "topic" : "Microservices & Service Discovery",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "microservices", "service discovery", "api gateway", "circuit breaker", "saga pattern", "microservices & service discovery" ],
+    "criteria" : [ "explains microservice decoupling and service boundary principles", "analyzes distributed transaction management and saga patterns", "identifies failure isolation and observability strategies" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-047",
+    "question" : "How does the Saga pattern manage distributed transactions across multiple microservices without 2-phase commit?",
+    "subject" : "System Design",
+    "topic" : "Microservices & Service Discovery",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "microservices", "service discovery", "api gateway", "circuit breaker", "saga pattern", "microservices & service discovery" ],
+    "criteria" : [ "explains microservice decoupling and service boundary principles", "analyzes distributed transaction management and saga patterns", "identifies failure isolation and observability strategies" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-048",
+    "question" : "Compare choreography-based sagas with orchestration-based sagas in terms of coupling, observability, and failure recovery.",
+    "subject" : "System Design",
+    "topic" : "Microservices & Service Discovery",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "microservices", "service discovery", "api gateway", "circuit breaker", "saga pattern", "microservices & service discovery" ],
+    "criteria" : [ "explains microservice decoupling and service boundary principles", "analyzes distributed transaction management and saga patterns", "identifies failure isolation and observability strategies" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-049",
+    "question" : "How does a service mesh like Istio decouple operational concerns (mTLS, telemetry, routing) from business application code?",
+    "subject" : "System Design",
+    "topic" : "Microservices & Service Discovery",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "microservices", "service discovery", "api gateway", "circuit breaker", "saga pattern", "microservices & service discovery" ],
+    "criteria" : [ "explains microservice decoupling and service boundary principles", "analyzes distributed transaction management and saga patterns", "identifies failure isolation and observability strategies" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-050",
+    "question" : "How do you handle database decomposition when breaking a legacy relational monolith into isolated microservice databases?",
+    "subject" : "System Design",
+    "topic" : "Microservices & Service Discovery",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "microservices", "service discovery", "api gateway", "circuit breaker", "saga pattern", "microservices & service discovery" ],
+    "criteria" : [ "explains microservice decoupling and service boundary principles", "analyzes distributed transaction management and saga patterns", "identifies failure isolation and observability strategies" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-051",
+    "question" : "Explain how distributed tracing with tools like OpenTelemetry and Jaeger tracks request flows across asynchronous service boundaries.",
+    "subject" : "System Design",
+    "topic" : "Microservices & Service Discovery",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "microservices", "service discovery", "api gateway", "circuit breaker", "saga pattern", "microservices & service discovery" ],
+    "criteria" : [ "explains microservice decoupling and service boundary principles", "analyzes distributed transaction management and saga patterns", "identifies failure isolation and observability strategies" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-052",
+    "question" : "How do you implement the Backend for Frontend (BFF) pattern to optimize network payloads for mobile vs web clients?",
+    "subject" : "System Design",
+    "topic" : "Microservices & Service Discovery",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "microservices", "service discovery", "api gateway", "circuit breaker", "saga pattern", "microservices & service discovery" ],
+    "criteria" : [ "explains microservice decoupling and service boundary principles", "analyzes distributed transaction management and saga patterns", "identifies failure isolation and observability strategies" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-053",
+    "question" : "What strategies ensure data consistency between microservices when updating an order status and inventory count concurrently?",
+    "subject" : "System Design",
+    "topic" : "Microservices & Service Discovery",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "microservices", "service discovery", "api gateway", "circuit breaker", "saga pattern", "microservices & service discovery" ],
+    "criteria" : [ "explains microservice decoupling and service boundary principles", "analyzes distributed transaction management and saga patterns", "identifies failure isolation and observability strategies" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-054",
+    "question" : "How does the Saga pattern manage distributed transactions across multiple microservices without 2-phase commit?",
+    "subject" : "System Design",
+    "topic" : "Microservices & Service Discovery",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "microservices", "service discovery", "api gateway", "circuit breaker", "saga pattern", "microservices & service discovery" ],
+    "criteria" : [ "explains microservice decoupling and service boundary principles", "analyzes distributed transaction management and saga patterns", "identifies failure isolation and observability strategies" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-055",
+    "question" : "Compare choreography-based sagas with orchestration-based sagas in terms of coupling, observability, and failure recovery.",
+    "subject" : "System Design",
+    "topic" : "Microservices & Service Discovery",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "microservices", "service discovery", "api gateway", "circuit breaker", "saga pattern", "microservices & service discovery" ],
+    "criteria" : [ "explains microservice decoupling and service boundary principles", "analyzes distributed transaction management and saga patterns", "identifies failure isolation and observability strategies" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-056",
+    "question" : "How does a service mesh like Istio decouple operational concerns (mTLS, telemetry, routing) from business application code?",
+    "subject" : "System Design",
+    "topic" : "Microservices & Service Discovery",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "microservices", "service discovery", "api gateway", "circuit breaker", "saga pattern", "microservices & service discovery" ],
+    "criteria" : [ "explains microservice decoupling and service boundary principles", "analyzes distributed transaction management and saga patterns", "identifies failure isolation and observability strategies" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-057",
+    "question" : "How do you handle database decomposition when breaking a legacy relational monolith into isolated microservice databases?",
+    "subject" : "System Design",
+    "topic" : "Microservices & Service Discovery",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "microservices", "service discovery", "api gateway", "circuit breaker", "saga pattern", "microservices & service discovery" ],
+    "criteria" : [ "explains microservice decoupling and service boundary principles", "analyzes distributed transaction management and saga patterns", "identifies failure isolation and observability strategies" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-058",
+    "question" : "Explain how distributed tracing with tools like OpenTelemetry and Jaeger tracks request flows across asynchronous service boundaries.",
+    "subject" : "System Design",
+    "topic" : "Microservices & Service Discovery",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "microservices", "service discovery", "api gateway", "circuit breaker", "saga pattern", "microservices & service discovery" ],
+    "criteria" : [ "explains microservice decoupling and service boundary principles", "analyzes distributed transaction management and saga patterns", "identifies failure isolation and observability strategies" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-059",
+    "question" : "Analyze the trade-offs of microservice granularity: how do you detect when a system has been over-partitioned into 'nano-services'?",
+    "subject" : "System Design",
+    "topic" : "Microservices & Service Discovery",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "microservices", "service discovery", "api gateway", "circuit breaker", "saga pattern", "microservices & service discovery" ],
+    "criteria" : [ "explains microservice decoupling and service boundary principles", "analyzes distributed transaction management and saga patterns", "identifies failure isolation and observability strategies" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-060",
+    "question" : "Architect an zero-downtime database schema migration strategy across 20 independent microservices sharing foreign key dependencies.",
+    "subject" : "System Design",
+    "topic" : "Microservices & Service Discovery",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "microservices", "service discovery", "api gateway", "circuit breaker", "saga pattern", "microservices & service discovery" ],
+    "criteria" : [ "explains microservice decoupling and service boundary principles", "analyzes distributed transaction management and saga patterns", "identifies failure isolation and observability strategies" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-061",
+    "question" : "How do you prevent distributed deadlocks and infinite retry storms in complex event-driven microservice graphs?",
+    "subject" : "System Design",
+    "topic" : "Microservices & Service Discovery",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "microservices", "service discovery", "api gateway", "circuit breaker", "saga pattern", "microservices & service discovery" ],
+    "criteria" : [ "explains microservice decoupling and service boundary principles", "analyzes distributed transaction management and saga patterns", "identifies failure isolation and observability strategies" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-062",
+    "question" : "Design a resilient service discovery control plane capable of registering 50,000 ephemeral container instances per minute.",
+    "subject" : "System Design",
+    "topic" : "Microservices & Service Discovery",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "microservices", "service discovery", "api gateway", "circuit breaker", "saga pattern", "microservices & service discovery" ],
+    "criteria" : [ "explains microservice decoupling and service boundary principles", "analyzes distributed transaction management and saga patterns", "identifies failure isolation and observability strategies" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-063",
+    "question" : "How do you design an enterprise-grade Saga orchestrator that handles compensating transactions when external payment gateways time out?",
+    "subject" : "System Design",
+    "topic" : "Microservices & Service Discovery",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "microservices", "service discovery", "api gateway", "circuit breaker", "saga pattern", "microservices & service discovery" ],
+    "criteria" : [ "explains microservice decoupling and service boundary principles", "analyzes distributed transaction management and saga patterns", "identifies failure isolation and observability strategies" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-064",
+    "question" : "Analyze the trade-offs of microservice granularity: how do you detect when a system has been over-partitioned into 'nano-services'?",
+    "subject" : "System Design",
+    "topic" : "Microservices & Service Discovery",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "microservices", "service discovery", "api gateway", "circuit breaker", "saga pattern", "microservices & service discovery" ],
+    "criteria" : [ "explains microservice decoupling and service boundary principles", "analyzes distributed transaction management and saga patterns", "identifies failure isolation and observability strategies" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-065",
+    "question" : "What is the purpose of caching in high-scale systems, and what layers can caching be applied to?",
+    "subject" : "System Design",
+    "topic" : "Distributed Caching",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "caching", "cache-aside", "write-through", "redis", "cache invalidation", "distributed caching" ],
+    "criteria" : [ "contrasts cache patterns (cache-aside, write-through, write-behind)", "addresses cache invalidation, stampede, and penetration risks", "evaluates distributed caching consistency and operational trade-offs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-066",
+    "question" : "Explain the Cache-Aside (Lazy Loading) pattern and how reads and writes are processed.",
+    "subject" : "System Design",
+    "topic" : "Distributed Caching",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "caching", "cache-aside", "write-through", "redis", "cache invalidation", "distributed caching" ],
+    "criteria" : [ "contrasts cache patterns (cache-aside, write-through, write-behind)", "addresses cache invalidation, stampede, and penetration risks", "evaluates distributed caching consistency and operational trade-offs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-067",
+    "question" : "What is the difference between Write-Through and Write-Behind (Write-Back) caching strategies?",
+    "subject" : "System Design",
+    "topic" : "Distributed Caching",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "caching", "cache-aside", "write-through", "redis", "cache invalidation", "distributed caching" ],
+    "criteria" : [ "contrasts cache patterns (cache-aside, write-through, write-behind)", "addresses cache invalidation, stampede, and penetration risks", "evaluates distributed caching consistency and operational trade-offs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-068",
+    "question" : "What is cache eviction, and how do LRU (Least Recently Used) and LFU (Least Frequently Used) policies operate?",
+    "subject" : "System Design",
+    "topic" : "Distributed Caching",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "caching", "cache-aside", "write-through", "redis", "cache invalidation", "distributed caching" ],
+    "criteria" : [ "contrasts cache patterns (cache-aside, write-through, write-behind)", "addresses cache invalidation, stampede, and penetration risks", "evaluates distributed caching consistency and operational trade-offs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-069",
+    "question" : "What is a cache stampede (thundering herd problem), and why does it occur when keys expire?",
+    "subject" : "System Design",
+    "topic" : "Distributed Caching",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "caching", "cache-aside", "write-through", "redis", "cache invalidation", "distributed caching" ],
+    "criteria" : [ "contrasts cache patterns (cache-aside, write-through, write-behind)", "addresses cache invalidation, stampede, and penetration risks", "evaluates distributed caching consistency and operational trade-offs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-070",
+    "question" : "What is the difference between Redis and Memcached in terms of data structures and persistence?",
+    "subject" : "System Design",
+    "topic" : "Distributed Caching",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "caching", "cache-aside", "write-through", "redis", "cache invalidation", "distributed caching" ],
+    "criteria" : [ "contrasts cache patterns (cache-aside, write-through, write-behind)", "addresses cache invalidation, stampede, and penetration risks", "evaluates distributed caching consistency and operational trade-offs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-071",
+    "question" : "What is the Cache Penetration problem, and how do Bloom filters help prevent database overload?",
+    "subject" : "System Design",
+    "topic" : "Distributed Caching",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "caching", "cache-aside", "write-through", "redis", "cache invalidation", "distributed caching" ],
+    "criteria" : [ "contrasts cache patterns (cache-aside, write-through, write-behind)", "addresses cache invalidation, stampede, and penetration risks", "evaluates distributed caching consistency and operational trade-offs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-072",
+    "question" : "What is the purpose of caching in high-scale systems, and what layers can caching be applied to?",
+    "subject" : "System Design",
+    "topic" : "Distributed Caching",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "caching", "cache-aside", "write-through", "redis", "cache invalidation", "distributed caching" ],
+    "criteria" : [ "contrasts cache patterns (cache-aside, write-through, write-behind)", "addresses cache invalidation, stampede, and penetration risks", "evaluates distributed caching consistency and operational trade-offs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-073",
+    "question" : "Explain the Cache-Aside (Lazy Loading) pattern and how reads and writes are processed.",
+    "subject" : "System Design",
+    "topic" : "Distributed Caching",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "caching", "cache-aside", "write-through", "redis", "cache invalidation", "distributed caching" ],
+    "criteria" : [ "contrasts cache patterns (cache-aside, write-through, write-behind)", "addresses cache invalidation, stampede, and penetration risks", "evaluates distributed caching consistency and operational trade-offs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-074",
+    "question" : "What is the difference between Write-Through and Write-Behind (Write-Back) caching strategies?",
+    "subject" : "System Design",
+    "topic" : "Distributed Caching",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "caching", "cache-aside", "write-through", "redis", "cache invalidation", "distributed caching" ],
+    "criteria" : [ "contrasts cache patterns (cache-aside, write-through, write-behind)", "addresses cache invalidation, stampede, and penetration risks", "evaluates distributed caching consistency and operational trade-offs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-075",
+    "question" : "How do you handle cache invalidation across multiple geographic regions with eventual consistency constraints?",
+    "subject" : "System Design",
+    "topic" : "Distributed Caching",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "caching", "cache-aside", "write-through", "redis", "cache invalidation", "distributed caching" ],
+    "criteria" : [ "contrasts cache patterns (cache-aside, write-through, write-behind)", "addresses cache invalidation, stampede, and penetration risks", "evaluates distributed caching consistency and operational trade-offs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-076",
+    "question" : "Compare in-process local caching (e.g. Caffeine) with distributed remote caching (e.g. Redis) regarding latency and heap overhead.",
+    "subject" : "System Design",
+    "topic" : "Distributed Caching",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "caching", "cache-aside", "write-through", "redis", "cache invalidation", "distributed caching" ],
+    "criteria" : [ "contrasts cache patterns (cache-aside, write-through, write-behind)", "addresses cache invalidation, stampede, and penetration risks", "evaluates distributed caching consistency and operational trade-offs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-077",
+    "question" : "How do you design a caching strategy for dynamic user feeds where personalized content changes every few seconds?",
+    "subject" : "System Design",
+    "topic" : "Distributed Caching",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "caching", "cache-aside", "write-through", "redis", "cache invalidation", "distributed caching" ],
+    "criteria" : [ "contrasts cache patterns (cache-aside, write-through, write-behind)", "addresses cache invalidation, stampede, and penetration risks", "evaluates distributed caching consistency and operational trade-offs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-078",
+    "question" : "Explain how Redis Sentinel achieves high availability, master election, and configuration management for client drivers.",
+    "subject" : "System Design",
+    "topic" : "Distributed Caching",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "caching", "cache-aside", "write-through", "redis", "cache invalidation", "distributed caching" ],
+    "criteria" : [ "contrasts cache patterns (cache-aside, write-through, write-behind)", "addresses cache invalidation, stampede, and penetration risks", "evaluates distributed caching consistency and operational trade-offs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-079",
+    "question" : "How do you implement cache warming and probabilistic early expiration (XFetch algorithm) to prevent cache stampedes?",
+    "subject" : "System Design",
+    "topic" : "Distributed Caching",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "caching", "cache-aside", "write-through", "redis", "cache invalidation", "distributed caching" ],
+    "criteria" : [ "contrasts cache patterns (cache-aside, write-through, write-behind)", "addresses cache invalidation, stampede, and penetration risks", "evaluates distributed caching consistency and operational trade-offs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-080",
+    "question" : "Explain how Redis Cluster partitions keys using 16,384 hash slots and handles master-replica failover.",
+    "subject" : "System Design",
+    "topic" : "Distributed Caching",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "caching", "cache-aside", "write-through", "redis", "cache invalidation", "distributed caching" ],
+    "criteria" : [ "contrasts cache patterns (cache-aside, write-through, write-behind)", "addresses cache invalidation, stampede, and penetration risks", "evaluates distributed caching consistency and operational trade-offs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-081",
+    "question" : "What are the consistency trade-offs of using Redis as an in-memory cache versus a primary operational datastore?",
+    "subject" : "System Design",
+    "topic" : "Distributed Caching",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "caching", "cache-aside", "write-through", "redis", "cache invalidation", "distributed caching" ],
+    "criteria" : [ "contrasts cache patterns (cache-aside, write-through, write-behind)", "addresses cache invalidation, stampede, and penetration risks", "evaluates distributed caching consistency and operational trade-offs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-082",
+    "question" : "How do you handle cache invalidation across multiple geographic regions with eventual consistency constraints?",
+    "subject" : "System Design",
+    "topic" : "Distributed Caching",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "caching", "cache-aside", "write-through", "redis", "cache invalidation", "distributed caching" ],
+    "criteria" : [ "contrasts cache patterns (cache-aside, write-through, write-behind)", "addresses cache invalidation, stampede, and penetration risks", "evaluates distributed caching consistency and operational trade-offs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-083",
+    "question" : "Compare in-process local caching (e.g. Caffeine) with distributed remote caching (e.g. Redis) regarding latency and heap overhead.",
+    "subject" : "System Design",
+    "topic" : "Distributed Caching",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "caching", "cache-aside", "write-through", "redis", "cache invalidation", "distributed caching" ],
+    "criteria" : [ "contrasts cache patterns (cache-aside, write-through, write-behind)", "addresses cache invalidation, stampede, and penetration risks", "evaluates distributed caching consistency and operational trade-offs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-084",
+    "question" : "How do you design a caching strategy for dynamic user feeds where personalized content changes every few seconds?",
+    "subject" : "System Design",
+    "topic" : "Distributed Caching",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "caching", "cache-aside", "write-through", "redis", "cache invalidation", "distributed caching" ],
+    "criteria" : [ "contrasts cache patterns (cache-aside, write-through, write-behind)", "addresses cache invalidation, stampede, and penetration risks", "evaluates distributed caching consistency and operational trade-offs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-085",
+    "question" : "Explain how Redis Sentinel achieves high availability, master election, and configuration management for client drivers.",
+    "subject" : "System Design",
+    "topic" : "Distributed Caching",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "caching", "cache-aside", "write-through", "redis", "cache invalidation", "distributed caching" ],
+    "criteria" : [ "contrasts cache patterns (cache-aside, write-through, write-behind)", "addresses cache invalidation, stampede, and penetration risks", "evaluates distributed caching consistency and operational trade-offs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-086",
+    "question" : "How do you implement cache warming and probabilistic early expiration (XFetch algorithm) to prevent cache stampedes?",
+    "subject" : "System Design",
+    "topic" : "Distributed Caching",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "caching", "cache-aside", "write-through", "redis", "cache invalidation", "distributed caching" ],
+    "criteria" : [ "contrasts cache patterns (cache-aside, write-through, write-behind)", "addresses cache invalidation, stampede, and penetration risks", "evaluates distributed caching consistency and operational trade-offs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-087",
+    "question" : "Explain how Redis Cluster partitions keys using 16,384 hash slots and handles master-replica failover.",
+    "subject" : "System Design",
+    "topic" : "Distributed Caching",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "caching", "cache-aside", "write-through", "redis", "cache invalidation", "distributed caching" ],
+    "criteria" : [ "contrasts cache patterns (cache-aside, write-through, write-behind)", "addresses cache invalidation, stampede, and penetration risks", "evaluates distributed caching consistency and operational trade-offs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-088",
+    "question" : "What are the consistency trade-offs of using Redis as an in-memory cache versus a primary operational datastore?",
+    "subject" : "System Design",
+    "topic" : "Distributed Caching",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "caching", "cache-aside", "write-through", "redis", "cache invalidation", "distributed caching" ],
+    "criteria" : [ "contrasts cache patterns (cache-aside, write-through, write-behind)", "addresses cache invalidation, stampede, and penetration risks", "evaluates distributed caching consistency and operational trade-offs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-089",
+    "question" : "How do you handle cache invalidation across multiple geographic regions with eventual consistency constraints?",
+    "subject" : "System Design",
+    "topic" : "Distributed Caching",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "caching", "cache-aside", "write-through", "redis", "cache invalidation", "distributed caching" ],
+    "criteria" : [ "contrasts cache patterns (cache-aside, write-through, write-behind)", "addresses cache invalidation, stampede, and penetration risks", "evaluates distributed caching consistency and operational trade-offs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-090",
+    "question" : "How do you design a multi-tier caching architecture (L1 in-memory + L2 distributed Redis) that guarantees zero stale read anomalies during rapid updates?",
+    "subject" : "System Design",
+    "topic" : "Distributed Caching",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "caching", "cache-aside", "write-through", "redis", "cache invalidation", "distributed caching" ],
+    "criteria" : [ "contrasts cache patterns (cache-aside, write-through, write-behind)", "addresses cache invalidation, stampede, and penetration risks", "evaluates distributed caching consistency and operational trade-offs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-091",
+    "question" : "Architect a cache invalidation pipeline that synchronizes database change data capture (CDC via Debezium) with Redis at 100,000 writes/second.",
+    "subject" : "System Design",
+    "topic" : "Distributed Caching",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "caching", "cache-aside", "write-through", "redis", "cache invalidation", "distributed caching" ],
+    "criteria" : [ "contrasts cache patterns (cache-aside, write-through, write-behind)", "addresses cache invalidation, stampede, and penetration risks", "evaluates distributed caching consistency and operational trade-offs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-092",
+    "question" : "Analyze the operational impact of Redis single-threaded execution when handling massive keys (O(N) deletions and large hash maps).",
+    "subject" : "System Design",
+    "topic" : "Distributed Caching",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "caching", "cache-aside", "write-through", "redis", "cache invalidation", "distributed caching" ],
+    "criteria" : [ "contrasts cache patterns (cache-aside, write-through, write-behind)", "addresses cache invalidation, stampede, and penetration risks", "evaluates distributed caching consistency and operational trade-offs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-093",
+    "question" : "Design a distributed rate limiter in Redis that handles atomic token bucket decrements without lock contention under massive concurrency.",
+    "subject" : "System Design",
+    "topic" : "Distributed Caching",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "caching", "cache-aside", "write-through", "redis", "cache invalidation", "distributed caching" ],
+    "criteria" : [ "contrasts cache patterns (cache-aside, write-through, write-behind)", "addresses cache invalidation, stampede, and penetration risks", "evaluates distributed caching consistency and operational trade-offs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-094",
+    "question" : "How do you architect cache recovery when an entire primary Redis cluster experiences power failure and loses in-memory state?",
+    "subject" : "System Design",
+    "topic" : "Distributed Caching",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "caching", "cache-aside", "write-through", "redis", "cache invalidation", "distributed caching" ],
+    "criteria" : [ "contrasts cache patterns (cache-aside, write-through, write-behind)", "addresses cache invalidation, stampede, and penetration risks", "evaluates distributed caching consistency and operational trade-offs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-095",
+    "question" : "How do you design a multi-tier caching architecture (L1 in-memory + L2 distributed Redis) that guarantees zero stale read anomalies during rapid updates?",
+    "subject" : "System Design",
+    "topic" : "Distributed Caching",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "caching", "cache-aside", "write-through", "redis", "cache invalidation", "distributed caching" ],
+    "criteria" : [ "contrasts cache patterns (cache-aside, write-through, write-behind)", "addresses cache invalidation, stampede, and penetration risks", "evaluates distributed caching consistency and operational trade-offs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-096",
+    "question" : "What is database sharding, and how does horizontal partitioning differ from vertical partitioning?",
+    "subject" : "System Design",
+    "topic" : "Database Sharding & Storage",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "sharding", "replication", "acid", "distributed transactions", "partitioning", "database sharding & storage" ],
+    "criteria" : [ "explains database partitioning and shard key selection criteria", "evaluates replication lag and distributed data consistency trade-offs", "designs high-availability database architectures resilient to network partitions" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-097",
+    "question" : "What is a shard key, and what factors make a shard key effective or problematic?",
+    "subject" : "System Design",
+    "topic" : "Database Sharding & Storage",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "sharding", "replication", "acid", "distributed transactions", "partitioning", "database sharding & storage" ],
+    "criteria" : [ "explains database partitioning and shard key selection criteria", "evaluates replication lag and distributed data consistency trade-offs", "designs high-availability database architectures resilient to network partitions" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-098",
+    "question" : "Explain the difference between primary-replica (read replica) architecture and multi-primary database clustering.",
+    "subject" : "System Design",
+    "topic" : "Database Sharding & Storage",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "sharding", "replication", "acid", "distributed transactions", "partitioning", "database sharding & storage" ],
+    "criteria" : [ "explains database partitioning and shard key selection criteria", "evaluates replication lag and distributed data consistency trade-offs", "designs high-availability database architectures resilient to network partitions" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-099",
+    "question" : "What is the difference between synchronous replication and asynchronous replication in database systems?",
+    "subject" : "System Design",
+    "topic" : "Database Sharding & Storage",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "sharding", "replication", "acid", "distributed transactions", "partitioning", "database sharding & storage" ],
+    "criteria" : [ "explains database partitioning and shard key selection criteria", "evaluates replication lag and distributed data consistency trade-offs", "designs high-availability database architectures resilient to network partitions" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-100",
+    "question" : "What is a hot shard (celebrity problem), and why does it occur in social media platforms?",
+    "subject" : "System Design",
+    "topic" : "Database Sharding & Storage",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "sharding", "replication", "acid", "distributed transactions", "partitioning", "database sharding & storage" ],
+    "criteria" : [ "explains database partitioning and shard key selection criteria", "evaluates replication lag and distributed data consistency trade-offs", "designs high-availability database architectures resilient to network partitions" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-101",
+    "question" : "What is the Two-Phase Commit (2PC) protocol, and why is it rarely used in internet-scale microservices?",
+    "subject" : "System Design",
+    "topic" : "Database Sharding & Storage",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "sharding", "replication", "acid", "distributed transactions", "partitioning", "database sharding & storage" ],
+    "criteria" : [ "explains database partitioning and shard key selection criteria", "evaluates replication lag and distributed data consistency trade-offs", "designs high-availability database architectures resilient to network partitions" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-102",
+    "question" : "Explain the difference between OLTP (Online Transaction Processing) and OLAP (Online Analytical Processing) storage engines.",
+    "subject" : "System Design",
+    "topic" : "Database Sharding & Storage",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "sharding", "replication", "acid", "distributed transactions", "partitioning", "database sharding & storage" ],
+    "criteria" : [ "explains database partitioning and shard key selection criteria", "evaluates replication lag and distributed data consistency trade-offs", "designs high-availability database architectures resilient to network partitions" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-103",
+    "question" : "What is database sharding, and how does horizontal partitioning differ from vertical partitioning?",
+    "subject" : "System Design",
+    "topic" : "Database Sharding & Storage",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "sharding", "replication", "acid", "distributed transactions", "partitioning", "database sharding & storage" ],
+    "criteria" : [ "explains database partitioning and shard key selection criteria", "evaluates replication lag and distributed data consistency trade-offs", "designs high-availability database architectures resilient to network partitions" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-104",
+    "question" : "What is a shard key, and what factors make a shard key effective or problematic?",
+    "subject" : "System Design",
+    "topic" : "Database Sharding & Storage",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "sharding", "replication", "acid", "distributed transactions", "partitioning", "database sharding & storage" ],
+    "criteria" : [ "explains database partitioning and shard key selection criteria", "evaluates replication lag and distributed data consistency trade-offs", "designs high-availability database architectures resilient to network partitions" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-105",
+    "question" : "Explain the difference between primary-replica (read replica) architecture and multi-primary database clustering.",
+    "subject" : "System Design",
+    "topic" : "Database Sharding & Storage",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "sharding", "replication", "acid", "distributed transactions", "partitioning", "database sharding & storage" ],
+    "criteria" : [ "explains database partitioning and shard key selection criteria", "evaluates replication lag and distributed data consistency trade-offs", "designs high-availability database architectures resilient to network partitions" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-106",
+    "question" : "Explain the Write-Ahead Log (WAL) mechanism and how distributed databases achieve durability and point-in-time recovery.",
+    "subject" : "System Design",
+    "topic" : "Database Sharding & Storage",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "sharding", "replication", "acid", "distributed transactions", "partitioning", "database sharding & storage" ],
+    "criteria" : [ "explains database partitioning and shard key selection criteria", "evaluates replication lag and distributed data consistency trade-offs", "designs high-availability database architectures resilient to network partitions" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-107",
+    "question" : "How does LSM-Tree (Log-Structured Merge-Tree) storage engine in Cassandra/RocksDB differ from B+ Tree storage in traditional RDBMS?",
+    "subject" : "System Design",
+    "topic" : "Database Sharding & Storage",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "sharding", "replication", "acid", "distributed transactions", "partitioning", "database sharding & storage" ],
+    "criteria" : [ "explains database partitioning and shard key selection criteria", "evaluates replication lag and distributed data consistency trade-offs", "designs high-availability database architectures resilient to network partitions" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-108",
+    "question" : "What are distributed secondary indexes, and how do scatter-gather queries impact database latency and resource utilization?",
+    "subject" : "System Design",
+    "topic" : "Database Sharding & Storage",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "sharding", "replication", "acid", "distributed transactions", "partitioning", "database sharding & storage" ],
+    "criteria" : [ "explains database partitioning and shard key selection criteria", "evaluates replication lag and distributed data consistency trade-offs", "designs high-availability database architectures resilient to network partitions" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-109",
+    "question" : "How does multi-version concurrency control (MVCC) enable high-throughput non-blocking reads during heavy write transactions?",
+    "subject" : "System Design",
+    "topic" : "Database Sharding & Storage",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "sharding", "replication", "acid", "distributed transactions", "partitioning", "database sharding & storage" ],
+    "criteria" : [ "explains database partitioning and shard key selection criteria", "evaluates replication lag and distributed data consistency trade-offs", "designs high-availability database architectures resilient to network partitions" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-110",
+    "question" : "How do you re-shard an active production database containing 50TB of data without incurring application downtime?",
+    "subject" : "System Design",
+    "topic" : "Database Sharding & Storage",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "sharding", "replication", "acid", "distributed transactions", "partitioning", "database sharding & storage" ],
+    "criteria" : [ "explains database partitioning and shard key selection criteria", "evaluates replication lag and distributed data consistency trade-offs", "designs high-availability database architectures resilient to network partitions" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-111",
+    "question" : "Compare range-based sharding with directory-based and hash-based sharding in terms of query routing and data distribution.",
+    "subject" : "System Design",
+    "topic" : "Database Sharding & Storage",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "sharding", "replication", "acid", "distributed transactions", "partitioning", "database sharding & storage" ],
+    "criteria" : [ "explains database partitioning and shard key selection criteria", "evaluates replication lag and distributed data consistency trade-offs", "designs high-availability database architectures resilient to network partitions" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-112",
+    "question" : "How do you handle cross-shard queries and distributed joins in a horizontally sharded PostgreSQL or MySQL environment?",
+    "subject" : "System Design",
+    "topic" : "Database Sharding & Storage",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "sharding", "replication", "acid", "distributed transactions", "partitioning", "database sharding & storage" ],
+    "criteria" : [ "explains database partitioning and shard key selection criteria", "evaluates replication lag and distributed data consistency trade-offs", "designs high-availability database architectures resilient to network partitions" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-113",
+    "question" : "Explain the Write-Ahead Log (WAL) mechanism and how distributed databases achieve durability and point-in-time recovery.",
+    "subject" : "System Design",
+    "topic" : "Database Sharding & Storage",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "sharding", "replication", "acid", "distributed transactions", "partitioning", "database sharding & storage" ],
+    "criteria" : [ "explains database partitioning and shard key selection criteria", "evaluates replication lag and distributed data consistency trade-offs", "designs high-availability database architectures resilient to network partitions" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-114",
+    "question" : "How does LSM-Tree (Log-Structured Merge-Tree) storage engine in Cassandra/RocksDB differ from B+ Tree storage in traditional RDBMS?",
+    "subject" : "System Design",
+    "topic" : "Database Sharding & Storage",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "sharding", "replication", "acid", "distributed transactions", "partitioning", "database sharding & storage" ],
+    "criteria" : [ "explains database partitioning and shard key selection criteria", "evaluates replication lag and distributed data consistency trade-offs", "designs high-availability database architectures resilient to network partitions" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-115",
+    "question" : "What are distributed secondary indexes, and how do scatter-gather queries impact database latency and resource utilization?",
+    "subject" : "System Design",
+    "topic" : "Database Sharding & Storage",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "sharding", "replication", "acid", "distributed transactions", "partitioning", "database sharding & storage" ],
+    "criteria" : [ "explains database partitioning and shard key selection criteria", "evaluates replication lag and distributed data consistency trade-offs", "designs high-availability database architectures resilient to network partitions" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-116",
+    "question" : "How does multi-version concurrency control (MVCC) enable high-throughput non-blocking reads during heavy write transactions?",
+    "subject" : "System Design",
+    "topic" : "Database Sharding & Storage",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "sharding", "replication", "acid", "distributed transactions", "partitioning", "database sharding & storage" ],
+    "criteria" : [ "explains database partitioning and shard key selection criteria", "evaluates replication lag and distributed data consistency trade-offs", "designs high-availability database architectures resilient to network partitions" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-117",
+    "question" : "How do you re-shard an active production database containing 50TB of data without incurring application downtime?",
+    "subject" : "System Design",
+    "topic" : "Database Sharding & Storage",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "sharding", "replication", "acid", "distributed transactions", "partitioning", "database sharding & storage" ],
+    "criteria" : [ "explains database partitioning and shard key selection criteria", "evaluates replication lag and distributed data consistency trade-offs", "designs high-availability database architectures resilient to network partitions" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-118",
+    "question" : "Compare range-based sharding with directory-based and hash-based sharding in terms of query routing and data distribution.",
+    "subject" : "System Design",
+    "topic" : "Database Sharding & Storage",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "sharding", "replication", "acid", "distributed transactions", "partitioning", "database sharding & storage" ],
+    "criteria" : [ "explains database partitioning and shard key selection criteria", "evaluates replication lag and distributed data consistency trade-offs", "designs high-availability database architectures resilient to network partitions" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-119",
+    "question" : "How do you handle cross-shard queries and distributed joins in a horizontally sharded PostgreSQL or MySQL environment?",
+    "subject" : "System Design",
+    "topic" : "Database Sharding & Storage",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "sharding", "replication", "acid", "distributed transactions", "partitioning", "database sharding & storage" ],
+    "criteria" : [ "explains database partitioning and shard key selection criteria", "evaluates replication lag and distributed data consistency trade-offs", "designs high-availability database architectures resilient to network partitions" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-120",
+    "question" : "Explain the Write-Ahead Log (WAL) mechanism and how distributed databases achieve durability and point-in-time recovery.",
+    "subject" : "System Design",
+    "topic" : "Database Sharding & Storage",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "sharding", "replication", "acid", "distributed transactions", "partitioning", "database sharding & storage" ],
+    "criteria" : [ "explains database partitioning and shard key selection criteria", "evaluates replication lag and distributed data consistency trade-offs", "designs high-availability database architectures resilient to network partitions" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-121",
+    "question" : "Architect a globally distributed multi-region database replication system that handles network partitions without violating causal consistency.",
+    "subject" : "System Design",
+    "topic" : "Database Sharding & Storage",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "sharding", "replication", "acid", "distributed transactions", "partitioning", "database sharding & storage" ],
+    "criteria" : [ "explains database partitioning and shard key selection criteria", "evaluates replication lag and distributed data consistency trade-offs", "designs high-availability database architectures resilient to network partitions" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-122",
+    "question" : "Design a zero-downtime resharding engine that continuously migrates user partitions while serving 50,000 live transactional updates per second.",
+    "subject" : "System Design",
+    "topic" : "Database Sharding & Storage",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "sharding", "replication", "acid", "distributed transactions", "partitioning", "database sharding & storage" ],
+    "criteria" : [ "explains database partitioning and shard key selection criteria", "evaluates replication lag and distributed data consistency trade-offs", "designs high-availability database architectures resilient to network partitions" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-123",
+    "question" : "Analyze how Google Spanner utilizes TrueTime (GPS and atomic clocks) to provide external consistency without traditional lock bottlenecks.",
+    "subject" : "System Design",
+    "topic" : "Database Sharding & Storage",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "sharding", "replication", "acid", "distributed transactions", "partitioning", "database sharding & storage" ],
+    "criteria" : [ "explains database partitioning and shard key selection criteria", "evaluates replication lag and distributed data consistency trade-offs", "designs high-availability database architectures resilient to network partitions" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-124",
+    "question" : "Evaluate the trade-offs between pessimistic distributed 2PC and optimistic CRDT (Conflict-free Replicated Data Types) for collaborative systems.",
+    "subject" : "System Design",
+    "topic" : "Database Sharding & Storage",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "sharding", "replication", "acid", "distributed transactions", "partitioning", "database sharding & storage" ],
+    "criteria" : [ "explains database partitioning and shard key selection criteria", "evaluates replication lag and distributed data consistency trade-offs", "designs high-availability database architectures resilient to network partitions" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-125",
+    "question" : "How do you prevent split-brain syndrome and data corruption in a multi-datacenter active-active MySQL replication cluster?",
+    "subject" : "System Design",
+    "topic" : "Database Sharding & Storage",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "sharding", "replication", "acid", "distributed transactions", "partitioning", "database sharding & storage" ],
+    "criteria" : [ "explains database partitioning and shard key selection criteria", "evaluates replication lag and distributed data consistency trade-offs", "designs high-availability database architectures resilient to network partitions" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-126",
+    "question" : "Architect a globally distributed multi-region database replication system that handles network partitions without violating causal consistency.",
+    "subject" : "System Design",
+    "topic" : "Database Sharding & Storage",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "sharding", "replication", "acid", "distributed transactions", "partitioning", "database sharding & storage" ],
+    "criteria" : [ "explains database partitioning and shard key selection criteria", "evaluates replication lag and distributed data consistency trade-offs", "designs high-availability database architectures resilient to network partitions" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-127",
+    "question" : "What is the fundamental difference between a point-to-point Message Queue (RabbitMQ) and an Event Stream (Apache Kafka)?",
+    "subject" : "System Design",
+    "topic" : "Message Queues & Event Streaming",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "kafka", "message queue", "event-driven", "pub-sub", "backpressure", "message queues & event streaming" ],
+    "criteria" : [ "distinguishes message queues vs distributed event streaming logs", "explains delivery semantics (at-least-once, exactly-once) and idempotency", "architects resilient event-driven systems using transactional outbox and DLQs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-128",
+    "question" : "Explain the Pub/Sub (Publish-Subscribe) messaging pattern and its benefits for decoupling systems.",
+    "subject" : "System Design",
+    "topic" : "Message Queues & Event Streaming",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "kafka", "message queue", "event-driven", "pub-sub", "backpressure", "message queues & event streaming" ],
+    "criteria" : [ "distinguishes message queues vs distributed event streaming logs", "explains delivery semantics (at-least-once, exactly-once) and idempotency", "architects resilient event-driven systems using transactional outbox and DLQs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-129",
+    "question" : "What is an consumer group in Apache Kafka, and how does it enable scalable parallel consumption?",
+    "subject" : "System Design",
+    "topic" : "Message Queues & Event Streaming",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "kafka", "message queue", "event-driven", "pub-sub", "backpressure", "message queues & event streaming" ],
+    "criteria" : [ "distinguishes message queues vs distributed event streaming logs", "explains delivery semantics (at-least-once, exactly-once) and idempotency", "architects resilient event-driven systems using transactional outbox and DLQs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-130",
+    "question" : "What is a Dead Letter Queue (DLQ), and why is it essential in asynchronous message processing pipelines?",
+    "subject" : "System Design",
+    "topic" : "Message Queues & Event Streaming",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "kafka", "message queue", "event-driven", "pub-sub", "backpressure", "message queues & event streaming" ],
+    "criteria" : [ "distinguishes message queues vs distributed event streaming logs", "explains delivery semantics (at-least-once, exactly-once) and idempotency", "architects resilient event-driven systems using transactional outbox and DLQs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-131",
+    "question" : "What is message idempotency, and why must consumers be designed to be idempotent in distributed networks?",
+    "subject" : "System Design",
+    "topic" : "Message Queues & Event Streaming",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "kafka", "message queue", "event-driven", "pub-sub", "backpressure", "message queues & event streaming" ],
+    "criteria" : [ "distinguishes message queues vs distributed event streaming logs", "explains delivery semantics (at-least-once, exactly-once) and idempotency", "architects resilient event-driven systems using transactional outbox and DLQs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-132",
+    "question" : "What is backpressure in reactive streams and messaging systems, and what happens when it is neglected?",
+    "subject" : "System Design",
+    "topic" : "Message Queues & Event Streaming",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "kafka", "message queue", "event-driven", "pub-sub", "backpressure", "message queues & event streaming" ],
+    "criteria" : [ "distinguishes message queues vs distributed event streaming logs", "explains delivery semantics (at-least-once, exactly-once) and idempotency", "architects resilient event-driven systems using transactional outbox and DLQs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-133",
+    "question" : "What is the difference between at-most-once, at-least-once, and exactly-once message delivery semantics?",
+    "subject" : "System Design",
+    "topic" : "Message Queues & Event Streaming",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "kafka", "message queue", "event-driven", "pub-sub", "backpressure", "message queues & event streaming" ],
+    "criteria" : [ "distinguishes message queues vs distributed event streaming logs", "explains delivery semantics (at-least-once, exactly-once) and idempotency", "architects resilient event-driven systems using transactional outbox and DLQs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-134",
+    "question" : "What is the fundamental difference between a point-to-point Message Queue (RabbitMQ) and an Event Stream (Apache Kafka)?",
+    "subject" : "System Design",
+    "topic" : "Message Queues & Event Streaming",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "kafka", "message queue", "event-driven", "pub-sub", "backpressure", "message queues & event streaming" ],
+    "criteria" : [ "distinguishes message queues vs distributed event streaming logs", "explains delivery semantics (at-least-once, exactly-once) and idempotency", "architects resilient event-driven systems using transactional outbox and DLQs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-135",
+    "question" : "Explain the Pub/Sub (Publish-Subscribe) messaging pattern and its benefits for decoupling systems.",
+    "subject" : "System Design",
+    "topic" : "Message Queues & Event Streaming",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "kafka", "message queue", "event-driven", "pub-sub", "backpressure", "message queues & event streaming" ],
+    "criteria" : [ "distinguishes message queues vs distributed event streaming logs", "explains delivery semantics (at-least-once, exactly-once) and idempotency", "architects resilient event-driven systems using transactional outbox and DLQs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-136",
+    "question" : "What is an consumer group in Apache Kafka, and how does it enable scalable parallel consumption?",
+    "subject" : "System Design",
+    "topic" : "Message Queues & Event Streaming",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "kafka", "message queue", "event-driven", "pub-sub", "backpressure", "message queues & event streaming" ],
+    "criteria" : [ "distinguishes message queues vs distributed event streaming logs", "explains delivery semantics (at-least-once, exactly-once) and idempotency", "architects resilient event-driven systems using transactional outbox and DLQs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-137",
+    "question" : "Compare AMQP exchange routing types (Direct, Fanout, Topic, Headers) in RabbitMQ with Kafka topic-partition models.",
+    "subject" : "System Design",
+    "topic" : "Message Queues & Event Streaming",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "kafka", "message queue", "event-driven", "pub-sub", "backpressure", "message queues & event streaming" ],
+    "criteria" : [ "distinguishes message queues vs distributed event streaming logs", "explains delivery semantics (at-least-once, exactly-once) and idempotency", "architects resilient event-driven systems using transactional outbox and DLQs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-138",
+    "question" : "How do you guarantee strict message ordering in an event-driven banking system where account updates must be processed sequentially?",
+    "subject" : "System Design",
+    "topic" : "Message Queues & Event Streaming",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "kafka", "message queue", "event-driven", "pub-sub", "backpressure", "message queues & event streaming" ],
+    "criteria" : [ "distinguishes message queues vs distributed event streaming logs", "explains delivery semantics (at-least-once, exactly-once) and idempotency", "architects resilient event-driven systems using transactional outbox and DLQs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-139",
+    "question" : "What strategies prevent consumer lag from growing uncontrollably during upstream traffic spikes in Kafka pipelines?",
+    "subject" : "System Design",
+    "topic" : "Message Queues & Event Streaming",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "kafka", "message queue", "event-driven", "pub-sub", "backpressure", "message queues & event streaming" ],
+    "criteria" : [ "distinguishes message queues vs distributed event streaming logs", "explains delivery semantics (at-least-once, exactly-once) and idempotency", "architects resilient event-driven systems using transactional outbox and DLQs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-140",
+    "question" : "How does schema evolution with Apache Avro and Schema Registry prevent downstream breaking changes in event streams?",
+    "subject" : "System Design",
+    "topic" : "Message Queues & Event Streaming",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "kafka", "message queue", "event-driven", "pub-sub", "backpressure", "message queues & event streaming" ],
+    "criteria" : [ "distinguishes message queues vs distributed event streaming logs", "explains delivery semantics (at-least-once, exactly-once) and idempotency", "architects resilient event-driven systems using transactional outbox and DLQs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-141",
+    "question" : "How does Kafka achieve high write and read throughput using sequential disk I/O, page cache, and zero-copy transfers?",
+    "subject" : "System Design",
+    "topic" : "Message Queues & Event Streaming",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "kafka", "message queue", "event-driven", "pub-sub", "backpressure", "message queues & event streaming" ],
+    "criteria" : [ "distinguishes message queues vs distributed event streaming logs", "explains delivery semantics (at-least-once, exactly-once) and idempotency", "architects resilient event-driven systems using transactional outbox and DLQs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-142",
+    "question" : "Explain how partition rebalancing works in Kafka when a consumer crashes, and how to minimize stop-the-world rebalance delays.",
+    "subject" : "System Design",
+    "topic" : "Message Queues & Event Streaming",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "kafka", "message queue", "event-driven", "pub-sub", "backpressure", "message queues & event streaming" ],
+    "criteria" : [ "distinguishes message queues vs distributed event streaming logs", "explains delivery semantics (at-least-once, exactly-once) and idempotency", "architects resilient event-driven systems using transactional outbox and DLQs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-143",
+    "question" : "How do you implement the Transactional Outbox Pattern to guarantee atomic database updates and event publishing?",
+    "subject" : "System Design",
+    "topic" : "Message Queues & Event Streaming",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "kafka", "message queue", "event-driven", "pub-sub", "backpressure", "message queues & event streaming" ],
+    "criteria" : [ "distinguishes message queues vs distributed event streaming logs", "explains delivery semantics (at-least-once, exactly-once) and idempotency", "architects resilient event-driven systems using transactional outbox and DLQs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-144",
+    "question" : "Compare AMQP exchange routing types (Direct, Fanout, Topic, Headers) in RabbitMQ with Kafka topic-partition models.",
+    "subject" : "System Design",
+    "topic" : "Message Queues & Event Streaming",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "kafka", "message queue", "event-driven", "pub-sub", "backpressure", "message queues & event streaming" ],
+    "criteria" : [ "distinguishes message queues vs distributed event streaming logs", "explains delivery semantics (at-least-once, exactly-once) and idempotency", "architects resilient event-driven systems using transactional outbox and DLQs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-145",
+    "question" : "How do you guarantee strict message ordering in an event-driven banking system where account updates must be processed sequentially?",
+    "subject" : "System Design",
+    "topic" : "Message Queues & Event Streaming",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "kafka", "message queue", "event-driven", "pub-sub", "backpressure", "message queues & event streaming" ],
+    "criteria" : [ "distinguishes message queues vs distributed event streaming logs", "explains delivery semantics (at-least-once, exactly-once) and idempotency", "architects resilient event-driven systems using transactional outbox and DLQs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-146",
+    "question" : "What strategies prevent consumer lag from growing uncontrollably during upstream traffic spikes in Kafka pipelines?",
+    "subject" : "System Design",
+    "topic" : "Message Queues & Event Streaming",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "kafka", "message queue", "event-driven", "pub-sub", "backpressure", "message queues & event streaming" ],
+    "criteria" : [ "distinguishes message queues vs distributed event streaming logs", "explains delivery semantics (at-least-once, exactly-once) and idempotency", "architects resilient event-driven systems using transactional outbox and DLQs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-147",
+    "question" : "How does schema evolution with Apache Avro and Schema Registry prevent downstream breaking changes in event streams?",
+    "subject" : "System Design",
+    "topic" : "Message Queues & Event Streaming",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "kafka", "message queue", "event-driven", "pub-sub", "backpressure", "message queues & event streaming" ],
+    "criteria" : [ "distinguishes message queues vs distributed event streaming logs", "explains delivery semantics (at-least-once, exactly-once) and idempotency", "architects resilient event-driven systems using transactional outbox and DLQs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-148",
+    "question" : "How does Kafka achieve high write and read throughput using sequential disk I/O, page cache, and zero-copy transfers?",
+    "subject" : "System Design",
+    "topic" : "Message Queues & Event Streaming",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "kafka", "message queue", "event-driven", "pub-sub", "backpressure", "message queues & event streaming" ],
+    "criteria" : [ "distinguishes message queues vs distributed event streaming logs", "explains delivery semantics (at-least-once, exactly-once) and idempotency", "architects resilient event-driven systems using transactional outbox and DLQs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-149",
+    "question" : "Explain how partition rebalancing works in Kafka when a consumer crashes, and how to minimize stop-the-world rebalance delays.",
+    "subject" : "System Design",
+    "topic" : "Message Queues & Event Streaming",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "kafka", "message queue", "event-driven", "pub-sub", "backpressure", "message queues & event streaming" ],
+    "criteria" : [ "distinguishes message queues vs distributed event streaming logs", "explains delivery semantics (at-least-once, exactly-once) and idempotency", "architects resilient event-driven systems using transactional outbox and DLQs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-150",
+    "question" : "How do you implement the Transactional Outbox Pattern to guarantee atomic database updates and event publishing?",
+    "subject" : "System Design",
+    "topic" : "Message Queues & Event Streaming",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "kafka", "message queue", "event-driven", "pub-sub", "backpressure", "message queues & event streaming" ],
+    "criteria" : [ "distinguishes message queues vs distributed event streaming logs", "explains delivery semantics (at-least-once, exactly-once) and idempotency", "architects resilient event-driven systems using transactional outbox and DLQs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-151",
+    "question" : "Compare AMQP exchange routing types (Direct, Fanout, Topic, Headers) in RabbitMQ with Kafka topic-partition models.",
+    "subject" : "System Design",
+    "topic" : "Message Queues & Event Streaming",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "kafka", "message queue", "event-driven", "pub-sub", "backpressure", "message queues & event streaming" ],
+    "criteria" : [ "distinguishes message queues vs distributed event streaming logs", "explains delivery semantics (at-least-once, exactly-once) and idempotency", "architects resilient event-driven systems using transactional outbox and DLQs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-152",
+    "question" : "Design an end-to-end exactly-once event streaming pipeline across distributed microservices using Kafka transactions and idempotent state machines.",
+    "subject" : "System Design",
+    "topic" : "Message Queues & Event Streaming",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "kafka", "message queue", "event-driven", "pub-sub", "backpressure", "message queues & event streaming" ],
+    "criteria" : [ "distinguishes message queues vs distributed event streaming logs", "explains delivery semantics (at-least-once, exactly-once) and idempotency", "architects resilient event-driven systems using transactional outbox and DLQs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-153",
+    "question" : "Architect a real-time event ingestion engine processing 10 million telemetry events per second with sub-second analytics and zero message loss.",
+    "subject" : "System Design",
+    "topic" : "Message Queues & Event Streaming",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "kafka", "message queue", "event-driven", "pub-sub", "backpressure", "message queues & event streaming" ],
+    "criteria" : [ "distinguishes message queues vs distributed event streaming logs", "explains delivery semantics (at-least-once, exactly-once) and idempotency", "architects resilient event-driven systems using transactional outbox and DLQs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-154",
+    "question" : "How do you mitigate poison pill messages and cascading DLQ overflow in high-throughput financial clearing pipelines?",
+    "subject" : "System Design",
+    "topic" : "Message Queues & Event Streaming",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "kafka", "message queue", "event-driven", "pub-sub", "backpressure", "message queues & event streaming" ],
+    "criteria" : [ "distinguishes message queues vs distributed event streaming logs", "explains delivery semantics (at-least-once, exactly-once) and idempotency", "architects resilient event-driven systems using transactional outbox and DLQs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-155",
+    "question" : "Analyze the latency and throughput implications of tuning Kafka producer `acks=all`, `min.insync.replicas`, and `compression.type`.",
+    "subject" : "System Design",
+    "topic" : "Message Queues & Event Streaming",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "kafka", "message queue", "event-driven", "pub-sub", "backpressure", "message queues & event streaming" ],
+    "criteria" : [ "distinguishes message queues vs distributed event streaming logs", "explains delivery semantics (at-least-once, exactly-once) and idempotency", "architects resilient event-driven systems using transactional outbox and DLQs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-156",
+    "question" : "Design an asynchronous webhook delivery system capable of dispatching 100 million webhooks per day with exponential backoff and jitter.",
+    "subject" : "System Design",
+    "topic" : "Message Queues & Event Streaming",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "kafka", "message queue", "event-driven", "pub-sub", "backpressure", "message queues & event streaming" ],
+    "criteria" : [ "distinguishes message queues vs distributed event streaming logs", "explains delivery semantics (at-least-once, exactly-once) and idempotency", "architects resilient event-driven systems using transactional outbox and DLQs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-157",
+    "question" : "Design an end-to-end exactly-once event streaming pipeline across distributed microservices using Kafka transactions and idempotent state machines.",
+    "subject" : "System Design",
+    "topic" : "Message Queues & Event Streaming",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "kafka", "message queue", "event-driven", "pub-sub", "backpressure", "message queues & event streaming" ],
+    "criteria" : [ "distinguishes message queues vs distributed event streaming logs", "explains delivery semantics (at-least-once, exactly-once) and idempotency", "architects resilient event-driven systems using transactional outbox and DLQs" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-158",
+    "question" : "Explain the CAP Theorem and why a distributed system can only guarantee two out of Consistency, Availability, and Partition Tolerance.",
+    "subject" : "System Design",
+    "topic" : "Consensus & Distributed Coordination",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "cap theorem", "raft", "paxos", "zookeeper", "distributed locks", "consensus & distributed coordination" ],
+    "criteria" : [ "articulates CAP and PACELC trade-offs with real architectural examples", "evaluates distributed consensus algorithms (Raft, Paxos, Quorums)", "analyzes distributed locking hazards, fencing tokens, and clock drift" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-159",
+    "question" : "What does PACELC theorem add to the traditional CAP theorem regarding latency and consistency trade-offs?",
+    "subject" : "System Design",
+    "topic" : "Consensus & Distributed Coordination",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "cap theorem", "raft", "paxos", "zookeeper", "distributed locks", "consensus & distributed coordination" ],
+    "criteria" : [ "articulates CAP and PACELC trade-offs with real architectural examples", "evaluates distributed consensus algorithms (Raft, Paxos, Quorums)", "analyzes distributed locking hazards, fencing tokens, and clock drift" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-160",
+    "question" : "What is the split-brain problem in distributed clusters, and what quorum rule prevents it?",
+    "subject" : "System Design",
+    "topic" : "Consensus & Distributed Coordination",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "cap theorem", "raft", "paxos", "zookeeper", "distributed locks", "consensus & distributed coordination" ],
+    "criteria" : [ "articulates CAP and PACELC trade-offs with real architectural examples", "evaluates distributed consensus algorithms (Raft, Paxos, Quorums)", "analyzes distributed locking hazards, fencing tokens, and clock drift" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-161",
+    "question" : "What is the role of a distributed coordinator like Apache ZooKeeper or etcd in managing distributed systems?",
+    "subject" : "System Design",
+    "topic" : "Consensus & Distributed Coordination",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "cap theorem", "raft", "paxos", "zookeeper", "distributed locks", "consensus & distributed coordination" ],
+    "criteria" : [ "articulates CAP and PACELC trade-offs with real architectural examples", "evaluates distributed consensus algorithms (Raft, Paxos, Quorums)", "analyzes distributed locking hazards, fencing tokens, and clock drift" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-162",
+    "question" : "What is eventual consistency, and how does it differ from strong consistency (linearizability)?",
+    "subject" : "System Design",
+    "topic" : "Consensus & Distributed Coordination",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "cap theorem", "raft", "paxos", "zookeeper", "distributed locks", "consensus & distributed coordination" ],
+    "criteria" : [ "articulates CAP and PACELC trade-offs with real architectural examples", "evaluates distributed consensus algorithms (Raft, Paxos, Quorums)", "analyzes distributed locking hazards, fencing tokens, and clock drift" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-163",
+    "question" : "What is a distributed lock, and why are database row locks insufficient across independent microservice instances?",
+    "subject" : "System Design",
+    "topic" : "Consensus & Distributed Coordination",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "cap theorem", "raft", "paxos", "zookeeper", "distributed locks", "consensus & distributed coordination" ],
+    "criteria" : [ "articulates CAP and PACELC trade-offs with real architectural examples", "evaluates distributed consensus algorithms (Raft, Paxos, Quorums)", "analyzes distributed locking hazards, fencing tokens, and clock drift" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-164",
+    "question" : "What is leader election, and why is it required in master-worker distributed topologies?",
+    "subject" : "System Design",
+    "topic" : "Consensus & Distributed Coordination",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "cap theorem", "raft", "paxos", "zookeeper", "distributed locks", "consensus & distributed coordination" ],
+    "criteria" : [ "articulates CAP and PACELC trade-offs with real architectural examples", "evaluates distributed consensus algorithms (Raft, Paxos, Quorums)", "analyzes distributed locking hazards, fencing tokens, and clock drift" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-165",
+    "question" : "Explain the CAP Theorem and why a distributed system can only guarantee two out of Consistency, Availability, and Partition Tolerance.",
+    "subject" : "System Design",
+    "topic" : "Consensus & Distributed Coordination",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "cap theorem", "raft", "paxos", "zookeeper", "distributed locks", "consensus & distributed coordination" ],
+    "criteria" : [ "articulates CAP and PACELC trade-offs with real architectural examples", "evaluates distributed consensus algorithms (Raft, Paxos, Quorums)", "analyzes distributed locking hazards, fencing tokens, and clock drift" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-166",
+    "question" : "What does PACELC theorem add to the traditional CAP theorem regarding latency and consistency trade-offs?",
+    "subject" : "System Design",
+    "topic" : "Consensus & Distributed Coordination",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "cap theorem", "raft", "paxos", "zookeeper", "distributed locks", "consensus & distributed coordination" ],
+    "criteria" : [ "articulates CAP and PACELC trade-offs with real architectural examples", "evaluates distributed consensus algorithms (Raft, Paxos, Quorums)", "analyzes distributed locking hazards, fencing tokens, and clock drift" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-167",
+    "question" : "What is the split-brain problem in distributed clusters, and what quorum rule prevents it?",
+    "subject" : "System Design",
+    "topic" : "Consensus & Distributed Coordination",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "cap theorem", "raft", "paxos", "zookeeper", "distributed locks", "consensus & distributed coordination" ],
+    "criteria" : [ "articulates CAP and PACELC trade-offs with real architectural examples", "evaluates distributed consensus algorithms (Raft, Paxos, Quorums)", "analyzes distributed locking hazards, fencing tokens, and clock drift" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-168",
+    "question" : "Compare Multi-Paxos and Raft in terms of state machine complexity, performance, and real-world adoption.",
+    "subject" : "System Design",
+    "topic" : "Consensus & Distributed Coordination",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cap theorem", "raft", "paxos", "zookeeper", "distributed locks", "consensus & distributed coordination" ],
+    "criteria" : [ "articulates CAP and PACELC trade-offs with real architectural examples", "evaluates distributed consensus algorithms (Raft, Paxos, Quorums)", "analyzes distributed locking hazards, fencing tokens, and clock drift" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-169",
+    "question" : "How does Apache ZooKeeper handle ephemeral nodes and watchers to implement distributed group membership and configuration updates?",
+    "subject" : "System Design",
+    "topic" : "Consensus & Distributed Coordination",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cap theorem", "raft", "paxos", "zookeeper", "distributed locks", "consensus & distributed coordination" ],
+    "criteria" : [ "articulates CAP and PACELC trade-offs with real architectural examples", "evaluates distributed consensus algorithms (Raft, Paxos, Quorums)", "analyzes distributed locking hazards, fencing tokens, and clock drift" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-170",
+    "question" : "What is the difference between pessimistic concurrency control and optimistic concurrency control (OCC) in distributed storage?",
+    "subject" : "System Design",
+    "topic" : "Consensus & Distributed Coordination",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cap theorem", "raft", "paxos", "zookeeper", "distributed locks", "consensus & distributed coordination" ],
+    "criteria" : [ "articulates CAP and PACELC trade-offs with real architectural examples", "evaluates distributed consensus algorithms (Raft, Paxos, Quorums)", "analyzes distributed locking hazards, fencing tokens, and clock drift" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-171",
+    "question" : "How do vector clocks track causality between events in decentralized systems without synchronized physical clocks?",
+    "subject" : "System Design",
+    "topic" : "Consensus & Distributed Coordination",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cap theorem", "raft", "paxos", "zookeeper", "distributed locks", "consensus & distributed coordination" ],
+    "criteria" : [ "articulates CAP and PACELC trade-offs with real architectural examples", "evaluates distributed consensus algorithms (Raft, Paxos, Quorums)", "analyzes distributed locking hazards, fencing tokens, and clock drift" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-172",
+    "question" : "How does the Raft consensus algorithm achieve leader election, log replication, and safety across distributed nodes?",
+    "subject" : "System Design",
+    "topic" : "Consensus & Distributed Coordination",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cap theorem", "raft", "paxos", "zookeeper", "distributed locks", "consensus & distributed coordination" ],
+    "criteria" : [ "articulates CAP and PACELC trade-offs with real architectural examples", "evaluates distributed consensus algorithms (Raft, Paxos, Quorums)", "analyzes distributed locking hazards, fencing tokens, and clock drift" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-173",
+    "question" : "Explain the Redlock algorithm for distributed locking using Redis, and discuss the Martin Kleppmann critique regarding clock drift.",
+    "subject" : "System Design",
+    "topic" : "Consensus & Distributed Coordination",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cap theorem", "raft", "paxos", "zookeeper", "distributed locks", "consensus & distributed coordination" ],
+    "criteria" : [ "articulates CAP and PACELC trade-offs with real architectural examples", "evaluates distributed consensus algorithms (Raft, Paxos, Quorums)", "analyzes distributed locking hazards, fencing tokens, and clock drift" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-174",
+    "question" : "How do fencing tokens prevent stale leader writes in distributed locking systems when a thread experiences an unexpected GC pause?",
+    "subject" : "System Design",
+    "topic" : "Consensus & Distributed Coordination",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cap theorem", "raft", "paxos", "zookeeper", "distributed locks", "consensus & distributed coordination" ],
+    "criteria" : [ "articulates CAP and PACELC trade-offs with real architectural examples", "evaluates distributed consensus algorithms (Raft, Paxos, Quorums)", "analyzes distributed locking hazards, fencing tokens, and clock drift" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-175",
+    "question" : "Compare Multi-Paxos and Raft in terms of state machine complexity, performance, and real-world adoption.",
+    "subject" : "System Design",
+    "topic" : "Consensus & Distributed Coordination",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cap theorem", "raft", "paxos", "zookeeper", "distributed locks", "consensus & distributed coordination" ],
+    "criteria" : [ "articulates CAP and PACELC trade-offs with real architectural examples", "evaluates distributed consensus algorithms (Raft, Paxos, Quorums)", "analyzes distributed locking hazards, fencing tokens, and clock drift" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-176",
+    "question" : "How does Apache ZooKeeper handle ephemeral nodes and watchers to implement distributed group membership and configuration updates?",
+    "subject" : "System Design",
+    "topic" : "Consensus & Distributed Coordination",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cap theorem", "raft", "paxos", "zookeeper", "distributed locks", "consensus & distributed coordination" ],
+    "criteria" : [ "articulates CAP and PACELC trade-offs with real architectural examples", "evaluates distributed consensus algorithms (Raft, Paxos, Quorums)", "analyzes distributed locking hazards, fencing tokens, and clock drift" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-177",
+    "question" : "What is the difference between pessimistic concurrency control and optimistic concurrency control (OCC) in distributed storage?",
+    "subject" : "System Design",
+    "topic" : "Consensus & Distributed Coordination",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cap theorem", "raft", "paxos", "zookeeper", "distributed locks", "consensus & distributed coordination" ],
+    "criteria" : [ "articulates CAP and PACELC trade-offs with real architectural examples", "evaluates distributed consensus algorithms (Raft, Paxos, Quorums)", "analyzes distributed locking hazards, fencing tokens, and clock drift" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-178",
+    "question" : "How do vector clocks track causality between events in decentralized systems without synchronized physical clocks?",
+    "subject" : "System Design",
+    "topic" : "Consensus & Distributed Coordination",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cap theorem", "raft", "paxos", "zookeeper", "distributed locks", "consensus & distributed coordination" ],
+    "criteria" : [ "articulates CAP and PACELC trade-offs with real architectural examples", "evaluates distributed consensus algorithms (Raft, Paxos, Quorums)", "analyzes distributed locking hazards, fencing tokens, and clock drift" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-179",
+    "question" : "How does the Raft consensus algorithm achieve leader election, log replication, and safety across distributed nodes?",
+    "subject" : "System Design",
+    "topic" : "Consensus & Distributed Coordination",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cap theorem", "raft", "paxos", "zookeeper", "distributed locks", "consensus & distributed coordination" ],
+    "criteria" : [ "articulates CAP and PACELC trade-offs with real architectural examples", "evaluates distributed consensus algorithms (Raft, Paxos, Quorums)", "analyzes distributed locking hazards, fencing tokens, and clock drift" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-180",
+    "question" : "Explain the Redlock algorithm for distributed locking using Redis, and discuss the Martin Kleppmann critique regarding clock drift.",
+    "subject" : "System Design",
+    "topic" : "Consensus & Distributed Coordination",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cap theorem", "raft", "paxos", "zookeeper", "distributed locks", "consensus & distributed coordination" ],
+    "criteria" : [ "articulates CAP and PACELC trade-offs with real architectural examples", "evaluates distributed consensus algorithms (Raft, Paxos, Quorums)", "analyzes distributed locking hazards, fencing tokens, and clock drift" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-181",
+    "question" : "How do fencing tokens prevent stale leader writes in distributed locking systems when a thread experiences an unexpected GC pause?",
+    "subject" : "System Design",
+    "topic" : "Consensus & Distributed Coordination",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cap theorem", "raft", "paxos", "zookeeper", "distributed locks", "consensus & distributed coordination" ],
+    "criteria" : [ "articulates CAP and PACELC trade-offs with real architectural examples", "evaluates distributed consensus algorithms (Raft, Paxos, Quorums)", "analyzes distributed locking hazards, fencing tokens, and clock drift" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-182",
+    "question" : "Compare Multi-Paxos and Raft in terms of state machine complexity, performance, and real-world adoption.",
+    "subject" : "System Design",
+    "topic" : "Consensus & Distributed Coordination",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cap theorem", "raft", "paxos", "zookeeper", "distributed locks", "consensus & distributed coordination" ],
+    "criteria" : [ "articulates CAP and PACELC trade-offs with real architectural examples", "evaluates distributed consensus algorithms (Raft, Paxos, Quorums)", "analyzes distributed locking hazards, fencing tokens, and clock drift" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-183",
+    "question" : "Design a distributed consensus cluster using Raft that maintains 99.999% write availability under partial network partitions and Byzantine faults.",
+    "subject" : "System Design",
+    "topic" : "Consensus & Distributed Coordination",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "cap theorem", "raft", "paxos", "zookeeper", "distributed locks", "consensus & distributed coordination" ],
+    "criteria" : [ "articulates CAP and PACELC trade-offs with real architectural examples", "evaluates distributed consensus algorithms (Raft, Paxos, Quorums)", "analyzes distributed locking hazards, fencing tokens, and clock drift" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-184",
+    "question" : "Analyze how distributed clock skew and leap seconds can corrupt timestamp-ordered databases like Google Spanner or CockroachDB.",
+    "subject" : "System Design",
+    "topic" : "Consensus & Distributed Coordination",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "cap theorem", "raft", "paxos", "zookeeper", "distributed locks", "consensus & distributed coordination" ],
+    "criteria" : [ "articulates CAP and PACELC trade-offs with real architectural examples", "evaluates distributed consensus algorithms (Raft, Paxos, Quorums)", "analyzes distributed locking hazards, fencing tokens, and clock drift" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-185",
+    "question" : "Design a distributed leader election system that handles asymmetric network partitions where node A can talk to B, but B cannot talk to C.",
+    "subject" : "System Design",
+    "topic" : "Consensus & Distributed Coordination",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "cap theorem", "raft", "paxos", "zookeeper", "distributed locks", "consensus & distributed coordination" ],
+    "criteria" : [ "articulates CAP and PACELC trade-offs with real architectural examples", "evaluates distributed consensus algorithms (Raft, Paxos, Quorums)", "analyzes distributed locking hazards, fencing tokens, and clock drift" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-186",
+    "question" : "Architect a global distributed lock service with sub-millisecond lease acquisition and automatic lock reclamation on client crash.",
+    "subject" : "System Design",
+    "topic" : "Consensus & Distributed Coordination",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "cap theorem", "raft", "paxos", "zookeeper", "distributed locks", "consensus & distributed coordination" ],
+    "criteria" : [ "articulates CAP and PACELC trade-offs with real architectural examples", "evaluates distributed consensus algorithms (Raft, Paxos, Quorums)", "analyzes distributed locking hazards, fencing tokens, and clock drift" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-187",
+    "question" : "How do Conflict-Free Replicated Data Types (CRDTs) achieve deterministic eventual consistency in distributed collaborative whiteboards?",
+    "subject" : "System Design",
+    "topic" : "Consensus & Distributed Coordination",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "cap theorem", "raft", "paxos", "zookeeper", "distributed locks", "consensus & distributed coordination" ],
+    "criteria" : [ "articulates CAP and PACELC trade-offs with real architectural examples", "evaluates distributed consensus algorithms (Raft, Paxos, Quorums)", "analyzes distributed locking hazards, fencing tokens, and clock drift" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-188",
+    "question" : "Design a distributed consensus cluster using Raft that maintains 99.999% write availability under partial network partitions and Byzantine faults.",
+    "subject" : "System Design",
+    "topic" : "Consensus & Distributed Coordination",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "cap theorem", "raft", "paxos", "zookeeper", "distributed locks", "consensus & distributed coordination" ],
+    "criteria" : [ "articulates CAP and PACELC trade-offs with real architectural examples", "evaluates distributed consensus algorithms (Raft, Paxos, Quorums)", "analyzes distributed locking hazards, fencing tokens, and clock drift" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-189",
+    "question" : "What are the key functional and non-functional requirements when designing a scalable URL Shortener (e.g. Bitly)?",
+    "subject" : "System Design",
+    "topic" : "Real-World System Architectures",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "system design", "hld", "url shortener", "rate limiter", "notification service", "real-world system architectures" ],
+    "criteria" : [ "defines clear functional and non-functional requirements with capacity estimates", "selects appropriate datastores, caching tiers, and messaging protocols", "identifies single points of failure and bottlenecks under extreme load" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-190",
+    "question" : "How would you design a distributed unique ID generator (e.g. Twitter Snowflake) that generates 64-bit time-ordered IDs?",
+    "subject" : "System Design",
+    "topic" : "Real-World System Architectures",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "system design", "hld", "url shortener", "rate limiter", "notification service", "real-world system architectures" ],
+    "criteria" : [ "defines clear functional and non-functional requirements with capacity estimates", "selects appropriate datastores, caching tiers, and messaging protocols", "identifies single points of failure and bottlenecks under extreme load" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-191",
+    "question" : "What architectural components are required to design a global Notification System supporting Push, SMS, and Email?",
+    "subject" : "System Design",
+    "topic" : "Real-World System Architectures",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "system design", "hld", "url shortener", "rate limiter", "notification service", "real-world system architectures" ],
+    "criteria" : [ "defines clear functional and non-functional requirements with capacity estimates", "selects appropriate datastores, caching tiers, and messaging protocols", "identifies single points of failure and bottlenecks under extreme load" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-192",
+    "question" : "How do Content Delivery Networks (CDNs) cache static and dynamic assets at edge locations to minimize latency?",
+    "subject" : "System Design",
+    "topic" : "Real-World System Architectures",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "system design", "hld", "url shortener", "rate limiter", "notification service", "real-world system architectures" ],
+    "criteria" : [ "defines clear functional and non-functional requirements with capacity estimates", "selects appropriate datastores, caching tiers, and messaging protocols", "identifies single points of failure and bottlenecks under extreme load" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-193",
+    "question" : "What database schema and indexing strategy would you use to design a scalable Pastebin or text-sharing platform?",
+    "subject" : "System Design",
+    "topic" : "Real-World System Architectures",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "system design", "hld", "url shortener", "rate limiter", "notification service", "real-world system architectures" ],
+    "criteria" : [ "defines clear functional and non-functional requirements with capacity estimates", "selects appropriate datastores, caching tiers, and messaging protocols", "identifies single points of failure and bottlenecks under extreme load" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-194",
+    "question" : "How does an API Rate Limiter using the Token Bucket algorithm differ from a Leaky Bucket algorithm in handling bursty traffic?",
+    "subject" : "System Design",
+    "topic" : "Real-World System Architectures",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "system design", "hld", "url shortener", "rate limiter", "notification service", "real-world system architectures" ],
+    "criteria" : [ "defines clear functional and non-functional requirements with capacity estimates", "selects appropriate datastores, caching tiers, and messaging protocols", "identifies single points of failure and bottlenecks under extreme load" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-195",
+    "question" : "What are the core building blocks needed to design a scalable real-time chat application like WhatsApp or Slack?",
+    "subject" : "System Design",
+    "topic" : "Real-World System Architectures",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "system design", "hld", "url shortener", "rate limiter", "notification service", "real-world system architectures" ],
+    "criteria" : [ "defines clear functional and non-functional requirements with capacity estimates", "selects appropriate datastores, caching tiers, and messaging protocols", "identifies single points of failure and bottlenecks under extreme load" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-196",
+    "question" : "What are the key functional and non-functional requirements when designing a scalable URL Shortener (e.g. Bitly)?",
+    "subject" : "System Design",
+    "topic" : "Real-World System Architectures",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "system design", "hld", "url shortener", "rate limiter", "notification service", "real-world system architectures" ],
+    "criteria" : [ "defines clear functional and non-functional requirements with capacity estimates", "selects appropriate datastores, caching tiers, and messaging protocols", "identifies single points of failure and bottlenecks under extreme load" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-197",
+    "question" : "How would you design a distributed unique ID generator (e.g. Twitter Snowflake) that generates 64-bit time-ordered IDs?",
+    "subject" : "System Design",
+    "topic" : "Real-World System Architectures",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "system design", "hld", "url shortener", "rate limiter", "notification service", "real-world system architectures" ],
+    "criteria" : [ "defines clear functional and non-functional requirements with capacity estimates", "selects appropriate datastores, caching tiers, and messaging protocols", "identifies single points of failure and bottlenecks under extreme load" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-198",
+    "question" : "What architectural components are required to design a global Notification System supporting Push, SMS, and Email?",
+    "subject" : "System Design",
+    "topic" : "Real-World System Architectures",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "system design", "hld", "url shortener", "rate limiter", "notification service", "real-world system architectures" ],
+    "criteria" : [ "defines clear functional and non-functional requirements with capacity estimates", "selects appropriate datastores, caching tiers, and messaging protocols", "identifies single points of failure and bottlenecks under extreme load" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-199",
+    "question" : "Design a real-time collaborative document editing system (like Google Docs) using Operational Transformation (OT) or CRDTs.",
+    "subject" : "System Design",
+    "topic" : "Real-World System Architectures",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "system design", "hld", "url shortener", "rate limiter", "notification service", "real-world system architectures" ],
+    "criteria" : [ "defines clear functional and non-functional requirements with capacity estimates", "selects appropriate datastores, caching tiers, and messaging protocols", "identifies single points of failure and bottlenecks under extreme load" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-200",
+    "question" : "Design a distributed Web Crawler capable of crawling 1 billion web pages per month with politeness policies and deduplication.",
+    "subject" : "System Design",
+    "topic" : "Real-World System Architectures",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "system design", "hld", "url shortener", "rate limiter", "notification service", "real-world system architectures" ],
+    "criteria" : [ "defines clear functional and non-functional requirements with capacity estimates", "selects appropriate datastores, caching tiers, and messaging protocols", "identifies single points of failure and bottlenecks under extreme load" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-201",
+    "question" : "Architect a scalable metrics collection and alerting pipeline that processes 10 million time-series metrics per minute.",
+    "subject" : "System Design",
+    "topic" : "Real-World System Architectures",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "system design", "hld", "url shortener", "rate limiter", "notification service", "real-world system architectures" ],
+    "criteria" : [ "defines clear functional and non-functional requirements with capacity estimates", "selects appropriate datastores, caching tiers, and messaging protocols", "identifies single points of failure and bottlenecks under extreme load" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-202",
+    "question" : "Design a ride-sharing dispatch system (like Uber) using geospatial indexing (Uber H3 or Google S2) to match drivers with riders.",
+    "subject" : "System Design",
+    "topic" : "Real-World System Architectures",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "system design", "hld", "url shortener", "rate limiter", "notification service", "real-world system architectures" ],
+    "criteria" : [ "defines clear functional and non-functional requirements with capacity estimates", "selects appropriate datastores, caching tiers, and messaging protocols", "identifies single points of failure and bottlenecks under extreme load" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-203",
+    "question" : "Design a distributed URL shortener handling 100 million writes per day and 1 billion reads per day with sub-10ms redirect latency.",
+    "subject" : "System Design",
+    "topic" : "Real-World System Architectures",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "system design", "hld", "url shortener", "rate limiter", "notification service", "real-world system architectures" ],
+    "criteria" : [ "defines clear functional and non-functional requirements with capacity estimates", "selects appropriate datastores, caching tiers, and messaging protocols", "identifies single points of failure and bottlenecks under extreme load" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-204",
+    "question" : "Design a global Rate Limiting service that enforces per-user and per-IP quotas across 50 data centers with minimal coordination latency.",
+    "subject" : "System Design",
+    "topic" : "Real-World System Architectures",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "system design", "hld", "url shortener", "rate limiter", "notification service", "real-world system architectures" ],
+    "criteria" : [ "defines clear functional and non-functional requirements with capacity estimates", "selects appropriate datastores, caching tiers, and messaging protocols", "identifies single points of failure and bottlenecks under extreme load" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-205",
+    "question" : "Architect a scalable Notification Service that prioritizes critical OTP alerts over promotional marketing broadcasts during peak loads.",
+    "subject" : "System Design",
+    "topic" : "Real-World System Architectures",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "system design", "hld", "url shortener", "rate limiter", "notification service", "real-world system architectures" ],
+    "criteria" : [ "defines clear functional and non-functional requirements with capacity estimates", "selects appropriate datastores, caching tiers, and messaging protocols", "identifies single points of failure and bottlenecks under extreme load" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-206",
+    "question" : "Design a real-time collaborative document editing system (like Google Docs) using Operational Transformation (OT) or CRDTs.",
+    "subject" : "System Design",
+    "topic" : "Real-World System Architectures",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "system design", "hld", "url shortener", "rate limiter", "notification service", "real-world system architectures" ],
+    "criteria" : [ "defines clear functional and non-functional requirements with capacity estimates", "selects appropriate datastores, caching tiers, and messaging protocols", "identifies single points of failure and bottlenecks under extreme load" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-207",
+    "question" : "Design a distributed Web Crawler capable of crawling 1 billion web pages per month with politeness policies and deduplication.",
+    "subject" : "System Design",
+    "topic" : "Real-World System Architectures",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "system design", "hld", "url shortener", "rate limiter", "notification service", "real-world system architectures" ],
+    "criteria" : [ "defines clear functional and non-functional requirements with capacity estimates", "selects appropriate datastores, caching tiers, and messaging protocols", "identifies single points of failure and bottlenecks under extreme load" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-208",
+    "question" : "Architect a scalable metrics collection and alerting pipeline that processes 10 million time-series metrics per minute.",
+    "subject" : "System Design",
+    "topic" : "Real-World System Architectures",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "system design", "hld", "url shortener", "rate limiter", "notification service", "real-world system architectures" ],
+    "criteria" : [ "defines clear functional and non-functional requirements with capacity estimates", "selects appropriate datastores, caching tiers, and messaging protocols", "identifies single points of failure and bottlenecks under extreme load" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-209",
+    "question" : "Design a ride-sharing dispatch system (like Uber) using geospatial indexing (Uber H3 or Google S2) to match drivers with riders.",
+    "subject" : "System Design",
+    "topic" : "Real-World System Architectures",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "system design", "hld", "url shortener", "rate limiter", "notification service", "real-world system architectures" ],
+    "criteria" : [ "defines clear functional and non-functional requirements with capacity estimates", "selects appropriate datastores, caching tiers, and messaging protocols", "identifies single points of failure and bottlenecks under extreme load" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-210",
+    "question" : "Design a distributed URL shortener handling 100 million writes per day and 1 billion reads per day with sub-10ms redirect latency.",
+    "subject" : "System Design",
+    "topic" : "Real-World System Architectures",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "system design", "hld", "url shortener", "rate limiter", "notification service", "real-world system architectures" ],
+    "criteria" : [ "defines clear functional and non-functional requirements with capacity estimates", "selects appropriate datastores, caching tiers, and messaging protocols", "identifies single points of failure and bottlenecks under extreme load" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-211",
+    "question" : "Design a global Rate Limiting service that enforces per-user and per-IP quotas across 50 data centers with minimal coordination latency.",
+    "subject" : "System Design",
+    "topic" : "Real-World System Architectures",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "system design", "hld", "url shortener", "rate limiter", "notification service", "real-world system architectures" ],
+    "criteria" : [ "defines clear functional and non-functional requirements with capacity estimates", "selects appropriate datastores, caching tiers, and messaging protocols", "identifies single points of failure and bottlenecks under extreme load" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-212",
+    "question" : "Architect a scalable Notification Service that prioritizes critical OTP alerts over promotional marketing broadcasts during peak loads.",
+    "subject" : "System Design",
+    "topic" : "Real-World System Architectures",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "system design", "hld", "url shortener", "rate limiter", "notification service", "real-world system architectures" ],
+    "criteria" : [ "defines clear functional and non-functional requirements with capacity estimates", "selects appropriate datastores, caching tiers, and messaging protocols", "identifies single points of failure and bottlenecks under extreme load" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-213",
+    "question" : "Design a real-time collaborative document editing system (like Google Docs) using Operational Transformation (OT) or CRDTs.",
+    "subject" : "System Design",
+    "topic" : "Real-World System Architectures",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "system design", "hld", "url shortener", "rate limiter", "notification service", "real-world system architectures" ],
+    "criteria" : [ "defines clear functional and non-functional requirements with capacity estimates", "selects appropriate datastores, caching tiers, and messaging protocols", "identifies single points of failure and bottlenecks under extreme load" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-214",
+    "question" : "Architect the YouTube video processing pipeline: video upload, distributed chunked encoding, adaptive bitrate streaming (HLS/DASH), and CDN edge caching.",
+    "subject" : "System Design",
+    "topic" : "Real-World System Architectures",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "system design", "hld", "url shortener", "rate limiter", "notification service", "real-world system architectures" ],
+    "criteria" : [ "defines clear functional and non-functional requirements with capacity estimates", "selects appropriate datastores, caching tiers, and messaging protocols", "identifies single points of failure and bottlenecks under extreme load" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-215",
+    "question" : "Design a distributed search engine indexer (like Elasticsearch) that ingests 500,000 log events per second with near-real-time full-text search capability.",
+    "subject" : "System Design",
+    "topic" : "Real-World System Architectures",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "system design", "hld", "url shortener", "rate limiter", "notification service", "real-world system architectures" ],
+    "criteria" : [ "defines clear functional and non-functional requirements with capacity estimates", "selects appropriate datastores, caching tiers, and messaging protocols", "identifies single points of failure and bottlenecks under extreme load" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-216",
+    "question" : "Design a real-time financial trading order matching engine that matches buy and sell orders with deterministic sub-microsecond latency.",
+    "subject" : "System Design",
+    "topic" : "Real-World System Architectures",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "system design", "hld", "url shortener", "rate limiter", "notification service", "real-world system architectures" ],
+    "criteria" : [ "defines clear functional and non-functional requirements with capacity estimates", "selects appropriate datastores, caching tiers, and messaging protocols", "identifies single points of failure and bottlenecks under extreme load" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-217",
+    "question" : "Architect a global e-commerce flash sale system (like Amazon Prime Day) that sells 10,000 units of an item in 5 seconds with zero inventory over-allocation.",
+    "subject" : "System Design",
+    "topic" : "Real-World System Architectures",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "system design", "hld", "url shortener", "rate limiter", "notification service", "real-world system architectures" ],
+    "criteria" : [ "defines clear functional and non-functional requirements with capacity estimates", "selects appropriate datastores, caching tiers, and messaging protocols", "identifies single points of failure and bottlenecks under extreme load" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-218",
+    "question" : "Design a distributed file storage platform (like Google Drive or Dropbox) with block-level deduplication, chunk encryption, and cross-device synchronization.",
+    "subject" : "System Design",
+    "topic" : "Real-World System Architectures",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "system design", "hld", "url shortener", "rate limiter", "notification service", "real-world system architectures" ],
+    "criteria" : [ "defines clear functional and non-functional requirements with capacity estimates", "selects appropriate datastores, caching tiers, and messaging protocols", "identifies single points of failure and bottlenecks under extreme load" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-219",
+    "question" : "Architect the YouTube video processing pipeline: video upload, distributed chunked encoding, adaptive bitrate streaming (HLS/DASH), and CDN edge caching.",
+    "subject" : "System Design",
+    "topic" : "Real-World System Architectures",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "system design", "hld", "url shortener", "rate limiter", "notification service", "real-world system architectures" ],
+    "criteria" : [ "defines clear functional and non-functional requirements with capacity estimates", "selects appropriate datastores, caching tiers, and messaging protocols", "identifies single points of failure and bottlenecks under extreme load" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-220",
+    "question" : "What is a Single Point of Failure (SPOF) in system architecture, and how do redundant deployments eliminate it?",
+    "subject" : "System Design",
+    "topic" : "Security & Resilience Architecture",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "security", "resilience", "zero trust", "circuit breaker", "ddos", "security & resilience architecture" ],
+    "criteria" : [ "evaluates security architecture and zero-trust principles", "analyzes RTO and RPO disaster recovery strategies", "implements cryptographic data protection and threat mitigation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-221",
+    "question" : "What is the principle of Least Privilege, and how is it applied to cloud IAM roles and service-to-service communication?",
+    "subject" : "System Design",
+    "topic" : "Security & Resilience Architecture",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "security", "resilience", "zero trust", "circuit breaker", "ddos", "security & resilience architecture" ],
+    "criteria" : [ "evaluates security architecture and zero-trust principles", "analyzes RTO and RPO disaster recovery strategies", "implements cryptographic data protection and threat mitigation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-222",
+    "question" : "What is a DDoS (Distributed Denial of Service) attack, and how do Anycast networks and WAFs mitigate volumetric attacks?",
+    "subject" : "System Design",
+    "topic" : "Security & Resilience Architecture",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "security", "resilience", "zero trust", "circuit breaker", "ddos", "security & resilience architecture" ],
+    "criteria" : [ "evaluates security architecture and zero-trust principles", "analyzes RTO and RPO disaster recovery strategies", "implements cryptographic data protection and threat mitigation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-223",
+    "question" : "Explain the difference between authentication and authorization in modern distributed API architectures.",
+    "subject" : "System Design",
+    "topic" : "Security & Resilience Architecture",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "security", "resilience", "zero trust", "circuit breaker", "ddos", "security & resilience architecture" ],
+    "criteria" : [ "evaluates security architecture and zero-trust principles", "analyzes RTO and RPO disaster recovery strategies", "implements cryptographic data protection and threat mitigation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-224",
+    "question" : "What is Disaster Recovery (DR), and what are the definitions of RTO (Recovery Time Objective) and RPO (Recovery Point Objective)?",
+    "subject" : "System Design",
+    "topic" : "Security & Resilience Architecture",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "security", "resilience", "zero trust", "circuit breaker", "ddos", "security & resilience architecture" ],
+    "criteria" : [ "evaluates security architecture and zero-trust principles", "analyzes RTO and RPO disaster recovery strategies", "implements cryptographic data protection and threat mitigation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-225",
+    "question" : "How does end-to-end encryption differ from encryption in transit (TLS) and encryption at rest?",
+    "subject" : "System Design",
+    "topic" : "Security & Resilience Architecture",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "security", "resilience", "zero trust", "circuit breaker", "ddos", "security & resilience architecture" ],
+    "criteria" : [ "evaluates security architecture and zero-trust principles", "analyzes RTO and RPO disaster recovery strategies", "implements cryptographic data protection and threat mitigation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-226",
+    "question" : "What is a Zero Trust security architecture, and why is perimeter-based network security no longer sufficient?",
+    "subject" : "System Design",
+    "topic" : "Security & Resilience Architecture",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "security", "resilience", "zero trust", "circuit breaker", "ddos", "security & resilience architecture" ],
+    "criteria" : [ "evaluates security architecture and zero-trust principles", "analyzes RTO and RPO disaster recovery strategies", "implements cryptographic data protection and threat mitigation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-227",
+    "question" : "What is a Single Point of Failure (SPOF) in system architecture, and how do redundant deployments eliminate it?",
+    "subject" : "System Design",
+    "topic" : "Security & Resilience Architecture",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "security", "resilience", "zero trust", "circuit breaker", "ddos", "security & resilience architecture" ],
+    "criteria" : [ "evaluates security architecture and zero-trust principles", "analyzes RTO and RPO disaster recovery strategies", "implements cryptographic data protection and threat mitigation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-228",
+    "question" : "What is the principle of Least Privilege, and how is it applied to cloud IAM roles and service-to-service communication?",
+    "subject" : "System Design",
+    "topic" : "Security & Resilience Architecture",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "security", "resilience", "zero trust", "circuit breaker", "ddos", "security & resilience architecture" ],
+    "criteria" : [ "evaluates security architecture and zero-trust principles", "analyzes RTO and RPO disaster recovery strategies", "implements cryptographic data protection and threat mitigation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-229",
+    "question" : "What is a DDoS (Distributed Denial of Service) attack, and how do Anycast networks and WAFs mitigate volumetric attacks?",
+    "subject" : "System Design",
+    "topic" : "Security & Resilience Architecture",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "security", "resilience", "zero trust", "circuit breaker", "ddos", "security & resilience architecture" ],
+    "criteria" : [ "evaluates security architecture and zero-trust principles", "analyzes RTO and RPO disaster recovery strategies", "implements cryptographic data protection and threat mitigation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-230",
+    "question" : "Architect an audit logging system that records all sensitive administrative actions in an immutable, tamper-evident datastore.",
+    "subject" : "System Design",
+    "topic" : "Security & Resilience Architecture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "security", "resilience", "zero trust", "circuit breaker", "ddos", "security & resilience architecture" ],
+    "criteria" : [ "evaluates security architecture and zero-trust principles", "analyzes RTO and RPO disaster recovery strategies", "implements cryptographic data protection and threat mitigation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-231",
+    "question" : "How do you protect internal backend microservices against Server-Side Request Forgery (SSRF) in webhook dispatch systems?",
+    "subject" : "System Design",
+    "topic" : "Security & Resilience Architecture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "security", "resilience", "zero trust", "circuit breaker", "ddos", "security & resilience architecture" ],
+    "criteria" : [ "evaluates security architecture and zero-trust principles", "analyzes RTO and RPO disaster recovery strategies", "implements cryptographic data protection and threat mitigation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-232",
+    "question" : "Design a centralized Secrets Management architecture (using HashiCorp Vault or AWS Secrets Manager) with automated secret rotation.",
+    "subject" : "System Design",
+    "topic" : "Security & Resilience Architecture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "security", "resilience", "zero trust", "circuit breaker", "ddos", "security & resilience architecture" ],
+    "criteria" : [ "evaluates security architecture and zero-trust principles", "analyzes RTO and RPO disaster recovery strategies", "implements cryptographic data protection and threat mitigation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-233",
+    "question" : "How do you architect a database encryption system where sensitive PII is encrypted at the application layer before reaching database storage?",
+    "subject" : "System Design",
+    "topic" : "Security & Resilience Architecture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "security", "resilience", "zero trust", "circuit breaker", "ddos", "security & resilience architecture" ],
+    "criteria" : [ "evaluates security architecture and zero-trust principles", "analyzes RTO and RPO disaster recovery strategies", "implements cryptographic data protection and threat mitigation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-234",
+    "question" : "How do you design a secure token management architecture using short-lived JWT access tokens and revolving refresh tokens?",
+    "subject" : "System Design",
+    "topic" : "Security & Resilience Architecture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "security", "resilience", "zero trust", "circuit breaker", "ddos", "security & resilience architecture" ],
+    "criteria" : [ "evaluates security architecture and zero-trust principles", "analyzes RTO and RPO disaster recovery strategies", "implements cryptographic data protection and threat mitigation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-235",
+    "question" : "Design an automated failover strategy between primary and secondary cloud regions that achieves an RTO under 5 minutes and RPO under 1 minute.",
+    "subject" : "System Design",
+    "topic" : "Security & Resilience Architecture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "security", "resilience", "zero trust", "circuit breaker", "ddos", "security & resilience architecture" ],
+    "criteria" : [ "evaluates security architecture and zero-trust principles", "analyzes RTO and RPO disaster recovery strategies", "implements cryptographic data protection and threat mitigation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-236",
+    "question" : "How do you implement mutual TLS (mTLS) across 100 internal microservices to verify cryptographic identity between microservices?",
+    "subject" : "System Design",
+    "topic" : "Security & Resilience Architecture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "security", "resilience", "zero trust", "circuit breaker", "ddos", "security & resilience architecture" ],
+    "criteria" : [ "evaluates security architecture and zero-trust principles", "analyzes RTO and RPO disaster recovery strategies", "implements cryptographic data protection and threat mitigation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-237",
+    "question" : "Architect an audit logging system that records all sensitive administrative actions in an immutable, tamper-evident datastore.",
+    "subject" : "System Design",
+    "topic" : "Security & Resilience Architecture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "security", "resilience", "zero trust", "circuit breaker", "ddos", "security & resilience architecture" ],
+    "criteria" : [ "evaluates security architecture and zero-trust principles", "analyzes RTO and RPO disaster recovery strategies", "implements cryptographic data protection and threat mitigation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-238",
+    "question" : "How do you protect internal backend microservices against Server-Side Request Forgery (SSRF) in webhook dispatch systems?",
+    "subject" : "System Design",
+    "topic" : "Security & Resilience Architecture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "security", "resilience", "zero trust", "circuit breaker", "ddos", "security & resilience architecture" ],
+    "criteria" : [ "evaluates security architecture and zero-trust principles", "analyzes RTO and RPO disaster recovery strategies", "implements cryptographic data protection and threat mitigation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-239",
+    "question" : "Design a centralized Secrets Management architecture (using HashiCorp Vault or AWS Secrets Manager) with automated secret rotation.",
+    "subject" : "System Design",
+    "topic" : "Security & Resilience Architecture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "security", "resilience", "zero trust", "circuit breaker", "ddos", "security & resilience architecture" ],
+    "criteria" : [ "evaluates security architecture and zero-trust principles", "analyzes RTO and RPO disaster recovery strategies", "implements cryptographic data protection and threat mitigation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-240",
+    "question" : "How do you architect a database encryption system where sensitive PII is encrypted at the application layer before reaching database storage?",
+    "subject" : "System Design",
+    "topic" : "Security & Resilience Architecture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "security", "resilience", "zero trust", "circuit breaker", "ddos", "security & resilience architecture" ],
+    "criteria" : [ "evaluates security architecture and zero-trust principles", "analyzes RTO and RPO disaster recovery strategies", "implements cryptographic data protection and threat mitigation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-241",
+    "question" : "How do you design a secure token management architecture using short-lived JWT access tokens and revolving refresh tokens?",
+    "subject" : "System Design",
+    "topic" : "Security & Resilience Architecture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "security", "resilience", "zero trust", "circuit breaker", "ddos", "security & resilience architecture" ],
+    "criteria" : [ "evaluates security architecture and zero-trust principles", "analyzes RTO and RPO disaster recovery strategies", "implements cryptographic data protection and threat mitigation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-242",
+    "question" : "Design an automated failover strategy between primary and secondary cloud regions that achieves an RTO under 5 minutes and RPO under 1 minute.",
+    "subject" : "System Design",
+    "topic" : "Security & Resilience Architecture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "security", "resilience", "zero trust", "circuit breaker", "ddos", "security & resilience architecture" ],
+    "criteria" : [ "evaluates security architecture and zero-trust principles", "analyzes RTO and RPO disaster recovery strategies", "implements cryptographic data protection and threat mitigation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-243",
+    "question" : "How do you implement mutual TLS (mTLS) across 100 internal microservices to verify cryptographic identity between microservices?",
+    "subject" : "System Design",
+    "topic" : "Security & Resilience Architecture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "security", "resilience", "zero trust", "circuit breaker", "ddos", "security & resilience architecture" ],
+    "criteria" : [ "evaluates security architecture and zero-trust principles", "analyzes RTO and RPO disaster recovery strategies", "implements cryptographic data protection and threat mitigation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-244",
+    "question" : "Architect an audit logging system that records all sensitive administrative actions in an immutable, tamper-evident datastore.",
+    "subject" : "System Design",
+    "topic" : "Security & Resilience Architecture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "security", "resilience", "zero trust", "circuit breaker", "ddos", "security & resilience architecture" ],
+    "criteria" : [ "evaluates security architecture and zero-trust principles", "analyzes RTO and RPO disaster recovery strategies", "implements cryptographic data protection and threat mitigation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-245",
+    "question" : "Design an enterprise zero-trust identity and data plane for a multi-tenant banking platform operating across multi-cloud infrastructure.",
+    "subject" : "System Design",
+    "topic" : "Security & Resilience Architecture",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "security", "resilience", "zero trust", "circuit breaker", "ddos", "security & resilience architecture" ],
+    "criteria" : [ "evaluates security architecture and zero-trust principles", "analyzes RTO and RPO disaster recovery strategies", "implements cryptographic data protection and threat mitigation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-246",
+    "question" : "Architect a resilient self-healing distributed system that automatically isolates compromised nodes and restores uncorrupted state from cryptographic logs.",
+    "subject" : "System Design",
+    "topic" : "Security & Resilience Architecture",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "security", "resilience", "zero trust", "circuit breaker", "ddos", "security & resilience architecture" ],
+    "criteria" : [ "evaluates security architecture and zero-trust principles", "analyzes RTO and RPO disaster recovery strategies", "implements cryptographic data protection and threat mitigation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-247",
+    "question" : "Design a multi-region active-active disaster recovery architecture that survives total cloud vendor failure with zero data loss.",
+    "subject" : "System Design",
+    "topic" : "Security & Resilience Architecture",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "security", "resilience", "zero trust", "circuit breaker", "ddos", "security & resilience architecture" ],
+    "criteria" : [ "evaluates security architecture and zero-trust principles", "analyzes RTO and RPO disaster recovery strategies", "implements cryptographic data protection and threat mitigation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-248",
+    "question" : "Analyze the performance overhead and security guarantees of implementing confidential computing (hardware enclaves / SGX) in public cloud microservices.",
+    "subject" : "System Design",
+    "topic" : "Security & Resilience Architecture",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "security", "resilience", "zero trust", "circuit breaker", "ddos", "security & resilience architecture" ],
+    "criteria" : [ "evaluates security architecture and zero-trust principles", "analyzes RTO and RPO disaster recovery strategies", "implements cryptographic data protection and threat mitigation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-249",
+    "question" : "How do you architect a cryptographic key management infrastructure (KMS) that enforces dual-custody authorization for critical financial transactions?",
+    "subject" : "System Design",
+    "topic" : "Security & Resilience Architecture",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "security", "resilience", "zero trust", "circuit breaker", "ddos", "security & resilience architecture" ],
+    "criteria" : [ "evaluates security architecture and zero-trust principles", "analyzes RTO and RPO disaster recovery strategies", "implements cryptographic data protection and threat mitigation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SYS-250",
+    "question" : "Design an enterprise zero-trust identity and data plane for a multi-tenant banking platform operating across multi-cloud infrastructure.",
+    "subject" : "System Design",
+    "topic" : "Security & Resilience Architecture",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "security", "resilience", "zero trust", "circuit breaker", "ddos", "security & resilience architecture" ],
+    "criteria" : [ "evaluates security architecture and zero-trust principles", "analyzes RTO and RPO disaster recovery strategies", "implements cryptographic data protection and threat mitigation" ],
+    "follow_up" : true
+  } ]
+}

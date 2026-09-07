@@ -29,13 +29,13 @@ import java.util.List;
 public class InterviewController {
 
     private final InterviewSessionService sessionService;
-    private final UserRepository userRepository;
+    private final com.hirecraft.backend.util.UserResolver userResolver;
 
     @PostMapping("/sessions")
     public ResponseEntity<InterviewSessionResponse> createSession(
             @AuthenticationPrincipal UserDetails principal,
             @Valid @RequestBody CreateInterviewSessionRequest request) {
-        User user = resolveUser(principal);
+        User user = userResolver.resolveUser(principal);
         return ResponseEntity.status(HttpStatus.CREATED)
                 .body(sessionService.createSession(user.getUserId(), request));
     }
@@ -43,7 +43,7 @@ public class InterviewController {
     @GetMapping("/sessions")
     public ResponseEntity<List<InterviewSessionResponse>> getMySessions(
             @AuthenticationPrincipal UserDetails principal) {
-        User user = resolveUser(principal);
+        User user = userResolver.resolveUser(principal);
         return ResponseEntity.ok(sessionService.getUserSessions(user.getUserId()));
     }
 
@@ -52,12 +52,30 @@ public class InterviewController {
         return ResponseEntity.ok(sessionService.getSession(sessionId));
     }
 
+    @PostMapping("/sessions/{sessionId}/start")
+    public ResponseEntity<InterviewSessionResponse> startSession(@PathVariable Long sessionId) {
+        return ResponseEntity.ok(sessionService.startSession(sessionId));
+    }
+
+    @GetMapping("/sessions/{sessionId}/current-question")
+    public ResponseEntity<com.hirecraft.backend.dto.InterviewQuestion> getCurrentQuestion(@PathVariable Long sessionId) {
+        com.hirecraft.backend.dto.InterviewQuestion currentQuestion = sessionService.getCurrentQuestion(sessionId);
+        if (currentQuestion == null) {
+            return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+        }
+        return ResponseEntity.ok(currentQuestion);
+    }
+
     @PostMapping("/sessions/{sessionId}/answers")
-    public ResponseEntity<Void> submitAnswer(
+    public ResponseEntity<com.hirecraft.backend.dto.InterviewQuestion> submitAnswer(
             @PathVariable Long sessionId,
             @Valid @RequestBody SubmitInterviewAnswerRequest request) {
-        sessionService.submitAnswer(sessionId, request);
-        return ResponseEntity.status(HttpStatus.CREATED).build();
+        com.hirecraft.backend.dto.InterviewQuestion nextQuestion = sessionService.submitAnswer(sessionId, request);
+        if (nextQuestion == null) {
+            // Interview is over or no more questions
+            return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+        }
+        return ResponseEntity.ok(nextQuestion);
     }
 
     @PostMapping("/sessions/{sessionId}/complete")
@@ -65,8 +83,8 @@ public class InterviewController {
         return ResponseEntity.ok(sessionService.completeSession(sessionId));
     }
 
-    private User resolveUser(UserDetails principal) {
-        return userRepository.findByEmail(principal.getUsername())
-                .orElseThrow(() -> new ResourceNotFoundException("User not found"));
+    @GetMapping("/sessions/{sessionId}/summary")
+    public ResponseEntity<com.hirecraft.backend.dto.response.InterviewSummaryResponse> getSessionSummary(@PathVariable Long sessionId) {
+        return ResponseEntity.ok(sessionService.getSessionSummary(sessionId));
     }
 }

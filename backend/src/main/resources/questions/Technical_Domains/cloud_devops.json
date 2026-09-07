@@ -1,0 +1,2507 @@
+{
+  "subject" : "Cloud & Infrastructure",
+  "batch" : "combined",
+  "version" : "1.0",
+  "language" : null,
+  "questions" : [ {
+    "id" : "CLOUD-001",
+    "question" : "What is the core difference between a Docker container and a traditional Virtual Machine (VM)?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Docker & Containerization",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "docker", "containers", "dockerfile", "images", "cgroups", "docker & containerization" ],
+    "criteria" : [ "explains container isolation mechanisms (cgroups, namespaces)", "optimizes multi-stage Dockerfiles for minimal size and security", "troubleshoots container memory constraints, OOM killer, and networking" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-002",
+    "question" : "Explain how Linux namespaces and cgroups (control groups) provide isolation and resource limits for Docker containers.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Docker & Containerization",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "docker", "containers", "dockerfile", "images", "cgroups", "docker & containerization" ],
+    "criteria" : [ "explains container isolation mechanisms (cgroups, namespaces)", "optimizes multi-stage Dockerfiles for minimal size and security", "troubleshoots container memory constraints, OOM killer, and networking" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-003",
+    "question" : "What is a Docker image layer, and how does layer caching speed up container build times?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Docker & Containerization",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "docker", "containers", "dockerfile", "images", "cgroups", "docker & containerization" ],
+    "criteria" : [ "explains container isolation mechanisms (cgroups, namespaces)", "optimizes multi-stage Dockerfiles for minimal size and security", "troubleshoots container memory constraints, OOM killer, and networking" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-004",
+    "question" : "What is a multi-stage Dockerfile build, and why is it essential for producing minimal production container images?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Docker & Containerization",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "docker", "containers", "dockerfile", "images", "cgroups", "docker & containerization" ],
+    "criteria" : [ "explains container isolation mechanisms (cgroups, namespaces)", "optimizes multi-stage Dockerfiles for minimal size and security", "troubleshoots container memory constraints, OOM killer, and networking" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-005",
+    "question" : "What is the difference between Docker `CMD` and `ENTRYPOINT` instructions in a Dockerfile?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Docker & Containerization",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "docker", "containers", "dockerfile", "images", "cgroups", "docker & containerization" ],
+    "criteria" : [ "explains container isolation mechanisms (cgroups, namespaces)", "optimizes multi-stage Dockerfiles for minimal size and security", "troubleshoots container memory constraints, OOM killer, and networking" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-006",
+    "question" : "What are the security risks of running container processes as the default `root` user, and how do you mitigate it?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Docker & Containerization",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "docker", "containers", "dockerfile", "images", "cgroups", "docker & containerization" ],
+    "criteria" : [ "explains container isolation mechanisms (cgroups, namespaces)", "optimizes multi-stage Dockerfiles for minimal size and security", "troubleshoots container memory constraints, OOM killer, and networking" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-007",
+    "question" : "What is the difference between Docker bridge, host, and overlay networking modes?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Docker & Containerization",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "docker", "containers", "dockerfile", "images", "cgroups", "docker & containerization" ],
+    "criteria" : [ "explains container isolation mechanisms (cgroups, namespaces)", "optimizes multi-stage Dockerfiles for minimal size and security", "troubleshoots container memory constraints, OOM killer, and networking" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-008",
+    "question" : "What is the core difference between a Docker container and a traditional Virtual Machine (VM)?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Docker & Containerization",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "docker", "containers", "dockerfile", "images", "cgroups", "docker & containerization" ],
+    "criteria" : [ "explains container isolation mechanisms (cgroups, namespaces)", "optimizes multi-stage Dockerfiles for minimal size and security", "troubleshoots container memory constraints, OOM killer, and networking" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-009",
+    "question" : "Explain how Linux namespaces and cgroups (control groups) provide isolation and resource limits for Docker containers.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Docker & Containerization",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "docker", "containers", "dockerfile", "images", "cgroups", "docker & containerization" ],
+    "criteria" : [ "explains container isolation mechanisms (cgroups, namespaces)", "optimizes multi-stage Dockerfiles for minimal size and security", "troubleshoots container memory constraints, OOM killer, and networking" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-010",
+    "question" : "What is a Docker image layer, and how does layer caching speed up container build times?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Docker & Containerization",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "docker", "containers", "dockerfile", "images", "cgroups", "docker & containerization" ],
+    "criteria" : [ "explains container isolation mechanisms (cgroups, namespaces)", "optimizes multi-stage Dockerfiles for minimal size and security", "troubleshoots container memory constraints, OOM killer, and networking" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-011",
+    "question" : "What are rootless containers, and how do they enhance security in shared hosting and enterprise environments?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Docker & Containerization",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "docker", "containers", "dockerfile", "images", "cgroups", "docker & containerization" ],
+    "criteria" : [ "explains container isolation mechanisms (cgroups, namespaces)", "optimizes multi-stage Dockerfiles for minimal size and security", "troubleshoots container memory constraints, OOM killer, and networking" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-012",
+    "question" : "How do you scan Docker images for known vulnerabilities (CVEs) in automated CI/CD pipelines using tools like Trivy or Clair?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Docker & Containerization",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "docker", "containers", "dockerfile", "images", "cgroups", "docker & containerization" ],
+    "criteria" : [ "explains container isolation mechanisms (cgroups, namespaces)", "optimizes multi-stage Dockerfiles for minimal size and security", "troubleshoots container memory constraints, OOM killer, and networking" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-013",
+    "question" : "Explain how Docker daemon socket mounting (`/var/run/docker.sock`) exposes the host system to complete compromise.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Docker & Containerization",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "docker", "containers", "dockerfile", "images", "cgroups", "docker & containerization" ],
+    "criteria" : [ "explains container isolation mechanisms (cgroups, namespaces)", "optimizes multi-stage Dockerfiles for minimal size and security", "troubleshoots container memory constraints, OOM killer, and networking" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-014",
+    "question" : "How do Docker health checks (`HEALTHCHECK`) integrate with container orchestrators to detect deadlocked applications?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Docker & Containerization",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "docker", "containers", "dockerfile", "images", "cgroups", "docker & containerization" ],
+    "criteria" : [ "explains container isolation mechanisms (cgroups, namespaces)", "optimizes multi-stage Dockerfiles for minimal size and security", "troubleshoots container memory constraints, OOM killer, and networking" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-015",
+    "question" : "How do you optimize a Java Spring Boot Docker image to reduce image size from 600MB down to under 150MB using distroless/Alpine base images?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Docker & Containerization",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "docker", "containers", "dockerfile", "images", "cgroups", "docker & containerization" ],
+    "criteria" : [ "explains container isolation mechanisms (cgroups, namespaces)", "optimizes multi-stage Dockerfiles for minimal size and security", "troubleshoots container memory constraints, OOM killer, and networking" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-016",
+    "question" : "Explain how Docker handles copy-on-write (CoW) storage using storage drivers like Overlay2.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Docker & Containerization",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "docker", "containers", "dockerfile", "images", "cgroups", "docker & containerization" ],
+    "criteria" : [ "explains container isolation mechanisms (cgroups, namespaces)", "optimizes multi-stage Dockerfiles for minimal size and security", "troubleshoots container memory constraints, OOM killer, and networking" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-017",
+    "question" : "How do you configure container resource constraints (CPU limits, CPU shares, memory limits, and OOM killer behavior) in production?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Docker & Containerization",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "docker", "containers", "dockerfile", "images", "cgroups", "docker & containerization" ],
+    "criteria" : [ "explains container isolation mechanisms (cgroups, namespaces)", "optimizes multi-stage Dockerfiles for minimal size and security", "troubleshoots container memory constraints, OOM killer, and networking" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-018",
+    "question" : "What are rootless containers, and how do they enhance security in shared hosting and enterprise environments?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Docker & Containerization",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "docker", "containers", "dockerfile", "images", "cgroups", "docker & containerization" ],
+    "criteria" : [ "explains container isolation mechanisms (cgroups, namespaces)", "optimizes multi-stage Dockerfiles for minimal size and security", "troubleshoots container memory constraints, OOM killer, and networking" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-019",
+    "question" : "How do you scan Docker images for known vulnerabilities (CVEs) in automated CI/CD pipelines using tools like Trivy or Clair?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Docker & Containerization",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "docker", "containers", "dockerfile", "images", "cgroups", "docker & containerization" ],
+    "criteria" : [ "explains container isolation mechanisms (cgroups, namespaces)", "optimizes multi-stage Dockerfiles for minimal size and security", "troubleshoots container memory constraints, OOM killer, and networking" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-020",
+    "question" : "Explain how Docker daemon socket mounting (`/var/run/docker.sock`) exposes the host system to complete compromise.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Docker & Containerization",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "docker", "containers", "dockerfile", "images", "cgroups", "docker & containerization" ],
+    "criteria" : [ "explains container isolation mechanisms (cgroups, namespaces)", "optimizes multi-stage Dockerfiles for minimal size and security", "troubleshoots container memory constraints, OOM killer, and networking" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-021",
+    "question" : "How do Docker health checks (`HEALTHCHECK`) integrate with container orchestrators to detect deadlocked applications?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Docker & Containerization",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "docker", "containers", "dockerfile", "images", "cgroups", "docker & containerization" ],
+    "criteria" : [ "explains container isolation mechanisms (cgroups, namespaces)", "optimizes multi-stage Dockerfiles for minimal size and security", "troubleshoots container memory constraints, OOM killer, and networking" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-022",
+    "question" : "How do you optimize a Java Spring Boot Docker image to reduce image size from 600MB down to under 150MB using distroless/Alpine base images?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Docker & Containerization",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "docker", "containers", "dockerfile", "images", "cgroups", "docker & containerization" ],
+    "criteria" : [ "explains container isolation mechanisms (cgroups, namespaces)", "optimizes multi-stage Dockerfiles for minimal size and security", "troubleshoots container memory constraints, OOM killer, and networking" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-023",
+    "question" : "Explain how Docker handles copy-on-write (CoW) storage using storage drivers like Overlay2.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Docker & Containerization",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "docker", "containers", "dockerfile", "images", "cgroups", "docker & containerization" ],
+    "criteria" : [ "explains container isolation mechanisms (cgroups, namespaces)", "optimizes multi-stage Dockerfiles for minimal size and security", "troubleshoots container memory constraints, OOM killer, and networking" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-024",
+    "question" : "How do you configure container resource constraints (CPU limits, CPU shares, memory limits, and OOM killer behavior) in production?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Docker & Containerization",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "docker", "containers", "dockerfile", "images", "cgroups", "docker & containerization" ],
+    "criteria" : [ "explains container isolation mechanisms (cgroups, namespaces)", "optimizes multi-stage Dockerfiles for minimal size and security", "troubleshoots container memory constraints, OOM killer, and networking" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-025",
+    "question" : "What are rootless containers, and how do they enhance security in shared hosting and enterprise environments?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Docker & Containerization",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "docker", "containers", "dockerfile", "images", "cgroups", "docker & containerization" ],
+    "criteria" : [ "explains container isolation mechanisms (cgroups, namespaces)", "optimizes multi-stage Dockerfiles for minimal size and security", "troubleshoots container memory constraints, OOM killer, and networking" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-026",
+    "question" : "How do you scan Docker images for known vulnerabilities (CVEs) in automated CI/CD pipelines using tools like Trivy or Clair?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Docker & Containerization",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "docker", "containers", "dockerfile", "images", "cgroups", "docker & containerization" ],
+    "criteria" : [ "explains container isolation mechanisms (cgroups, namespaces)", "optimizes multi-stage Dockerfiles for minimal size and security", "troubleshoots container memory constraints, OOM killer, and networking" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-027",
+    "question" : "Diagnose a production incident where a containerized application crashes due to Linux OOM killer despite the container having 4GB allocated memory.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Docker & Containerization",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "docker", "containers", "dockerfile", "images", "cgroups", "docker & containerization" ],
+    "criteria" : [ "explains container isolation mechanisms (cgroups, namespaces)", "optimizes multi-stage Dockerfiles for minimal size and security", "troubleshoots container memory constraints, OOM killer, and networking" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-028",
+    "question" : "Design an automated multi-architecture (ARM64 and AMD64) container build and publishing pipeline using Docker Buildx and GitHub Actions.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Docker & Containerization",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "docker", "containers", "dockerfile", "images", "cgroups", "docker & containerization" ],
+    "criteria" : [ "explains container isolation mechanisms (cgroups, namespaces)", "optimizes multi-stage Dockerfiles for minimal size and security", "troubleshoots container memory constraints, OOM killer, and networking" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-029",
+    "question" : "Evaluate the performance overhead of container overlay networks versus host networking in latency-critical distributed datastores.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Docker & Containerization",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "docker", "containers", "dockerfile", "images", "cgroups", "docker & containerization" ],
+    "criteria" : [ "explains container isolation mechanisms (cgroups, namespaces)", "optimizes multi-stage Dockerfiles for minimal size and security", "troubleshoots container memory constraints, OOM killer, and networking" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-030",
+    "question" : "How do you architect a container image signing and provenance verification pipeline using Sigstore Cosign and admission controllers?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Docker & Containerization",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "docker", "containers", "dockerfile", "images", "cgroups", "docker & containerization" ],
+    "criteria" : [ "explains container isolation mechanisms (cgroups, namespaces)", "optimizes multi-stage Dockerfiles for minimal size and security", "troubleshoots container memory constraints, OOM killer, and networking" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-031",
+    "question" : "Architect an enterprise container security hardening framework that enforces read-only root filesystems, dropped capabilities, and seccomp profiles.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Docker & Containerization",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "docker", "containers", "dockerfile", "images", "cgroups", "docker & containerization" ],
+    "criteria" : [ "explains container isolation mechanisms (cgroups, namespaces)", "optimizes multi-stage Dockerfiles for minimal size and security", "troubleshoots container memory constraints, OOM killer, and networking" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-032",
+    "question" : "Diagnose a production incident where a containerized application crashes due to Linux OOM killer despite the container having 4GB allocated memory.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Docker & Containerization",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "docker", "containers", "dockerfile", "images", "cgroups", "docker & containerization" ],
+    "criteria" : [ "explains container isolation mechanisms (cgroups, namespaces)", "optimizes multi-stage Dockerfiles for minimal size and security", "troubleshoots container memory constraints, OOM killer, and networking" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-033",
+    "question" : "What are the primary components of the Kubernetes control plane (API Server, etcd, Scheduler, Controller Manager)?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Workloads & Architecture",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "kubernetes", "pods", "deployments", "statefulset", "control plane", "kubernetes workloads & architecture" ],
+    "criteria" : [ "explains Kubernetes control plane and worker node architecture", "configures pod lifecycles, health probes, and rolling update strategies", "manages stateful workloads, auto-scaling, and cluster scheduling constraints" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-034",
+    "question" : "What is a Pod in Kubernetes, and why is it the smallest deployable unit instead of a single container?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Workloads & Architecture",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "kubernetes", "pods", "deployments", "statefulset", "control plane", "kubernetes workloads & architecture" ],
+    "criteria" : [ "explains Kubernetes control plane and worker node architecture", "configures pod lifecycles, health probes, and rolling update strategies", "manages stateful workloads, auto-scaling, and cluster scheduling constraints" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-035",
+    "question" : "What is the difference between a Kubernetes `Deployment`, a `StatefulSet`, and a `DaemonSet`?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Workloads & Architecture",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "kubernetes", "pods", "deployments", "statefulset", "control plane", "kubernetes workloads & architecture" ],
+    "criteria" : [ "explains Kubernetes control plane and worker node architecture", "configures pod lifecycles, health probes, and rolling update strategies", "manages stateful workloads, auto-scaling, and cluster scheduling constraints" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-036",
+    "question" : "What is a ReplicaSet in Kubernetes, and how does a Deployment manage ReplicaSets during rolling updates?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Workloads & Architecture",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "kubernetes", "pods", "deployments", "statefulset", "control plane", "kubernetes workloads & architecture" ],
+    "criteria" : [ "explains Kubernetes control plane and worker node architecture", "configures pod lifecycles, health probes, and rolling update strategies", "manages stateful workloads, auto-scaling, and cluster scheduling constraints" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-037",
+    "question" : "What is the difference between Kubernetes Liveness, Readiness, and Startup probes?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Workloads & Architecture",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "kubernetes", "pods", "deployments", "statefulset", "control plane", "kubernetes workloads & architecture" ],
+    "criteria" : [ "explains Kubernetes control plane and worker node architecture", "configures pod lifecycles, health probes, and rolling update strategies", "manages stateful workloads, auto-scaling, and cluster scheduling constraints" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-038",
+    "question" : "What is the purpose of Kubernetes Namespaces, and what resources are namespaced versus cluster-scoped?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Workloads & Architecture",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "kubernetes", "pods", "deployments", "statefulset", "control plane", "kubernetes workloads & architecture" ],
+    "criteria" : [ "explains Kubernetes control plane and worker node architecture", "configures pod lifecycles, health probes, and rolling update strategies", "manages stateful workloads, auto-scaling, and cluster scheduling constraints" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-039",
+    "question" : "What is a Kubernetes Job and CronJob, and when would you use them instead of standard Deployments?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Workloads & Architecture",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "kubernetes", "pods", "deployments", "statefulset", "control plane", "kubernetes workloads & architecture" ],
+    "criteria" : [ "explains Kubernetes control plane and worker node architecture", "configures pod lifecycles, health probes, and rolling update strategies", "manages stateful workloads, auto-scaling, and cluster scheduling constraints" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-040",
+    "question" : "What are the primary components of the Kubernetes control plane (API Server, etcd, Scheduler, Controller Manager)?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Workloads & Architecture",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "kubernetes", "pods", "deployments", "statefulset", "control plane", "kubernetes workloads & architecture" ],
+    "criteria" : [ "explains Kubernetes control plane and worker node architecture", "configures pod lifecycles, health probes, and rolling update strategies", "manages stateful workloads, auto-scaling, and cluster scheduling constraints" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-041",
+    "question" : "What is a Pod in Kubernetes, and why is it the smallest deployable unit instead of a single container?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Workloads & Architecture",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "kubernetes", "pods", "deployments", "statefulset", "control plane", "kubernetes workloads & architecture" ],
+    "criteria" : [ "explains Kubernetes control plane and worker node architecture", "configures pod lifecycles, health probes, and rolling update strategies", "manages stateful workloads, auto-scaling, and cluster scheduling constraints" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-042",
+    "question" : "What is the difference between a Kubernetes `Deployment`, a `StatefulSet`, and a `DaemonSet`?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Workloads & Architecture",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "kubernetes", "pods", "deployments", "statefulset", "control plane", "kubernetes workloads & architecture" ],
+    "criteria" : [ "explains Kubernetes control plane and worker node architecture", "configures pod lifecycles, health probes, and rolling update strategies", "manages stateful workloads, auto-scaling, and cluster scheduling constraints" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-043",
+    "question" : "Explain the Kubernetes pod termination lifecycle: preStop hook, SIGTERM signal, graceful termination period, and SIGKILL.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Workloads & Architecture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "kubernetes", "pods", "deployments", "statefulset", "control plane", "kubernetes workloads & architecture" ],
+    "criteria" : [ "explains Kubernetes control plane and worker node architecture", "configures pod lifecycles, health probes, and rolling update strategies", "manages stateful workloads, auto-scaling, and cluster scheduling constraints" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-044",
+    "question" : "How do Pod Disruption Budgets (PDB) guarantee application availability during automated node drains and cluster upgrades?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Workloads & Architecture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "kubernetes", "pods", "deployments", "statefulset", "control plane", "kubernetes workloads & architecture" ],
+    "criteria" : [ "explains Kubernetes control plane and worker node architecture", "configures pod lifecycles, health probes, and rolling update strategies", "manages stateful workloads, auto-scaling, and cluster scheduling constraints" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-045",
+    "question" : "What are Taints, Tolerations, and Node Affinity in Kubernetes, and how do they schedule specialized workloads to dedicated nodes?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Workloads & Architecture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "kubernetes", "pods", "deployments", "statefulset", "control plane", "kubernetes workloads & architecture" ],
+    "criteria" : [ "explains Kubernetes control plane and worker node architecture", "configures pod lifecycles, health probes, and rolling update strategies", "manages stateful workloads, auto-scaling, and cluster scheduling constraints" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-046",
+    "question" : "How does the Kubernetes API server use etcd for cluster state storage and how does it handle optimistic concurrency control via resource versions?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Workloads & Architecture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "kubernetes", "pods", "deployments", "statefulset", "control plane", "kubernetes workloads & architecture" ],
+    "criteria" : [ "explains Kubernetes control plane and worker node architecture", "configures pod lifecycles, health probes, and rolling update strategies", "manages stateful workloads, auto-scaling, and cluster scheduling constraints" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-047",
+    "question" : "How does Kubernetes perform a rolling update of a Deployment with `maxSurge` and `maxUnavailable` settings without downtime?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Workloads & Architecture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "kubernetes", "pods", "deployments", "statefulset", "control plane", "kubernetes workloads & architecture" ],
+    "criteria" : [ "explains Kubernetes control plane and worker node architecture", "configures pod lifecycles, health probes, and rolling update strategies", "manages stateful workloads, auto-scaling, and cluster scheduling constraints" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-048",
+    "question" : "Explain how a StatefulSet provides stable network identities (headless services) and persistent storage bindings for clustered databases.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Workloads & Architecture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "kubernetes", "pods", "deployments", "statefulset", "control plane", "kubernetes workloads & architecture" ],
+    "criteria" : [ "explains Kubernetes control plane and worker node architecture", "configures pod lifecycles, health probes, and rolling update strategies", "manages stateful workloads, auto-scaling, and cluster scheduling constraints" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-049",
+    "question" : "How does the Kubernetes Horizontal Pod Autoscaler (HPA) scale pods based on CPU, memory, and custom Prometheus metrics?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Workloads & Architecture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "kubernetes", "pods", "deployments", "statefulset", "control plane", "kubernetes workloads & architecture" ],
+    "criteria" : [ "explains Kubernetes control plane and worker node architecture", "configures pod lifecycles, health probes, and rolling update strategies", "manages stateful workloads, auto-scaling, and cluster scheduling constraints" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-050",
+    "question" : "Explain the Kubernetes pod termination lifecycle: preStop hook, SIGTERM signal, graceful termination period, and SIGKILL.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Workloads & Architecture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "kubernetes", "pods", "deployments", "statefulset", "control plane", "kubernetes workloads & architecture" ],
+    "criteria" : [ "explains Kubernetes control plane and worker node architecture", "configures pod lifecycles, health probes, and rolling update strategies", "manages stateful workloads, auto-scaling, and cluster scheduling constraints" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-051",
+    "question" : "How do Pod Disruption Budgets (PDB) guarantee application availability during automated node drains and cluster upgrades?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Workloads & Architecture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "kubernetes", "pods", "deployments", "statefulset", "control plane", "kubernetes workloads & architecture" ],
+    "criteria" : [ "explains Kubernetes control plane and worker node architecture", "configures pod lifecycles, health probes, and rolling update strategies", "manages stateful workloads, auto-scaling, and cluster scheduling constraints" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-052",
+    "question" : "What are Taints, Tolerations, and Node Affinity in Kubernetes, and how do they schedule specialized workloads to dedicated nodes?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Workloads & Architecture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "kubernetes", "pods", "deployments", "statefulset", "control plane", "kubernetes workloads & architecture" ],
+    "criteria" : [ "explains Kubernetes control plane and worker node architecture", "configures pod lifecycles, health probes, and rolling update strategies", "manages stateful workloads, auto-scaling, and cluster scheduling constraints" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-053",
+    "question" : "How does the Kubernetes API server use etcd for cluster state storage and how does it handle optimistic concurrency control via resource versions?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Workloads & Architecture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "kubernetes", "pods", "deployments", "statefulset", "control plane", "kubernetes workloads & architecture" ],
+    "criteria" : [ "explains Kubernetes control plane and worker node architecture", "configures pod lifecycles, health probes, and rolling update strategies", "manages stateful workloads, auto-scaling, and cluster scheduling constraints" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-054",
+    "question" : "How does Kubernetes perform a rolling update of a Deployment with `maxSurge` and `maxUnavailable` settings without downtime?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Workloads & Architecture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "kubernetes", "pods", "deployments", "statefulset", "control plane", "kubernetes workloads & architecture" ],
+    "criteria" : [ "explains Kubernetes control plane and worker node architecture", "configures pod lifecycles, health probes, and rolling update strategies", "manages stateful workloads, auto-scaling, and cluster scheduling constraints" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-055",
+    "question" : "Explain how a StatefulSet provides stable network identities (headless services) and persistent storage bindings for clustered databases.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Workloads & Architecture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "kubernetes", "pods", "deployments", "statefulset", "control plane", "kubernetes workloads & architecture" ],
+    "criteria" : [ "explains Kubernetes control plane and worker node architecture", "configures pod lifecycles, health probes, and rolling update strategies", "manages stateful workloads, auto-scaling, and cluster scheduling constraints" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-056",
+    "question" : "How does the Kubernetes Horizontal Pod Autoscaler (HPA) scale pods based on CPU, memory, and custom Prometheus metrics?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Workloads & Architecture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "kubernetes", "pods", "deployments", "statefulset", "control plane", "kubernetes workloads & architecture" ],
+    "criteria" : [ "explains Kubernetes control plane and worker node architecture", "configures pod lifecycles, health probes, and rolling update strategies", "manages stateful workloads, auto-scaling, and cluster scheduling constraints" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-057",
+    "question" : "Explain the Kubernetes pod termination lifecycle: preStop hook, SIGTERM signal, graceful termination period, and SIGKILL.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Workloads & Architecture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "kubernetes", "pods", "deployments", "statefulset", "control plane", "kubernetes workloads & architecture" ],
+    "criteria" : [ "explains Kubernetes control plane and worker node architecture", "configures pod lifecycles, health probes, and rolling update strategies", "manages stateful workloads, auto-scaling, and cluster scheduling constraints" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-058",
+    "question" : "How do Pod Disruption Budgets (PDB) guarantee application availability during automated node drains and cluster upgrades?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Workloads & Architecture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "kubernetes", "pods", "deployments", "statefulset", "control plane", "kubernetes workloads & architecture" ],
+    "criteria" : [ "explains Kubernetes control plane and worker node architecture", "configures pod lifecycles, health probes, and rolling update strategies", "manages stateful workloads, auto-scaling, and cluster scheduling constraints" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-059",
+    "question" : "Diagnose a production issue where a Kubernetes deployment experiences 502 Bad Gateway errors during rolling updates despite readiness probes passing.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Workloads & Architecture",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "kubernetes", "pods", "deployments", "statefulset", "control plane", "kubernetes workloads & architecture" ],
+    "criteria" : [ "explains Kubernetes control plane and worker node architecture", "configures pod lifecycles, health probes, and rolling update strategies", "manages stateful workloads, auto-scaling, and cluster scheduling constraints" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-060",
+    "question" : "Design a custom Kubernetes Operator using the Operator SDK and Custom Resource Definitions (CRDs) to automate database backups and failover.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Workloads & Architecture",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "kubernetes", "pods", "deployments", "statefulset", "control plane", "kubernetes workloads & architecture" ],
+    "criteria" : [ "explains Kubernetes control plane and worker node architecture", "configures pod lifecycles, health probes, and rolling update strategies", "manages stateful workloads, auto-scaling, and cluster scheduling constraints" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-061",
+    "question" : "Analyze the operational failure modes of an etcd cluster experiencing high disk latency and design recovery procedures for corrupted quorums.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Workloads & Architecture",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "kubernetes", "pods", "deployments", "statefulset", "control plane", "kubernetes workloads & architecture" ],
+    "criteria" : [ "explains Kubernetes control plane and worker node architecture", "configures pod lifecycles, health probes, and rolling update strategies", "manages stateful workloads, auto-scaling, and cluster scheduling constraints" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-062",
+    "question" : "Architect a multi-tenant Kubernetes platform enforcing hard multi-tenancy with network policies, resource quotas, and vCluster isolation.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Workloads & Architecture",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "kubernetes", "pods", "deployments", "statefulset", "control plane", "kubernetes workloads & architecture" ],
+    "criteria" : [ "explains Kubernetes control plane and worker node architecture", "configures pod lifecycles, health probes, and rolling update strategies", "manages stateful workloads, auto-scaling, and cluster scheduling constraints" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-063",
+    "question" : "Architect a high-availability multi-region Kubernetes cluster deployment capable of surviving an entire cloud availability zone failure.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Workloads & Architecture",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "kubernetes", "pods", "deployments", "statefulset", "control plane", "kubernetes workloads & architecture" ],
+    "criteria" : [ "explains Kubernetes control plane and worker node architecture", "configures pod lifecycles, health probes, and rolling update strategies", "manages stateful workloads, auto-scaling, and cluster scheduling constraints" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-064",
+    "question" : "Diagnose a production issue where a Kubernetes deployment experiences 502 Bad Gateway errors during rolling updates despite readiness probes passing.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Workloads & Architecture",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "kubernetes", "pods", "deployments", "statefulset", "control plane", "kubernetes workloads & architecture" ],
+    "criteria" : [ "explains Kubernetes control plane and worker node architecture", "configures pod lifecycles, health probes, and rolling update strategies", "manages stateful workloads, auto-scaling, and cluster scheduling constraints" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-065",
+    "question" : "What are the different types of Kubernetes Services (ClusterIP, NodePort, LoadBalancer, ExternalName)?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Networking & Ingress",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "k8s networking", "ingress", "service", "cni", "service mesh", "kubernetes networking & ingress" ],
+    "criteria" : [ "distinguishes Kubernetes service types and traffic routing mechanisms", "evaluates CNI plugins, eBPF, and service mesh (mTLS, telemetry) trade-offs", "implements network policies, ingress controllers, and canary routing" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-066",
+    "question" : "What is the role of `kube-proxy` in Kubernetes networking, and how does it route traffic to healthy pods using iptables or IPVS?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Networking & Ingress",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "k8s networking", "ingress", "service", "cni", "service mesh", "kubernetes networking & ingress" ],
+    "criteria" : [ "distinguishes Kubernetes service types and traffic routing mechanisms", "evaluates CNI plugins, eBPF, and service mesh (mTLS, telemetry) trade-offs", "implements network policies, ingress controllers, and canary routing" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-067",
+    "question" : "What is a Kubernetes Ingress Controller, and how does it route external HTTP traffic to internal services based on host/path rules?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Networking & Ingress",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "k8s networking", "ingress", "service", "cni", "service mesh", "kubernetes networking & ingress" ],
+    "criteria" : [ "distinguishes Kubernetes service types and traffic routing mechanisms", "evaluates CNI plugins, eBPF, and service mesh (mTLS, telemetry) trade-offs", "implements network policies, ingress controllers, and canary routing" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-068",
+    "question" : "What is a CNI (Container Network Interface) plugin in Kubernetes, and what are common implementations (Calico, Flannel, Cilium)?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Networking & Ingress",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "k8s networking", "ingress", "service", "cni", "service mesh", "kubernetes networking & ingress" ],
+    "criteria" : [ "distinguishes Kubernetes service types and traffic routing mechanisms", "evaluates CNI plugins, eBPF, and service mesh (mTLS, telemetry) trade-offs", "implements network policies, ingress controllers, and canary routing" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-069",
+    "question" : "What is a Kubernetes Headless Service (ClusterIP: None), and why is it required for stateful distributed databases?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Networking & Ingress",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "k8s networking", "ingress", "service", "cni", "service mesh", "kubernetes networking & ingress" ],
+    "criteria" : [ "distinguishes Kubernetes service types and traffic routing mechanisms", "evaluates CNI plugins, eBPF, and service mesh (mTLS, telemetry) trade-offs", "implements network policies, ingress controllers, and canary routing" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-070",
+    "question" : "What is a Kubernetes NetworkPolicy, and how does it restrict pod-to-pod network traffic inside a cluster?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Networking & Ingress",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "k8s networking", "ingress", "service", "cni", "service mesh", "kubernetes networking & ingress" ],
+    "criteria" : [ "distinguishes Kubernetes service types and traffic routing mechanisms", "evaluates CNI plugins, eBPF, and service mesh (mTLS, telemetry) trade-offs", "implements network policies, ingress controllers, and canary routing" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-071",
+    "question" : "What is the core difference between an Ingress controller and an API Gateway in Kubernetes architectures?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Networking & Ingress",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "k8s networking", "ingress", "service", "cni", "service mesh", "kubernetes networking & ingress" ],
+    "criteria" : [ "distinguishes Kubernetes service types and traffic routing mechanisms", "evaluates CNI plugins, eBPF, and service mesh (mTLS, telemetry) trade-offs", "implements network policies, ingress controllers, and canary routing" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-072",
+    "question" : "What are the different types of Kubernetes Services (ClusterIP, NodePort, LoadBalancer, ExternalName)?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Networking & Ingress",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "k8s networking", "ingress", "service", "cni", "service mesh", "kubernetes networking & ingress" ],
+    "criteria" : [ "distinguishes Kubernetes service types and traffic routing mechanisms", "evaluates CNI plugins, eBPF, and service mesh (mTLS, telemetry) trade-offs", "implements network policies, ingress controllers, and canary routing" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-073",
+    "question" : "What is the role of `kube-proxy` in Kubernetes networking, and how does it route traffic to healthy pods using iptables or IPVS?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Networking & Ingress",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "k8s networking", "ingress", "service", "cni", "service mesh", "kubernetes networking & ingress" ],
+    "criteria" : [ "distinguishes Kubernetes service types and traffic routing mechanisms", "evaluates CNI plugins, eBPF, and service mesh (mTLS, telemetry) trade-offs", "implements network policies, ingress controllers, and canary routing" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-074",
+    "question" : "What is a Kubernetes Ingress Controller, and how does it route external HTTP traffic to internal services based on host/path rules?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Networking & Ingress",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "k8s networking", "ingress", "service", "cni", "service mesh", "kubernetes networking & ingress" ],
+    "criteria" : [ "distinguishes Kubernetes service types and traffic routing mechanisms", "evaluates CNI plugins, eBPF, and service mesh (mTLS, telemetry) trade-offs", "implements network policies, ingress controllers, and canary routing" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-075",
+    "question" : "How does CoreDNS resolve internal Kubernetes service domain names (e.g., `service.namespace.svc.cluster.local`)?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Networking & Ingress",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "k8s networking", "ingress", "service", "cni", "service mesh", "kubernetes networking & ingress" ],
+    "criteria" : [ "distinguishes Kubernetes service types and traffic routing mechanisms", "evaluates CNI plugins, eBPF, and service mesh (mTLS, telemetry) trade-offs", "implements network policies, ingress controllers, and canary routing" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-076",
+    "question" : "Explain the security configuration required to implement default-deny NetworkPolicies across all namespaces in a multi-tenant cluster.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Networking & Ingress",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "k8s networking", "ingress", "service", "cni", "service mesh", "kubernetes networking & ingress" ],
+    "criteria" : [ "distinguishes Kubernetes service types and traffic routing mechanisms", "evaluates CNI plugins, eBPF, and service mesh (mTLS, telemetry) trade-offs", "implements network policies, ingress controllers, and canary routing" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-077",
+    "question" : "How does the Kubernetes Gateway API modernize and overcome the limitations of the traditional Ingress resource specification?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Networking & Ingress",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "k8s networking", "ingress", "service", "cni", "service mesh", "kubernetes networking & ingress" ],
+    "criteria" : [ "distinguishes Kubernetes service types and traffic routing mechanisms", "evaluates CNI plugins, eBPF, and service mesh (mTLS, telemetry) trade-offs", "implements network policies, ingress controllers, and canary routing" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-078",
+    "question" : "How do you configure cert-manager in Kubernetes to automatically issue and renew Let's Encrypt TLS certificates for Ingress hosts?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Networking & Ingress",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "k8s networking", "ingress", "service", "cni", "service mesh", "kubernetes networking & ingress" ],
+    "criteria" : [ "distinguishes Kubernetes service types and traffic routing mechanisms", "evaluates CNI plugins, eBPF, and service mesh (mTLS, telemetry) trade-offs", "implements network policies, ingress controllers, and canary routing" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-079",
+    "question" : "How does Cilium leverage eBPF (Extended Berkeley Packet Filter) to bypass traditional Linux iptables and accelerate Kubernetes networking?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Networking & Ingress",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "k8s networking", "ingress", "service", "cni", "service mesh", "kubernetes networking & ingress" ],
+    "criteria" : [ "distinguishes Kubernetes service types and traffic routing mechanisms", "evaluates CNI plugins, eBPF, and service mesh (mTLS, telemetry) trade-offs", "implements network policies, ingress controllers, and canary routing" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-080",
+    "question" : "Explain how mutual TLS (mTLS) is enforced between pods using an Istio or Linkerd service mesh without modifying application code.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Networking & Ingress",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "k8s networking", "ingress", "service", "cni", "service mesh", "kubernetes networking & ingress" ],
+    "criteria" : [ "distinguishes Kubernetes service types and traffic routing mechanisms", "evaluates CNI plugins, eBPF, and service mesh (mTLS, telemetry) trade-offs", "implements network policies, ingress controllers, and canary routing" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-081",
+    "question" : "How do you implement canary traffic splitting (e.g. 90% v1, 10% v2) using NGINX Ingress annotations or Istio VirtualServices?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Networking & Ingress",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "k8s networking", "ingress", "service", "cni", "service mesh", "kubernetes networking & ingress" ],
+    "criteria" : [ "distinguishes Kubernetes service types and traffic routing mechanisms", "evaluates CNI plugins, eBPF, and service mesh (mTLS, telemetry) trade-offs", "implements network policies, ingress controllers, and canary routing" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-082",
+    "question" : "How does CoreDNS resolve internal Kubernetes service domain names (e.g., `service.namespace.svc.cluster.local`)?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Networking & Ingress",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "k8s networking", "ingress", "service", "cni", "service mesh", "kubernetes networking & ingress" ],
+    "criteria" : [ "distinguishes Kubernetes service types and traffic routing mechanisms", "evaluates CNI plugins, eBPF, and service mesh (mTLS, telemetry) trade-offs", "implements network policies, ingress controllers, and canary routing" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-083",
+    "question" : "Explain the security configuration required to implement default-deny NetworkPolicies across all namespaces in a multi-tenant cluster.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Networking & Ingress",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "k8s networking", "ingress", "service", "cni", "service mesh", "kubernetes networking & ingress" ],
+    "criteria" : [ "distinguishes Kubernetes service types and traffic routing mechanisms", "evaluates CNI plugins, eBPF, and service mesh (mTLS, telemetry) trade-offs", "implements network policies, ingress controllers, and canary routing" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-084",
+    "question" : "How does the Kubernetes Gateway API modernize and overcome the limitations of the traditional Ingress resource specification?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Networking & Ingress",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "k8s networking", "ingress", "service", "cni", "service mesh", "kubernetes networking & ingress" ],
+    "criteria" : [ "distinguishes Kubernetes service types and traffic routing mechanisms", "evaluates CNI plugins, eBPF, and service mesh (mTLS, telemetry) trade-offs", "implements network policies, ingress controllers, and canary routing" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-085",
+    "question" : "How do you configure cert-manager in Kubernetes to automatically issue and renew Let's Encrypt TLS certificates for Ingress hosts?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Networking & Ingress",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "k8s networking", "ingress", "service", "cni", "service mesh", "kubernetes networking & ingress" ],
+    "criteria" : [ "distinguishes Kubernetes service types and traffic routing mechanisms", "evaluates CNI plugins, eBPF, and service mesh (mTLS, telemetry) trade-offs", "implements network policies, ingress controllers, and canary routing" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-086",
+    "question" : "How does Cilium leverage eBPF (Extended Berkeley Packet Filter) to bypass traditional Linux iptables and accelerate Kubernetes networking?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Networking & Ingress",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "k8s networking", "ingress", "service", "cni", "service mesh", "kubernetes networking & ingress" ],
+    "criteria" : [ "distinguishes Kubernetes service types and traffic routing mechanisms", "evaluates CNI plugins, eBPF, and service mesh (mTLS, telemetry) trade-offs", "implements network policies, ingress controllers, and canary routing" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-087",
+    "question" : "Explain how mutual TLS (mTLS) is enforced between pods using an Istio or Linkerd service mesh without modifying application code.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Networking & Ingress",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "k8s networking", "ingress", "service", "cni", "service mesh", "kubernetes networking & ingress" ],
+    "criteria" : [ "distinguishes Kubernetes service types and traffic routing mechanisms", "evaluates CNI plugins, eBPF, and service mesh (mTLS, telemetry) trade-offs", "implements network policies, ingress controllers, and canary routing" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-088",
+    "question" : "How do you implement canary traffic splitting (e.g. 90% v1, 10% v2) using NGINX Ingress annotations or Istio VirtualServices?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Networking & Ingress",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "k8s networking", "ingress", "service", "cni", "service mesh", "kubernetes networking & ingress" ],
+    "criteria" : [ "distinguishes Kubernetes service types and traffic routing mechanisms", "evaluates CNI plugins, eBPF, and service mesh (mTLS, telemetry) trade-offs", "implements network policies, ingress controllers, and canary routing" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-089",
+    "question" : "How does CoreDNS resolve internal Kubernetes service domain names (e.g., `service.namespace.svc.cluster.local`)?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Networking & Ingress",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "k8s networking", "ingress", "service", "cni", "service mesh", "kubernetes networking & ingress" ],
+    "criteria" : [ "distinguishes Kubernetes service types and traffic routing mechanisms", "evaluates CNI plugins, eBPF, and service mesh (mTLS, telemetry) trade-offs", "implements network policies, ingress controllers, and canary routing" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-090",
+    "question" : "Architect a zero-trust service mesh topology across three interconnected Kubernetes clusters in hybrid-cloud environments.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Networking & Ingress",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "k8s networking", "ingress", "service", "cni", "service mesh", "kubernetes networking & ingress" ],
+    "criteria" : [ "distinguishes Kubernetes service types and traffic routing mechanisms", "evaluates CNI plugins, eBPF, and service mesh (mTLS, telemetry) trade-offs", "implements network policies, ingress controllers, and canary routing" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-091",
+    "question" : "Diagnose a critical networking incident where pods across different worker nodes cannot communicate due to CNI MTU mismatch and VXLAN packet drops.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Networking & Ingress",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "k8s networking", "ingress", "service", "cni", "service mesh", "kubernetes networking & ingress" ],
+    "criteria" : [ "distinguishes Kubernetes service types and traffic routing mechanisms", "evaluates CNI plugins, eBPF, and service mesh (mTLS, telemetry) trade-offs", "implements network policies, ingress controllers, and canary routing" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-092",
+    "question" : "Design an enterprise edge routing architecture that handles 500,000 concurrent WebSocket connections using Cilium eBPF and Envoy Gateway.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Networking & Ingress",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "k8s networking", "ingress", "service", "cni", "service mesh", "kubernetes networking & ingress" ],
+    "criteria" : [ "distinguishes Kubernetes service types and traffic routing mechanisms", "evaluates CNI plugins, eBPF, and service mesh (mTLS, telemetry) trade-offs", "implements network policies, ingress controllers, and canary routing" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-093",
+    "question" : "Analyze the performance overhead of Istio sidecar proxies on p99 request latency and evaluate ambient mesh (sidecar-less) architectures.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Networking & Ingress",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "k8s networking", "ingress", "service", "cni", "service mesh", "kubernetes networking & ingress" ],
+    "criteria" : [ "distinguishes Kubernetes service types and traffic routing mechanisms", "evaluates CNI plugins, eBPF, and service mesh (mTLS, telemetry) trade-offs", "implements network policies, ingress controllers, and canary routing" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-094",
+    "question" : "How do you troubleshoot DNS resolution latency in high-scale Kubernetes clusters where CoreDNS encounters UDP packet drops under load?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Networking & Ingress",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "k8s networking", "ingress", "service", "cni", "service mesh", "kubernetes networking & ingress" ],
+    "criteria" : [ "distinguishes Kubernetes service types and traffic routing mechanisms", "evaluates CNI plugins, eBPF, and service mesh (mTLS, telemetry) trade-offs", "implements network policies, ingress controllers, and canary routing" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-095",
+    "question" : "Architect a zero-trust service mesh topology across three interconnected Kubernetes clusters in hybrid-cloud environments.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Kubernetes Networking & Ingress",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "k8s networking", "ingress", "service", "cni", "service mesh", "kubernetes networking & ingress" ],
+    "criteria" : [ "distinguishes Kubernetes service types and traffic routing mechanisms", "evaluates CNI plugins, eBPF, and service mesh (mTLS, telemetry) trade-offs", "implements network policies, ingress controllers, and canary routing" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-096",
+    "question" : "What is the difference between Continuous Integration (CI), Continuous Delivery (CD), and Continuous Deployment?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "CI/CD Automation & GitOps",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "ci/cd", "gitops", "argocd", "pipelines", "deployments", "ci/cd automation & gitops" ],
+    "criteria" : [ "explains CI/CD best practices, automated testing, and deployment gates", "articulates GitOps principles, configuration drift detection, and ArgoCD workflows", "evaluates progressive delivery strategies (Canary, Blue-Green) and rollback automation" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-097",
+    "question" : "What is GitOps, and how does it use Git repositories as the single source of truth for infrastructure and application state?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "CI/CD Automation & GitOps",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "ci/cd", "gitops", "argocd", "pipelines", "deployments", "ci/cd automation & gitops" ],
+    "criteria" : [ "explains CI/CD best practices, automated testing, and deployment gates", "articulates GitOps principles, configuration drift detection, and ArgoCD workflows", "evaluates progressive delivery strategies (Canary, Blue-Green) and rollback automation" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-098",
+    "question" : "What are the benefits of declarative configuration over imperative scripting in deployment pipelines?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "CI/CD Automation & GitOps",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "ci/cd", "gitops", "argocd", "pipelines", "deployments", "ci/cd automation & gitops" ],
+    "criteria" : [ "explains CI/CD best practices, automated testing, and deployment gates", "articulates GitOps principles, configuration drift detection, and ArgoCD workflows", "evaluates progressive delivery strategies (Canary, Blue-Green) and rollback automation" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-099",
+    "question" : "What is a Blue-Green deployment strategy, and how does it enable instantaneous rollback if a new version is defective?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "CI/CD Automation & GitOps",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "ci/cd", "gitops", "argocd", "pipelines", "deployments", "ci/cd automation & gitops" ],
+    "criteria" : [ "explains CI/CD best practices, automated testing, and deployment gates", "articulates GitOps principles, configuration drift detection, and ArgoCD workflows", "evaluates progressive delivery strategies (Canary, Blue-Green) and rollback automation" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-100",
+    "question" : "What is a Canary deployment strategy, and how does it reduce the blast radius of potential bugs in production releases?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "CI/CD Automation & GitOps",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "ci/cd", "gitops", "argocd", "pipelines", "deployments", "ci/cd automation & gitops" ],
+    "criteria" : [ "explains CI/CD best practices, automated testing, and deployment gates", "articulates GitOps principles, configuration drift detection, and ArgoCD workflows", "evaluates progressive delivery strategies (Canary, Blue-Green) and rollback automation" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-101",
+    "question" : "What is the difference between pull-based GitOps (e.g. ArgoCD) and push-based CI/CD (e.g. Jenkins / GitHub Actions)?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "CI/CD Automation & GitOps",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "ci/cd", "gitops", "argocd", "pipelines", "deployments", "ci/cd automation & gitops" ],
+    "criteria" : [ "explains CI/CD best practices, automated testing, and deployment gates", "articulates GitOps principles, configuration drift detection, and ArgoCD workflows", "evaluates progressive delivery strategies (Canary, Blue-Green) and rollback automation" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-102",
+    "question" : "What is a pipeline artifact, and why should build artifacts be immutable across staging and production environments?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "CI/CD Automation & GitOps",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "ci/cd", "gitops", "argocd", "pipelines", "deployments", "ci/cd automation & gitops" ],
+    "criteria" : [ "explains CI/CD best practices, automated testing, and deployment gates", "articulates GitOps principles, configuration drift detection, and ArgoCD workflows", "evaluates progressive delivery strategies (Canary, Blue-Green) and rollback automation" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-103",
+    "question" : "What is the difference between Continuous Integration (CI), Continuous Delivery (CD), and Continuous Deployment?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "CI/CD Automation & GitOps",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "ci/cd", "gitops", "argocd", "pipelines", "deployments", "ci/cd automation & gitops" ],
+    "criteria" : [ "explains CI/CD best practices, automated testing, and deployment gates", "articulates GitOps principles, configuration drift detection, and ArgoCD workflows", "evaluates progressive delivery strategies (Canary, Blue-Green) and rollback automation" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-104",
+    "question" : "What is GitOps, and how does it use Git repositories as the single source of truth for infrastructure and application state?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "CI/CD Automation & GitOps",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "ci/cd", "gitops", "argocd", "pipelines", "deployments", "ci/cd automation & gitops" ],
+    "criteria" : [ "explains CI/CD best practices, automated testing, and deployment gates", "articulates GitOps principles, configuration drift detection, and ArgoCD workflows", "evaluates progressive delivery strategies (Canary, Blue-Green) and rollback automation" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-105",
+    "question" : "What are the benefits of declarative configuration over imperative scripting in deployment pipelines?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "CI/CD Automation & GitOps",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "ci/cd", "gitops", "argocd", "pipelines", "deployments", "ci/cd automation & gitops" ],
+    "criteria" : [ "explains CI/CD best practices, automated testing, and deployment gates", "articulates GitOps principles, configuration drift detection, and ArgoCD workflows", "evaluates progressive delivery strategies (Canary, Blue-Green) and rollback automation" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-106",
+    "question" : "Explain how Flagger automates progressive delivery (canary releases) in Kubernetes using Prometheus metrics analysis and automatic rollback.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "CI/CD Automation & GitOps",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "ci/cd", "gitops", "argocd", "pipelines", "deployments", "ci/cd automation & gitops" ],
+    "criteria" : [ "explains CI/CD best practices, automated testing, and deployment gates", "articulates GitOps principles, configuration drift detection, and ArgoCD workflows", "evaluates progressive delivery strategies (Canary, Blue-Green) and rollback automation" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-107",
+    "question" : "How do you implement semantic versioning and automated release tagging in trunk-based development workflows?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "CI/CD Automation & GitOps",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "ci/cd", "gitops", "argocd", "pipelines", "deployments", "ci/cd automation & gitops" ],
+    "criteria" : [ "explains CI/CD best practices, automated testing, and deployment gates", "articulates GitOps principles, configuration drift detection, and ArgoCD workflows", "evaluates progressive delivery strategies (Canary, Blue-Green) and rollback automation" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-108",
+    "question" : "What strategies ensure fast CI feedback loops when building large monorepos with hundreds of microservices?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "CI/CD Automation & GitOps",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "ci/cd", "gitops", "argocd", "pipelines", "deployments", "ci/cd automation & gitops" ],
+    "criteria" : [ "explains CI/CD best practices, automated testing, and deployment gates", "articulates GitOps principles, configuration drift detection, and ArgoCD workflows", "evaluates progressive delivery strategies (Canary, Blue-Green) and rollback automation" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-109",
+    "question" : "How do you design an ephemeral preview environment pipeline that deploys a dedicated test environment for every pull request?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "CI/CD Automation & GitOps",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "ci/cd", "gitops", "argocd", "pipelines", "deployments", "ci/cd automation & gitops" ],
+    "criteria" : [ "explains CI/CD best practices, automated testing, and deployment gates", "articulates GitOps principles, configuration drift detection, and ArgoCD workflows", "evaluates progressive delivery strategies (Canary, Blue-Green) and rollback automation" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-110",
+    "question" : "How does ArgoCD detect configuration drift between a Git repository and live Kubernetes cluster state, and how does auto-sync resolve it?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "CI/CD Automation & GitOps",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "ci/cd", "gitops", "argocd", "pipelines", "deployments", "ci/cd automation & gitops" ],
+    "criteria" : [ "explains CI/CD best practices, automated testing, and deployment gates", "articulates GitOps principles, configuration drift detection, and ArgoCD workflows", "evaluates progressive delivery strategies (Canary, Blue-Green) and rollback automation" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-111",
+    "question" : "How do you design a GitHub Actions workflow that executes linting, unit tests, integration tests, container builds, and deployment gates?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "CI/CD Automation & GitOps",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "ci/cd", "gitops", "argocd", "pipelines", "deployments", "ci/cd automation & gitops" ],
+    "criteria" : [ "explains CI/CD best practices, automated testing, and deployment gates", "articulates GitOps principles, configuration drift detection, and ArgoCD workflows", "evaluates progressive delivery strategies (Canary, Blue-Green) and rollback automation" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-112",
+    "question" : "How do you manage secret injection in GitOps pipelines using tools like Sealed Secrets, HashiCorp Vault, or SOPS?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "CI/CD Automation & GitOps",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "ci/cd", "gitops", "argocd", "pipelines", "deployments", "ci/cd automation & gitops" ],
+    "criteria" : [ "explains CI/CD best practices, automated testing, and deployment gates", "articulates GitOps principles, configuration drift detection, and ArgoCD workflows", "evaluates progressive delivery strategies (Canary, Blue-Green) and rollback automation" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-113",
+    "question" : "Explain how Flagger automates progressive delivery (canary releases) in Kubernetes using Prometheus metrics analysis and automatic rollback.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "CI/CD Automation & GitOps",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "ci/cd", "gitops", "argocd", "pipelines", "deployments", "ci/cd automation & gitops" ],
+    "criteria" : [ "explains CI/CD best practices, automated testing, and deployment gates", "articulates GitOps principles, configuration drift detection, and ArgoCD workflows", "evaluates progressive delivery strategies (Canary, Blue-Green) and rollback automation" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-114",
+    "question" : "How do you implement semantic versioning and automated release tagging in trunk-based development workflows?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "CI/CD Automation & GitOps",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "ci/cd", "gitops", "argocd", "pipelines", "deployments", "ci/cd automation & gitops" ],
+    "criteria" : [ "explains CI/CD best practices, automated testing, and deployment gates", "articulates GitOps principles, configuration drift detection, and ArgoCD workflows", "evaluates progressive delivery strategies (Canary, Blue-Green) and rollback automation" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-115",
+    "question" : "What strategies ensure fast CI feedback loops when building large monorepos with hundreds of microservices?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "CI/CD Automation & GitOps",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "ci/cd", "gitops", "argocd", "pipelines", "deployments", "ci/cd automation & gitops" ],
+    "criteria" : [ "explains CI/CD best practices, automated testing, and deployment gates", "articulates GitOps principles, configuration drift detection, and ArgoCD workflows", "evaluates progressive delivery strategies (Canary, Blue-Green) and rollback automation" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-116",
+    "question" : "How do you design an ephemeral preview environment pipeline that deploys a dedicated test environment for every pull request?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "CI/CD Automation & GitOps",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "ci/cd", "gitops", "argocd", "pipelines", "deployments", "ci/cd automation & gitops" ],
+    "criteria" : [ "explains CI/CD best practices, automated testing, and deployment gates", "articulates GitOps principles, configuration drift detection, and ArgoCD workflows", "evaluates progressive delivery strategies (Canary, Blue-Green) and rollback automation" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-117",
+    "question" : "How does ArgoCD detect configuration drift between a Git repository and live Kubernetes cluster state, and how does auto-sync resolve it?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "CI/CD Automation & GitOps",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "ci/cd", "gitops", "argocd", "pipelines", "deployments", "ci/cd automation & gitops" ],
+    "criteria" : [ "explains CI/CD best practices, automated testing, and deployment gates", "articulates GitOps principles, configuration drift detection, and ArgoCD workflows", "evaluates progressive delivery strategies (Canary, Blue-Green) and rollback automation" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-118",
+    "question" : "How do you design a GitHub Actions workflow that executes linting, unit tests, integration tests, container builds, and deployment gates?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "CI/CD Automation & GitOps",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "ci/cd", "gitops", "argocd", "pipelines", "deployments", "ci/cd automation & gitops" ],
+    "criteria" : [ "explains CI/CD best practices, automated testing, and deployment gates", "articulates GitOps principles, configuration drift detection, and ArgoCD workflows", "evaluates progressive delivery strategies (Canary, Blue-Green) and rollback automation" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-119",
+    "question" : "How do you manage secret injection in GitOps pipelines using tools like Sealed Secrets, HashiCorp Vault, or SOPS?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "CI/CD Automation & GitOps",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "ci/cd", "gitops", "argocd", "pipelines", "deployments", "ci/cd automation & gitops" ],
+    "criteria" : [ "explains CI/CD best practices, automated testing, and deployment gates", "articulates GitOps principles, configuration drift detection, and ArgoCD workflows", "evaluates progressive delivery strategies (Canary, Blue-Green) and rollback automation" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-120",
+    "question" : "Explain how Flagger automates progressive delivery (canary releases) in Kubernetes using Prometheus metrics analysis and automatic rollback.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "CI/CD Automation & GitOps",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "ci/cd", "gitops", "argocd", "pipelines", "deployments", "ci/cd automation & gitops" ],
+    "criteria" : [ "explains CI/CD best practices, automated testing, and deployment gates", "articulates GitOps principles, configuration drift detection, and ArgoCD workflows", "evaluates progressive delivery strategies (Canary, Blue-Green) and rollback automation" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-121",
+    "question" : "Architect a secure multi-region GitOps deployment pipeline across 100 Kubernetes clusters with automated rollbacks and approval gates.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "CI/CD Automation & GitOps",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "ci/cd", "gitops", "argocd", "pipelines", "deployments", "ci/cd automation & gitops" ],
+    "criteria" : [ "explains CI/CD best practices, automated testing, and deployment gates", "articulates GitOps principles, configuration drift detection, and ArgoCD workflows", "evaluates progressive delivery strategies (Canary, Blue-Green) and rollback automation" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-122",
+    "question" : "Design a software supply chain security pipeline implementing SLSA framework Level 3: signed commits, hermetic builds, and cryptographic SBOMs.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "CI/CD Automation & GitOps",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "ci/cd", "gitops", "argocd", "pipelines", "deployments", "ci/cd automation & gitops" ],
+    "criteria" : [ "explains CI/CD best practices, automated testing, and deployment gates", "articulates GitOps principles, configuration drift detection, and ArgoCD workflows", "evaluates progressive delivery strategies (Canary, Blue-Green) and rollback automation" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-123",
+    "question" : "Diagnose a pipeline failure where an ArgoCD sync loop triggers repeated pod restarts due to mutating admission webhooks modifying live manifests.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "CI/CD Automation & GitOps",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "ci/cd", "gitops", "argocd", "pipelines", "deployments", "ci/cd automation & gitops" ],
+    "criteria" : [ "explains CI/CD best practices, automated testing, and deployment gates", "articulates GitOps principles, configuration drift detection, and ArgoCD workflows", "evaluates progressive delivery strategies (Canary, Blue-Green) and rollback automation" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-124",
+    "question" : "Analyze the failure modes of pushing database migrations through automated CI/CD and design zero-downtime expand-contract migration pipelines.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "CI/CD Automation & GitOps",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "ci/cd", "gitops", "argocd", "pipelines", "deployments", "ci/cd automation & gitops" ],
+    "criteria" : [ "explains CI/CD best practices, automated testing, and deployment gates", "articulates GitOps principles, configuration drift detection, and ArgoCD workflows", "evaluates progressive delivery strategies (Canary, Blue-Green) and rollback automation" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-125",
+    "question" : "How do you architect disaster recovery for a GitOps deployment platform when both the Git repository and the GitOps operator control plane are lost?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "CI/CD Automation & GitOps",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "ci/cd", "gitops", "argocd", "pipelines", "deployments", "ci/cd automation & gitops" ],
+    "criteria" : [ "explains CI/CD best practices, automated testing, and deployment gates", "articulates GitOps principles, configuration drift detection, and ArgoCD workflows", "evaluates progressive delivery strategies (Canary, Blue-Green) and rollback automation" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-126",
+    "question" : "Architect a secure multi-region GitOps deployment pipeline across 100 Kubernetes clusters with automated rollbacks and approval gates.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "CI/CD Automation & GitOps",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "ci/cd", "gitops", "argocd", "pipelines", "deployments", "ci/cd automation & gitops" ],
+    "criteria" : [ "explains CI/CD best practices, automated testing, and deployment gates", "articulates GitOps principles, configuration drift detection, and ArgoCD workflows", "evaluates progressive delivery strategies (Canary, Blue-Green) and rollback automation" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-127",
+    "question" : "What is Infrastructure as Code (IaC), and what are the benefits of managing cloud resources through code?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Infrastructure as Code (Terraform)",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "terraform", "iac", "state", "modules", "cloud", "infrastructure as code (terraform)" ],
+    "criteria" : [ "explains Terraform state management, remote backends, and locking mechanisms", "designs reusable Terraform modules with proper input/output encapsulation", "enforces policy-as-code and resolves state drift and dependency conflicts" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-128",
+    "question" : "What is the Terraform State file (`terraform.tfstate`), and why is it critical for resource lifecycle management?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Infrastructure as Code (Terraform)",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "terraform", "iac", "state", "modules", "cloud", "infrastructure as code (terraform)" ],
+    "criteria" : [ "explains Terraform state management, remote backends, and locking mechanisms", "designs reusable Terraform modules with proper input/output encapsulation", "enforces policy-as-code and resolves state drift and dependency conflicts" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-129",
+    "question" : "What is the purpose of `terraform plan` before executing `terraform apply`?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Infrastructure as Code (Terraform)",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "terraform", "iac", "state", "modules", "cloud", "infrastructure as code (terraform)" ],
+    "criteria" : [ "explains Terraform state management, remote backends, and locking mechanisms", "designs reusable Terraform modules with proper input/output encapsulation", "enforces policy-as-code and resolves state drift and dependency conflicts" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-130",
+    "question" : "What is the difference between declarative IaC tools (Terraform) and configuration management tools (Ansible)?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Infrastructure as Code (Terraform)",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "terraform", "iac", "state", "modules", "cloud", "infrastructure as code (terraform)" ],
+    "criteria" : [ "explains Terraform state management, remote backends, and locking mechanisms", "designs reusable Terraform modules with proper input/output encapsulation", "enforces policy-as-code and resolves state drift and dependency conflicts" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-131",
+    "question" : "What is a Terraform Provider, and how does it interface with cloud provider APIs (AWS, Azure, GCP)?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Infrastructure as Code (Terraform)",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "terraform", "iac", "state", "modules", "cloud", "infrastructure as code (terraform)" ],
+    "criteria" : [ "explains Terraform state management, remote backends, and locking mechanisms", "designs reusable Terraform modules with proper input/output encapsulation", "enforces policy-as-code and resolves state drift and dependency conflicts" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-132",
+    "question" : "What are Terraform Modules, and how do they promote code reuse and standardized architecture?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Infrastructure as Code (Terraform)",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "terraform", "iac", "state", "modules", "cloud", "infrastructure as code (terraform)" ],
+    "criteria" : [ "explains Terraform state management, remote backends, and locking mechanisms", "designs reusable Terraform modules with proper input/output encapsulation", "enforces policy-as-code and resolves state drift and dependency conflicts" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-133",
+    "question" : "Why should the Terraform state file never be committed to source control (Git)?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Infrastructure as Code (Terraform)",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "terraform", "iac", "state", "modules", "cloud", "infrastructure as code (terraform)" ],
+    "criteria" : [ "explains Terraform state management, remote backends, and locking mechanisms", "designs reusable Terraform modules with proper input/output encapsulation", "enforces policy-as-code and resolves state drift and dependency conflicts" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-134",
+    "question" : "What is Infrastructure as Code (IaC), and what are the benefits of managing cloud resources through code?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Infrastructure as Code (Terraform)",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "terraform", "iac", "state", "modules", "cloud", "infrastructure as code (terraform)" ],
+    "criteria" : [ "explains Terraform state management, remote backends, and locking mechanisms", "designs reusable Terraform modules with proper input/output encapsulation", "enforces policy-as-code and resolves state drift and dependency conflicts" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-135",
+    "question" : "What is the Terraform State file (`terraform.tfstate`), and why is it critical for resource lifecycle management?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Infrastructure as Code (Terraform)",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "terraform", "iac", "state", "modules", "cloud", "infrastructure as code (terraform)" ],
+    "criteria" : [ "explains Terraform state management, remote backends, and locking mechanisms", "designs reusable Terraform modules with proper input/output encapsulation", "enforces policy-as-code and resolves state drift and dependency conflicts" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-136",
+    "question" : "What is the purpose of `terraform plan` before executing `terraform apply`?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Infrastructure as Code (Terraform)",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "terraform", "iac", "state", "modules", "cloud", "infrastructure as code (terraform)" ],
+    "criteria" : [ "explains Terraform state management, remote backends, and locking mechanisms", "designs reusable Terraform modules with proper input/output encapsulation", "enforces policy-as-code and resolves state drift and dependency conflicts" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-137",
+    "question" : "How do you import existing cloud infrastructure into Terraform state without destroying and recreating resources (`terraform import`)?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Infrastructure as Code (Terraform)",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "terraform", "iac", "state", "modules", "cloud", "infrastructure as code (terraform)" ],
+    "criteria" : [ "explains Terraform state management, remote backends, and locking mechanisms", "designs reusable Terraform modules with proper input/output encapsulation", "enforces policy-as-code and resolves state drift and dependency conflicts" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-138",
+    "question" : "How do you handle sensitive outputs and secrets in Terraform code to prevent plaintext exposure in CI/CD logs and state files?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Infrastructure as Code (Terraform)",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "terraform", "iac", "state", "modules", "cloud", "infrastructure as code (terraform)" ],
+    "criteria" : [ "explains Terraform state management, remote backends, and locking mechanisms", "designs reusable Terraform modules with proper input/output encapsulation", "enforces policy-as-code and resolves state drift and dependency conflicts" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-139",
+    "question" : "Explain how Terraform handles dependency resolution and creates an execution graph (Directed Acyclic Graph - DAG) of resources.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Infrastructure as Code (Terraform)",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "terraform", "iac", "state", "modules", "cloud", "infrastructure as code (terraform)" ],
+    "criteria" : [ "explains Terraform state management, remote backends, and locking mechanisms", "designs reusable Terraform modules with proper input/output encapsulation", "enforces policy-as-code and resolves state drift and dependency conflicts" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-140",
+    "question" : "How do you implement policy-as-code using Open Policy Agent (OPA) or Terraform Sentinel to enforce compliance guardrails before deployment?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Infrastructure as Code (Terraform)",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "terraform", "iac", "state", "modules", "cloud", "infrastructure as code (terraform)" ],
+    "criteria" : [ "explains Terraform state management, remote backends, and locking mechanisms", "designs reusable Terraform modules with proper input/output encapsulation", "enforces policy-as-code and resolves state drift and dependency conflicts" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-141",
+    "question" : "How do you configure remote state storage and state locking using AWS S3 and DynamoDB to prevent concurrent modifications?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Infrastructure as Code (Terraform)",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "terraform", "iac", "state", "modules", "cloud", "infrastructure as code (terraform)" ],
+    "criteria" : [ "explains Terraform state management, remote backends, and locking mechanisms", "designs reusable Terraform modules with proper input/output encapsulation", "enforces policy-as-code and resolves state drift and dependency conflicts" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-142",
+    "question" : "How do you manage configuration drift when cloud resources are modified manually in the AWS/GCP web console?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Infrastructure as Code (Terraform)",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "terraform", "iac", "state", "modules", "cloud", "infrastructure as code (terraform)" ],
+    "criteria" : [ "explains Terraform state management, remote backends, and locking mechanisms", "designs reusable Terraform modules with proper input/output encapsulation", "enforces policy-as-code and resolves state drift and dependency conflicts" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-143",
+    "question" : "Explain the difference between `count` and `for_each` meta-arguments in Terraform and why `for_each` is preferred for resource stability.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Infrastructure as Code (Terraform)",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "terraform", "iac", "state", "modules", "cloud", "infrastructure as code (terraform)" ],
+    "criteria" : [ "explains Terraform state management, remote backends, and locking mechanisms", "designs reusable Terraform modules with proper input/output encapsulation", "enforces policy-as-code and resolves state drift and dependency conflicts" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-144",
+    "question" : "How do you import existing cloud infrastructure into Terraform state without destroying and recreating resources (`terraform import`)?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Infrastructure as Code (Terraform)",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "terraform", "iac", "state", "modules", "cloud", "infrastructure as code (terraform)" ],
+    "criteria" : [ "explains Terraform state management, remote backends, and locking mechanisms", "designs reusable Terraform modules with proper input/output encapsulation", "enforces policy-as-code and resolves state drift and dependency conflicts" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-145",
+    "question" : "How do you handle sensitive outputs and secrets in Terraform code to prevent plaintext exposure in CI/CD logs and state files?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Infrastructure as Code (Terraform)",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "terraform", "iac", "state", "modules", "cloud", "infrastructure as code (terraform)" ],
+    "criteria" : [ "explains Terraform state management, remote backends, and locking mechanisms", "designs reusable Terraform modules with proper input/output encapsulation", "enforces policy-as-code and resolves state drift and dependency conflicts" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-146",
+    "question" : "Explain how Terraform handles dependency resolution and creates an execution graph (Directed Acyclic Graph - DAG) of resources.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Infrastructure as Code (Terraform)",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "terraform", "iac", "state", "modules", "cloud", "infrastructure as code (terraform)" ],
+    "criteria" : [ "explains Terraform state management, remote backends, and locking mechanisms", "designs reusable Terraform modules with proper input/output encapsulation", "enforces policy-as-code and resolves state drift and dependency conflicts" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-147",
+    "question" : "How do you implement policy-as-code using Open Policy Agent (OPA) or Terraform Sentinel to enforce compliance guardrails before deployment?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Infrastructure as Code (Terraform)",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "terraform", "iac", "state", "modules", "cloud", "infrastructure as code (terraform)" ],
+    "criteria" : [ "explains Terraform state management, remote backends, and locking mechanisms", "designs reusable Terraform modules with proper input/output encapsulation", "enforces policy-as-code and resolves state drift and dependency conflicts" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-148",
+    "question" : "How do you configure remote state storage and state locking using AWS S3 and DynamoDB to prevent concurrent modifications?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Infrastructure as Code (Terraform)",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "terraform", "iac", "state", "modules", "cloud", "infrastructure as code (terraform)" ],
+    "criteria" : [ "explains Terraform state management, remote backends, and locking mechanisms", "designs reusable Terraform modules with proper input/output encapsulation", "enforces policy-as-code and resolves state drift and dependency conflicts" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-149",
+    "question" : "How do you manage configuration drift when cloud resources are modified manually in the AWS/GCP web console?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Infrastructure as Code (Terraform)",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "terraform", "iac", "state", "modules", "cloud", "infrastructure as code (terraform)" ],
+    "criteria" : [ "explains Terraform state management, remote backends, and locking mechanisms", "designs reusable Terraform modules with proper input/output encapsulation", "enforces policy-as-code and resolves state drift and dependency conflicts" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-150",
+    "question" : "Explain the difference between `count` and `for_each` meta-arguments in Terraform and why `for_each` is preferred for resource stability.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Infrastructure as Code (Terraform)",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "terraform", "iac", "state", "modules", "cloud", "infrastructure as code (terraform)" ],
+    "criteria" : [ "explains Terraform state management, remote backends, and locking mechanisms", "designs reusable Terraform modules with proper input/output encapsulation", "enforces policy-as-code and resolves state drift and dependency conflicts" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-151",
+    "question" : "How do you import existing cloud infrastructure into Terraform state without destroying and recreating resources (`terraform import`)?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Infrastructure as Code (Terraform)",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "terraform", "iac", "state", "modules", "cloud", "infrastructure as code (terraform)" ],
+    "criteria" : [ "explains Terraform state management, remote backends, and locking mechanisms", "designs reusable Terraform modules with proper input/output encapsulation", "enforces policy-as-code and resolves state drift and dependency conflicts" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-152",
+    "question" : "Architect an enterprise Terraform multi-account AWS landing zone managing VPCs, Transit Gateways, IAM, and security baselines for 50 accounts.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Infrastructure as Code (Terraform)",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "terraform", "iac", "state", "modules", "cloud", "infrastructure as code (terraform)" ],
+    "criteria" : [ "explains Terraform state management, remote backends, and locking mechanisms", "designs reusable Terraform modules with proper input/output encapsulation", "enforces policy-as-code and resolves state drift and dependency conflicts" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-153",
+    "question" : "Diagnose and repair a corrupted Terraform remote state file where multiple resources have dangling dependencies and duplicate IDs.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Infrastructure as Code (Terraform)",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "terraform", "iac", "state", "modules", "cloud", "infrastructure as code (terraform)" ],
+    "criteria" : [ "explains Terraform state management, remote backends, and locking mechanisms", "designs reusable Terraform modules with proper input/output encapsulation", "enforces policy-as-code and resolves state drift and dependency conflicts" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-154",
+    "question" : "Design a zero-downtime database migration architecture in Terraform that upgrades RDS instances and alters security groups safely.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Infrastructure as Code (Terraform)",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "terraform", "iac", "state", "modules", "cloud", "infrastructure as code (terraform)" ],
+    "criteria" : [ "explains Terraform state management, remote backends, and locking mechanisms", "designs reusable Terraform modules with proper input/output encapsulation", "enforces policy-as-code and resolves state drift and dependency conflicts" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-155",
+    "question" : "Analyze the trade-offs between HashiCorp Terraform, OpenTofu, AWS CDK, and Pulumi for large-scale enterprise infrastructure management.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Infrastructure as Code (Terraform)",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "terraform", "iac", "state", "modules", "cloud", "infrastructure as code (terraform)" ],
+    "criteria" : [ "explains Terraform state management, remote backends, and locking mechanisms", "designs reusable Terraform modules with proper input/output encapsulation", "enforces policy-as-code and resolves state drift and dependency conflicts" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-156",
+    "question" : "How do you architect an automated Terraform CI/CD pipeline using Atlantis or Terraform Cloud that guarantees peer reviews and automated drift detection?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Infrastructure as Code (Terraform)",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "terraform", "iac", "state", "modules", "cloud", "infrastructure as code (terraform)" ],
+    "criteria" : [ "explains Terraform state management, remote backends, and locking mechanisms", "designs reusable Terraform modules with proper input/output encapsulation", "enforces policy-as-code and resolves state drift and dependency conflicts" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-157",
+    "question" : "Architect an enterprise Terraform multi-account AWS landing zone managing VPCs, Transit Gateways, IAM, and security baselines for 50 accounts.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Infrastructure as Code (Terraform)",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "terraform", "iac", "state", "modules", "cloud", "infrastructure as code (terraform)" ],
+    "criteria" : [ "explains Terraform state management, remote backends, and locking mechanisms", "designs reusable Terraform modules with proper input/output encapsulation", "enforces policy-as-code and resolves state drift and dependency conflicts" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-158",
+    "question" : "What is a VPC (Virtual Private Cloud) in AWS, and what is the difference between a public subnet and a private subnet?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Architecture (AWS / GCP)",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "aws", "cloud", "vpc", "iam", "serverless", "cloud architecture (aws / gcp)" ],
+    "criteria" : [ "designs multi-tier, multi-AZ cloud architectures with high availability", "configures VPC networking, subnets, NAT gateways, and IAM least privilege", "evaluates serverless vs containerized architectures and disaster recovery models" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-159",
+    "question" : "What is an Internet Gateway (IGW) and a NAT Gateway in AWS VPC networking, and why do private subnets require a NAT Gateway?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Architecture (AWS / GCP)",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "aws", "cloud", "vpc", "iam", "serverless", "cloud architecture (aws / gcp)" ],
+    "criteria" : [ "designs multi-tier, multi-AZ cloud architectures with high availability", "configures VPC networking, subnets, NAT gateways, and IAM least privilege", "evaluates serverless vs containerized architectures and disaster recovery models" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-160",
+    "question" : "What is the difference between AWS Security Groups (stateful) and Network Access Control Lists (NACLs - stateless)?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Architecture (AWS / GCP)",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "aws", "cloud", "vpc", "iam", "serverless", "cloud architecture (aws / gcp)" ],
+    "criteria" : [ "designs multi-tier, multi-AZ cloud architectures with high availability", "configures VPC networking, subnets, NAT gateways, and IAM least privilege", "evaluates serverless vs containerized architectures and disaster recovery models" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-161",
+    "question" : "Explain the AWS IAM (Identity and Access Management) model: Users, Groups, Roles, and Policies.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Architecture (AWS / GCP)",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "aws", "cloud", "vpc", "iam", "serverless", "cloud architecture (aws / gcp)" ],
+    "criteria" : [ "designs multi-tier, multi-AZ cloud architectures with high availability", "configures VPC networking, subnets, NAT gateways, and IAM least privilege", "evaluates serverless vs containerized architectures and disaster recovery models" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-162",
+    "question" : "What is AWS S3 (Simple Storage Service), and what are the standard storage classes (Standard, Infrequent Access, Glacier)?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Architecture (AWS / GCP)",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "aws", "cloud", "vpc", "iam", "serverless", "cloud architecture (aws / gcp)" ],
+    "criteria" : [ "designs multi-tier, multi-AZ cloud architectures with high availability", "configures VPC networking, subnets, NAT gateways, and IAM least privilege", "evaluates serverless vs containerized architectures and disaster recovery models" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-163",
+    "question" : "What is the difference between serverless compute (AWS Lambda) and container orchestration (AWS ECS / EKS)?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Architecture (AWS / GCP)",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "aws", "cloud", "vpc", "iam", "serverless", "cloud architecture (aws / gcp)" ],
+    "criteria" : [ "designs multi-tier, multi-AZ cloud architectures with high availability", "configures VPC networking, subnets, NAT gateways, and IAM least privilege", "evaluates serverless vs containerized architectures and disaster recovery models" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-164",
+    "question" : "What is an AWS Application Load Balancer (ALB) and how does it route traffic across target groups?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Architecture (AWS / GCP)",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "aws", "cloud", "vpc", "iam", "serverless", "cloud architecture (aws / gcp)" ],
+    "criteria" : [ "designs multi-tier, multi-AZ cloud architectures with high availability", "configures VPC networking, subnets, NAT gateways, and IAM least privilege", "evaluates serverless vs containerized architectures and disaster recovery models" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-165",
+    "question" : "What is a VPC (Virtual Private Cloud) in AWS, and what is the difference between a public subnet and a private subnet?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Architecture (AWS / GCP)",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "aws", "cloud", "vpc", "iam", "serverless", "cloud architecture (aws / gcp)" ],
+    "criteria" : [ "designs multi-tier, multi-AZ cloud architectures with high availability", "configures VPC networking, subnets, NAT gateways, and IAM least privilege", "evaluates serverless vs containerized architectures and disaster recovery models" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-166",
+    "question" : "What is an Internet Gateway (IGW) and a NAT Gateway in AWS VPC networking, and why do private subnets require a NAT Gateway?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Architecture (AWS / GCP)",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "aws", "cloud", "vpc", "iam", "serverless", "cloud architecture (aws / gcp)" ],
+    "criteria" : [ "designs multi-tier, multi-AZ cloud architectures with high availability", "configures VPC networking, subnets, NAT gateways, and IAM least privilege", "evaluates serverless vs containerized architectures and disaster recovery models" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-167",
+    "question" : "What is the difference between AWS Security Groups (stateful) and Network Access Control Lists (NACLs - stateless)?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Architecture (AWS / GCP)",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "aws", "cloud", "vpc", "iam", "serverless", "cloud architecture (aws / gcp)" ],
+    "criteria" : [ "designs multi-tier, multi-AZ cloud architectures with high availability", "configures VPC networking, subnets, NAT gateways, and IAM least privilege", "evaluates serverless vs containerized architectures and disaster recovery models" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-168",
+    "question" : "What is the cold start problem in AWS Lambda, and how does Provisioned Concurrency and SnapStart (for Java) mitigate it?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Architecture (AWS / GCP)",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "aws", "cloud", "vpc", "iam", "serverless", "cloud architecture (aws / gcp)" ],
+    "criteria" : [ "designs multi-tier, multi-AZ cloud architectures with high availability", "configures VPC networking, subnets, NAT gateways, and IAM least privilege", "evaluates serverless vs containerized architectures and disaster recovery models" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-169",
+    "question" : "How do you configure S3 Bucket Policies and Block Public Access to prevent accidental data leaks of sensitive customer assets?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Architecture (AWS / GCP)",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "aws", "cloud", "vpc", "iam", "serverless", "cloud architecture (aws / gcp)" ],
+    "criteria" : [ "designs multi-tier, multi-AZ cloud architectures with high availability", "configures VPC networking, subnets, NAT gateways, and IAM least privilege", "evaluates serverless vs containerized architectures and disaster recovery models" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-170",
+    "question" : "Explain the difference between AWS Route 53 routing policies (Latency-based, Geolocation, Failover, Weighted).",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Architecture (AWS / GCP)",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "aws", "cloud", "vpc", "iam", "serverless", "cloud architecture (aws / gcp)" ],
+    "criteria" : [ "designs multi-tier, multi-AZ cloud architectures with high availability", "configures VPC networking, subnets, NAT gateways, and IAM least privilege", "evaluates serverless vs containerized architectures and disaster recovery models" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-171",
+    "question" : "How do AWS Auto Scaling Groups (ASG) monitor CloudWatch alarms and dynamically scale EC2 instances based on target tracking policies?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Architecture (AWS / GCP)",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "aws", "cloud", "vpc", "iam", "serverless", "cloud architecture (aws / gcp)" ],
+    "criteria" : [ "designs multi-tier, multi-AZ cloud architectures with high availability", "configures VPC networking, subnets, NAT gateways, and IAM least privilege", "evaluates serverless vs containerized architectures and disaster recovery models" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-172",
+    "question" : "How do you design a highly available multi-tier web application architecture in AWS deployed across three Availability Zones?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Architecture (AWS / GCP)",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "aws", "cloud", "vpc", "iam", "serverless", "cloud architecture (aws / gcp)" ],
+    "criteria" : [ "designs multi-tier, multi-AZ cloud architectures with high availability", "configures VPC networking, subnets, NAT gateways, and IAM least privilege", "evaluates serverless vs containerized architectures and disaster recovery models" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-173",
+    "question" : "Explain how AWS IAM Role assumption (`sts:AssumeRole`) enables secure cross-account resource access without hardcoded credentials.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Architecture (AWS / GCP)",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "aws", "cloud", "vpc", "iam", "serverless", "cloud architecture (aws / gcp)" ],
+    "criteria" : [ "designs multi-tier, multi-AZ cloud architectures with high availability", "configures VPC networking, subnets, NAT gateways, and IAM least privilege", "evaluates serverless vs containerized architectures and disaster recovery models" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-174",
+    "question" : "How does VPC Peering differ from AWS Transit Gateway when connecting dozens of enterprise VPCs together?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Architecture (AWS / GCP)",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "aws", "cloud", "vpc", "iam", "serverless", "cloud architecture (aws / gcp)" ],
+    "criteria" : [ "designs multi-tier, multi-AZ cloud architectures with high availability", "configures VPC networking, subnets, NAT gateways, and IAM least privilege", "evaluates serverless vs containerized architectures and disaster recovery models" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-175",
+    "question" : "What is the cold start problem in AWS Lambda, and how does Provisioned Concurrency and SnapStart (for Java) mitigate it?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Architecture (AWS / GCP)",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "aws", "cloud", "vpc", "iam", "serverless", "cloud architecture (aws / gcp)" ],
+    "criteria" : [ "designs multi-tier, multi-AZ cloud architectures with high availability", "configures VPC networking, subnets, NAT gateways, and IAM least privilege", "evaluates serverless vs containerized architectures and disaster recovery models" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-176",
+    "question" : "How do you configure S3 Bucket Policies and Block Public Access to prevent accidental data leaks of sensitive customer assets?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Architecture (AWS / GCP)",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "aws", "cloud", "vpc", "iam", "serverless", "cloud architecture (aws / gcp)" ],
+    "criteria" : [ "designs multi-tier, multi-AZ cloud architectures with high availability", "configures VPC networking, subnets, NAT gateways, and IAM least privilege", "evaluates serverless vs containerized architectures and disaster recovery models" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-177",
+    "question" : "Explain the difference between AWS Route 53 routing policies (Latency-based, Geolocation, Failover, Weighted).",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Architecture (AWS / GCP)",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "aws", "cloud", "vpc", "iam", "serverless", "cloud architecture (aws / gcp)" ],
+    "criteria" : [ "designs multi-tier, multi-AZ cloud architectures with high availability", "configures VPC networking, subnets, NAT gateways, and IAM least privilege", "evaluates serverless vs containerized architectures and disaster recovery models" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-178",
+    "question" : "How do AWS Auto Scaling Groups (ASG) monitor CloudWatch alarms and dynamically scale EC2 instances based on target tracking policies?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Architecture (AWS / GCP)",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "aws", "cloud", "vpc", "iam", "serverless", "cloud architecture (aws / gcp)" ],
+    "criteria" : [ "designs multi-tier, multi-AZ cloud architectures with high availability", "configures VPC networking, subnets, NAT gateways, and IAM least privilege", "evaluates serverless vs containerized architectures and disaster recovery models" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-179",
+    "question" : "How do you design a highly available multi-tier web application architecture in AWS deployed across three Availability Zones?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Architecture (AWS / GCP)",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "aws", "cloud", "vpc", "iam", "serverless", "cloud architecture (aws / gcp)" ],
+    "criteria" : [ "designs multi-tier, multi-AZ cloud architectures with high availability", "configures VPC networking, subnets, NAT gateways, and IAM least privilege", "evaluates serverless vs containerized architectures and disaster recovery models" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-180",
+    "question" : "Explain how AWS IAM Role assumption (`sts:AssumeRole`) enables secure cross-account resource access without hardcoded credentials.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Architecture (AWS / GCP)",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "aws", "cloud", "vpc", "iam", "serverless", "cloud architecture (aws / gcp)" ],
+    "criteria" : [ "designs multi-tier, multi-AZ cloud architectures with high availability", "configures VPC networking, subnets, NAT gateways, and IAM least privilege", "evaluates serverless vs containerized architectures and disaster recovery models" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-181",
+    "question" : "How does VPC Peering differ from AWS Transit Gateway when connecting dozens of enterprise VPCs together?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Architecture (AWS / GCP)",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "aws", "cloud", "vpc", "iam", "serverless", "cloud architecture (aws / gcp)" ],
+    "criteria" : [ "designs multi-tier, multi-AZ cloud architectures with high availability", "configures VPC networking, subnets, NAT gateways, and IAM least privilege", "evaluates serverless vs containerized architectures and disaster recovery models" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-182",
+    "question" : "What is the cold start problem in AWS Lambda, and how does Provisioned Concurrency and SnapStart (for Java) mitigate it?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Architecture (AWS / GCP)",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "aws", "cloud", "vpc", "iam", "serverless", "cloud architecture (aws / gcp)" ],
+    "criteria" : [ "designs multi-tier, multi-AZ cloud architectures with high availability", "configures VPC networking, subnets, NAT gateways, and IAM least privilege", "evaluates serverless vs containerized architectures and disaster recovery models" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-183",
+    "question" : "Architect a disaster recovery multi-region AWS topology supporting an active-active architecture with sub-second replication latency.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Architecture (AWS / GCP)",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "aws", "cloud", "vpc", "iam", "serverless", "cloud architecture (aws / gcp)" ],
+    "criteria" : [ "designs multi-tier, multi-AZ cloud architectures with high availability", "configures VPC networking, subnets, NAT gateways, and IAM least privilege", "evaluates serverless vs containerized architectures and disaster recovery models" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-184",
+    "question" : "Design a cost-optimized cloud architecture for a global SaaS application that cuts monthly AWS infrastructure spend by 40% without SLA degradation.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Architecture (AWS / GCP)",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "aws", "cloud", "vpc", "iam", "serverless", "cloud architecture (aws / gcp)" ],
+    "criteria" : [ "designs multi-tier, multi-AZ cloud architectures with high availability", "configures VPC networking, subnets, NAT gateways, and IAM least privilege", "evaluates serverless vs containerized architectures and disaster recovery models" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-185",
+    "question" : "Diagnose a complex network connectivity failure in a hybrid-cloud environment connecting an on-premise datacenter to AWS via Direct Connect and VPN failover.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Architecture (AWS / GCP)",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "aws", "cloud", "vpc", "iam", "serverless", "cloud architecture (aws / gcp)" ],
+    "criteria" : [ "designs multi-tier, multi-AZ cloud architectures with high availability", "configures VPC networking, subnets, NAT gateways, and IAM least privilege", "evaluates serverless vs containerized architectures and disaster recovery models" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-186",
+    "question" : "Evaluate the security posture of an AWS cloud environment against the CIS AWS Foundations Benchmark and design automated remediation using AWS Config.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Architecture (AWS / GCP)",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "aws", "cloud", "vpc", "iam", "serverless", "cloud architecture (aws / gcp)" ],
+    "criteria" : [ "designs multi-tier, multi-AZ cloud architectures with high availability", "configures VPC networking, subnets, NAT gateways, and IAM least privilege", "evaluates serverless vs containerized architectures and disaster recovery models" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-187",
+    "question" : "Architect a serverless event processing pipeline capable of handling 50,000 events/second using API Gateway, SQS FIFO, Lambda, and DynamoDB.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Architecture (AWS / GCP)",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "aws", "cloud", "vpc", "iam", "serverless", "cloud architecture (aws / gcp)" ],
+    "criteria" : [ "designs multi-tier, multi-AZ cloud architectures with high availability", "configures VPC networking, subnets, NAT gateways, and IAM least privilege", "evaluates serverless vs containerized architectures and disaster recovery models" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-188",
+    "question" : "Architect a disaster recovery multi-region AWS topology supporting an active-active architecture with sub-second replication latency.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Architecture (AWS / GCP)",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "aws", "cloud", "vpc", "iam", "serverless", "cloud architecture (aws / gcp)" ],
+    "criteria" : [ "designs multi-tier, multi-AZ cloud architectures with high availability", "configures VPC networking, subnets, NAT gateways, and IAM least privilege", "evaluates serverless vs containerized architectures and disaster recovery models" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-189",
+    "question" : "What is Site Reliability Engineering (SRE), and how does it apply software engineering principles to operations?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Site Reliability Engineering (SRE) & Observability",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "sre", "observability", "prometheus", "grafana", "opentelemetry", "site reliability engineering (sre) & observability" ],
+    "criteria" : [ "defines and tracks SLIs, SLOs, and error budget burn rates", "queries and visualizes telemetry using Prometheus PromQL and Grafana", "conducts blameless post-mortems and designs chaos engineering experiments" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-190",
+    "question" : "Explain the difference between SLI (Service Level Indicator), SLO (Service Level Objective), and SLA (Service Level Agreement).",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Site Reliability Engineering (SRE) & Observability",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "sre", "observability", "prometheus", "grafana", "opentelemetry", "site reliability engineering (sre) & observability" ],
+    "criteria" : [ "defines and tracks SLIs, SLOs, and error budget burn rates", "queries and visualizes telemetry using Prometheus PromQL and Grafana", "conducts blameless post-mortems and designs chaos engineering experiments" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-191",
+    "question" : "What is an Error Budget in SRE, and how does it balance feature velocity against system stability?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Site Reliability Engineering (SRE) & Observability",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "sre", "observability", "prometheus", "grafana", "opentelemetry", "site reliability engineering (sre) & observability" ],
+    "criteria" : [ "defines and tracks SLIs, SLOs, and error budget burn rates", "queries and visualizes telemetry using Prometheus PromQL and Grafana", "conducts blameless post-mortems and designs chaos engineering experiments" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-192",
+    "question" : "What are the four 'Golden Signals' of monitoring in Google's SRE framework (Latency, Traffic, Errors, Saturation)?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Site Reliability Engineering (SRE) & Observability",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "sre", "observability", "prometheus", "grafana", "opentelemetry", "site reliability engineering (sre) & observability" ],
+    "criteria" : [ "defines and tracks SLIs, SLOs, and error budget burn rates", "queries and visualizes telemetry using Prometheus PromQL and Grafana", "conducts blameless post-mortems and designs chaos engineering experiments" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-193",
+    "question" : "What is Prometheus, and how does its pull-based metric collection model work with HTTP scraping?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Site Reliability Engineering (SRE) & Observability",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "sre", "observability", "prometheus", "grafana", "opentelemetry", "site reliability engineering (sre) & observability" ],
+    "criteria" : [ "defines and tracks SLIs, SLOs, and error budget burn rates", "queries and visualizes telemetry using Prometheus PromQL and Grafana", "conducts blameless post-mortems and designs chaos engineering experiments" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-194",
+    "question" : "What is a Grafana dashboard, and how does it query Prometheus using PromQL to visualize system health?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Site Reliability Engineering (SRE) & Observability",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "sre", "observability", "prometheus", "grafana", "opentelemetry", "site reliability engineering (sre) & observability" ],
+    "criteria" : [ "defines and tracks SLIs, SLOs, and error budget burn rates", "queries and visualizes telemetry using Prometheus PromQL and Grafana", "conducts blameless post-mortems and designs chaos engineering experiments" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-195",
+    "question" : "What is distributed tracing, and how does it trace a single user request through a chain of 20 microservices?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Site Reliability Engineering (SRE) & Observability",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "sre", "observability", "prometheus", "grafana", "opentelemetry", "site reliability engineering (sre) & observability" ],
+    "criteria" : [ "defines and tracks SLIs, SLOs, and error budget burn rates", "queries and visualizes telemetry using Prometheus PromQL and Grafana", "conducts blameless post-mortems and designs chaos engineering experiments" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-196",
+    "question" : "What is Site Reliability Engineering (SRE), and how does it apply software engineering principles to operations?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Site Reliability Engineering (SRE) & Observability",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "sre", "observability", "prometheus", "grafana", "opentelemetry", "site reliability engineering (sre) & observability" ],
+    "criteria" : [ "defines and tracks SLIs, SLOs, and error budget burn rates", "queries and visualizes telemetry using Prometheus PromQL and Grafana", "conducts blameless post-mortems and designs chaos engineering experiments" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-197",
+    "question" : "Explain the difference between SLI (Service Level Indicator), SLO (Service Level Objective), and SLA (Service Level Agreement).",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Site Reliability Engineering (SRE) & Observability",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "sre", "observability", "prometheus", "grafana", "opentelemetry", "site reliability engineering (sre) & observability" ],
+    "criteria" : [ "defines and tracks SLIs, SLOs, and error budget burn rates", "queries and visualizes telemetry using Prometheus PromQL and Grafana", "conducts blameless post-mortems and designs chaos engineering experiments" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-198",
+    "question" : "What is an Error Budget in SRE, and how does it balance feature velocity against system stability?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Site Reliability Engineering (SRE) & Observability",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "sre", "observability", "prometheus", "grafana", "opentelemetry", "site reliability engineering (sre) & observability" ],
+    "criteria" : [ "defines and tracks SLIs, SLOs, and error budget burn rates", "queries and visualizes telemetry using Prometheus PromQL and Grafana", "conducts blameless post-mortems and designs chaos engineering experiments" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-199",
+    "question" : "What is Chaos Engineering, and how do tools like Chaos Mesh or Gremlin validate system resilience by deliberately injecting network latency and killing pods?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Site Reliability Engineering (SRE) & Observability",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "sre", "observability", "prometheus", "grafana", "opentelemetry", "site reliability engineering (sre) & observability" ],
+    "criteria" : [ "defines and tracks SLIs, SLOs, and error budget burn rates", "queries and visualizes telemetry using Prometheus PromQL and Grafana", "conducts blameless post-mortems and designs chaos engineering experiments" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-200",
+    "question" : "How do you calculate and enforce error budget burn rates to trigger automated deployment freezes before an SLO is breached?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Site Reliability Engineering (SRE) & Observability",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "sre", "observability", "prometheus", "grafana", "opentelemetry", "site reliability engineering (sre) & observability" ],
+    "criteria" : [ "defines and tracks SLIs, SLOs, and error budget burn rates", "queries and visualizes telemetry using Prometheus PromQL and Grafana", "conducts blameless post-mortems and designs chaos engineering experiments" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-201",
+    "question" : "Explain the difference between gauge, counter, histogram, and summary metric types in Prometheus.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Site Reliability Engineering (SRE) & Observability",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "sre", "observability", "prometheus", "grafana", "opentelemetry", "site reliability engineering (sre) & observability" ],
+    "criteria" : [ "defines and tracks SLIs, SLOs, and error budget burn rates", "queries and visualizes telemetry using Prometheus PromQL and Grafana", "conducts blameless post-mortems and designs chaos engineering experiments" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-202",
+    "question" : "How do you configure centralized log aggregation using the ELK (Elasticsearch, Logstash, Kibana) or EFK (Fluentd) stack in Kubernetes?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Site Reliability Engineering (SRE) & Observability",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "sre", "observability", "prometheus", "grafana", "opentelemetry", "site reliability engineering (sre) & observability" ],
+    "criteria" : [ "defines and tracks SLIs, SLOs, and error budget burn rates", "queries and visualizes telemetry using Prometheus PromQL and Grafana", "conducts blameless post-mortems and designs chaos engineering experiments" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-203",
+    "question" : "How do you write PromQL queries to compute 95th and 99th percentile request latency using `histogram_quantile()`?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Site Reliability Engineering (SRE) & Observability",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "sre", "observability", "prometheus", "grafana", "opentelemetry", "site reliability engineering (sre) & observability" ],
+    "criteria" : [ "defines and tracks SLIs, SLOs, and error budget burn rates", "queries and visualizes telemetry using Prometheus PromQL and Grafana", "conducts blameless post-mortems and designs chaos engineering experiments" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-204",
+    "question" : "Explain how OpenTelemetry unifies traces, metrics, and logs collection using the OpenTelemetry Collector and OTLP protocol.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Site Reliability Engineering (SRE) & Observability",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "sre", "observability", "prometheus", "grafana", "opentelemetry", "site reliability engineering (sre) & observability" ],
+    "criteria" : [ "defines and tracks SLIs, SLOs, and error budget burn rates", "queries and visualizes telemetry using Prometheus PromQL and Grafana", "conducts blameless post-mortems and designs chaos engineering experiments" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-205",
+    "question" : "How do you design an alert routing architecture with Prometheus Alertmanager that avoids alert fatigue through grouping, inhibition, and silences?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Site Reliability Engineering (SRE) & Observability",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "sre", "observability", "prometheus", "grafana", "opentelemetry", "site reliability engineering (sre) & observability" ],
+    "criteria" : [ "defines and tracks SLIs, SLOs, and error budget burn rates", "queries and visualizes telemetry using Prometheus PromQL and Grafana", "conducts blameless post-mortems and designs chaos engineering experiments" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-206",
+    "question" : "What is Chaos Engineering, and how do tools like Chaos Mesh or Gremlin validate system resilience by deliberately injecting network latency and killing pods?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Site Reliability Engineering (SRE) & Observability",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "sre", "observability", "prometheus", "grafana", "opentelemetry", "site reliability engineering (sre) & observability" ],
+    "criteria" : [ "defines and tracks SLIs, SLOs, and error budget burn rates", "queries and visualizes telemetry using Prometheus PromQL and Grafana", "conducts blameless post-mortems and designs chaos engineering experiments" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-207",
+    "question" : "How do you calculate and enforce error budget burn rates to trigger automated deployment freezes before an SLO is breached?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Site Reliability Engineering (SRE) & Observability",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "sre", "observability", "prometheus", "grafana", "opentelemetry", "site reliability engineering (sre) & observability" ],
+    "criteria" : [ "defines and tracks SLIs, SLOs, and error budget burn rates", "queries and visualizes telemetry using Prometheus PromQL and Grafana", "conducts blameless post-mortems and designs chaos engineering experiments" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-208",
+    "question" : "Explain the difference between gauge, counter, histogram, and summary metric types in Prometheus.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Site Reliability Engineering (SRE) & Observability",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "sre", "observability", "prometheus", "grafana", "opentelemetry", "site reliability engineering (sre) & observability" ],
+    "criteria" : [ "defines and tracks SLIs, SLOs, and error budget burn rates", "queries and visualizes telemetry using Prometheus PromQL and Grafana", "conducts blameless post-mortems and designs chaos engineering experiments" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-209",
+    "question" : "How do you configure centralized log aggregation using the ELK (Elasticsearch, Logstash, Kibana) or EFK (Fluentd) stack in Kubernetes?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Site Reliability Engineering (SRE) & Observability",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "sre", "observability", "prometheus", "grafana", "opentelemetry", "site reliability engineering (sre) & observability" ],
+    "criteria" : [ "defines and tracks SLIs, SLOs, and error budget burn rates", "queries and visualizes telemetry using Prometheus PromQL and Grafana", "conducts blameless post-mortems and designs chaos engineering experiments" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-210",
+    "question" : "How do you write PromQL queries to compute 95th and 99th percentile request latency using `histogram_quantile()`?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Site Reliability Engineering (SRE) & Observability",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "sre", "observability", "prometheus", "grafana", "opentelemetry", "site reliability engineering (sre) & observability" ],
+    "criteria" : [ "defines and tracks SLIs, SLOs, and error budget burn rates", "queries and visualizes telemetry using Prometheus PromQL and Grafana", "conducts blameless post-mortems and designs chaos engineering experiments" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-211",
+    "question" : "Explain how OpenTelemetry unifies traces, metrics, and logs collection using the OpenTelemetry Collector and OTLP protocol.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Site Reliability Engineering (SRE) & Observability",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "sre", "observability", "prometheus", "grafana", "opentelemetry", "site reliability engineering (sre) & observability" ],
+    "criteria" : [ "defines and tracks SLIs, SLOs, and error budget burn rates", "queries and visualizes telemetry using Prometheus PromQL and Grafana", "conducts blameless post-mortems and designs chaos engineering experiments" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-212",
+    "question" : "How do you design an alert routing architecture with Prometheus Alertmanager that avoids alert fatigue through grouping, inhibition, and silences?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Site Reliability Engineering (SRE) & Observability",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "sre", "observability", "prometheus", "grafana", "opentelemetry", "site reliability engineering (sre) & observability" ],
+    "criteria" : [ "defines and tracks SLIs, SLOs, and error budget burn rates", "queries and visualizes telemetry using Prometheus PromQL and Grafana", "conducts blameless post-mortems and designs chaos engineering experiments" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-213",
+    "question" : "What is Chaos Engineering, and how do tools like Chaos Mesh or Gremlin validate system resilience by deliberately injecting network latency and killing pods?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Site Reliability Engineering (SRE) & Observability",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "sre", "observability", "prometheus", "grafana", "opentelemetry", "site reliability engineering (sre) & observability" ],
+    "criteria" : [ "defines and tracks SLIs, SLOs, and error budget burn rates", "queries and visualizes telemetry using Prometheus PromQL and Grafana", "conducts blameless post-mortems and designs chaos engineering experiments" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-214",
+    "question" : "Architect an enterprise observability platform that ingests 50TB of logs, 100 million metric series, and 10 billion trace spans daily with cost controls.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Site Reliability Engineering (SRE) & Observability",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "sre", "observability", "prometheus", "grafana", "opentelemetry", "site reliability engineering (sre) & observability" ],
+    "criteria" : [ "defines and tracks SLIs, SLOs, and error budget burn rates", "queries and visualizes telemetry using Prometheus PromQL and Grafana", "conducts blameless post-mortems and designs chaos engineering experiments" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-215",
+    "question" : "Design an automated incident management and self-healing system that auto-triages alerts, executes runbooks, and rolls back regressions.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Site Reliability Engineering (SRE) & Observability",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "sre", "observability", "prometheus", "grafana", "opentelemetry", "site reliability engineering (sre) & observability" ],
+    "criteria" : [ "defines and tracks SLIs, SLOs, and error budget burn rates", "queries and visualizes telemetry using Prometheus PromQL and Grafana", "conducts blameless post-mortems and designs chaos engineering experiments" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-216",
+    "question" : "Diagnose an issue where Prometheus server crashes repeatedly due to high cardinality metrics generated by dynamic user IDs in metric labels.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Site Reliability Engineering (SRE) & Observability",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "sre", "observability", "prometheus", "grafana", "opentelemetry", "site reliability engineering (sre) & observability" ],
+    "criteria" : [ "defines and tracks SLIs, SLOs, and error budget burn rates", "queries and visualizes telemetry using Prometheus PromQL and Grafana", "conducts blameless post-mortems and designs chaos engineering experiments" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-217",
+    "question" : "Conduct a comprehensive post-mortem analysis of a 4-hour global payment outage, detailing root cause, timeline, contributing factors, and action items.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Site Reliability Engineering (SRE) & Observability",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "sre", "observability", "prometheus", "grafana", "opentelemetry", "site reliability engineering (sre) & observability" ],
+    "criteria" : [ "defines and tracks SLIs, SLOs, and error budget burn rates", "queries and visualizes telemetry using Prometheus PromQL and Grafana", "conducts blameless post-mortems and designs chaos engineering experiments" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-218",
+    "question" : "How do you define and implement meaningful SLOs for asynchronous background event processing pipelines where traditional request/response latency does not apply?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Site Reliability Engineering (SRE) & Observability",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "sre", "observability", "prometheus", "grafana", "opentelemetry", "site reliability engineering (sre) & observability" ],
+    "criteria" : [ "defines and tracks SLIs, SLOs, and error budget burn rates", "queries and visualizes telemetry using Prometheus PromQL and Grafana", "conducts blameless post-mortems and designs chaos engineering experiments" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-219",
+    "question" : "Architect an enterprise observability platform that ingests 50TB of logs, 100 million metric series, and 10 billion trace spans daily with cost controls.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Site Reliability Engineering (SRE) & Observability",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "sre", "observability", "prometheus", "grafana", "opentelemetry", "site reliability engineering (sre) & observability" ],
+    "criteria" : [ "defines and tracks SLIs, SLOs, and error budget burn rates", "queries and visualizes telemetry using Prometheus PromQL and Grafana", "conducts blameless post-mortems and designs chaos engineering experiments" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-220",
+    "question" : "What is the difference between AWS RDS and AWS Aurora in terms of architecture, replication, and storage engine?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Storage & Databases",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "cloud storage", "aurora", "dynamodb", "s3", "rds", "cloud storage & databases" ],
+    "criteria" : [ "contrasts cloud storage paradigms (block, file, object, NoSQL, relational)", "models schemas for high-scale NoSQL datastores (DynamoDB single-table design)", "architects high-availability cloud database clustering and multi-region replication" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-221",
+    "question" : "What is Amazon DynamoDB, and how does it differ from traditional relational databases like PostgreSQL?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Storage & Databases",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "cloud storage", "aurora", "dynamodb", "s3", "rds", "cloud storage & databases" ],
+    "criteria" : [ "contrasts cloud storage paradigms (block, file, object, NoSQL, relational)", "models schemas for high-scale NoSQL datastores (DynamoDB single-table design)", "architects high-availability cloud database clustering and multi-region replication" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-222",
+    "question" : "What is the difference between block storage (AWS EBS), file storage (AWS EFS), and object storage (AWS S3)?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Storage & Databases",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "cloud storage", "aurora", "dynamodb", "s3", "rds", "cloud storage & databases" ],
+    "criteria" : [ "contrasts cloud storage paradigms (block, file, object, NoSQL, relational)", "models schemas for high-scale NoSQL datastores (DynamoDB single-table design)", "architects high-availability cloud database clustering and multi-region replication" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-223",
+    "question" : "How does DynamoDB use partition keys and sort keys to distribute and retrieve items across storage nodes?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Storage & Databases",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "cloud storage", "aurora", "dynamodb", "s3", "rds", "cloud storage & databases" ],
+    "criteria" : [ "contrasts cloud storage paradigms (block, file, object, NoSQL, relational)", "models schemas for high-scale NoSQL datastores (DynamoDB single-table design)", "architects high-availability cloud database clustering and multi-region replication" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-224",
+    "question" : "What is the difference between an EBS gp3 volume and an io2 Block Express volume, and when is high IOPS needed?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Storage & Databases",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "cloud storage", "aurora", "dynamodb", "s3", "rds", "cloud storage & databases" ],
+    "criteria" : [ "contrasts cloud storage paradigms (block, file, object, NoSQL, relational)", "models schemas for high-scale NoSQL datastores (DynamoDB single-table design)", "architects high-availability cloud database clustering and multi-region replication" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-225",
+    "question" : "What are DynamoDB Global Secondary Indexes (GSI) and Local Secondary Indexes (LSI)?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Storage & Databases",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "cloud storage", "aurora", "dynamodb", "s3", "rds", "cloud storage & databases" ],
+    "criteria" : [ "contrasts cloud storage paradigms (block, file, object, NoSQL, relational)", "models schemas for high-scale NoSQL datastores (DynamoDB single-table design)", "architects high-availability cloud database clustering and multi-region replication" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-226",
+    "question" : "How do Amazon RDS Read Replicas improve read throughput, and what is replication lag?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Storage & Databases",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "cloud storage", "aurora", "dynamodb", "s3", "rds", "cloud storage & databases" ],
+    "criteria" : [ "contrasts cloud storage paradigms (block, file, object, NoSQL, relational)", "models schemas for high-scale NoSQL datastores (DynamoDB single-table design)", "architects high-availability cloud database clustering and multi-region replication" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-227",
+    "question" : "What is the difference between AWS RDS and AWS Aurora in terms of architecture, replication, and storage engine?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Storage & Databases",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "cloud storage", "aurora", "dynamodb", "s3", "rds", "cloud storage & databases" ],
+    "criteria" : [ "contrasts cloud storage paradigms (block, file, object, NoSQL, relational)", "models schemas for high-scale NoSQL datastores (DynamoDB single-table design)", "architects high-availability cloud database clustering and multi-region replication" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-228",
+    "question" : "What is Amazon DynamoDB, and how does it differ from traditional relational databases like PostgreSQL?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Storage & Databases",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "cloud storage", "aurora", "dynamodb", "s3", "rds", "cloud storage & databases" ],
+    "criteria" : [ "contrasts cloud storage paradigms (block, file, object, NoSQL, relational)", "models schemas for high-scale NoSQL datastores (DynamoDB single-table design)", "architects high-availability cloud database clustering and multi-region replication" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-229",
+    "question" : "What is the difference between block storage (AWS EBS), file storage (AWS EFS), and object storage (AWS S3)?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Storage & Databases",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "cloud storage", "aurora", "dynamodb", "s3", "rds", "cloud storage & databases" ],
+    "criteria" : [ "contrasts cloud storage paradigms (block, file, object, NoSQL, relational)", "models schemas for high-scale NoSQL datastores (DynamoDB single-table design)", "architects high-availability cloud database clustering and multi-region replication" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-230",
+    "question" : "How do you design a database migration from on-premise Oracle to AWS PostgreSQL using AWS DMS (Database Migration Service)?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Storage & Databases",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cloud storage", "aurora", "dynamodb", "s3", "rds", "cloud storage & databases" ],
+    "criteria" : [ "contrasts cloud storage paradigms (block, file, object, NoSQL, relational)", "models schemas for high-scale NoSQL datastores (DynamoDB single-table design)", "architects high-availability cloud database clustering and multi-region replication" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-231",
+    "question" : "Explain how S3 Object Versioning, Object Lock, and MFA Delete protect critical data against accidental deletion and ransomware.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Storage & Databases",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cloud storage", "aurora", "dynamodb", "s3", "rds", "cloud storage & databases" ],
+    "criteria" : [ "contrasts cloud storage paradigms (block, file, object, NoSQL, relational)", "models schemas for high-scale NoSQL datastores (DynamoDB single-table design)", "architects high-availability cloud database clustering and multi-region replication" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-232",
+    "question" : "How does Amazon Aurora Serverless v2 dynamically scale database capacity (ACUs) in response to unpredictable application demand?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Storage & Databases",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cloud storage", "aurora", "dynamodb", "s3", "rds", "cloud storage & databases" ],
+    "criteria" : [ "contrasts cloud storage paradigms (block, file, object, NoSQL, relational)", "models schemas for high-scale NoSQL datastores (DynamoDB single-table design)", "architects high-availability cloud database clustering and multi-region replication" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-233",
+    "question" : "What are the consistency models of Amazon DynamoDB (Eventual Consistency vs Strongly Consistent Reads), and what are the cost differences?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Storage & Databases",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cloud storage", "aurora", "dynamodb", "s3", "rds", "cloud storage & databases" ],
+    "criteria" : [ "contrasts cloud storage paradigms (block, file, object, NoSQL, relational)", "models schemas for high-scale NoSQL datastores (DynamoDB single-table design)", "architects high-availability cloud database clustering and multi-region replication" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-234",
+    "question" : "How does AWS Aurora achieve 6-way storage replication across 3 Availability Zones with sub-minute failover?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Storage & Databases",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cloud storage", "aurora", "dynamodb", "s3", "rds", "cloud storage & databases" ],
+    "criteria" : [ "contrasts cloud storage paradigms (block, file, object, NoSQL, relational)", "models schemas for high-scale NoSQL datastores (DynamoDB single-table design)", "architects high-availability cloud database clustering and multi-region replication" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-235",
+    "question" : "Explain DynamoDB Single-Table Design and how access patterns dictate partition key and sort key schema modeling.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Storage & Databases",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cloud storage", "aurora", "dynamodb", "s3", "rds", "cloud storage & databases" ],
+    "criteria" : [ "contrasts cloud storage paradigms (block, file, object, NoSQL, relational)", "models schemas for high-scale NoSQL datastores (DynamoDB single-table design)", "architects high-availability cloud database clustering and multi-region replication" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-236",
+    "question" : "How do you manage DynamoDB capacity modes (On-Demand vs Provisioned) and handle throttling (`ProvisionedThroughputExceededException`)?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Storage & Databases",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cloud storage", "aurora", "dynamodb", "s3", "rds", "cloud storage & databases" ],
+    "criteria" : [ "contrasts cloud storage paradigms (block, file, object, NoSQL, relational)", "models schemas for high-scale NoSQL datastores (DynamoDB single-table design)", "architects high-availability cloud database clustering and multi-region replication" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-237",
+    "question" : "How do you design a database migration from on-premise Oracle to AWS PostgreSQL using AWS DMS (Database Migration Service)?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Storage & Databases",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cloud storage", "aurora", "dynamodb", "s3", "rds", "cloud storage & databases" ],
+    "criteria" : [ "contrasts cloud storage paradigms (block, file, object, NoSQL, relational)", "models schemas for high-scale NoSQL datastores (DynamoDB single-table design)", "architects high-availability cloud database clustering and multi-region replication" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-238",
+    "question" : "Explain how S3 Object Versioning, Object Lock, and MFA Delete protect critical data against accidental deletion and ransomware.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Storage & Databases",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cloud storage", "aurora", "dynamodb", "s3", "rds", "cloud storage & databases" ],
+    "criteria" : [ "contrasts cloud storage paradigms (block, file, object, NoSQL, relational)", "models schemas for high-scale NoSQL datastores (DynamoDB single-table design)", "architects high-availability cloud database clustering and multi-region replication" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-239",
+    "question" : "How does Amazon Aurora Serverless v2 dynamically scale database capacity (ACUs) in response to unpredictable application demand?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Storage & Databases",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cloud storage", "aurora", "dynamodb", "s3", "rds", "cloud storage & databases" ],
+    "criteria" : [ "contrasts cloud storage paradigms (block, file, object, NoSQL, relational)", "models schemas for high-scale NoSQL datastores (DynamoDB single-table design)", "architects high-availability cloud database clustering and multi-region replication" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-240",
+    "question" : "What are the consistency models of Amazon DynamoDB (Eventual Consistency vs Strongly Consistent Reads), and what are the cost differences?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Storage & Databases",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cloud storage", "aurora", "dynamodb", "s3", "rds", "cloud storage & databases" ],
+    "criteria" : [ "contrasts cloud storage paradigms (block, file, object, NoSQL, relational)", "models schemas for high-scale NoSQL datastores (DynamoDB single-table design)", "architects high-availability cloud database clustering and multi-region replication" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-241",
+    "question" : "How does AWS Aurora achieve 6-way storage replication across 3 Availability Zones with sub-minute failover?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Storage & Databases",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cloud storage", "aurora", "dynamodb", "s3", "rds", "cloud storage & databases" ],
+    "criteria" : [ "contrasts cloud storage paradigms (block, file, object, NoSQL, relational)", "models schemas for high-scale NoSQL datastores (DynamoDB single-table design)", "architects high-availability cloud database clustering and multi-region replication" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-242",
+    "question" : "Explain DynamoDB Single-Table Design and how access patterns dictate partition key and sort key schema modeling.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Storage & Databases",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cloud storage", "aurora", "dynamodb", "s3", "rds", "cloud storage & databases" ],
+    "criteria" : [ "contrasts cloud storage paradigms (block, file, object, NoSQL, relational)", "models schemas for high-scale NoSQL datastores (DynamoDB single-table design)", "architects high-availability cloud database clustering and multi-region replication" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-243",
+    "question" : "How do you manage DynamoDB capacity modes (On-Demand vs Provisioned) and handle throttling (`ProvisionedThroughputExceededException`)?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Storage & Databases",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cloud storage", "aurora", "dynamodb", "s3", "rds", "cloud storage & databases" ],
+    "criteria" : [ "contrasts cloud storage paradigms (block, file, object, NoSQL, relational)", "models schemas for high-scale NoSQL datastores (DynamoDB single-table design)", "architects high-availability cloud database clustering and multi-region replication" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-244",
+    "question" : "How do you design a database migration from on-premise Oracle to AWS PostgreSQL using AWS DMS (Database Migration Service)?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Storage & Databases",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cloud storage", "aurora", "dynamodb", "s3", "rds", "cloud storage & databases" ],
+    "criteria" : [ "contrasts cloud storage paradigms (block, file, object, NoSQL, relational)", "models schemas for high-scale NoSQL datastores (DynamoDB single-table design)", "architects high-availability cloud database clustering and multi-region replication" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-245",
+    "question" : "Architect a global active-active multi-region database tier using DynamoDB Global Tables or Aurora Global Database with sub-second replication.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Storage & Databases",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "cloud storage", "aurora", "dynamodb", "s3", "rds", "cloud storage & databases" ],
+    "criteria" : [ "contrasts cloud storage paradigms (block, file, object, NoSQL, relational)", "models schemas for high-scale NoSQL datastores (DynamoDB single-table design)", "architects high-availability cloud database clustering and multi-region replication" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-246",
+    "question" : "Diagnose a severe performance bottleneck in a DynamoDB table caused by a hot partition key during a national product launch.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Storage & Databases",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "cloud storage", "aurora", "dynamodb", "s3", "rds", "cloud storage & databases" ],
+    "criteria" : [ "contrasts cloud storage paradigms (block, file, object, NoSQL, relational)", "models schemas for high-scale NoSQL datastores (DynamoDB single-table design)", "architects high-availability cloud database clustering and multi-region replication" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-247",
+    "question" : "Design an automated archival and lifecycle pipeline that shifts 1 Petabyte of transactional log data across S3 tiers down to S3 Glacier Deep Archive.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Storage & Databases",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "cloud storage", "aurora", "dynamodb", "s3", "rds", "cloud storage & databases" ],
+    "criteria" : [ "contrasts cloud storage paradigms (block, file, object, NoSQL, relational)", "models schemas for high-scale NoSQL datastores (DynamoDB single-table design)", "architects high-availability cloud database clustering and multi-region replication" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-248",
+    "question" : "Analyze the failure modes of AWS Aurora multi-master clusters under high-concurrency write conflicts and design conflict resolution strategies.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Storage & Databases",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "cloud storage", "aurora", "dynamodb", "s3", "rds", "cloud storage & databases" ],
+    "criteria" : [ "contrasts cloud storage paradigms (block, file, object, NoSQL, relational)", "models schemas for high-scale NoSQL datastores (DynamoDB single-table design)", "architects high-availability cloud database clustering and multi-region replication" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-249",
+    "question" : "How do you design automated database disaster recovery testing that spins up production replicas, executes integrity tests, and tears them down without impacting live traffic?",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Storage & Databases",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "cloud storage", "aurora", "dynamodb", "s3", "rds", "cloud storage & databases" ],
+    "criteria" : [ "contrasts cloud storage paradigms (block, file, object, NoSQL, relational)", "models schemas for high-scale NoSQL datastores (DynamoDB single-table design)", "architects high-availability cloud database clustering and multi-region replication" ],
+    "follow_up" : true
+  }, {
+    "id" : "CLOUD-250",
+    "question" : "Architect a global active-active multi-region database tier using DynamoDB Global Tables or Aurora Global Database with sub-second replication.",
+    "subject" : "Cloud & Infrastructure",
+    "topic" : "Cloud Storage & Databases",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "cloud storage", "aurora", "dynamodb", "s3", "rds", "cloud storage & databases" ],
+    "criteria" : [ "contrasts cloud storage paradigms (block, file, object, NoSQL, relational)", "models schemas for high-scale NoSQL datastores (DynamoDB single-table design)", "architects high-availability cloud database clustering and multi-region replication" ],
+    "follow_up" : true
+  } ]
+}

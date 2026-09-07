@@ -1,135 +1,173 @@
 import { apiClient } from './apiClient'
 
 export interface InterviewSession {
-  id: string
-  candidateId: string
-  candidateName: string
-  jobRole: string
-  experienceLevel: string
+  interviewSessionId: number
+  id?: string
+  candidateId?: string
   interviewType: string
+  subject?: string
   status: string
-  questions: InterviewQuestion[]
+  sessionIdentifier?: string
+  totalQuestions?: number
+  totalScore?: number
+  currentTopic?: string
+  remainingTopics?: string[]
   createdAt?: string
-  updatedAt?: string
 }
 
 export interface InterviewQuestion {
   id: string
-  sessionId: string
-  questionText: string
-  sequenceOrder: number
-  candidateAnswer?: CandidateAnswer
-  createdAt?: string
+  question: string
+  questionText?: string
+  subject: string
+  topic: string
+  difficulty: string
+  concepts: string[]
+  criteria: string[]
 }
 
 export interface CandidateAnswer {
-  id: string
+  questionNo: number
   questionId: string
-  transcript: string
-  audioFileUrl?: string
-  createdAt?: string
+  answerText?: string
+  transcript?: string
+  evaluationScore?: number
 }
 
-export interface EvaluationResponse {
-  evaluationId: string
-  answerId: string
+export interface QuestionEvaluationSummary {
+  answerId: number
+  questionNo: number
+  questionId: string
+  questionText: string
+  topic: string
+  difficultyLevel: string
+  transcript: string
   score: number
-  technicalScore: number
-  relevanceScore: number
-  completenessScore: number
-  communicationScore: number
   feedback: string
-  strengths: string[]
-  weaknesses: string[]
-  createdAt?: string
 }
 
 export interface InterviewSummaryResponse {
-  sessionId: string
-  candidateId: string
+  sessionId: number
+  candidateId: number
   candidateName: string
-  jobRole: string
-  experienceLevel: string
   interviewType: string
+  subject?: string
   status: string
   overallScore: number
   summaryFeedback: string
   overallStrengths: string[]
   areasForImprovement: string[]
-  questionEvaluations: EvaluationResponse[]
+  questionEvaluations: QuestionEvaluationSummary[]
   createdAt?: string
-  updatedAt?: string
 }
 
 export interface CreateInterviewPayload {
-  candidateId: string
-  jobRole: string
-  experienceLevel: string
-  interviewType: string
+  interviewType?: string
   subject?: string
+  experienceLevel?: string
   difficultyLevel?: string
+  jobRole?: string
   useQuestionBank?: boolean
+  candidateId?: string
+}
+
+export interface SubmitAnswerPayload {
+  questionNo: number
+  questionId: string
+  answerText?: string
+  transcript?: string
+  responseDurationSeconds?: number
+  responseLatencySeconds?: number
 }
 
 export const voiceInterviewService = {
   async getSubjects(): Promise<string[]> {
-    try {
-      const res = await apiClient.get<{ data: string[] }>('/api/v1/interviews/subjects')
-      return res.data.data || ['DBMS', 'OPERATING_SYSTEMS', 'COMPUTER_NETWORKS', 'OOPS_DATA_STRUCTURES']
-    } catch {
-      return ['DBMS', 'OPERATING_SYSTEMS', 'COMPUTER_NETWORKS', 'OOPS_DATA_STRUCTURES']
-    }
+    return ['DBMS', 'OPERATING_SYSTEMS', 'COMPUTER_NETWORKS', 'OOPS_DATA_STRUCTURES']
   },
 
   async createSession(payload: CreateInterviewPayload): Promise<InterviewSession> {
-    const res = await apiClient.post<{ data: InterviewSession }>('/api/v1/interviews', payload)
-    return res.data.data
-  },
-
-  async startInterview(sessionId: string): Promise<InterviewSession> {
-    const res = await apiClient.post<{ data: InterviewSession }>(`/api/v1/interviews/${sessionId}/start`)
-    return res.data.data
-  },
-
-  async getCurrentQuestion(sessionId: string): Promise<InterviewQuestion> {
-    const res = await apiClient.get<{ data: InterviewQuestion }>(`/api/v1/interviews/${sessionId}/current-question`)
-    return res.data.data
-  },
-
-  async submitAnswer(sessionId: string, questionId: string, transcript: string): Promise<CandidateAnswer> {
-    const res = await apiClient.post<{ data: CandidateAnswer }>(`/api/v1/interviews/${sessionId}/answer`, {
-      questionId,
-      transcript,
+    const res = await apiClient.post<InterviewSession>('/api/interviews/sessions', {
+      interviewType: payload.interviewType?.toUpperCase() === 'TECHNICAL' ? 'TECHNICAL' : 'TECHNICAL',
+      subject: payload.subject || 'Operating Systems',
+      experienceLevel: payload.experienceLevel,
+      difficultyLevel: payload.difficultyLevel,
     })
-    return res.data.data
+    const session = res.data
+    return {
+      ...session,
+      id: String(session.interviewSessionId),
+    }
   },
 
-  async submitVoiceAnswer(sessionId: string, questionId: string, audioBlob: Blob): Promise<CandidateAnswer> {
-    const formData = new FormData()
-    formData.append('questionId', questionId)
-    formData.append('audioFile', audioBlob, 'voice-answer.webm')
-    formData.append('mimeType', audioBlob.type || 'audio/webm')
+  async startInterview(sessionId: string | number): Promise<InterviewSession> {
+    const res = await apiClient.post<InterviewSession>(`/api/interviews/sessions/${sessionId}/start`)
+    const session = res.data
+    return {
+      ...session,
+      id: String(session.interviewSessionId),
+    }
+  },
 
-    const response = await fetch(`${apiClient.baseUrl}/api/v1/interviews/${sessionId}/voice-answer`, {
-      method: 'POST',
-      body: formData,
-    })
+  async getCurrentQuestion(sessionId: string | number): Promise<InterviewQuestion | null> {
+    const res = await apiClient.get<InterviewQuestion>(`/api/interviews/sessions/${sessionId}/current-question`)
+    const q = res.data
+    if (!q) return null
+    return {
+      ...q,
+      questionText: q.question || (q as any).questionText,
+    }
+  },
 
-    if (!response.ok) {
-      throw new Error('Failed to submit voice answer')
+  async submitAnswer(
+    sessionId: string | number,
+    payloadOrQuestionId: SubmitAnswerPayload | string,
+    maybeAnswerText?: string,
+    questionNo?: number
+  ): Promise<InterviewQuestion | null> {
+    let payload: SubmitAnswerPayload
+    if (typeof payloadOrQuestionId === 'string') {
+      payload = {
+        questionNo: questionNo || 1,
+        questionId: payloadOrQuestionId,
+        answerText: maybeAnswerText || '',
+        transcript: maybeAnswerText || '',
+        responseDurationSeconds: 60,
+      }
+    } else {
+      payload = {
+        ...payloadOrQuestionId,
+        questionNo: payloadOrQuestionId.questionNo || 1,
+        transcript: payloadOrQuestionId.transcript || payloadOrQuestionId.answerText || '',
+      }
     }
 
-    const res = await response.json()
+    try {
+      const res = await apiClient.post<InterviewQuestion>(`/api/interviews/sessions/${sessionId}/answers`, payload)
+      if (res.status === 204 || !res.data) {
+        return null // Interview complete
+      }
+      const nextQ = res.data
+      return {
+        ...nextQ,
+        questionText: nextQ.question || (nextQ as any).questionText,
+      }
+    } catch (err: any) {
+      if (err.status === 204) return null
+      throw err
+    }
+  },
+
+  async completeInterview(sessionId: string | number): Promise<InterviewSession> {
+    const res = await apiClient.post<InterviewSession>(`/api/interviews/sessions/${sessionId}/complete`)
+    const session = res.data
+    return {
+      ...session,
+      id: String(session.interviewSessionId),
+    }
+  },
+
+  async getSummary(sessionId: string | number): Promise<InterviewSummaryResponse> {
+    const res = await apiClient.get<InterviewSummaryResponse>(`/api/interviews/sessions/${sessionId}/summary`)
     return res.data
-  },
-
-  async completeInterview(sessionId: string): Promise<InterviewSession> {
-    const res = await apiClient.post<{ data: InterviewSession }>(`/api/v1/interviews/${sessionId}/complete`)
-    return res.data.data
-  },
-
-  async getSummary(sessionId: string): Promise<InterviewSummaryResponse> {
-    const res = await apiClient.get<{ data: InterviewSummaryResponse }>(`/api/v1/interviews/${sessionId}/summary`)
-    return res.data.data
   },
 }

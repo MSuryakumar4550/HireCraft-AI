@@ -37,7 +37,7 @@ import com.hirecraft.backend.enums.MemoryType;
 public class ResumeController {
 
     private final ResumeService resumeService;
-    private final UserRepository userRepository;
+    private final com.hirecraft.backend.util.UserResolver userResolver;
     private final StorageService storageService;
     private final ResumeParserService resumeParserService;
     private final JdParserService jdParserService;
@@ -49,7 +49,7 @@ public class ResumeController {
     @GetMapping("/status")
     public ResponseEntity<UserProfileResponse> getResumeStatus(
             @AuthenticationPrincipal UserDetails principal) {
-        User user = resolveUser(principal);
+        User user = userResolver.resolveUser(principal);
         return ResponseEntity.ok(resumeService.getResumeStatus(user.getUserId()));
     }
 
@@ -59,7 +59,7 @@ public class ResumeController {
             @RequestParam(value = "jobDescription", required = false) String jobDescription,
             @AuthenticationPrincipal UserDetails principal) {
         
-        User user = resolveUser(principal);
+        User user = userResolver.resolveUser(principal);
 
         validateResumeFile(file);
         
@@ -232,10 +232,5 @@ public class ResumeController {
         } catch (Exception e) {
             throw new InvalidFileException("The DOC file is either corrupted or not a valid document.", e);
         }
-    }
-
-    private User resolveUser(UserDetails principal) {
-        return userRepository.findByEmail(principal.getUsername())
-                .orElseThrow(() -> new ResourceNotFoundException("User not found"));
     }
 }

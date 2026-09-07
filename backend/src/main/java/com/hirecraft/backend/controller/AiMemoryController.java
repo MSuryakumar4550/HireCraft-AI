@@ -2,9 +2,8 @@ package com.hirecraft.backend.controller;
 
 import com.hirecraft.backend.entity.AiMemoryItem;
 import com.hirecraft.backend.entity.User;
-import com.hirecraft.backend.exception.ResourceNotFoundException;
-import com.hirecraft.backend.repository.UserRepository;
 import com.hirecraft.backend.service.AiMemoryService;
+import com.hirecraft.backend.util.UserResolver;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
@@ -21,13 +20,11 @@ import java.util.List;
 public class AiMemoryController {
 
     private final AiMemoryService aiMemoryService;
-    private final UserRepository userRepository;
+    private final UserResolver userResolver;
 
     @GetMapping
     public ResponseEntity<List<AiMemoryItem>> getAiMemory(@AuthenticationPrincipal UserDetails principal) {
-        User user = userRepository.findByEmail(principal.getUsername())
-                .orElseThrow(() -> new ResourceNotFoundException("User not found"));
-        
+        User user = userResolver.resolveUser(principal);
         List<AiMemoryItem> memoryItems = aiMemoryService.getMemoryForUser(user.getUserId());
         return ResponseEntity.ok(memoryItems);
     }

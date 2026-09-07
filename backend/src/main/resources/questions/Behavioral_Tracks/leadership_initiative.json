@@ -1,0 +1,2507 @@
+{
+  "subject" : "Leadership & Initiative",
+  "batch" : "combined",
+  "version" : "1.0",
+  "language" : null,
+  "questions" : [ {
+    "id" : "LEAD-001",
+    "question" : "Describe a situation where you noticed an important task or project was neglected and took the initiative to complete it.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Taking Ownership & Driving Complex Deliverables",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "ownership", "leadership", "initiative", "star method", "delivery", "taking ownership & driving complex deliverables" ],
+    "criteria" : [ "structures answer clearly using the STAR method (Situation, Task, Action, Result)", "demonstrates proactive ownership and high agency rather than passive execution", "quantifies business impact, team growth, and measurable project outcomes" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-002",
+    "question" : "Tell me about a time you took ownership of a critical project deliverable when the requirements were ambiguous.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Taking Ownership & Driving Complex Deliverables",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "ownership", "leadership", "initiative", "star method", "delivery", "taking ownership & driving complex deliverables" ],
+    "criteria" : [ "structures answer clearly using the STAR method (Situation, Task, Action, Result)", "demonstrates proactive ownership and high agency rather than passive execution", "quantifies business impact, team growth, and measurable project outcomes" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-003",
+    "question" : "Can you share an example of when you went above and beyond your assigned responsibilities to ensure project success?",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Taking Ownership & Driving Complex Deliverables",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "ownership", "leadership", "initiative", "star method", "delivery", "taking ownership & driving complex deliverables" ],
+    "criteria" : [ "structures answer clearly using the STAR method (Situation, Task, Action, Result)", "demonstrates proactive ownership and high agency rather than passive execution", "quantifies business impact, team growth, and measurable project outcomes" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-004",
+    "question" : "Describe a time you proactively identified a risk in a project timeline and took steps to mitigate it before it impacted delivery.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Taking Ownership & Driving Complex Deliverables",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "ownership", "leadership", "initiative", "star method", "delivery", "taking ownership & driving complex deliverables" ],
+    "criteria" : [ "structures answer clearly using the STAR method (Situation, Task, Action, Result)", "demonstrates proactive ownership and high agency rather than passive execution", "quantifies business impact, team growth, and measurable project outcomes" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-005",
+    "question" : "Tell me about a situation where you had to lead a project without having formal managerial authority over the team members.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Taking Ownership & Driving Complex Deliverables",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "ownership", "leadership", "initiative", "star method", "delivery", "taking ownership & driving complex deliverables" ],
+    "criteria" : [ "structures answer clearly using the STAR method (Situation, Task, Action, Result)", "demonstrates proactive ownership and high agency rather than passive execution", "quantifies business impact, team growth, and measurable project outcomes" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-006",
+    "question" : "Describe a time when you volunteered to take on a difficult or unglamorous task to help the team meet an important goal.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Taking Ownership & Driving Complex Deliverables",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "ownership", "leadership", "initiative", "star method", "delivery", "taking ownership & driving complex deliverables" ],
+    "criteria" : [ "structures answer clearly using the STAR method (Situation, Task, Action, Result)", "demonstrates proactive ownership and high agency rather than passive execution", "quantifies business impact, team growth, and measurable project outcomes" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-007",
+    "question" : "Give an example of a project where you took end-to-end accountability from architectural design to post-production support.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Taking Ownership & Driving Complex Deliverables",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "ownership", "leadership", "initiative", "star method", "delivery", "taking ownership & driving complex deliverables" ],
+    "criteria" : [ "structures answer clearly using the STAR method (Situation, Task, Action, Result)", "demonstrates proactive ownership and high agency rather than passive execution", "quantifies business impact, team growth, and measurable project outcomes" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-008",
+    "question" : "Describe a situation where you noticed an important task or project was neglected and took the initiative to complete it.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Taking Ownership & Driving Complex Deliverables",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "ownership", "leadership", "initiative", "star method", "delivery", "taking ownership & driving complex deliverables" ],
+    "criteria" : [ "structures answer clearly using the STAR method (Situation, Task, Action, Result)", "demonstrates proactive ownership and high agency rather than passive execution", "quantifies business impact, team growth, and measurable project outcomes" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-009",
+    "question" : "Tell me about a time you took ownership of a critical project deliverable when the requirements were ambiguous.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Taking Ownership & Driving Complex Deliverables",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "ownership", "leadership", "initiative", "star method", "delivery", "taking ownership & driving complex deliverables" ],
+    "criteria" : [ "structures answer clearly using the STAR method (Situation, Task, Action, Result)", "demonstrates proactive ownership and high agency rather than passive execution", "quantifies business impact, team growth, and measurable project outcomes" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-010",
+    "question" : "Can you share an example of when you went above and beyond your assigned responsibilities to ensure project success?",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Taking Ownership & Driving Complex Deliverables",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "ownership", "leadership", "initiative", "star method", "delivery", "taking ownership & driving complex deliverables" ],
+    "criteria" : [ "structures answer clearly using the STAR method (Situation, Task, Action, Result)", "demonstrates proactive ownership and high agency rather than passive execution", "quantifies business impact, team growth, and measurable project outcomes" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-011",
+    "question" : "Tell me about a time you identified a recurring operational bottleneck in your team's workflow and built an automated solution to eliminate it.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Taking Ownership & Driving Complex Deliverables",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "ownership", "leadership", "initiative", "star method", "delivery", "taking ownership & driving complex deliverables" ],
+    "criteria" : [ "structures answer clearly using the STAR method (Situation, Task, Action, Result)", "demonstrates proactive ownership and high agency rather than passive execution", "quantifies business impact, team growth, and measurable project outcomes" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-012",
+    "question" : "Describe a scenario where you had to make a tough technical compromise to deliver a high-impact feature on time for a critical business deadline.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Taking Ownership & Driving Complex Deliverables",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "ownership", "leadership", "initiative", "star method", "delivery", "taking ownership & driving complex deliverables" ],
+    "criteria" : [ "structures answer clearly using the STAR method (Situation, Task, Action, Result)", "demonstrates proactive ownership and high agency rather than passive execution", "quantifies business impact, team growth, and measurable project outcomes" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-013",
+    "question" : "Give an example of when you took ownership of a major production outage and drove the post-mortem and remediation roadmap.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Taking Ownership & Driving Complex Deliverables",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "ownership", "leadership", "initiative", "star method", "delivery", "taking ownership & driving complex deliverables" ],
+    "criteria" : [ "structures answer clearly using the STAR method (Situation, Task, Action, Result)", "demonstrates proactive ownership and high agency rather than passive execution", "quantifies business impact, team growth, and measurable project outcomes" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-014",
+    "question" : "Tell me about a time you advocated for investing in engineering quality or test automation against pressure to ship features rapidly.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Taking Ownership & Driving Complex Deliverables",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "ownership", "leadership", "initiative", "star method", "delivery", "taking ownership & driving complex deliverables" ],
+    "criteria" : [ "structures answer clearly using the STAR method (Situation, Task, Action, Result)", "demonstrates proactive ownership and high agency rather than passive execution", "quantifies business impact, team growth, and measurable project outcomes" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-015",
+    "question" : "Tell me about a time when a critical project was falling behind schedule, and you stepped up to realign scope and drive it across the finish line.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Taking Ownership & Driving Complex Deliverables",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "ownership", "leadership", "initiative", "star method", "delivery", "taking ownership & driving complex deliverables" ],
+    "criteria" : [ "structures answer clearly using the STAR method (Situation, Task, Action, Result)", "demonstrates proactive ownership and high agency rather than passive execution", "quantifies business impact, team growth, and measurable project outcomes" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-016",
+    "question" : "Describe a situation where you had to lead a multi-team technical initiative where different engineering groups had conflicting priorities.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Taking Ownership & Driving Complex Deliverables",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "ownership", "leadership", "initiative", "star method", "delivery", "taking ownership & driving complex deliverables" ],
+    "criteria" : [ "structures answer clearly using the STAR method (Situation, Task, Action, Result)", "demonstrates proactive ownership and high agency rather than passive execution", "quantifies business impact, team growth, and measurable project outcomes" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-017",
+    "question" : "Can you share an experience where you championed a major architectural refactor that leadership initially hesitated to prioritize?",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Taking Ownership & Driving Complex Deliverables",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "ownership", "leadership", "initiative", "star method", "delivery", "taking ownership & driving complex deliverables" ],
+    "criteria" : [ "structures answer clearly using the STAR method (Situation, Task, Action, Result)", "demonstrates proactive ownership and high agency rather than passive execution", "quantifies business impact, team growth, and measurable project outcomes" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-018",
+    "question" : "Tell me about a time you identified a recurring operational bottleneck in your team's workflow and built an automated solution to eliminate it.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Taking Ownership & Driving Complex Deliverables",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "ownership", "leadership", "initiative", "star method", "delivery", "taking ownership & driving complex deliverables" ],
+    "criteria" : [ "structures answer clearly using the STAR method (Situation, Task, Action, Result)", "demonstrates proactive ownership and high agency rather than passive execution", "quantifies business impact, team growth, and measurable project outcomes" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-019",
+    "question" : "Describe a scenario where you had to make a tough technical compromise to deliver a high-impact feature on time for a critical business deadline.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Taking Ownership & Driving Complex Deliverables",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "ownership", "leadership", "initiative", "star method", "delivery", "taking ownership & driving complex deliverables" ],
+    "criteria" : [ "structures answer clearly using the STAR method (Situation, Task, Action, Result)", "demonstrates proactive ownership and high agency rather than passive execution", "quantifies business impact, team growth, and measurable project outcomes" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-020",
+    "question" : "Give an example of when you took ownership of a major production outage and drove the post-mortem and remediation roadmap.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Taking Ownership & Driving Complex Deliverables",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "ownership", "leadership", "initiative", "star method", "delivery", "taking ownership & driving complex deliverables" ],
+    "criteria" : [ "structures answer clearly using the STAR method (Situation, Task, Action, Result)", "demonstrates proactive ownership and high agency rather than passive execution", "quantifies business impact, team growth, and measurable project outcomes" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-021",
+    "question" : "Tell me about a time you advocated for investing in engineering quality or test automation against pressure to ship features rapidly.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Taking Ownership & Driving Complex Deliverables",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "ownership", "leadership", "initiative", "star method", "delivery", "taking ownership & driving complex deliverables" ],
+    "criteria" : [ "structures answer clearly using the STAR method (Situation, Task, Action, Result)", "demonstrates proactive ownership and high agency rather than passive execution", "quantifies business impact, team growth, and measurable project outcomes" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-022",
+    "question" : "Tell me about a time when a critical project was falling behind schedule, and you stepped up to realign scope and drive it across the finish line.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Taking Ownership & Driving Complex Deliverables",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "ownership", "leadership", "initiative", "star method", "delivery", "taking ownership & driving complex deliverables" ],
+    "criteria" : [ "structures answer clearly using the STAR method (Situation, Task, Action, Result)", "demonstrates proactive ownership and high agency rather than passive execution", "quantifies business impact, team growth, and measurable project outcomes" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-023",
+    "question" : "Describe a situation where you had to lead a multi-team technical initiative where different engineering groups had conflicting priorities.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Taking Ownership & Driving Complex Deliverables",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "ownership", "leadership", "initiative", "star method", "delivery", "taking ownership & driving complex deliverables" ],
+    "criteria" : [ "structures answer clearly using the STAR method (Situation, Task, Action, Result)", "demonstrates proactive ownership and high agency rather than passive execution", "quantifies business impact, team growth, and measurable project outcomes" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-024",
+    "question" : "Can you share an experience where you championed a major architectural refactor that leadership initially hesitated to prioritize?",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Taking Ownership & Driving Complex Deliverables",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "ownership", "leadership", "initiative", "star method", "delivery", "taking ownership & driving complex deliverables" ],
+    "criteria" : [ "structures answer clearly using the STAR method (Situation, Task, Action, Result)", "demonstrates proactive ownership and high agency rather than passive execution", "quantifies business impact, team growth, and measurable project outcomes" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-025",
+    "question" : "Tell me about a time you identified a recurring operational bottleneck in your team's workflow and built an automated solution to eliminate it.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Taking Ownership & Driving Complex Deliverables",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "ownership", "leadership", "initiative", "star method", "delivery", "taking ownership & driving complex deliverables" ],
+    "criteria" : [ "structures answer clearly using the STAR method (Situation, Task, Action, Result)", "demonstrates proactive ownership and high agency rather than passive execution", "quantifies business impact, team growth, and measurable project outcomes" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-026",
+    "question" : "Describe a scenario where you had to make a tough technical compromise to deliver a high-impact feature on time for a critical business deadline.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Taking Ownership & Driving Complex Deliverables",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "ownership", "leadership", "initiative", "star method", "delivery", "taking ownership & driving complex deliverables" ],
+    "criteria" : [ "structures answer clearly using the STAR method (Situation, Task, Action, Result)", "demonstrates proactive ownership and high agency rather than passive execution", "quantifies business impact, team growth, and measurable project outcomes" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-027",
+    "question" : "Tell me about a time you made an executive-level architectural call under extreme uncertainty and time pressure that determined the success of the company's flagship product.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Taking Ownership & Driving Complex Deliverables",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "ownership", "leadership", "initiative", "star method", "delivery", "taking ownership & driving complex deliverables" ],
+    "criteria" : [ "structures answer clearly using the STAR method (Situation, Task, Action, Result)", "demonstrates proactive ownership and high agency rather than passive execution", "quantifies business impact, team growth, and measurable project outcomes" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-028",
+    "question" : "Share an experience where you turned around a failing, demoralized engineering team and established high-performance delivery standards.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Taking Ownership & Driving Complex Deliverables",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "ownership", "leadership", "initiative", "star method", "delivery", "taking ownership & driving complex deliverables" ],
+    "criteria" : [ "structures answer clearly using the STAR method (Situation, Task, Action, Result)", "demonstrates proactive ownership and high agency rather than passive execution", "quantifies business impact, team growth, and measurable project outcomes" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-029",
+    "question" : "Describe a situation where you recognized a strategic technical vulnerability in your company's product offering and proactively founded a new initiative to solve it.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Taking Ownership & Driving Complex Deliverables",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "ownership", "leadership", "initiative", "star method", "delivery", "taking ownership & driving complex deliverables" ],
+    "criteria" : [ "structures answer clearly using the STAR method (Situation, Task, Action, Result)", "demonstrates proactive ownership and high agency rather than passive execution", "quantifies business impact, team growth, and measurable project outcomes" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-030",
+    "question" : "Tell me about a time you had to make an unpopular leadership decision that caused team friction but was vital for long-term product scalability and business survival.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Taking Ownership & Driving Complex Deliverables",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "ownership", "leadership", "initiative", "star method", "delivery", "taking ownership & driving complex deliverables" ],
+    "criteria" : [ "structures answer clearly using the STAR method (Situation, Task, Action, Result)", "demonstrates proactive ownership and high agency rather than passive execution", "quantifies business impact, team growth, and measurable project outcomes" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-031",
+    "question" : "Describe a high-stakes scenario where you spearheaded a multi-month legacy platform migration affecting millions of active users with zero customer downtime.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Taking Ownership & Driving Complex Deliverables",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "ownership", "leadership", "initiative", "star method", "delivery", "taking ownership & driving complex deliverables" ],
+    "criteria" : [ "structures answer clearly using the STAR method (Situation, Task, Action, Result)", "demonstrates proactive ownership and high agency rather than passive execution", "quantifies business impact, team growth, and measurable project outcomes" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-032",
+    "question" : "Tell me about a time you made an executive-level architectural call under extreme uncertainty and time pressure that determined the success of the company's flagship product.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Taking Ownership & Driving Complex Deliverables",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "ownership", "leadership", "initiative", "star method", "delivery", "taking ownership & driving complex deliverables" ],
+    "criteria" : [ "structures answer clearly using the STAR method (Situation, Task, Action, Result)", "demonstrates proactive ownership and high agency rather than passive execution", "quantifies business impact, team growth, and measurable project outcomes" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-033",
+    "question" : "Describe a time you mentored an intern or junior engineer to help them ramp up and become productive on your team.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Mentorship & Elevating Others",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "mentorship", "coaching", "team development", "feedback", "growth", "mentorship & elevating others" ],
+    "criteria" : [ "demonstrates empathy, active listening, and commitment to teammates' career growth", "articulates constructive feedback mechanisms and continuous improvement", "highlights long-term team capability enhancement rather than just personal achievements" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-034",
+    "question" : "How do you approach code reviews to ensure they are both thorough and constructive for junior teammates?",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Mentorship & Elevating Others",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "mentorship", "coaching", "team development", "feedback", "growth", "mentorship & elevating others" ],
+    "criteria" : [ "demonstrates empathy, active listening, and commitment to teammates' career growth", "articulates constructive feedback mechanisms and continuous improvement", "highlights long-term team capability enhancement rather than just personal achievements" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-035",
+    "question" : "Tell me about a time you helped a colleague understand a complex technical concept or architecture they were struggling with.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Mentorship & Elevating Others",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "mentorship", "coaching", "team development", "feedback", "growth", "mentorship & elevating others" ],
+    "criteria" : [ "demonstrates empathy, active listening, and commitment to teammates' career growth", "articulates constructive feedback mechanisms and continuous improvement", "highlights long-term team capability enhancement rather than just personal achievements" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-036",
+    "question" : "Describe an experience where you recognized that a teammate was struggling and proactively offered your assistance.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Mentorship & Elevating Others",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "mentorship", "coaching", "team development", "feedback", "growth", "mentorship & elevating others" ],
+    "criteria" : [ "demonstrates empathy, active listening, and commitment to teammates' career growth", "articulates constructive feedback mechanisms and continuous improvement", "highlights long-term team capability enhancement rather than just personal achievements" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-037",
+    "question" : "How do you share technical knowledge with your broader team to prevent knowledge silos and single points of failure?",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Mentorship & Elevating Others",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "mentorship", "coaching", "team development", "feedback", "growth", "mentorship & elevating others" ],
+    "criteria" : [ "demonstrates empathy, active listening, and commitment to teammates' career growth", "articulates constructive feedback mechanisms and continuous improvement", "highlights long-term team capability enhancement rather than just personal achievements" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-038",
+    "question" : "Tell me about a time you learned something valuable from a junior team member or someone with less experience than you.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Mentorship & Elevating Others",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "mentorship", "coaching", "team development", "feedback", "growth", "mentorship & elevating others" ],
+    "criteria" : [ "demonstrates empathy, active listening, and commitment to teammates' career growth", "articulates constructive feedback mechanisms and continuous improvement", "highlights long-term team capability enhancement rather than just personal achievements" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-039",
+    "question" : "Describe a time you encouraged a team member to step outside their comfort zone and take on a challenging technical task.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Mentorship & Elevating Others",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "mentorship", "coaching", "team development", "feedback", "growth", "mentorship & elevating others" ],
+    "criteria" : [ "demonstrates empathy, active listening, and commitment to teammates' career growth", "articulates constructive feedback mechanisms and continuous improvement", "highlights long-term team capability enhancement rather than just personal achievements" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-040",
+    "question" : "Describe a time you mentored an intern or junior engineer to help them ramp up and become productive on your team.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Mentorship & Elevating Others",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "mentorship", "coaching", "team development", "feedback", "growth", "mentorship & elevating others" ],
+    "criteria" : [ "demonstrates empathy, active listening, and commitment to teammates' career growth", "articulates constructive feedback mechanisms and continuous improvement", "highlights long-term team capability enhancement rather than just personal achievements" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-041",
+    "question" : "How do you approach code reviews to ensure they are both thorough and constructive for junior teammates?",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Mentorship & Elevating Others",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "mentorship", "coaching", "team development", "feedback", "growth", "mentorship & elevating others" ],
+    "criteria" : [ "demonstrates empathy, active listening, and commitment to teammates' career growth", "articulates constructive feedback mechanisms and continuous improvement", "highlights long-term team capability enhancement rather than just personal achievements" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-042",
+    "question" : "Tell me about a time you helped a colleague understand a complex technical concept or architecture they were struggling with.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Mentorship & Elevating Others",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "mentorship", "coaching", "team development", "feedback", "growth", "mentorship & elevating others" ],
+    "criteria" : [ "demonstrates empathy, active listening, and commitment to teammates' career growth", "articulates constructive feedback mechanisms and continuous improvement", "highlights long-term team capability enhancement rather than just personal achievements" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-043",
+    "question" : "Tell me about a time you gave difficult, constructive feedback to a peer about code quality or communication style, and how they received it.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Mentorship & Elevating Others",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "mentorship", "coaching", "team development", "feedback", "growth", "mentorship & elevating others" ],
+    "criteria" : [ "demonstrates empathy, active listening, and commitment to teammates' career growth", "articulates constructive feedback mechanisms and continuous improvement", "highlights long-term team capability enhancement rather than just personal achievements" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-044",
+    "question" : "Describe a situation where you successfully scaled an engineering practice (like TDD, automated CI/CD, or design doc reviews) across multiple teams.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Mentorship & Elevating Others",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "mentorship", "coaching", "team development", "feedback", "growth", "mentorship & elevating others" ],
+    "criteria" : [ "demonstrates empathy, active listening, and commitment to teammates' career growth", "articulates constructive feedback mechanisms and continuous improvement", "highlights long-term team capability enhancement rather than just personal achievements" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-045",
+    "question" : "Give an example of how you foster psychological safety within your team so that engineers feel comfortable admitting mistakes and asking questions.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Mentorship & Elevating Others",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "mentorship", "coaching", "team development", "feedback", "growth", "mentorship & elevating others" ],
+    "criteria" : [ "demonstrates empathy, active listening, and commitment to teammates' career growth", "articulates constructive feedback mechanisms and continuous improvement", "highlights long-term team capability enhancement rather than just personal achievements" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-046",
+    "question" : "Tell me about a time you delegated a high-visibility project to a junior colleague and supported them from the background so they could shine.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Mentorship & Elevating Others",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "mentorship", "coaching", "team development", "feedback", "growth", "mentorship & elevating others" ],
+    "criteria" : [ "demonstrates empathy, active listening, and commitment to teammates' career growth", "articulates constructive feedback mechanisms and continuous improvement", "highlights long-term team capability enhancement rather than just personal achievements" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-047",
+    "question" : "Tell me about a time you coached an underperforming engineer, helping them overcome technical and procedural gaps to meet team standards.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Mentorship & Elevating Others",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "mentorship", "coaching", "team development", "feedback", "growth", "mentorship & elevating others" ],
+    "criteria" : [ "demonstrates empathy, active listening, and commitment to teammates' career growth", "articulates constructive feedback mechanisms and continuous improvement", "highlights long-term team capability enhancement rather than just personal achievements" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-048",
+    "question" : "Describe a situation where you established or significantly improved your team's engineering onboarding documentation and pairing program.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Mentorship & Elevating Others",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "mentorship", "coaching", "team development", "feedback", "growth", "mentorship & elevating others" ],
+    "criteria" : [ "demonstrates empathy, active listening, and commitment to teammates' career growth", "articulates constructive feedback mechanisms and continuous improvement", "highlights long-term team capability enhancement rather than just personal achievements" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-049",
+    "question" : "Share an experience where you advocated for the promotion or recognition of a teammate who was doing impactful work behind the scenes.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Mentorship & Elevating Others",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "mentorship", "coaching", "team development", "feedback", "growth", "mentorship & elevating others" ],
+    "criteria" : [ "demonstrates empathy, active listening, and commitment to teammates' career growth", "articulates constructive feedback mechanisms and continuous improvement", "highlights long-term team capability enhancement rather than just personal achievements" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-050",
+    "question" : "Tell me about a time you gave difficult, constructive feedback to a peer about code quality or communication style, and how they received it.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Mentorship & Elevating Others",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "mentorship", "coaching", "team development", "feedback", "growth", "mentorship & elevating others" ],
+    "criteria" : [ "demonstrates empathy, active listening, and commitment to teammates' career growth", "articulates constructive feedback mechanisms and continuous improvement", "highlights long-term team capability enhancement rather than just personal achievements" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-051",
+    "question" : "Describe a situation where you successfully scaled an engineering practice (like TDD, automated CI/CD, or design doc reviews) across multiple teams.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Mentorship & Elevating Others",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "mentorship", "coaching", "team development", "feedback", "growth", "mentorship & elevating others" ],
+    "criteria" : [ "demonstrates empathy, active listening, and commitment to teammates' career growth", "articulates constructive feedback mechanisms and continuous improvement", "highlights long-term team capability enhancement rather than just personal achievements" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-052",
+    "question" : "Give an example of how you foster psychological safety within your team so that engineers feel comfortable admitting mistakes and asking questions.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Mentorship & Elevating Others",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "mentorship", "coaching", "team development", "feedback", "growth", "mentorship & elevating others" ],
+    "criteria" : [ "demonstrates empathy, active listening, and commitment to teammates' career growth", "articulates constructive feedback mechanisms and continuous improvement", "highlights long-term team capability enhancement rather than just personal achievements" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-053",
+    "question" : "Tell me about a time you delegated a high-visibility project to a junior colleague and supported them from the background so they could shine.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Mentorship & Elevating Others",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "mentorship", "coaching", "team development", "feedback", "growth", "mentorship & elevating others" ],
+    "criteria" : [ "demonstrates empathy, active listening, and commitment to teammates' career growth", "articulates constructive feedback mechanisms and continuous improvement", "highlights long-term team capability enhancement rather than just personal achievements" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-054",
+    "question" : "Tell me about a time you coached an underperforming engineer, helping them overcome technical and procedural gaps to meet team standards.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Mentorship & Elevating Others",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "mentorship", "coaching", "team development", "feedback", "growth", "mentorship & elevating others" ],
+    "criteria" : [ "demonstrates empathy, active listening, and commitment to teammates' career growth", "articulates constructive feedback mechanisms and continuous improvement", "highlights long-term team capability enhancement rather than just personal achievements" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-055",
+    "question" : "Describe a situation where you established or significantly improved your team's engineering onboarding documentation and pairing program.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Mentorship & Elevating Others",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "mentorship", "coaching", "team development", "feedback", "growth", "mentorship & elevating others" ],
+    "criteria" : [ "demonstrates empathy, active listening, and commitment to teammates' career growth", "articulates constructive feedback mechanisms and continuous improvement", "highlights long-term team capability enhancement rather than just personal achievements" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-056",
+    "question" : "Share an experience where you advocated for the promotion or recognition of a teammate who was doing impactful work behind the scenes.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Mentorship & Elevating Others",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "mentorship", "coaching", "team development", "feedback", "growth", "mentorship & elevating others" ],
+    "criteria" : [ "demonstrates empathy, active listening, and commitment to teammates' career growth", "articulates constructive feedback mechanisms and continuous improvement", "highlights long-term team capability enhancement rather than just personal achievements" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-057",
+    "question" : "Tell me about a time you gave difficult, constructive feedback to a peer about code quality or communication style, and how they received it.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Mentorship & Elevating Others",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "mentorship", "coaching", "team development", "feedback", "growth", "mentorship & elevating others" ],
+    "criteria" : [ "demonstrates empathy, active listening, and commitment to teammates' career growth", "articulates constructive feedback mechanisms and continuous improvement", "highlights long-term team capability enhancement rather than just personal achievements" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-058",
+    "question" : "Describe a situation where you successfully scaled an engineering practice (like TDD, automated CI/CD, or design doc reviews) across multiple teams.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Mentorship & Elevating Others",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "mentorship", "coaching", "team development", "feedback", "growth", "mentorship & elevating others" ],
+    "criteria" : [ "demonstrates empathy, active listening, and commitment to teammates' career growth", "articulates constructive feedback mechanisms and continuous improvement", "highlights long-term team capability enhancement rather than just personal achievements" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-059",
+    "question" : "Tell me about a time you identified systematic burnout across your engineering department and led cultural and operational changes to restore team sustainability.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Mentorship & Elevating Others",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "mentorship", "coaching", "team development", "feedback", "growth", "mentorship & elevating others" ],
+    "criteria" : [ "demonstrates empathy, active listening, and commitment to teammates' career growth", "articulates constructive feedback mechanisms and continuous improvement", "highlights long-term team capability enhancement rather than just personal achievements" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-060",
+    "question" : "Share a story where you coached a senior engineer transitioning into a tech lead role, guiding them through delegation, influence without authority, and executive communication.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Mentorship & Elevating Others",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "mentorship", "coaching", "team development", "feedback", "growth", "mentorship & elevating others" ],
+    "criteria" : [ "demonstrates empathy, active listening, and commitment to teammates' career growth", "articulates constructive feedback mechanisms and continuous improvement", "highlights long-term team capability enhancement rather than just personal achievements" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-061",
+    "question" : "Describe a situation where you navigated an emotionally charged peer conflict where two senior architects had irreconcilable viewpoints, guiding them to productive alignment.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Mentorship & Elevating Others",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "mentorship", "coaching", "team development", "feedback", "growth", "mentorship & elevating others" ],
+    "criteria" : [ "demonstrates empathy, active listening, and commitment to teammates' career growth", "articulates constructive feedback mechanisms and continuous improvement", "highlights long-term team capability enhancement rather than just personal achievements" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-062",
+    "question" : "Tell me about an experience where you had to manage out or make the decision to let go of an employee, and how you handled it professionally and empathetically.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Mentorship & Elevating Others",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "mentorship", "coaching", "team development", "feedback", "growth", "mentorship & elevating others" ],
+    "criteria" : [ "demonstrates empathy, active listening, and commitment to teammates' career growth", "articulates constructive feedback mechanisms and continuous improvement", "highlights long-term team capability enhancement rather than just personal achievements" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-063",
+    "question" : "Describe an instance where you designed and institutionalized an engineering mentorship program that accelerated time-to-productivity for 50+ new hires.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Mentorship & Elevating Others",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "mentorship", "coaching", "team development", "feedback", "growth", "mentorship & elevating others" ],
+    "criteria" : [ "demonstrates empathy, active listening, and commitment to teammates' career growth", "articulates constructive feedback mechanisms and continuous improvement", "highlights long-term team capability enhancement rather than just personal achievements" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-064",
+    "question" : "Tell me about a time you identified systematic burnout across your engineering department and led cultural and operational changes to restore team sustainability.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Mentorship & Elevating Others",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "mentorship", "coaching", "team development", "feedback", "growth", "mentorship & elevating others" ],
+    "criteria" : [ "demonstrates empathy, active listening, and commitment to teammates' career growth", "articulates constructive feedback mechanisms and continuous improvement", "highlights long-term team capability enhancement rather than just personal achievements" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-065",
+    "question" : "Tell me about a time you had a technical disagreement with a teammate and how you resolved it constructively.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Driving Technical Consensus",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "consensus", "decision making", "influence", "rfcs", "architecture", "driving technical consensus" ],
+    "criteria" : [ "uses data, prototypes, and benchmarks to drive objective decision-making", "demonstrates the ability to influence without authority and build cross-functional alignment", "embodies 'disagree and commit' and respects collective decisions once made" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-066",
+    "question" : "Describe how you prepare and present a technical proposal or architecture design to your team for feedback.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Driving Technical Consensus",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "consensus", "decision making", "influence", "rfcs", "architecture", "driving technical consensus" ],
+    "criteria" : [ "uses data, prototypes, and benchmarks to drive objective decision-making", "demonstrates the ability to influence without authority and build cross-functional alignment", "embodies 'disagree and commit' and respects collective decisions once made" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-067",
+    "question" : "Tell me about a time you had to choose between two competing technologies or libraries for a new project.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Driving Technical Consensus",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "consensus", "decision making", "influence", "rfcs", "architecture", "driving technical consensus" ],
+    "criteria" : [ "uses data, prototypes, and benchmarks to drive objective decision-making", "demonstrates the ability to influence without authority and build cross-functional alignment", "embodies 'disagree and commit' and respects collective decisions once made" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-068",
+    "question" : "How do you ensure all team members have a voice in architectural decisions rather than just the loudest voices dominating?",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Driving Technical Consensus",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "consensus", "decision making", "influence", "rfcs", "architecture", "driving technical consensus" ],
+    "criteria" : [ "uses data, prototypes, and benchmarks to drive objective decision-making", "demonstrates the ability to influence without authority and build cross-functional alignment", "embodies 'disagree and commit' and respects collective decisions once made" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-069",
+    "question" : "Describe a time you changed your mind about a technical approach after listening to arguments from other team members.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Driving Technical Consensus",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "consensus", "decision making", "influence", "rfcs", "architecture", "driving technical consensus" ],
+    "criteria" : [ "uses data, prototypes, and benchmarks to drive objective decision-making", "demonstrates the ability to influence without authority and build cross-functional alignment", "embodies 'disagree and commit' and respects collective decisions once made" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-070",
+    "question" : "Tell me about a time you had to convince your team to adopt a new tool or coding convention.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Driving Technical Consensus",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "consensus", "decision making", "influence", "rfcs", "architecture", "driving technical consensus" ],
+    "criteria" : [ "uses data, prototypes, and benchmarks to drive objective decision-making", "demonstrates the ability to influence without authority and build cross-functional alignment", "embodies 'disagree and commit' and respects collective decisions once made" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-071",
+    "question" : "How do you document architectural decisions so that future engineers understand the context and trade-offs behind them?",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Driving Technical Consensus",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "consensus", "decision making", "influence", "rfcs", "architecture", "driving technical consensus" ],
+    "criteria" : [ "uses data, prototypes, and benchmarks to drive objective decision-making", "demonstrates the ability to influence without authority and build cross-functional alignment", "embodies 'disagree and commit' and respects collective decisions once made" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-072",
+    "question" : "Tell me about a time you had a technical disagreement with a teammate and how you resolved it constructively.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Driving Technical Consensus",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "consensus", "decision making", "influence", "rfcs", "architecture", "driving technical consensus" ],
+    "criteria" : [ "uses data, prototypes, and benchmarks to drive objective decision-making", "demonstrates the ability to influence without authority and build cross-functional alignment", "embodies 'disagree and commit' and respects collective decisions once made" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-073",
+    "question" : "Describe how you prepare and present a technical proposal or architecture design to your team for feedback.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Driving Technical Consensus",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "consensus", "decision making", "influence", "rfcs", "architecture", "driving technical consensus" ],
+    "criteria" : [ "uses data, prototypes, and benchmarks to drive objective decision-making", "demonstrates the ability to influence without authority and build cross-functional alignment", "embodies 'disagree and commit' and respects collective decisions once made" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-074",
+    "question" : "Tell me about a time you had to choose between two competing technologies or libraries for a new project.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Driving Technical Consensus",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "consensus", "decision making", "influence", "rfcs", "architecture", "driving technical consensus" ],
+    "criteria" : [ "uses data, prototypes, and benchmarks to drive objective decision-making", "demonstrates the ability to influence without authority and build cross-functional alignment", "embodies 'disagree and commit' and respects collective decisions once made" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-075",
+    "question" : "Describe a scenario where you disagreed with a senior leader's technical decision: how did you present your counter-proposal respectfully and professionally?",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Driving Technical Consensus",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "consensus", "decision making", "influence", "rfcs", "architecture", "driving technical consensus" ],
+    "criteria" : [ "uses data, prototypes, and benchmarks to drive objective decision-making", "demonstrates the ability to influence without authority and build cross-functional alignment", "embodies 'disagree and commit' and respects collective decisions once made" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-076",
+    "question" : "Tell me about a time you had to 'disagree and commit' to a technical decision that wasn't your first choice, and how you ensured its successful execution.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Driving Technical Consensus",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "consensus", "decision making", "influence", "rfcs", "architecture", "driving technical consensus" ],
+    "criteria" : [ "uses data, prototypes, and benchmarks to drive objective decision-making", "demonstrates the ability to influence without authority and build cross-functional alignment", "embodies 'disagree and commit' and respects collective decisions once made" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-077",
+    "question" : "Give an example of how you used data, benchmarks, and prototypes to settle an architectural debate rather than relying on opinions.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Driving Technical Consensus",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "consensus", "decision making", "influence", "rfcs", "architecture", "driving technical consensus" ],
+    "criteria" : [ "uses data, prototypes, and benchmarks to drive objective decision-making", "demonstrates the ability to influence without authority and build cross-functional alignment", "embodies 'disagree and commit' and respects collective decisions once made" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-078",
+    "question" : "Describe a situation where you navigated legacy political resistance to modernize an antiquated system architecture.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Driving Technical Consensus",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "consensus", "decision making", "influence", "rfcs", "architecture", "driving technical consensus" ],
+    "criteria" : [ "uses data, prototypes, and benchmarks to drive objective decision-making", "demonstrates the ability to influence without authority and build cross-functional alignment", "embodies 'disagree and commit' and respects collective decisions once made" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-079",
+    "question" : "Describe a situation where you wrote a Request for Comments (RFC) or Architecture Decision Record (ADR) for a controversial technical choice and built consensus.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Driving Technical Consensus",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "consensus", "decision making", "influence", "rfcs", "architecture", "driving technical consensus" ],
+    "criteria" : [ "uses data, prototypes, and benchmarks to drive objective decision-making", "demonstrates the ability to influence without authority and build cross-functional alignment", "embodies 'disagree and commit' and respects collective decisions once made" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-080",
+    "question" : "Tell me about a time you had to persuade non-technical stakeholders (product managers, business leaders) to invest in a major technical refactor.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Driving Technical Consensus",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "consensus", "decision making", "influence", "rfcs", "architecture", "driving technical consensus" ],
+    "criteria" : [ "uses data, prototypes, and benchmarks to drive objective decision-making", "demonstrates the ability to influence without authority and build cross-functional alignment", "embodies 'disagree and commit' and respects collective decisions once made" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-081",
+    "question" : "Share an experience where your team was split 50/50 on a technical direction, and how you facilitated a structured evaluation to reach a decision.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Driving Technical Consensus",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "consensus", "decision making", "influence", "rfcs", "architecture", "driving technical consensus" ],
+    "criteria" : [ "uses data, prototypes, and benchmarks to drive objective decision-making", "demonstrates the ability to influence without authority and build cross-functional alignment", "embodies 'disagree and commit' and respects collective decisions once made" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-082",
+    "question" : "Describe a scenario where you disagreed with a senior leader's technical decision: how did you present your counter-proposal respectfully and professionally?",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Driving Technical Consensus",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "consensus", "decision making", "influence", "rfcs", "architecture", "driving technical consensus" ],
+    "criteria" : [ "uses data, prototypes, and benchmarks to drive objective decision-making", "demonstrates the ability to influence without authority and build cross-functional alignment", "embodies 'disagree and commit' and respects collective decisions once made" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-083",
+    "question" : "Tell me about a time you had to 'disagree and commit' to a technical decision that wasn't your first choice, and how you ensured its successful execution.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Driving Technical Consensus",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "consensus", "decision making", "influence", "rfcs", "architecture", "driving technical consensus" ],
+    "criteria" : [ "uses data, prototypes, and benchmarks to drive objective decision-making", "demonstrates the ability to influence without authority and build cross-functional alignment", "embodies 'disagree and commit' and respects collective decisions once made" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-084",
+    "question" : "Give an example of how you used data, benchmarks, and prototypes to settle an architectural debate rather than relying on opinions.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Driving Technical Consensus",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "consensus", "decision making", "influence", "rfcs", "architecture", "driving technical consensus" ],
+    "criteria" : [ "uses data, prototypes, and benchmarks to drive objective decision-making", "demonstrates the ability to influence without authority and build cross-functional alignment", "embodies 'disagree and commit' and respects collective decisions once made" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-085",
+    "question" : "Describe a situation where you navigated legacy political resistance to modernize an antiquated system architecture.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Driving Technical Consensus",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "consensus", "decision making", "influence", "rfcs", "architecture", "driving technical consensus" ],
+    "criteria" : [ "uses data, prototypes, and benchmarks to drive objective decision-making", "demonstrates the ability to influence without authority and build cross-functional alignment", "embodies 'disagree and commit' and respects collective decisions once made" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-086",
+    "question" : "Describe a situation where you wrote a Request for Comments (RFC) or Architecture Decision Record (ADR) for a controversial technical choice and built consensus.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Driving Technical Consensus",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "consensus", "decision making", "influence", "rfcs", "architecture", "driving technical consensus" ],
+    "criteria" : [ "uses data, prototypes, and benchmarks to drive objective decision-making", "demonstrates the ability to influence without authority and build cross-functional alignment", "embodies 'disagree and commit' and respects collective decisions once made" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-087",
+    "question" : "Tell me about a time you had to persuade non-technical stakeholders (product managers, business leaders) to invest in a major technical refactor.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Driving Technical Consensus",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "consensus", "decision making", "influence", "rfcs", "architecture", "driving technical consensus" ],
+    "criteria" : [ "uses data, prototypes, and benchmarks to drive objective decision-making", "demonstrates the ability to influence without authority and build cross-functional alignment", "embodies 'disagree and commit' and respects collective decisions once made" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-088",
+    "question" : "Share an experience where your team was split 50/50 on a technical direction, and how you facilitated a structured evaluation to reach a decision.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Driving Technical Consensus",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "consensus", "decision making", "influence", "rfcs", "architecture", "driving technical consensus" ],
+    "criteria" : [ "uses data, prototypes, and benchmarks to drive objective decision-making", "demonstrates the ability to influence without authority and build cross-functional alignment", "embodies 'disagree and commit' and respects collective decisions once made" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-089",
+    "question" : "Describe a scenario where you disagreed with a senior leader's technical decision: how did you present your counter-proposal respectfully and professionally?",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Driving Technical Consensus",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "consensus", "decision making", "influence", "rfcs", "architecture", "driving technical consensus" ],
+    "criteria" : [ "uses data, prototypes, and benchmarks to drive objective decision-making", "demonstrates the ability to influence without authority and build cross-functional alignment", "embodies 'disagree and commit' and respects collective decisions once made" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-090",
+    "question" : "Describe a scenario where you unified three engineering organizations with incompatible tech stacks around a common distributed architecture roadmap.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Driving Technical Consensus",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "consensus", "decision making", "influence", "rfcs", "architecture", "driving technical consensus" ],
+    "criteria" : [ "uses data, prototypes, and benchmarks to drive objective decision-making", "demonstrates the ability to influence without authority and build cross-functional alignment", "embodies 'disagree and commit' and respects collective decisions once made" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-091",
+    "question" : "Tell me about a time you defended an engineering decision against intense executive pressure to cut security and reliability corners before a launch.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Driving Technical Consensus",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "consensus", "decision making", "influence", "rfcs", "architecture", "driving technical consensus" ],
+    "criteria" : [ "uses data, prototypes, and benchmarks to drive objective decision-making", "demonstrates the ability to influence without authority and build cross-functional alignment", "embodies 'disagree and commit' and respects collective decisions once made" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-092",
+    "question" : "Share an experience where an architectural consensus you drove initially succeeded, but later encountered unforeseen scale limitations, and how you led the pivot.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Driving Technical Consensus",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "consensus", "decision making", "influence", "rfcs", "architecture", "driving technical consensus" ],
+    "criteria" : [ "uses data, prototypes, and benchmarks to drive objective decision-making", "demonstrates the ability to influence without authority and build cross-functional alignment", "embodies 'disagree and commit' and respects collective decisions once made" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-093",
+    "question" : "Describe how you established a company-wide RFC and Architecture Review Board process that eliminated siloed technical debt while maintaining rapid delivery velocity.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Driving Technical Consensus",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "consensus", "decision making", "influence", "rfcs", "architecture", "driving technical consensus" ],
+    "criteria" : [ "uses data, prototypes, and benchmarks to drive objective decision-making", "demonstrates the ability to influence without authority and build cross-functional alignment", "embodies 'disagree and commit' and respects collective decisions once made" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-094",
+    "question" : "Tell me about a time you had to reconcile conflicting technical strategies between acquired startup engineers and the parent company's enterprise architects.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Driving Technical Consensus",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "consensus", "decision making", "influence", "rfcs", "architecture", "driving technical consensus" ],
+    "criteria" : [ "uses data, prototypes, and benchmarks to drive objective decision-making", "demonstrates the ability to influence without authority and build cross-functional alignment", "embodies 'disagree and commit' and respects collective decisions once made" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-095",
+    "question" : "Describe a scenario where you unified three engineering organizations with incompatible tech stacks around a common distributed architecture roadmap.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Driving Technical Consensus",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "consensus", "decision making", "influence", "rfcs", "architecture", "driving technical consensus" ],
+    "criteria" : [ "uses data, prototypes, and benchmarks to drive objective decision-making", "demonstrates the ability to influence without authority and build cross-functional alignment", "embodies 'disagree and commit' and respects collective decisions once made" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-096",
+    "question" : "Describe a time you were involved in troubleshooting an urgent production bug and how you handled the pressure.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Leading Through Crisis & Incident Response",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "incident response", "crisis management", "post-mortem", "calmness", "leadership", "leading through crisis & incident response" ],
+    "criteria" : [ "remains composed and methodical under intense operational pressure", "communicates transparently and frequently with technical and non-technical stakeholders", "champions blameless root cause analysis and permanent systemic remediation" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-097",
+    "question" : "Tell me about a situation where an unexpected technical failure threatened a release deadline, and what you did.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Leading Through Crisis & Incident Response",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "incident response", "crisis management", "post-mortem", "calmness", "leadership", "leading through crisis & incident response" ],
+    "criteria" : [ "remains composed and methodical under intense operational pressure", "communicates transparently and frequently with technical and non-technical stakeholders", "champions blameless root cause analysis and permanent systemic remediation" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-098",
+    "question" : "How do you prioritize which bugs or issues to fix first when multiple systems are experiencing problems simultaneously?",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Leading Through Crisis & Incident Response",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "incident response", "crisis management", "post-mortem", "calmness", "leadership", "leading through crisis & incident response" ],
+    "criteria" : [ "remains composed and methodical under intense operational pressure", "communicates transparently and frequently with technical and non-technical stakeholders", "champions blameless root cause analysis and permanent systemic remediation" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-099",
+    "question" : "Tell me about a time you made a mistake that caused an issue in production, and how you handled it.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Leading Through Crisis & Incident Response",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "incident response", "crisis management", "post-mortem", "calmness", "leadership", "leading through crisis & incident response" ],
+    "criteria" : [ "remains composed and methodical under intense operational pressure", "communicates transparently and frequently with technical and non-technical stakeholders", "champions blameless root cause analysis and permanent systemic remediation" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-100",
+    "question" : "Describe how you communicate status updates to stakeholders during an active technical investigation.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Leading Through Crisis & Incident Response",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "incident response", "crisis management", "post-mortem", "calmness", "leadership", "leading through crisis & incident response" ],
+    "criteria" : [ "remains composed and methodical under intense operational pressure", "communicates transparently and frequently with technical and non-technical stakeholders", "champions blameless root cause analysis and permanent systemic remediation" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-101",
+    "question" : "What is a blameless post-mortem, and why is focusing on systemic fixes better than blaming individuals?",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Leading Through Crisis & Incident Response",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "incident response", "crisis management", "post-mortem", "calmness", "leadership", "leading through crisis & incident response" ],
+    "criteria" : [ "remains composed and methodical under intense operational pressure", "communicates transparently and frequently with technical and non-technical stakeholders", "champions blameless root cause analysis and permanent systemic remediation" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-102",
+    "question" : "Tell me about a time you had to execute an emergency rollback in production.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Leading Through Crisis & Incident Response",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "incident response", "crisis management", "post-mortem", "calmness", "leadership", "leading through crisis & incident response" ],
+    "criteria" : [ "remains composed and methodical under intense operational pressure", "communicates transparently and frequently with technical and non-technical stakeholders", "champions blameless root cause analysis and permanent systemic remediation" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-103",
+    "question" : "Describe a time you were involved in troubleshooting an urgent production bug and how you handled the pressure.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Leading Through Crisis & Incident Response",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "incident response", "crisis management", "post-mortem", "calmness", "leadership", "leading through crisis & incident response" ],
+    "criteria" : [ "remains composed and methodical under intense operational pressure", "communicates transparently and frequently with technical and non-technical stakeholders", "champions blameless root cause analysis and permanent systemic remediation" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-104",
+    "question" : "Tell me about a situation where an unexpected technical failure threatened a release deadline, and what you did.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Leading Through Crisis & Incident Response",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "incident response", "crisis management", "post-mortem", "calmness", "leadership", "leading through crisis & incident response" ],
+    "criteria" : [ "remains composed and methodical under intense operational pressure", "communicates transparently and frequently with technical and non-technical stakeholders", "champions blameless root cause analysis and permanent systemic remediation" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-105",
+    "question" : "How do you prioritize which bugs or issues to fix first when multiple systems are experiencing problems simultaneously?",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Leading Through Crisis & Incident Response",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "incident response", "crisis management", "post-mortem", "calmness", "leadership", "leading through crisis & incident response" ],
+    "criteria" : [ "remains composed and methodical under intense operational pressure", "communicates transparently and frequently with technical and non-technical stakeholders", "champions blameless root cause analysis and permanent systemic remediation" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-106",
+    "question" : "Tell me about a time when panic set in across the team during a high-stakes failure, and how your calm leadership stabilized the situation.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Leading Through Crisis & Incident Response",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "incident response", "crisis management", "post-mortem", "calmness", "leadership", "leading through crisis & incident response" ],
+    "criteria" : [ "remains composed and methodical under intense operational pressure", "communicates transparently and frequently with technical and non-technical stakeholders", "champions blameless root cause analysis and permanent systemic remediation" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-107",
+    "question" : "Describe a scenario where an upstream vendor or cloud provider had an unannounced outage, and how you orchestrated your system's survival.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Leading Through Crisis & Incident Response",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "incident response", "crisis management", "post-mortem", "calmness", "leadership", "leading through crisis & incident response" ],
+    "criteria" : [ "remains composed and methodical under intense operational pressure", "communicates transparently and frequently with technical and non-technical stakeholders", "champions blameless root cause analysis and permanent systemic remediation" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-108",
+    "question" : "Give an example of an outage that revealed a critical flaw in your team's alerting or observability, and how you overhauled monitoring afterwards.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Leading Through Crisis & Incident Response",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "incident response", "crisis management", "post-mortem", "calmness", "leadership", "leading through crisis & incident response" ],
+    "criteria" : [ "remains composed and methodical under intense operational pressure", "communicates transparently and frequently with technical and non-technical stakeholders", "champions blameless root cause analysis and permanent systemic remediation" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-109",
+    "question" : "Tell me about a time you had to communicate directly with executive leadership or angry enterprise clients during an ongoing service degradation.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Leading Through Crisis & Incident Response",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "incident response", "crisis management", "post-mortem", "calmness", "leadership", "leading through crisis & incident response" ],
+    "criteria" : [ "remains composed and methodical under intense operational pressure", "communicates transparently and frequently with technical and non-technical stakeholders", "champions blameless root cause analysis and permanent systemic remediation" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-110",
+    "question" : "Tell me about a time you acted as the Incident Commander during a critical P0 outage affecting major revenue or customer trust.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Leading Through Crisis & Incident Response",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "incident response", "crisis management", "post-mortem", "calmness", "leadership", "leading through crisis & incident response" ],
+    "criteria" : [ "remains composed and methodical under intense operational pressure", "communicates transparently and frequently with technical and non-technical stakeholders", "champions blameless root cause analysis and permanent systemic remediation" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-111",
+    "question" : "Describe a situation where you had to decide between pushing a risky hotfix forward versus initiating a lengthy full rollback under live fire.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Leading Through Crisis & Incident Response",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "incident response", "crisis management", "post-mortem", "calmness", "leadership", "leading through crisis & incident response" ],
+    "criteria" : [ "remains composed and methodical under intense operational pressure", "communicates transparently and frequently with technical and non-technical stakeholders", "champions blameless root cause analysis and permanent systemic remediation" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-112",
+    "question" : "Share an experience where you led a blameless post-mortem for a catastrophic failure and translated the findings into lasting architectural safeguards.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Leading Through Crisis & Incident Response",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "incident response", "crisis management", "post-mortem", "calmness", "leadership", "leading through crisis & incident response" ],
+    "criteria" : [ "remains composed and methodical under intense operational pressure", "communicates transparently and frequently with technical and non-technical stakeholders", "champions blameless root cause analysis and permanent systemic remediation" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-113",
+    "question" : "Tell me about a time when panic set in across the team during a high-stakes failure, and how your calm leadership stabilized the situation.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Leading Through Crisis & Incident Response",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "incident response", "crisis management", "post-mortem", "calmness", "leadership", "leading through crisis & incident response" ],
+    "criteria" : [ "remains composed and methodical under intense operational pressure", "communicates transparently and frequently with technical and non-technical stakeholders", "champions blameless root cause analysis and permanent systemic remediation" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-114",
+    "question" : "Describe a scenario where an upstream vendor or cloud provider had an unannounced outage, and how you orchestrated your system's survival.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Leading Through Crisis & Incident Response",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "incident response", "crisis management", "post-mortem", "calmness", "leadership", "leading through crisis & incident response" ],
+    "criteria" : [ "remains composed and methodical under intense operational pressure", "communicates transparently and frequently with technical and non-technical stakeholders", "champions blameless root cause analysis and permanent systemic remediation" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-115",
+    "question" : "Give an example of an outage that revealed a critical flaw in your team's alerting or observability, and how you overhauled monitoring afterwards.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Leading Through Crisis & Incident Response",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "incident response", "crisis management", "post-mortem", "calmness", "leadership", "leading through crisis & incident response" ],
+    "criteria" : [ "remains composed and methodical under intense operational pressure", "communicates transparently and frequently with technical and non-technical stakeholders", "champions blameless root cause analysis and permanent systemic remediation" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-116",
+    "question" : "Tell me about a time you had to communicate directly with executive leadership or angry enterprise clients during an ongoing service degradation.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Leading Through Crisis & Incident Response",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "incident response", "crisis management", "post-mortem", "calmness", "leadership", "leading through crisis & incident response" ],
+    "criteria" : [ "remains composed and methodical under intense operational pressure", "communicates transparently and frequently with technical and non-technical stakeholders", "champions blameless root cause analysis and permanent systemic remediation" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-117",
+    "question" : "Tell me about a time you acted as the Incident Commander during a critical P0 outage affecting major revenue or customer trust.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Leading Through Crisis & Incident Response",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "incident response", "crisis management", "post-mortem", "calmness", "leadership", "leading through crisis & incident response" ],
+    "criteria" : [ "remains composed and methodical under intense operational pressure", "communicates transparently and frequently with technical and non-technical stakeholders", "champions blameless root cause analysis and permanent systemic remediation" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-118",
+    "question" : "Describe a situation where you had to decide between pushing a risky hotfix forward versus initiating a lengthy full rollback under live fire.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Leading Through Crisis & Incident Response",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "incident response", "crisis management", "post-mortem", "calmness", "leadership", "leading through crisis & incident response" ],
+    "criteria" : [ "remains composed and methodical under intense operational pressure", "communicates transparently and frequently with technical and non-technical stakeholders", "champions blameless root cause analysis and permanent systemic remediation" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-119",
+    "question" : "Share an experience where you led a blameless post-mortem for a catastrophic failure and translated the findings into lasting architectural safeguards.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Leading Through Crisis & Incident Response",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "incident response", "crisis management", "post-mortem", "calmness", "leadership", "leading through crisis & incident response" ],
+    "criteria" : [ "remains composed and methodical under intense operational pressure", "communicates transparently and frequently with technical and non-technical stakeholders", "champions blameless root cause analysis and permanent systemic remediation" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-120",
+    "question" : "Tell me about a time when panic set in across the team during a high-stakes failure, and how your calm leadership stabilized the situation.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Leading Through Crisis & Incident Response",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "incident response", "crisis management", "post-mortem", "calmness", "leadership", "leading through crisis & incident response" ],
+    "criteria" : [ "remains composed and methodical under intense operational pressure", "communicates transparently and frequently with technical and non-technical stakeholders", "champions blameless root cause analysis and permanent systemic remediation" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-121",
+    "question" : "Describe a crisis where a security vulnerability (such as zero-day Log4Shell) required patching 200 production microservices within 12 hours without customer downtime.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Leading Through Crisis & Incident Response",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "incident response", "crisis management", "post-mortem", "calmness", "leadership", "leading through crisis & incident response" ],
+    "criteria" : [ "remains composed and methodical under intense operational pressure", "communicates transparently and frequently with technical and non-technical stakeholders", "champions blameless root cause analysis and permanent systemic remediation" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-122",
+    "question" : "Tell me about an outage where automated failover mechanisms failed, causing cascading cluster lockups, and how you diagnosed and restored the system manually.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Leading Through Crisis & Incident Response",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "incident response", "crisis management", "post-mortem", "calmness", "leadership", "leading through crisis & incident response" ],
+    "criteria" : [ "remains composed and methodical under intense operational pressure", "communicates transparently and frequently with technical and non-technical stakeholders", "champions blameless root cause analysis and permanent systemic remediation" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-123",
+    "question" : "Share an experience where you rebuilt organizational trust with executive leadership and board members following a high-profile multi-day service outage.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Leading Through Crisis & Incident Response",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "incident response", "crisis management", "post-mortem", "calmness", "leadership", "leading through crisis & incident response" ],
+    "criteria" : [ "remains composed and methodical under intense operational pressure", "communicates transparently and frequently with technical and non-technical stakeholders", "champions blameless root cause analysis and permanent systemic remediation" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-124",
+    "question" : "Describe how you built an enterprise Incident Command system and on-call rotation from scratch that reduced MTTR (Mean Time to Resolution) by 70%.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Leading Through Crisis & Incident Response",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "incident response", "crisis management", "post-mortem", "calmness", "leadership", "leading through crisis & incident response" ],
+    "criteria" : [ "remains composed and methodical under intense operational pressure", "communicates transparently and frequently with technical and non-technical stakeholders", "champions blameless root cause analysis and permanent systemic remediation" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-125",
+    "question" : "Tell me about a time you had to shut down an active production system voluntarily to prevent massive data corruption or financial drain, and how you managed the fallout.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Leading Through Crisis & Incident Response",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "incident response", "crisis management", "post-mortem", "calmness", "leadership", "leading through crisis & incident response" ],
+    "criteria" : [ "remains composed and methodical under intense operational pressure", "communicates transparently and frequently with technical and non-technical stakeholders", "champions blameless root cause analysis and permanent systemic remediation" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-126",
+    "question" : "Describe a crisis where a security vulnerability (such as zero-day Log4Shell) required patching 200 production microservices within 12 hours without customer downtime.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Leading Through Crisis & Incident Response",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "incident response", "crisis management", "post-mortem", "calmness", "leadership", "leading through crisis & incident response" ],
+    "criteria" : [ "remains composed and methodical under intense operational pressure", "communicates transparently and frequently with technical and non-technical stakeholders", "champions blameless root cause analysis and permanent systemic remediation" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-127",
+    "question" : "Tell me about a time you advocated for writing automated unit and integration tests when the team was accustomed to manual testing.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Championing Engineering Standards & Culture",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "engineering standards", "culture", "best practices", "ci-cd", "quality", "championing engineering standards & culture" ],
+    "criteria" : [ "articulates the tangible business ROI of engineering excellence and quality", "leads cultural change through demonstration, tooling, and peer empowerment", "balances pragmatism with uncompromising standards for security and reliability" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-128",
+    "question" : "How do you balance the pressure to deliver features quickly with the need to maintain clean, readable, and maintainable code?",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Championing Engineering Standards & Culture",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "engineering standards", "culture", "best practices", "ci-cd", "quality", "championing engineering standards & culture" ],
+    "criteria" : [ "articulates the tangible business ROI of engineering excellence and quality", "leads cultural change through demonstration, tooling, and peer empowerment", "balances pragmatism with uncompromising standards for security and reliability" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-129",
+    "question" : "Describe a time you created or improved coding style guidelines or documentation for your engineering team.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Championing Engineering Standards & Culture",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "engineering standards", "culture", "best practices", "ci-cd", "quality", "championing engineering standards & culture" ],
+    "criteria" : [ "articulates the tangible business ROI of engineering excellence and quality", "leads cultural change through demonstration, tooling, and peer empowerment", "balances pragmatism with uncompromising standards for security and reliability" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-130",
+    "question" : "Tell me about a time you identified technical debt that was slowing the team down and how you convinced others to address it.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Championing Engineering Standards & Culture",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "engineering standards", "culture", "best practices", "ci-cd", "quality", "championing engineering standards & culture" ],
+    "criteria" : [ "articulates the tangible business ROI of engineering excellence and quality", "leads cultural change through demonstration, tooling, and peer empowerment", "balances pragmatism with uncompromising standards for security and reliability" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-131",
+    "question" : "How do you encourage peer code reviews that focus on architecture, performance, and maintainability rather than superficial syntax?",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Championing Engineering Standards & Culture",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "engineering standards", "culture", "best practices", "ci-cd", "quality", "championing engineering standards & culture" ],
+    "criteria" : [ "articulates the tangible business ROI of engineering excellence and quality", "leads cultural change through demonstration, tooling, and peer empowerment", "balances pragmatism with uncompromising standards for security and reliability" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-132",
+    "question" : "Describe an experience where you introduced a new developer productivity tool that made everyday tasks easier for your peers.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Championing Engineering Standards & Culture",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "engineering standards", "culture", "best practices", "ci-cd", "quality", "championing engineering standards & culture" ],
+    "criteria" : [ "articulates the tangible business ROI of engineering excellence and quality", "leads cultural change through demonstration, tooling, and peer empowerment", "balances pragmatism with uncompromising standards for security and reliability" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-133",
+    "question" : "Tell me about a time you championed better security practices within your development workflow.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Championing Engineering Standards & Culture",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "engineering standards", "culture", "best practices", "ci-cd", "quality", "championing engineering standards & culture" ],
+    "criteria" : [ "articulates the tangible business ROI of engineering excellence and quality", "leads cultural change through demonstration, tooling, and peer empowerment", "balances pragmatism with uncompromising standards for security and reliability" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-134",
+    "question" : "Tell me about a time you advocated for writing automated unit and integration tests when the team was accustomed to manual testing.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Championing Engineering Standards & Culture",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "engineering standards", "culture", "best practices", "ci-cd", "quality", "championing engineering standards & culture" ],
+    "criteria" : [ "articulates the tangible business ROI of engineering excellence and quality", "leads cultural change through demonstration, tooling, and peer empowerment", "balances pragmatism with uncompromising standards for security and reliability" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-135",
+    "question" : "How do you balance the pressure to deliver features quickly with the need to maintain clean, readable, and maintainable code?",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Championing Engineering Standards & Culture",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "engineering standards", "culture", "best practices", "ci-cd", "quality", "championing engineering standards & culture" ],
+    "criteria" : [ "articulates the tangible business ROI of engineering excellence and quality", "leads cultural change through demonstration, tooling, and peer empowerment", "balances pragmatism with uncompromising standards for security and reliability" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-136",
+    "question" : "Describe a time you created or improved coding style guidelines or documentation for your engineering team.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Championing Engineering Standards & Culture",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "engineering standards", "culture", "best practices", "ci-cd", "quality", "championing engineering standards & culture" ],
+    "criteria" : [ "articulates the tangible business ROI of engineering excellence and quality", "leads cultural change through demonstration, tooling, and peer empowerment", "balances pragmatism with uncompromising standards for security and reliability" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-137",
+    "question" : "Tell me about a time you pushed back against management when asked to ship code with known critical security or scalability vulnerabilities.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Championing Engineering Standards & Culture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "engineering standards", "culture", "best practices", "ci-cd", "quality", "championing engineering standards & culture" ],
+    "criteria" : [ "articulates the tangible business ROI of engineering excellence and quality", "leads cultural change through demonstration, tooling, and peer empowerment", "balances pragmatism with uncompromising standards for security and reliability" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-138",
+    "question" : "Describe how you introduced chaos engineering or automated load testing to uncover latent system bottlenecks before production launches.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Championing Engineering Standards & Culture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "engineering standards", "culture", "best practices", "ci-cd", "quality", "championing engineering standards & culture" ],
+    "criteria" : [ "articulates the tangible business ROI of engineering excellence and quality", "leads cultural change through demonstration, tooling, and peer empowerment", "balances pragmatism with uncompromising standards for security and reliability" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-139",
+    "question" : "Give an example of how you fostered an environment of continuous learning on your team through tech talks, hackathons, or book clubs.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Championing Engineering Standards & Culture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "engineering standards", "culture", "best practices", "ci-cd", "quality", "championing engineering standards & culture" ],
+    "criteria" : [ "articulates the tangible business ROI of engineering excellence and quality", "leads cultural change through demonstration, tooling, and peer empowerment", "balances pragmatism with uncompromising standards for security and reliability" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-140",
+    "question" : "Tell me about a time you tackled a monolithic legacy codebase with zero documentation and successfully established clean domain boundaries.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Championing Engineering Standards & Culture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "engineering standards", "culture", "best practices", "ci-cd", "quality", "championing engineering standards & culture" ],
+    "criteria" : [ "articulates the tangible business ROI of engineering excellence and quality", "leads cultural change through demonstration, tooling, and peer empowerment", "balances pragmatism with uncompromising standards for security and reliability" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-141",
+    "question" : "Describe a situation where you successfully established a culture of writing comprehensive design docs (RFCs) before jumping into code.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Championing Engineering Standards & Culture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "engineering standards", "culture", "best practices", "ci-cd", "quality", "championing engineering standards & culture" ],
+    "criteria" : [ "articulates the tangible business ROI of engineering excellence and quality", "leads cultural change through demonstration, tooling, and peer empowerment", "balances pragmatism with uncompromising standards for security and reliability" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-142",
+    "question" : "Tell me about a time you spearheaded an effort to increase code test coverage from 30% to over 85%, and how it impacted release stability.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Championing Engineering Standards & Culture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "engineering standards", "culture", "best practices", "ci-cd", "quality", "championing engineering standards & culture" ],
+    "criteria" : [ "articulates the tangible business ROI of engineering excellence and quality", "leads cultural change through demonstration, tooling, and peer empowerment", "balances pragmatism with uncompromising standards for security and reliability" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-143",
+    "question" : "Share an experience where you audited and optimized your team's CI/CD pipeline, reducing deployment times from 45 minutes to under 5 minutes.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Championing Engineering Standards & Culture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "engineering standards", "culture", "best practices", "ci-cd", "quality", "championing engineering standards & culture" ],
+    "criteria" : [ "articulates the tangible business ROI of engineering excellence and quality", "leads cultural change through demonstration, tooling, and peer empowerment", "balances pragmatism with uncompromising standards for security and reliability" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-144",
+    "question" : "Tell me about a time you pushed back against management when asked to ship code with known critical security or scalability vulnerabilities.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Championing Engineering Standards & Culture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "engineering standards", "culture", "best practices", "ci-cd", "quality", "championing engineering standards & culture" ],
+    "criteria" : [ "articulates the tangible business ROI of engineering excellence and quality", "leads cultural change through demonstration, tooling, and peer empowerment", "balances pragmatism with uncompromising standards for security and reliability" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-145",
+    "question" : "Describe how you introduced chaos engineering or automated load testing to uncover latent system bottlenecks before production launches.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Championing Engineering Standards & Culture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "engineering standards", "culture", "best practices", "ci-cd", "quality", "championing engineering standards & culture" ],
+    "criteria" : [ "articulates the tangible business ROI of engineering excellence and quality", "leads cultural change through demonstration, tooling, and peer empowerment", "balances pragmatism with uncompromising standards for security and reliability" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-146",
+    "question" : "Give an example of how you fostered an environment of continuous learning on your team through tech talks, hackathons, or book clubs.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Championing Engineering Standards & Culture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "engineering standards", "culture", "best practices", "ci-cd", "quality", "championing engineering standards & culture" ],
+    "criteria" : [ "articulates the tangible business ROI of engineering excellence and quality", "leads cultural change through demonstration, tooling, and peer empowerment", "balances pragmatism with uncompromising standards for security and reliability" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-147",
+    "question" : "Tell me about a time you tackled a monolithic legacy codebase with zero documentation and successfully established clean domain boundaries.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Championing Engineering Standards & Culture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "engineering standards", "culture", "best practices", "ci-cd", "quality", "championing engineering standards & culture" ],
+    "criteria" : [ "articulates the tangible business ROI of engineering excellence and quality", "leads cultural change through demonstration, tooling, and peer empowerment", "balances pragmatism with uncompromising standards for security and reliability" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-148",
+    "question" : "Describe a situation where you successfully established a culture of writing comprehensive design docs (RFCs) before jumping into code.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Championing Engineering Standards & Culture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "engineering standards", "culture", "best practices", "ci-cd", "quality", "championing engineering standards & culture" ],
+    "criteria" : [ "articulates the tangible business ROI of engineering excellence and quality", "leads cultural change through demonstration, tooling, and peer empowerment", "balances pragmatism with uncompromising standards for security and reliability" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-149",
+    "question" : "Tell me about a time you spearheaded an effort to increase code test coverage from 30% to over 85%, and how it impacted release stability.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Championing Engineering Standards & Culture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "engineering standards", "culture", "best practices", "ci-cd", "quality", "championing engineering standards & culture" ],
+    "criteria" : [ "articulates the tangible business ROI of engineering excellence and quality", "leads cultural change through demonstration, tooling, and peer empowerment", "balances pragmatism with uncompromising standards for security and reliability" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-150",
+    "question" : "Share an experience where you audited and optimized your team's CI/CD pipeline, reducing deployment times from 45 minutes to under 5 minutes.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Championing Engineering Standards & Culture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "engineering standards", "culture", "best practices", "ci-cd", "quality", "championing engineering standards & culture" ],
+    "criteria" : [ "articulates the tangible business ROI of engineering excellence and quality", "leads cultural change through demonstration, tooling, and peer empowerment", "balances pragmatism with uncompromising standards for security and reliability" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-151",
+    "question" : "Tell me about a time you pushed back against management when asked to ship code with known critical security or scalability vulnerabilities.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Championing Engineering Standards & Culture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "engineering standards", "culture", "best practices", "ci-cd", "quality", "championing engineering standards & culture" ],
+    "criteria" : [ "articulates the tangible business ROI of engineering excellence and quality", "leads cultural change through demonstration, tooling, and peer empowerment", "balances pragmatism with uncompromising standards for security and reliability" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-152",
+    "question" : "Describe how you transformed an engineering organization from chaotic, manual releases into an automated, high-velocity trunk-based deployment culture.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Championing Engineering Standards & Culture",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "engineering standards", "culture", "best practices", "ci-cd", "quality", "championing engineering standards & culture" ],
+    "criteria" : [ "articulates the tangible business ROI of engineering excellence and quality", "leads cultural change through demonstration, tooling, and peer empowerment", "balances pragmatism with uncompromising standards for security and reliability" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-153",
+    "question" : "Tell me about a time you successfully pitched and secured a dedicated 20% engineering budget specifically to retire architectural technical debt.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Championing Engineering Standards & Culture",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "engineering standards", "culture", "best practices", "ci-cd", "quality", "championing engineering standards & culture" ],
+    "criteria" : [ "articulates the tangible business ROI of engineering excellence and quality", "leads cultural change through demonstration, tooling, and peer empowerment", "balances pragmatism with uncompromising standards for security and reliability" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-154",
+    "question" : "Share a story where you defined and implemented company-wide engineering promotion and leveling rubrics to establish fair, merit-based career progression.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Championing Engineering Standards & Culture",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "engineering standards", "culture", "best practices", "ci-cd", "quality", "championing engineering standards & culture" ],
+    "criteria" : [ "articulates the tangible business ROI of engineering excellence and quality", "leads cultural change through demonstration, tooling, and peer empowerment", "balances pragmatism with uncompromising standards for security and reliability" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-155",
+    "question" : "Describe how you drove an organization-wide shift toward Security-by-Design, resulting in passing rigorous SOC2 and ISO27001 compliance audits.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Championing Engineering Standards & Culture",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "engineering standards", "culture", "best practices", "ci-cd", "quality", "championing engineering standards & culture" ],
+    "criteria" : [ "articulates the tangible business ROI of engineering excellence and quality", "leads cultural change through demonstration, tooling, and peer empowerment", "balances pragmatism with uncompromising standards for security and reliability" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-156",
+    "question" : "Tell me about an experience where you identified and systematically eradicated toxic, gatekeeping behaviors to build an open, collaborative engineering culture.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Championing Engineering Standards & Culture",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "engineering standards", "culture", "best practices", "ci-cd", "quality", "championing engineering standards & culture" ],
+    "criteria" : [ "articulates the tangible business ROI of engineering excellence and quality", "leads cultural change through demonstration, tooling, and peer empowerment", "balances pragmatism with uncompromising standards for security and reliability" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-157",
+    "question" : "Describe how you transformed an engineering organization from chaotic, manual releases into an automated, high-velocity trunk-based deployment culture.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Championing Engineering Standards & Culture",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "engineering standards", "culture", "best practices", "ci-cd", "quality", "championing engineering standards & culture" ],
+    "criteria" : [ "articulates the tangible business ROI of engineering excellence and quality", "leads cultural change through demonstration, tooling, and peer empowerment", "balances pragmatism with uncompromising standards for security and reliability" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-158",
+    "question" : "How do you stay informed about emerging technologies, frameworks, and architectural paradigms in software engineering?",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Strategic Vision & Technical Roadmapping",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "roadmap", "strategy", "architecture", "prioritization", "long-term", "strategic vision & technical roadmapping" ],
+    "criteria" : [ "demonstrates long-term strategic vision connected directly to business value", "makes rigorous, evidence-based build-vs-buy and technology adoption decisions", "effectively communicates architectural strategy across executive and engineering levels" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-159",
+    "question" : "Tell me about a time you had to evaluate whether to build a custom solution in-house versus buy an off-the-shelf third-party SaaS tool.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Strategic Vision & Technical Roadmapping",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "roadmap", "strategy", "architecture", "prioritization", "long-term", "strategic vision & technical roadmapping" ],
+    "criteria" : [ "demonstrates long-term strategic vision connected directly to business value", "makes rigorous, evidence-based build-vs-buy and technology adoption decisions", "effectively communicates architectural strategy across executive and engineering levels" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-160",
+    "question" : "Describe a situation where you helped your team prioritize technical tasks for an upcoming sprint or quarter.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Strategic Vision & Technical Roadmapping",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "roadmap", "strategy", "architecture", "prioritization", "long-term", "strategic vision & technical roadmapping" ],
+    "criteria" : [ "demonstrates long-term strategic vision connected directly to business value", "makes rigorous, evidence-based build-vs-buy and technology adoption decisions", "effectively communicates architectural strategy across executive and engineering levels" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-161",
+    "question" : "How do you translate high-level product business goals into concrete technical requirements and engineering milestones?",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Strategic Vision & Technical Roadmapping",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "roadmap", "strategy", "architecture", "prioritization", "long-term", "strategic vision & technical roadmapping" ],
+    "criteria" : [ "demonstrates long-term strategic vision connected directly to business value", "makes rigorous, evidence-based build-vs-buy and technology adoption decisions", "effectively communicates architectural strategy across executive and engineering levels" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-162",
+    "question" : "Tell me about a time you anticipated a future technical bottleneck before it impacted production.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Strategic Vision & Technical Roadmapping",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "roadmap", "strategy", "architecture", "prioritization", "long-term", "strategic vision & technical roadmapping" ],
+    "criteria" : [ "demonstrates long-term strategic vision connected directly to business value", "makes rigorous, evidence-based build-vs-buy and technology adoption decisions", "effectively communicates architectural strategy across executive and engineering levels" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-163",
+    "question" : "Describe a time you proposed a small technical improvement that ended up having a huge positive impact on the business.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Strategic Vision & Technical Roadmapping",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "roadmap", "strategy", "architecture", "prioritization", "long-term", "strategic vision & technical roadmapping" ],
+    "criteria" : [ "demonstrates long-term strategic vision connected directly to business value", "makes rigorous, evidence-based build-vs-buy and technology adoption decisions", "effectively communicates architectural strategy across executive and engineering levels" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-164",
+    "question" : "How do you balance short-term feature delivery with long-term architectural stability?",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Strategic Vision & Technical Roadmapping",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "roadmap", "strategy", "architecture", "prioritization", "long-term", "strategic vision & technical roadmapping" ],
+    "criteria" : [ "demonstrates long-term strategic vision connected directly to business value", "makes rigorous, evidence-based build-vs-buy and technology adoption decisions", "effectively communicates architectural strategy across executive and engineering levels" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-165",
+    "question" : "How do you stay informed about emerging technologies, frameworks, and architectural paradigms in software engineering?",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Strategic Vision & Technical Roadmapping",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "roadmap", "strategy", "architecture", "prioritization", "long-term", "strategic vision & technical roadmapping" ],
+    "criteria" : [ "demonstrates long-term strategic vision connected directly to business value", "makes rigorous, evidence-based build-vs-buy and technology adoption decisions", "effectively communicates architectural strategy across executive and engineering levels" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-166",
+    "question" : "Tell me about a time you had to evaluate whether to build a custom solution in-house versus buy an off-the-shelf third-party SaaS tool.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Strategic Vision & Technical Roadmapping",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "roadmap", "strategy", "architecture", "prioritization", "long-term", "strategic vision & technical roadmapping" ],
+    "criteria" : [ "demonstrates long-term strategic vision connected directly to business value", "makes rigorous, evidence-based build-vs-buy and technology adoption decisions", "effectively communicates architectural strategy across executive and engineering levels" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-167",
+    "question" : "Describe a situation where you helped your team prioritize technical tasks for an upcoming sprint or quarter.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Strategic Vision & Technical Roadmapping",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "roadmap", "strategy", "architecture", "prioritization", "long-term", "strategic vision & technical roadmapping" ],
+    "criteria" : [ "demonstrates long-term strategic vision connected directly to business value", "makes rigorous, evidence-based build-vs-buy and technology adoption decisions", "effectively communicates architectural strategy across executive and engineering levels" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-168",
+    "question" : "Tell me about a time you had to deprecate and retire a beloved legacy product or API that was draining engineering resources.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Strategic Vision & Technical Roadmapping",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "roadmap", "strategy", "architecture", "prioritization", "long-term", "strategic vision & technical roadmapping" ],
+    "criteria" : [ "demonstrates long-term strategic vision connected directly to business value", "makes rigorous, evidence-based build-vs-buy and technology adoption decisions", "effectively communicates architectural strategy across executive and engineering levels" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-169",
+    "question" : "Describe how you established technical KPIs and metrics that enabled executives to understand the health and velocity of engineering.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Strategic Vision & Technical Roadmapping",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "roadmap", "strategy", "architecture", "prioritization", "long-term", "strategic vision & technical roadmapping" ],
+    "criteria" : [ "demonstrates long-term strategic vision connected directly to business value", "makes rigorous, evidence-based build-vs-buy and technology adoption decisions", "effectively communicates architectural strategy across executive and engineering levels" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-170",
+    "question" : "Give an example of when you pivoted your technical strategy halfway through execution because the market or business landscape changed.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Strategic Vision & Technical Roadmapping",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "roadmap", "strategy", "architecture", "prioritization", "long-term", "strategic vision & technical roadmapping" ],
+    "criteria" : [ "demonstrates long-term strategic vision connected directly to business value", "makes rigorous, evidence-based build-vs-buy and technology adoption decisions", "effectively communicates architectural strategy across executive and engineering levels" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-171",
+    "question" : "Tell me about a time you identified an opportunity to open-source an internal tool or library and how it benefited the company's engineering brand.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Strategic Vision & Technical Roadmapping",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "roadmap", "strategy", "architecture", "prioritization", "long-term", "strategic vision & technical roadmapping" ],
+    "criteria" : [ "demonstrates long-term strategic vision connected directly to business value", "makes rigorous, evidence-based build-vs-buy and technology adoption decisions", "effectively communicates architectural strategy across executive and engineering levels" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-172",
+    "question" : "Tell me about a time you designed a multi-year technical roadmap that aligned closely with your company's projected customer growth.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Strategic Vision & Technical Roadmapping",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "roadmap", "strategy", "architecture", "prioritization", "long-term", "strategic vision & technical roadmapping" ],
+    "criteria" : [ "demonstrates long-term strategic vision connected directly to business value", "makes rigorous, evidence-based build-vs-buy and technology adoption decisions", "effectively communicates architectural strategy across executive and engineering levels" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-173",
+    "question" : "Describe a situation where you successfully forecasted system capacity limits and preemptively re-architected the system before a 5x surge.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Strategic Vision & Technical Roadmapping",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "roadmap", "strategy", "architecture", "prioritization", "long-term", "strategic vision & technical roadmapping" ],
+    "criteria" : [ "demonstrates long-term strategic vision connected directly to business value", "makes rigorous, evidence-based build-vs-buy and technology adoption decisions", "effectively communicates architectural strategy across executive and engineering levels" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-174",
+    "question" : "Share an experience where you evaluated build-vs-buy for a mission-critical component (e.g. auth, messaging, search) and defended your recommendation to leadership.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Strategic Vision & Technical Roadmapping",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "roadmap", "strategy", "architecture", "prioritization", "long-term", "strategic vision & technical roadmapping" ],
+    "criteria" : [ "demonstrates long-term strategic vision connected directly to business value", "makes rigorous, evidence-based build-vs-buy and technology adoption decisions", "effectively communicates architectural strategy across executive and engineering levels" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-175",
+    "question" : "Tell me about a time you had to deprecate and retire a beloved legacy product or API that was draining engineering resources.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Strategic Vision & Technical Roadmapping",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "roadmap", "strategy", "architecture", "prioritization", "long-term", "strategic vision & technical roadmapping" ],
+    "criteria" : [ "demonstrates long-term strategic vision connected directly to business value", "makes rigorous, evidence-based build-vs-buy and technology adoption decisions", "effectively communicates architectural strategy across executive and engineering levels" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-176",
+    "question" : "Describe how you established technical KPIs and metrics that enabled executives to understand the health and velocity of engineering.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Strategic Vision & Technical Roadmapping",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "roadmap", "strategy", "architecture", "prioritization", "long-term", "strategic vision & technical roadmapping" ],
+    "criteria" : [ "demonstrates long-term strategic vision connected directly to business value", "makes rigorous, evidence-based build-vs-buy and technology adoption decisions", "effectively communicates architectural strategy across executive and engineering levels" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-177",
+    "question" : "Give an example of when you pivoted your technical strategy halfway through execution because the market or business landscape changed.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Strategic Vision & Technical Roadmapping",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "roadmap", "strategy", "architecture", "prioritization", "long-term", "strategic vision & technical roadmapping" ],
+    "criteria" : [ "demonstrates long-term strategic vision connected directly to business value", "makes rigorous, evidence-based build-vs-buy and technology adoption decisions", "effectively communicates architectural strategy across executive and engineering levels" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-178",
+    "question" : "Tell me about a time you identified an opportunity to open-source an internal tool or library and how it benefited the company's engineering brand.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Strategic Vision & Technical Roadmapping",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "roadmap", "strategy", "architecture", "prioritization", "long-term", "strategic vision & technical roadmapping" ],
+    "criteria" : [ "demonstrates long-term strategic vision connected directly to business value", "makes rigorous, evidence-based build-vs-buy and technology adoption decisions", "effectively communicates architectural strategy across executive and engineering levels" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-179",
+    "question" : "Tell me about a time you designed a multi-year technical roadmap that aligned closely with your company's projected customer growth.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Strategic Vision & Technical Roadmapping",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "roadmap", "strategy", "architecture", "prioritization", "long-term", "strategic vision & technical roadmapping" ],
+    "criteria" : [ "demonstrates long-term strategic vision connected directly to business value", "makes rigorous, evidence-based build-vs-buy and technology adoption decisions", "effectively communicates architectural strategy across executive and engineering levels" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-180",
+    "question" : "Describe a situation where you successfully forecasted system capacity limits and preemptively re-architected the system before a 5x surge.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Strategic Vision & Technical Roadmapping",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "roadmap", "strategy", "architecture", "prioritization", "long-term", "strategic vision & technical roadmapping" ],
+    "criteria" : [ "demonstrates long-term strategic vision connected directly to business value", "makes rigorous, evidence-based build-vs-buy and technology adoption decisions", "effectively communicates architectural strategy across executive and engineering levels" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-181",
+    "question" : "Share an experience where you evaluated build-vs-buy for a mission-critical component (e.g. auth, messaging, search) and defended your recommendation to leadership.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Strategic Vision & Technical Roadmapping",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "roadmap", "strategy", "architecture", "prioritization", "long-term", "strategic vision & technical roadmapping" ],
+    "criteria" : [ "demonstrates long-term strategic vision connected directly to business value", "makes rigorous, evidence-based build-vs-buy and technology adoption decisions", "effectively communicates architectural strategy across executive and engineering levels" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-182",
+    "question" : "Tell me about a time you had to deprecate and retire a beloved legacy product or API that was draining engineering resources.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Strategic Vision & Technical Roadmapping",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "roadmap", "strategy", "architecture", "prioritization", "long-term", "strategic vision & technical roadmapping" ],
+    "criteria" : [ "demonstrates long-term strategic vision connected directly to business value", "makes rigorous, evidence-based build-vs-buy and technology adoption decisions", "effectively communicates architectural strategy across executive and engineering levels" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-183",
+    "question" : "Describe a scenario where you created the architectural blueprint that enabled your company to scale from 100,000 to 50 million active users.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Strategic Vision & Technical Roadmapping",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "roadmap", "strategy", "architecture", "prioritization", "long-term", "strategic vision & technical roadmapping" ],
+    "criteria" : [ "demonstrates long-term strategic vision connected directly to business value", "makes rigorous, evidence-based build-vs-buy and technology adoption decisions", "effectively communicates architectural strategy across executive and engineering levels" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-184",
+    "question" : "Tell me about a time you navigated an executive mandate to adopt a hyped technology (e.g. blockchain, AI, microservices) that was ill-suited for the problem, guiding leadership to a pragmatic solution.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Strategic Vision & Technical Roadmapping",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "roadmap", "strategy", "architecture", "prioritization", "long-term", "strategic vision & technical roadmapping" ],
+    "criteria" : [ "demonstrates long-term strategic vision connected directly to business value", "makes rigorous, evidence-based build-vs-buy and technology adoption decisions", "effectively communicates architectural strategy across executive and engineering levels" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-185",
+    "question" : "Share an experience where you orchestrated the technical due diligence and system integration strategy for a major corporate merger or acquisition.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Strategic Vision & Technical Roadmapping",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "roadmap", "strategy", "architecture", "prioritization", "long-term", "strategic vision & technical roadmapping" ],
+    "criteria" : [ "demonstrates long-term strategic vision connected directly to business value", "makes rigorous, evidence-based build-vs-buy and technology adoption decisions", "effectively communicates architectural strategy across executive and engineering levels" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-186",
+    "question" : "Describe how you balanced engineering investment across three competing pillars: cutting-edge innovation, enterprise stability, and regulatory compliance.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Strategic Vision & Technical Roadmapping",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "roadmap", "strategy", "architecture", "prioritization", "long-term", "strategic vision & technical roadmapping" ],
+    "criteria" : [ "demonstrates long-term strategic vision connected directly to business value", "makes rigorous, evidence-based build-vs-buy and technology adoption decisions", "effectively communicates architectural strategy across executive and engineering levels" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-187",
+    "question" : "Tell me about a time your strategic architectural bet failed, what lessons you learned from the experience, and how you salvaged value for the business.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Strategic Vision & Technical Roadmapping",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "roadmap", "strategy", "architecture", "prioritization", "long-term", "strategic vision & technical roadmapping" ],
+    "criteria" : [ "demonstrates long-term strategic vision connected directly to business value", "makes rigorous, evidence-based build-vs-buy and technology adoption decisions", "effectively communicates architectural strategy across executive and engineering levels" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-188",
+    "question" : "Describe a scenario where you created the architectural blueprint that enabled your company to scale from 100,000 to 50 million active users.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Strategic Vision & Technical Roadmapping",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "roadmap", "strategy", "architecture", "prioritization", "long-term", "strategic vision & technical roadmapping" ],
+    "criteria" : [ "demonstrates long-term strategic vision connected directly to business value", "makes rigorous, evidence-based build-vs-buy and technology adoption decisions", "effectively communicates architectural strategy across executive and engineering levels" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-189",
+    "question" : "Tell me about a time you worked closely with a Product Manager to define the technical feasibility of a new feature.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Cross-Functional Leadership & Stakeholder Management",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "stakeholder management", "communication", "product management", "alignment", "leadership", "cross-functional leadership & stakeholder management" ],
+    "criteria" : [ "translates technical trade-offs into business impact and ROI", "negotiates realistically without over-promising or creating toxic delivery pressure", "builds durable cross-functional trust through transparency and reliable execution" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-190",
+    "question" : "How do you explain complex technical concepts and trade-offs to non-technical stakeholders (e.g. sales, marketing, executives)?",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Cross-Functional Leadership & Stakeholder Management",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "stakeholder management", "communication", "product management", "alignment", "leadership", "cross-functional leadership & stakeholder management" ],
+    "criteria" : [ "translates technical trade-offs into business impact and ROI", "negotiates realistically without over-promising or creating toxic delivery pressure", "builds durable cross-functional trust through transparency and reliable execution" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-191",
+    "question" : "Describe an experience where a client or stakeholder requested an unrealistic feature deadline, and how you responded.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Cross-Functional Leadership & Stakeholder Management",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "stakeholder management", "communication", "product management", "alignment", "leadership", "cross-functional leadership & stakeholder management" ],
+    "criteria" : [ "translates technical trade-offs into business impact and ROI", "negotiates realistically without over-promising or creating toxic delivery pressure", "builds durable cross-functional trust through transparency and reliable execution" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-192",
+    "question" : "Tell me about a time you collaborated with UI/UX designers to ensure an interface was both intuitive and technically performant.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Cross-Functional Leadership & Stakeholder Management",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "stakeholder management", "communication", "product management", "alignment", "leadership", "cross-functional leadership & stakeholder management" ],
+    "criteria" : [ "translates technical trade-offs into business impact and ROI", "negotiates realistically without over-promising or creating toxic delivery pressure", "builds durable cross-functional trust through transparency and reliable execution" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-193",
+    "question" : "How do you ensure marketing and customer support teams are prepared for major technical releases and migrations?",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Cross-Functional Leadership & Stakeholder Management",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "stakeholder management", "communication", "product management", "alignment", "leadership", "cross-functional leadership & stakeholder management" ],
+    "criteria" : [ "translates technical trade-offs into business impact and ROI", "negotiates realistically without over-promising or creating toxic delivery pressure", "builds durable cross-functional trust through transparency and reliable execution" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-194",
+    "question" : "Describe a situation where customer feedback directly altered your engineering implementation plan.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Cross-Functional Leadership & Stakeholder Management",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "stakeholder management", "communication", "product management", "alignment", "leadership", "cross-functional leadership & stakeholder management" ],
+    "criteria" : [ "translates technical trade-offs into business impact and ROI", "negotiates realistically without over-promising or creating toxic delivery pressure", "builds durable cross-functional trust through transparency and reliable execution" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-195",
+    "question" : "Tell me about a time you had to say 'no' to a stakeholder request to protect system stability or team focus.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Cross-Functional Leadership & Stakeholder Management",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "stakeholder management", "communication", "product management", "alignment", "leadership", "cross-functional leadership & stakeholder management" ],
+    "criteria" : [ "translates technical trade-offs into business impact and ROI", "negotiates realistically without over-promising or creating toxic delivery pressure", "builds durable cross-functional trust through transparency and reliable execution" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-196",
+    "question" : "Tell me about a time you worked closely with a Product Manager to define the technical feasibility of a new feature.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Cross-Functional Leadership & Stakeholder Management",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "stakeholder management", "communication", "product management", "alignment", "leadership", "cross-functional leadership & stakeholder management" ],
+    "criteria" : [ "translates technical trade-offs into business impact and ROI", "negotiates realistically without over-promising or creating toxic delivery pressure", "builds durable cross-functional trust through transparency and reliable execution" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-197",
+    "question" : "How do you explain complex technical concepts and trade-offs to non-technical stakeholders (e.g. sales, marketing, executives)?",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Cross-Functional Leadership & Stakeholder Management",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "stakeholder management", "communication", "product management", "alignment", "leadership", "cross-functional leadership & stakeholder management" ],
+    "criteria" : [ "translates technical trade-offs into business impact and ROI", "negotiates realistically without over-promising or creating toxic delivery pressure", "builds durable cross-functional trust through transparency and reliable execution" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-198",
+    "question" : "Describe an experience where a client or stakeholder requested an unrealistic feature deadline, and how you responded.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Cross-Functional Leadership & Stakeholder Management",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "stakeholder management", "communication", "product management", "alignment", "leadership", "cross-functional leadership & stakeholder management" ],
+    "criteria" : [ "translates technical trade-offs into business impact and ROI", "negotiates realistically without over-promising or creating toxic delivery pressure", "builds durable cross-functional trust through transparency and reliable execution" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-199",
+    "question" : "Tell me about a time an unexpected legal or compliance requirement (such as GDPR or CCPA) disrupted your engineering roadmap, and how you adapted.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Cross-Functional Leadership & Stakeholder Management",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "stakeholder management", "communication", "product management", "alignment", "leadership", "cross-functional leadership & stakeholder management" ],
+    "criteria" : [ "translates technical trade-offs into business impact and ROI", "negotiates realistically without over-promising or creating toxic delivery pressure", "builds durable cross-functional trust through transparency and reliable execution" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-200",
+    "question" : "Describe how you established a transparent, predictable sprint cadence that eliminated recurring friction between engineering and business stakeholders.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Cross-Functional Leadership & Stakeholder Management",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "stakeholder management", "communication", "product management", "alignment", "leadership", "cross-functional leadership & stakeholder management" ],
+    "criteria" : [ "translates technical trade-offs into business impact and ROI", "negotiates realistically without over-promising or creating toxic delivery pressure", "builds durable cross-functional trust through transparency and reliable execution" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-201",
+    "question" : "Give an example of how you utilized customer analytics and telemetry to prove to stakeholders that a requested feature was not worth building.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Cross-Functional Leadership & Stakeholder Management",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "stakeholder management", "communication", "product management", "alignment", "leadership", "cross-functional leadership & stakeholder management" ],
+    "criteria" : [ "translates technical trade-offs into business impact and ROI", "negotiates realistically without over-promising or creating toxic delivery pressure", "builds durable cross-functional trust through transparency and reliable execution" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-202",
+    "question" : "Tell me about a time you had to deliver bad news to senior executives regarding a delayed project milestone, and how you maintained credibility.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Cross-Functional Leadership & Stakeholder Management",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "stakeholder management", "communication", "product management", "alignment", "leadership", "cross-functional leadership & stakeholder management" ],
+    "criteria" : [ "translates technical trade-offs into business impact and ROI", "negotiates realistically without over-promising or creating toxic delivery pressure", "builds durable cross-functional trust through transparency and reliable execution" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-203",
+    "question" : "Tell me about a time you negotiated a major scope reduction with product leadership to hit an immovable regulatory or market deadline.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Cross-Functional Leadership & Stakeholder Management",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "stakeholder management", "communication", "product management", "alignment", "leadership", "cross-functional leadership & stakeholder management" ],
+    "criteria" : [ "translates technical trade-offs into business impact and ROI", "negotiates realistically without over-promising or creating toxic delivery pressure", "builds durable cross-functional trust through transparency and reliable execution" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-204",
+    "question" : "Describe a situation where a major customer experienced an escalation, and you joined the account team to restore client confidence with a technical remediation plan.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Cross-Functional Leadership & Stakeholder Management",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "stakeholder management", "communication", "product management", "alignment", "leadership", "cross-functional leadership & stakeholder management" ],
+    "criteria" : [ "translates technical trade-offs into business impact and ROI", "negotiates realistically without over-promising or creating toxic delivery pressure", "builds durable cross-functional trust through transparency and reliable execution" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-205",
+    "question" : "Share an experience where product and engineering were locked in gridlock over feature velocity versus technical debt, and how you brokered a durable truce.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Cross-Functional Leadership & Stakeholder Management",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "stakeholder management", "communication", "product management", "alignment", "leadership", "cross-functional leadership & stakeholder management" ],
+    "criteria" : [ "translates technical trade-offs into business impact and ROI", "negotiates realistically without over-promising or creating toxic delivery pressure", "builds durable cross-functional trust through transparency and reliable execution" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-206",
+    "question" : "Tell me about a time an unexpected legal or compliance requirement (such as GDPR or CCPA) disrupted your engineering roadmap, and how you adapted.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Cross-Functional Leadership & Stakeholder Management",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "stakeholder management", "communication", "product management", "alignment", "leadership", "cross-functional leadership & stakeholder management" ],
+    "criteria" : [ "translates technical trade-offs into business impact and ROI", "negotiates realistically without over-promising or creating toxic delivery pressure", "builds durable cross-functional trust through transparency and reliable execution" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-207",
+    "question" : "Describe how you established a transparent, predictable sprint cadence that eliminated recurring friction between engineering and business stakeholders.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Cross-Functional Leadership & Stakeholder Management",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "stakeholder management", "communication", "product management", "alignment", "leadership", "cross-functional leadership & stakeholder management" ],
+    "criteria" : [ "translates technical trade-offs into business impact and ROI", "negotiates realistically without over-promising or creating toxic delivery pressure", "builds durable cross-functional trust through transparency and reliable execution" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-208",
+    "question" : "Give an example of how you utilized customer analytics and telemetry to prove to stakeholders that a requested feature was not worth building.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Cross-Functional Leadership & Stakeholder Management",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "stakeholder management", "communication", "product management", "alignment", "leadership", "cross-functional leadership & stakeholder management" ],
+    "criteria" : [ "translates technical trade-offs into business impact and ROI", "negotiates realistically without over-promising or creating toxic delivery pressure", "builds durable cross-functional trust through transparency and reliable execution" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-209",
+    "question" : "Tell me about a time you had to deliver bad news to senior executives regarding a delayed project milestone, and how you maintained credibility.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Cross-Functional Leadership & Stakeholder Management",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "stakeholder management", "communication", "product management", "alignment", "leadership", "cross-functional leadership & stakeholder management" ],
+    "criteria" : [ "translates technical trade-offs into business impact and ROI", "negotiates realistically without over-promising or creating toxic delivery pressure", "builds durable cross-functional trust through transparency and reliable execution" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-210",
+    "question" : "Tell me about a time you negotiated a major scope reduction with product leadership to hit an immovable regulatory or market deadline.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Cross-Functional Leadership & Stakeholder Management",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "stakeholder management", "communication", "product management", "alignment", "leadership", "cross-functional leadership & stakeholder management" ],
+    "criteria" : [ "translates technical trade-offs into business impact and ROI", "negotiates realistically without over-promising or creating toxic delivery pressure", "builds durable cross-functional trust through transparency and reliable execution" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-211",
+    "question" : "Describe a situation where a major customer experienced an escalation, and you joined the account team to restore client confidence with a technical remediation plan.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Cross-Functional Leadership & Stakeholder Management",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "stakeholder management", "communication", "product management", "alignment", "leadership", "cross-functional leadership & stakeholder management" ],
+    "criteria" : [ "translates technical trade-offs into business impact and ROI", "negotiates realistically without over-promising or creating toxic delivery pressure", "builds durable cross-functional trust through transparency and reliable execution" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-212",
+    "question" : "Share an experience where product and engineering were locked in gridlock over feature velocity versus technical debt, and how you brokered a durable truce.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Cross-Functional Leadership & Stakeholder Management",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "stakeholder management", "communication", "product management", "alignment", "leadership", "cross-functional leadership & stakeholder management" ],
+    "criteria" : [ "translates technical trade-offs into business impact and ROI", "negotiates realistically without over-promising or creating toxic delivery pressure", "builds durable cross-functional trust through transparency and reliable execution" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-213",
+    "question" : "Tell me about a time an unexpected legal or compliance requirement (such as GDPR or CCPA) disrupted your engineering roadmap, and how you adapted.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Cross-Functional Leadership & Stakeholder Management",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "stakeholder management", "communication", "product management", "alignment", "leadership", "cross-functional leadership & stakeholder management" ],
+    "criteria" : [ "translates technical trade-offs into business impact and ROI", "negotiates realistically without over-promising or creating toxic delivery pressure", "builds durable cross-functional trust through transparency and reliable execution" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-214",
+    "question" : "Describe an enterprise scenario where you aligned 15 cross-functional department leaders (Product, Legal, Sales, Infosec, Operations) around a massive digital transformation program.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Cross-Functional Leadership & Stakeholder Management",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "stakeholder management", "communication", "product management", "alignment", "leadership", "cross-functional leadership & stakeholder management" ],
+    "criteria" : [ "translates technical trade-offs into business impact and ROI", "negotiates realistically without over-promising or creating toxic delivery pressure", "builds durable cross-functional trust through transparency and reliable execution" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-215",
+    "question" : "Tell me about a time you managed high-stakes technical negotiations with enterprise customers during multi-million-dollar contract renewals.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Cross-Functional Leadership & Stakeholder Management",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "stakeholder management", "communication", "product management", "alignment", "leadership", "cross-functional leadership & stakeholder management" ],
+    "criteria" : [ "translates technical trade-offs into business impact and ROI", "negotiates realistically without over-promising or creating toxic delivery pressure", "builds durable cross-functional trust through transparency and reliable execution" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-216",
+    "question" : "Share an experience where you served as the primary technical bridge during an organizational restructuring, ensuring engineering continuity and minimal attrition.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Cross-Functional Leadership & Stakeholder Management",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "stakeholder management", "communication", "product management", "alignment", "leadership", "cross-functional leadership & stakeholder management" ],
+    "criteria" : [ "translates technical trade-offs into business impact and ROI", "negotiates realistically without over-promising or creating toxic delivery pressure", "builds durable cross-functional trust through transparency and reliable execution" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-217",
+    "question" : "Describe how you designed a self-service internal developer platform that transformed engineering from a bottleneck into an enabler for business units.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Cross-Functional Leadership & Stakeholder Management",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "stakeholder management", "communication", "product management", "alignment", "leadership", "cross-functional leadership & stakeholder management" ],
+    "criteria" : [ "translates technical trade-offs into business impact and ROI", "negotiates realistically without over-promising or creating toxic delivery pressure", "builds durable cross-functional trust through transparency and reliable execution" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-218",
+    "question" : "Tell me about a time an executive sponsor abandoned your project midway through development, and how you built a new coalition of stakeholders to see it through.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Cross-Functional Leadership & Stakeholder Management",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "stakeholder management", "communication", "product management", "alignment", "leadership", "cross-functional leadership & stakeholder management" ],
+    "criteria" : [ "translates technical trade-offs into business impact and ROI", "negotiates realistically without over-promising or creating toxic delivery pressure", "builds durable cross-functional trust through transparency and reliable execution" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-219",
+    "question" : "Describe an enterprise scenario where you aligned 15 cross-functional department leaders (Product, Legal, Sales, Infosec, Operations) around a massive digital transformation program.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Cross-Functional Leadership & Stakeholder Management",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "stakeholder management", "communication", "product management", "alignment", "leadership", "cross-functional leadership & stakeholder management" ],
+    "criteria" : [ "translates technical trade-offs into business impact and ROI", "negotiates realistically without over-promising or creating toxic delivery pressure", "builds durable cross-functional trust through transparency and reliable execution" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-220",
+    "question" : "Tell me about a time you identified a bug or performance flaw before any customer or automated monitor detected it.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Innovation & Proactive Problem Solving",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "innovation", "prototyping", "proactive", "problem solving", "curiosity", "innovation & proactive problem solving" ],
+    "criteria" : [ "demonstrates intellectual curiosity, prototyping agility, and pragmatic innovation", "challenges assumptions constructively with data and working code", "delivers real, measurable impact from innovative initiatives" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-221",
+    "question" : "Describe an experience where you experimented with a new programming language or tool to solve an existing problem better.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Innovation & Proactive Problem Solving",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "innovation", "prototyping", "proactive", "problem solving", "curiosity", "innovation & proactive problem solving" ],
+    "criteria" : [ "demonstrates intellectual curiosity, prototyping agility, and pragmatic innovation", "challenges assumptions constructively with data and working code", "delivers real, measurable impact from innovative initiatives" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-222",
+    "question" : "Tell me about a creative workaround you implemented when standard documentation and solutions failed.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Innovation & Proactive Problem Solving",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "innovation", "prototyping", "proactive", "problem solving", "curiosity", "innovation & proactive problem solving" ],
+    "criteria" : [ "demonstrates intellectual curiosity, prototyping agility, and pragmatic innovation", "challenges assumptions constructively with data and working code", "delivers real, measurable impact from innovative initiatives" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-223",
+    "question" : "How do you create space for experimentation and creative prototyping in your regular engineering workflow?",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Innovation & Proactive Problem Solving",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "innovation", "prototyping", "proactive", "problem solving", "curiosity", "innovation & proactive problem solving" ],
+    "criteria" : [ "demonstrates intellectual curiosity, prototyping agility, and pragmatic innovation", "challenges assumptions constructively with data and working code", "delivers real, measurable impact from innovative initiatives" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-224",
+    "question" : "Describe a time you automated a repetitive, manual task that was wasting team time.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Innovation & Proactive Problem Solving",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "innovation", "prototyping", "proactive", "problem solving", "curiosity", "innovation & proactive problem solving" ],
+    "criteria" : [ "demonstrates intellectual curiosity, prototyping agility, and pragmatic innovation", "challenges assumptions constructively with data and working code", "delivers real, measurable impact from innovative initiatives" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-225",
+    "question" : "Tell me about a hackathon or innovation day project you built, and whether it made its way into production.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Innovation & Proactive Problem Solving",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "innovation", "prototyping", "proactive", "problem solving", "curiosity", "innovation & proactive problem solving" ],
+    "criteria" : [ "demonstrates intellectual curiosity, prototyping agility, and pragmatic innovation", "challenges assumptions constructively with data and working code", "delivers real, measurable impact from innovative initiatives" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-226",
+    "question" : "Describe a situation where asking 'why do we do it this way?' led to a major process or technical improvement.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Innovation & Proactive Problem Solving",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "innovation", "prototyping", "proactive", "problem solving", "curiosity", "innovation & proactive problem solving" ],
+    "criteria" : [ "demonstrates intellectual curiosity, prototyping agility, and pragmatic innovation", "challenges assumptions constructively with data and working code", "delivers real, measurable impact from innovative initiatives" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-227",
+    "question" : "Tell me about a time you identified a bug or performance flaw before any customer or automated monitor detected it.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Innovation & Proactive Problem Solving",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "innovation", "prototyping", "proactive", "problem solving", "curiosity", "innovation & proactive problem solving" ],
+    "criteria" : [ "demonstrates intellectual curiosity, prototyping agility, and pragmatic innovation", "challenges assumptions constructively with data and working code", "delivers real, measurable impact from innovative initiatives" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-228",
+    "question" : "Describe an experience where you experimented with a new programming language or tool to solve an existing problem better.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Innovation & Proactive Problem Solving",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "innovation", "prototyping", "proactive", "problem solving", "curiosity", "innovation & proactive problem solving" ],
+    "criteria" : [ "demonstrates intellectual curiosity, prototyping agility, and pragmatic innovation", "challenges assumptions constructively with data and working code", "delivers real, measurable impact from innovative initiatives" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-229",
+    "question" : "Tell me about a creative workaround you implemented when standard documentation and solutions failed.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Innovation & Proactive Problem Solving",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "innovation", "prototyping", "proactive", "problem solving", "curiosity", "innovation & proactive problem solving" ],
+    "criteria" : [ "demonstrates intellectual curiosity, prototyping agility, and pragmatic innovation", "challenges assumptions constructively with data and working code", "delivers real, measurable impact from innovative initiatives" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-230",
+    "question" : "Tell me about a time you applied a concept from a completely different domain (e.g. game design, finance, hardware) to solve a web backend problem.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Innovation & Proactive Problem Solving",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "innovation", "prototyping", "proactive", "problem solving", "curiosity", "innovation & proactive problem solving" ],
+    "criteria" : [ "demonstrates intellectual curiosity, prototyping agility, and pragmatic innovation", "challenges assumptions constructively with data and working code", "delivers real, measurable impact from innovative initiatives" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-231",
+    "question" : "Describe how you fostered an innovation pipeline within your team that resulted in patent filings or novel open-source contributions.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Innovation & Proactive Problem Solving",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "innovation", "prototyping", "proactive", "problem solving", "curiosity", "innovation & proactive problem solving" ],
+    "criteria" : [ "demonstrates intellectual curiosity, prototyping agility, and pragmatic innovation", "challenges assumptions constructively with data and working code", "delivers real, measurable impact from innovative initiatives" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-232",
+    "question" : "Give an example of an innovative technical risk you took that failed, and how you extracted valuable lessons for future projects.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Innovation & Proactive Problem Solving",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "innovation", "prototyping", "proactive", "problem solving", "curiosity", "innovation & proactive problem solving" ],
+    "criteria" : [ "demonstrates intellectual curiosity, prototyping agility, and pragmatic innovation", "challenges assumptions constructively with data and working code", "delivers real, measurable impact from innovative initiatives" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-233",
+    "question" : "Tell me about a time you identified an upcoming industry trend and prepared your systems ahead of time to capture market share.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Innovation & Proactive Problem Solving",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "innovation", "prototyping", "proactive", "problem solving", "curiosity", "innovation & proactive problem solving" ],
+    "criteria" : [ "demonstrates intellectual curiosity, prototyping agility, and pragmatic innovation", "challenges assumptions constructively with data and working code", "delivers real, measurable impact from innovative initiatives" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-234",
+    "question" : "Tell me about a time you built a proof-of-concept prototype in your spare time that convinced leadership to greenlight a major new product feature.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Innovation & Proactive Problem Solving",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "innovation", "prototyping", "proactive", "problem solving", "curiosity", "innovation & proactive problem solving" ],
+    "criteria" : [ "demonstrates intellectual curiosity, prototyping agility, and pragmatic innovation", "challenges assumptions constructively with data and working code", "delivers real, measurable impact from innovative initiatives" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-235",
+    "question" : "Describe a situation where you recognized an unaddressed customer need through log analysis or telemetry and built a tool to solve it.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Innovation & Proactive Problem Solving",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "innovation", "prototyping", "proactive", "problem solving", "curiosity", "innovation & proactive problem solving" ],
+    "criteria" : [ "demonstrates intellectual curiosity, prototyping agility, and pragmatic innovation", "challenges assumptions constructively with data and working code", "delivers real, measurable impact from innovative initiatives" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-236",
+    "question" : "Share an experience where you reimagined an existing legacy workflow, reducing operational latency or cost by an order of magnitude.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Innovation & Proactive Problem Solving",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "innovation", "prototyping", "proactive", "problem solving", "curiosity", "innovation & proactive problem solving" ],
+    "criteria" : [ "demonstrates intellectual curiosity, prototyping agility, and pragmatic innovation", "challenges assumptions constructively with data and working code", "delivers real, measurable impact from innovative initiatives" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-237",
+    "question" : "Tell me about a time you applied a concept from a completely different domain (e.g. game design, finance, hardware) to solve a web backend problem.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Innovation & Proactive Problem Solving",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "innovation", "prototyping", "proactive", "problem solving", "curiosity", "innovation & proactive problem solving" ],
+    "criteria" : [ "demonstrates intellectual curiosity, prototyping agility, and pragmatic innovation", "challenges assumptions constructively with data and working code", "delivers real, measurable impact from innovative initiatives" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-238",
+    "question" : "Describe how you fostered an innovation pipeline within your team that resulted in patent filings or novel open-source contributions.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Innovation & Proactive Problem Solving",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "innovation", "prototyping", "proactive", "problem solving", "curiosity", "innovation & proactive problem solving" ],
+    "criteria" : [ "demonstrates intellectual curiosity, prototyping agility, and pragmatic innovation", "challenges assumptions constructively with data and working code", "delivers real, measurable impact from innovative initiatives" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-239",
+    "question" : "Give an example of an innovative technical risk you took that failed, and how you extracted valuable lessons for future projects.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Innovation & Proactive Problem Solving",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "innovation", "prototyping", "proactive", "problem solving", "curiosity", "innovation & proactive problem solving" ],
+    "criteria" : [ "demonstrates intellectual curiosity, prototyping agility, and pragmatic innovation", "challenges assumptions constructively with data and working code", "delivers real, measurable impact from innovative initiatives" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-240",
+    "question" : "Tell me about a time you identified an upcoming industry trend and prepared your systems ahead of time to capture market share.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Innovation & Proactive Problem Solving",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "innovation", "prototyping", "proactive", "problem solving", "curiosity", "innovation & proactive problem solving" ],
+    "criteria" : [ "demonstrates intellectual curiosity, prototyping agility, and pragmatic innovation", "challenges assumptions constructively with data and working code", "delivers real, measurable impact from innovative initiatives" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-241",
+    "question" : "Tell me about a time you built a proof-of-concept prototype in your spare time that convinced leadership to greenlight a major new product feature.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Innovation & Proactive Problem Solving",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "innovation", "prototyping", "proactive", "problem solving", "curiosity", "innovation & proactive problem solving" ],
+    "criteria" : [ "demonstrates intellectual curiosity, prototyping agility, and pragmatic innovation", "challenges assumptions constructively with data and working code", "delivers real, measurable impact from innovative initiatives" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-242",
+    "question" : "Describe a situation where you recognized an unaddressed customer need through log analysis or telemetry and built a tool to solve it.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Innovation & Proactive Problem Solving",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "innovation", "prototyping", "proactive", "problem solving", "curiosity", "innovation & proactive problem solving" ],
+    "criteria" : [ "demonstrates intellectual curiosity, prototyping agility, and pragmatic innovation", "challenges assumptions constructively with data and working code", "delivers real, measurable impact from innovative initiatives" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-243",
+    "question" : "Share an experience where you reimagined an existing legacy workflow, reducing operational latency or cost by an order of magnitude.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Innovation & Proactive Problem Solving",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "innovation", "prototyping", "proactive", "problem solving", "curiosity", "innovation & proactive problem solving" ],
+    "criteria" : [ "demonstrates intellectual curiosity, prototyping agility, and pragmatic innovation", "challenges assumptions constructively with data and working code", "delivers real, measurable impact from innovative initiatives" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-244",
+    "question" : "Tell me about a time you applied a concept from a completely different domain (e.g. game design, finance, hardware) to solve a web backend problem.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Innovation & Proactive Problem Solving",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "innovation", "prototyping", "proactive", "problem solving", "curiosity", "innovation & proactive problem solving" ],
+    "criteria" : [ "demonstrates intellectual curiosity, prototyping agility, and pragmatic innovation", "challenges assumptions constructively with data and working code", "delivers real, measurable impact from innovative initiatives" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-245",
+    "question" : "Describe how you architected and launched an industry-first technical capability that gave your company a decisive competitive advantage in the market.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Innovation & Proactive Problem Solving",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "innovation", "prototyping", "proactive", "problem solving", "curiosity", "innovation & proactive problem solving" ],
+    "criteria" : [ "demonstrates intellectual curiosity, prototyping agility, and pragmatic innovation", "challenges assumptions constructively with data and working code", "delivers real, measurable impact from innovative initiatives" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-246",
+    "question" : "Tell me about a time you led your engineering organization through the rapid adoption of generative AI / LLM capabilities, delivering measurable customer ROI.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Innovation & Proactive Problem Solving",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "innovation", "prototyping", "proactive", "problem solving", "curiosity", "innovation & proactive problem solving" ],
+    "criteria" : [ "demonstrates intellectual curiosity, prototyping agility, and pragmatic innovation", "challenges assumptions constructively with data and working code", "delivers real, measurable impact from innovative initiatives" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-247",
+    "question" : "Share a story where your proactive identification of a systemic architectural flaw saved your enterprise millions of dollars in potential downtime or fines.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Innovation & Proactive Problem Solving",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "innovation", "prototyping", "proactive", "problem solving", "curiosity", "innovation & proactive problem solving" ],
+    "criteria" : [ "demonstrates intellectual curiosity, prototyping agility, and pragmatic innovation", "challenges assumptions constructively with data and working code", "delivers real, measurable impact from innovative initiatives" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-248",
+    "question" : "Describe an experience where you challenged a deeply entrenched industry dogma with rigorous empirical evidence, establishing a new architectural benchmark.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Innovation & Proactive Problem Solving",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "innovation", "prototyping", "proactive", "problem solving", "curiosity", "innovation & proactive problem solving" ],
+    "criteria" : [ "demonstrates intellectual curiosity, prototyping agility, and pragmatic innovation", "challenges assumptions constructively with data and working code", "delivers real, measurable impact from innovative initiatives" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-249",
+    "question" : "Tell me about an experience where you converted a proprietary in-house framework into a widely adopted open-source project with an active global community.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Innovation & Proactive Problem Solving",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "innovation", "prototyping", "proactive", "problem solving", "curiosity", "innovation & proactive problem solving" ],
+    "criteria" : [ "demonstrates intellectual curiosity, prototyping agility, and pragmatic innovation", "challenges assumptions constructively with data and working code", "delivers real, measurable impact from innovative initiatives" ],
+    "follow_up" : true
+  }, {
+    "id" : "LEAD-250",
+    "question" : "Describe how you architected and launched an industry-first technical capability that gave your company a decisive competitive advantage in the market.",
+    "subject" : "Leadership & Initiative",
+    "topic" : "Innovation & Proactive Problem Solving",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "innovation", "prototyping", "proactive", "problem solving", "curiosity", "innovation & proactive problem solving" ],
+    "criteria" : [ "demonstrates intellectual curiosity, prototyping agility, and pragmatic innovation", "challenges assumptions constructively with data and working code", "delivers real, measurable impact from innovative initiatives" ],
+    "follow_up" : true
+  } ]
+}

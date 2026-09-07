@@ -1,0 +1,2507 @@
+{
+  "subject" : "API Security & Design",
+  "batch" : "combined",
+  "version" : "1.0",
+  "language" : null,
+  "questions" : [ {
+    "id" : "SEC-001",
+    "question" : "What is the difference between Authentication (AuthN) and Authorization (AuthZ) in web security?",
+    "subject" : "API Security & Design",
+    "topic" : "OAuth2 & JWT Token Architecture",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "oauth2", "jwt", "tokens", "oidc", "authentication", "oauth2 & jwt token architecture" ],
+    "criteria" : [ "explains OAuth 2.0 flows (Authorization Code with PKCE, Client Credentials)", "analyzes JWT structure, signature validation (RS256 vs HS256), and claims verification", "evaluates token storage security, revocation strategies, and SSO federation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-002",
+    "question" : "What is OAuth 2.0, and what problem does it solve compared to sharing user passwords with third-party applications?",
+    "subject" : "API Security & Design",
+    "topic" : "OAuth2 & JWT Token Architecture",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "oauth2", "jwt", "tokens", "oidc", "authentication", "oauth2 & jwt token architecture" ],
+    "criteria" : [ "explains OAuth 2.0 flows (Authorization Code with PKCE, Client Credentials)", "analyzes JWT structure, signature validation (RS256 vs HS256), and claims verification", "evaluates token storage security, revocation strategies, and SSO federation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-003",
+    "question" : "What are the core roles defined in the OAuth 2.0 framework (Resource Owner, Client, Authorization Server, Resource Server)?",
+    "subject" : "API Security & Design",
+    "topic" : "OAuth2 & JWT Token Architecture",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "oauth2", "jwt", "tokens", "oidc", "authentication", "oauth2 & jwt token architecture" ],
+    "criteria" : [ "explains OAuth 2.0 flows (Authorization Code with PKCE, Client Credentials)", "analyzes JWT structure, signature validation (RS256 vs HS256), and claims verification", "evaluates token storage security, revocation strategies, and SSO federation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-004",
+    "question" : "What is a JSON Web Token (JWT), and what are the three distinct components of its structure (Header, Payload, Signature)?",
+    "subject" : "API Security & Design",
+    "topic" : "OAuth2 & JWT Token Architecture",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "oauth2", "jwt", "tokens", "oidc", "authentication", "oauth2 & jwt token architecture" ],
+    "criteria" : [ "explains OAuth 2.0 flows (Authorization Code with PKCE, Client Credentials)", "analyzes JWT structure, signature validation (RS256 vs HS256), and claims verification", "evaluates token storage security, revocation strategies, and SSO federation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-005",
+    "question" : "What is the difference between symmetric signing (HS256) and asymmetric signing (RS256) for JWTs?",
+    "subject" : "API Security & Design",
+    "topic" : "OAuth2 & JWT Token Architecture",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "oauth2", "jwt", "tokens", "oidc", "authentication", "oauth2 & jwt token architecture" ],
+    "criteria" : [ "explains OAuth 2.0 flows (Authorization Code with PKCE, Client Credentials)", "analyzes JWT structure, signature validation (RS256 vs HS256), and claims verification", "evaluates token storage security, revocation strategies, and SSO federation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-006",
+    "question" : "What is OpenID Connect (OIDC), and how does it build an identity layer on top of OAuth 2.0?",
+    "subject" : "API Security & Design",
+    "topic" : "OAuth2 & JWT Token Architecture",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "oauth2", "jwt", "tokens", "oidc", "authentication", "oauth2 & jwt token architecture" ],
+    "criteria" : [ "explains OAuth 2.0 flows (Authorization Code with PKCE, Client Credentials)", "analyzes JWT structure, signature validation (RS256 vs HS256), and claims verification", "evaluates token storage security, revocation strategies, and SSO federation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-007",
+    "question" : "What is the purpose of an Access Token versus a Refresh Token in token-based authentication?",
+    "subject" : "API Security & Design",
+    "topic" : "OAuth2 & JWT Token Architecture",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "oauth2", "jwt", "tokens", "oidc", "authentication", "oauth2 & jwt token architecture" ],
+    "criteria" : [ "explains OAuth 2.0 flows (Authorization Code with PKCE, Client Credentials)", "analyzes JWT structure, signature validation (RS256 vs HS256), and claims verification", "evaluates token storage security, revocation strategies, and SSO federation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-008",
+    "question" : "What is the difference between Authentication (AuthN) and Authorization (AuthZ) in web security?",
+    "subject" : "API Security & Design",
+    "topic" : "OAuth2 & JWT Token Architecture",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "oauth2", "jwt", "tokens", "oidc", "authentication", "oauth2 & jwt token architecture" ],
+    "criteria" : [ "explains OAuth 2.0 flows (Authorization Code with PKCE, Client Credentials)", "analyzes JWT structure, signature validation (RS256 vs HS256), and claims verification", "evaluates token storage security, revocation strategies, and SSO federation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-009",
+    "question" : "What is OAuth 2.0, and what problem does it solve compared to sharing user passwords with third-party applications?",
+    "subject" : "API Security & Design",
+    "topic" : "OAuth2 & JWT Token Architecture",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "oauth2", "jwt", "tokens", "oidc", "authentication", "oauth2 & jwt token architecture" ],
+    "criteria" : [ "explains OAuth 2.0 flows (Authorization Code with PKCE, Client Credentials)", "analyzes JWT structure, signature validation (RS256 vs HS256), and claims verification", "evaluates token storage security, revocation strategies, and SSO federation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-010",
+    "question" : "What are the core roles defined in the OAuth 2.0 framework (Resource Owner, Client, Authorization Server, Resource Server)?",
+    "subject" : "API Security & Design",
+    "topic" : "OAuth2 & JWT Token Architecture",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "oauth2", "jwt", "tokens", "oidc", "authentication", "oauth2 & jwt token architecture" ],
+    "criteria" : [ "explains OAuth 2.0 flows (Authorization Code with PKCE, Client Credentials)", "analyzes JWT structure, signature validation (RS256 vs HS256), and claims verification", "evaluates token storage security, revocation strategies, and SSO federation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-011",
+    "question" : "How does an Authorization Server implement Token Introspection (RFC 7662) and Token Revocation (RFC 7009)?",
+    "subject" : "API Security & Design",
+    "topic" : "OAuth2 & JWT Token Architecture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "oauth2", "jwt", "tokens", "oidc", "authentication", "oauth2 & jwt token architecture" ],
+    "criteria" : [ "explains OAuth 2.0 flows (Authorization Code with PKCE, Client Credentials)", "analyzes JWT structure, signature validation (RS256 vs HS256), and claims verification", "evaluates token storage security, revocation strategies, and SSO federation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-012",
+    "question" : "Explain the difference between client credentials grant and resource owner password credentials grant, and why password grant is deprecated.",
+    "subject" : "API Security & Design",
+    "topic" : "OAuth2 & JWT Token Architecture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "oauth2", "jwt", "tokens", "oidc", "authentication", "oauth2 & jwt token architecture" ],
+    "criteria" : [ "explains OAuth 2.0 flows (Authorization Code with PKCE, Client Credentials)", "analyzes JWT structure, signature validation (RS256 vs HS256), and claims verification", "evaluates token storage security, revocation strategies, and SSO federation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-013",
+    "question" : "How do JWKS (JSON Web Key Sets) allow resource servers to automatically fetch public keys to verify JWT signatures without hardcoding secrets?",
+    "subject" : "API Security & Design",
+    "topic" : "OAuth2 & JWT Token Architecture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "oauth2", "jwt", "tokens", "oidc", "authentication", "oauth2 & jwt token architecture" ],
+    "criteria" : [ "explains OAuth 2.0 flows (Authorization Code with PKCE, Client Credentials)", "analyzes JWT structure, signature validation (RS256 vs HS256), and claims verification", "evaluates token storage security, revocation strategies, and SSO federation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-014",
+    "question" : "What are standard JWT claims (`sub`, `iss`, `aud`, `exp`, `nbf`, `iat`), and why is validating `iss` and `aud` critical to prevent token spoofing?",
+    "subject" : "API Security & Design",
+    "topic" : "OAuth2 & JWT Token Architecture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "oauth2", "jwt", "tokens", "oidc", "authentication", "oauth2 & jwt token architecture" ],
+    "criteria" : [ "explains OAuth 2.0 flows (Authorization Code with PKCE, Client Credentials)", "analyzes JWT structure, signature validation (RS256 vs HS256), and claims verification", "evaluates token storage security, revocation strategies, and SSO federation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-015",
+    "question" : "Explain the OAuth 2.0 Authorization Code Grant with PKCE (Proof Key for Code Exchange) and why it is required for SPAs and mobile apps.",
+    "subject" : "API Security & Design",
+    "topic" : "OAuth2 & JWT Token Architecture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "oauth2", "jwt", "tokens", "oidc", "authentication", "oauth2 & jwt token architecture" ],
+    "criteria" : [ "explains OAuth 2.0 flows (Authorization Code with PKCE, Client Credentials)", "analyzes JWT structure, signature validation (RS256 vs HS256), and claims verification", "evaluates token storage security, revocation strategies, and SSO federation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-016",
+    "question" : "How do you handle JWT revocation before its expiration timestamp if the user logs out or changes their password?",
+    "subject" : "API Security & Design",
+    "topic" : "OAuth2 & JWT Token Architecture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "oauth2", "jwt", "tokens", "oidc", "authentication", "oauth2 & jwt token architecture" ],
+    "criteria" : [ "explains OAuth 2.0 flows (Authorization Code with PKCE, Client Credentials)", "analyzes JWT structure, signature validation (RS256 vs HS256), and claims verification", "evaluates token storage security, revocation strategies, and SSO federation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-017",
+    "question" : "What are the security risks of storing JWTs in browser `localStorage` versus `HttpOnly`, `Secure`, `SameSite` cookies?",
+    "subject" : "API Security & Design",
+    "topic" : "OAuth2 & JWT Token Architecture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "oauth2", "jwt", "tokens", "oidc", "authentication", "oauth2 & jwt token architecture" ],
+    "criteria" : [ "explains OAuth 2.0 flows (Authorization Code with PKCE, Client Credentials)", "analyzes JWT structure, signature validation (RS256 vs HS256), and claims verification", "evaluates token storage security, revocation strategies, and SSO federation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-018",
+    "question" : "How does an Authorization Server implement Token Introspection (RFC 7662) and Token Revocation (RFC 7009)?",
+    "subject" : "API Security & Design",
+    "topic" : "OAuth2 & JWT Token Architecture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "oauth2", "jwt", "tokens", "oidc", "authentication", "oauth2 & jwt token architecture" ],
+    "criteria" : [ "explains OAuth 2.0 flows (Authorization Code with PKCE, Client Credentials)", "analyzes JWT structure, signature validation (RS256 vs HS256), and claims verification", "evaluates token storage security, revocation strategies, and SSO federation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-019",
+    "question" : "Explain the difference between client credentials grant and resource owner password credentials grant, and why password grant is deprecated.",
+    "subject" : "API Security & Design",
+    "topic" : "OAuth2 & JWT Token Architecture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "oauth2", "jwt", "tokens", "oidc", "authentication", "oauth2 & jwt token architecture" ],
+    "criteria" : [ "explains OAuth 2.0 flows (Authorization Code with PKCE, Client Credentials)", "analyzes JWT structure, signature validation (RS256 vs HS256), and claims verification", "evaluates token storage security, revocation strategies, and SSO federation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-020",
+    "question" : "How do JWKS (JSON Web Key Sets) allow resource servers to automatically fetch public keys to verify JWT signatures without hardcoding secrets?",
+    "subject" : "API Security & Design",
+    "topic" : "OAuth2 & JWT Token Architecture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "oauth2", "jwt", "tokens", "oidc", "authentication", "oauth2 & jwt token architecture" ],
+    "criteria" : [ "explains OAuth 2.0 flows (Authorization Code with PKCE, Client Credentials)", "analyzes JWT structure, signature validation (RS256 vs HS256), and claims verification", "evaluates token storage security, revocation strategies, and SSO federation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-021",
+    "question" : "What are standard JWT claims (`sub`, `iss`, `aud`, `exp`, `nbf`, `iat`), and why is validating `iss` and `aud` critical to prevent token spoofing?",
+    "subject" : "API Security & Design",
+    "topic" : "OAuth2 & JWT Token Architecture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "oauth2", "jwt", "tokens", "oidc", "authentication", "oauth2 & jwt token architecture" ],
+    "criteria" : [ "explains OAuth 2.0 flows (Authorization Code with PKCE, Client Credentials)", "analyzes JWT structure, signature validation (RS256 vs HS256), and claims verification", "evaluates token storage security, revocation strategies, and SSO federation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-022",
+    "question" : "Explain the OAuth 2.0 Authorization Code Grant with PKCE (Proof Key for Code Exchange) and why it is required for SPAs and mobile apps.",
+    "subject" : "API Security & Design",
+    "topic" : "OAuth2 & JWT Token Architecture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "oauth2", "jwt", "tokens", "oidc", "authentication", "oauth2 & jwt token architecture" ],
+    "criteria" : [ "explains OAuth 2.0 flows (Authorization Code with PKCE, Client Credentials)", "analyzes JWT structure, signature validation (RS256 vs HS256), and claims verification", "evaluates token storage security, revocation strategies, and SSO federation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-023",
+    "question" : "How do you handle JWT revocation before its expiration timestamp if the user logs out or changes their password?",
+    "subject" : "API Security & Design",
+    "topic" : "OAuth2 & JWT Token Architecture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "oauth2", "jwt", "tokens", "oidc", "authentication", "oauth2 & jwt token architecture" ],
+    "criteria" : [ "explains OAuth 2.0 flows (Authorization Code with PKCE, Client Credentials)", "analyzes JWT structure, signature validation (RS256 vs HS256), and claims verification", "evaluates token storage security, revocation strategies, and SSO federation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-024",
+    "question" : "What are the security risks of storing JWTs in browser `localStorage` versus `HttpOnly`, `Secure`, `SameSite` cookies?",
+    "subject" : "API Security & Design",
+    "topic" : "OAuth2 & JWT Token Architecture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "oauth2", "jwt", "tokens", "oidc", "authentication", "oauth2 & jwt token architecture" ],
+    "criteria" : [ "explains OAuth 2.0 flows (Authorization Code with PKCE, Client Credentials)", "analyzes JWT structure, signature validation (RS256 vs HS256), and claims verification", "evaluates token storage security, revocation strategies, and SSO federation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-025",
+    "question" : "How does an Authorization Server implement Token Introspection (RFC 7662) and Token Revocation (RFC 7009)?",
+    "subject" : "API Security & Design",
+    "topic" : "OAuth2 & JWT Token Architecture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "oauth2", "jwt", "tokens", "oidc", "authentication", "oauth2 & jwt token architecture" ],
+    "criteria" : [ "explains OAuth 2.0 flows (Authorization Code with PKCE, Client Credentials)", "analyzes JWT structure, signature validation (RS256 vs HS256), and claims verification", "evaluates token storage security, revocation strategies, and SSO federation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-026",
+    "question" : "Explain the difference between client credentials grant and resource owner password credentials grant, and why password grant is deprecated.",
+    "subject" : "API Security & Design",
+    "topic" : "OAuth2 & JWT Token Architecture",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "oauth2", "jwt", "tokens", "oidc", "authentication", "oauth2 & jwt token architecture" ],
+    "criteria" : [ "explains OAuth 2.0 flows (Authorization Code with PKCE, Client Credentials)", "analyzes JWT structure, signature validation (RS256 vs HS256), and claims verification", "evaluates token storage security, revocation strategies, and SSO federation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-027",
+    "question" : "Analyze vulnerabilities in JWT implementations: algorithm confusion attacks (switching RS256 to HS256), `none` algorithm exploits, and signature stripping.",
+    "subject" : "API Security & Design",
+    "topic" : "OAuth2 & JWT Token Architecture",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "oauth2", "jwt", "tokens", "oidc", "authentication", "oauth2 & jwt token architecture" ],
+    "criteria" : [ "explains OAuth 2.0 flows (Authorization Code with PKCE, Client Credentials)", "analyzes JWT structure, signature validation (RS256 vs HS256), and claims verification", "evaluates token storage security, revocation strategies, and SSO federation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-028",
+    "question" : "Design a distributed session revocation architecture that invalidates user JWTs across 200 microservices within 500 milliseconds of security compromise.",
+    "subject" : "API Security & Design",
+    "topic" : "OAuth2 & JWT Token Architecture",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "oauth2", "jwt", "tokens", "oidc", "authentication", "oauth2 & jwt token architecture" ],
+    "criteria" : [ "explains OAuth 2.0 flows (Authorization Code with PKCE, Client Credentials)", "analyzes JWT structure, signature validation (RS256 vs HS256), and claims verification", "evaluates token storage security, revocation strategies, and SSO federation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-029",
+    "question" : "Evaluate the security and performance trade-offs of reference tokens (opaque tokens validated via introspection) versus self-contained JWT tokens.",
+    "subject" : "API Security & Design",
+    "topic" : "OAuth2 & JWT Token Architecture",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "oauth2", "jwt", "tokens", "oidc", "authentication", "oauth2 & jwt token architecture" ],
+    "criteria" : [ "explains OAuth 2.0 flows (Authorization Code with PKCE, Client Credentials)", "analyzes JWT structure, signature validation (RS256 vs HS256), and claims verification", "evaluates token storage security, revocation strategies, and SSO federation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-030",
+    "question" : "How do you architect machine-to-machine (M2M) API authentication across internal microservices using SPIFFE/SPIRE cryptographic identities?",
+    "subject" : "API Security & Design",
+    "topic" : "OAuth2 & JWT Token Architecture",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "oauth2", "jwt", "tokens", "oidc", "authentication", "oauth2 & jwt token architecture" ],
+    "criteria" : [ "explains OAuth 2.0 flows (Authorization Code with PKCE, Client Credentials)", "analyzes JWT structure, signature validation (RS256 vs HS256), and claims verification", "evaluates token storage security, revocation strategies, and SSO federation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-031",
+    "question" : "Architect an enterprise Single Sign-On (SSO) and token issuance platform supporting multi-tenant federation (SAML 2.0 and OIDC).",
+    "subject" : "API Security & Design",
+    "topic" : "OAuth2 & JWT Token Architecture",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "oauth2", "jwt", "tokens", "oidc", "authentication", "oauth2 & jwt token architecture" ],
+    "criteria" : [ "explains OAuth 2.0 flows (Authorization Code with PKCE, Client Credentials)", "analyzes JWT structure, signature validation (RS256 vs HS256), and claims verification", "evaluates token storage security, revocation strategies, and SSO federation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-032",
+    "question" : "Analyze vulnerabilities in JWT implementations: algorithm confusion attacks (switching RS256 to HS256), `none` algorithm exploits, and signature stripping.",
+    "subject" : "API Security & Design",
+    "topic" : "OAuth2 & JWT Token Architecture",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "oauth2", "jwt", "tokens", "oidc", "authentication", "oauth2 & jwt token architecture" ],
+    "criteria" : [ "explains OAuth 2.0 flows (Authorization Code with PKCE, Client Credentials)", "analyzes JWT structure, signature validation (RS256 vs HS256), and claims verification", "evaluates token storage security, revocation strategies, and SSO federation" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-033",
+    "question" : "What is REST (Representational State Transfer), and what are its core architectural constraints?",
+    "subject" : "API Security & Design",
+    "topic" : "REST API Standards & Richardson Model",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "rest", "api design", "http methods", "idempotency", "hateoas", "rest api standards & richardson model" ],
+    "criteria" : [ "applies REST principles, idempotent HTTP semantics, and proper status codes", "implements caching with ETags, conditional requests, and idempotency keys", "designs robust API contracts, pagination, and RFC 7807 error structures" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-034",
+    "question" : "Explain the four levels of the Richardson Maturity Model for REST APIs (Level 0 through Level 3).",
+    "subject" : "API Security & Design",
+    "topic" : "REST API Standards & Richardson Model",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "rest", "api design", "http methods", "idempotency", "hateoas", "rest api standards & richardson model" ],
+    "criteria" : [ "applies REST principles, idempotent HTTP semantics, and proper status codes", "implements caching with ETags, conditional requests, and idempotency keys", "designs robust API contracts, pagination, and RFC 7807 error structures" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-035",
+    "question" : "What is HATEOAS (Hypermedia as the Engine of Application State), and what does Level 3 REST compliance entail?",
+    "subject" : "API Security & Design",
+    "topic" : "REST API Standards & Richardson Model",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "rest", "api design", "http methods", "idempotency", "hateoas", "rest api standards & richardson model" ],
+    "criteria" : [ "applies REST principles, idempotent HTTP semantics, and proper status codes", "implements caching with ETags, conditional requests, and idempotency keys", "designs robust API contracts, pagination, and RFC 7807 error structures" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-036",
+    "question" : "Explain the difference between idempotent and non-idempotent HTTP methods (GET, POST, PUT, DELETE, PATCH).",
+    "subject" : "API Security & Design",
+    "topic" : "REST API Standards & Richardson Model",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "rest", "api design", "http methods", "idempotency", "hateoas", "rest api standards & richardson model" ],
+    "criteria" : [ "applies REST principles, idempotent HTTP semantics, and proper status codes", "implements caching with ETags, conditional requests, and idempotency keys", "designs robust API contracts, pagination, and RFC 7807 error structures" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-037",
+    "question" : "What is the difference between `PUT` and `PATCH` when updating resources in a RESTful API?",
+    "subject" : "API Security & Design",
+    "topic" : "REST API Standards & Richardson Model",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "rest", "api design", "http methods", "idempotency", "hateoas", "rest api standards & richardson model" ],
+    "criteria" : [ "applies REST principles, idempotent HTTP semantics, and proper status codes", "implements caching with ETags, conditional requests, and idempotency keys", "designs robust API contracts, pagination, and RFC 7807 error structures" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-038",
+    "question" : "What are standard HTTP status code categories (2xx, 3xx, 4xx, 5xx), and when should 201 Created vs 200 OK vs 204 No Content be used?",
+    "subject" : "API Security & Design",
+    "topic" : "REST API Standards & Richardson Model",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "rest", "api design", "http methods", "idempotency", "hateoas", "rest api standards & richardson model" ],
+    "criteria" : [ "applies REST principles, idempotent HTTP semantics, and proper status codes", "implements caching with ETags, conditional requests, and idempotency keys", "designs robust API contracts, pagination, and RFC 7807 error structures" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-039",
+    "question" : "What is API versioning, and what are the trade-offs between URI versioning, header versioning, and query parameter versioning?",
+    "subject" : "API Security & Design",
+    "topic" : "REST API Standards & Richardson Model",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "rest", "api design", "http methods", "idempotency", "hateoas", "rest api standards & richardson model" ],
+    "criteria" : [ "applies REST principles, idempotent HTTP semantics, and proper status codes", "implements caching with ETags, conditional requests, and idempotency keys", "designs robust API contracts, pagination, and RFC 7807 error structures" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-040",
+    "question" : "What is REST (Representational State Transfer), and what are its core architectural constraints?",
+    "subject" : "API Security & Design",
+    "topic" : "REST API Standards & Richardson Model",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "rest", "api design", "http methods", "idempotency", "hateoas", "rest api standards & richardson model" ],
+    "criteria" : [ "applies REST principles, idempotent HTTP semantics, and proper status codes", "implements caching with ETags, conditional requests, and idempotency keys", "designs robust API contracts, pagination, and RFC 7807 error structures" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-041",
+    "question" : "Explain the four levels of the Richardson Maturity Model for REST APIs (Level 0 through Level 3).",
+    "subject" : "API Security & Design",
+    "topic" : "REST API Standards & Richardson Model",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "rest", "api design", "http methods", "idempotency", "hateoas", "rest api standards & richardson model" ],
+    "criteria" : [ "applies REST principles, idempotent HTTP semantics, and proper status codes", "implements caching with ETags, conditional requests, and idempotency keys", "designs robust API contracts, pagination, and RFC 7807 error structures" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-042",
+    "question" : "What is HATEOAS (Hypermedia as the Engine of Application State), and what does Level 3 REST compliance entail?",
+    "subject" : "API Security & Design",
+    "topic" : "REST API Standards & Richardson Model",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "rest", "api design", "http methods", "idempotency", "hateoas", "rest api standards & richardson model" ],
+    "criteria" : [ "applies REST principles, idempotent HTTP semantics, and proper status codes", "implements caching with ETags, conditional requests, and idempotency keys", "designs robust API contracts, pagination, and RFC 7807 error structures" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-043",
+    "question" : "Compare cursor-based pagination (keyset pagination) with offset/limit pagination regarding SQL efficiency and real-time updates.",
+    "subject" : "API Security & Design",
+    "topic" : "REST API Standards & Richardson Model",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "rest", "api design", "http methods", "idempotency", "hateoas", "rest api standards & richardson model" ],
+    "criteria" : [ "applies REST principles, idempotent HTTP semantics, and proper status codes", "implements caching with ETags, conditional requests, and idempotency keys", "designs robust API contracts, pagination, and RFC 7807 error structures" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-044",
+    "question" : "How do you design REST endpoints that handle bulk operations (creating or updating 500 records in a single request) cleanly?",
+    "subject" : "API Security & Design",
+    "topic" : "REST API Standards & Richardson Model",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "rest", "api design", "http methods", "idempotency", "hateoas", "rest api standards & richardson model" ],
+    "criteria" : [ "applies REST principles, idempotent HTTP semantics, and proper status codes", "implements caching with ETags, conditional requests, and idempotency keys", "designs robust API contracts, pagination, and RFC 7807 error structures" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-045",
+    "question" : "What is Content Negotiation in HTTP, and how do `Accept` and `Content-Type` headers allow clients to request JSON, XML, or Protobuf formats?",
+    "subject" : "API Security & Design",
+    "topic" : "REST API Standards & Richardson Model",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "rest", "api design", "http methods", "idempotency", "hateoas", "rest api standards & richardson model" ],
+    "criteria" : [ "applies REST principles, idempotent HTTP semantics, and proper status codes", "implements caching with ETags, conditional requests, and idempotency keys", "designs robust API contracts, pagination, and RFC 7807 error structures" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-046",
+    "question" : "How do you design backward-compatible API changes without breaking existing client integrations when adding or deprecating fields?",
+    "subject" : "API Security & Design",
+    "topic" : "REST API Standards & Richardson Model",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "rest", "api design", "http methods", "idempotency", "hateoas", "rest api standards & richardson model" ],
+    "criteria" : [ "applies REST principles, idempotent HTTP semantics, and proper status codes", "implements caching with ETags, conditional requests, and idempotency keys", "designs robust API contracts, pagination, and RFC 7807 error structures" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-047",
+    "question" : "How do you implement API idempotency for POST requests (e.g. payment creation) using an `Idempotency-Key` header and database deduplication?",
+    "subject" : "API Security & Design",
+    "topic" : "REST API Standards & Richardson Model",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "rest", "api design", "http methods", "idempotency", "hateoas", "rest api standards & richardson model" ],
+    "criteria" : [ "applies REST principles, idempotent HTTP semantics, and proper status codes", "implements caching with ETags, conditional requests, and idempotency keys", "designs robust API contracts, pagination, and RFC 7807 error structures" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-048",
+    "question" : "Explain how HTTP caching headers (`ETag`, `If-None-Match`, `Cache-Control`, `max-age`) minimize unnecessary data transfers in REST APIs.",
+    "subject" : "API Security & Design",
+    "topic" : "REST API Standards & Richardson Model",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "rest", "api design", "http methods", "idempotency", "hateoas", "rest api standards & richardson model" ],
+    "criteria" : [ "applies REST principles, idempotent HTTP semantics, and proper status codes", "implements caching with ETags, conditional requests, and idempotency keys", "designs robust API contracts, pagination, and RFC 7807 error structures" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-049",
+    "question" : "How do you design clean error responses adhering to RFC 7807 (Problem Details for HTTP APIs) across an entire API ecosystem?",
+    "subject" : "API Security & Design",
+    "topic" : "REST API Standards & Richardson Model",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "rest", "api design", "http methods", "idempotency", "hateoas", "rest api standards & richardson model" ],
+    "criteria" : [ "applies REST principles, idempotent HTTP semantics, and proper status codes", "implements caching with ETags, conditional requests, and idempotency keys", "designs robust API contracts, pagination, and RFC 7807 error structures" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-050",
+    "question" : "Compare cursor-based pagination (keyset pagination) with offset/limit pagination regarding SQL efficiency and real-time updates.",
+    "subject" : "API Security & Design",
+    "topic" : "REST API Standards & Richardson Model",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "rest", "api design", "http methods", "idempotency", "hateoas", "rest api standards & richardson model" ],
+    "criteria" : [ "applies REST principles, idempotent HTTP semantics, and proper status codes", "implements caching with ETags, conditional requests, and idempotency keys", "designs robust API contracts, pagination, and RFC 7807 error structures" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-051",
+    "question" : "How do you design REST endpoints that handle bulk operations (creating or updating 500 records in a single request) cleanly?",
+    "subject" : "API Security & Design",
+    "topic" : "REST API Standards & Richardson Model",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "rest", "api design", "http methods", "idempotency", "hateoas", "rest api standards & richardson model" ],
+    "criteria" : [ "applies REST principles, idempotent HTTP semantics, and proper status codes", "implements caching with ETags, conditional requests, and idempotency keys", "designs robust API contracts, pagination, and RFC 7807 error structures" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-052",
+    "question" : "What is Content Negotiation in HTTP, and how do `Accept` and `Content-Type` headers allow clients to request JSON, XML, or Protobuf formats?",
+    "subject" : "API Security & Design",
+    "topic" : "REST API Standards & Richardson Model",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "rest", "api design", "http methods", "idempotency", "hateoas", "rest api standards & richardson model" ],
+    "criteria" : [ "applies REST principles, idempotent HTTP semantics, and proper status codes", "implements caching with ETags, conditional requests, and idempotency keys", "designs robust API contracts, pagination, and RFC 7807 error structures" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-053",
+    "question" : "How do you design backward-compatible API changes without breaking existing client integrations when adding or deprecating fields?",
+    "subject" : "API Security & Design",
+    "topic" : "REST API Standards & Richardson Model",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "rest", "api design", "http methods", "idempotency", "hateoas", "rest api standards & richardson model" ],
+    "criteria" : [ "applies REST principles, idempotent HTTP semantics, and proper status codes", "implements caching with ETags, conditional requests, and idempotency keys", "designs robust API contracts, pagination, and RFC 7807 error structures" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-054",
+    "question" : "How do you implement API idempotency for POST requests (e.g. payment creation) using an `Idempotency-Key` header and database deduplication?",
+    "subject" : "API Security & Design",
+    "topic" : "REST API Standards & Richardson Model",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "rest", "api design", "http methods", "idempotency", "hateoas", "rest api standards & richardson model" ],
+    "criteria" : [ "applies REST principles, idempotent HTTP semantics, and proper status codes", "implements caching with ETags, conditional requests, and idempotency keys", "designs robust API contracts, pagination, and RFC 7807 error structures" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-055",
+    "question" : "Explain how HTTP caching headers (`ETag`, `If-None-Match`, `Cache-Control`, `max-age`) minimize unnecessary data transfers in REST APIs.",
+    "subject" : "API Security & Design",
+    "topic" : "REST API Standards & Richardson Model",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "rest", "api design", "http methods", "idempotency", "hateoas", "rest api standards & richardson model" ],
+    "criteria" : [ "applies REST principles, idempotent HTTP semantics, and proper status codes", "implements caching with ETags, conditional requests, and idempotency keys", "designs robust API contracts, pagination, and RFC 7807 error structures" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-056",
+    "question" : "How do you design clean error responses adhering to RFC 7807 (Problem Details for HTTP APIs) across an entire API ecosystem?",
+    "subject" : "API Security & Design",
+    "topic" : "REST API Standards & Richardson Model",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "rest", "api design", "http methods", "idempotency", "hateoas", "rest api standards & richardson model" ],
+    "criteria" : [ "applies REST principles, idempotent HTTP semantics, and proper status codes", "implements caching with ETags, conditional requests, and idempotency keys", "designs robust API contracts, pagination, and RFC 7807 error structures" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-057",
+    "question" : "Compare cursor-based pagination (keyset pagination) with offset/limit pagination regarding SQL efficiency and real-time updates.",
+    "subject" : "API Security & Design",
+    "topic" : "REST API Standards & Richardson Model",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "rest", "api design", "http methods", "idempotency", "hateoas", "rest api standards & richardson model" ],
+    "criteria" : [ "applies REST principles, idempotent HTTP semantics, and proper status codes", "implements caching with ETags, conditional requests, and idempotency keys", "designs robust API contracts, pagination, and RFC 7807 error structures" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-058",
+    "question" : "How do you design REST endpoints that handle bulk operations (creating or updating 500 records in a single request) cleanly?",
+    "subject" : "API Security & Design",
+    "topic" : "REST API Standards & Richardson Model",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "rest", "api design", "http methods", "idempotency", "hateoas", "rest api standards & richardson model" ],
+    "criteria" : [ "applies REST principles, idempotent HTTP semantics, and proper status codes", "implements caching with ETags, conditional requests, and idempotency keys", "designs robust API contracts, pagination, and RFC 7807 error structures" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-059",
+    "question" : "Design a resilient financial transaction API that guarantees zero duplicate payments even if mobile clients retry requests across network disconnects.",
+    "subject" : "API Security & Design",
+    "topic" : "REST API Standards & Richardson Model",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "rest", "api design", "http methods", "idempotency", "hateoas", "rest api standards & richardson model" ],
+    "criteria" : [ "applies REST principles, idempotent HTTP semantics, and proper status codes", "implements caching with ETags, conditional requests, and idempotency keys", "designs robust API contracts, pagination, and RFC 7807 error structures" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-060",
+    "question" : "Analyze the architectural trade-offs of implementing strict HATEOAS in modern client-heavy applications (React/Mobile) versus simple JSON REST APIs.",
+    "subject" : "API Security & Design",
+    "topic" : "REST API Standards & Richardson Model",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "rest", "api design", "http methods", "idempotency", "hateoas", "rest api standards & richardson model" ],
+    "criteria" : [ "applies REST principles, idempotent HTTP semantics, and proper status codes", "implements caching with ETags, conditional requests, and idempotency keys", "designs robust API contracts, pagination, and RFC 7807 error structures" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-061",
+    "question" : "How do you architect API deprecation and sunsetting policies (`Deprecation` and `Sunset` headers) for an API serving 10,000 public third-party developers?",
+    "subject" : "API Security & Design",
+    "topic" : "REST API Standards & Richardson Model",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "rest", "api design", "http methods", "idempotency", "hateoas", "rest api standards & richardson model" ],
+    "criteria" : [ "applies REST principles, idempotent HTTP semantics, and proper status codes", "implements caching with ETags, conditional requests, and idempotency keys", "designs robust API contracts, pagination, and RFC 7807 error structures" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-062",
+    "question" : "Design a high-throughput API gateway schema validation filter that validates incoming JSON payloads against JSON Schema at 100,000 requests/second.",
+    "subject" : "API Security & Design",
+    "topic" : "REST API Standards & Richardson Model",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "rest", "api design", "http methods", "idempotency", "hateoas", "rest api standards & richardson model" ],
+    "criteria" : [ "applies REST principles, idempotent HTTP semantics, and proper status codes", "implements caching with ETags, conditional requests, and idempotency keys", "designs robust API contracts, pagination, and RFC 7807 error structures" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-063",
+    "question" : "Architect an enterprise API governance framework enforcing OpenAPI 3.0 specs, spectral linting, and automated contract testing in CI/CD pipelines.",
+    "subject" : "API Security & Design",
+    "topic" : "REST API Standards & Richardson Model",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "rest", "api design", "http methods", "idempotency", "hateoas", "rest api standards & richardson model" ],
+    "criteria" : [ "applies REST principles, idempotent HTTP semantics, and proper status codes", "implements caching with ETags, conditional requests, and idempotency keys", "designs robust API contracts, pagination, and RFC 7807 error structures" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-064",
+    "question" : "Design a resilient financial transaction API that guarantees zero duplicate payments even if mobile clients retry requests across network disconnects.",
+    "subject" : "API Security & Design",
+    "topic" : "REST API Standards & Richardson Model",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "rest", "api design", "http methods", "idempotency", "hateoas", "rest api standards & richardson model" ],
+    "criteria" : [ "applies REST principles, idempotent HTTP semantics, and proper status codes", "implements caching with ETags, conditional requests, and idempotency keys", "designs robust API contracts, pagination, and RFC 7807 error structures" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-065",
+    "question" : "What is the difference between API Rate Limiting and API Throttling?",
+    "subject" : "API Security & Design",
+    "topic" : "API Rate Limiting & Throttling",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "rate limiting", "throttling", "token bucket", "leaky bucket", "ddos", "api rate limiting & throttling" ],
+    "criteria" : [ "compares rate limiting algorithms (Token Bucket, Leaky Bucket, Sliding Window)", "designs distributed rate limiting with Redis atomic operations and Lua scripts", "implements client-side exponential backoff, jitter, and 429 Retry-After semantics" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-066",
+    "question" : "Why is rate limiting essential for protecting backend servers against denial of service and resource starvation?",
+    "subject" : "API Security & Design",
+    "topic" : "API Rate Limiting & Throttling",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "rate limiting", "throttling", "token bucket", "leaky bucket", "ddos", "api rate limiting & throttling" ],
+    "criteria" : [ "compares rate limiting algorithms (Token Bucket, Leaky Bucket, Sliding Window)", "designs distributed rate limiting with Redis atomic operations and Lua scripts", "implements client-side exponential backoff, jitter, and 429 Retry-After semantics" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-067",
+    "question" : "Explain the Token Bucket algorithm for rate limiting and how it handles bursts of traffic.",
+    "subject" : "API Security & Design",
+    "topic" : "API Rate Limiting & Throttling",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "rate limiting", "throttling", "token bucket", "leaky bucket", "ddos", "api rate limiting & throttling" ],
+    "criteria" : [ "compares rate limiting algorithms (Token Bucket, Leaky Bucket, Sliding Window)", "designs distributed rate limiting with Redis atomic operations and Lua scripts", "implements client-side exponential backoff, jitter, and 429 Retry-After semantics" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-068",
+    "question" : "Explain the Leaky Bucket algorithm for rate limiting and how it smooths out traffic flow.",
+    "subject" : "API Security & Design",
+    "topic" : "API Rate Limiting & Throttling",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "rate limiting", "throttling", "token bucket", "leaky bucket", "ddos", "api rate limiting & throttling" ],
+    "criteria" : [ "compares rate limiting algorithms (Token Bucket, Leaky Bucket, Sliding Window)", "designs distributed rate limiting with Redis atomic operations and Lua scripts", "implements client-side exponential backoff, jitter, and 429 Retry-After semantics" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-069",
+    "question" : "What is the Fixed Window Counter algorithm, and what boundary condition problem causes it to permit 2x traffic at window edges?",
+    "subject" : "API Security & Design",
+    "topic" : "API Rate Limiting & Throttling",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "rate limiting", "throttling", "token bucket", "leaky bucket", "ddos", "api rate limiting & throttling" ],
+    "criteria" : [ "compares rate limiting algorithms (Token Bucket, Leaky Bucket, Sliding Window)", "designs distributed rate limiting with Redis atomic operations and Lua scripts", "implements client-side exponential backoff, jitter, and 429 Retry-After semantics" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-070",
+    "question" : "What is the Sliding Window Log algorithm, and why does it consume excessive memory under high request volume?",
+    "subject" : "API Security & Design",
+    "topic" : "API Rate Limiting & Throttling",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "rate limiting", "throttling", "token bucket", "leaky bucket", "ddos", "api rate limiting & throttling" ],
+    "criteria" : [ "compares rate limiting algorithms (Token Bucket, Leaky Bucket, Sliding Window)", "designs distributed rate limiting with Redis atomic operations and Lua scripts", "implements client-side exponential backoff, jitter, and 429 Retry-After semantics" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-071",
+    "question" : "What HTTP headers are typically returned to clients to indicate rate limit status (`X-RateLimit-Limit`, `X-RateLimit-Remaining`, `Retry-After`)?",
+    "subject" : "API Security & Design",
+    "topic" : "API Rate Limiting & Throttling",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "rate limiting", "throttling", "token bucket", "leaky bucket", "ddos", "api rate limiting & throttling" ],
+    "criteria" : [ "compares rate limiting algorithms (Token Bucket, Leaky Bucket, Sliding Window)", "designs distributed rate limiting with Redis atomic operations and Lua scripts", "implements client-side exponential backoff, jitter, and 429 Retry-After semantics" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-072",
+    "question" : "What is the difference between API Rate Limiting and API Throttling?",
+    "subject" : "API Security & Design",
+    "topic" : "API Rate Limiting & Throttling",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "rate limiting", "throttling", "token bucket", "leaky bucket", "ddos", "api rate limiting & throttling" ],
+    "criteria" : [ "compares rate limiting algorithms (Token Bucket, Leaky Bucket, Sliding Window)", "designs distributed rate limiting with Redis atomic operations and Lua scripts", "implements client-side exponential backoff, jitter, and 429 Retry-After semantics" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-073",
+    "question" : "Why is rate limiting essential for protecting backend servers against denial of service and resource starvation?",
+    "subject" : "API Security & Design",
+    "topic" : "API Rate Limiting & Throttling",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "rate limiting", "throttling", "token bucket", "leaky bucket", "ddos", "api rate limiting & throttling" ],
+    "criteria" : [ "compares rate limiting algorithms (Token Bucket, Leaky Bucket, Sliding Window)", "designs distributed rate limiting with Redis atomic operations and Lua scripts", "implements client-side exponential backoff, jitter, and 429 Retry-After semantics" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-074",
+    "question" : "Explain the Token Bucket algorithm for rate limiting and how it handles bursts of traffic.",
+    "subject" : "API Security & Design",
+    "topic" : "API Rate Limiting & Throttling",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "rate limiting", "throttling", "token bucket", "leaky bucket", "ddos", "api rate limiting & throttling" ],
+    "criteria" : [ "compares rate limiting algorithms (Token Bucket, Leaky Bucket, Sliding Window)", "designs distributed rate limiting with Redis atomic operations and Lua scripts", "implements client-side exponential backoff, jitter, and 429 Retry-After semantics" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-075",
+    "question" : "What is client-side rate limiting and exponential backoff with jitter, and why is jitter essential to prevent thundering herd retries?",
+    "subject" : "API Security & Design",
+    "topic" : "API Rate Limiting & Throttling",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "rate limiting", "throttling", "token bucket", "leaky bucket", "ddos", "api rate limiting & throttling" ],
+    "criteria" : [ "compares rate limiting algorithms (Token Bucket, Leaky Bucket, Sliding Window)", "designs distributed rate limiting with Redis atomic operations and Lua scripts", "implements client-side exponential backoff, jitter, and 429 Retry-After semantics" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-076",
+    "question" : "How do you handle rate limiting for unauthenticated public endpoints (e.g. login pages) based on IP address without penalizing users behind corporate NATs?",
+    "subject" : "API Security & Design",
+    "topic" : "API Rate Limiting & Throttling",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "rate limiting", "throttling", "token bucket", "leaky bucket", "ddos", "api rate limiting & throttling" ],
+    "criteria" : [ "compares rate limiting algorithms (Token Bucket, Leaky Bucket, Sliding Window)", "designs distributed rate limiting with Redis atomic operations and Lua scripts", "implements client-side exponential backoff, jitter, and 429 Retry-After semantics" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-077",
+    "question" : "What is adaptive rate limiting (concurrency limits), and how do algorithms like Netflix's concurrency limits adjust quotas based on latency?",
+    "subject" : "API Security & Design",
+    "topic" : "API Rate Limiting & Throttling",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "rate limiting", "throttling", "token bucket", "leaky bucket", "ddos", "api rate limiting & throttling" ],
+    "criteria" : [ "compares rate limiting algorithms (Token Bucket, Leaky Bucket, Sliding Window)", "designs distributed rate limiting with Redis atomic operations and Lua scripts", "implements client-side exponential backoff, jitter, and 429 Retry-After semantics" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-078",
+    "question" : "What HTTP status code should an API return when rate limits are exceeded (`429 Too Many Requests`), and what payload should accompany it?",
+    "subject" : "API Security & Design",
+    "topic" : "API Rate Limiting & Throttling",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "rate limiting", "throttling", "token bucket", "leaky bucket", "ddos", "api rate limiting & throttling" ],
+    "criteria" : [ "compares rate limiting algorithms (Token Bucket, Leaky Bucket, Sliding Window)", "designs distributed rate limiting with Redis atomic operations and Lua scripts", "implements client-side exponential backoff, jitter, and 429 Retry-After semantics" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-079",
+    "question" : "How does the Sliding Window Counter algorithm combine fixed window efficiency with sliding window accuracy to prevent boundary bursts?",
+    "subject" : "API Security & Design",
+    "topic" : "API Rate Limiting & Throttling",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "rate limiting", "throttling", "token bucket", "leaky bucket", "ddos", "api rate limiting & throttling" ],
+    "criteria" : [ "compares rate limiting algorithms (Token Bucket, Leaky Bucket, Sliding Window)", "designs distributed rate limiting with Redis atomic operations and Lua scripts", "implements client-side exponential backoff, jitter, and 429 Retry-After semantics" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-080",
+    "question" : "How do you implement distributed rate limiting across a cluster of API Gateways using Redis and Lua scripts for atomic increments?",
+    "subject" : "API Security & Design",
+    "topic" : "API Rate Limiting & Throttling",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "rate limiting", "throttling", "token bucket", "leaky bucket", "ddos", "api rate limiting & throttling" ],
+    "criteria" : [ "compares rate limiting algorithms (Token Bucket, Leaky Bucket, Sliding Window)", "designs distributed rate limiting with Redis atomic operations and Lua scripts", "implements client-side exponential backoff, jitter, and 429 Retry-After semantics" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-081",
+    "question" : "Explain how tiered rate limiting applies different rate quotas based on user subscription tiers (Free, Pro, Enterprise) and API keys.",
+    "subject" : "API Security & Design",
+    "topic" : "API Rate Limiting & Throttling",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "rate limiting", "throttling", "token bucket", "leaky bucket", "ddos", "api rate limiting & throttling" ],
+    "criteria" : [ "compares rate limiting algorithms (Token Bucket, Leaky Bucket, Sliding Window)", "designs distributed rate limiting with Redis atomic operations and Lua scripts", "implements client-side exponential backoff, jitter, and 429 Retry-After semantics" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-082",
+    "question" : "What is client-side rate limiting and exponential backoff with jitter, and why is jitter essential to prevent thundering herd retries?",
+    "subject" : "API Security & Design",
+    "topic" : "API Rate Limiting & Throttling",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "rate limiting", "throttling", "token bucket", "leaky bucket", "ddos", "api rate limiting & throttling" ],
+    "criteria" : [ "compares rate limiting algorithms (Token Bucket, Leaky Bucket, Sliding Window)", "designs distributed rate limiting with Redis atomic operations and Lua scripts", "implements client-side exponential backoff, jitter, and 429 Retry-After semantics" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-083",
+    "question" : "How do you handle rate limiting for unauthenticated public endpoints (e.g. login pages) based on IP address without penalizing users behind corporate NATs?",
+    "subject" : "API Security & Design",
+    "topic" : "API Rate Limiting & Throttling",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "rate limiting", "throttling", "token bucket", "leaky bucket", "ddos", "api rate limiting & throttling" ],
+    "criteria" : [ "compares rate limiting algorithms (Token Bucket, Leaky Bucket, Sliding Window)", "designs distributed rate limiting with Redis atomic operations and Lua scripts", "implements client-side exponential backoff, jitter, and 429 Retry-After semantics" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-084",
+    "question" : "What is adaptive rate limiting (concurrency limits), and how do algorithms like Netflix's concurrency limits adjust quotas based on latency?",
+    "subject" : "API Security & Design",
+    "topic" : "API Rate Limiting & Throttling",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "rate limiting", "throttling", "token bucket", "leaky bucket", "ddos", "api rate limiting & throttling" ],
+    "criteria" : [ "compares rate limiting algorithms (Token Bucket, Leaky Bucket, Sliding Window)", "designs distributed rate limiting with Redis atomic operations and Lua scripts", "implements client-side exponential backoff, jitter, and 429 Retry-After semantics" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-085",
+    "question" : "What HTTP status code should an API return when rate limits are exceeded (`429 Too Many Requests`), and what payload should accompany it?",
+    "subject" : "API Security & Design",
+    "topic" : "API Rate Limiting & Throttling",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "rate limiting", "throttling", "token bucket", "leaky bucket", "ddos", "api rate limiting & throttling" ],
+    "criteria" : [ "compares rate limiting algorithms (Token Bucket, Leaky Bucket, Sliding Window)", "designs distributed rate limiting with Redis atomic operations and Lua scripts", "implements client-side exponential backoff, jitter, and 429 Retry-After semantics" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-086",
+    "question" : "How does the Sliding Window Counter algorithm combine fixed window efficiency with sliding window accuracy to prevent boundary bursts?",
+    "subject" : "API Security & Design",
+    "topic" : "API Rate Limiting & Throttling",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "rate limiting", "throttling", "token bucket", "leaky bucket", "ddos", "api rate limiting & throttling" ],
+    "criteria" : [ "compares rate limiting algorithms (Token Bucket, Leaky Bucket, Sliding Window)", "designs distributed rate limiting with Redis atomic operations and Lua scripts", "implements client-side exponential backoff, jitter, and 429 Retry-After semantics" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-087",
+    "question" : "How do you implement distributed rate limiting across a cluster of API Gateways using Redis and Lua scripts for atomic increments?",
+    "subject" : "API Security & Design",
+    "topic" : "API Rate Limiting & Throttling",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "rate limiting", "throttling", "token bucket", "leaky bucket", "ddos", "api rate limiting & throttling" ],
+    "criteria" : [ "compares rate limiting algorithms (Token Bucket, Leaky Bucket, Sliding Window)", "designs distributed rate limiting with Redis atomic operations and Lua scripts", "implements client-side exponential backoff, jitter, and 429 Retry-After semantics" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-088",
+    "question" : "Explain how tiered rate limiting applies different rate quotas based on user subscription tiers (Free, Pro, Enterprise) and API keys.",
+    "subject" : "API Security & Design",
+    "topic" : "API Rate Limiting & Throttling",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "rate limiting", "throttling", "token bucket", "leaky bucket", "ddos", "api rate limiting & throttling" ],
+    "criteria" : [ "compares rate limiting algorithms (Token Bucket, Leaky Bucket, Sliding Window)", "designs distributed rate limiting with Redis atomic operations and Lua scripts", "implements client-side exponential backoff, jitter, and 429 Retry-After semantics" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-089",
+    "question" : "What is client-side rate limiting and exponential backoff with jitter, and why is jitter essential to prevent thundering herd retries?",
+    "subject" : "API Security & Design",
+    "topic" : "API Rate Limiting & Throttling",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "rate limiting", "throttling", "token bucket", "leaky bucket", "ddos", "api rate limiting & throttling" ],
+    "criteria" : [ "compares rate limiting algorithms (Token Bucket, Leaky Bucket, Sliding Window)", "designs distributed rate limiting with Redis atomic operations and Lua scripts", "implements client-side exponential backoff, jitter, and 429 Retry-After semantics" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-090",
+    "question" : "Design a globally distributed rate limiting architecture across multi-cloud regions that maintains accurate quotas with sub-millisecond overhead.",
+    "subject" : "API Security & Design",
+    "topic" : "API Rate Limiting & Throttling",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "rate limiting", "throttling", "token bucket", "leaky bucket", "ddos", "api rate limiting & throttling" ],
+    "criteria" : [ "compares rate limiting algorithms (Token Bucket, Leaky Bucket, Sliding Window)", "designs distributed rate limiting with Redis atomic operations and Lua scripts", "implements client-side exponential backoff, jitter, and 429 Retry-After semantics" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-091",
+    "question" : "Analyze race conditions in distributed Redis rate limiting and write an atomic Lua script that guarantees thread-safe token bucket refills.",
+    "subject" : "API Security & Design",
+    "topic" : "API Rate Limiting & Throttling",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "rate limiting", "throttling", "token bucket", "leaky bucket", "ddos", "api rate limiting & throttling" ],
+    "criteria" : [ "compares rate limiting algorithms (Token Bucket, Leaky Bucket, Sliding Window)", "designs distributed rate limiting with Redis atomic operations and Lua scripts", "implements client-side exponential backoff, jitter, and 429 Retry-After semantics" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-092",
+    "question" : "Architect an adaptive traffic shedding engine for an e-commerce platform that dynamically throttles non-essential API traffic during flash sales.",
+    "subject" : "API Security & Design",
+    "topic" : "API Rate Limiting & Throttling",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "rate limiting", "throttling", "token bucket", "leaky bucket", "ddos", "api rate limiting & throttling" ],
+    "criteria" : [ "compares rate limiting algorithms (Token Bucket, Leaky Bucket, Sliding Window)", "designs distributed rate limiting with Redis atomic operations and Lua scripts", "implements client-side exponential backoff, jitter, and 429 Retry-After semantics" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-093",
+    "question" : "Design an intelligent anti-scraping rate limiter that analyzes behavioral request patterns to distinguish legitimate search bots from malicious scrapers.",
+    "subject" : "API Security & Design",
+    "topic" : "API Rate Limiting & Throttling",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "rate limiting", "throttling", "token bucket", "leaky bucket", "ddos", "api rate limiting & throttling" ],
+    "criteria" : [ "compares rate limiting algorithms (Token Bucket, Leaky Bucket, Sliding Window)", "designs distributed rate limiting with Redis atomic operations and Lua scripts", "implements client-side exponential backoff, jitter, and 429 Retry-After semantics" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-094",
+    "question" : "Evaluate the trade-offs between local in-memory rate limiting at each gateway node versus centralized Redis rate limiting under 1 million requests/second.",
+    "subject" : "API Security & Design",
+    "topic" : "API Rate Limiting & Throttling",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "rate limiting", "throttling", "token bucket", "leaky bucket", "ddos", "api rate limiting & throttling" ],
+    "criteria" : [ "compares rate limiting algorithms (Token Bucket, Leaky Bucket, Sliding Window)", "designs distributed rate limiting with Redis atomic operations and Lua scripts", "implements client-side exponential backoff, jitter, and 429 Retry-After semantics" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-095",
+    "question" : "Design a globally distributed rate limiting architecture across multi-cloud regions that maintains accurate quotas with sub-millisecond overhead.",
+    "subject" : "API Security & Design",
+    "topic" : "API Rate Limiting & Throttling",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "rate limiting", "throttling", "token bucket", "leaky bucket", "ddos", "api rate limiting & throttling" ],
+    "criteria" : [ "compares rate limiting algorithms (Token Bucket, Leaky Bucket, Sliding Window)", "designs distributed rate limiting with Redis atomic operations and Lua scripts", "implements client-side exponential backoff, jitter, and 429 Retry-After semantics" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-096",
+    "question" : "What is the OWASP API Security Top 10, and why is it distinct from the traditional OWASP Top 10 for web applications?",
+    "subject" : "API Security & Design",
+    "topic" : "OWASP API Security Top 10",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "owasp", "api security", "bola", "injection", "broken auth", "owasp api security top 10" ],
+    "criteria" : [ "identifies and remediates BOLA, BFLA, and Mass Assignment vulnerabilities", "prevents SSRF, injection attacks, and sensitive data exposure in API responses", "implements automated API security testing and defensive architectural controls" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-097",
+    "question" : "What is Broken Object Level Authorization (BOLA / IDOR), and why is it consistently ranked the #1 API security vulnerability?",
+    "subject" : "API Security & Design",
+    "topic" : "OWASP API Security Top 10",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "owasp", "api security", "bola", "injection", "broken auth", "owasp api security top 10" ],
+    "criteria" : [ "identifies and remediates BOLA, BFLA, and Mass Assignment vulnerabilities", "prevents SSRF, injection attacks, and sensitive data exposure in API responses", "implements automated API security testing and defensive architectural controls" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-098",
+    "question" : "What is Broken Authentication in APIs, and what flaws commonly enable credential stuffing and token hijacking?",
+    "subject" : "API Security & Design",
+    "topic" : "OWASP API Security Top 10",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "owasp", "api security", "bola", "injection", "broken auth", "owasp api security top 10" ],
+    "criteria" : [ "identifies and remediates BOLA, BFLA, and Mass Assignment vulnerabilities", "prevents SSRF, injection attacks, and sensitive data exposure in API responses", "implements automated API security testing and defensive architectural controls" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-099",
+    "question" : "What is Mass Assignment (Broken Object Property Level Authorization), and how does it allow attackers to escalate user privileges?",
+    "subject" : "API Security & Design",
+    "topic" : "OWASP API Security Top 10",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "owasp", "api security", "bola", "injection", "broken auth", "owasp api security top 10" ],
+    "criteria" : [ "identifies and remediates BOLA, BFLA, and Mass Assignment vulnerabilities", "prevents SSRF, injection attacks, and sensitive data exposure in API responses", "implements automated API security testing and defensive architectural controls" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-100",
+    "question" : "What is Unrestricted Resource Consumption, and what attacks result from missing payload size or pagination limits?",
+    "subject" : "API Security & Design",
+    "topic" : "OWASP API Security Top 10",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "owasp", "api security", "bola", "injection", "broken auth", "owasp api security top 10" ],
+    "criteria" : [ "identifies and remediates BOLA, BFLA, and Mass Assignment vulnerabilities", "prevents SSRF, injection attacks, and sensitive data exposure in API responses", "implements automated API security testing and defensive architectural controls" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-101",
+    "question" : "What is Broken Function Level Authorization (BFLA), and how does an attacker access administrative endpoints?",
+    "subject" : "API Security & Design",
+    "topic" : "OWASP API Security Top 10",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "owasp", "api security", "bola", "injection", "broken auth", "owasp api security top 10" ],
+    "criteria" : [ "identifies and remediates BOLA, BFLA, and Mass Assignment vulnerabilities", "prevents SSRF, injection attacks, and sensitive data exposure in API responses", "implements automated API security testing and defensive architectural controls" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-102",
+    "question" : "What is Server-Side Request Forgery (SSRF), and how can an attacker exploit an API to access internal cloud metadata services?",
+    "subject" : "API Security & Design",
+    "topic" : "OWASP API Security Top 10",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "owasp", "api security", "bola", "injection", "broken auth", "owasp api security top 10" ],
+    "criteria" : [ "identifies and remediates BOLA, BFLA, and Mass Assignment vulnerabilities", "prevents SSRF, injection attacks, and sensitive data exposure in API responses", "implements automated API security testing and defensive architectural controls" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-103",
+    "question" : "What is the OWASP API Security Top 10, and why is it distinct from the traditional OWASP Top 10 for web applications?",
+    "subject" : "API Security & Design",
+    "topic" : "OWASP API Security Top 10",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "owasp", "api security", "bola", "injection", "broken auth", "owasp api security top 10" ],
+    "criteria" : [ "identifies and remediates BOLA, BFLA, and Mass Assignment vulnerabilities", "prevents SSRF, injection attacks, and sensitive data exposure in API responses", "implements automated API security testing and defensive architectural controls" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-104",
+    "question" : "What is Broken Object Level Authorization (BOLA / IDOR), and why is it consistently ranked the #1 API security vulnerability?",
+    "subject" : "API Security & Design",
+    "topic" : "OWASP API Security Top 10",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "owasp", "api security", "bola", "injection", "broken auth", "owasp api security top 10" ],
+    "criteria" : [ "identifies and remediates BOLA, BFLA, and Mass Assignment vulnerabilities", "prevents SSRF, injection attacks, and sensitive data exposure in API responses", "implements automated API security testing and defensive architectural controls" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-105",
+    "question" : "What is Broken Authentication in APIs, and what flaws commonly enable credential stuffing and token hijacking?",
+    "subject" : "API Security & Design",
+    "topic" : "OWASP API Security Top 10",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "owasp", "api security", "bola", "injection", "broken auth", "owasp api security top 10" ],
+    "criteria" : [ "identifies and remediates BOLA, BFLA, and Mass Assignment vulnerabilities", "prevents SSRF, injection attacks, and sensitive data exposure in API responses", "implements automated API security testing and defensive architectural controls" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-106",
+    "question" : "What is Security Misconfiguration in APIs (unnecessary HTTP methods, verbose stack traces, CORS wildcards), and how do you remediate it?",
+    "subject" : "API Security & Design",
+    "topic" : "OWASP API Security Top 10",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "owasp", "api security", "bola", "injection", "broken auth", "owasp api security top 10" ],
+    "criteria" : [ "identifies and remediates BOLA, BFLA, and Mass Assignment vulnerabilities", "prevents SSRF, injection attacks, and sensitive data exposure in API responses", "implements automated API security testing and defensive architectural controls" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-107",
+    "question" : "How do SQL Injection and NoSQL Injection manifest in modern REST APIs, and why are parameterized queries and ORMs essential defenses?",
+    "subject" : "API Security & Design",
+    "topic" : "OWASP API Security Top 10",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "owasp", "api security", "bola", "injection", "broken auth", "owasp api security top 10" ],
+    "criteria" : [ "identifies and remediates BOLA, BFLA, and Mass Assignment vulnerabilities", "prevents SSRF, injection attacks, and sensitive data exposure in API responses", "implements automated API security testing and defensive architectural controls" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-108",
+    "question" : "How do you mitigate Unrestricted Access to Sensitive Business Flows (e.g. ticket scalping, automated account creation) without harming UX?",
+    "subject" : "API Security & Design",
+    "topic" : "OWASP API Security Top 10",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "owasp", "api security", "bola", "injection", "broken auth", "owasp api security top 10" ],
+    "criteria" : [ "identifies and remediates BOLA, BFLA, and Mass Assignment vulnerabilities", "prevents SSRF, injection attacks, and sensitive data exposure in API responses", "implements automated API security testing and defensive architectural controls" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-109",
+    "question" : "Explain the risks of consuming third-party APIs without validation (Improper Inventory Management / Unsafe Consumption of APIs).",
+    "subject" : "API Security & Design",
+    "topic" : "OWASP API Security Top 10",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "owasp", "api security", "bola", "injection", "broken auth", "owasp api security top 10" ],
+    "criteria" : [ "identifies and remediates BOLA, BFLA, and Mass Assignment vulnerabilities", "prevents SSRF, injection attacks, and sensitive data exposure in API responses", "implements automated API security testing and defensive architectural controls" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-110",
+    "question" : "How do you systematically prevent BOLA vulnerabilities in backend code by verifying resource ownership at the data access layer?",
+    "subject" : "API Security & Design",
+    "topic" : "OWASP API Security Top 10",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "owasp", "api security", "bola", "injection", "broken auth", "owasp api security top 10" ],
+    "criteria" : [ "identifies and remediates BOLA, BFLA, and Mass Assignment vulnerabilities", "prevents SSRF, injection attacks, and sensitive data exposure in API responses", "implements automated API security testing and defensive architectural controls" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-111",
+    "question" : "How do you protect REST endpoints against Mass Assignment by using strict DTOs (Data Transfer Objects) instead of binding domain entities directly?",
+    "subject" : "API Security & Design",
+    "topic" : "OWASP API Security Top 10",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "owasp", "api security", "bola", "injection", "broken auth", "owasp api security top 10" ],
+    "criteria" : [ "identifies and remediates BOLA, BFLA, and Mass Assignment vulnerabilities", "prevents SSRF, injection attacks, and sensitive data exposure in API responses", "implements automated API security testing and defensive architectural controls" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-112",
+    "question" : "How does an attacker exploit an SSRF vulnerability to steal AWS IAM credentials from the EC2 instance metadata service (IMDSv1 vs IMDSv2)?",
+    "subject" : "API Security & Design",
+    "topic" : "OWASP API Security Top 10",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "owasp", "api security", "bola", "injection", "broken auth", "owasp api security top 10" ],
+    "criteria" : [ "identifies and remediates BOLA, BFLA, and Mass Assignment vulnerabilities", "prevents SSRF, injection attacks, and sensitive data exposure in API responses", "implements automated API security testing and defensive architectural controls" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-113",
+    "question" : "What is Security Misconfiguration in APIs (unnecessary HTTP methods, verbose stack traces, CORS wildcards), and how do you remediate it?",
+    "subject" : "API Security & Design",
+    "topic" : "OWASP API Security Top 10",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "owasp", "api security", "bola", "injection", "broken auth", "owasp api security top 10" ],
+    "criteria" : [ "identifies and remediates BOLA, BFLA, and Mass Assignment vulnerabilities", "prevents SSRF, injection attacks, and sensitive data exposure in API responses", "implements automated API security testing and defensive architectural controls" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-114",
+    "question" : "How do SQL Injection and NoSQL Injection manifest in modern REST APIs, and why are parameterized queries and ORMs essential defenses?",
+    "subject" : "API Security & Design",
+    "topic" : "OWASP API Security Top 10",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "owasp", "api security", "bola", "injection", "broken auth", "owasp api security top 10" ],
+    "criteria" : [ "identifies and remediates BOLA, BFLA, and Mass Assignment vulnerabilities", "prevents SSRF, injection attacks, and sensitive data exposure in API responses", "implements automated API security testing and defensive architectural controls" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-115",
+    "question" : "How do you mitigate Unrestricted Access to Sensitive Business Flows (e.g. ticket scalping, automated account creation) without harming UX?",
+    "subject" : "API Security & Design",
+    "topic" : "OWASP API Security Top 10",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "owasp", "api security", "bola", "injection", "broken auth", "owasp api security top 10" ],
+    "criteria" : [ "identifies and remediates BOLA, BFLA, and Mass Assignment vulnerabilities", "prevents SSRF, injection attacks, and sensitive data exposure in API responses", "implements automated API security testing and defensive architectural controls" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-116",
+    "question" : "Explain the risks of consuming third-party APIs without validation (Improper Inventory Management / Unsafe Consumption of APIs).",
+    "subject" : "API Security & Design",
+    "topic" : "OWASP API Security Top 10",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "owasp", "api security", "bola", "injection", "broken auth", "owasp api security top 10" ],
+    "criteria" : [ "identifies and remediates BOLA, BFLA, and Mass Assignment vulnerabilities", "prevents SSRF, injection attacks, and sensitive data exposure in API responses", "implements automated API security testing and defensive architectural controls" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-117",
+    "question" : "How do you systematically prevent BOLA vulnerabilities in backend code by verifying resource ownership at the data access layer?",
+    "subject" : "API Security & Design",
+    "topic" : "OWASP API Security Top 10",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "owasp", "api security", "bola", "injection", "broken auth", "owasp api security top 10" ],
+    "criteria" : [ "identifies and remediates BOLA, BFLA, and Mass Assignment vulnerabilities", "prevents SSRF, injection attacks, and sensitive data exposure in API responses", "implements automated API security testing and defensive architectural controls" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-118",
+    "question" : "How do you protect REST endpoints against Mass Assignment by using strict DTOs (Data Transfer Objects) instead of binding domain entities directly?",
+    "subject" : "API Security & Design",
+    "topic" : "OWASP API Security Top 10",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "owasp", "api security", "bola", "injection", "broken auth", "owasp api security top 10" ],
+    "criteria" : [ "identifies and remediates BOLA, BFLA, and Mass Assignment vulnerabilities", "prevents SSRF, injection attacks, and sensitive data exposure in API responses", "implements automated API security testing and defensive architectural controls" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-119",
+    "question" : "How does an attacker exploit an SSRF vulnerability to steal AWS IAM credentials from the EC2 instance metadata service (IMDSv1 vs IMDSv2)?",
+    "subject" : "API Security & Design",
+    "topic" : "OWASP API Security Top 10",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "owasp", "api security", "bola", "injection", "broken auth", "owasp api security top 10" ],
+    "criteria" : [ "identifies and remediates BOLA, BFLA, and Mass Assignment vulnerabilities", "prevents SSRF, injection attacks, and sensitive data exposure in API responses", "implements automated API security testing and defensive architectural controls" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-120",
+    "question" : "What is Security Misconfiguration in APIs (unnecessary HTTP methods, verbose stack traces, CORS wildcards), and how do you remediate it?",
+    "subject" : "API Security & Design",
+    "topic" : "OWASP API Security Top 10",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "owasp", "api security", "bola", "injection", "broken auth", "owasp api security top 10" ],
+    "criteria" : [ "identifies and remediates BOLA, BFLA, and Mass Assignment vulnerabilities", "prevents SSRF, injection attacks, and sensitive data exposure in API responses", "implements automated API security testing and defensive architectural controls" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-121",
+    "question" : "Conduct a comprehensive threat modeling exercise for a healthcare API platform handling HIPAA-regulated patient records against OWASP API Top 10.",
+    "subject" : "API Security & Design",
+    "topic" : "OWASP API Security Top 10",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "owasp", "api security", "bola", "injection", "broken auth", "owasp api security top 10" ],
+    "criteria" : [ "identifies and remediates BOLA, BFLA, and Mass Assignment vulnerabilities", "prevents SSRF, injection attacks, and sensitive data exposure in API responses", "implements automated API security testing and defensive architectural controls" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-122",
+    "question" : "Design an automated security regression pipeline in CI/CD that performs DAST (Dynamic Application Security Testing) for BOLA on every pull request.",
+    "subject" : "API Security & Design",
+    "topic" : "OWASP API Security Top 10",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "owasp", "api security", "bola", "injection", "broken auth", "owasp api security top 10" ],
+    "criteria" : [ "identifies and remediates BOLA, BFLA, and Mass Assignment vulnerabilities", "prevents SSRF, injection attacks, and sensitive data exposure in API responses", "implements automated API security testing and defensive architectural controls" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-123",
+    "question" : "Architect a defense-in-depth API gateway pipeline that blocks SSRF, validates request schemas, sanitizes headers, and inspects token claims in real time.",
+    "subject" : "API Security & Design",
+    "topic" : "OWASP API Security Top 10",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "owasp", "api security", "bola", "injection", "broken auth", "owasp api security top 10" ],
+    "criteria" : [ "identifies and remediates BOLA, BFLA, and Mass Assignment vulnerabilities", "prevents SSRF, injection attacks, and sensitive data exposure in API responses", "implements automated API security testing and defensive architectural controls" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-124",
+    "question" : "Analyze how an attacker could exploit GraphQL introspection, batching attacks, and nested query depth to bypass rate limits and crash backend databases.",
+    "subject" : "API Security & Design",
+    "topic" : "OWASP API Security Top 10",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "owasp", "api security", "bola", "injection", "broken auth", "owasp api security top 10" ],
+    "criteria" : [ "identifies and remediates BOLA, BFLA, and Mass Assignment vulnerabilities", "prevents SSRF, injection attacks, and sensitive data exposure in API responses", "implements automated API security testing and defensive architectural controls" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-125",
+    "question" : "Design a secure multi-tenant authorization framework using Attribute-Based Access Control (ABAC) and Open Policy Agent (OPA) to eliminate BOLA.",
+    "subject" : "API Security & Design",
+    "topic" : "OWASP API Security Top 10",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "owasp", "api security", "bola", "injection", "broken auth", "owasp api security top 10" ],
+    "criteria" : [ "identifies and remediates BOLA, BFLA, and Mass Assignment vulnerabilities", "prevents SSRF, injection attacks, and sensitive data exposure in API responses", "implements automated API security testing and defensive architectural controls" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-126",
+    "question" : "Conduct a comprehensive threat modeling exercise for a healthcare API platform handling HIPAA-regulated patient records against OWASP API Top 10.",
+    "subject" : "API Security & Design",
+    "topic" : "OWASP API Security Top 10",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "owasp", "api security", "bola", "injection", "broken auth", "owasp api security top 10" ],
+    "criteria" : [ "identifies and remediates BOLA, BFLA, and Mass Assignment vulnerabilities", "prevents SSRF, injection attacks, and sensitive data exposure in API responses", "implements automated API security testing and defensive architectural controls" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-127",
+    "question" : "What is the difference between encryption in transit and encryption at rest?",
+    "subject" : "API Security & Design",
+    "topic" : "Data Encryption & Cryptography",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "encryption", "tls", "cryptography", "aes", "certificates", "data encryption & cryptography" ],
+    "criteria" : [ "contrasts symmetric vs asymmetric encryption and proper password hashing (Argon2/bcrypt)", "explains TLS 1.3 handshake, mTLS, and authenticated encryption (AES-GCM)", "designs envelope encryption with KMS and secure key lifecycle management" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-128",
+    "question" : "What is the difference between symmetric encryption (e.g. AES) and asymmetric encryption (e.g. RSA, ECC)?",
+    "subject" : "API Security & Design",
+    "topic" : "Data Encryption & Cryptography",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "encryption", "tls", "cryptography", "aes", "certificates", "data encryption & cryptography" ],
+    "criteria" : [ "contrasts symmetric vs asymmetric encryption and proper password hashing (Argon2/bcrypt)", "explains TLS 1.3 handshake, mTLS, and authenticated encryption (AES-GCM)", "designs envelope encryption with KMS and secure key lifecycle management" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-129",
+    "question" : "What is a cryptographic hash function (e.g. SHA-256), and what properties make it one-way and collision-resistant?",
+    "subject" : "API Security & Design",
+    "topic" : "Data Encryption & Cryptography",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "encryption", "tls", "cryptography", "aes", "certificates", "data encryption & cryptography" ],
+    "criteria" : [ "contrasts symmetric vs asymmetric encryption and proper password hashing (Argon2/bcrypt)", "explains TLS 1.3 handshake, mTLS, and authenticated encryption (AES-GCM)", "designs envelope encryption with KMS and secure key lifecycle management" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-130",
+    "question" : "Why should passwords never be hashed with plain SHA-256 or MD5, and why are algorithms like bcrypt, Argon2, and PBKDF2 required?",
+    "subject" : "API Security & Design",
+    "topic" : "Data Encryption & Cryptography",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "encryption", "tls", "cryptography", "aes", "certificates", "data encryption & cryptography" ],
+    "criteria" : [ "contrasts symmetric vs asymmetric encryption and proper password hashing (Argon2/bcrypt)", "explains TLS 1.3 handshake, mTLS, and authenticated encryption (AES-GCM)", "designs envelope encryption with KMS and secure key lifecycle management" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-131",
+    "question" : "What is a Digital Certificate (X.509), and what role does a Certificate Authority (CA) play in establishing web trust?",
+    "subject" : "API Security & Design",
+    "topic" : "Data Encryption & Cryptography",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "encryption", "tls", "cryptography", "aes", "certificates", "data encryption & cryptography" ],
+    "criteria" : [ "contrasts symmetric vs asymmetric encryption and proper password hashing (Argon2/bcrypt)", "explains TLS 1.3 handshake, mTLS, and authenticated encryption (AES-GCM)", "designs envelope encryption with KMS and secure key lifecycle management" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-132",
+    "question" : "What is TLS (Transport Layer Security), and what are the main phases of the TLS 1.3 cryptographic handshake?",
+    "subject" : "API Security & Design",
+    "topic" : "Data Encryption & Cryptography",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "encryption", "tls", "cryptography", "aes", "certificates", "data encryption & cryptography" ],
+    "criteria" : [ "contrasts symmetric vs asymmetric encryption and proper password hashing (Argon2/bcrypt)", "explains TLS 1.3 handshake, mTLS, and authenticated encryption (AES-GCM)", "designs envelope encryption with KMS and secure key lifecycle management" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-133",
+    "question" : "What is Salt and Pepper in password hashing, and how do they defend against rainbow table attacks?",
+    "subject" : "API Security & Design",
+    "topic" : "Data Encryption & Cryptography",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "encryption", "tls", "cryptography", "aes", "certificates", "data encryption & cryptography" ],
+    "criteria" : [ "contrasts symmetric vs asymmetric encryption and proper password hashing (Argon2/bcrypt)", "explains TLS 1.3 handshake, mTLS, and authenticated encryption (AES-GCM)", "designs envelope encryption with KMS and secure key lifecycle management" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-134",
+    "question" : "What is the difference between encryption in transit and encryption at rest?",
+    "subject" : "API Security & Design",
+    "topic" : "Data Encryption & Cryptography",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "encryption", "tls", "cryptography", "aes", "certificates", "data encryption & cryptography" ],
+    "criteria" : [ "contrasts symmetric vs asymmetric encryption and proper password hashing (Argon2/bcrypt)", "explains TLS 1.3 handshake, mTLS, and authenticated encryption (AES-GCM)", "designs envelope encryption with KMS and secure key lifecycle management" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-135",
+    "question" : "What is the difference between symmetric encryption (e.g. AES) and asymmetric encryption (e.g. RSA, ECC)?",
+    "subject" : "API Security & Design",
+    "topic" : "Data Encryption & Cryptography",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "encryption", "tls", "cryptography", "aes", "certificates", "data encryption & cryptography" ],
+    "criteria" : [ "contrasts symmetric vs asymmetric encryption and proper password hashing (Argon2/bcrypt)", "explains TLS 1.3 handshake, mTLS, and authenticated encryption (AES-GCM)", "designs envelope encryption with KMS and secure key lifecycle management" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-136",
+    "question" : "What is a cryptographic hash function (e.g. SHA-256), and what properties make it one-way and collision-resistant?",
+    "subject" : "API Security & Design",
+    "topic" : "Data Encryption & Cryptography",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "encryption", "tls", "cryptography", "aes", "certificates", "data encryption & cryptography" ],
+    "criteria" : [ "contrasts symmetric vs asymmetric encryption and proper password hashing (Argon2/bcrypt)", "explains TLS 1.3 handshake, mTLS, and authenticated encryption (AES-GCM)", "designs envelope encryption with KMS and secure key lifecycle management" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-137",
+    "question" : "How do you implement application-level field encryption for sensitive PII (e.g. credit card numbers) before writing to database columns?",
+    "subject" : "API Security & Design",
+    "topic" : "Data Encryption & Cryptography",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "encryption", "tls", "cryptography", "aes", "certificates", "data encryption & cryptography" ],
+    "criteria" : [ "contrasts symmetric vs asymmetric encryption and proper password hashing (Argon2/bcrypt)", "explains TLS 1.3 handshake, mTLS, and authenticated encryption (AES-GCM)", "designs envelope encryption with KMS and secure key lifecycle management" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-138",
+    "question" : "What is Perfect Forward Secrecy (PFS), and how does Ephemeral Diffie-Hellman (DHE/ECDHE) protect historical recorded traffic?",
+    "subject" : "API Security & Design",
+    "topic" : "Data Encryption & Cryptography",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "encryption", "tls", "cryptography", "aes", "certificates", "data encryption & cryptography" ],
+    "criteria" : [ "contrasts symmetric vs asymmetric encryption and proper password hashing (Argon2/bcrypt)", "explains TLS 1.3 handshake, mTLS, and authenticated encryption (AES-GCM)", "designs envelope encryption with KMS and secure key lifecycle management" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-139",
+    "question" : "How do you implement envelope encryption using a Key Management Service (KMS) with Customer Master Keys and Data Keys?",
+    "subject" : "API Security & Design",
+    "topic" : "Data Encryption & Cryptography",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "encryption", "tls", "cryptography", "aes", "certificates", "data encryption & cryptography" ],
+    "criteria" : [ "contrasts symmetric vs asymmetric encryption and proper password hashing (Argon2/bcrypt)", "explains TLS 1.3 handshake, mTLS, and authenticated encryption (AES-GCM)", "designs envelope encryption with KMS and secure key lifecycle management" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-140",
+    "question" : "What are certificate revocation mechanisms (CRL vs OCSP vs OCSP Stapling), and how do they inform clients of compromised certificates?",
+    "subject" : "API Security & Design",
+    "topic" : "Data Encryption & Cryptography",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "encryption", "tls", "cryptography", "aes", "certificates", "data encryption & cryptography" ],
+    "criteria" : [ "contrasts symmetric vs asymmetric encryption and proper password hashing (Argon2/bcrypt)", "explains TLS 1.3 handshake, mTLS, and authenticated encryption (AES-GCM)", "designs envelope encryption with KMS and secure key lifecycle management" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-141",
+    "question" : "How does TLS 1.3 improve on TLS 1.2 in terms of handshake latency (1-RTT / 0-RTT) and security (removing vulnerable ciphers)?",
+    "subject" : "API Security & Design",
+    "topic" : "Data Encryption & Cryptography",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "encryption", "tls", "cryptography", "aes", "certificates", "data encryption & cryptography" ],
+    "criteria" : [ "contrasts symmetric vs asymmetric encryption and proper password hashing (Argon2/bcrypt)", "explains TLS 1.3 handshake, mTLS, and authenticated encryption (AES-GCM)", "designs envelope encryption with KMS and secure key lifecycle management" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-142",
+    "question" : "Explain how AES-256-GCM provides both confidentiality and data integrity (authenticated encryption) compared to AES-CBC.",
+    "subject" : "API Security & Design",
+    "topic" : "Data Encryption & Cryptography",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "encryption", "tls", "cryptography", "aes", "certificates", "data encryption & cryptography" ],
+    "criteria" : [ "contrasts symmetric vs asymmetric encryption and proper password hashing (Argon2/bcrypt)", "explains TLS 1.3 handshake, mTLS, and authenticated encryption (AES-GCM)", "designs envelope encryption with KMS and secure key lifecycle management" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-143",
+    "question" : "What is mutual TLS (mTLS), and how does bidirectional certificate verification establish cryptographic identity between microservices?",
+    "subject" : "API Security & Design",
+    "topic" : "Data Encryption & Cryptography",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "encryption", "tls", "cryptography", "aes", "certificates", "data encryption & cryptography" ],
+    "criteria" : [ "contrasts symmetric vs asymmetric encryption and proper password hashing (Argon2/bcrypt)", "explains TLS 1.3 handshake, mTLS, and authenticated encryption (AES-GCM)", "designs envelope encryption with KMS and secure key lifecycle management" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-144",
+    "question" : "How do you implement application-level field encryption for sensitive PII (e.g. credit card numbers) before writing to database columns?",
+    "subject" : "API Security & Design",
+    "topic" : "Data Encryption & Cryptography",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "encryption", "tls", "cryptography", "aes", "certificates", "data encryption & cryptography" ],
+    "criteria" : [ "contrasts symmetric vs asymmetric encryption and proper password hashing (Argon2/bcrypt)", "explains TLS 1.3 handshake, mTLS, and authenticated encryption (AES-GCM)", "designs envelope encryption with KMS and secure key lifecycle management" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-145",
+    "question" : "What is Perfect Forward Secrecy (PFS), and how does Ephemeral Diffie-Hellman (DHE/ECDHE) protect historical recorded traffic?",
+    "subject" : "API Security & Design",
+    "topic" : "Data Encryption & Cryptography",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "encryption", "tls", "cryptography", "aes", "certificates", "data encryption & cryptography" ],
+    "criteria" : [ "contrasts symmetric vs asymmetric encryption and proper password hashing (Argon2/bcrypt)", "explains TLS 1.3 handshake, mTLS, and authenticated encryption (AES-GCM)", "designs envelope encryption with KMS and secure key lifecycle management" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-146",
+    "question" : "How do you implement envelope encryption using a Key Management Service (KMS) with Customer Master Keys and Data Keys?",
+    "subject" : "API Security & Design",
+    "topic" : "Data Encryption & Cryptography",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "encryption", "tls", "cryptography", "aes", "certificates", "data encryption & cryptography" ],
+    "criteria" : [ "contrasts symmetric vs asymmetric encryption and proper password hashing (Argon2/bcrypt)", "explains TLS 1.3 handshake, mTLS, and authenticated encryption (AES-GCM)", "designs envelope encryption with KMS and secure key lifecycle management" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-147",
+    "question" : "What are certificate revocation mechanisms (CRL vs OCSP vs OCSP Stapling), and how do they inform clients of compromised certificates?",
+    "subject" : "API Security & Design",
+    "topic" : "Data Encryption & Cryptography",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "encryption", "tls", "cryptography", "aes", "certificates", "data encryption & cryptography" ],
+    "criteria" : [ "contrasts symmetric vs asymmetric encryption and proper password hashing (Argon2/bcrypt)", "explains TLS 1.3 handshake, mTLS, and authenticated encryption (AES-GCM)", "designs envelope encryption with KMS and secure key lifecycle management" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-148",
+    "question" : "How does TLS 1.3 improve on TLS 1.2 in terms of handshake latency (1-RTT / 0-RTT) and security (removing vulnerable ciphers)?",
+    "subject" : "API Security & Design",
+    "topic" : "Data Encryption & Cryptography",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "encryption", "tls", "cryptography", "aes", "certificates", "data encryption & cryptography" ],
+    "criteria" : [ "contrasts symmetric vs asymmetric encryption and proper password hashing (Argon2/bcrypt)", "explains TLS 1.3 handshake, mTLS, and authenticated encryption (AES-GCM)", "designs envelope encryption with KMS and secure key lifecycle management" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-149",
+    "question" : "Explain how AES-256-GCM provides both confidentiality and data integrity (authenticated encryption) compared to AES-CBC.",
+    "subject" : "API Security & Design",
+    "topic" : "Data Encryption & Cryptography",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "encryption", "tls", "cryptography", "aes", "certificates", "data encryption & cryptography" ],
+    "criteria" : [ "contrasts symmetric vs asymmetric encryption and proper password hashing (Argon2/bcrypt)", "explains TLS 1.3 handshake, mTLS, and authenticated encryption (AES-GCM)", "designs envelope encryption with KMS and secure key lifecycle management" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-150",
+    "question" : "What is mutual TLS (mTLS), and how does bidirectional certificate verification establish cryptographic identity between microservices?",
+    "subject" : "API Security & Design",
+    "topic" : "Data Encryption & Cryptography",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "encryption", "tls", "cryptography", "aes", "certificates", "data encryption & cryptography" ],
+    "criteria" : [ "contrasts symmetric vs asymmetric encryption and proper password hashing (Argon2/bcrypt)", "explains TLS 1.3 handshake, mTLS, and authenticated encryption (AES-GCM)", "designs envelope encryption with KMS and secure key lifecycle management" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-151",
+    "question" : "How do you implement application-level field encryption for sensitive PII (e.g. credit card numbers) before writing to database columns?",
+    "subject" : "API Security & Design",
+    "topic" : "Data Encryption & Cryptography",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "encryption", "tls", "cryptography", "aes", "certificates", "data encryption & cryptography" ],
+    "criteria" : [ "contrasts symmetric vs asymmetric encryption and proper password hashing (Argon2/bcrypt)", "explains TLS 1.3 handshake, mTLS, and authenticated encryption (AES-GCM)", "designs envelope encryption with KMS and secure key lifecycle management" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-152",
+    "question" : "Architect an enterprise Key Management Service (KMS) with automated cryptographic key rotation, HSM backing, and zero-downtime re-encryption.",
+    "subject" : "API Security & Design",
+    "topic" : "Data Encryption & Cryptography",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "encryption", "tls", "cryptography", "aes", "certificates", "data encryption & cryptography" ],
+    "criteria" : [ "contrasts symmetric vs asymmetric encryption and proper password hashing (Argon2/bcrypt)", "explains TLS 1.3 handshake, mTLS, and authenticated encryption (AES-GCM)", "designs envelope encryption with KMS and secure key lifecycle management" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-153",
+    "question" : "Analyze the cryptographic security risks of reusing Nonces / Initialization Vectors (IVs) in AES-GCM encryption pipelines.",
+    "subject" : "API Security & Design",
+    "topic" : "Data Encryption & Cryptography",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "encryption", "tls", "cryptography", "aes", "certificates", "data encryption & cryptography" ],
+    "criteria" : [ "contrasts symmetric vs asymmetric encryption and proper password hashing (Argon2/bcrypt)", "explains TLS 1.3 handshake, mTLS, and authenticated encryption (AES-GCM)", "designs envelope encryption with KMS and secure key lifecycle management" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-154",
+    "question" : "Design an end-to-end zero-knowledge encryption architecture where user data is encrypted on the client device and server has zero access to decryption keys.",
+    "subject" : "API Security & Design",
+    "topic" : "Data Encryption & Cryptography",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "encryption", "tls", "cryptography", "aes", "certificates", "data encryption & cryptography" ],
+    "criteria" : [ "contrasts symmetric vs asymmetric encryption and proper password hashing (Argon2/bcrypt)", "explains TLS 1.3 handshake, mTLS, and authenticated encryption (AES-GCM)", "designs envelope encryption with KMS and secure key lifecycle management" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-155",
+    "question" : "Evaluate the performance overhead of mTLS across 500 internal microservices and design session resumption and hardware acceleration to optimize throughput.",
+    "subject" : "API Security & Design",
+    "topic" : "Data Encryption & Cryptography",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "encryption", "tls", "cryptography", "aes", "certificates", "data encryption & cryptography" ],
+    "criteria" : [ "contrasts symmetric vs asymmetric encryption and proper password hashing (Argon2/bcrypt)", "explains TLS 1.3 handshake, mTLS, and authenticated encryption (AES-GCM)", "designs envelope encryption with KMS and secure key lifecycle management" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-156",
+    "question" : "How do post-quantum cryptographic algorithms (Lattice-based cryptography) impact future TLS handshake latency and certificate sizes?",
+    "subject" : "API Security & Design",
+    "topic" : "Data Encryption & Cryptography",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "encryption", "tls", "cryptography", "aes", "certificates", "data encryption & cryptography" ],
+    "criteria" : [ "contrasts symmetric vs asymmetric encryption and proper password hashing (Argon2/bcrypt)", "explains TLS 1.3 handshake, mTLS, and authenticated encryption (AES-GCM)", "designs envelope encryption with KMS and secure key lifecycle management" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-157",
+    "question" : "Architect an enterprise Key Management Service (KMS) with automated cryptographic key rotation, HSM backing, and zero-downtime re-encryption.",
+    "subject" : "API Security & Design",
+    "topic" : "Data Encryption & Cryptography",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "encryption", "tls", "cryptography", "aes", "certificates", "data encryption & cryptography" ],
+    "criteria" : [ "contrasts symmetric vs asymmetric encryption and proper password hashing (Argon2/bcrypt)", "explains TLS 1.3 handshake, mTLS, and authenticated encryption (AES-GCM)", "designs envelope encryption with KMS and secure key lifecycle management" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-158",
+    "question" : "What is the Same-Origin Policy (SOP) in web browsers, and what defines an 'origin' (protocol, domain, port)?",
+    "subject" : "API Security & Design",
+    "topic" : "Web Application Security & Attacks",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "cors", "csrf", "xss", "csp", "sql injection", "web application security & attacks" ],
+    "criteria" : [ "explains browser security mechanisms (SOP, CORS, CSP, HSTS)", "analyzes XSS, CSRF, and SQLi attack vectors and remediation techniques", "implements secure HTTP headers and cookie security (HttpOnly, SameSite)" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-159",
+    "question" : "What is Cross-Origin Resource Sharing (CORS), and what is the difference between simple requests and preflight requests (OPTIONS)?",
+    "subject" : "API Security & Design",
+    "topic" : "Web Application Security & Attacks",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "cors", "csrf", "xss", "csp", "sql injection", "web application security & attacks" ],
+    "criteria" : [ "explains browser security mechanisms (SOP, CORS, CSP, HSTS)", "analyzes XSS, CSRF, and SQLi attack vectors and remediation techniques", "implements secure HTTP headers and cookie security (HttpOnly, SameSite)" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-160",
+    "question" : "What is Cross-Site Scripting (XSS), and what is the difference between Stored XSS, Reflected XSS, and DOM-based XSS?",
+    "subject" : "API Security & Design",
+    "topic" : "Web Application Security & Attacks",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "cors", "csrf", "xss", "csp", "sql injection", "web application security & attacks" ],
+    "criteria" : [ "explains browser security mechanisms (SOP, CORS, CSP, HSTS)", "analyzes XSS, CSRF, and SQLi attack vectors and remediation techniques", "implements secure HTTP headers and cookie security (HttpOnly, SameSite)" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-161",
+    "question" : "What is Cross-Site Request Forgery (CSRF), and how do attackers trick authenticated browsers into making unauthorized state changes?",
+    "subject" : "API Security & Design",
+    "topic" : "Web Application Security & Attacks",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "cors", "csrf", "xss", "csp", "sql injection", "web application security & attacks" ],
+    "criteria" : [ "explains browser security mechanisms (SOP, CORS, CSP, HSTS)", "analyzes XSS, CSRF, and SQLi attack vectors and remediation techniques", "implements secure HTTP headers and cookie security (HttpOnly, SameSite)" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-162",
+    "question" : "How do `SameSite=Strict`, `SameSite=Lax`, and `SameSite=None` cookie attributes defend against CSRF attacks?",
+    "subject" : "API Security & Design",
+    "topic" : "Web Application Security & Attacks",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "cors", "csrf", "xss", "csp", "sql injection", "web application security & attacks" ],
+    "criteria" : [ "explains browser security mechanisms (SOP, CORS, CSP, HSTS)", "analyzes XSS, CSRF, and SQLi attack vectors and remediation techniques", "implements secure HTTP headers and cookie security (HttpOnly, SameSite)" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-163",
+    "question" : "What is a Content Security Policy (CSP), and how does it prevent inline script execution to mitigate XSS?",
+    "subject" : "API Security & Design",
+    "topic" : "Web Application Security & Attacks",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "cors", "csrf", "xss", "csp", "sql injection", "web application security & attacks" ],
+    "criteria" : [ "explains browser security mechanisms (SOP, CORS, CSP, HSTS)", "analyzes XSS, CSRF, and SQLi attack vectors and remediation techniques", "implements secure HTTP headers and cookie security (HttpOnly, SameSite)" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-164",
+    "question" : "What is Clickjacking, and how do `X-Frame-Options` and CSP `frame-ancestors` protect users?",
+    "subject" : "API Security & Design",
+    "topic" : "Web Application Security & Attacks",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "cors", "csrf", "xss", "csp", "sql injection", "web application security & attacks" ],
+    "criteria" : [ "explains browser security mechanisms (SOP, CORS, CSP, HSTS)", "analyzes XSS, CSRF, and SQLi attack vectors and remediation techniques", "implements secure HTTP headers and cookie security (HttpOnly, SameSite)" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-165",
+    "question" : "What is the Same-Origin Policy (SOP) in web browsers, and what defines an 'origin' (protocol, domain, port)?",
+    "subject" : "API Security & Design",
+    "topic" : "Web Application Security & Attacks",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "cors", "csrf", "xss", "csp", "sql injection", "web application security & attacks" ],
+    "criteria" : [ "explains browser security mechanisms (SOP, CORS, CSP, HSTS)", "analyzes XSS, CSRF, and SQLi attack vectors and remediation techniques", "implements secure HTTP headers and cookie security (HttpOnly, SameSite)" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-166",
+    "question" : "What is Cross-Origin Resource Sharing (CORS), and what is the difference between simple requests and preflight requests (OPTIONS)?",
+    "subject" : "API Security & Design",
+    "topic" : "Web Application Security & Attacks",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "cors", "csrf", "xss", "csp", "sql injection", "web application security & attacks" ],
+    "criteria" : [ "explains browser security mechanisms (SOP, CORS, CSP, HSTS)", "analyzes XSS, CSRF, and SQLi attack vectors and remediation techniques", "implements secure HTTP headers and cookie security (HttpOnly, SameSite)" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-167",
+    "question" : "What is Cross-Site Scripting (XSS), and what is the difference between Stored XSS, Reflected XSS, and DOM-based XSS?",
+    "subject" : "API Security & Design",
+    "topic" : "Web Application Security & Attacks",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "cors", "csrf", "xss", "csp", "sql injection", "web application security & attacks" ],
+    "criteria" : [ "explains browser security mechanisms (SOP, CORS, CSP, HSTS)", "analyzes XSS, CSRF, and SQLi attack vectors and remediation techniques", "implements secure HTTP headers and cookie security (HttpOnly, SameSite)" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-168",
+    "question" : "What is HTTP Request Smuggling, and how do discrepancies between frontend reverse proxies and backend servers enable it?",
+    "subject" : "API Security & Design",
+    "topic" : "Web Application Security & Attacks",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cors", "csrf", "xss", "csp", "sql injection", "web application security & attacks" ],
+    "criteria" : [ "explains browser security mechanisms (SOP, CORS, CSP, HSTS)", "analyzes XSS, CSRF, and SQLi attack vectors and remediation techniques", "implements secure HTTP headers and cookie security (HttpOnly, SameSite)" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-169",
+    "question" : "How do you implement Subresource Integrity (SRI) on frontend assets to ensure third-party CDNs have not been maliciously tampered with?",
+    "subject" : "API Security & Design",
+    "topic" : "Web Application Security & Attacks",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cors", "csrf", "xss", "csp", "sql injection", "web application security & attacks" ],
+    "criteria" : [ "explains browser security mechanisms (SOP, CORS, CSP, HSTS)", "analyzes XSS, CSRF, and SQLi attack vectors and remediation techniques", "implements secure HTTP headers and cookie security (HttpOnly, SameSite)" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-170",
+    "question" : "Explain how SQL injection attacks exploit dynamic string concatenation and how parameterized statements (PreparedStatement) eliminate the risk.",
+    "subject" : "API Security & Design",
+    "topic" : "Web Application Security & Attacks",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cors", "csrf", "xss", "csp", "sql injection", "web application security & attacks" ],
+    "criteria" : [ "explains browser security mechanisms (SOP, CORS, CSP, HSTS)", "analyzes XSS, CSRF, and SQLi attack vectors and remediation techniques", "implements secure HTTP headers and cookie security (HttpOnly, SameSite)" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-171",
+    "question" : "What security headers should every production API include (`Strict-Transport-Security`, `X-Content-Type-Options`, `Referrer-Policy`)?",
+    "subject" : "API Security & Design",
+    "topic" : "Web Application Security & Attacks",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cors", "csrf", "xss", "csp", "sql injection", "web application security & attacks" ],
+    "criteria" : [ "explains browser security mechanisms (SOP, CORS, CSP, HSTS)", "analyzes XSS, CSRF, and SQLi attack vectors and remediation techniques", "implements secure HTTP headers and cookie security (HttpOnly, SameSite)" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-172",
+    "question" : "How do you correctly configure CORS headers (`Access-Control-Allow-Origin`, `Credentials`, `Methods`) without creating wildcards with credentials?",
+    "subject" : "API Security & Design",
+    "topic" : "Web Application Security & Attacks",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cors", "csrf", "xss", "csp", "sql injection", "web application security & attacks" ],
+    "criteria" : [ "explains browser security mechanisms (SOP, CORS, CSP, HSTS)", "analyzes XSS, CSRF, and SQLi attack vectors and remediation techniques", "implements secure HTTP headers and cookie security (HttpOnly, SameSite)" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-173",
+    "question" : "Why are anti-CSRF synchronizer tokens necessary for session-cookie authentication but generally unnecessary for token-based (Authorization header) APIs?",
+    "subject" : "API Security & Design",
+    "topic" : "Web Application Security & Attacks",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cors", "csrf", "xss", "csp", "sql injection", "web application security & attacks" ],
+    "criteria" : [ "explains browser security mechanisms (SOP, CORS, CSP, HSTS)", "analyzes XSS, CSRF, and SQLi attack vectors and remediation techniques", "implements secure HTTP headers and cookie security (HttpOnly, SameSite)" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-174",
+    "question" : "How does an attacker exploit insecure deserialization in Java or Node.js to achieve Remote Code Execution (RCE)?",
+    "subject" : "API Security & Design",
+    "topic" : "Web Application Security & Attacks",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cors", "csrf", "xss", "csp", "sql injection", "web application security & attacks" ],
+    "criteria" : [ "explains browser security mechanisms (SOP, CORS, CSP, HSTS)", "analyzes XSS, CSRF, and SQLi attack vectors and remediation techniques", "implements secure HTTP headers and cookie security (HttpOnly, SameSite)" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-175",
+    "question" : "What is HTTP Request Smuggling, and how do discrepancies between frontend reverse proxies and backend servers enable it?",
+    "subject" : "API Security & Design",
+    "topic" : "Web Application Security & Attacks",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cors", "csrf", "xss", "csp", "sql injection", "web application security & attacks" ],
+    "criteria" : [ "explains browser security mechanisms (SOP, CORS, CSP, HSTS)", "analyzes XSS, CSRF, and SQLi attack vectors and remediation techniques", "implements secure HTTP headers and cookie security (HttpOnly, SameSite)" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-176",
+    "question" : "How do you implement Subresource Integrity (SRI) on frontend assets to ensure third-party CDNs have not been maliciously tampered with?",
+    "subject" : "API Security & Design",
+    "topic" : "Web Application Security & Attacks",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cors", "csrf", "xss", "csp", "sql injection", "web application security & attacks" ],
+    "criteria" : [ "explains browser security mechanisms (SOP, CORS, CSP, HSTS)", "analyzes XSS, CSRF, and SQLi attack vectors and remediation techniques", "implements secure HTTP headers and cookie security (HttpOnly, SameSite)" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-177",
+    "question" : "Explain how SQL injection attacks exploit dynamic string concatenation and how parameterized statements (PreparedStatement) eliminate the risk.",
+    "subject" : "API Security & Design",
+    "topic" : "Web Application Security & Attacks",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cors", "csrf", "xss", "csp", "sql injection", "web application security & attacks" ],
+    "criteria" : [ "explains browser security mechanisms (SOP, CORS, CSP, HSTS)", "analyzes XSS, CSRF, and SQLi attack vectors and remediation techniques", "implements secure HTTP headers and cookie security (HttpOnly, SameSite)" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-178",
+    "question" : "What security headers should every production API include (`Strict-Transport-Security`, `X-Content-Type-Options`, `Referrer-Policy`)?",
+    "subject" : "API Security & Design",
+    "topic" : "Web Application Security & Attacks",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cors", "csrf", "xss", "csp", "sql injection", "web application security & attacks" ],
+    "criteria" : [ "explains browser security mechanisms (SOP, CORS, CSP, HSTS)", "analyzes XSS, CSRF, and SQLi attack vectors and remediation techniques", "implements secure HTTP headers and cookie security (HttpOnly, SameSite)" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-179",
+    "question" : "How do you correctly configure CORS headers (`Access-Control-Allow-Origin`, `Credentials`, `Methods`) without creating wildcards with credentials?",
+    "subject" : "API Security & Design",
+    "topic" : "Web Application Security & Attacks",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cors", "csrf", "xss", "csp", "sql injection", "web application security & attacks" ],
+    "criteria" : [ "explains browser security mechanisms (SOP, CORS, CSP, HSTS)", "analyzes XSS, CSRF, and SQLi attack vectors and remediation techniques", "implements secure HTTP headers and cookie security (HttpOnly, SameSite)" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-180",
+    "question" : "Why are anti-CSRF synchronizer tokens necessary for session-cookie authentication but generally unnecessary for token-based (Authorization header) APIs?",
+    "subject" : "API Security & Design",
+    "topic" : "Web Application Security & Attacks",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cors", "csrf", "xss", "csp", "sql injection", "web application security & attacks" ],
+    "criteria" : [ "explains browser security mechanisms (SOP, CORS, CSP, HSTS)", "analyzes XSS, CSRF, and SQLi attack vectors and remediation techniques", "implements secure HTTP headers and cookie security (HttpOnly, SameSite)" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-181",
+    "question" : "How does an attacker exploit insecure deserialization in Java or Node.js to achieve Remote Code Execution (RCE)?",
+    "subject" : "API Security & Design",
+    "topic" : "Web Application Security & Attacks",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cors", "csrf", "xss", "csp", "sql injection", "web application security & attacks" ],
+    "criteria" : [ "explains browser security mechanisms (SOP, CORS, CSP, HSTS)", "analyzes XSS, CSRF, and SQLi attack vectors and remediation techniques", "implements secure HTTP headers and cookie security (HttpOnly, SameSite)" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-182",
+    "question" : "What is HTTP Request Smuggling, and how do discrepancies between frontend reverse proxies and backend servers enable it?",
+    "subject" : "API Security & Design",
+    "topic" : "Web Application Security & Attacks",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "cors", "csrf", "xss", "csp", "sql injection", "web application security & attacks" ],
+    "criteria" : [ "explains browser security mechanisms (SOP, CORS, CSP, HSTS)", "analyzes XSS, CSRF, and SQLi attack vectors and remediation techniques", "implements secure HTTP headers and cookie security (HttpOnly, SameSite)" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-183",
+    "question" : "Diagnose and remediate a complex DOM-based XSS vulnerability in a React SPA that allows attackers to exfiltrate session tokens.",
+    "subject" : "API Security & Design",
+    "topic" : "Web Application Security & Attacks",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "cors", "csrf", "xss", "csp", "sql injection", "web application security & attacks" ],
+    "criteria" : [ "explains browser security mechanisms (SOP, CORS, CSP, HSTS)", "analyzes XSS, CSRF, and SQLi attack vectors and remediation techniques", "implements secure HTTP headers and cookie security (HttpOnly, SameSite)" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-184",
+    "question" : "Architect an enterprise Web Application Firewall (WAF) rule engine that detects and blocks zero-day SQLi and XSS payloads without false positives.",
+    "subject" : "API Security & Design",
+    "topic" : "Web Application Security & Attacks",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "cors", "csrf", "xss", "csp", "sql injection", "web application security & attacks" ],
+    "criteria" : [ "explains browser security mechanisms (SOP, CORS, CSP, HSTS)", "analyzes XSS, CSRF, and SQLi attack vectors and remediation techniques", "implements secure HTTP headers and cookie security (HttpOnly, SameSite)" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-185",
+    "question" : "Analyze how HTTP/2 downgrade attacks and HTTP desync vulnerabilities exploit header parsing differences in modern microservice proxies.",
+    "subject" : "API Security & Design",
+    "topic" : "Web Application Security & Attacks",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "cors", "csrf", "xss", "csp", "sql injection", "web application security & attacks" ],
+    "criteria" : [ "explains browser security mechanisms (SOP, CORS, CSP, HSTS)", "analyzes XSS, CSRF, and SQLi attack vectors and remediation techniques", "implements secure HTTP headers and cookie security (HttpOnly, SameSite)" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-186",
+    "question" : "Design a secure file upload architecture that protects against malicious polyglot files, zip bombs, and remote code execution.",
+    "subject" : "API Security & Design",
+    "topic" : "Web Application Security & Attacks",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "cors", "csrf", "xss", "csp", "sql injection", "web application security & attacks" ],
+    "criteria" : [ "explains browser security mechanisms (SOP, CORS, CSP, HSTS)", "analyzes XSS, CSRF, and SQLi attack vectors and remediation techniques", "implements secure HTTP headers and cookie security (HttpOnly, SameSite)" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-187",
+    "question" : "Evaluate the security posture of an API when facing automated credential stuffing attacks and design behavioral CAPTCHA and risk-based challenges.",
+    "subject" : "API Security & Design",
+    "topic" : "Web Application Security & Attacks",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "cors", "csrf", "xss", "csp", "sql injection", "web application security & attacks" ],
+    "criteria" : [ "explains browser security mechanisms (SOP, CORS, CSP, HSTS)", "analyzes XSS, CSRF, and SQLi attack vectors and remediation techniques", "implements secure HTTP headers and cookie security (HttpOnly, SameSite)" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-188",
+    "question" : "Diagnose and remediate a complex DOM-based XSS vulnerability in a React SPA that allows attackers to exfiltrate session tokens.",
+    "subject" : "API Security & Design",
+    "topic" : "Web Application Security & Attacks",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "cors", "csrf", "xss", "csp", "sql injection", "web application security & attacks" ],
+    "criteria" : [ "explains browser security mechanisms (SOP, CORS, CSP, HSTS)", "analyzes XSS, CSRF, and SQLi attack vectors and remediation techniques", "implements secure HTTP headers and cookie security (HttpOnly, SameSite)" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-189",
+    "question" : "What is gRPC, and how does it use HTTP/2 and Protocol Buffers to achieve higher performance than traditional REST over HTTP/1.1?",
+    "subject" : "API Security & Design",
+    "topic" : "Modern Protocols: gRPC, GraphQL & WebSockets",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "grpc", "graphql", "websockets", "protobuf", "real-time", "modern protocols: grpc, graphql & websockets" ],
+    "criteria" : [ "contrasts REST, gRPC, GraphQL, and WebSockets for appropriate architectural use cases", "implements security controls for gRPC interceptors and GraphQL query complexity", "scales real-time bidirectional communication using WebSockets and Redis Pub/Sub" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-190",
+    "question" : "What is Protocol Buffers (Protobuf), and why is binary serialization faster and more compact than JSON?",
+    "subject" : "API Security & Design",
+    "topic" : "Modern Protocols: gRPC, GraphQL & WebSockets",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "grpc", "graphql", "websockets", "protobuf", "real-time", "modern protocols: grpc, graphql & websockets" ],
+    "criteria" : [ "contrasts REST, gRPC, GraphQL, and WebSockets for appropriate architectural use cases", "implements security controls for gRPC interceptors and GraphQL query complexity", "scales real-time bidirectional communication using WebSockets and Redis Pub/Sub" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-191",
+    "question" : "What is GraphQL, and how does it solve the problems of over-fetching and under-fetching common in REST APIs?",
+    "subject" : "API Security & Design",
+    "topic" : "Modern Protocols: gRPC, GraphQL & WebSockets",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "grpc", "graphql", "websockets", "protobuf", "real-time", "modern protocols: grpc, graphql & websockets" ],
+    "criteria" : [ "contrasts REST, gRPC, GraphQL, and WebSockets for appropriate architectural use cases", "implements security controls for gRPC interceptors and GraphQL query complexity", "scales real-time bidirectional communication using WebSockets and Redis Pub/Sub" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-192",
+    "question" : "What are WebSockets, and how does a WebSocket connection differ from long polling and Server-Sent Events (SSE)?",
+    "subject" : "API Security & Design",
+    "topic" : "Modern Protocols: gRPC, GraphQL & WebSockets",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "grpc", "graphql", "websockets", "protobuf", "real-time", "modern protocols: grpc, graphql & websockets" ],
+    "criteria" : [ "contrasts REST, gRPC, GraphQL, and WebSockets for appropriate architectural use cases", "implements security controls for gRPC interceptors and GraphQL query complexity", "scales real-time bidirectional communication using WebSockets and Redis Pub/Sub" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-193",
+    "question" : "What are the four streaming modes supported by gRPC (Unary, Server streaming, Client streaming, Bidirectional streaming)?",
+    "subject" : "API Security & Design",
+    "topic" : "Modern Protocols: gRPC, GraphQL & WebSockets",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "grpc", "graphql", "websockets", "protobuf", "real-time", "modern protocols: grpc, graphql & websockets" ],
+    "criteria" : [ "contrasts REST, gRPC, GraphQL, and WebSockets for appropriate architectural use cases", "implements security controls for gRPC interceptors and GraphQL query complexity", "scales real-time bidirectional communication using WebSockets and Redis Pub/Sub" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-194",
+    "question" : "What is the N+1 problem in GraphQL resolvers, and how does the DataLoader pattern solve it?",
+    "subject" : "API Security & Design",
+    "topic" : "Modern Protocols: gRPC, GraphQL & WebSockets",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "grpc", "graphql", "websockets", "protobuf", "real-time", "modern protocols: grpc, graphql & websockets" ],
+    "criteria" : [ "contrasts REST, gRPC, GraphQL, and WebSockets for appropriate architectural use cases", "implements security controls for gRPC interceptors and GraphQL query complexity", "scales real-time bidirectional communication using WebSockets and Redis Pub/Sub" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-195",
+    "question" : "How does the initial HTTP 101 Switching Protocols handshake upgrade a connection to a WebSocket?",
+    "subject" : "API Security & Design",
+    "topic" : "Modern Protocols: gRPC, GraphQL & WebSockets",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "grpc", "graphql", "websockets", "protobuf", "real-time", "modern protocols: grpc, graphql & websockets" ],
+    "criteria" : [ "contrasts REST, gRPC, GraphQL, and WebSockets for appropriate architectural use cases", "implements security controls for gRPC interceptors and GraphQL query complexity", "scales real-time bidirectional communication using WebSockets and Redis Pub/Sub" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-196",
+    "question" : "What is gRPC, and how does it use HTTP/2 and Protocol Buffers to achieve higher performance than traditional REST over HTTP/1.1?",
+    "subject" : "API Security & Design",
+    "topic" : "Modern Protocols: gRPC, GraphQL & WebSockets",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "grpc", "graphql", "websockets", "protobuf", "real-time", "modern protocols: grpc, graphql & websockets" ],
+    "criteria" : [ "contrasts REST, gRPC, GraphQL, and WebSockets for appropriate architectural use cases", "implements security controls for gRPC interceptors and GraphQL query complexity", "scales real-time bidirectional communication using WebSockets and Redis Pub/Sub" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-197",
+    "question" : "What is Protocol Buffers (Protobuf), and why is binary serialization faster and more compact than JSON?",
+    "subject" : "API Security & Design",
+    "topic" : "Modern Protocols: gRPC, GraphQL & WebSockets",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "grpc", "graphql", "websockets", "protobuf", "real-time", "modern protocols: grpc, graphql & websockets" ],
+    "criteria" : [ "contrasts REST, gRPC, GraphQL, and WebSockets for appropriate architectural use cases", "implements security controls for gRPC interceptors and GraphQL query complexity", "scales real-time bidirectional communication using WebSockets and Redis Pub/Sub" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-198",
+    "question" : "What is GraphQL, and how does it solve the problems of over-fetching and under-fetching common in REST APIs?",
+    "subject" : "API Security & Design",
+    "topic" : "Modern Protocols: gRPC, GraphQL & WebSockets",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "grpc", "graphql", "websockets", "protobuf", "real-time", "modern protocols: grpc, graphql & websockets" ],
+    "criteria" : [ "contrasts REST, gRPC, GraphQL, and WebSockets for appropriate architectural use cases", "implements security controls for gRPC interceptors and GraphQL query complexity", "scales real-time bidirectional communication using WebSockets and Redis Pub/Sub" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-199",
+    "question" : "How do you scale a WebSocket application across multiple backend servers using Redis Pub/Sub to broadcast messages to all connected clients?",
+    "subject" : "API Security & Design",
+    "topic" : "Modern Protocols: gRPC, GraphQL & WebSockets",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "grpc", "graphql", "websockets", "protobuf", "real-time", "modern protocols: grpc, graphql & websockets" ],
+    "criteria" : [ "contrasts REST, gRPC, GraphQL, and WebSockets for appropriate architectural use cases", "implements security controls for gRPC interceptors and GraphQL query complexity", "scales real-time bidirectional communication using WebSockets and Redis Pub/Sub" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-200",
+    "question" : "Explain how schema evolution and backward/forward compatibility are enforced in Protobuf using field tags (numbers) instead of field names.",
+    "subject" : "API Security & Design",
+    "topic" : "Modern Protocols: gRPC, GraphQL & WebSockets",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "grpc", "graphql", "websockets", "protobuf", "real-time", "modern protocols: grpc, graphql & websockets" ],
+    "criteria" : [ "contrasts REST, gRPC, GraphQL, and WebSockets for appropriate architectural use cases", "implements security controls for gRPC interceptors and GraphQL query complexity", "scales real-time bidirectional communication using WebSockets and Redis Pub/Sub" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-201",
+    "question" : "What are Server-Sent Events (SSE), and when are they a better architectural choice than WebSockets for uni-directional real-time data feeds?",
+    "subject" : "API Security & Design",
+    "topic" : "Modern Protocols: gRPC, GraphQL & WebSockets",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "grpc", "graphql", "websockets", "protobuf", "real-time", "modern protocols: grpc, graphql & websockets" ],
+    "criteria" : [ "contrasts REST, gRPC, GraphQL, and WebSockets for appropriate architectural use cases", "implements security controls for gRPC interceptors and GraphQL query complexity", "scales real-time bidirectional communication using WebSockets and Redis Pub/Sub" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-202",
+    "question" : "How do you implement heartbeat (ping/pong) frames and reconnection logic with exponential backoff for resilient WebSocket connections?",
+    "subject" : "API Security & Design",
+    "topic" : "Modern Protocols: gRPC, GraphQL & WebSockets",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "grpc", "graphql", "websockets", "protobuf", "real-time", "modern protocols: grpc, graphql & websockets" ],
+    "criteria" : [ "contrasts REST, gRPC, GraphQL, and WebSockets for appropriate architectural use cases", "implements security controls for gRPC interceptors and GraphQL query complexity", "scales real-time bidirectional communication using WebSockets and Redis Pub/Sub" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-203",
+    "question" : "Compare gRPC, GraphQL, and REST in terms of performance, schema enforcement, browser compatibility, and public API adoption.",
+    "subject" : "API Security & Design",
+    "topic" : "Modern Protocols: gRPC, GraphQL & WebSockets",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "grpc", "graphql", "websockets", "protobuf", "real-time", "modern protocols: grpc, graphql & websockets" ],
+    "criteria" : [ "contrasts REST, gRPC, GraphQL, and WebSockets for appropriate architectural use cases", "implements security controls for gRPC interceptors and GraphQL query complexity", "scales real-time bidirectional communication using WebSockets and Redis Pub/Sub" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-204",
+    "question" : "How do you implement authentication and authorization in gRPC using interceptors and metadata (metadata context)?",
+    "subject" : "API Security & Design",
+    "topic" : "Modern Protocols: gRPC, GraphQL & WebSockets",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "grpc", "graphql", "websockets", "protobuf", "real-time", "modern protocols: grpc, graphql & websockets" ],
+    "criteria" : [ "contrasts REST, gRPC, GraphQL, and WebSockets for appropriate architectural use cases", "implements security controls for gRPC interceptors and GraphQL query complexity", "scales real-time bidirectional communication using WebSockets and Redis Pub/Sub" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-205",
+    "question" : "How do you protect public GraphQL endpoints against denial of service caused by deeply nested recursive queries and high query complexity?",
+    "subject" : "API Security & Design",
+    "topic" : "Modern Protocols: gRPC, GraphQL & WebSockets",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "grpc", "graphql", "websockets", "protobuf", "real-time", "modern protocols: grpc, graphql & websockets" ],
+    "criteria" : [ "contrasts REST, gRPC, GraphQL, and WebSockets for appropriate architectural use cases", "implements security controls for gRPC interceptors and GraphQL query complexity", "scales real-time bidirectional communication using WebSockets and Redis Pub/Sub" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-206",
+    "question" : "How do you scale a WebSocket application across multiple backend servers using Redis Pub/Sub to broadcast messages to all connected clients?",
+    "subject" : "API Security & Design",
+    "topic" : "Modern Protocols: gRPC, GraphQL & WebSockets",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "grpc", "graphql", "websockets", "protobuf", "real-time", "modern protocols: grpc, graphql & websockets" ],
+    "criteria" : [ "contrasts REST, gRPC, GraphQL, and WebSockets for appropriate architectural use cases", "implements security controls for gRPC interceptors and GraphQL query complexity", "scales real-time bidirectional communication using WebSockets and Redis Pub/Sub" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-207",
+    "question" : "Explain how schema evolution and backward/forward compatibility are enforced in Protobuf using field tags (numbers) instead of field names.",
+    "subject" : "API Security & Design",
+    "topic" : "Modern Protocols: gRPC, GraphQL & WebSockets",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "grpc", "graphql", "websockets", "protobuf", "real-time", "modern protocols: grpc, graphql & websockets" ],
+    "criteria" : [ "contrasts REST, gRPC, GraphQL, and WebSockets for appropriate architectural use cases", "implements security controls for gRPC interceptors and GraphQL query complexity", "scales real-time bidirectional communication using WebSockets and Redis Pub/Sub" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-208",
+    "question" : "What are Server-Sent Events (SSE), and when are they a better architectural choice than WebSockets for uni-directional real-time data feeds?",
+    "subject" : "API Security & Design",
+    "topic" : "Modern Protocols: gRPC, GraphQL & WebSockets",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "grpc", "graphql", "websockets", "protobuf", "real-time", "modern protocols: grpc, graphql & websockets" ],
+    "criteria" : [ "contrasts REST, gRPC, GraphQL, and WebSockets for appropriate architectural use cases", "implements security controls for gRPC interceptors and GraphQL query complexity", "scales real-time bidirectional communication using WebSockets and Redis Pub/Sub" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-209",
+    "question" : "How do you implement heartbeat (ping/pong) frames and reconnection logic with exponential backoff for resilient WebSocket connections?",
+    "subject" : "API Security & Design",
+    "topic" : "Modern Protocols: gRPC, GraphQL & WebSockets",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "grpc", "graphql", "websockets", "protobuf", "real-time", "modern protocols: grpc, graphql & websockets" ],
+    "criteria" : [ "contrasts REST, gRPC, GraphQL, and WebSockets for appropriate architectural use cases", "implements security controls for gRPC interceptors and GraphQL query complexity", "scales real-time bidirectional communication using WebSockets and Redis Pub/Sub" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-210",
+    "question" : "Compare gRPC, GraphQL, and REST in terms of performance, schema enforcement, browser compatibility, and public API adoption.",
+    "subject" : "API Security & Design",
+    "topic" : "Modern Protocols: gRPC, GraphQL & WebSockets",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "grpc", "graphql", "websockets", "protobuf", "real-time", "modern protocols: grpc, graphql & websockets" ],
+    "criteria" : [ "contrasts REST, gRPC, GraphQL, and WebSockets for appropriate architectural use cases", "implements security controls for gRPC interceptors and GraphQL query complexity", "scales real-time bidirectional communication using WebSockets and Redis Pub/Sub" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-211",
+    "question" : "How do you implement authentication and authorization in gRPC using interceptors and metadata (metadata context)?",
+    "subject" : "API Security & Design",
+    "topic" : "Modern Protocols: gRPC, GraphQL & WebSockets",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "grpc", "graphql", "websockets", "protobuf", "real-time", "modern protocols: grpc, graphql & websockets" ],
+    "criteria" : [ "contrasts REST, gRPC, GraphQL, and WebSockets for appropriate architectural use cases", "implements security controls for gRPC interceptors and GraphQL query complexity", "scales real-time bidirectional communication using WebSockets and Redis Pub/Sub" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-212",
+    "question" : "How do you protect public GraphQL endpoints against denial of service caused by deeply nested recursive queries and high query complexity?",
+    "subject" : "API Security & Design",
+    "topic" : "Modern Protocols: gRPC, GraphQL & WebSockets",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "grpc", "graphql", "websockets", "protobuf", "real-time", "modern protocols: grpc, graphql & websockets" ],
+    "criteria" : [ "contrasts REST, gRPC, GraphQL, and WebSockets for appropriate architectural use cases", "implements security controls for gRPC interceptors and GraphQL query complexity", "scales real-time bidirectional communication using WebSockets and Redis Pub/Sub" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-213",
+    "question" : "How do you scale a WebSocket application across multiple backend servers using Redis Pub/Sub to broadcast messages to all connected clients?",
+    "subject" : "API Security & Design",
+    "topic" : "Modern Protocols: gRPC, GraphQL & WebSockets",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "grpc", "graphql", "websockets", "protobuf", "real-time", "modern protocols: grpc, graphql & websockets" ],
+    "criteria" : [ "contrasts REST, gRPC, GraphQL, and WebSockets for appropriate architectural use cases", "implements security controls for gRPC interceptors and GraphQL query complexity", "scales real-time bidirectional communication using WebSockets and Redis Pub/Sub" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-214",
+    "question" : "Architect a high-frequency market data streaming service handling 1 million concurrent subscribers using gRPC bidirectional streams and Envoy edge proxies.",
+    "subject" : "API Security & Design",
+    "topic" : "Modern Protocols: gRPC, GraphQL & WebSockets",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "grpc", "graphql", "websockets", "protobuf", "real-time", "modern protocols: grpc, graphql & websockets" ],
+    "criteria" : [ "contrasts REST, gRPC, GraphQL, and WebSockets for appropriate architectural use cases", "implements security controls for gRPC interceptors and GraphQL query complexity", "scales real-time bidirectional communication using WebSockets and Redis Pub/Sub" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-215",
+    "question" : "Design a federated GraphQL architecture (Apollo Federation) across 15 autonomous microservices with centralized schema composition and query routing.",
+    "subject" : "API Security & Design",
+    "topic" : "Modern Protocols: gRPC, GraphQL & WebSockets",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "grpc", "graphql", "websockets", "protobuf", "real-time", "modern protocols: grpc, graphql & websockets" ],
+    "criteria" : [ "contrasts REST, gRPC, GraphQL, and WebSockets for appropriate architectural use cases", "implements security controls for gRPC interceptors and GraphQL query complexity", "scales real-time bidirectional communication using WebSockets and Redis Pub/Sub" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-216",
+    "question" : "Analyze the challenges of load balancing long-lived gRPC HTTP/2 connections and design client-side load balancing with service mesh integration.",
+    "subject" : "API Security & Design",
+    "topic" : "Modern Protocols: gRPC, GraphQL & WebSockets",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "grpc", "graphql", "websockets", "protobuf", "real-time", "modern protocols: grpc, graphql & websockets" ],
+    "criteria" : [ "contrasts REST, gRPC, GraphQL, and WebSockets for appropriate architectural use cases", "implements security controls for gRPC interceptors and GraphQL query complexity", "scales real-time bidirectional communication using WebSockets and Redis Pub/Sub" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-217",
+    "question" : "Architect an enterprise real-time collaboration engine using WebSockets that guarantees message ordering and handles network partitions gracefully.",
+    "subject" : "API Security & Design",
+    "topic" : "Modern Protocols: gRPC, GraphQL & WebSockets",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "grpc", "graphql", "websockets", "protobuf", "real-time", "modern protocols: grpc, graphql & websockets" ],
+    "criteria" : [ "contrasts REST, gRPC, GraphQL, and WebSockets for appropriate architectural use cases", "implements security controls for gRPC interceptors and GraphQL query complexity", "scales real-time bidirectional communication using WebSockets and Redis Pub/Sub" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-218",
+    "question" : "Design a high-performance API Gateway that transcodes external REST/JSON HTTP requests into internal gRPC/Protobuf calls with sub-millisecond overhead.",
+    "subject" : "API Security & Design",
+    "topic" : "Modern Protocols: gRPC, GraphQL & WebSockets",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "grpc", "graphql", "websockets", "protobuf", "real-time", "modern protocols: grpc, graphql & websockets" ],
+    "criteria" : [ "contrasts REST, gRPC, GraphQL, and WebSockets for appropriate architectural use cases", "implements security controls for gRPC interceptors and GraphQL query complexity", "scales real-time bidirectional communication using WebSockets and Redis Pub/Sub" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-219",
+    "question" : "Architect a high-frequency market data streaming service handling 1 million concurrent subscribers using gRPC bidirectional streams and Envoy edge proxies.",
+    "subject" : "API Security & Design",
+    "topic" : "Modern Protocols: gRPC, GraphQL & WebSockets",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "grpc", "graphql", "websockets", "protobuf", "real-time", "modern protocols: grpc, graphql & websockets" ],
+    "criteria" : [ "contrasts REST, gRPC, GraphQL, and WebSockets for appropriate architectural use cases", "implements security controls for gRPC interceptors and GraphQL query complexity", "scales real-time bidirectional communication using WebSockets and Redis Pub/Sub" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-220",
+    "question" : "What is an API Gateway, and what core cross-cutting concerns does it offload from backend microservices?",
+    "subject" : "API Security & Design",
+    "topic" : "API Governance, Gateway & Zero Trust",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "api gateway", "zero trust", "governance", "waf", "service mesh", "api governance, gateway & zero trust" ],
+    "criteria" : [ "evaluates API Gateway architectures and cross-cutting concern offloading", "implements Zero Trust principles and microservice mTLS identity verification", "configures WAF rules, API governance policies, and contract enforcement" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-221",
+    "question" : "What is the Zero Trust security model, and what are its core tenets ('never trust, always verify')?",
+    "subject" : "API Security & Design",
+    "topic" : "API Governance, Gateway & Zero Trust",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "api gateway", "zero trust", "governance", "waf", "service mesh", "api governance, gateway & zero trust" ],
+    "criteria" : [ "evaluates API Gateway architectures and cross-cutting concern offloading", "implements Zero Trust principles and microservice mTLS identity verification", "configures WAF rules, API governance policies, and contract enforcement" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-222",
+    "question" : "What is a Web Application Firewall (WAF), and how does it inspect and filter HTTP traffic before it reaches APIs?",
+    "subject" : "API Security & Design",
+    "topic" : "API Governance, Gateway & Zero Trust",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "api gateway", "zero trust", "governance", "waf", "service mesh", "api governance, gateway & zero trust" ],
+    "criteria" : [ "evaluates API Gateway architectures and cross-cutting concern offloading", "implements Zero Trust principles and microservice mTLS identity verification", "configures WAF rules, API governance policies, and contract enforcement" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-223",
+    "question" : "What is API documentation drift, and how do OpenAPI (Swagger) specifications keep contracts synchronized with code?",
+    "subject" : "API Security & Design",
+    "topic" : "API Governance, Gateway & Zero Trust",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "api gateway", "zero trust", "governance", "waf", "service mesh", "api governance, gateway & zero trust" ],
+    "criteria" : [ "evaluates API Gateway architectures and cross-cutting concern offloading", "implements Zero Trust principles and microservice mTLS identity verification", "configures WAF rules, API governance policies, and contract enforcement" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-224",
+    "question" : "What is an API Developer Portal, and what capabilities does it provide to internal and external developers?",
+    "subject" : "API Security & Design",
+    "topic" : "API Governance, Gateway & Zero Trust",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "api gateway", "zero trust", "governance", "waf", "service mesh", "api governance, gateway & zero trust" ],
+    "criteria" : [ "evaluates API Gateway architectures and cross-cutting concern offloading", "implements Zero Trust principles and microservice mTLS identity verification", "configures WAF rules, API governance policies, and contract enforcement" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-225",
+    "question" : "What is the difference between an edge API Gateway and an internal service mesh in microservice architectures?",
+    "subject" : "API Security & Design",
+    "topic" : "API Governance, Gateway & Zero Trust",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "api gateway", "zero trust", "governance", "waf", "service mesh", "api governance, gateway & zero trust" ],
+    "criteria" : [ "evaluates API Gateway architectures and cross-cutting concern offloading", "implements Zero Trust principles and microservice mTLS identity verification", "configures WAF rules, API governance policies, and contract enforcement" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-226",
+    "question" : "What is an API Key, and why is an API key suitable for project identification but insufficient for secure user authentication?",
+    "subject" : "API Security & Design",
+    "topic" : "API Governance, Gateway & Zero Trust",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "api gateway", "zero trust", "governance", "waf", "service mesh", "api governance, gateway & zero trust" ],
+    "criteria" : [ "evaluates API Gateway architectures and cross-cutting concern offloading", "implements Zero Trust principles and microservice mTLS identity verification", "configures WAF rules, API governance policies, and contract enforcement" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-227",
+    "question" : "What is an API Gateway, and what core cross-cutting concerns does it offload from backend microservices?",
+    "subject" : "API Security & Design",
+    "topic" : "API Governance, Gateway & Zero Trust",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "api gateway", "zero trust", "governance", "waf", "service mesh", "api governance, gateway & zero trust" ],
+    "criteria" : [ "evaluates API Gateway architectures and cross-cutting concern offloading", "implements Zero Trust principles and microservice mTLS identity verification", "configures WAF rules, API governance policies, and contract enforcement" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-228",
+    "question" : "What is the Zero Trust security model, and what are its core tenets ('never trust, always verify')?",
+    "subject" : "API Security & Design",
+    "topic" : "API Governance, Gateway & Zero Trust",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "api gateway", "zero trust", "governance", "waf", "service mesh", "api governance, gateway & zero trust" ],
+    "criteria" : [ "evaluates API Gateway architectures and cross-cutting concern offloading", "implements Zero Trust principles and microservice mTLS identity verification", "configures WAF rules, API governance policies, and contract enforcement" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-229",
+    "question" : "What is a Web Application Firewall (WAF), and how does it inspect and filter HTTP traffic before it reaches APIs?",
+    "subject" : "API Security & Design",
+    "topic" : "API Governance, Gateway & Zero Trust",
+    "difficulty" : "EASY",
+    "type" : "CONCEPTUAL",
+    "concepts" : [ "api gateway", "zero trust", "governance", "waf", "service mesh", "api governance, gateway & zero trust" ],
+    "criteria" : [ "evaluates API Gateway architectures and cross-cutting concern offloading", "implements Zero Trust principles and microservice mTLS identity verification", "configures WAF rules, API governance policies, and contract enforcement" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-230",
+    "question" : "How do you implement request and response transformation (header manipulation, payload redaction) at the API Gateway layer?",
+    "subject" : "API Security & Design",
+    "topic" : "API Governance, Gateway & Zero Trust",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "api gateway", "zero trust", "governance", "waf", "service mesh", "api governance, gateway & zero trust" ],
+    "criteria" : [ "evaluates API Gateway architectures and cross-cutting concern offloading", "implements Zero Trust principles and microservice mTLS identity verification", "configures WAF rules, API governance policies, and contract enforcement" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-231",
+    "question" : "What strategies ensure high availability and sub-millisecond routing latency when deploying API Gateways in front of mission-critical services?",
+    "subject" : "API Security & Design",
+    "topic" : "API Governance, Gateway & Zero Trust",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "api gateway", "zero trust", "governance", "waf", "service mesh", "api governance, gateway & zero trust" ],
+    "criteria" : [ "evaluates API Gateway architectures and cross-cutting concern offloading", "implements Zero Trust principles and microservice mTLS identity verification", "configures WAF rules, API governance policies, and contract enforcement" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-232",
+    "question" : "How do you implement Open Policy Agent (OPA) at the API Gateway to decouple fine-grained authorization policies from business logic?",
+    "subject" : "API Security & Design",
+    "topic" : "API Governance, Gateway & Zero Trust",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "api gateway", "zero trust", "governance", "waf", "service mesh", "api governance, gateway & zero trust" ],
+    "criteria" : [ "evaluates API Gateway architectures and cross-cutting concern offloading", "implements Zero Trust principles and microservice mTLS identity verification", "configures WAF rules, API governance policies, and contract enforcement" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-233",
+    "question" : "Explain how to configure IP whitelisting, geo-blocking, and bot mitigation rules on a cloud-native WAF (e.g. AWS WAF, Cloudflare).",
+    "subject" : "API Security & Design",
+    "topic" : "API Governance, Gateway & Zero Trust",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "api gateway", "zero trust", "governance", "waf", "service mesh", "api governance, gateway & zero trust" ],
+    "criteria" : [ "evaluates API Gateway architectures and cross-cutting concern offloading", "implements Zero Trust principles and microservice mTLS identity verification", "configures WAF rules, API governance policies, and contract enforcement" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-234",
+    "question" : "How do you implement a centralized API Gateway using Spring Cloud Gateway or Kong to enforce global rate limiting, logging, and JWT validation?",
+    "subject" : "API Security & Design",
+    "topic" : "API Governance, Gateway & Zero Trust",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "api gateway", "zero trust", "governance", "waf", "service mesh", "api governance, gateway & zero trust" ],
+    "criteria" : [ "evaluates API Gateway architectures and cross-cutting concern offloading", "implements Zero Trust principles and microservice mTLS identity verification", "configures WAF rules, API governance policies, and contract enforcement" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-235",
+    "question" : "Explain how mutual TLS (mTLS) with automated certificate rotation enforces Zero Trust network architecture between microservices.",
+    "subject" : "API Security & Design",
+    "topic" : "API Governance, Gateway & Zero Trust",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "api gateway", "zero trust", "governance", "waf", "service mesh", "api governance, gateway & zero trust" ],
+    "criteria" : [ "evaluates API Gateway architectures and cross-cutting concern offloading", "implements Zero Trust principles and microservice mTLS identity verification", "configures WAF rules, API governance policies, and contract enforcement" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-236",
+    "question" : "How do you design a secure API Developer Portal with automated self-service onboarding, API key issuance, and usage analytics?",
+    "subject" : "API Security & Design",
+    "topic" : "API Governance, Gateway & Zero Trust",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "api gateway", "zero trust", "governance", "waf", "service mesh", "api governance, gateway & zero trust" ],
+    "criteria" : [ "evaluates API Gateway architectures and cross-cutting concern offloading", "implements Zero Trust principles and microservice mTLS identity verification", "configures WAF rules, API governance policies, and contract enforcement" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-237",
+    "question" : "How do you implement request and response transformation (header manipulation, payload redaction) at the API Gateway layer?",
+    "subject" : "API Security & Design",
+    "topic" : "API Governance, Gateway & Zero Trust",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "api gateway", "zero trust", "governance", "waf", "service mesh", "api governance, gateway & zero trust" ],
+    "criteria" : [ "evaluates API Gateway architectures and cross-cutting concern offloading", "implements Zero Trust principles and microservice mTLS identity verification", "configures WAF rules, API governance policies, and contract enforcement" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-238",
+    "question" : "What strategies ensure high availability and sub-millisecond routing latency when deploying API Gateways in front of mission-critical services?",
+    "subject" : "API Security & Design",
+    "topic" : "API Governance, Gateway & Zero Trust",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "api gateway", "zero trust", "governance", "waf", "service mesh", "api governance, gateway & zero trust" ],
+    "criteria" : [ "evaluates API Gateway architectures and cross-cutting concern offloading", "implements Zero Trust principles and microservice mTLS identity verification", "configures WAF rules, API governance policies, and contract enforcement" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-239",
+    "question" : "How do you implement Open Policy Agent (OPA) at the API Gateway to decouple fine-grained authorization policies from business logic?",
+    "subject" : "API Security & Design",
+    "topic" : "API Governance, Gateway & Zero Trust",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "api gateway", "zero trust", "governance", "waf", "service mesh", "api governance, gateway & zero trust" ],
+    "criteria" : [ "evaluates API Gateway architectures and cross-cutting concern offloading", "implements Zero Trust principles and microservice mTLS identity verification", "configures WAF rules, API governance policies, and contract enforcement" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-240",
+    "question" : "Explain how to configure IP whitelisting, geo-blocking, and bot mitigation rules on a cloud-native WAF (e.g. AWS WAF, Cloudflare).",
+    "subject" : "API Security & Design",
+    "topic" : "API Governance, Gateway & Zero Trust",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "api gateway", "zero trust", "governance", "waf", "service mesh", "api governance, gateway & zero trust" ],
+    "criteria" : [ "evaluates API Gateway architectures and cross-cutting concern offloading", "implements Zero Trust principles and microservice mTLS identity verification", "configures WAF rules, API governance policies, and contract enforcement" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-241",
+    "question" : "How do you implement a centralized API Gateway using Spring Cloud Gateway or Kong to enforce global rate limiting, logging, and JWT validation?",
+    "subject" : "API Security & Design",
+    "topic" : "API Governance, Gateway & Zero Trust",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "api gateway", "zero trust", "governance", "waf", "service mesh", "api governance, gateway & zero trust" ],
+    "criteria" : [ "evaluates API Gateway architectures and cross-cutting concern offloading", "implements Zero Trust principles and microservice mTLS identity verification", "configures WAF rules, API governance policies, and contract enforcement" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-242",
+    "question" : "Explain how mutual TLS (mTLS) with automated certificate rotation enforces Zero Trust network architecture between microservices.",
+    "subject" : "API Security & Design",
+    "topic" : "API Governance, Gateway & Zero Trust",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "api gateway", "zero trust", "governance", "waf", "service mesh", "api governance, gateway & zero trust" ],
+    "criteria" : [ "evaluates API Gateway architectures and cross-cutting concern offloading", "implements Zero Trust principles and microservice mTLS identity verification", "configures WAF rules, API governance policies, and contract enforcement" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-243",
+    "question" : "How do you design a secure API Developer Portal with automated self-service onboarding, API key issuance, and usage analytics?",
+    "subject" : "API Security & Design",
+    "topic" : "API Governance, Gateway & Zero Trust",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "api gateway", "zero trust", "governance", "waf", "service mesh", "api governance, gateway & zero trust" ],
+    "criteria" : [ "evaluates API Gateway architectures and cross-cutting concern offloading", "implements Zero Trust principles and microservice mTLS identity verification", "configures WAF rules, API governance policies, and contract enforcement" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-244",
+    "question" : "How do you implement request and response transformation (header manipulation, payload redaction) at the API Gateway layer?",
+    "subject" : "API Security & Design",
+    "topic" : "API Governance, Gateway & Zero Trust",
+    "difficulty" : "MEDIUM",
+    "type" : "SCENARIO",
+    "concepts" : [ "api gateway", "zero trust", "governance", "waf", "service mesh", "api governance, gateway & zero trust" ],
+    "criteria" : [ "evaluates API Gateway architectures and cross-cutting concern offloading", "implements Zero Trust principles and microservice mTLS identity verification", "configures WAF rules, API governance policies, and contract enforcement" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-245",
+    "question" : "Architect a global multi-region API Gateway platform processing 2 billion requests daily with dynamic routing, failover, and zero single points of failure.",
+    "subject" : "API Security & Design",
+    "topic" : "API Governance, Gateway & Zero Trust",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "api gateway", "zero trust", "governance", "waf", "service mesh", "api governance, gateway & zero trust" ],
+    "criteria" : [ "evaluates API Gateway architectures and cross-cutting concern offloading", "implements Zero Trust principles and microservice mTLS identity verification", "configures WAF rules, API governance policies, and contract enforcement" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-246",
+    "question" : "Design an automated compliance auditing pipeline that scans all enterprise API endpoints against internal security and OpenAPI standards.",
+    "subject" : "API Security & Design",
+    "topic" : "API Governance, Gateway & Zero Trust",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "api gateway", "zero trust", "governance", "waf", "service mesh", "api governance, gateway & zero trust" ],
+    "criteria" : [ "evaluates API Gateway architectures and cross-cutting concern offloading", "implements Zero Trust principles and microservice mTLS identity verification", "configures WAF rules, API governance policies, and contract enforcement" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-247",
+    "question" : "Analyze the latency, throughput, and operational overhead of enforcing Zero Trust mTLS across 1,000 heterogeneous microservices in Kubernetes.",
+    "subject" : "API Security & Design",
+    "topic" : "API Governance, Gateway & Zero Trust",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "api gateway", "zero trust", "governance", "waf", "service mesh", "api governance, gateway & zero trust" ],
+    "criteria" : [ "evaluates API Gateway architectures and cross-cutting concern offloading", "implements Zero Trust principles and microservice mTLS identity verification", "configures WAF rules, API governance policies, and contract enforcement" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-248",
+    "question" : "Design a resilient API monetization and metering platform that measures API call consumption in real time and enforces prepaid quotas with zero latency impact.",
+    "subject" : "API Security & Design",
+    "topic" : "API Governance, Gateway & Zero Trust",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "api gateway", "zero trust", "governance", "waf", "service mesh", "api governance, gateway & zero trust" ],
+    "criteria" : [ "evaluates API Gateway architectures and cross-cutting concern offloading", "implements Zero Trust principles and microservice mTLS identity verification", "configures WAF rules, API governance policies, and contract enforcement" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-249",
+    "question" : "How do you architect a secure B2B partner integration gateway that supports client certificate pinning, mutual TLS, and cryptographic payload signing?",
+    "subject" : "API Security & Design",
+    "topic" : "API Governance, Gateway & Zero Trust",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "api gateway", "zero trust", "governance", "waf", "service mesh", "api governance, gateway & zero trust" ],
+    "criteria" : [ "evaluates API Gateway architectures and cross-cutting concern offloading", "implements Zero Trust principles and microservice mTLS identity verification", "configures WAF rules, API governance policies, and contract enforcement" ],
+    "follow_up" : true
+  }, {
+    "id" : "SEC-250",
+    "question" : "Architect a global multi-region API Gateway platform processing 2 billion requests daily with dynamic routing, failover, and zero single points of failure.",
+    "subject" : "API Security & Design",
+    "topic" : "API Governance, Gateway & Zero Trust",
+    "difficulty" : "HARD",
+    "type" : "ARCHITECTURE",
+    "concepts" : [ "api gateway", "zero trust", "governance", "waf", "service mesh", "api governance, gateway & zero trust" ],
+    "criteria" : [ "evaluates API Gateway architectures and cross-cutting concern offloading", "implements Zero Trust principles and microservice mTLS identity verification", "configures WAF rules, API governance policies, and contract enforcement" ],
+    "follow_up" : true
+  } ]
+}

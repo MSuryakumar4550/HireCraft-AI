@@ -90,6 +90,18 @@ export const NAV_ITEMS: NavItem[] = [
     group: NAV_GROUPS.PREPARATION,
     showInNav: true,
     showBreadcrumb: true,
+    subItems: [
+      {
+        id: 'aptitude-mixed',
+        label: 'Mixed Practice',
+        path: `${ROUTES.APTITUDE}?tab=mixed`,
+      },
+      {
+        id: 'aptitude-category',
+        label: 'Category Wise',
+        path: `${ROUTES.APTITUDE}?tab=category`,
+      },
+    ],
   },
   {
     id: 'technical-interview',
