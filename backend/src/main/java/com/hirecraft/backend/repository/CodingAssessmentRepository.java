@@ -6,9 +6,10 @@ import com.hirecraft.backend.enums.AssessmentStatus;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
+import java.util.UUID;
 
 
-public interface CodingAssessmentRepository extends JpaRepository<CodingAssessment, Long> {
+public interface CodingAssessmentRepository extends JpaRepository<CodingAssessment, UUID> {
 
     List<CodingAssessment> findByUserUserIdOrderByCreatedAtDesc(Long userId);
 

@@ -14,7 +14,11 @@
         "explanation": "Because nums[0] + nums[1] == 9, we return [0, 1]."
       }
     ],
-    "starterCode": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        \n    }\n}"
+    "starterCode": {
+      "python": "class Solution:\n    def twoSum(self, nums, target):\n        # Write your solution here\n        pass\n",
+      "java": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        // Write your solution here\n        return new int[]{};\n    }\n}\n",
+      "cpp": "class Solution {\npublic:\n    vector<int> twoSum(vector<int>& nums, int target) {\n        // Write your solution here\n        return {};\n    }\n};\n"
+    }
   },
   {
     "id": 2,

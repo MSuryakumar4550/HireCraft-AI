@@ -216,16 +216,16 @@ export function BehavioralInterviewPage() {
         useQuestionBank: true,
       })
 
-      const startedSession = await voiceInterviewService.startInterview(newSession.id)
+      const startedSession = await voiceInterviewService.startInterview(newSession.id!)
       setSession(startedSession)
       
-      const q = await voiceInterviewService.getCurrentQuestion(startedSession.id)
+      const q = await voiceInterviewService.getCurrentQuestion(startedSession.id!)
       setCurrentQuestion(q)
       setQuestionIndex(1)
       setStep('interview')
 
       if (voiceEnabled && q?.questionText) {
-        setTimeout(() => speakQuestion(q.questionText), 400)
+        setTimeout(() => speakQuestion(q.questionText || ''), 400)
       }
 
       toast.success('Behavioral Mock Session initialized with AI Voice & STAR analysis!')
@@ -249,7 +249,7 @@ export function BehavioralInterviewPage() {
 
     setIsSubmitting(true)
     try {
-      const nextQ = await voiceInterviewService.submitAnswer(session.id, {
+      const nextQ = await voiceInterviewService.submitAnswer(session.id!, {
         questionNo: questionIndex,
         questionId: currentQuestion.id,
         answerText: textAnswer.trim(),
@@ -263,12 +263,12 @@ export function BehavioralInterviewPage() {
         setCurrentQuestion(nextQ)
         setQuestionIndex((prev) => prev + 1)
         if (voiceEnabled && nextQ.questionText) {
-          setTimeout(() => speakQuestion(nextQ.questionText), 400)
+          setTimeout(() => speakQuestion(nextQ.questionText || ''), 400)
         }
         toast.info(`Next Question: ${questionIndex + 1} of ${totalQuestions}`)
       } else {
-        await voiceInterviewService.completeInterview(session.id)
-        const summaryData = await voiceInterviewService.getSummary(session.id)
+        await voiceInterviewService.completeInterview(session.id!)
+        const summaryData = await voiceInterviewService.getSummary(session.id!)
         setSummary(summaryData)
         setStep('summary')
         toast.success('Behavioral session complete! View your STAR method analysis.')
@@ -433,7 +433,7 @@ export function BehavioralInterviewPage() {
                   <Button
                     size="sm"
                     variant="outline"
-                    onClick={() => isSpeaking ? stopSpeaking() : speakQuestion(currentQuestion.questionText)}
+                    onClick={() => isSpeaking ? stopSpeaking() : speakQuestion(currentQuestion.questionText || '')}
                     className="gap-2 text-xs"
                   >
                     {isSpeaking ? <VolumeX className="size-4 text-rose-500" /> : <Volume2 className="size-4 text-primary" />}
@@ -511,7 +511,7 @@ export function BehavioralInterviewPage() {
                 <div className="flex items-center gap-2 text-rose-600 font-bold text-lg">
                   <Award className="size-6" /> Behavioral Session STAR Report
                 </div>
-                <h2 className="text-2xl font-bold">{summary.jobRole}</h2>
+                <h2 className="text-2xl font-bold">{summary.subject}</h2>
                 <p className="text-sm text-muted-foreground">{summary.summaryFeedback}</p>
               </div>
               <div className="grid place-items-center rounded-2xl bg-card border p-6 shadow-sm min-w-[140px]">

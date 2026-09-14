@@ -74,12 +74,7 @@ export const NAV_ITEMS: NavItem[] = [
         id: 'coding-practice-difficulty',
         label: 'Difficulty Wise',
         path: `${ROUTES.CODING_PRACTICE}?tab=difficulty`,
-      },
-      {
-        id: 'coding-practice-company',
-        label: 'Company Wise',
-        path: `${ROUTES.CODING_PRACTICE}?tab=company`,
-      },
+      }
     ],
   },
   {

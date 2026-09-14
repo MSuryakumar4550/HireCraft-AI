@@ -1,26 +1,29 @@
 import { useState, useEffect, useRef } from 'react'
 import { PageHeader } from '@/components/common/PageHeader'
 import { Button } from '@/components/ui/button'
-import { Code2, Play, CheckCircle, ChevronLeft, ChevronRight, TerminalSquare, AlertCircle } from 'lucide-react'
+import { Code2, Play, CheckCircle, TerminalSquare, AlertCircle, Award } from 'lucide-react'
 import Editor from '@monaco-editor/react'
 import { Badge } from '@/components/ui/badge'
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter } from '@/components/ui/dialog'
-import codingQuestionsData from '@/data/codingQuestions.json'
 import { useExamStore } from '@/stores/examStore'
+import { apiClient } from '@/services/apiClient'
 
-type CodingLanguage = 'javascript' | 'python' | 'java' | 'cpp' | 'c'
+type CodingLanguage = 'python' | 'java' | 'cpp'
 
 export function CodingPracticePage() {
   const [isExamStarted, setIsExamStarted] = useState(false)
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
   const [filteredQuestions, setFilteredQuestions] = useState<any[]>([])
-  const [language, setLanguage] = useState<CodingLanguage>('javascript')
+  const [language, setLanguage] = useState<CodingLanguage>('python')
   const [code, setCode] = useState<string>('')
   const [output, setOutput] = useState<string | null>(null)
   const [isRunning, setIsRunning] = useState(false)
   const [timeLeft, setTimeLeft] = useState(0)
   const [selectedDifficulty, setSelectedDifficulty] = useState<string>('Easy')
+  const [assessmentId, setAssessmentId] = useState<string | null>(null)
   const [antiCheatModalType, setAntiCheatModalType] = useState<'warning' | 'terminated' | null>(null)
+  const [savedCodes, setSavedCodes] = useState<Record<number, string>>({})
+  const [assessmentResult, setAssessmentResult] = useState<any | null>(null)
   const strikeCountRef = useRef(0)
   const { setExamActive } = useExamStore()
 
@@ -50,32 +53,52 @@ export function CodingPracticePage() {
 
   // Initialize code when language or question changes
   useEffect(() => {
-    if (currentQuestion && currentQuestion.starterCode) {
-      setCode(currentQuestion.starterCode[language as keyof typeof currentQuestion.starterCode] || '')
+    if (currentQuestion) {
+      if (savedCodes[currentQuestionIndex] !== undefined) {
+        setCode(savedCodes[currentQuestionIndex])
+      } else {
+        setCode(currentQuestion.starterCode?.[language as keyof typeof currentQuestion.starterCode] || '')
+      }
+    } else {
+      setCode('')
     }
   }, [language, currentQuestionIndex, currentQuestion])
 
   const handleStartExam = async () => {
     if (selectedDifficulty === 'All') return;
     try {
-      const res = await fetch(`http://localhost:8000/coding_assessment?difficulty=${selectedDifficulty}&user_id=test-user-123`)
-      const data = await res.json()
-      if (data.error || !data.length) {
+      const res = await apiClient.post<any>('/api/coding/assessments', {
+        difficultyLevel: selectedDifficulty.toUpperCase(),
+        assessmentMode: 'TOPIC_WISE'
+      });
+      
+      const data = res.data;
+      if (!data || !data.questions || !data.questions.length) {
         alert("Failed to fetch assessment.")
         return
       }
-      setFilteredQuestions(data)
+      setAssessmentId(data.codingAssessmentId)
+      setFilteredQuestions(data.questions)
       setCurrentQuestionIndex(0)
       strikeCountRef.current = 0
       setIsExamStarted(true)
       setExamActive(true)
-      setTimeLeft(data[0].time_limit_minutes * 60)
+      setTimeLeft(data.totalTimeLimitMinutes * 60)
     } catch (e) {
       console.error(e)
+      alert("Error starting exam. Please ensure backend is running.")
     }
   }
 
-  const handleFinishExam = () => {
+  const handleFinishExam = async () => {
+    if (assessmentId) {
+      try {
+        const res = await apiClient.post<any>(`/api/coding/assessments/${assessmentId}/complete`);
+        setAssessmentResult(res.data);
+      } catch (e) {
+        console.error("Error completing exam", e);
+      }
+    }
     setIsExamStarted(false)
     setExamActive(false)
     setOutput(null)
@@ -113,44 +136,140 @@ export function CodingPracticePage() {
     };
   }, [isExamStarted]);
 
-  const handleRunCode = () => {
+  const executeCode = async (isAutoSubmit: boolean) => {
+    if (!assessmentId) return;
     setIsRunning(true)
-    setOutput(null)
-    
-    // Simulate code execution delay
-    setTimeout(() => {
-      setIsRunning(false)
-      setOutput('Running test cases...\nTest Case 1: Passed\nTest Case 2: Passed\n\nAll test cases passed successfully!')
-    }, 1500)
-  }
-
-  const handleSubmitCode = async (autoSubmit: boolean = false) => {
-    // In a real scenario, we would run test cases on backend.
-    // For now, if user clicks submit, assume correct. If timeout, assume incorrect.
-    const isCorrect = !autoSubmit;
+    setOutput('Submitting to Judge0...')
     
     try {
-      await fetch('http://localhost:8000/submit_answer', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          user_id: "test-user-123",
-          question_id: String(currentQuestion.id),
-          question_type: "CODING",
-          is_correct: isCorrect
-        })
+      await apiClient.post(`/api/coding/assessments/${assessmentId}/submit`, {
+        questionNo: currentQuestionIndex + 1,
+        language: language,
+        sourceCode: code
       });
-    } catch (err) {
-      console.error(err)
-    }
 
+      // Poll for result
+      pollSubmissionResult(isAutoSubmit);
+    } catch (err: any) {
+      console.error(err);
+      setOutput(`Error: ${err.message || 'Submission failed'}`);
+      setIsRunning(false);
+    }
+  }
+
+  const pollSubmissionResult = (isAutoSubmit: boolean) => {
+    let attempts = 0;
+    const intervalId = setInterval(async () => {
+      attempts++;
+      if (attempts > 30) {
+        clearInterval(intervalId);
+        setOutput('Polling timed out.');
+        setIsRunning(false);
+        return;
+      }
+
+      try {
+        const res = await apiClient.get<any[]>(`/api/coding/assessments/${assessmentId}/submissions`);
+        const submissions = res.data || [];
+        const mySubmissions = submissions.filter(s => s.questionNo === currentQuestionIndex + 1);
+        
+        if (mySubmissions.length > 0) {
+          // get the latest submission for this question
+          const latest = mySubmissions[mySubmissions.length - 1];
+          
+          if (latest.status === 'PENDING') {
+            setOutput('Status: PENDING...');
+          } else if (latest.status === 'RUNNING') {
+            setOutput('Status: RUNNING...');
+          } else {
+            // Terminal status
+            clearInterval(intervalId);
+            setIsRunning(false);
+            
+            let resultText = `Status: ${latest.status}\n`;
+            if (latest.testcasesTotal > 0) {
+              resultText += `Testcases Passed: ${latest.testcasesPassed} / ${latest.testcasesTotal}\n`;
+            }
+            if (latest.executionTimeMs != null) resultText += `Time: ${latest.executionTimeMs} ms\n`;
+            if (latest.memoryKb != null) resultText += `Memory: ${latest.memoryKb} KB\n`;
+            
+            if (latest.compileOutput) resultText += `\nCompiler Output:\n${latest.compileOutput}\n`;
+            if (latest.stdout) resultText += `\nStandard Output:\n${latest.stdout}\n`;
+            if (latest.stderr) resultText += `\nStandard Error:\n${latest.stderr}\n`;
+            
+            setOutput(resultText);
+
+            if (isAutoSubmit) {
+              handleNextQuestion();
+            }
+          }
+        }
+      } catch (err) {
+        console.error(err);
+      }
+    }, 1500);
+  }
+
+  const handleRunCode = () => {
+    executeCode(false);
+  }
+
+  const handleSubmitCode = (autoSubmit: boolean = false) => {
+    executeCode(autoSubmit);
+  }
+
+  const handleNextQuestion = () => {
     if (currentQuestionIndex < filteredQuestions.length - 1) {
       setCurrentQuestionIndex(prev => prev + 1)
       setOutput(null)
-      setTimeLeft(filteredQuestions[currentQuestionIndex + 1].time_limit_minutes * 60)
     } else {
       handleFinishExam()
     }
+  }
+
+  const handlePreviousQuestion = () => {
+    if (currentQuestionIndex > 0) {
+      setCurrentQuestionIndex(prev => prev - 1)
+      setOutput(null)
+    }
+  }
+
+  if (assessmentResult) {
+    return (
+      <div className="space-y-6 pb-8 max-w-4xl mx-auto">
+        <PageHeader 
+          title="Assessment Result" 
+          description="Your performance in the coding assessment."
+        />
+        <div className="rounded-xl border bg-card text-card-foreground shadow-sm p-8 max-w-2xl mx-auto">
+          <div className="text-center space-y-4 mb-8">
+            <Award className="size-16 text-primary mx-auto" />
+            <h2 className="text-3xl font-bold">Score: {assessmentResult.score}%</h2>
+            <p className="text-muted-foreground text-lg">
+              {assessmentResult.status === 'COMPLETED' ? 'Assessment Completed successfully.' : 'Assessment exited.'}
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-2 gap-4">
+            <div className="bg-muted p-4 rounded-lg text-center">
+              <div className="text-3xl font-bold">{assessmentResult.totalQuestions}</div>
+              <div className="text-sm text-muted-foreground">Total Questions</div>
+            </div>
+            <div className="bg-muted p-4 rounded-lg text-center">
+              <div className="text-3xl font-bold">{assessmentResult.submissions?.length || 0}</div>
+              <div className="text-sm text-muted-foreground">Submissions Attempted</div>
+            </div>
+          </div>
+          
+          <div className="mt-8 flex justify-center">
+            <Button onClick={() => {
+              setAssessmentResult(null);
+              setSelectedDifficulty('Easy');
+            }}>Back to Practice</Button>
+          </div>
+        </div>
+      </div>
+    );
   }
 
   if (!isExamStarted) {
@@ -239,7 +358,7 @@ export function CodingPracticePage() {
             <div>
               <h3 className="text-lg font-semibold mb-3">Examples</h3>
               <div className="space-y-4">
-                {currentQuestion.examples.map((ex, idx) => (
+                {currentQuestion.examples.map((ex: any, idx: number) => (
                   <div key={idx} className="bg-muted p-4 rounded-lg font-mono text-sm">
                     <div><span className="font-bold">Input:</span> {ex.input}</div>
                     <div><span className="font-bold">Output:</span> {ex.output}</div>
@@ -252,11 +371,17 @@ export function CodingPracticePage() {
             <div>
               <h3 className="text-lg font-semibold mb-3">Constraints</h3>
               <ul className="list-disc pl-5 space-y-1">
-                {currentQuestion.constraints.map((c, idx) => (
+                {currentQuestion.constraints.map((c: string, idx: number) => (
                   <li key={idx} className="text-sm">{c}</li>
                 ))}
               </ul>
             </div>
+          </div>
+          <div className="p-4 border-t bg-muted/10 flex justify-between">
+            <Button variant="outline" onClick={handlePreviousQuestion} disabled={currentQuestionIndex === 0}>Previous</Button>
+            <Button onClick={handleNextQuestion}>
+              {currentQuestionIndex === filteredQuestions.length - 1 ? 'Finish Exam' : 'Next'}
+            </Button>
           </div>
         </div>
 
@@ -268,11 +393,9 @@ export function CodingPracticePage() {
               onChange={(e) => setLanguage(e.target.value as CodingLanguage)}
               className="bg-background border rounded-md px-3 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
             >
-              <option value="javascript">JavaScript</option>
               <option value="python">Python</option>
               <option value="java">Java</option>
               <option value="cpp">C++</option>
-              <option value="c">C</option>
             </select>
             <div className="space-x-2">
               <Button variant="outline" size="sm" onClick={handleRunCode} disabled={isRunning}>
@@ -289,10 +412,13 @@ export function CodingPracticePage() {
           <div className="flex-1 relative">
             <Editor
               height="100%"
-              language={language === 'c' || language === 'cpp' ? 'cpp' : language}
+              language={language}
               theme="vs-dark"
               value={code}
-              onChange={(val) => setCode(val || '')}
+              onChange={(val) => {
+                setCode(val || '');
+                setSavedCodes(prev => ({ ...prev, [currentQuestionIndex]: val || '' }));
+              }}
               options={{
                 minimap: { enabled: false },
                 fontSize: 14,

@@ -8,8 +8,8 @@ export interface AiMemoryHistoryItem {
 
 export interface AiMemoryItem {
   memoryId: number;
-  memoryType: 'STRENGTH' | 'WEAKNESS' | 'BEHAVIOR';
-  category: 'DSA' | 'APTITUDE' | 'TECHNICAL' | 'SQL' | 'SYSTEM_DESIGN' | 'BEHAVIORAL';
+  memoryType: 'STRENGTH' | 'WEAKNESS' | 'BEHAVIOR' | 'SKILL' | 'EXPERIENCE' | 'EDUCATION';
+  category: 'DSA' | 'APTITUDE' | 'TECHNICAL' | 'SQL' | 'SYSTEM_DESIGN' | 'BEHAVIORAL' | 'RESUME';
   memoryKey: string;
   memoryValue: string; // JSON string of AiMemoryHistoryItem[]
 }

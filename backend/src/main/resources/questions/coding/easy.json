@@ -19,6 +19,25 @@
       "java",
       "python",
       "cpp"
+    ],
+    "starterCode": {
+      "python": "class Solution:\n    def twoSum(self, nums, target):\n        # Write your solution here\n        pass\n",
+      "java": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        // Write your solution here\n        return new int[]{};\n    }\n}\n",
+      "cpp": "class Solution {\npublic:\n    vector<int> twoSum(vector<int>& nums, int target) {\n        // Write your solution here\n        return {};\n    }\n};\n"
+    },
+    "testCases": [
+      {
+        "input": "[2,7,11,15]\n9",
+        "expectedOutput": "[0, 1]"
+      },
+      {
+        "input": "[3,2,4]\n6",
+        "expectedOutput": "[1, 2]"
+      },
+      {
+        "input": "[3,3]\n6",
+        "expectedOutput": "[0, 1]"
+      }
     ]
   },
   {
@@ -80,6 +99,25 @@
       "java",
       "python",
       "cpp"
+    ],
+    "starterCode": {
+      "python": "class Solution:\n    def isPalindrome(self, x: int) -> bool:\n        pass\n",
+      "java": "class Solution {\n    public boolean isPalindrome(int x) {\n        return false;\n    }\n}\n",
+      "cpp": "class Solution {\npublic:\n    bool isPalindrome(int x) {\n        return false;\n    }\n};\n"
+    },
+    "testCases": [
+      {
+        "input": "121",
+        "expectedOutput": "true"
+      },
+      {
+        "input": "-121",
+        "expectedOutput": "false"
+      },
+      {
+        "input": "10",
+        "expectedOutput": "false"
+      }
     ]
   },
   {
@@ -267,6 +305,25 @@
       "java",
       "python",
       "cpp"
+    ],
+    "starterCode": {
+      "python": "class Solution:\n    def singleNumber(self, nums) -> int:\n        pass\n",
+      "java": "class Solution {\n    public int singleNumber(int[] nums) {\n        return 0;\n    }\n}\n",
+      "cpp": "class Solution {\npublic:\n    int singleNumber(vector<int>& nums) {\n        return 0;\n    }\n};\n"
+    },
+    "testCases": [
+      {
+        "input": "[2,2,1]",
+        "expectedOutput": "1"
+      },
+      {
+        "input": "[4,1,2,1,2]",
+        "expectedOutput": "4"
+      },
+      {
+        "input": "[1]",
+        "expectedOutput": "1"
+      }
     ]
   },
   {
@@ -414,6 +471,21 @@
       "java",
       "python",
       "cpp"
+    ],
+    "starterCode": {
+      "python": "class Solution:\n    def climbStairs(self, n: int) -> int:\n        pass\n",
+      "java": "class Solution {\n    public int climbStairs(int n) {\n        return 0;\n    }\n}\n",
+      "cpp": "class Solution {\npublic:\n    int climbStairs(int n) {\n        return 0;\n    }\n};\n"
+    },
+    "testCases": [
+      {
+        "input": "2",
+        "expectedOutput": "2"
+      },
+      {
+        "input": "3",
+        "expectedOutput": "3"
+      }
     ]
   },
   {
@@ -435,6 +507,25 @@
       "java",
       "python",
       "cpp"
+    ],
+    "starterCode": {
+      "python": "class Solution:\n    def isValid(self, s: str) -> bool:\n        pass\n",
+      "java": "class Solution {\n    public boolean isValid(String s) {\n        return false;\n    }\n}\n",
+      "cpp": "class Solution {\npublic:\n    bool isValid(string s) {\n        return false;\n    }\n};\n"
+    },
+    "testCases": [
+      {
+        "input": "\"()\"",
+        "expectedOutput": "true"
+      },
+      {
+        "input": "\"()[]{}\"",
+        "expectedOutput": "true"
+      },
+      {
+        "input": "\"(]\"",
+        "expectedOutput": "false"
+      }
     ]
   },
   {
@@ -832,6 +923,25 @@
       "java",
       "python",
       "cpp"
+    ],
+    "starterCode": {
+      "python": "class Solution:\n    def lengthOfLastWord(self, s: str) -> int:\n        pass\n",
+      "java": "class Solution {\n    public int lengthOfLastWord(String s) {\n        return 0;\n    }\n}\n",
+      "cpp": "class Solution {\npublic:\n    int lengthOfLastWord(string s) {\n        return 0;\n    }\n};\n"
+    },
+    "testCases": [
+      {
+        "input": "\"Hello World\"",
+        "expectedOutput": "5"
+      },
+      {
+        "input": "\"   fly me   to   the moon  \"",
+        "expectedOutput": "4"
+      },
+      {
+        "input": "\"luffy is still joyboy\"",
+        "expectedOutput": "6"
+      }
     ]
   },
   {
@@ -10439,23 +10549,23 @@
     ]
   },
   {
-"id": 872,
-"title": "Leaf-Similar Trees",
-"difficulty": "EASY",
-"description": "Consider all the leaves of a binary tree, from left to right order, the values of those leaves form a leaf value sequence. Return true if and only if the two given trees are leaf-similar.",
-"examples": [
-{
-"input": "root1 = [3,5,1,6,2,9,8,null,null,7,4], root2 = [3,5,1,6,7,4,2,null,null,null,null,null,null,9,8]",
-"output": "true"
-}
-],
-"constraints": [
-"The number of nodes in each tree will be in the range [1, 200]."
-],
-"languages": [
-"java",
-"python",
-"cpp"
-]
-}
+    "id": 872,
+    "title": "Leaf-Similar Trees",
+    "difficulty": "EASY",
+    "description": "Consider all the leaves of a binary tree, from left to right order, the values of those leaves form a leaf value sequence. Return true if and only if the two given trees are leaf-similar.",
+    "examples": [
+      {
+        "input": "root1 = [3,5,1,6,2,9,8,null,null,7,4], root2 = [3,5,1,6,7,4,2,null,null,null,null,null,null,9,8]",
+        "output": "true"
+      }
+    ],
+    "constraints": [
+      "The number of nodes in each tree will be in the range [1, 200]."
+    ],
+    "languages": [
+      "java",
+      "python",
+      "cpp"
+    ]
+  }
 ]

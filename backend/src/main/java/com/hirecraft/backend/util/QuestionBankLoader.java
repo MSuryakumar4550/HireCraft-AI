@@ -1,5 +1,6 @@
 package com.hirecraft.backend.util;
 
+import com.hirecraft.backend.enums.DifficultyLevel;
 import tools.jackson.core.type.TypeReference;
 import tools.jackson.databind.json.JsonMapper;
 import jakarta.annotation.PostConstruct;
@@ -11,8 +12,8 @@ import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Loads question banks from JSON files at application startup.
@@ -26,27 +27,57 @@ public class QuestionBankLoader {
     private final JsonMapper objectMapper;
 
     @Getter
-    private List<Question> dsaQuestions = Collections.emptyList();
+    private List<Question> easyQuestions = Collections.emptyList();
 
     @Getter
-    private List<Question> companyQuestions = Collections.emptyList();
+    private List<Question> mediumQuestions = Collections.emptyList();
 
     @Getter
-    private List<Question> aptitudeQuestions = Collections.emptyList();
+    private List<Question> hardQuestions = Collections.emptyList();
 
-    @Getter
-    private List<Question> technicalQuestions = Collections.emptyList();
+    private final Map<Integer, Question> questionMap = new ConcurrentHashMap<>();
 
     @PostConstruct
     public void loadAll() {
-        dsaQuestions = loadFromJson("questions/dsa_questions.json");
-        companyQuestions = loadFromJson("questions/company_questions.json");
-        aptitudeQuestions = loadFromJson("questions/aptitude_questions.json");
-        technicalQuestions = loadFromJson("questions/technical_questions.json");
+        easyQuestions = loadFromJson("questions/coding/easy.json");
+        mediumQuestions = loadFromJson("questions/coding/medium.json");
+        hardQuestions = loadFromJson("questions/coding/hard.json");
 
-        log.info("Question bank loaded — DSA: {}, Company: {}, Aptitude: {}, Technical: {}",
-                dsaQuestions.size(), companyQuestions.size(),
-                aptitudeQuestions.size(), technicalQuestions.size());
+        questionMap.clear();
+        for (Question q : easyQuestions) {
+            if (q.getId() != null) questionMap.put(q.getId(), q);
+        }
+        for (Question q : mediumQuestions) {
+            if (q.getId() != null) questionMap.put(q.getId(), q);
+        }
+        for (Question q : hardQuestions) {
+            if (q.getId() != null) questionMap.put(q.getId(), q);
+        }
+
+        log.info("Coding Question Bank loaded — Easy: {}, Medium: {}, Hard: {}, Total unique indexed: {}",
+                easyQuestions.size(), mediumQuestions.size(), hardQuestions.size(), questionMap.size());
+    }
+
+    public List<Question> getQuestionsByDifficulty(DifficultyLevel difficulty) {
+        if (difficulty == null) return Collections.emptyList();
+        return switch (difficulty) {
+            case EASY -> Collections.unmodifiableList(easyQuestions);
+            case MEDIUM -> Collections.unmodifiableList(mediumQuestions);
+            case HARD -> Collections.unmodifiableList(hardQuestions);
+        };
+    }
+
+    public Optional<Question> getQuestionById(Integer id) {
+        if (id == null) return Optional.empty();
+        return Optional.ofNullable(questionMap.get(id));
+    }
+
+    public List<Question> getAllCodingQuestions() {
+        List<Question> all = new ArrayList<>(easyQuestions.size() + mediumQuestions.size() + hardQuestions.size());
+        all.addAll(easyQuestions);
+        all.addAll(mediumQuestions);
+        all.addAll(hardQuestions);
+        return all;
     }
 
     private List<Question> loadFromJson(String resourcePath) {
@@ -57,7 +88,8 @@ public class QuestionBankLoader {
                 return Collections.emptyList();
             }
             try (InputStream is = resource.getInputStream()) {
-                return objectMapper.readValue(is, new TypeReference<List<Question>>() {});
+                List<Question> list = objectMapper.readValue(is, new TypeReference<List<Question>>() {});
+                return list != null ? list : Collections.emptyList();
             }
         } catch (IOException e) {
             log.error("Failed to load question bank from {}: {}", resourcePath, e.getMessage());

@@ -13,7 +13,7 @@ const fieldVariants = {
     opacity: 1,
     y: 0,
     filter: 'blur(0px)',
-    transition: { delay: 0.35 + i * 0.12, duration: 0.5, ease: [0.22, 1, 0.36, 1] },
+    transition: { delay: 0.35 + i * 0.12, duration: 0.5 },
   }),
 }
 
@@ -22,7 +22,7 @@ export function ForgotPasswordPage() {
     <motion.div
       initial={{ opacity: 0, scale: 0.97 }}
       animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ duration: 0.5 }}
       className="w-full max-w-md sm:max-w-lg lg:max-w-xl"
     >
       <AuthFormCard

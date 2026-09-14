@@ -12,8 +12,7 @@ import java.util.List;
 @Setter
 public class CreateCodingAssessmentRequest {
 
-    @NotNull(message = "Assessment mode is required")
-    private AssessmentMode assessmentMode;
+    private AssessmentMode assessmentMode = AssessmentMode.TOPIC_WISE;
 
     @NotNull(message = "Difficulty level is required")
     private DifficultyLevel difficultyLevel;

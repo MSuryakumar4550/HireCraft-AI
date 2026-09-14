@@ -9,6 +9,7 @@ import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.Instant;
+import java.util.UUID;
 
 @Entity
 @Table(name = "coding_submissions")
@@ -20,9 +21,9 @@ import java.time.Instant;
 public class CodingSubmission {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.UUID)
     @Column(name = "submission_id", nullable = false, updatable = false)
-    private Long submissionId;
+    private UUID submissionId;
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "coding_assessment_id", nullable = false)

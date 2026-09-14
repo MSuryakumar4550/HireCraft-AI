@@ -15,6 +15,7 @@ import java.math.BigDecimal;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 @Entity
 @Table(name = "coding_assessments")
@@ -26,16 +27,16 @@ import java.util.List;
 public class CodingAssessment {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.UUID)
     @Column(name = "coding_assessment_id", nullable = false, updatable = false)
-    private Long codingAssessmentId;
+    private UUID codingAssessmentId;
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "user_id", nullable = false)
     private User user;
 
-    @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "virtual_interview_id", nullable = false)
+    @ManyToOne(fetch = FetchType.LAZY, optional = true)
+    @JoinColumn(name = "virtual_interview_id", nullable = true)
     private VirtualInterview virtualInterview;
 
     @Column(name = "stage_order")

@@ -4,6 +4,7 @@ import { EmptyState } from '@/components/common/EmptyState'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { Progress } from '@/components/ui/progress'
 import { apiClient } from '@/services/apiClient'
 import { aiMemoryService } from '@/services/aiMemoryService'
 import type { AiMemoryItem, AiMemoryHistoryItem } from '@/services/aiMemoryService'
@@ -227,7 +228,8 @@ export function ProgressPage() {
                           return (
                             <div className="rounded-lg border bg-background p-3 shadow-md text-xs space-y-1">
                               <p className="font-semibold text-foreground">{d.attempt} • {d.subject}</p>
-                              <p className="text-primary font-bold">Score: {d.score}/100</p>
+                              <div className="text-xl font-bold">{d.score || 0}%</div>
+                              <Progress value={d.score || 0} className="h-2 mt-2" />
                               <p className="text-muted-foreground">{d.date}</p>
                             </div>
                           )
@@ -395,10 +397,10 @@ export function ProgressPage() {
                     <div className="text-right">
                       <span className="text-xs text-muted-foreground">Score</span>
                       <p className={`font-bold text-base ${
-                        s.totalScore !== null && s.totalScore >= 70 ? 'text-emerald-600' :
-                        s.totalScore !== null && s.totalScore >= 50 ? 'text-amber-600' : 'text-rose-600'
+                        s.totalScore != null && s.totalScore >= 70 ? 'text-emerald-600' :
+                        s.totalScore != null && s.totalScore >= 50 ? 'text-amber-600' : 'text-rose-600'
                       }`}>
-                        {s.totalScore !== null ? `${s.totalScore}/100` : 'In Progress'}
+                        {s.totalScore != null ? `${s.totalScore}/100` : 'In Progress'}
                       </p>
                     </div>
                     <Button size="sm" variant="outline" asChild>
