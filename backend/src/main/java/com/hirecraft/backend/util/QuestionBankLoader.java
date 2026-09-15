@@ -43,6 +43,10 @@ public class QuestionBankLoader {
         mediumQuestions = loadFromJson("questions/coding/medium.json");
         hardQuestions = loadFromJson("questions/coding/hard.json");
 
+        easyQuestions.forEach(this::fillMissingStarterCode);
+        mediumQuestions.forEach(this::fillMissingStarterCode);
+        hardQuestions.forEach(this::fillMissingStarterCode);
+
         questionMap.clear();
         for (Question q : easyQuestions) {
             if (q.getId() != null) questionMap.put(q.getId(), q);
@@ -95,5 +99,49 @@ public class QuestionBankLoader {
             log.error("Failed to load question bank from {}: {}", resourcePath, e.getMessage());
             return Collections.emptyList();
         }
+    }
+
+    private void fillMissingStarterCode(Question q) {
+        if (q.getStarterCode() != null && !q.getStarterCode().isEmpty()) return;
+        
+        String funcName = toCamelCase(q.getTitle());
+        SignatureParser.SignatureInfo sig = SignatureParser.parse(q);
+        
+        // Build param strings
+        StringBuilder javaParams = new StringBuilder();
+        StringBuilder cppParams = new StringBuilder();
+        StringBuilder pythonParams = new StringBuilder("self");
+        
+        for (int i = 0; i < sig.params.size(); i++) {
+            SignatureParser.ParamInfo p = sig.params.get(i);
+            if (i > 0) {
+                javaParams.append(", ");
+                cppParams.append(", ");
+            }
+            pythonParams.append(", ").append(p.name).append(": ").append(p.pythonType);
+            javaParams.append(p.javaType).append(" ").append(p.name);
+            cppParams.append(p.cppType).append(" ").append(p.name);
+        }
+        
+        Map<String, String> starter = new LinkedHashMap<>();
+        starter.put("python", "class Solution:\n    def " + funcName + "(" + pythonParams.toString() + ") -> " + sig.returnPython + ":\n        # Write your solution here\n        pass\n");
+        starter.put("java", "class Solution {\n    public " + sig.returnJava + " " + funcName + "(" + javaParams.toString() + ") {\n        // Write your solution here\n        " + sig.defaultReturnJava + "\n    }\n}\n");
+        starter.put("cpp", "class Solution {\npublic:\n    " + sig.returnCpp + " " + funcName + "(" + cppParams.toString() + ") {\n        // Write your solution here\n        " + sig.defaultReturnCpp + "\n    }\n};\n");
+        q.setStarterCode(starter);
+    }
+
+    private String toCamelCase(String s) {
+        if (s == null || s.isEmpty()) return "solution";
+        String[] parts = s.split("[^a-zA-Z0-9]+");
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < parts.length; i++) {
+            if (parts[i].isEmpty()) continue;
+            if (sb.length() == 0) {
+                sb.append(parts[i].substring(0, 1).toLowerCase()).append(parts[i].substring(1));
+            } else {
+                sb.append(parts[i].substring(0, 1).toUpperCase()).append(parts[i].substring(1));
+            }
+        }
+        return sb.length() > 0 ? sb.toString() : "solution";
     }
 }

@@ -129,10 +129,11 @@ public class CodingAssessmentServiceImpl implements CodingAssessmentService {
 
         List<Question> pool = questionBankLoader.getQuestionsByDifficulty(difficulty);
 
-        // Filter out solved and already chosen questions, and ensure test cases exist
+        // Filter out solved and already chosen questions.
+        // Questions without test cases are still eligible — the Judge0 pipeline
+        // handles them gracefully by marking submissions as NO_TEST_CASES.
         List<Question> eligible = pool.stream()
                 .filter(q -> q.getId() != null)
-                .filter(q -> q.getTestCases() != null && !q.getTestCases().isEmpty())
                 .filter(q -> !solvedQuestionIds.contains(q.getId()))
                 .filter(q -> !alreadyChosenIds.contains(q.getId()))
                 .toList();
@@ -352,12 +353,38 @@ public class CodingAssessmentServiceImpl implements CodingAssessmentService {
                     .build());
         }
 
+        int answered = 0;
+        int correct = 0;
+        int wrong = 0;
+        
+        List<CodingSubmission> submissions = a.getSubmissions();
+        if (submissions != null && !submissions.isEmpty()) {
+            Map<Integer, CodingSubmission> latestSubmissions = new HashMap<>();
+            for (CodingSubmission sub : submissions) {
+                CodingSubmission existing = latestSubmissions.get(sub.getQuestionNo());
+                if (existing == null || sub.getSubmissionNumber() > existing.getSubmissionNumber()) {
+                    latestSubmissions.put(sub.getQuestionNo(), sub);
+                }
+            }
+            answered = latestSubmissions.size();
+            for (CodingSubmission sub : latestSubmissions.values()) {
+                if (isSubmissionAccepted(sub)) {
+                    correct++;
+                } else {
+                    wrong++;
+                }
+            }
+        }
+
         return CodingAssessmentResponse.builder()
                 .codingAssessmentId(a.getCodingAssessmentId())
                 .assessmentMode(a.getAssessmentMode())
                 .difficultyLevel(a.getDifficultyLevel())
                 .status(a.getStatus())
                 .totalQuestions(a.getTotalQuestions())
+                .answeredQuestions(answered)
+                .correctQuestions(correct)
+                .wrongQuestions(wrong)
                 .totalTimeLimitMinutes(totalMinutes > 0 ? totalMinutes : calculateDefaultTotalTime(a.getDifficultyLevel()))
                 .score(a.getScore())
                 .accuracy(a.getAccuracy())

@@ -19,6 +19,9 @@ public class CodingAssessmentResponse {
     private final DifficultyLevel difficultyLevel;
     private final AssessmentStatus status;
     private final Integer totalQuestions;
+    private final Integer answeredQuestions;
+    private final Integer correctQuestions;
+    private final Integer wrongQuestions;
     private final BigDecimal score;
     private final BigDecimal accuracy;
     private final Integer timeLimitMinutes;

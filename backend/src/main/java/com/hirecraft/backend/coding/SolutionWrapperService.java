@@ -91,7 +91,7 @@ public class SolutionWrapperService {
         String[] lines = tcInput.split("\\n", 1);
         if (lines.length < 1) return userCode;
         String nums_raw = lines[0].trim();
-        String nums_inner = nums_raw.replaceAll("^\\\\[", "").replaceAll("\\\\]$", "");
+        String nums_inner = nums_raw.replaceAll("^\\[", "").replaceAll("\\]$", "");
         String nums_java = "new int[] {";
         nums_java += nums_inner + "}";
         String nums_cpp = "{";
@@ -120,7 +120,7 @@ public class SolutionWrapperService {
         String[] lines = tcInput.split("\\n", 1);
         if (lines.length < 1) return userCode;
         String height_raw = lines[0].trim();
-        String height_inner = height_raw.replaceAll("^\\\\[", "").replaceAll("\\\\]$", "");
+        String height_inner = height_raw.replaceAll("^\\[", "").replaceAll("\\]$", "");
         String height_java = "new int[] {";
         height_java += height_inner + "}";
         String height_cpp = "{";
@@ -137,7 +137,7 @@ public class SolutionWrapperService {
         String[] lines = tcInput.split("\\n", 2);
         if (lines.length < 2) return userCode;
         String nums_raw = lines[0].trim();
-        String nums_inner = nums_raw.replaceAll("^\\\\[", "").replaceAll("\\\\]$", "");
+        String nums_inner = nums_raw.replaceAll("^\\[", "").replaceAll("\\]$", "");
         String nums_java = "new int[] {";
         nums_java += nums_inner + "}";
         String nums_cpp = "{";
@@ -155,7 +155,7 @@ public class SolutionWrapperService {
         String[] lines = tcInput.split("\\n", 1);
         if (lines.length < 1) return userCode;
         String nums_raw = lines[0].trim();
-        String nums_inner = nums_raw.replaceAll("^\\\\[", "").replaceAll("\\\\]$", "");
+        String nums_inner = nums_raw.replaceAll("^\\[", "").replaceAll("\\]$", "");
         String nums_java = "new int[] {";
         nums_java += nums_inner + "}";
         String nums_cpp = "{";
@@ -172,7 +172,7 @@ public class SolutionWrapperService {
         String[] lines = tcInput.split("\\n", 2);
         if (lines.length < 2) return userCode;
         String numbers_raw = lines[0].trim();
-        String numbers_inner = numbers_raw.replaceAll("^\\\\[", "").replaceAll("\\\\]$", "");
+        String numbers_inner = numbers_raw.replaceAll("^\\[", "").replaceAll("\\]$", "");
         String numbers_java = "new int[] {";
         numbers_java += numbers_inner + "}";
         String numbers_cpp = "{";
@@ -190,13 +190,13 @@ public class SolutionWrapperService {
         String[] lines = tcInput.split("\\n", 2);
         if (lines.length < 2) return userCode;
         String nums1_raw = lines[0].trim();
-        String nums1_inner = nums1_raw.replaceAll("^\\\\[", "").replaceAll("\\\\]$", "");
+        String nums1_inner = nums1_raw.replaceAll("^\\[", "").replaceAll("\\]$", "");
         String nums1_java = "new int[] {";
         nums1_java += nums1_inner + "}";
         String nums1_cpp = "{";
         nums1_cpp += nums1_inner + "}";
         String nums2_raw = lines[1].trim();
-        String nums2_inner = nums2_raw.replaceAll("^\\\\[", "").replaceAll("\\\\]$", "");
+        String nums2_inner = nums2_raw.replaceAll("^\\[", "").replaceAll("\\]$", "");
         String nums2_java = "new int[] {";
         nums2_java += nums2_inner + "}";
         String nums2_cpp = "{";
@@ -213,7 +213,7 @@ public class SolutionWrapperService {
         String[] lines = tcInput.split("\\n", 1);
         if (lines.length < 1) return userCode;
         String nums_raw = lines[0].trim();
-        String nums_inner = nums_raw.replaceAll("^\\\\[", "").replaceAll("\\\\]$", "");
+        String nums_inner = nums_raw.replaceAll("^\\[", "").replaceAll("\\]$", "");
         String nums_java = "new int[] {";
         nums_java += nums_inner + "}";
         String nums_cpp = "{";
@@ -230,7 +230,7 @@ public class SolutionWrapperService {
         String[] lines = tcInput.split("\\n", 1);
         if (lines.length < 1) return userCode;
         String height_raw = lines[0].trim();
-        String height_inner = height_raw.replaceAll("^\\\\[", "").replaceAll("\\\\]$", "");
+        String height_inner = height_raw.replaceAll("^\\[", "").replaceAll("\\]$", "");
         String height_java = "new int[] {";
         height_java += height_inner + "}";
         String height_cpp = "{";
@@ -247,7 +247,7 @@ public class SolutionWrapperService {
         String[] lines = tcInput.split("\\n", 1);
         if (lines.length < 1) return userCode;
         String heights_raw = lines[0].trim();
-        String heights_inner = heights_raw.replaceAll("^\\\\[", "").replaceAll("\\\\]$", "");
+        String heights_inner = heights_raw.replaceAll("^\\[", "").replaceAll("\\]$", "");
         String heights_java = "new int[] {";
         heights_java += heights_inner + "}";
         String heights_cpp = "{";
@@ -264,7 +264,7 @@ public class SolutionWrapperService {
         String[] lines = tcInput.split("\\n", 2);
         if (lines.length < 2) return userCode;
         String nums_raw = lines[0].trim();
-        String nums_inner = nums_raw.replaceAll("^\\\\[", "").replaceAll("\\\\]$", "");
+        String nums_inner = nums_raw.replaceAll("^\\[", "").replaceAll("\\]$", "");
         String nums_java = "new int[] {";
         nums_java += nums_inner + "}";
         String nums_cpp = "{";
@@ -294,7 +294,7 @@ public class SolutionWrapperService {
         String[] lines = tcInput.split("\\n", 1);
         if (lines.length < 1) return userCode;
         String nums_raw = lines[0].trim();
-        String nums_inner = nums_raw.replaceAll("^\\\\[", "").replaceAll("\\\\]$", "");
+        String nums_inner = nums_raw.replaceAll("^\\[", "").replaceAll("\\]$", "");
         String nums_java = "new int[] {";
         nums_java += nums_inner + "}";
         String nums_cpp = "{";
@@ -311,7 +311,7 @@ public class SolutionWrapperService {
         String[] lines = tcInput.split("\\n", 2);
         if (lines.length < 2) return userCode;
         String nums_raw = lines[0].trim();
-        String nums_inner = nums_raw.replaceAll("^\\\\[", "").replaceAll("\\\\]$", "");
+        String nums_inner = nums_raw.replaceAll("^\\[", "").replaceAll("\\]$", "");
         String nums_java = "new int[] {";
         nums_java += nums_inner + "}";
         String nums_cpp = "{";
