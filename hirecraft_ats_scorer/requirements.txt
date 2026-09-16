@@ -8,4 +8,5 @@ numpy
 PyMuPDF
 python-docx
 pypdf
-sentence-transformers
+torch
+transformers
