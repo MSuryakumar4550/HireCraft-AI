@@ -287,7 +287,7 @@ Open your PostgreSQL client (psql, pgAdmin, or DBeaver) and create the database:
 CREATE DATABASE hirecraft_ai;
 ```
 
-Verify your credentials match `backend/src/main/resources/application.properties` (Default: user `postgres`, password `Surya@123` or your customized env var).
+Verify your credentials match `backend/src/main/resources/application.properties` (Default: user `postgres`, password `<your-database-password>` or your customized env var).
 
 ---
 
