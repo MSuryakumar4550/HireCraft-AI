@@ -473,3 +473,7 @@ This project is developed for academic, research, and innovation purposes under 
 
 ---
 
+<p align="center">
+  Made with  by <b>Suryakumar</b> and the <b>HireCraft AI Team</b>.
+</p>
+
