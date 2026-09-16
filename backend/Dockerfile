@@ -13,6 +13,6 @@ COPY --from=build /app/target/*.jar app.jar
 
 # Optimize JVM for Render's 512MB RAM constraint
 ENV JAVA_OPTS="-Xms128m -Xmx320m -XX:+UseSerialGC"
-EXPOSE 8080
+EXPOSE 10000
 
-ENTRYPOINT ["sh", "-c", "java $JAVA_OPTS -jar app.jar"]
+ENTRYPOINT ["sh", "-c", "java $JAVA_OPTS -Dserver.port=${PORT:-10000} -jar app.jar"]
