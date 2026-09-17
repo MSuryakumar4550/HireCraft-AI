@@ -1,6 +1,7 @@
 fastapi
-uvicorn
+uvicorn[standard]
+torch --extra-index-url https://download.pytorch.org/whl/cpu
 transformers
-torch
-pydantic
 accelerate
+pydantic
+gradio
