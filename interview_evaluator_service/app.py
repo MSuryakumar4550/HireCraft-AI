@@ -1,15 +1,12 @@
 import gradio as gr
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
-import uvicorn
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 import json
 import re
 import os
-
-# Initialize FastAPI
-app = FastAPI(title="HireCraft Voice & Technical Interview Evaluator")
+import spaces
 
 MODEL_NAME = "Qwen/Qwen2.5-0.5B-Instruct"
 print(f"Loading {MODEL_NAME}...")
@@ -35,6 +32,8 @@ class EvaluationRequest(BaseModel):
     def get_answer(self) -> str:
         return self.candidateAnswer or self.candidate_answer or ""
 
+# ZeroGPU accelerated evaluation
+@spaces.GPU
 def run_evaluation(question_content: str, answer_content: str, concepts: list[str], criteria: list[str]):
     system_prompt = (
         "You are an expert technical interviewer evaluating a candidate's answer. "
@@ -95,24 +94,17 @@ def run_evaluation(question_content: str, answer_content: str, concepts: list[st
             "missingConcepts": []
         }
 
-# ----------------- FastAPI Endpoint -----------------
-@app.post("/evaluate")
-async def evaluate_answer(req: EvaluationRequest):
-    question = req.get_question()
-    answer = req.get_answer()
-    return run_evaluation(question, answer, req.concepts, req.criteria)
-
 # ----------------- Gradio UI -----------------
 def gradio_evaluate(question, answer, concepts_text, criteria_text):
     concepts = [c.strip() for c in concepts_text.split(",") if c.strip()]
     criteria = [cr.strip() for cr in criteria_text.split(",") if cr.strip()]
     res = run_evaluation(question, answer, concepts, criteria)
     missing = ", ".join(res.get("missingConcepts", [])) or "None"
-    return f"Score: {res['score']}/10.0\n\nMissing Concepts: {missing}\n\nFeedback:\n{res['feedback']}"
+    return f"🎯 Score: {res['score']}/10.0\n\n❌ Missing Concepts: {missing}\n\n💡 Feedback:\n{res['feedback']}"
 
 with gr.Blocks(title="HireCraft Interview Evaluator") as demo:
     gr.Markdown("# 🎙️ HireCraft AI - Technical & Voice Interview Evaluator")
-    gr.Markdown("Powered by `Qwen/Qwen2.5-0.5B-Instruct`. Evaluates spoken or typed technical answers against concept rubrics.")
+    gr.Markdown("Powered by `Qwen/Qwen2.5-0.5B-Instruct` running on **Hugging Face ZeroGPU (NVIDIA A10G)**. Evaluates spoken or typed technical answers against concept rubrics (REST endpoint: `/evaluate`).")
     with gr.Row():
         with gr.Column():
             q_in = gr.Textbox(label="Interview Question", lines=2, value="What is the difference between TCP and UDP?")
@@ -125,8 +117,14 @@ with gr.Blocks(title="HireCraft Interview Evaluator") as demo:
             
     eval_btn.click(gradio_evaluate, inputs=[q_in, a_in, c_in, cr_in], outputs=[out])
 
-app = gr.mount_gradio_app(app, demo, path="/")
+# ----------------- Attach FastAPI Routes -----------------
+app = demo.app
+
+@app.post("/evaluate")
+async def evaluate_answer(req: EvaluationRequest):
+    question = req.get_question()
+    answer = req.get_answer()
+    return run_evaluation(question, answer, req.concepts, req.criteria)
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 7860))
-    uvicorn.run(app, host="0.0.0.0", port=port)
+    demo.launch()
