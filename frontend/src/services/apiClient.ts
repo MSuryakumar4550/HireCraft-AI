@@ -34,7 +34,11 @@ async function handleResponse<T>(response: Response): Promise<ApiResponse<T>> {
       const text = await response.text()
       if (text) {
         const errJson = JSON.parse(text)
-        if (errJson?.message) {
+        if (errJson?.fieldErrors && Array.isArray(errJson.fieldErrors) && errJson.fieldErrors.length > 0) {
+          message = errJson.fieldErrors.map((fe: any) => fe.message).join('. ')
+        } else if (errJson?.errors && Array.isArray(errJson.errors) && errJson.errors.length > 0) {
+          message = errJson.errors.map((e: any) => e.message || e).join('. ')
+        } else if (errJson?.message) {
           message = errJson.message
         } else if (errJson?.error) {
           message = errJson.error
