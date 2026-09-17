@@ -57,8 +57,6 @@ def generate_recommendations(keyword_results, semantic_score, resume_text):
 
     return recommendations
 
-# Hugging Face ZeroGPU accelerated function
-@spaces.GPU
 def run_semantic_inference(resume_text: str, job_description: str) -> float:
     return calculate_semantic_score(resume_text, job_description)
 
@@ -114,6 +112,7 @@ def compute_ats_score(resume_file_path: str, filename: str, job_description: str
     }
 
 # ----------------- Gradio UI -----------------
+@spaces.GPU
 def gradio_score_resume(file, job_description, required_skills):
     if file is None:
         return "Please upload a resume file (PDF or DOCX)."
@@ -171,6 +170,7 @@ async def parse_jd(file: UploadFile):
     }
 
 @app.post("/score-resume/")
+@spaces.GPU
 async def score_resume(
     resume_file: UploadFile, 
     job_description: str = Form(""), 

@@ -14,9 +14,8 @@ print(f"Loading {MODEL_NAME}...")
 device = "cuda" if torch.cuda.is_available() else "cpu"
 tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
 model = AutoModelForCausalLM.from_pretrained(
-    MODEL_NAME, 
-    device_map=device
-)
+    MODEL_NAME
+).to(device)
 
 class EvaluationRequest(BaseModel):
     questionText: str = ""
@@ -32,8 +31,6 @@ class EvaluationRequest(BaseModel):
     def get_answer(self) -> str:
         return self.candidateAnswer or self.candidate_answer or ""
 
-# ZeroGPU accelerated evaluation
-@spaces.GPU
 def run_evaluation(question_content: str, answer_content: str, concepts: list[str], criteria: list[str]):
     system_prompt = (
         "You are an expert technical interviewer evaluating a candidate's answer. "
@@ -61,7 +58,8 @@ def run_evaluation(question_content: str, answer_content: str, concepts: list[st
     ]
     
     text = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
-    model_inputs = tokenizer([text], return_tensors="pt").to(model.device)
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    model_inputs = tokenizer([text], return_tensors="pt").to(device)
     
     generated_ids = model.generate(
         **model_inputs,
@@ -95,6 +93,7 @@ def run_evaluation(question_content: str, answer_content: str, concepts: list[st
         }
 
 # ----------------- Gradio UI -----------------
+@spaces.GPU
 def gradio_evaluate(question, answer, concepts_text, criteria_text):
     concepts = [c.strip() for c in concepts_text.split(",") if c.strip()]
     criteria = [cr.strip() for cr in criteria_text.split(",") if cr.strip()]
@@ -121,6 +120,7 @@ with gr.Blocks(title="HireCraft Interview Evaluator") as demo:
 app = demo.app
 
 @app.post("/evaluate")
+@spaces.GPU
 async def evaluate_answer(req: EvaluationRequest):
     question = req.get_question()
     answer = req.get_answer()

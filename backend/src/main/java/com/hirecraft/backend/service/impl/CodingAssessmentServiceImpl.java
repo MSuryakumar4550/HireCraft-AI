@@ -129,14 +129,26 @@ public class CodingAssessmentServiceImpl implements CodingAssessmentService {
 
         List<Question> pool = questionBankLoader.getQuestionsByDifficulty(difficulty);
 
-        // Filter out solved and already chosen questions.
-        // Questions without test cases are still eligible — the Judge0 pipeline
-        // handles them gracefully by marking submissions as NO_TEST_CASES.
+        // Filter out solved, already chosen, and questions without valid test cases.
+        // Questions without test cases cannot be evaluated by Judge0 and must be excluded.
         List<Question> eligible = pool.stream()
                 .filter(q -> q.getId() != null)
+                .filter(q -> q.getTestCases() != null && !q.getTestCases().isEmpty())
                 .filter(q -> !solvedQuestionIds.contains(q.getId()))
                 .filter(q -> !alreadyChosenIds.contains(q.getId()))
                 .toList();
+
+        // Fallback: If not enough eligible questions are left (due to the strict test case filter
+        // combined with user's solved history), relax the solvedQuestionIds filter to allow re-testing.
+        if (eligible.size() < countNeeded) {
+            log.warn("Not enough unsolved eligible questions for difficulty {} (Need {}, got {}). Relaxing solved filter.", 
+                    difficulty, countNeeded, eligible.size());
+            eligible = pool.stream()
+                    .filter(q -> q.getId() != null)
+                    .filter(q -> q.getTestCases() != null && !q.getTestCases().isEmpty())
+                    .filter(q -> !alreadyChosenIds.contains(q.getId()))
+                    .toList();
+        }
 
         // Partition into Failed and Unattempted
         List<Question> failedList = new ArrayList<>();

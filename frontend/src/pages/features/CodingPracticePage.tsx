@@ -51,7 +51,15 @@ export function CodingPracticePage() {
     return () => clearInterval(timer)
   }, [isExamStarted, timeLeft, filteredQuestions.length])
 
-  // Initialize code when language or question changes
+  // Reset saved codes when language changes (old saved code is for a different language)
+  useEffect(() => {
+    if (isExamStarted && currentQuestion) {
+      setSavedCodes({})
+      setCode(currentQuestion.starterCode?.[language as keyof typeof currentQuestion.starterCode] || '')
+    }
+  }, [language])
+
+  // Initialize code when question changes (within same assessment + same language)
   useEffect(() => {
     if (currentQuestion) {
       if (savedCodes[currentQuestionIndex] !== undefined) {
@@ -62,7 +70,7 @@ export function CodingPracticePage() {
     } else {
       setCode('')
     }
-  }, [language, currentQuestionIndex, currentQuestion])
+  }, [currentQuestionIndex, currentQuestion])
 
   const handleStartExam = async () => {
     if (selectedDifficulty === 'All') return;
@@ -80,6 +88,9 @@ export function CodingPracticePage() {
       setAssessmentId(data.codingAssessmentId)
       setFilteredQuestions(data.questions)
       setCurrentQuestionIndex(0)
+      setSavedCodes({})
+      setCode('')
+      setOutput(null)
       strikeCountRef.current = 0
       setIsExamStarted(true)
       setExamActive(true)
@@ -102,6 +113,8 @@ export function CodingPracticePage() {
     setIsExamStarted(false)
     setExamActive(false)
     setOutput(null)
+    setSavedCodes({})
+    setCode('')
   }
 
   // Anti-cheat tab change listener
@@ -265,6 +278,10 @@ export function CodingPracticePage() {
             <Button onClick={() => {
               setAssessmentResult(null);
               setSelectedDifficulty('Easy');
+              setSavedCodes({});
+              setCode('');
+              setFilteredQuestions([]);
+              setAssessmentId(null);
             }}>Back to Practice</Button>
           </div>
         </div>

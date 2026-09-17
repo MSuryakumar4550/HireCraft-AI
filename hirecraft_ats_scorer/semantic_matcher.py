@@ -16,10 +16,13 @@ def load_model():
 
         tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
         model = AutoModel.from_pretrained(MODEL_NAME)
+        
+        device = "cuda" if torch.cuda.is_available() else "cpu"
+        model = model.to(device)
 
         model.eval()
 
-        print("AI Model loaded successfully.")
+        print(f"AI Model loaded successfully on {device}.")
 
 
 def mean_pooling(model_output, attention_mask):
@@ -47,13 +50,14 @@ def calculate_semantic_score(resume_text, job_description):
     # Load the model only when semantic scoring is actually requested
     load_model()
 
+    device = "cuda" if torch.cuda.is_available() else "cpu"
     encoded_input = tokenizer(
         [resume_text, job_description],
         padding=True,
         truncation=True,
         max_length=256,
         return_tensors="pt"
-    )
+    ).to(device)
 
     with torch.no_grad():
         model_output = model(**encoded_input)
