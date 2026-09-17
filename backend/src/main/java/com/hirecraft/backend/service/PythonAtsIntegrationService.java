@@ -9,6 +9,7 @@ import com.hirecraft.backend.entity.User;
 import com.hirecraft.backend.enums.MemoryCategory;
 import com.hirecraft.backend.enums.MemoryType;
 import com.hirecraft.backend.repository.UserRepository;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.ByteArrayResource;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -35,7 +36,8 @@ public class PythonAtsIntegrationService {
     private final ResumeParserService resumeParserService;
     private final AiMemoryService aiMemoryService;
     
-    private static final String PYTHON_ATS_URL = "http://127.0.0.1:8001/score-resume/";
+    @Value("${hirecraft.ats.service.url:https://msuryakumar-hirecraft-ats-scorer.hf.space/score-resume/}")
+    private String pythonAtsUrl;
 
     public PythonAtsIntegrationService(RestTemplate restTemplate, UserRepository userRepository, JdParserService jdParserService, ResumeParserService resumeParserService, AiMemoryService aiMemoryService) {
         this.restTemplate = restTemplate;
@@ -76,7 +78,7 @@ public class PythonAtsIntegrationService {
         HttpEntity<MultiValueMap<String, Object>> requestEntity = new HttpEntity<>(body, headers);
         
         ResponseEntity<PythonAtsResponseDto> response = restTemplate.postForEntity(
-                PYTHON_ATS_URL, 
+                pythonAtsUrl, 
                 requestEntity, 
                 PythonAtsResponseDto.class
         );
