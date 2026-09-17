@@ -186,12 +186,12 @@ export function DashboardWidgets() {
           <div className="flex flex-col md:flex-row gap-6 items-center h-full">
              <div className="flex-1 space-y-4 w-full">
                 <div className="flex justify-between text-sm">
-                  <span>ATS Score</span>
-                <span className="font-bold text-success">85/100</span>
+                  <span className="text-muted-foreground">ATS Score</span>
+                <span className="font-bold text-muted-foreground">--/100</span>
                 </div>
-                <Progress value={85} className="h-2" />
+                <Progress value={0} className="h-2" />
                 <p className="text-sm text-muted-foreground">
-                  Your resume is highly optimized for Software Engineer roles. Consider adding more quantified achievements.
+                  Upload and analyze your resume to get your ATS score and personalized improvement suggestions.
                 </p>
                 <Button variant="outline" asChild>
                   <Link to={ROUTES.RESUME_ANALYZER}>Analyze Again</Link>
