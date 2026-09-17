@@ -1,3 +1,4 @@
+# pyrefly: ignore [missing-import]
 import gradio as gr
 from fastapi import FastAPI, UploadFile, Form
 import shutil
@@ -5,6 +6,7 @@ import os
 import re
 import pandas as pd
 import xgboost as xgb
+# pyrefly: ignore [missing-import]
 import spaces
 
 from document_parser import extract_text
